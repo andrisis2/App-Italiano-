@@ -1,4 +1,4 @@
-const CACHE = 'italiano-b2-v1';
+const CACHE = 'italiano-b2-v2';
 const ASSETS = ['/', '/index.html', '/knowledge.json', '/manifest.json'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS).catch(() => {})));
