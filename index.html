@@ -6,6 +6,8 @@
 <meta name="theme-color" content="#ffffff">
 <title>Italian B2 — Learn Italian</title>
 <link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <style>
@@ -226,27 +228,19 @@
   .errbox .big{font-size:52px}
   .errbox small{color:var(--muted);font-size:11px;word-break:break-word;opacity:.7}
   #splash{
-    position:fixed;inset:0;z-index:9999;background:#eef1f8;
-    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;
-    transition:opacity .4s ease;
+    position:fixed;inset:0;z-index:9999;background:#fff;
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;transition:opacity .4s ease;
   }
-  #splash .splash-flag{font-size:72px;line-height:1}
-  #splash .splash-title{font-size:22px;font-weight:800;color:#16203a;letter-spacing:-.3px}
-  #splash .splash-sub{font-size:14px;color:#6c7891}
+  #splash img{width:100%;height:100%;object-fit:cover;}
   #splash.fade-out{opacity:0;pointer-events:none}
   @media (prefers-color-scheme: dark){
     #splash{background:#0d1220}
-    #splash .splash-title{color:#e9eef9}
-    #splash .splash-sub{color:#9aa7c4}
   }
 </style>
 </head>
 <body>
-<div id="splash">
-  <div class="splash-flag">&#127470;&#127481;</div>
-  <div class="splash-title">Italian B2</div>
-  <div class="splash-sub">Advanced Italian for English Speakers</div>
-</div>
+<div id="splash"><img src="splash.jpg" alt="Italiano con Andrea"></div>
 <header>
   <button class="back hidden" id="backBtn">&#8249; Back</button>
   <div class="arch-wrap" role="img" aria-label="Italian B2 — Roman arches">
