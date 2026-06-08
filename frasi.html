@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frasi Comuni — Italiano A1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand"><span class="flag">🇮🇹</span> Italiano A1</a>
+    <ul class="nav-links">
+      <li><a href="flashcard.html">Flashcard</a></li>
+      <li><a href="fonetica.html">Fonetica</a></li>
+      <li><a href="grammatica.html">Grammatica</a></li>
+      <li><a href="frasi.html">Frasi</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+  <div class="page-header">
+    <h1>💬 Frasi Comuni</h1>
+    <p>40+ frasi utili con traduzione e sintesi vocale — premi 🔊 per ascoltare!</p>
+    <div class="accent-bar"></div>
+  </div>
+
+  <div style="margin-bottom: 24px;">
+    <input type="text" id="searchInput" placeholder="🔍 Cerca una frase..."
+      style="width:100%; padding:11px 18px; border:2px solid var(--mid-gray); border-radius:24px;
+             font-size:1rem; font-family:var(--font); outline:none; transition:border 0.2s;"
+      oninput="filterPhrases(this.value)"
+      onfocus="this.style.borderColor='var(--green)'"
+      onblur="this.style.borderColor='var(--mid-gray)'" />
+  </div>
+
+  <div id="phraseSections">
+
+  <div class="card phrase-section" data-cat="presentazioni">
+    <h2>👋 Presentazioni</h2>
+    <ul class="phrase-list">
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Mi chiamo Marco.</div><div class="phrase-en">My name is Marco.</div></div><button class="btn-speaker" data-speak="Mi chiamo Marco." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Come ti chiami?</div><div class="phrase-en">What is your name?</div></div><button class="btn-speaker" data-speak="Come ti chiami?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Ho venticinque anni.</div><div class="phrase-en">I am twenty-five years old.</div></div><button class="btn-speaker" data-speak="Ho venticinque anni." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Quanti anni hai?</div><div class="phrase-en">How old are you?</div></div><button class="btn-speaker" data-speak="Quanti anni hai?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Sono di Roma.</div><div class="phrase-en">I am from Rome.</div></div><button class="btn-speaker" data-speak="Sono di Roma." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Di dove sei?</div><div class="phrase-en">Where are you from?</div></div><button class="btn-speaker" data-speak="Di dove sei?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Sono italiano / americana.</div><div class="phrase-en">I am Italian / American.</div></div><button class="btn-speaker" data-speak="Sono italiano." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Piacere di conoscerti!</div><div class="phrase-en">Nice to meet you!</div></div><button class="btn-speaker" data-speak="Piacere di conoscerti!" data-lang="it-IT">🔊</button></li>
+    </ul>
+  </div>
+
+  <div class="card phrase-section" data-cat="saluti">
+    <h2>🤝 Saluti e Cortesia</h2>
+    <ul class="phrase-list">
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Buongiorno!</div><div class="phrase-en">Good morning!</div></div><button class="btn-speaker" data-speak="Buongiorno!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Buonasera!</div><div class="phrase-en">Good evening!</div></div><button class="btn-speaker" data-speak="Buonasera!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Come stai? / Come sta? (formale)</div><div class="phrase-en">How are you?</div></div><button class="btn-speaker" data-speak="Come stai?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Sto bene, grazie!</div><div class="phrase-en">I am fine, thank you!</div></div><button class="btn-speaker" data-speak="Sto bene, grazie!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Così così.</div><div class="phrase-en">So-so.</div></div><button class="btn-speaker" data-speak="Così così." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Arrivederci! / Ciao!</div><div class="phrase-en">Goodbye! / Bye!</div></div><button class="btn-speaker" data-speak="Arrivederci!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Per favore / Per piacere</div><div class="phrase-en">Please</div></div><button class="btn-speaker" data-speak="Per favore." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Grazie mille!</div><div class="phrase-en">Thank you very much!</div></div><button class="btn-speaker" data-speak="Grazie mille!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Prego!</div><div class="phrase-en">You're welcome!</div></div><button class="btn-speaker" data-speak="Prego!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Mi scusi! / Scusa!</div><div class="phrase-en">Excuse me! / Sorry!</div></div><button class="btn-speaker" data-speak="Mi scusi!" data-lang="it-IT">🔊</button></li>
+    </ul>
+  </div>
+
+  <div class="card phrase-section" data-cat="ristorante">
+    <h2>🍽️ Al Ristorante</h2>
+    <ul class="phrase-list">
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Vorrei un tavolo per due.</div><div class="phrase-en">I would like a table for two.</div></div><button class="btn-speaker" data-speak="Vorrei un tavolo per due." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Il menu, per favore.</div><div class="phrase-en">The menu, please.</div></div><button class="btn-speaker" data-speak="Il menu, per favore." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Vorrei la pizza margherita.</div><div class="phrase-en">I would like the margherita pizza.</div></div><button class="btn-speaker" data-speak="Vorrei la pizza margherita." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Da bere, acqua naturale.</div><div class="phrase-en">To drink, still water.</div></div><button class="btn-speaker" data-speak="Da bere, acqua naturale." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Il conto, per favore.</div><div class="phrase-en">The bill, please.</div></div><button class="btn-speaker" data-speak="Il conto, per favore." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">È delizioso!</div><div class="phrase-en">It's delicious!</div></div><button class="btn-speaker" data-speak="È delizioso!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Sono allergico / allergica a...</div><div class="phrase-en">I am allergic to...</div></div><button class="btn-speaker" data-speak="Sono allergico a..." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Un caffè, per favore.</div><div class="phrase-en">A coffee, please.</div></div><button class="btn-speaker" data-speak="Un caffè, per favore." data-lang="it-IT">🔊</button></li>
+    </ul>
+  </div>
+
+  <div class="card phrase-section" data-cat="orientamento">
+    <h2>🗺️ Orientamento e Direzioni</h2>
+    <ul class="phrase-list">
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Dov'è la stazione?</div><div class="phrase-en">Where is the train station?</div></div><button class="btn-speaker" data-speak="Dov'è la stazione?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Come arrivo a...?</div><div class="phrase-en">How do I get to...?</div></div><button class="btn-speaker" data-speak="Come arrivo al centro?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">A sinistra</div><div class="phrase-en">To the left</div></div><button class="btn-speaker" data-speak="A sinistra." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">A destra</div><div class="phrase-en">To the right</div></div><button class="btn-speaker" data-speak="A destra." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Sempre dritto</div><div class="phrase-en">Straight ahead</div></div><button class="btn-speaker" data-speak="Sempre dritto." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">È lontano?</div><div class="phrase-en">Is it far?</div></div><button class="btn-speaker" data-speak="È lontano?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">È vicino. / È lontano.</div><div class="phrase-en">It's nearby. / It's far.</div></div><button class="btn-speaker" data-speak="È vicino." data-lang="it-IT">🔊</button></li>
+    </ul>
+  </div>
+
+  <div class="card phrase-section" data-cat="shopping">
+    <h2>🛍️ Shopping</h2>
+    <ul class="phrase-list">
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Quanto costa?</div><div class="phrase-en">How much does it cost?</div></div><button class="btn-speaker" data-speak="Quanto costa?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Costa troppo.</div><div class="phrase-en">It costs too much.</div></div><button class="btn-speaker" data-speak="Costa troppo." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Posso provarlo / provarla?</div><div class="phrase-en">Can I try it on?</div></div><button class="btn-speaker" data-speak="Posso provarlo?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Avete questo in un'altra misura?</div><div class="phrase-en">Do you have this in another size?</div></div><button class="btn-speaker" data-speak="Avete questo in un'altra misura?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Lo / La prendo!</div><div class="phrase-en">I'll take it!</div></div><button class="btn-speaker" data-speak="Lo prendo!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Accettate carta di credito?</div><div class="phrase-en">Do you accept credit cards?</div></div><button class="btn-speaker" data-speak="Accettate carta di credito?" data-lang="it-IT">🔊</button></li>
+    </ul>
+  </div>
+
+  <div class="card phrase-section" data-cat="emergenze">
+    <h2>🚨 Emergenze</h2>
+    <ul class="phrase-list">
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Aiuto!</div><div class="phrase-en">Help!</div></div><button class="btn-speaker" data-speak="Aiuto!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Chiami un medico!</div><div class="phrase-en">Call a doctor!</div></div><button class="btn-speaker" data-speak="Chiami un medico!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Chiami la polizia!</div><div class="phrase-en">Call the police!</div></div><button class="btn-speaker" data-speak="Chiami la polizia!" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Mi sento male.</div><div class="phrase-en">I feel sick.</div></div><button class="btn-speaker" data-speak="Mi sento male." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Ho perso il portafoglio.</div><div class="phrase-en">I have lost my wallet.</div></div><button class="btn-speaker" data-speak="Ho perso il portafoglio." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Dov'è l'ospedale?</div><div class="phrase-en">Where is the hospital?</div></div><button class="btn-speaker" data-speak="Dov'è l'ospedale?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Non capisco. Può ripetere?</div><div class="phrase-en">I don't understand. Can you repeat?</div></div><button class="btn-speaker" data-speak="Non capisco. Può ripetere?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Parla inglese?</div><div class="phrase-en">Do you speak English?</div></div><button class="btn-speaker" data-speak="Parla inglese?" data-lang="it-IT">🔊</button></li>
+    </ul>
+  </div>
+
+  <div class="card phrase-section" data-cat="quotidiana">
+    <h2>☀️ Vita Quotidiana</h2>
+    <ul class="phrase-list">
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Che ore sono?</div><div class="phrase-en">What time is it?</div></div><button class="btn-speaker" data-speak="Che ore sono?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Sono le tre e mezza.</div><div class="phrase-en">It's half past three.</div></div><button class="btn-speaker" data-speak="Sono le tre e mezza." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">A che ora apre?</div><div class="phrase-en">What time does it open?</div></div><button class="btn-speaker" data-speak="A che ora apre?" data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Devo andare.</div><div class="phrase-en">I have to go.</div></div><button class="btn-speaker" data-speak="Devo andare." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Parli più lentamente, per favore.</div><div class="phrase-en">Please speak more slowly.</div></div><button class="btn-speaker" data-speak="Parli più lentamente, per favore." data-lang="it-IT">🔊</button></li>
+      <li class="phrase-item"><div class="phrase-texts"><div class="phrase-it">Sto imparando l'italiano.</div><div class="phrase-en">I am learning Italian.</div></div><button class="btn-speaker" data-speak="Sto imparando l'italiano." data-lang="it-IT">🔊</button></li>
+    </ul>
+  </div>
+
+  </div>
+
+  <div style="text-align:center; margin-top:16px; color:#aaa; font-size:0.9rem;" id="phraseCount">43 frasi totali</div>
+
+</main>
+
+<script src="app.js"></script>
+<script>
+function filterPhrases(query) {
+  const q = query.trim().toLowerCase();
+  let total = 0;
+  document.querySelectorAll('.phrase-section').forEach(section => {
+    let sectionVisible = false;
+    section.querySelectorAll('.phrase-item').forEach(item => {
+      const it = item.querySelector('.phrase-it').textContent.toLowerCase();
+      const en = item.querySelector('.phrase-en').textContent.toLowerCase();
+      const match = !q || it.includes(q) || en.includes(q);
+      item.style.display = match ? '' : 'none';
+      if (match) { sectionVisible = true; total++; }
+    });
+    section.style.display = sectionVisible ? '' : 'none';
+  });
+  document.getElementById('phraseCount').textContent =
+    q ? `${total} risultat${total === 1 ? 'o' : 'i'} trovato${total === 1 ? '' : 'i'}` : '43 frasi totali';
+}
+</script>
+</body>
+</html>
