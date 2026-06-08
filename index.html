@@ -253,7 +253,7 @@
 </style>
 </head>
 <body>
-<div id="splash"><img src="splash.png" alt="Italiano con Andrea"></div>
+<div id="splash"><img src="splash.jpg" alt="Italiano con Andrea"></div>
 <header>
   <button class="back hidden" id="backBtn">&#8249; Back</button>
   <div class="arch-wrap" role="img" aria-label="Italian B2 — Roman arches">
@@ -667,12 +667,21 @@ function runPhrase(){
 function runVocab(){
   const stage = header();
 
+  let langpair = "en|it";
+
+  const toggleWrap = $(`<div style="display:flex;gap:8px;width:100%"></div>`);
+  const btnEN = $(`<button class="gram-chip active">EN &#8594; IT</button>`);
+  const btnIT = $(`<button class="gram-chip">IT &#8594; EN</button>`);
+  toggleWrap.appendChild(btnEN);
+  toggleWrap.appendChild(btnIT);
+  stage.appendChild(toggleWrap);
+
   const inputWrap = $(`<div style="position:relative;width:100%"></div>`);
   const searchIcon = $(`<span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:18px;pointer-events:none;user-select:none">&#128269;</span>`);
   const inp = document.createElement("input");
   inp.className = "vocab-input";
   inp.type = "search";
-  inp.placeholder = "Search in English or Italian…";
+  inp.placeholder = "Type in English…";
   inp.setAttribute("autocomplete","off");
   inp.setAttribute("autocorrect","off");
   inp.setAttribute("spellcheck","false");
@@ -683,11 +692,19 @@ function runVocab(){
   const list = $(`<div style="display:flex;flex-direction:column;gap:10px;margin-top:14px;width:100%"></div>`);
   stage.appendChild(list);
 
-  function vocabCard(itWord, enTrans, meta){
-    const {registro, difficolta, tag, source} = meta || {};
-    const regCls = registro==="formal"?"formal":registro==="informal"?"informal":"neutral";
-    const dots = difficolta ? "●".repeat(difficolta)+"○".repeat(3-difficolta) : "";
-    const tagsHtml = (tag||[]).map(t=>`<span class="pill">${t}</span>`).join("");
+  function setDir(dir){
+    langpair = dir;
+    btnEN.classList.toggle("active", dir==="en|it");
+    btnIT.classList.toggle("active", dir==="it|en");
+    inp.placeholder = dir==="en|it" ? "Type in English…" : "Scrivi in italiano…";
+    const q = inp.value.trim();
+    if(q.length>=2) doSearch(q);
+    else list.innerHTML="";
+  }
+  btnEN.onclick = ()=>setDir("en|it");
+  btnIT.onclick = ()=>setDir("it|en");
+
+  function vocabCard(itWord, enTrans){
     const card = $(`
       <div class="vocab-card">
         <div style="display:flex;align-items:flex-start;gap:10px">
@@ -697,12 +714,6 @@ function runVocab(){
           </div>
           <button class="vocab-speak" title="Ascolta">&#128266;</button>
         </div>
-        <div class="vocab-meta">
-          ${registro?`<span class="reg-pill ${regCls}">${registro}</span>`:""}
-          ${dots?`<span style="font-size:12px;color:var(--accent2);letter-spacing:1px">${dots}</span>`:""}
-          ${tagsHtml}
-          ${source?`<span class="pill">${source}</span>`:""}
-        </div>
       </div>`);
     card.querySelector(".vocab-it").textContent = itWord;
     card.querySelector(".vocab-en").textContent = enTrans;
@@ -710,21 +721,27 @@ function runVocab(){
     return card;
   }
 
-  async function searchOnline(query){
+  async function doSearch(query){
     list.innerHTML = `<div style="text-align:center;padding:28px;color:var(--muted)">Searching…</div>`;
     try{
-      const r = await fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(query)+"&langpair=en|it");
+      const r = await fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(query)+"&langpair="+encodeURIComponent(langpair));
       const d = await r.json();
       list.innerHTML = "";
       if(d.responseStatus===200 && d.responseData && d.responseData.translatedText){
         const main = d.responseData.translatedText;
-        list.appendChild(vocabCard(main, query, {source:"MyMemory"}));
+        const itWord = langpair==="en|it" ? main : query;
+        const enTrans = langpair==="en|it" ? query : main;
+        list.appendChild(vocabCard(itWord, enTrans));
         const extras = (d.matches||[])
           .filter(m=>m.translation && m.translation!==main && parseFloat(m.quality||0)>50)
-          .slice(0,3);
-        extras.forEach(m=>list.appendChild(vocabCard(m.translation, m.segment||query, {source:"MyMemory"})));
+          .slice(0,4);
+        extras.forEach(m=>{
+          const itW = langpair==="en|it" ? m.translation : (m.segment||query);
+          const enT = langpair==="en|it" ? (m.segment||query) : m.translation;
+          list.appendChild(vocabCard(itW, enT));
+        });
       } else {
-        const msg = $(`<div class="gram-card" style="text-align:center;color:var(--muted)">No translation found for "<b></b>".</div>`);
+        const msg = $(`<div class="gram-card" style="text-align:center;color:var(--muted)">No results for &ldquo;<b></b>&rdquo;.</div>`);
         msg.querySelector("b").textContent = query;
         list.appendChild(msg);
       }
@@ -733,36 +750,13 @@ function runVocab(){
     }
   }
 
-  function renderResults(query){
-    const q = query.toLowerCase().trim();
-    list.innerHTML = "";
-    if(!q) return;
-
-    const hits = (DB.voci||[]).filter(v=>
-      (v.it||"").toLowerCase().includes(q)||(v.en||"").toLowerCase().includes(q)
-    );
-
-    if(hits.length){
-      hits.forEach(v=>list.appendChild(vocabCard(v.it, v.en, {registro:v.registro, difficolta:v.difficolta, tag:v.tag})));
-      const more = $(`<button class="btn" style="margin-top:4px">Search online for more &#8594;</button>`);
-      more.onclick = ()=>searchOnline(query.trim());
-      list.appendChild(more);
-    } else {
-      const wrap = $(`<div style="display:flex;flex-direction:column;align-items:center;gap:12px;padding:20px 0"></div>`);
-      const msg = $(`<p style="color:var(--muted);font-size:15px;margin:0;text-align:center">No local results for &ldquo;<b></b>&rdquo;</p>`);
-      msg.querySelector("b").textContent = q;
-      wrap.appendChild(msg);
-      const btn = $(`<button class="btn primary">Search online &#8594;</button>`);
-      btn.onclick = ()=>searchOnline(q);
-      wrap.appendChild(btn);
-      list.appendChild(wrap);
-    }
-  }
-
   let debounce = null;
   inp.addEventListener("input", ()=>{
     clearTimeout(debounce);
-    debounce = setTimeout(()=>renderResults(inp.value), 280);
+    const q = inp.value.trim();
+    if(!q){ list.innerHTML=""; return; }
+    if(q.length<2) return;
+    debounce = setTimeout(()=>doSearch(q), 500);
   });
 
   setTimeout(()=>inp.focus(), 80);
