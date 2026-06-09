@@ -543,11 +543,24 @@ function runFlash(){
 function runPhrase(){
   const SKIP = new Set(['il','lo','la','i','gli','le','un','una','uno','di','da','in','con','su','per','tra','fra','a','e','o','ma','se','che','non','è','si','ci','vi','mi','ti','ho','ha','ai','al','del','della','dello','delle','dei','degli','nel','nella','nelle','nei','negli','sul','sulla','sulle','sui','sugli','dal','dalla','dalle','dai','dagli','alla','alle','agli','come','più','già','anche','molto','poi','così','però','quando','dove','cui','chi']);
 
-  // Pool of content words from all sentences for similar distractors
-  const corpusWords = [...new Set(
-    (DB.frasi||[]).flatMap(f=>(f.it||"").replace(/[.!?,;:]/g,'').split(" ").map(w=>w.trim()))
-      .filter(w=>w.length>=4 && !SKIP.has(w.toLowerCase()))
-  )];
+  // Pool of content words from frasi + voci for distractors
+  const corpusWords = [...new Set([
+    ...(DB.frasi||[]).flatMap(f=>(f.it||"").replace(/[.!?,;:]/g,'').split(" ").map(w=>w.trim())),
+    ...(DB.voci||[]).map(v=>(v.it||"").replace(/[.,!?;:]/g,'').split(" ")[0])
+  ].filter(w=>w.length>=4 && !SKIP.has(w.toLowerCase())))];
+
+  // Return words sharing the same morphological ending (same verb form / inflection)
+  function byEnding(answer, exclude){
+    const lo = answer.toLowerCase();
+    const e3 = lo.slice(-3), e2 = lo.slice(-2);
+    const pool = corpusWords.filter(w=>w!==answer && !exclude.has(w));
+    const m3 = pool.filter(w=>w.toLowerCase().slice(-3)===e3);
+    if(m3.length>=3) return m3;
+    const m2 = pool.filter(w=>w.toLowerCase().slice(-2)===e2);
+    if(m2.length>=3) return m2;
+    // Last resort: similar length
+    return pool.filter(w=>Math.abs(w.length-answer.length)<=2);
+  }
 
   const deck = sample(DB.frasi||[], Math.min(8,(DB.frasi||[]).length));
   if(!deck.length) return;
@@ -572,17 +585,8 @@ function runPhrase(){
 
     const masked = rawWords.map((w,idx)=>idx===hideIdx?"_____":w).join(" ");
 
-    // Distractors: corpus words with similar length (±2 chars), not in this sentence
-    const similar = corpusWords.filter(w=>
-      w!==answer &&
-      Math.abs(w.length-answer.length)<=2 &&
-      !clean.includes(w)
-    );
-    // Fallback to vocab words if not enough
-    const fallback = (DB.voci||[]).map(v=>(v.it||"").replace(/[.,!?;:]/g,'').split(" ")[0])
-      .filter(w=>w.length>=4 && w!==answer && !clean.includes(w));
-    const pool = similar.length>=3 ? similar : [...similar, ...fallback];
-    const distract = sample(pool, 3);
+    // Distractors: same ending (same verb form / inflection), not in this sentence
+    const distract = sample(byEnding(answer, new Set(clean)), 3);
     const opts = shuffle([answer, ...distract]);
 
     wrap.innerHTML="";
