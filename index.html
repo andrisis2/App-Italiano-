@@ -304,7 +304,6 @@ function addUserVoce(itWord, enTrans, pos, tag){
   if(tag) item.tag = [tag];
   s.voci.push(item);
   saveUserStore(s);
-  if(DB) DB.voci.push(item);
   return true;
 }
 function isUserVoce(itWord){ return userStore().voci.some(v=>v.it===itWord); }
@@ -340,7 +339,7 @@ function speak(text, lang="it"){
 
 const SOFIA_MEM = "sofia_last_session";
 function sofiaSrsStats(){
-  const total = (DB ? (DB.voci||[]).length + (DB.frasi||[]).length : 0);
+  const total = (DB ? (DB.dizionario||[]).length + (userStore().voci||[]).length : 0);
   const known = Object.values(srs).filter(v=>(v.box||0)>=2).length;
   return {known, total};
 }
@@ -382,7 +381,7 @@ async function forceUpdate(btnEl){
 
 function renderHome(){
   backBtn.classList.add("hidden");
-  const allItems = [...(DB.voci||[]), ...(DB.frasi||[])];
+  const allItems = [...(DB.dizionario||[]), ...(userStore().voci||[])];
   const known = allItems.filter(x=>box(x.id)>=3).length;
   const seen = allItems.filter(x=>srs[x.id]).length;
   const due = allItems.filter(x=>!srs[x.id] || box(x.id)<3).length;
@@ -530,8 +529,8 @@ function pickFlashTopic(){
   const stage = header();
   stage.appendChild($(`<div style="margin-bottom:14px"><b style="font-size:18px">Scegli argomento</b></div>`));
 
-  // "Tutti" — classic voci+frasi SRS deck
-  const allPool = [...(DB.voci||[]), ...(DB.frasi||[])];
+  // "Tutti" — full dizionario + user-saved words
+  const allPool = [...(DB.dizionario||[]), ...(userStore().voci||[])];
   const allDue = allPool.filter(x=>!srs[x.id]||box(x.id)<3).length;
   const allBtn = $(`<button class="tile wide" style="margin-bottom:14px">
     <div class="ico">🎲</div>
@@ -624,7 +623,7 @@ function runPhrase(){
   // Pool of content words from frasi + voci for distractors
   const corpusWords = [...new Set([
     ...(DB.frasi||[]).flatMap(f=>(f.it||"").replace(/[.!?,;:]/g,'').split(" ").map(w=>w.trim())),
-    ...(DB.voci||[]).map(v=>(v.it||"").replace(/[.,!?;:]/g,'').split(" ")[0])
+    ...(DB.dizionario||[]).map(v=>(v.it||"").replace(/[.,!?;:]/g,'').split(" ")[0])
   ].filter(w=>w.length>=4 && !SKIP.has(w.toLowerCase())))];
 
   // Return words sharing the same morphological ending (same verb form / inflection)
@@ -784,7 +783,7 @@ function runVocabolario(){
     // Save to flashcards
     const addBtn = document.createElement('button');
     addBtn.className = 'add-flash-btn';
-    const alreadySaved = isUserVoce(itWord) || (DB && DB.voci.some(v=>v.it===itWord && !v.id?.startsWith('u')));
+    const alreadySaved = isUserVoce(itWord) || (DB && (DB.dizionario||[]).some(d=>d.it===itWord));
     function setAdded(){ addBtn.textContent='✓ In flashcards'; addBtn.disabled=true; addBtn.style.color='var(--good)'; addBtn.style.borderColor='var(--good)'; }
     function setAdd(){ addBtn.textContent='＋ Salva in flashcards'; addBtn.disabled=false; addBtn.style.color=''; addBtn.style.borderColor=''; }
     if(alreadySaved) setAdded(); else setAdd();
