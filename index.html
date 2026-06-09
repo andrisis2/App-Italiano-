@@ -401,6 +401,16 @@ function renderHome(){
         <div class="d">Speak Italian with your AI tutor &mdash; corrections and feedback in real time</div>
       </div>
     </button>`)).onclick = ()=>start("sofia");
+  if(DB.dizionario && DB.dizionario.length){
+    grid.appendChild($(`
+      <button class="tile wide">
+        <div class="ico" style="background:rgba(22,163,74,.10)">&#128218;</div>
+        <div class="txt">
+          <div class="t">Vocabolario Locale</div>
+          <div class="d">${DB.dizionario.length} parole offline &mdash; sfoglia, cerca e ascolta senza internet</div>
+        </div>
+      </button>`)).onclick = ()=>start("diz");
+  }
   if(DB.riferimento && DB.riferimento.length){
     grid.appendChild($(`
       <button class="tile wide">
@@ -444,6 +454,7 @@ function start(mode){
   history.pushState({screen:mode}, "");
   if(mode==="flash") return runFlash();
   if(mode==="phrase") return runPhrase();
+  if(mode==="diz") return runDizionario();
   if(mode==="vocab") return runVocab();
   if(mode==="ref") return runReference();
   if(mode==="sofia") return runSofia();
@@ -629,6 +640,96 @@ function runPhrase(){
     wrap.appendChild(optBox);
   }
   show();
+}
+
+function runDizionario(){
+  const stage = header();
+  const words = DB.dizionario || [];
+  const POS_LABELS = {verb:'Verbi', noun:'Sostantivi', adjective:'Aggettivi', adverb:'Avverbi', pronoun:'Pronomi', other:'Altro'};
+  let activePos = 'all', query = '';
+
+  // POS filter chips
+  const chipsWrap = $(`<div class="gram-chips"></div>`);
+  const allChip = $(`<button class="gram-chip active">Tutti (${words.length})</button>`);
+  allChip.onclick = ()=>setPos('all');
+  chipsWrap.appendChild(allChip);
+  const posCounts = words.reduce((acc,w)=>{ acc[w.pos]=(acc[w.pos]||0)+1; return acc; }, {});
+  Object.entries(POS_LABELS).forEach(([pos,label])=>{
+    if(!posCounts[pos]) return;
+    const ch = $(`<button class="gram-chip">${label} (${posCounts[pos]})</button>`);
+    ch.onclick = ()=>setPos(pos);
+    chipsWrap.appendChild(ch);
+  });
+  stage.appendChild(chipsWrap);
+
+  // Search bar
+  const inputWrap = $(`<div style="position:relative;width:100%;margin-bottom:12px"></div>`);
+  inputWrap.appendChild($(`<span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:18px;pointer-events:none">&#128269;</span>`));
+  const inp = document.createElement('input');
+  inp.className = 'vocab-input';
+  inp.type = 'search';
+  inp.placeholder = 'Cerca parola italiana…';
+  inp.setAttribute('autocomplete','off');
+  inp.setAttribute('autocorrect','off');
+  inputWrap.appendChild(inp);
+  stage.appendChild(inputWrap);
+
+  const list = $(`<div style="display:flex;flex-direction:column;gap:8px;width:100%"></div>`);
+  stage.appendChild(list);
+
+  const POS_COLORS = {verb:'rgba(47,107,237,.12)', noun:'rgba(22,163,74,.10)', adjective:'rgba(226,56,75,.10)', adverb:'rgba(255,165,0,.12)', other:'var(--card2)'};
+  const POS_TC = {verb:'var(--accent2)', noun:'var(--good)', adjective:'var(--accent)', adverb:'#b45309', other:'var(--muted)'};
+
+  function render(){
+    list.innerHTML = '';
+    const q = query.toLowerCase();
+    const filtered = words.filter(w=>
+      (activePos==='all' || w.pos===activePos) &&
+      (!q || w.it.toLowerCase().includes(q) || w.en.toLowerCase().includes(q))
+    );
+    if(!filtered.length){
+      list.appendChild($(`<div style="text-align:center;padding:28px;color:var(--muted)">Nessun risultato</div>`));
+      return;
+    }
+    const show = filtered.slice(0, 80);
+    show.forEach(w=>{
+      const card = $(`
+        <div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow-sm)">
+          <div style="flex:1;min-width:0">
+            <div style="font-size:17px;font-weight:800;letter-spacing:-.3px">${w.it}</div>
+            <div style="font-size:13px;color:var(--muted);margin-top:2px">${w.en}</div>
+          </div>
+          <span style="font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap;background:${POS_COLORS[w.pos]||'var(--card2)'};color:${POS_TC[w.pos]||'var(--muted)'}">${POS_LABELS[w.pos]||w.pos}</span>
+          <button style="background:var(--card2);border:1px solid var(--line);border-radius:50%;width:36px;height:36px;font-size:16px;flex-shrink:0;cursor:pointer">&#128266;</button>
+        </div>`);
+      card.querySelector('button').onclick = ()=>speak(w.it);
+      list.appendChild(card);
+    });
+    if(filtered.length > 80){
+      list.appendChild($(`<div style="text-align:center;padding:12px;color:var(--muted);font-size:13px">Mostra i primi 80 di ${filtered.length} — affina la ricerca per vedere di più</div>`));
+    }
+  }
+
+  function setPos(pos){
+    activePos = pos;
+    [...chipsWrap.children].forEach(ch=>{
+      ch.classList.toggle('active',
+        (pos==='all' && ch===allChip) ||
+        (pos!=='all' && ch.textContent.startsWith(POS_LABELS[pos]||''))
+      );
+    });
+    render();
+  }
+
+  let debounce = null;
+  inp.addEventListener('input', ()=>{
+    clearTimeout(debounce);
+    query = inp.value.trim();
+    debounce = setTimeout(render, 200);
+  });
+
+  render();
+  setTimeout(()=>inp.focus(), 80);
 }
 
 function runVocab(){
