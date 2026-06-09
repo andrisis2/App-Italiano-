@@ -93,7 +93,7 @@
     position:sticky; top:0; background:rgba(255,255,255,.82); backdrop-filter:saturate(180%) blur(12px); z-index:5;
   }
   .arch-wrap{position:relative;flex:1;align-self:stretch;min-height:42px;}
-  .arch-row{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:flex-end;justify-content:center;gap:10px;pointer-events:none;}
+  .arch-row{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:flex-end;justify-content:space-evenly;pointer-events:none;}
   .arch-row svg,.arch-row img{display:block;width:auto;object-fit:contain;}
   .back{background:none;border:none;color:var(--muted);font-size:15px;font-weight:600;cursor:pointer;padding:7px 11px;border-radius:10px;transition:.12s}
   .back:hover{background:var(--card2);color:var(--text)}
@@ -258,8 +258,8 @@
   <button class="back hidden" id="backBtn">&#8249; Back</button>
   <div class="arch-wrap" role="img" aria-label="San Marco, San Pietro, Duomo di Milano">
     <div class="arch-row" aria-hidden="true">
-      <img src="lm-sanmarco.jpg" alt="San Marco" style="height:34px">
       <img src="lm-sanpietro.jpg" alt="San Pietro" style="height:42px">
+      <img src="lm-sanmarco.jpg" alt="San Marco" style="height:34px">
       <img src="lm-duomomi.jpg" alt="Duomo di Milano" style="height:38px">
     </div>
   </div>
