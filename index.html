@@ -250,6 +250,9 @@
   .reg-pill.formal{background:rgba(47,107,237,.12);color:var(--accent2)}
   .reg-pill.neutral{background:var(--card2);color:var(--muted);border:1px solid var(--line)}
   .reg-pill.informal{background:rgba(226,56,75,.10);color:var(--accent)}
+  .add-flash-btn{margin-top:10px;width:100%;padding:9px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:.12s}
+  .add-flash-btn:not(:disabled):hover{border-color:var(--accent2);color:var(--accent2)}
+  .add-flash-btn:disabled{cursor:default;opacity:.8}
 </style>
 </head>
 <body>
@@ -268,6 +271,19 @@
 
 <script>
 const STORE_KEY = "italiano_srs_v1";
+const USER_KEY  = "italiano_user_items";
+function userStore(){ return JSON.parse(localStorage.getItem(USER_KEY)||'{"voci":[]}'); }
+function saveUserStore(s){ localStorage.setItem(USER_KEY, JSON.stringify(s)); }
+function addUserVoce(itWord, enTrans){
+  const s = userStore();
+  if(s.voci.some(v=>v.it===itWord)) return false;
+  const item = {id:"u"+Date.now(), it:itWord, en:enTrans};
+  s.voci.push(item);
+  saveUserStore(s);
+  if(DB) DB.voci.push(item);
+  return true;
+}
+function isUserVoce(itWord){ return userStore().voci.some(v=>v.it===itWord); }
 let DB = null;
 let srs = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
 function saveSrs(){ localStorage.setItem(STORE_KEY, JSON.stringify(srs)); }
@@ -665,10 +681,19 @@ function runVocab(){
           </div>
           <button class="vocab-speak" title="Ascolta">&#128266;</button>
         </div>
+        <button class="add-flash-btn"></button>
       </div>`);
     card.querySelector(".vocab-it").textContent = itWord;
     card.querySelector(".vocab-en").textContent = enTrans;
     card.querySelector(".vocab-speak").onclick = ()=>speak(itWord);
+    const addBtn = card.querySelector(".add-flash-btn");
+    const alreadySaved = isUserVoce(itWord) || (DB && DB.voci.some(v=>v.it===itWord && !v.id?.startsWith("u")));
+    function setAdded(){ addBtn.textContent="✓ In flashcards"; addBtn.disabled=true; addBtn.style.color="var(--good)"; addBtn.style.borderColor="var(--good)"; }
+    function setAdd(){ addBtn.textContent="＋ Save to flashcards"; addBtn.disabled=false; addBtn.style.color=""; addBtn.style.borderColor=""; }
+    if(alreadySaved) setAdded(); else setAdd();
+    addBtn.onclick = ()=>{
+      if(addUserVoce(itWord, enTrans)) setAdded();
+    };
     return card;
   }
 
@@ -1230,7 +1255,11 @@ function renderSkeleton(){
 renderSkeleton();
 fetch("knowledge.json?_="+Date.now())
   .then(r=>r.json())
-  .then(db=>{ DB=db; renderHome(); })
+  .then(db=>{
+    const u = userStore();
+    db.voci = [...db.voci, ...(u.voci||[])];
+    DB=db; renderHome();
+  })
   .catch(e=>{ app.innerHTML=`<div class="errbox"><div class="big">&#9888;</div><p>Could not load content.</p><button class="btn" onclick="location.reload()" style="max-width:200px">Retry</button><small>${e}</small></div>`; });
 
 if('serviceWorker' in navigator){
