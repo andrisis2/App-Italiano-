@@ -556,14 +556,122 @@ function pickFlashTopic(){
         <div class="d">${words.length} parole &middot; <span style="color:var(--accent2)">${due} da ripassare</span></div>
       </div>
     </button>`);
-    btn.onclick = ()=>runFlash(words, label);
+    btn.onclick = ()=>runTopicList(words, label);
     list.appendChild(btn);
   }
   stage.appendChild(list);
 }
 
+function runTopicList(pool, label){
+  const stage = header();
+  const POS_LABELS = {verb:'Verbo', noun:'Sost.', adjective:'Agg.', adverb:'Avv.', pronoun:'Pron.', other:'Altro'};
+  const POS_COLORS = {verb:'rgba(47,107,237,.12)', noun:'rgba(22,163,74,.10)', adjective:'rgba(226,56,75,.10)', adverb:'rgba(255,165,0,.12)', other:'var(--card2)'};
+  const POS_TC = {verb:'var(--accent2)', noun:'var(--good)', adjective:'var(--accent)', adverb:'#b45309', other:'var(--muted)'};
+
+  const dueCount = pool.filter(x=>!srs[x.id]||box(x.id)<3).length;
+
+  const hdr = document.createElement('div');
+  hdr.style.cssText = 'display:flex;align-items:baseline;gap:8px;margin-bottom:12px';
+  const title = document.createElement('b');
+  title.style.fontSize = '18px';
+  title.textContent = label;
+  const cnt = document.createElement('span');
+  cnt.style.cssText = 'font-size:13px;color:var(--muted)';
+  cnt.textContent = pool.length + ' parole';
+  hdr.appendChild(title);
+  hdr.appendChild(cnt);
+  stage.appendChild(hdr);
+
+  const studyBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:12px">&#9654; Studia &middot; <span style="opacity:.85">${dueCount} da ripassare</span></button>`);
+  studyBtn.onclick = ()=>runFlash(pool, label);
+  stage.appendChild(studyBtn);
+
+  const inputWrap = $(`<div style="position:relative;width:100%;margin-bottom:10px"></div>`);
+  inputWrap.appendChild($(`<span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:18px;pointer-events:none">&#128269;</span>`));
+  const inp = document.createElement('input');
+  inp.className = 'vocab-input';
+  inp.type = 'search';
+  inp.placeholder = 'Cerca parola…';
+  inp.setAttribute('autocomplete','off');
+  inp.setAttribute('autocorrect','off');
+  inputWrap.appendChild(inp);
+  stage.appendChild(inputWrap);
+
+  const list = $(`<div style="display:flex;flex-direction:column;gap:8px;width:100%"></div>`);
+  stage.appendChild(list);
+
+  function render(q){
+    list.innerHTML = '';
+    const ql = q.toLowerCase();
+    const filtered = q
+      ? pool.filter(w=>w.it.toLowerCase().includes(ql)||(w.en||'').toLowerCase().includes(ql))
+      : pool;
+    if(!filtered.length){
+      list.appendChild($(`<div style="text-align:center;padding:24px;color:var(--muted)">Nessun risultato</div>`));
+      return;
+    }
+    filtered.slice(0,80).forEach(w=>{
+      const card = document.createElement('div');
+      card.style.cssText = 'background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow-sm)';
+
+      const textDiv = document.createElement('div');
+      textDiv.style.flex = '1';
+      const itEl = document.createElement('div');
+      itEl.style.cssText = 'font-size:16px;font-weight:800;letter-spacing:-.3px';
+      itEl.textContent = w.it;
+      const enEl = document.createElement('div');
+      enEl.style.cssText = 'font-size:12.5px;color:var(--muted);margin-top:1px';
+      enEl.textContent = w.en;
+      textDiv.appendChild(itEl);
+      textDiv.appendChild(enEl);
+      card.appendChild(textDiv);
+
+      const b = box(w.id);
+      if(b>=3){
+        const dot = document.createElement('span');
+        dot.textContent = '✓';
+        dot.style.cssText = 'font-size:13px;font-weight:700;color:var(--good);flex-shrink:0';
+        card.appendChild(dot);
+      } else if(b>=1){
+        const dot = document.createElement('span');
+        dot.textContent = '●';
+        dot.style.cssText = 'font-size:11px;color:var(--accent2);flex-shrink:0';
+        card.appendChild(dot);
+      }
+
+      if(w.pos && POS_LABELS[w.pos]){
+        const badge = document.createElement('span');
+        badge.textContent = POS_LABELS[w.pos];
+        badge.style.cssText = `font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0;background:${POS_COLORS[w.pos]||'var(--card2)'};color:${POS_TC[w.pos]||'var(--muted)'}`;
+        card.appendChild(badge);
+      }
+
+      const speakBtn = document.createElement('button');
+      speakBtn.className = 'vocab-speak';
+      speakBtn.innerHTML = '&#128266;';
+      speakBtn.onclick = ()=>speak(w.it);
+      card.appendChild(speakBtn);
+
+      list.appendChild(card);
+    });
+    if(filtered.length>80){
+      list.appendChild($(`<div style="text-align:center;padding:10px;color:var(--muted);font-size:13px">+ altri ${filtered.length-80} — affina la ricerca</div>`));
+    }
+  }
+
+  let debounce=null;
+  inp.addEventListener('input',()=>{
+    clearTimeout(debounce);
+    debounce=setTimeout(()=>render(inp.value.trim()),100);
+  });
+
+  render('');
+  setTimeout(()=>inp.focus(),80);
+}
+
 function runFlash(pool, topicLabel){
-  const activeDeck = pool.slice().sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, pool.length));
+  const shuffled = pool.slice().sort(()=>Math.random()-.5);
+  const activeDeck = shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, pool.length));
   const deck = activeDeck;
   let i=0;
   const stage = header();
