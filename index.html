@@ -272,6 +272,18 @@
 <script>
 const STORE_KEY = "italiano_srs_v1";
 const USER_KEY  = "italiano_user_items";
+const TOPIC_LABELS = {
+  casa:'Casa',famiglia:'Famiglia',corpo:'Corpo & salute',cibo:'Cibo & drink',
+  lavoro:'Lavoro',scuola:'Scuola',città:'Città',natura:'Natura',
+  tempo:'Tempo',sentimenti:'Sentimenti',mente:'Mente',
+  società:'Società',cultura:'Cultura',economia:'Economia',viaggio:'Viaggio'
+};
+const TOPIC_ICONS = {
+  casa:'🏠',famiglia:'👨‍👩‍👧',corpo:'💪',cibo:'🍝',
+  lavoro:'💼',scuola:'📚',città:'🏙️',natura:'🌿',
+  tempo:'⏳',sentimenti:'❤️',mente:'💭',
+  società:'🤝',cultura:'🎭',economia:'💰',viaggio:'✈️'
+};
 function userStore(){ return JSON.parse(localStorage.getItem(USER_KEY)||'{"voci":[]}'); }
 function saveUserStore(s){ localStorage.setItem(USER_KEY, JSON.stringify(s)); }
 function addUserVoce(itWord, enTrans){
@@ -374,7 +386,7 @@ function renderHome(){
 
   const grid = $(`<div class="grid"></div>`);
   const tiles = [
-    ["&#127183;","Flashcards","IT &#8596; EN vocabulary with spaced repetition","flash"],
+    ["&#127183;","Flashcards","Studia per argomento con spaced repetition","flash"],
     ["&#128172;","Sentences","Fill-in-the-blank with Italian audio","phrase"],
   ];
   tiles.forEach(([ico,t,d,mode])=>{
@@ -452,7 +464,7 @@ function progressBar(stage){
 
 function start(mode){
   history.pushState({screen:mode}, "");
-  if(mode==="flash") return runFlash();
+  if(mode==="flash") return pickFlashTopic();
   if(mode==="phrase") return runPhrase();
   if(mode==="diz") return runDizionario();
   if(mode==="vocab") return runVocab();
@@ -513,15 +525,53 @@ function runReference(){
   stage.appendChild(home);
 }
 
-function runFlash(){
-  const pool = [...(DB.voci||[]), ...(DB.frasi||[])].sort((a,b)=>dueScore(b.id)-dueScore(a.id));
-  const deck = pool.slice(0, Math.min(12, pool.length));
+function pickFlashTopic(){
+  const stage = header();
+  stage.appendChild($(`<div style="margin-bottom:14px"><b style="font-size:18px">Scegli argomento</b></div>`));
+
+  // "Tutti" — classic voci+frasi SRS deck
+  const allPool = [...(DB.voci||[]), ...(DB.frasi||[])];
+  const allDue = allPool.filter(x=>!srs[x.id]||box(x.id)<3).length;
+  const allBtn = $(`<button class="tile wide" style="margin-bottom:14px">
+    <div class="ico">🎲</div>
+    <div class="txt">
+      <div class="t">Tutti gli argomenti</div>
+      <div class="d">${allPool.length} elementi &middot; <span style="color:var(--accent2)">${allDue} da ripassare</span></div>
+    </div>
+  </button>`);
+  allBtn.onclick = ()=>runFlash(allPool, 'Tutti');
+  stage.appendChild(allBtn);
+
+  // Topic rows — one per line for clarity
+  const list = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
+  for(const [tag, label] of Object.entries(TOPIC_LABELS)){
+    const words = (DB.dizionario||[]).filter(e=>e.tag&&e.tag.includes(tag));
+    if(!words.length) continue;
+    const due = words.filter(e=>!srs[e.id]||box(e.id)<3).length;
+    const icon = TOPIC_ICONS[tag]||'📖';
+    const btn = $(`<button class="tile wide">
+      <div class="ico" style="font-size:24px">${icon}</div>
+      <div class="txt">
+        <div class="t">${label}</div>
+        <div class="d">${words.length} parole &middot; <span style="color:var(--accent2)">${due} da ripassare</span></div>
+      </div>
+    </button>`);
+    btn.onclick = ()=>runFlash(words, label);
+    list.appendChild(btn);
+  }
+  stage.appendChild(list);
+}
+
+function runFlash(pool, topicLabel){
+  const activeDeck = pool.slice().sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, pool.length));
+  const deck = activeDeck;
   let i=0;
   const stage = header();
+  if(topicLabel) stage.appendChild($(`<div style="text-align:center;margin-bottom:4px;font-size:13px;color:var(--muted)">${topicLabel}</div>`));
   const bar = progressBar(stage);
   const cardWrap = $(`<div style="width:100%"></div>`); stage.appendChild(cardWrap);
   function show(){
-    if(i>=deck.length) return finish(stage, "Flashcards done", runFlash);
+    if(i>=deck.length) return finish(stage, "Sessione completata!", pickFlashTopic);
     bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const c = deck[i]; let flipped=false;
     const frontWord = c.it || "";
