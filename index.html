@@ -725,7 +725,27 @@ function runFlash(pool, topicLabel){
 }
 
 
-function runPhrase(){
+function runPhrase(level){
+  if(level === undefined){
+    const stage = header();
+    stage.appendChild($(`<h2 style="margin:0 0 6px;font-size:20px">Sentences</h2>`));
+    stage.appendChild($(`<p style="color:var(--muted);margin:0 0 20px;font-size:14px">Scegli il livello di difficoltà:</p>`));
+    const levels = [
+      [1,'⭐ Facile','Frasi semplici — vocabolario di base'],
+      [2,'⭐⭐ Medio','Frasi di complessità media'],
+      [3,'⭐⭐⭐ Difficile','Frasi avanzate — congiuntivo, condizionale'],
+      [0,'🎲 Mix','Livelli misti — selezionati a caso'],
+    ];
+    levels.forEach(([lvl,label,desc])=>{
+      const btn=$(`<button class="tile wide" style="margin-bottom:10px">
+        <div class="txt"><div class="t">${label}</div><div class="d">${desc}</div></div>
+      </button>`);
+      btn.onclick=()=>runPhrase(lvl);
+      stage.appendChild(btn);
+    });
+    return;
+  }
+
   const SKIP = new Set(['il','lo','la','i','gli','le','un','una','uno','di','da','in','con','su','per','tra','fra','a','e','o','ma','se','che','non','è','si','ci','vi','mi','ti','ho','ha','ai','al','del','della','dello','delle','dei','degli','nel','nella','nelle','nei','negli','sul','sulla','sulle','sui','sugli','dal','dalla','dalle','dai','dagli','alla','alle','agli','come','più','già','anche','molto','poi','così','però','quando','dove','cui','chi']);
 
   // Pool of content words from frasi + voci for distractors
@@ -747,7 +767,10 @@ function runPhrase(){
     return pool.filter(w=>Math.abs(w.length-answer.length)<=2);
   }
 
-  const deck = sample(DB.frasi||[], Math.min(8,(DB.frasi||[]).length));
+  const allFrasi = DB.frasi||[];
+  const filtered = level===0 ? allFrasi : allFrasi.filter(f=>f.difficolta===level);
+  const pool = filtered.length ? filtered : allFrasi;
+  const deck = sample(pool, Math.min(8, pool.length));
   if(!deck.length) return;
   let i=0;
   const stage = header();
