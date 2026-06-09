@@ -11,345 +11,1378 @@
       "La grammatica italiana — M. Dardano & P. Trifone"
     ]
   },
-  "pronuncia": [
-    {"id":"p001","it":"double consonants (geminate)","suono":"held twice as long — changes meaning","en":"Hold the consonant for twice the duration. This is phonemic: nono (ninth) ≠ nonno (grandfather), pala (shovel) ≠ palla (ball), casa ≠ cassa.","esempio":"nonno, palla, cassa, letto, mamma, notte","tag":["consonants"]},
-    {"id":"p002","it":"gli","suono":"/ʎ/ — palatal lateral (single sound)","en":"A palatal lateral consonant — like 'll' in Spanish 'llegar'. It is ONE sound, not /g/+/l/. Lips do not round for /g/ at all.","esempio":"figlio, moglie, voglio, aglio, famiglia, luglio","tag":["consonants"]},
-    {"id":"p003","it":"gn","suono":"/ɲ/ — palatal nasal (single sound)","en":"A palatal nasal — like Spanish 'ñ' or French 'gn' in 'montagne'. ONE sound, not /g/+/n/.","esempio":"gnocchi, bagno, lavagna, signore, cognome, compagno","tag":["consonants"]},
-    {"id":"p004","it":"sc + e or i","suono":"/ʃ/ — like 'sh' in sheep","en":"Before e or i, sc is pronounced like English 'sh'. Not /sk/ in this position.","esempio":"scena, scienza, sci, uscire, piscina, prosciutto","tag":["consonants"]},
-    {"id":"p005","it":"sc + a, o, u","suono":"/sk/ — hard cluster","en":"Before a, o, u or consonants, sc is hard /sk/ as in 'sky'.","esempio":"scarpa, scuola, scopo, schema, scrivere, disco","tag":["consonants"]},
-    {"id":"p006","it":"c + e or i","suono":"/tʃ/ — like 'ch' in church","en":"Before e or i, c is /tʃ/. To keep c hard before e/i, add h: che /ke/, chi /ki/.","esempio":"cena, cinema, cielo, dolce, arrivederci, amici","tag":["consonants"]},
-    {"id":"p007","it":"g + e or i","suono":"/dʒ/ — like 'j' in jump","en":"Before e or i, g is /dʒ/. To keep g hard before e/i, add h: ghetto, laghi.","esempio":"gente, giorno, gelato, giusto, giugno, viaggiare","tag":["consonants"]},
-    {"id":"p008","it":"ch (before e or i)","suono":"/k/ — always hard c","en":"Ch before e or i is always hard /k/. The h prevents the soft reading. Never /tʃ/.","esempio":"che, chi, chiave, chiesa, anche, perché, occhi","tag":["consonants"]},
-    {"id":"p009","it":"z","suono":"/ts/ or /dz/ — varies by word","en":"Z can be voiceless /ts/ (like 'ts' in cats) or voiced /dz/ (like 'ds' in beds). This varies by word and region; both occur.","esempio":"pizza /ts/, grazie /ts/, zero /dz/, mezzo /dz/, marzo","tag":["consonants"]},
-    {"id":"p010","it":"h","suono":"always silent — never pronounced","en":"H is always silent in Italian. It only appears in verb forms (ho, hai, ha, hanno) and to harden c/g before e/i.","esempio":"ho, hai, ha, hanno — che /ke/, chi /ki/, ghetto, laghi","tag":["consonants"]},
-    {"id":"p011","it":"stress: paroxytone (piano)","suono":"stress on second-to-last syllable","en":"Over 80% of Italian words stress the penultimate (second-to-last) syllable. No accent mark is written.","esempio":"pa-DRE, a-MO-re, par-LA-re, stu-DEN-te, ca-PI-to-lo","tag":["stress"]},
-    {"id":"p012","it":"stress: proparoxytone (sdrucciolo)","suono":"stress on third-to-last syllable","en":"Many common Italian words stress the antepenultimate syllable. No accent mark is written — learn these by memorisation.","esempio":"MAC-chi-na, CA-me-ra, ME-di-co, TA-vo-lo, a-bi-ta-no","tag":["stress"]},
-    {"id":"p013","it":"stress: oxytone (tronco)","suono":"stress on final syllable — always marked","en":"When the last syllable is stressed, a grave accent is mandatory. Without it the word looks misspelled.","esempio":"cit-TÀ, caf-FÈ, pe-RÒ, vir-TÙ, co-SÌ, già","tag":["stress"]},
-    {"id":"p014","it":"e: open /ɛ/ vs closed /e/","suono":"open è (/ɛ/) vs closed é (/e/) — can change meaning","en":"Open è sounds like 'e' in 'bed'; closed é like French 'été'. Both are written as plain 'e' mid-word in standard orthography.","esempio":"vènto (wind) vs vénto (I went), pèsca (peach) vs pésca (fishing)","tag":["vowels"]},
-    {"id":"p015","it":"o: open /ɔ/ vs closed /o/","suono":"open ò (/ɔ/) vs closed ó (/o/) — can change meaning","en":"Open ò sounds like 'o' in 'hot'; closed ó like 'o' in 'go'. Both written as plain 'o' mid-word.","esempio":"bòllo (stamp) vs bóllo (I boil), cólto (picked) vs còlto (cultured)","tag":["vowels"]}
-  ],
   "voci": [
-    {"id":"v001","tipo":"connettivo","it":"tuttavia","en":"however / nevertheless / yet","registro":"formal","tag":["connectives","discourse"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v002","tipo":"connettivo","it":"nonostante","en":"despite / in spite of (+ noun) or although (+ congiuntivo)","registro":"formal","tag":["connectives","concessive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v003","tipo":"connettivo","it":"dunque","en":"therefore / so / then (logical conclusion)","registro":"formal","tag":["connectives","discourse"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v004","tipo":"connettivo","it":"pertanto","en":"therefore / consequently (more formal than dunque)","registro":"formal","tag":["connectives","discourse"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v005","tipo":"connettivo","it":"eppure","en":"and yet / nevertheless / but still (surprising contrast)","registro":"neutral","tag":["connectives","adversative"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v006","tipo":"connettivo","it":"sebbene","en":"although / even though (always + congiuntivo)","registro":"formal","tag":["connectives","concessive","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v007","tipo":"connettivo","it":"benché","en":"although / even though (always + congiuntivo)","registro":"formal","tag":["connectives","concessive","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v008","tipo":"connettivo","it":"qualora","en":"should / in case / if (formal conditional, + congiuntivo)","registro":"formal","tag":["connectives","conditional","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v009","tipo":"connettivo","it":"affinché","en":"so that / in order that (purpose, + congiuntivo)","registro":"formal","tag":["connectives","purpose","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v010","tipo":"connettivo","it":"purché","en":"provided that / as long as (+ congiuntivo)","registro":"formal","tag":["connectives","conditional","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v011","tipo":"connettivo","it":"siccome","en":"since / as / given that (causal; always + indicativo)","registro":"neutral","tag":["connectives","causal"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v012","tipo":"connettivo","it":"altrimenti","en":"otherwise / or else","registro":"neutral","tag":["connectives","conditional"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v013","tipo":"connettivo","it":"comunque","en":"anyway / however / regardless (concessive)","registro":"neutral","tag":["connectives","concessive"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v014","tipo":"connettivo","it":"anzi","en":"on the contrary / in fact / actually (reinforces or corrects)","registro":"neutral","tag":["connectives","adversative"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v015","tipo":"connettivo","it":"ormai","en":"by now / already / at this point (irreversible situation)","registro":"neutral","tag":["connectives","temporal"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v016","tipo":"verbo","it":"sostenere","en":"to maintain / argue / support (a thesis or position)","registro":"formal","tag":["verbs","argumentation"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v017","tipo":"verbo","it":"ritenere","en":"to believe / consider / deem (formal equivalent of pensare)","registro":"formal","tag":["verbs","opinion"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v018","tipo":"verbo","it":"affermare","en":"to affirm / state / assert","registro":"formal","tag":["verbs","reporting"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v019","tipo":"verbo","it":"confutare","en":"to refute / rebut / disprove","registro":"formal","tag":["verbs","argumentation"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v020","tipo":"verbo","it":"riconoscere","en":"to acknowledge / recognize / admit (a fact)","registro":"formal","tag":["verbs","opinion"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v021","tipo":"verbo","it":"rendersi conto di","en":"to realize / become aware of (+ che + indicativo)","registro":"neutral","tag":["verbs","cognition"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v022","tipo":"verbo","it":"accorgersi di","en":"to notice / suddenly realize (reflexive, + che)","registro":"neutral","tag":["verbs","cognition"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v023","tipo":"verbo","it":"approfondire","en":"to delve into / explore in depth / deepen knowledge","registro":"formal","tag":["verbs","academic"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v024","tipo":"verbo","it":"trascurare","en":"to neglect / overlook / disregard","registro":"neutral","tag":["verbs","academic"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v025","tipo":"verbo","it":"pretendere","en":"to claim / demand / expect — NOT 'to pretend' (= fingere)","registro":"neutral","ipa":"⚠ false friend: pretend = fingere","tag":["verbs","false-friends"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v026","tipo":"verbo","it":"riuscire a","en":"to manage to / succeed in / be able to (+ infinito)","registro":"neutral","tag":["verbs","modal-verbs"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v027","tipo":"verbo","it":"avere luogo","en":"to take place / occur (formal; equivalent of svolgersi)","registro":"formal","tag":["verbs","formal-expression"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v028","tipo":"verbo","it":"dar luogo a","en":"to give rise to / lead to / result in","registro":"formal","tag":["verbs","formal-expression"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v029","tipo":"verbo","it":"mettere in luce","en":"to highlight / bring to light / reveal","registro":"formal","tag":["verbs","formal-expression"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v030","tipo":"verbo","it":"prendere piede","en":"to gain ground / spread / take hold (of a trend or idea)","registro":"neutral","tag":["verbs","idioms"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v031","tipo":"sostantivo","it":"la consapevolezza","en":"awareness / consciousness / realization","registro":"formal","tag":["nouns","abstract"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v032","tipo":"sostantivo","it":"il rimpianto","en":"regret / remorse","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v033","tipo":"sostantivo","it":"il sollievo","en":"relief","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v034","tipo":"sostantivo","it":"la fiducia","en":"trust / confidence / faith (in someone)","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v035","tipo":"sostantivo","it":"l'orgoglio","en":"pride","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v036","tipo":"sostantivo","it":"la vergogna","en":"shame / embarrassment","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v037","tipo":"sostantivo","it":"l'ansia","en":"anxiety / worry / eagerness","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v038","tipo":"sostantivo","it":"il risentimento","en":"resentment / grudge","registro":"neutral","tag":["nouns","emotions"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v039","tipo":"sostantivo","it":"la nostalgia","en":"nostalgia / homesickness / longing","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v040","tipo":"sostantivo","it":"l'entusiasmo","en":"enthusiasm / eagerness","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v041","tipo":"sostantivo","it":"il dibattito","en":"debate / discussion (formal)","registro":"formal","tag":["nouns","academic"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v042","tipo":"sostantivo","it":"la tesi","en":"thesis / argument / position","registro":"formal","tag":["nouns","academic"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v043","tipo":"sostantivo","it":"il pregiudizio","en":"prejudice / bias — NOT 'legal prejudice' (= danno)","registro":"formal","ipa":"⚠ partial false friend","tag":["nouns","academic","false-friends"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v044","tipo":"sostantivo","it":"la mancanza","en":"lack / absence / shortcoming; missing someone (sento la tua mancanza)","registro":"neutral","tag":["nouns","abstract"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v045","tipo":"sostantivo","it":"il senso di colpa","en":"sense of guilt / guilty conscience","registro":"neutral","tag":["nouns","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v046","tipo":"aggettivo","it":"consapevole","en":"aware / conscious of (consapevole di)","registro":"formal","tag":["adjectives","b2"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v047","tipo":"aggettivo","it":"perspicace","en":"perceptive / shrewd / astute","registro":"formal","tag":["adjectives","b2"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v048","tipo":"aggettivo","it":"lodevole","en":"praiseworthy / commendable / laudable","registro":"formal","tag":["adjectives","formal"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v049","tipo":"aggettivo","it":"scrupoloso","en":"scrupulous / thorough / meticulous","registro":"formal","tag":["adjectives","b2"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v050","tipo":"aggettivo","it":"ambiguo","en":"ambiguous / unclear / equivocal","registro":"neutral","tag":["adjectives","b2"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v051","tipo":"aggettivo","it":"incisivo","en":"incisive / sharp / cutting (style, argument)","registro":"formal","tag":["adjectives","b2"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v052","tipo":"aggettivo","it":"futile","en":"futile / pointless / trivial","registro":"formal","tag":["adjectives","b2"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v053","tipo":"aggettivo","it":"caparbio","en":"stubborn / headstrong / doggedly determined","registro":"neutral","tag":["adjectives","character"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v054","tipo":"aggettivo","it":"ingente","en":"huge / substantial / considerable (of sums, losses)","registro":"formal","tag":["adjectives","formal"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v055","tipo":"aggettivo","it":"suscettibile","en":"touchy / sensitive — NOT always 'susceptible' (= vulnerabile)","registro":"neutral","ipa":"⚠ partial false friend","tag":["adjectives","false-friends"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v056","tipo":"espressione","it":"fare le ore piccole","en":"to stay up very late / burn the midnight oil","registro":"informal","tag":["idioms","time"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v057","tipo":"espressione","it":"avere la testa tra le nuvole","en":"to have one's head in the clouds / be a daydreamer","registro":"informal","tag":["idioms","character"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v058","tipo":"espressione","it":"fare finta di","en":"to pretend to / feign (+ infinito)","registro":"neutral","tag":["idioms","behaviour"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v059","tipo":"espressione","it":"tenere conto di","en":"to take into account / bear in mind","registro":"neutral","tag":["idioms","academic"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v060","tipo":"espressione","it":"mettersi nei panni di","en":"to put oneself in someone's shoes","registro":"neutral","tag":["idioms","empathy"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v061","tipo":"espressione","it":"a tutti i costi","en":"at all costs / no matter what","registro":"neutral","tag":["idioms","determination"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v062","tipo":"espressione","it":"prendere in giro","en":"to tease / make fun of / pull someone's leg","registro":"informal","tag":["idioms","social"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v063","tipo":"espressione","it":"andare a rotoli","en":"to go to pieces / fall apart / go down the drain","registro":"informal","tag":["idioms","failure"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v064","tipo":"espressione","it":"non avercela fatta","en":"to have failed / not managed (to do something)","registro":"neutral","tag":["idioms","failure"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v065","tipo":"espressione","it":"stare a cuore","en":"to be close to one's heart / to matter deeply (mi sta a cuore)","registro":"neutral","tag":["idioms","emotions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v066","tipo":"struttura","it":"a meno che (non)","en":"unless (+ congiuntivo; the non is optional/expletive)","registro":"formal","tag":["structures","conditional","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v067","tipo":"struttura","it":"nel caso in cui","en":"in case / in the event that (+ congiuntivo)","registro":"formal","tag":["structures","conditional","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v068","tipo":"struttura","it":"a condizione che","en":"on condition that / provided that (+ congiuntivo)","registro":"formal","tag":["structures","conditional","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v069","tipo":"struttura","it":"dal momento che","en":"since / given that / seeing as (+ indicativo)","registro":"formal","tag":["structures","causal"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v070","tipo":"struttura","it":"a prescindere da","en":"regardless of / irrespective of","registro":"formal","tag":["structures","concessive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v071","tipo":"struttura","it":"in modo che","en":"so that / in such a way that (purpose; + congiuntivo)","registro":"neutral","tag":["structures","purpose","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v072","tipo":"struttura","it":"prima che","en":"before (temporal; + congiuntivo — not indicativo)","registro":"neutral","tag":["structures","temporal","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v073","tipo":"struttura","it":"man mano che","en":"as / gradually as / progressively (+ indicativo)","registro":"neutral","tag":["structures","temporal"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v074","tipo":"vocabolo","it":"eventuale","en":"possible / potential — NOT 'eventual' (= finale)","registro":"neutral","ipa":"⚠ false friend: eventual = finale","tag":["false-friends","b2"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v075","tipo":"vocabolo","it":"attuale","en":"current / present — NOT 'actual' (= reale / effettivo)","registro":"neutral","ipa":"⚠ false friend: actual = reale","tag":["false-friends","b2"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v076","tipo":"vocabolo","it":"la libreria","en":"bookshop / bookstore — NOT 'library' (= la biblioteca)","registro":"neutral","ipa":"⚠ false friend: library = biblioteca","tag":["false-friends","b2"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v077","tipo":"vocabolo","it":"sensibile","en":"sensitive / perceptible / significant — NOT 'sensible' (= ragionevole)","registro":"neutral","ipa":"⚠ false friend: sensible = ragionevole","tag":["false-friends","b2"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"v078","tipo":"vocabolo","it":"annoiato","en":"bored — NOT 'annoyed' (= infastidito / seccato)","registro":"neutral","ipa":"⚠ false friend: annoyed = infastidito","tag":["false-friends","b2"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v079","tipo":"vocabolo","it":"la fabbrica","en":"factory / manufacturing plant — NOT 'fabric' (= il tessuto)","registro":"neutral","ipa":"⚠ false friend: fabric = tessuto","tag":["false-friends","b2"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"v080","tipo":"vocabolo","it":"il carattere","en":"character / personality / temperament (of a person)","registro":"neutral","tag":["nouns","character"],"difficolta":2,"aggiunto":"2026-06-08"}
+    {
+      "id": "v001",
+      "tipo": "connettivo",
+      "it": "tuttavia",
+      "en": "however / nevertheless / yet",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "discourse"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v002",
+      "tipo": "connettivo",
+      "it": "nonostante",
+      "en": "despite / in spite of (+ noun) or although (+ congiuntivo)",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "concessive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v003",
+      "tipo": "connettivo",
+      "it": "dunque",
+      "en": "therefore / so / then (logical conclusion)",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "discourse"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v004",
+      "tipo": "connettivo",
+      "it": "pertanto",
+      "en": "therefore / consequently (more formal than dunque)",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "discourse"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v005",
+      "tipo": "connettivo",
+      "it": "eppure",
+      "en": "and yet / nevertheless / but still (surprising contrast)",
+      "registro": "neutral",
+      "tag": [
+        "connectives",
+        "adversative"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v006",
+      "tipo": "connettivo",
+      "it": "sebbene",
+      "en": "although / even though (always + congiuntivo)",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "concessive",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v007",
+      "tipo": "connettivo",
+      "it": "benché",
+      "en": "although / even though (always + congiuntivo)",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "concessive",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v008",
+      "tipo": "connettivo",
+      "it": "qualora",
+      "en": "should / in case / if (formal conditional, + congiuntivo)",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "conditional",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v009",
+      "tipo": "connettivo",
+      "it": "affinché",
+      "en": "so that / in order that (purpose, + congiuntivo)",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "purpose",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v010",
+      "tipo": "connettivo",
+      "it": "purché",
+      "en": "provided that / as long as (+ congiuntivo)",
+      "registro": "formal",
+      "tag": [
+        "connectives",
+        "conditional",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v011",
+      "tipo": "connettivo",
+      "it": "siccome",
+      "en": "since / as / given that (causal; always + indicativo)",
+      "registro": "neutral",
+      "tag": [
+        "connectives",
+        "causal"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v012",
+      "tipo": "connettivo",
+      "it": "altrimenti",
+      "en": "otherwise / or else",
+      "registro": "neutral",
+      "tag": [
+        "connectives",
+        "conditional"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v013",
+      "tipo": "connettivo",
+      "it": "comunque",
+      "en": "anyway / however / regardless (concessive)",
+      "registro": "neutral",
+      "tag": [
+        "connectives",
+        "concessive"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v014",
+      "tipo": "connettivo",
+      "it": "anzi",
+      "en": "on the contrary / in fact / actually (reinforces or corrects)",
+      "registro": "neutral",
+      "tag": [
+        "connectives",
+        "adversative"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v015",
+      "tipo": "connettivo",
+      "it": "ormai",
+      "en": "by now / already / at this point (irreversible situation)",
+      "registro": "neutral",
+      "tag": [
+        "connectives",
+        "temporal"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v016",
+      "tipo": "verbo",
+      "it": "sostenere",
+      "en": "to maintain / argue / support (a thesis or position)",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "argumentation"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v017",
+      "tipo": "verbo",
+      "it": "ritenere",
+      "en": "to believe / consider / deem (formal equivalent of pensare)",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "opinion"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v018",
+      "tipo": "verbo",
+      "it": "affermare",
+      "en": "to affirm / state / assert",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "reporting"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v019",
+      "tipo": "verbo",
+      "it": "confutare",
+      "en": "to refute / rebut / disprove",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "argumentation"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v020",
+      "tipo": "verbo",
+      "it": "riconoscere",
+      "en": "to acknowledge / recognize / admit (a fact)",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "opinion"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v021",
+      "tipo": "verbo",
+      "it": "rendersi conto di",
+      "en": "to realize / become aware of (+ che + indicativo)",
+      "registro": "neutral",
+      "tag": [
+        "verbs",
+        "cognition"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v022",
+      "tipo": "verbo",
+      "it": "accorgersi di",
+      "en": "to notice / suddenly realize (reflexive, + che)",
+      "registro": "neutral",
+      "tag": [
+        "verbs",
+        "cognition"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v023",
+      "tipo": "verbo",
+      "it": "approfondire",
+      "en": "to delve into / explore in depth / deepen knowledge",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "academic"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v024",
+      "tipo": "verbo",
+      "it": "trascurare",
+      "en": "to neglect / overlook / disregard",
+      "registro": "neutral",
+      "tag": [
+        "verbs",
+        "academic"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v025",
+      "tipo": "verbo",
+      "it": "pretendere",
+      "en": "to claim / demand / expect — NOT 'to pretend' (= fingere)",
+      "registro": "neutral",
+      "ipa": "⚠ false friend: pretend = fingere",
+      "tag": [
+        "verbs",
+        "false-friends"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v026",
+      "tipo": "verbo",
+      "it": "riuscire a",
+      "en": "to manage to / succeed in / be able to (+ infinito)",
+      "registro": "neutral",
+      "tag": [
+        "verbs",
+        "modal-verbs"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v027",
+      "tipo": "verbo",
+      "it": "avere luogo",
+      "en": "to take place / occur (formal; equivalent of svolgersi)",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "formal-expression"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v028",
+      "tipo": "verbo",
+      "it": "dar luogo a",
+      "en": "to give rise to / lead to / result in",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "formal-expression"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v029",
+      "tipo": "verbo",
+      "it": "mettere in luce",
+      "en": "to highlight / bring to light / reveal",
+      "registro": "formal",
+      "tag": [
+        "verbs",
+        "formal-expression"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v030",
+      "tipo": "verbo",
+      "it": "prendere piede",
+      "en": "to gain ground / spread / take hold (of a trend or idea)",
+      "registro": "neutral",
+      "tag": [
+        "verbs",
+        "idioms"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v031",
+      "tipo": "sostantivo",
+      "it": "la consapevolezza",
+      "en": "awareness / consciousness / realization",
+      "registro": "formal",
+      "tag": [
+        "nouns",
+        "abstract"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v032",
+      "tipo": "sostantivo",
+      "it": "il rimpianto",
+      "en": "regret / remorse",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v033",
+      "tipo": "sostantivo",
+      "it": "il sollievo",
+      "en": "relief",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v034",
+      "tipo": "sostantivo",
+      "it": "la fiducia",
+      "en": "trust / confidence / faith (in someone)",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v035",
+      "tipo": "sostantivo",
+      "it": "l'orgoglio",
+      "en": "pride",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v036",
+      "tipo": "sostantivo",
+      "it": "la vergogna",
+      "en": "shame / embarrassment",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v037",
+      "tipo": "sostantivo",
+      "it": "l'ansia",
+      "en": "anxiety / worry / eagerness",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v038",
+      "tipo": "sostantivo",
+      "it": "il risentimento",
+      "en": "resentment / grudge",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v039",
+      "tipo": "sostantivo",
+      "it": "la nostalgia",
+      "en": "nostalgia / homesickness / longing",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v040",
+      "tipo": "sostantivo",
+      "it": "l'entusiasmo",
+      "en": "enthusiasm / eagerness",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v041",
+      "tipo": "sostantivo",
+      "it": "il dibattito",
+      "en": "debate / discussion (formal)",
+      "registro": "formal",
+      "tag": [
+        "nouns",
+        "academic"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v042",
+      "tipo": "sostantivo",
+      "it": "la tesi",
+      "en": "thesis / argument / position",
+      "registro": "formal",
+      "tag": [
+        "nouns",
+        "academic"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v043",
+      "tipo": "sostantivo",
+      "it": "il pregiudizio",
+      "en": "prejudice / bias — NOT 'legal prejudice' (= danno)",
+      "registro": "formal",
+      "ipa": "⚠ partial false friend",
+      "tag": [
+        "nouns",
+        "academic",
+        "false-friends"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v044",
+      "tipo": "sostantivo",
+      "it": "la mancanza",
+      "en": "lack / absence / shortcoming; missing someone (sento la tua mancanza)",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "abstract"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v045",
+      "tipo": "sostantivo",
+      "it": "il senso di colpa",
+      "en": "sense of guilt / guilty conscience",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v046",
+      "tipo": "aggettivo",
+      "it": "consapevole",
+      "en": "aware / conscious of (consapevole di)",
+      "registro": "formal",
+      "tag": [
+        "adjectives",
+        "b2"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v047",
+      "tipo": "aggettivo",
+      "it": "perspicace",
+      "en": "perceptive / shrewd / astute",
+      "registro": "formal",
+      "tag": [
+        "adjectives",
+        "b2"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v048",
+      "tipo": "aggettivo",
+      "it": "lodevole",
+      "en": "praiseworthy / commendable / laudable",
+      "registro": "formal",
+      "tag": [
+        "adjectives",
+        "formal"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v049",
+      "tipo": "aggettivo",
+      "it": "scrupoloso",
+      "en": "scrupulous / thorough / meticulous",
+      "registro": "formal",
+      "tag": [
+        "adjectives",
+        "b2"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v050",
+      "tipo": "aggettivo",
+      "it": "ambiguo",
+      "en": "ambiguous / unclear / equivocal",
+      "registro": "neutral",
+      "tag": [
+        "adjectives",
+        "b2"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v051",
+      "tipo": "aggettivo",
+      "it": "incisivo",
+      "en": "incisive / sharp / cutting (style, argument)",
+      "registro": "formal",
+      "tag": [
+        "adjectives",
+        "b2"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v052",
+      "tipo": "aggettivo",
+      "it": "futile",
+      "en": "futile / pointless / trivial",
+      "registro": "formal",
+      "tag": [
+        "adjectives",
+        "b2"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v053",
+      "tipo": "aggettivo",
+      "it": "caparbio",
+      "en": "stubborn / headstrong / doggedly determined",
+      "registro": "neutral",
+      "tag": [
+        "adjectives",
+        "character"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v054",
+      "tipo": "aggettivo",
+      "it": "ingente",
+      "en": "huge / substantial / considerable (of sums, losses)",
+      "registro": "formal",
+      "tag": [
+        "adjectives",
+        "formal"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v055",
+      "tipo": "aggettivo",
+      "it": "suscettibile",
+      "en": "touchy / sensitive — NOT always 'susceptible' (= vulnerabile)",
+      "registro": "neutral",
+      "ipa": "⚠ partial false friend",
+      "tag": [
+        "adjectives",
+        "false-friends"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v056",
+      "tipo": "espressione",
+      "it": "fare le ore piccole",
+      "en": "to stay up very late / burn the midnight oil",
+      "registro": "informal",
+      "tag": [
+        "idioms",
+        "time"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v057",
+      "tipo": "espressione",
+      "it": "avere la testa tra le nuvole",
+      "en": "to have one's head in the clouds / be a daydreamer",
+      "registro": "informal",
+      "tag": [
+        "idioms",
+        "character"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v058",
+      "tipo": "espressione",
+      "it": "fare finta di",
+      "en": "to pretend to / feign (+ infinito)",
+      "registro": "neutral",
+      "tag": [
+        "idioms",
+        "behaviour"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v059",
+      "tipo": "espressione",
+      "it": "tenere conto di",
+      "en": "to take into account / bear in mind",
+      "registro": "neutral",
+      "tag": [
+        "idioms",
+        "academic"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v060",
+      "tipo": "espressione",
+      "it": "mettersi nei panni di",
+      "en": "to put oneself in someone's shoes",
+      "registro": "neutral",
+      "tag": [
+        "idioms",
+        "empathy"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v061",
+      "tipo": "espressione",
+      "it": "a tutti i costi",
+      "en": "at all costs / no matter what",
+      "registro": "neutral",
+      "tag": [
+        "idioms",
+        "determination"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v062",
+      "tipo": "espressione",
+      "it": "prendere in giro",
+      "en": "to tease / make fun of / pull someone's leg",
+      "registro": "informal",
+      "tag": [
+        "idioms",
+        "social"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v063",
+      "tipo": "espressione",
+      "it": "andare a rotoli",
+      "en": "to go to pieces / fall apart / go down the drain",
+      "registro": "informal",
+      "tag": [
+        "idioms",
+        "failure"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v064",
+      "tipo": "espressione",
+      "it": "non avercela fatta",
+      "en": "to have failed / not managed (to do something)",
+      "registro": "neutral",
+      "tag": [
+        "idioms",
+        "failure"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v065",
+      "tipo": "espressione",
+      "it": "stare a cuore",
+      "en": "to be close to one's heart / to matter deeply (mi sta a cuore)",
+      "registro": "neutral",
+      "tag": [
+        "idioms",
+        "emotions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v066",
+      "tipo": "struttura",
+      "it": "a meno che (non)",
+      "en": "unless (+ congiuntivo; the non is optional/expletive)",
+      "registro": "formal",
+      "tag": [
+        "structures",
+        "conditional",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v067",
+      "tipo": "struttura",
+      "it": "nel caso in cui",
+      "en": "in case / in the event that (+ congiuntivo)",
+      "registro": "formal",
+      "tag": [
+        "structures",
+        "conditional",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v068",
+      "tipo": "struttura",
+      "it": "a condizione che",
+      "en": "on condition that / provided that (+ congiuntivo)",
+      "registro": "formal",
+      "tag": [
+        "structures",
+        "conditional",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v069",
+      "tipo": "struttura",
+      "it": "dal momento che",
+      "en": "since / given that / seeing as (+ indicativo)",
+      "registro": "formal",
+      "tag": [
+        "structures",
+        "causal"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v070",
+      "tipo": "struttura",
+      "it": "a prescindere da",
+      "en": "regardless of / irrespective of",
+      "registro": "formal",
+      "tag": [
+        "structures",
+        "concessive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v071",
+      "tipo": "struttura",
+      "it": "in modo che",
+      "en": "so that / in such a way that (purpose; + congiuntivo)",
+      "registro": "neutral",
+      "tag": [
+        "structures",
+        "purpose",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v072",
+      "tipo": "struttura",
+      "it": "prima che",
+      "en": "before (temporal; + congiuntivo — not indicativo)",
+      "registro": "neutral",
+      "tag": [
+        "structures",
+        "temporal",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v073",
+      "tipo": "struttura",
+      "it": "man mano che",
+      "en": "as / gradually as / progressively (+ indicativo)",
+      "registro": "neutral",
+      "tag": [
+        "structures",
+        "temporal"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v074",
+      "tipo": "vocabolo",
+      "it": "eventuale",
+      "en": "possible / potential — NOT 'eventual' (= finale)",
+      "registro": "neutral",
+      "ipa": "⚠ false friend: eventual = finale",
+      "tag": [
+        "false-friends",
+        "b2"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v075",
+      "tipo": "vocabolo",
+      "it": "attuale",
+      "en": "current / present — NOT 'actual' (= reale / effettivo)",
+      "registro": "neutral",
+      "ipa": "⚠ false friend: actual = reale",
+      "tag": [
+        "false-friends",
+        "b2"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v076",
+      "tipo": "vocabolo",
+      "it": "la libreria",
+      "en": "bookshop / bookstore — NOT 'library' (= la biblioteca)",
+      "registro": "neutral",
+      "ipa": "⚠ false friend: library = biblioteca",
+      "tag": [
+        "false-friends",
+        "b2"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v077",
+      "tipo": "vocabolo",
+      "it": "sensibile",
+      "en": "sensitive / perceptible / significant — NOT 'sensible' (= ragionevole)",
+      "registro": "neutral",
+      "ipa": "⚠ false friend: sensible = ragionevole",
+      "tag": [
+        "false-friends",
+        "b2"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v078",
+      "tipo": "vocabolo",
+      "it": "annoiato",
+      "en": "bored — NOT 'annoyed' (= infastidito / seccato)",
+      "registro": "neutral",
+      "ipa": "⚠ false friend: annoyed = infastidito",
+      "tag": [
+        "false-friends",
+        "b2"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v079",
+      "tipo": "vocabolo",
+      "it": "la fabbrica",
+      "en": "factory / manufacturing plant — NOT 'fabric' (= il tessuto)",
+      "registro": "neutral",
+      "ipa": "⚠ false friend: fabric = tessuto",
+      "tag": [
+        "false-friends",
+        "b2"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "v080",
+      "tipo": "vocabolo",
+      "it": "il carattere",
+      "en": "character / personality / temperament (of a person)",
+      "registro": "neutral",
+      "tag": [
+        "nouns",
+        "character"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    }
   ],
   "frasi": [
-    {"id":"f001","it":"Sebbene sia stanco, continuerà a lavorare.","en":"Although he is tired, he will keep working.","tag":["concessive","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f002","it":"Non pensavo che lui avesse ragione.","en":"I didn't think he was right.","tag":["subjunctive-imperfect","opinion"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f003","it":"Se studiassi di più, passeresti l'esame.","en":"If you studied more, you would pass the exam.","tag":["conditional-2","hypothesis"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f004","it":"Vorrei che tu mi dicessi la verità.","en":"I would like you to tell me the truth.","tag":["conditional","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f005","it":"Glielo dirò domani quando lo vedrò.","en":"I'll tell it to him tomorrow when I see him.","tag":["combined-pronouns","future"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f006","it":"La lettera è stata scritta dal direttore.","en":"The letter was written by the director.","tag":["passive","past"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"f007","it":"Mi ha detto che sarebbe venuto prima.","en":"He told me he would have come earlier.","tag":["reported-speech","conditional"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f008","it":"Nonostante le difficoltà, ha raggiunto il suo obiettivo.","en":"Despite the difficulties, he reached his goal.","tag":["concessive","prepositions"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"f009","it":"Se avessi saputo, ti avrei aiutato.","en":"If I had known, I would have helped you.","tag":["conditional-3","subjunctive-past"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f010","it":"Bisogna che tutti rispettino le regole.","en":"Everyone must respect the rules.","tag":["impersonal","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f011","it":"Ne ho parlato con i colleghi ieri.","en":"I talked about it with my colleagues yesterday.","tag":["ne-pronoun","past"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"f012","it":"Doveva essere una persona molto capace.","en":"She must have been a very capable person. (probability)","tag":["dovere-probability","imperfect"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f013","it":"Il progetto verrà presentato domani mattina.","en":"The project will be presented tomorrow morning.","tag":["passive-venire","future"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f014","it":"Spero che tu possa venire alla festa.","en":"I hope you can come to the party.","tag":["subjunctive","hope"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"f015","it":"Ha fatto finta di non vederci.","en":"She pretended not to see us.","tag":["idioms","pronouns"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"f016","it":"Affinché il progetto riesca, serve più collaborazione.","en":"For the project to succeed, more collaboration is needed.","tag":["purpose","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f017","it":"Purché arrivi in tempo, tutto andrà bene.","en":"Provided he arrives on time, everything will be fine.","tag":["conditional","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f018","it":"Mi sono accorta che qualcosa non andava.","en":"I noticed that something wasn't right.","tag":["accorgersi","reflexive","past"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"f019","it":"Si ritiene che il cambiamento climatico sia urgente.","en":"It is believed that climate change is urgent.","tag":["impersonal","subjunctive","passive"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f020","it":"Anche se fossi ricco, non sarei felice.","en":"Even if I were rich, I would not be happy.","tag":["conditional-2","subjunctive-imperfect"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f021","it":"La questione va affrontata con serietà.","en":"The issue must be tackled seriously. (obligation)","tag":["passive-andare","obligation"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f022","it":"Non capisco il motivo per cui se ne va.","en":"I don't understand the reason why he's leaving.","tag":["relative-pronouns","ne-pronoun"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f023","it":"Ha detto che stava studiando per l'esame.","en":"He said he was studying for the exam.","tag":["reported-speech","imperfect"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"f024","it":"Vorrei che la situazione fosse diversa.","en":"I wish the situation were different.","tag":["conditional","subjunctive-imperfect"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f025","it":"Il libro di cui ti ho parlato è esaurito.","en":"The book I told you about is out of stock.","tag":["relative-pronouns","cui"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f026","it":"Man mano che cresceva, diventava più sicuro di sé.","en":"As he grew up, he became more self-confident.","tag":["temporal","gradual"],"difficolta":3,"aggiunto":"2026-06-08"},
-    {"id":"f027","it":"Malgrado tutto, rimango ottimista.","en":"Despite everything, I remain optimistic.","tag":["concessive","formal"],"difficolta":2,"aggiunto":"2026-06-08"},
-    {"id":"f028","it":"A meno che non cambi idea, partiamo domani.","en":"Unless he changes his mind, we leave tomorrow.","tag":["a-meno-che","subjunctive"],"difficolta":3,"aggiunto":"2026-06-08"}
-  ],
-  "grammatica": [
     {
-      "id": "g001",
-      "categoria": "Verb Tenses",
-      "titolo": "Passato Prossimo vs Imperfetto",
-      "spiegazione": "<b>Passato Prossimo</b> (ho letto, sono andato): completed, one-off or bounded past action. <b>Imperfetto</b> (leggevo, andavo): habitual past action, background description, ongoing state, or an action interrupted by another. Key signal words: <i>sempre, di solito, spesso, ogni giorno</i> → imperfetto; <i>ieri, una volta, all'improvviso</i> → passato prossimo.",
-      "drill": [
-        {"domanda": "Habitual past action ('I used to go every day')", "risposta": "Imperfetto"},
-        {"domanda": "Completed, specific past event ('I read the book yesterday')", "risposta": "Passato Prossimo"},
-        {"domanda": "Background description ('It was raining and people were walking quickly')", "risposta": "Imperfetto"},
-        {"domanda": "Sudden change of state ('He suddenly understood')", "risposta": "Passato Prossimo"},
-        {"domanda": "Ongoing action interrupted by another ('She was sleeping when the phone rang')", "risposta": "Imperfetto"},
-        {"domanda": "Action with a definite start and end ('They arrived at 8 and left at 10')", "risposta": "Passato Prossimo"}
-      ]
+      "id": "f001",
+      "it": "Sebbene sia stanco, continuerà a lavorare.",
+      "en": "Although he is tired, he will keep working.",
+      "tag": [
+        "concessive",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g002",
-      "categoria": "Verb Tenses",
-      "titolo": "The Subjunctive: When and Why",
-      "spiegazione": "The <b>congiuntivo</b> is required in subordinate clauses introduced by verbs/expressions of: opinion (pensare, credere, ritenere), wish/desire (volere, desiderare, sperare), doubt/denial (dubitare, negare), emotion (essere contento/triste che), necessity (bisogna che, è necessario che), and many conjunctions (sebbene, affinché, purché, prima che, a meno che).",
-      "drill": [
-        {"domanda": "After 'penso che...' the verb is in...", "risposta": "congiuntivo"},
-        {"domanda": "After 'sono sicuro che...' the verb is in...", "risposta": "indicativo"},
-        {"domanda": "After 'voglio che tu...' the verb is in...", "risposta": "congiuntivo"},
-        {"domanda": "After 'sebbene...' the verb is in...", "risposta": "congiuntivo"},
-        {"domanda": "After 'è ovvio che...' the verb is in...", "risposta": "indicativo"},
-        {"domanda": "After 'affinché...' the verb is in...", "risposta": "congiuntivo"}
-      ]
+      "id": "f002",
+      "it": "Non pensavo che lui avesse ragione.",
+      "en": "I didn't think he was right.",
+      "tag": [
+        "subjunctive-imperfect",
+        "opinion"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g003",
-      "categoria": "Subjunctive",
-      "titolo": "Congiuntivo Presente: Conjugation",
-      "spiegazione": "Regular endings: <b>-ARE</b>: -i, -i, -i, -iamo, -iate, -ino (parliamo→parliamo!). <b>-ERE/-IRE</b>: -a, -a, -a, -iamo, -iate, -ano. Key irregulars: essere→sia, avere→abbia, fare→faccia, andare→vada, venire→venga, dire→dica, potere→possa, dovere→debba/deva, sapere→sappia, volere→voglia.",
-      "drill": [
-        {"domanda": "voglio che lui (venire) → congiuntivo presente", "risposta": "venga"},
-        {"domanda": "spero che lei (avere) ragione → congiuntivo presente", "risposta": "abbia"},
-        {"domanda": "è necessario che noi (fare) così → congiuntivo presente", "risposta": "facciamo"},
-        {"domanda": "penso che loro (essere) pronti → congiuntivo presente", "risposta": "siano"},
-        {"domanda": "dubito che tu (dire) la verità → congiuntivo presente", "risposta": "dica"},
-        {"domanda": "voglio che voi (potere) venire → congiuntivo presente", "risposta": "possiate"}
-      ]
+      "id": "f003",
+      "it": "Se studiassi di più, passeresti l'esame.",
+      "en": "If you studied more, you would pass the exam.",
+      "tag": [
+        "conditional-2",
+        "hypothesis"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g004",
-      "categoria": "Subjunctive",
-      "titolo": "Congiuntivo Imperfetto: Conjugation and Use",
-      "spiegazione": "Used when the main verb is past or conditional. Regular endings added to root: <b>-ARE</b>: -assi, -assi, -asse, -assimo, -aste, -assero. <b>-ERE</b>: -essi, -essi, -esse, -essimo, -este, -essero. <b>-IRE</b>: -issi, -issi, -isse, -issimo, -iste, -issero. Key irregolars: essere→fossi, dare→dessi, stare→stessi.",
-      "drill": [
-        {"domanda": "volevo che lui (venire) → congiuntivo imperfetto", "risposta": "venisse"},
-        {"domanda": "speravo che lei (avere) → congiuntivo imperfetto", "risposta": "avesse"},
-        {"domanda": "credevo che loro (essere) → congiuntivo imperfetto", "risposta": "fossero"},
-        {"domanda": "vorrei che tu (parlare) → congiuntivo imperfetto", "risposta": "parlassi"},
-        {"domanda": "se io (potere)... → congiuntivo imperfetto", "risposta": "potessi"},
-        {"domanda": "come se lui (sapere) tutto → congiuntivo imperfetto", "risposta": "sapesse"}
-      ]
+      "id": "f004",
+      "it": "Vorrei che tu mi dicessi la verità.",
+      "en": "I would like you to tell me the truth.",
+      "tag": [
+        "conditional",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g005",
-      "categoria": "Subjunctive",
-      "titolo": "Conjunctions Requiring the Subjunctive",
-      "spiegazione": "These conjunctions ALWAYS take the congiuntivo in the following clause: <b>sebbene / benché / nonostante / malgrado</b> (although); <b>affinché / perché</b> (so that); <b>purché / a condizione che / a patto che</b> (provided that); <b>prima che</b> (before); <b>a meno che non</b> (unless); <b>qualora / nel caso in cui</b> (in case); <b>senza che</b> (without).",
-      "drill": [
-        {"domanda": "Which conjunction means 'although' and requires congiuntivo?", "risposta": "sebbene / benché"},
-        {"domanda": "Which conjunction means 'so that' and requires congiuntivo?", "risposta": "affinché / perché"},
-        {"domanda": "Which means 'provided that' + congiuntivo?", "risposta": "purché"},
-        {"domanda": "Which means 'before' + congiuntivo (with different subject)?", "risposta": "prima che"},
-        {"domanda": "Which means 'unless' + congiuntivo?", "risposta": "a meno che non"},
-        {"domanda": "'siccome' takes indicativo or congiuntivo?", "risposta": "indicativo"}
-      ]
+      "id": "f005",
+      "it": "Glielo dirò domani quando lo vedrò.",
+      "en": "I'll tell it to him tomorrow when I see him.",
+      "tag": [
+        "combined-pronouns",
+        "future"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g006",
-      "categoria": "Conditional",
-      "titolo": "Condizionale Presente: Uses",
-      "spiegazione": "The condizionale presente (parlerei, verrei) is used for: (1) <b>polite requests</b>: Vorrei un caffè / Potresti aiutarmi?; (2) <b>hypothetical present</b> (in the main clause of type-II conditionals): Se avessi tempo, studierei di più; (3) <b>reported future</b>: Ha detto che sarebbe venuto; (4) <b>unverified information</b> (journalistic): Secondo fonti, il governo cadrebbe.",
-      "drill": [
-        {"domanda": "Polite request: 'Could you help me?' (potere)", "risposta": "Potresti aiutarmi?"},
-        {"domanda": "Polite wish: 'I would like a coffee' (volere)", "risposta": "Vorrei un caffè."},
-        {"domanda": "Main clause of type-II conditional (if I had time, I would study)", "risposta": "condizionale presente"},
-        {"domanda": "'He said he would come' — the indirect speech verb is...", "risposta": "condizionale presente (sarebbe venuto)"},
-        {"domanda": "Unverified news report: the government 'would fall' — verb mood?", "risposta": "condizionale presente"},
-        {"domanda": "'I would like to go, but I can't' — verb mood?", "risposta": "condizionale presente"}
-      ]
+      "id": "f006",
+      "it": "La lettera è stata scritta dal direttore.",
+      "en": "The letter was written by the director.",
+      "tag": [
+        "passive",
+        "past"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g007",
-      "categoria": "Conditional",
-      "titolo": "Conditional Sentences: All Three Types",
-      "spiegazione": "<b>Type I</b> (real/likely): se + presente indicativo → presente/futuro indicativo. <i>Se piove, resto a casa.</i> <b>Type II</b> (possible/hypothetical): se + congiuntivo imperfetto → condizionale presente. <i>Se piovesse, resterei a casa.</i> <b>Type III</b> (impossible/contrary to fact): se + congiuntivo trapassato → condizionale passato. <i>Se fosse piovuto, sarei restato a casa.</i>",
-      "drill": [
-        {"domanda": "Type I: 'If it rains, I stay home' — tense after 'se'?", "risposta": "presente indicativo"},
-        {"domanda": "Type II: 'If I had money, I would travel' — tense after 'se'?", "risposta": "congiuntivo imperfetto"},
-        {"domanda": "Type II: main clause tense?", "risposta": "condizionale presente"},
-        {"domanda": "Type III: 'If I had known, I would have called' — tense after 'se'?", "risposta": "congiuntivo trapassato"},
-        {"domanda": "Type III: main clause tense?", "risposta": "condizionale passato"},
-        {"domanda": "Which type describes an impossible or past-contrary condition?", "risposta": "Type III"}
-      ]
+      "id": "f007",
+      "it": "Mi ha detto che sarebbe venuto prima.",
+      "en": "He told me he would have come earlier.",
+      "tag": [
+        "reported-speech",
+        "conditional"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g008",
-      "categoria": "Pronouns",
-      "titolo": "Combined Pronouns (Pronomi Doppi)",
-      "spiegazione": "When a direct object pronoun (lo, la, li, le, ne) follows an indirect object pronoun (mi, ti, gli/le, ci, vi), the indirect one changes form: <b>mi→me, ti→te, ci→ce, vi→ve</b>. Gli (him/her/them) always becomes <b>glie-</b> and is written as one word: glielo, gliela, glieli, gliele, gliene. Order: [IOP + DOP]. Position: before conjugated verbs, after infinitives, imperatives, gerunds (attached).",
-      "drill": [
-        {"domanda": "'I give it to him' (darlo a lui) → combined pronoun", "risposta": "glielo do"},
-        {"domanda": "'I give it to you' (darlo a te) → combined pronoun", "risposta": "te lo do"},
-        {"domanda": "'She showed them to me' (mostrare i libri a me) → combined", "risposta": "me li ha mostrati"},
-        {"domanda": "'Tell it to us!' (dirlo a noi) — imperative + pronouns", "risposta": "dircelo!"},
-        {"domanda": "Indirect 'mi' before 'lo' becomes...", "risposta": "me lo"},
-        {"domanda": "Indirect 'gli/le' (him/her/them) before 'la' becomes...", "risposta": "gliela"}
-      ]
+      "id": "f008",
+      "it": "Nonostante le difficoltà, ha raggiunto il suo obiettivo.",
+      "en": "Despite the difficulties, he reached his goal.",
+      "tag": [
+        "concessive",
+        "prepositions"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g009",
-      "categoria": "Pronouns",
-      "titolo": "CI and NE Pronouns",
-      "spiegazione": "<b>CI</b>: (1) 'there' (ci sono molti studenti); (2) replaces a place/location (Vado a Roma → Ci vado); (3) reflexive/reciprocal (ci vediamo); (4) idiomatic: non ci posso fare niente, non ce la faccio, ci vuole. <b>NE</b>: (1) partitive 'some of it/them' (Ne vuoi un po'?); (2) replaces di + noun (Parli di questo → Ne parli?); (3) 'from there' (Usciva dal negozio → Ne usciva).",
-      "drill": [
-        {"domanda": "'I'm going to Rome' → use CI: ___ vado", "risposta": "Ci vado"},
-        {"domanda": "'I can't take it anymore' (idiomatic) → ___ faccio più", "risposta": "Non ce la"},
-        {"domanda": "'Do you want some?' (del pane) → ___ vuoi?", "risposta": "Ne vuoi?"},
-        {"domanda": "'He talks about it a lot' (di questo) → ___ parla molto", "risposta": "Ne parla molto"},
-        {"domanda": "'It takes two hours' (idiomatic ci) → ___ vogliono due ore", "risposta": "Ci vogliono"},
-        {"domanda": "'I bought three of them' (libri) → ___ ho comprati tre", "risposta": "Ne ho comprati tre"}
-      ]
+      "id": "f009",
+      "it": "Se avessi saputo, ti avrei aiutato.",
+      "en": "If I had known, I would have helped you.",
+      "tag": [
+        "conditional-3",
+        "subjunctive-past"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g010",
-      "categoria": "Pronouns",
-      "titolo": "Relative Pronouns: che, cui, il quale, chi",
-      "spiegazione": "<b>che</b>: subject or direct object (invariable): La persona che conosco. <b>cui</b>: used after prepositions (di, a, da, in, con, su, per, tra): Il libro di cui parlo. <b>il quale / la quale / i quali / le quali</b>: formal alternative to che/cui, agrees in gender and number, used to avoid ambiguity. <b>chi</b>: whoever / the one who (no antecedent): Chi trova un amico trova un tesoro.",
-      "drill": [
-        {"domanda": "'The student who passed' — relative pronoun?", "risposta": "che"},
-        {"domanda": "'The book that I read' — relative pronoun?", "risposta": "che"},
-        {"domanda": "'The friend with whom I study' → l'amico con ___ studio", "risposta": "cui"},
-        {"domanda": "'The reason for which' (formal) → il motivo per ___", "risposta": "cui / il quale"},
-        {"domanda": "'Whoever arrives first wins' → ___ arriva primo vince", "risposta": "Chi"},
-        {"domanda": "After a preposition, use ___ not 'che'", "risposta": "cui (or il quale)"}
-      ]
+      "id": "f010",
+      "it": "Bisogna che tutti rispettino le regole.",
+      "en": "Everyone must respect the rules.",
+      "tag": [
+        "impersonal",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g011",
-      "categoria": "Passive Voice",
-      "titolo": "Passive Constructions: essere, venire, andare",
-      "spiegazione": "<b>essere + participio</b>: standard passive, all tenses, stative or dynamic: La finestra è stata rotta. <b>venire + participio</b>: only simple tenses (no compound), emphasises a dynamic/repeated action: La posta viene consegnata ogni mattina. <b>andare + participio</b>: only simple tenses, expresses obligation/necessity: Questo errore va corretto. <b>Si passivante</b>: si + verb 3rd person, impersonal: Si parla italiano qui.",
-      "drill": [
-        {"domanda": "Standard passive, all tenses — auxiliary?", "risposta": "essere"},
-        {"domanda": "Dynamic/repeated passive action, simple tenses only — auxiliary?", "risposta": "venire"},
-        {"domanda": "Passive expressing obligation/necessity — auxiliary?", "risposta": "andare"},
-        {"domanda": "'Italian is spoken here' — passive type?", "risposta": "si passivante"},
-        {"domanda": "'This error must be corrected' → questo errore ___ corretto", "risposta": "va"},
-        {"domanda": "'The letter was written' (completed, single event) → la lettera ___ scritta", "risposta": "è stata"}
-      ]
+      "id": "f011",
+      "it": "Ne ho parlato con i colleghi ieri.",
+      "en": "I talked about it with my colleagues yesterday.",
+      "tag": [
+        "ne-pronoun",
+        "past"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g012",
-      "categoria": "Reported Speech",
-      "titolo": "Discorso Indiretto: Tense Backshift",
-      "spiegazione": "When reporting with a past verb (ha detto, ha chiesto...), tenses shift: <b>presente → imperfetto</b> (dice: 'studio' → ha detto che studiava); <b>passato prossimo → trapassato</b> (ha detto: 'ho letto' → ha detto che aveva letto); <b>futuro → condizionale presente</b> (ha detto: 'verrò' → ha detto che sarebbe venuto); <b>imperativo → di + infinito</b> (ha detto: 'vieni!' → ha detto di venire). Also change: pronouns, possessives, and time expressions (oggi→quel giorno, domani→il giorno dopo).",
-      "drill": [
-        {"domanda": "Direct: 'Studio ogni giorno.' → Reported (ha detto che...)", "risposta": "studiava ogni giorno"},
-        {"domanda": "Direct: 'Ho finito.' → Reported (ha detto che...)", "risposta": "aveva finito"},
-        {"domanda": "Direct: 'Verrò domani.' → Reported (ha detto che...)", "risposta": "sarebbe venuto il giorno dopo"},
-        {"domanda": "Direct: 'Vieni qui!' → Reported (ha detto di...)", "risposta": "venire lì"},
-        {"domanda": "'oggi' in reported speech becomes...", "risposta": "quel giorno"},
-        {"domanda": "'domani' in reported speech becomes...", "risposta": "il giorno dopo / l'indomani"}
-      ]
+      "id": "f012",
+      "it": "Doveva essere una persona molto capace.",
+      "en": "She must have been a very capable person. (probability)",
+      "tag": [
+        "dovere-probability",
+        "imperfect"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g013",
-      "categoria": "Verb Tenses",
-      "titolo": "Modal Verbs: Nuanced Uses",
-      "spiegazione": "<b>dovere</b>: obligation (devi studiare) OR probability (deve essere tardi — it must be late). With condizionale: dovrei (I should). <b>potere</b>: ability (posso venire), permission (puoi uscire), possibility (può darsi). <b>volere</b>: desire (voglio) OR strong insistence/require (questa pianta vuole molta acqua). <b>sapere</b>: innate/learned ability (sa suonare vs può suonare). In compound tenses, modal + essere verb → essere auxiliary: sono dovuto uscire.",
-      "drill": [
-        {"domanda": "'It must be late' (probability) → deve ___ tardi", "risposta": "essere"},
-        {"domanda": "'I should study more' (moral obligation) → ___ studiare di più", "risposta": "dovrei"},
-        {"domanda": "'She can play piano' (learned skill) → lei ___ suonare il pianoforte", "risposta": "sa"},
-        {"domanda": "'This plant needs a lot of water' → questa pianta ___ molta acqua", "risposta": "vuole"},
-        {"domanda": "Modal + essere-verb compound: 'I had to leave' → ___ uscire", "risposta": "sono dovuto/a"},
-        {"domanda": "'You could have told me!' → ___ dirmelo!", "risposta": "Avresti potuto"}
-      ]
+      "id": "f013",
+      "it": "Il progetto verrà presentato domani mattina.",
+      "en": "The project will be presented tomorrow morning.",
+      "tag": [
+        "passive-venire",
+        "future"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g014",
-      "categoria": "Conditional",
-      "titolo": "Condizionale Passato and the Third Conditional",
-      "spiegazione": "<b>Condizionale passato</b> (avrei fatto, sarei andato): (1) unrealised intention: Avrei voluto venire, ma non ho potuto. (2) main clause of the third conditional. (3) reported future-in-the-past: Ha detto che sarebbe venuto. <b>Third conditional</b> (past impossible): se + congiuntivo trapassato (fossi stato, avessi saputo) → condizionale passato (sarei rimasto, ti avrei aiutato).",
-      "drill": [
-        {"domanda": "'I would have liked to come' (unrealised wish) → ___ voluto venire", "risposta": "Avrei"},
-        {"domanda": "'If I had known, I would have called' — type of conditional?", "risposta": "Third conditional"},
-        {"domanda": "Third conditional: se + ___ (verb tense)", "risposta": "congiuntivo trapassato"},
-        {"domanda": "Third conditional: main clause → ___ (verb tense)", "risposta": "condizionale passato"},
-        {"domanda": "'If she had studied, she would have passed' → Se avesse studiato, ___", "risposta": "avrebbe passato"},
-        {"domanda": "'He said he would have come' → ha detto che ___ venuto", "risposta": "sarebbe"}
-      ]
+      "id": "f014",
+      "it": "Spero che tu possa venire alla festa.",
+      "en": "I hope you can come to the party.",
+      "tag": [
+        "subjunctive",
+        "hope"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
     },
     {
-      "id": "g015",
-      "categoria": "Pronouns",
-      "titolo": "Congiuntivo Trapassato: Forms and Use",
-      "spiegazione": "<b>Congiuntivo trapassato</b> = congiuntivo imperfetto of auxiliary (fossi / avessi) + past participle. Essere verbs: fossi andato/a. Avere verbs: avessi parlato. Used: (1) in type-III conditionals after 'se': se avessi saputo...; (2) in subordinate clauses referring to a completed action before a past main verb: Pensavo che fosse già partito. (3) after 'come se' referring to past: parlava come se non fosse mai stato lì.",
-      "drill": [
-        {"domanda": "'se avessi saputo' — which tense?", "risposta": "congiuntivo trapassato"},
-        {"domanda": "Congiuntivo trapassato of 'andare' (io) →", "risposta": "fossi andato/a"},
-        {"domanda": "Congiuntivo trapassato of 'parlare' (lei) →", "risposta": "avesse parlato"},
-        {"domanda": "'I thought he had already left' → pensavo che ___ già partito", "risposta": "fosse"},
-        {"domanda": "'as if he had never been there' → come se non ___ mai stato lì", "risposta": "fosse"},
-        {"domanda": "Congiuntivo trapassato of 'venire' (loro) →", "risposta": "fossero venuti"}
-      ]
+      "id": "f015",
+      "it": "Ha fatto finta di non vederci.",
+      "en": "She pretended not to see us.",
+      "tag": [
+        "idioms",
+        "pronouns"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f016",
+      "it": "Affinché il progetto riesca, serve più collaborazione.",
+      "en": "For the project to succeed, more collaboration is needed.",
+      "tag": [
+        "purpose",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f017",
+      "it": "Purché arrivi in tempo, tutto andrà bene.",
+      "en": "Provided he arrives on time, everything will be fine.",
+      "tag": [
+        "conditional",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f018",
+      "it": "Mi sono accorta che qualcosa non andava.",
+      "en": "I noticed that something wasn't right.",
+      "tag": [
+        "accorgersi",
+        "reflexive",
+        "past"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f019",
+      "it": "Si ritiene che il cambiamento climatico sia urgente.",
+      "en": "It is believed that climate change is urgent.",
+      "tag": [
+        "impersonal",
+        "subjunctive",
+        "passive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f020",
+      "it": "Anche se fossi ricco, non sarei felice.",
+      "en": "Even if I were rich, I would not be happy.",
+      "tag": [
+        "conditional-2",
+        "subjunctive-imperfect"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f021",
+      "it": "La questione va affrontata con serietà.",
+      "en": "The issue must be tackled seriously. (obligation)",
+      "tag": [
+        "passive-andare",
+        "obligation"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f022",
+      "it": "Non capisco il motivo per cui se ne va.",
+      "en": "I don't understand the reason why he's leaving.",
+      "tag": [
+        "relative-pronouns",
+        "ne-pronoun"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f023",
+      "it": "Ha detto che stava studiando per l'esame.",
+      "en": "He said he was studying for the exam.",
+      "tag": [
+        "reported-speech",
+        "imperfect"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f024",
+      "it": "Vorrei che la situazione fosse diversa.",
+      "en": "I wish the situation were different.",
+      "tag": [
+        "conditional",
+        "subjunctive-imperfect"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f025",
+      "it": "Il libro di cui ti ho parlato è esaurito.",
+      "en": "The book I told you about is out of stock.",
+      "tag": [
+        "relative-pronouns",
+        "cui"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f026",
+      "it": "Man mano che cresceva, diventava più sicuro di sé.",
+      "en": "As he grew up, he became more self-confident.",
+      "tag": [
+        "temporal",
+        "gradual"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f027",
+      "it": "Malgrado tutto, rimango ottimista.",
+      "en": "Despite everything, I remain optimistic.",
+      "tag": [
+        "concessive",
+        "formal"
+      ],
+      "difficolta": 2,
+      "aggiunto": "2026-06-08"
+    },
+    {
+      "id": "f028",
+      "it": "A meno che non cambi idea, partiamo domani.",
+      "en": "Unless he changes his mind, we leave tomorrow.",
+      "tag": [
+        "a-meno-che",
+        "subjunctive"
+      ],
+      "difficolta": 3,
+      "aggiunto": "2026-06-08"
     }
   ],
   "riferimento": [
@@ -359,11 +1392,151 @@
       "icona": "🔮",
       "sottotitolo": "When and how to use the subjunctive — the key B2 structure",
       "blocchi": [
-        {"tipo":"testo","testo":"The congiuntivo is required in subordinate clauses when the main clause expresses <b>subjectivity</b>: opinion, wish, doubt, emotion, necessity, or is introduced by specific conjunctions."},
-        {"tipo":"nota","testo":"<b>Rule of thumb:</b> If the subject of the main clause and the subordinate clause is the SAME person, use <b>infinito</b>: Voglio <i>andare</i>. If subjects DIFFER, use <b>congiuntivo</b>: Voglio che tu <i>vada</i>."},
-        {"tipo":"tabella","intestazioni":["Category","Trigger expressions","Tense"],"righe":[["Opinion/Belief","pensare, credere, ritenere, supporre","congiuntivo"],["Desire/Wish","volere, desiderare, sperare, preferire","congiuntivo"],["Doubt/Denial","dubitare, negare, non essere sicuro","congiuntivo"],["Emotion","essere contento/triste/sorpreso che","congiuntivo"],["Necessity","bisogna che, è necessario, occorre che","congiuntivo"],["Certainty","è ovvio che, è chiaro che, sa che","indicativo"],["Concessive conj.","sebbene, benché, nonostante, malgrado","congiuntivo"],["Purpose conj.","affinché, perché (so that)","congiuntivo"],["Conditional conj.","purché, a condizione che, a patto che","congiuntivo"],["Temporal conj.","prima che (but dopo che → indicativo)","congiuntivo"],["Negative conj.","senza che, a meno che non","congiuntivo"]]},
-        {"tipo":"tabella","intestazioni":["Tense","io","tu","lui/lei","noi","voi","loro"],"righe":[["Cong. Presente (parlare)","parli","parli","parli","parliamo","parliate","parlino"],["Cong. Presente (avere)","abbia","abbia","abbia","abbiamo","abbiate","abbiano"],["Cong. Presente (essere)","sia","sia","sia","siamo","siate","siano"],["Cong. Imperfetto (parlare)","parlassi","parlassi","parlasse","parlassimo","parlaste","parlassero"],["Cong. Imperfetto (essere)","fossi","fossi","fosse","fossimo","foste","fossero"],["Cong. Imperfetto (avere)","avessi","avessi","avesse","avessimo","aveste","avessero"]]},
-        {"tipo":"nota","testo":"<b>Tense concordance:</b> Main verb present/future → congiuntivo <b>presente</b> or <b>passato</b>. Main verb past/conditional → congiuntivo <b>imperfetto</b> or <b>trapassato</b>."}
+        {
+          "tipo": "testo",
+          "testo": "The congiuntivo is required in subordinate clauses when the main clause expresses <b>subjectivity</b>: opinion, wish, doubt, emotion, necessity, or is introduced by specific conjunctions."
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Rule of thumb:</b> If the subject of the main clause and the subordinate clause is the SAME person, use <b>infinito</b>: Voglio <i>andare</i>. If subjects DIFFER, use <b>congiuntivo</b>: Voglio che tu <i>vada</i>."
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Category",
+            "Trigger expressions",
+            "Tense"
+          ],
+          "righe": [
+            [
+              "Opinion/Belief",
+              "pensare, credere, ritenere, supporre",
+              "congiuntivo"
+            ],
+            [
+              "Desire/Wish",
+              "volere, desiderare, sperare, preferire",
+              "congiuntivo"
+            ],
+            [
+              "Doubt/Denial",
+              "dubitare, negare, non essere sicuro",
+              "congiuntivo"
+            ],
+            [
+              "Emotion",
+              "essere contento/triste/sorpreso che",
+              "congiuntivo"
+            ],
+            [
+              "Necessity",
+              "bisogna che, è necessario, occorre che",
+              "congiuntivo"
+            ],
+            [
+              "Certainty",
+              "è ovvio che, è chiaro che, sa che",
+              "indicativo"
+            ],
+            [
+              "Concessive conj.",
+              "sebbene, benché, nonostante, malgrado",
+              "congiuntivo"
+            ],
+            [
+              "Purpose conj.",
+              "affinché, perché (so that)",
+              "congiuntivo"
+            ],
+            [
+              "Conditional conj.",
+              "purché, a condizione che, a patto che",
+              "congiuntivo"
+            ],
+            [
+              "Temporal conj.",
+              "prima che (but dopo che → indicativo)",
+              "congiuntivo"
+            ],
+            [
+              "Negative conj.",
+              "senza che, a meno che non",
+              "congiuntivo"
+            ]
+          ]
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Tense",
+            "io",
+            "tu",
+            "lui/lei",
+            "noi",
+            "voi",
+            "loro"
+          ],
+          "righe": [
+            [
+              "Cong. Presente (parlare)",
+              "parli",
+              "parli",
+              "parli",
+              "parliamo",
+              "parliate",
+              "parlino"
+            ],
+            [
+              "Cong. Presente (avere)",
+              "abbia",
+              "abbia",
+              "abbia",
+              "abbiamo",
+              "abbiate",
+              "abbiano"
+            ],
+            [
+              "Cong. Presente (essere)",
+              "sia",
+              "sia",
+              "sia",
+              "siamo",
+              "siate",
+              "siano"
+            ],
+            [
+              "Cong. Imperfetto (parlare)",
+              "parlassi",
+              "parlassi",
+              "parlasse",
+              "parlassimo",
+              "parlaste",
+              "parlassero"
+            ],
+            [
+              "Cong. Imperfetto (essere)",
+              "fossi",
+              "fossi",
+              "fosse",
+              "fossimo",
+              "foste",
+              "fossero"
+            ],
+            [
+              "Cong. Imperfetto (avere)",
+              "avessi",
+              "avessi",
+              "avesse",
+              "avessimo",
+              "aveste",
+              "avessero"
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Tense concordance:</b> Main verb present/future → congiuntivo <b>presente</b> or <b>passato</b>. Main verb past/conditional → congiuntivo <b>imperfetto</b> or <b>trapassato</b>."
+        }
       ]
     },
     {
@@ -372,10 +1545,73 @@
       "icona": "🔀",
       "sottotitolo": "The three types of if-clauses (periodo ipotetico)",
       "blocchi": [
-        {"tipo":"tabella","intestazioni":["Type","'se' clause","Main clause","Meaning","Example"],"righe":[["I — Real/Likely","se + presente","presente / futuro","Likely or certain condition","Se piove, resto a casa."],["II — Hypothetical","se + cong. imperfetto","condizionale presente","Possible but uncertain","Se piovesse, resterei a casa."],["III — Impossible","se + cong. trapassato","condizionale passato","Past counterfactual","Se fosse piovuto, sarei restato."]]},
-        {"tipo":"nota","testo":"⚠ Never use the condizionale after 'se' in standard Italian: <span style='color:var(--bad)'>✗ Se avrei...</span> is incorrect. Always use the subjunctive."},
-        {"tipo":"nota","testo":"<b>Mixed conditional:</b> sometimes the type-III 'se' clause combines with a type-II main clause for a past cause + present consequence: Se avessi studiato medicina, ora sarei medico."},
-        {"tipo":"tabella","intestazioni":["Italian","English"],"righe":[["Se ho tempo, ti chiamo.","If I have time, I'll call you. (likely)"],["Se avessi tempo, ti chiamerei.","If I had time, I'd call you. (hypothetical)"],["Se avessi avuto tempo, ti avrei chiamato.","If I had had time, I would have called you. (past impossible)"],["Se avessi studiato, ora saprei rispondere.","If I had studied, I would know the answer now. (mixed)"]]}      ]
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Type",
+            "'se' clause",
+            "Main clause",
+            "Meaning",
+            "Example"
+          ],
+          "righe": [
+            [
+              "I — Real/Likely",
+              "se + presente",
+              "presente / futuro",
+              "Likely or certain condition",
+              "Se piove, resto a casa."
+            ],
+            [
+              "II — Hypothetical",
+              "se + cong. imperfetto",
+              "condizionale presente",
+              "Possible but uncertain",
+              "Se piovesse, resterei a casa."
+            ],
+            [
+              "III — Impossible",
+              "se + cong. trapassato",
+              "condizionale passato",
+              "Past counterfactual",
+              "Se fosse piovuto, sarei restato."
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "⚠ Never use the condizionale after 'se' in standard Italian: <span style='color:var(--bad)'>✗ Se avrei...</span> is incorrect. Always use the subjunctive."
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Mixed conditional:</b> sometimes the type-III 'se' clause combines with a type-II main clause for a past cause + present consequence: Se avessi studiato medicina, ora sarei medico."
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Italian",
+            "English"
+          ],
+          "righe": [
+            [
+              "Se ho tempo, ti chiamo.",
+              "If I have time, I'll call you. (likely)"
+            ],
+            [
+              "Se avessi tempo, ti chiamerei.",
+              "If I had time, I'd call you. (hypothetical)"
+            ],
+            [
+              "Se avessi avuto tempo, ti avrei chiamato.",
+              "If I had had time, I would have called you. (past impossible)"
+            ],
+            [
+              "Se avessi studiato, ora saprei rispondere.",
+              "If I had studied, I would know the answer now. (mixed)"
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "r003",
@@ -383,10 +1619,79 @@
       "icona": "🔗",
       "sottotitolo": "Combined indirect + direct object pronouns",
       "blocchi": [
-        {"tipo":"testo","testo":"When an indirect object pronoun (IOP) precedes a direct object pronoun (DOP), the IOP changes form. Order is always IOP + DOP. The combination is one word when attached to imperatives, infinitives, and gerunds."},
-        {"tipo":"tabella","intestazioni":["IOP","+ lo","+ la","+ li","+ le","+ ne"],"righe":[["mi →","me lo","me la","me li","me le","me ne"],["ti →","te lo","te la","te li","te le","te ne"],["gli/le →","glielo","gliela","glieli","gliele","gliene"],["ci →","ce lo","ce la","ce li","ce le","ce ne"],["vi →","ve lo","ve la","ve li","ve le","ve ne"],["gli (loro) →","glielo","gliela","glieli","gliele","gliene"]]},
-        {"tipo":"nota","testo":"<b>Gli (him/her/them)</b> always becomes <b>glie-</b> and merges with the DOP into one word: glielo, gliela, glieli, gliele, gliene. This form is the same for all genders and plural."},
-        {"tipo":"nota","testo":"<b>Position:</b> Before finite verbs: Te lo dico. After infinitives (attached): Devo dirtelo. After imperatives (attached): Dimmelo! After gerunds: Dicendotelo. Note: in compound tenses the past participle agrees with the DOP in gender and number."}
+        {
+          "tipo": "testo",
+          "testo": "When an indirect object pronoun (IOP) precedes a direct object pronoun (DOP), the IOP changes form. Order is always IOP + DOP. The combination is one word when attached to imperatives, infinitives, and gerunds."
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "IOP",
+            "+ lo",
+            "+ la",
+            "+ li",
+            "+ le",
+            "+ ne"
+          ],
+          "righe": [
+            [
+              "mi →",
+              "me lo",
+              "me la",
+              "me li",
+              "me le",
+              "me ne"
+            ],
+            [
+              "ti →",
+              "te lo",
+              "te la",
+              "te li",
+              "te le",
+              "te ne"
+            ],
+            [
+              "gli/le →",
+              "glielo",
+              "gliela",
+              "glieli",
+              "gliele",
+              "gliene"
+            ],
+            [
+              "ci →",
+              "ce lo",
+              "ce la",
+              "ce li",
+              "ce le",
+              "ce ne"
+            ],
+            [
+              "vi →",
+              "ve lo",
+              "ve la",
+              "ve li",
+              "ve le",
+              "ve ne"
+            ],
+            [
+              "gli (loro) →",
+              "glielo",
+              "gliela",
+              "glieli",
+              "gliele",
+              "gliene"
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Gli (him/her/them)</b> always becomes <b>glie-</b> and merges with the DOP into one word: glielo, gliela, glieli, gliele, gliene. This form is the same for all genders and plural."
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Position:</b> Before finite verbs: Te lo dico. After infinitives (attached): Devo dirtelo. After imperatives (attached): Dimmelo! After gerunds: Dicendotelo. Note: in compound tenses the past participle agrees with the DOP in gender and number."
+        }
       ]
     },
     {
@@ -395,9 +1700,188 @@
       "icona": "📋",
       "sottotitolo": "Key irregular verbs across all major tenses",
       "blocchi": [
-        {"tipo":"tabella","intestazioni":["Tense","essere","avere","fare","andare","venire"],"righe":[["Presente (io)","sono","ho","faccio","vado","vengo"],["Presente (tu)","sei","hai","fai","vai","vieni"],["Presente (lui/lei)","è","ha","fa","va","viene"],["Presente (noi)","siamo","abbiamo","facciamo","andiamo","veniamo"],["Presente (loro)","sono","hanno","fanno","vanno","vengono"],["Imperfetto (io)","ero","avevo","facevo","andavo","venivo"],["Pass. Pross. (io)","sono stato/a","ho avuto","ho fatto","sono andato/a","sono venuto/a"],["Futuro (io)","sarò","avrò","farò","andrò","verrò"],["Condiz. (io)","sarei","avrei","farei","andrei","verrei"],["Cong. Pres. (io)","sia","abbia","faccia","vada","venga"],["Cong. Imperf. (io)","fossi","avessi","facessi","andassi","venissi"]]},
-        {"tipo":"tabella","intestazioni":["Tense","dire","dovere","potere","volere","sapere"],"righe":[["Presente (io)","dico","devo","posso","voglio","so"],["Presente (tu)","dici","devi","puoi","vuoi","sai"],["Presente (loro)","dicono","devono","possono","vogliono","sanno"],["Pass. Pross. (io)","ho detto","ho dovuto","ho potuto","ho voluto","ho saputo"],["Futuro (io)","dirò","dovrò","potrò","vorrò","saprò"],["Condiz. (io)","direi","dovrei","potrei","vorrei","saprei"],["Cong. Pres. (io)","dica","debba","possa","voglia","sappia"],["Cong. Imperf. (io)","dicessi","dovessi","potessi","volessi","sapessi"]]},
-        {"tipo":"nota","testo":"<b>Passato remoto</b> of irregolars: essere → fui, avere → ebbi, fare → feci, venire → venni, dire → dissi, potere → potei, volere → volli, sapere → seppi."}
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Tense",
+            "essere",
+            "avere",
+            "fare",
+            "andare",
+            "venire"
+          ],
+          "righe": [
+            [
+              "Presente (io)",
+              "sono",
+              "ho",
+              "faccio",
+              "vado",
+              "vengo"
+            ],
+            [
+              "Presente (tu)",
+              "sei",
+              "hai",
+              "fai",
+              "vai",
+              "vieni"
+            ],
+            [
+              "Presente (lui/lei)",
+              "è",
+              "ha",
+              "fa",
+              "va",
+              "viene"
+            ],
+            [
+              "Presente (noi)",
+              "siamo",
+              "abbiamo",
+              "facciamo",
+              "andiamo",
+              "veniamo"
+            ],
+            [
+              "Presente (loro)",
+              "sono",
+              "hanno",
+              "fanno",
+              "vanno",
+              "vengono"
+            ],
+            [
+              "Imperfetto (io)",
+              "ero",
+              "avevo",
+              "facevo",
+              "andavo",
+              "venivo"
+            ],
+            [
+              "Pass. Pross. (io)",
+              "sono stato/a",
+              "ho avuto",
+              "ho fatto",
+              "sono andato/a",
+              "sono venuto/a"
+            ],
+            [
+              "Futuro (io)",
+              "sarò",
+              "avrò",
+              "farò",
+              "andrò",
+              "verrò"
+            ],
+            [
+              "Condiz. (io)",
+              "sarei",
+              "avrei",
+              "farei",
+              "andrei",
+              "verrei"
+            ],
+            [
+              "Cong. Pres. (io)",
+              "sia",
+              "abbia",
+              "faccia",
+              "vada",
+              "venga"
+            ],
+            [
+              "Cong. Imperf. (io)",
+              "fossi",
+              "avessi",
+              "facessi",
+              "andassi",
+              "venissi"
+            ]
+          ]
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Tense",
+            "dire",
+            "dovere",
+            "potere",
+            "volere",
+            "sapere"
+          ],
+          "righe": [
+            [
+              "Presente (io)",
+              "dico",
+              "devo",
+              "posso",
+              "voglio",
+              "so"
+            ],
+            [
+              "Presente (tu)",
+              "dici",
+              "devi",
+              "puoi",
+              "vuoi",
+              "sai"
+            ],
+            [
+              "Presente (loro)",
+              "dicono",
+              "devono",
+              "possono",
+              "vogliono",
+              "sanno"
+            ],
+            [
+              "Pass. Pross. (io)",
+              "ho detto",
+              "ho dovuto",
+              "ho potuto",
+              "ho voluto",
+              "ho saputo"
+            ],
+            [
+              "Futuro (io)",
+              "dirò",
+              "dovrò",
+              "potrò",
+              "vorrò",
+              "saprò"
+            ],
+            [
+              "Condiz. (io)",
+              "direi",
+              "dovrei",
+              "potrei",
+              "vorrei",
+              "saprei"
+            ],
+            [
+              "Cong. Pres. (io)",
+              "dica",
+              "debba",
+              "possa",
+              "voglia",
+              "sappia"
+            ],
+            [
+              "Cong. Imperf. (io)",
+              "dicessi",
+              "dovessi",
+              "potessi",
+              "volessi",
+              "sapessi"
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Passato remoto</b> of irregolars: essere → fui, avere → ebbi, fare → feci, venire → venni, dire → dissi, potere → potei, volere → volli, sapere → seppi."
+        }
       ]
     },
     {
@@ -406,9 +1890,44 @@
       "icona": "🔄",
       "sottotitolo": "Three passive constructions and the si passivante",
       "blocchi": [
-        {"tipo":"tabella","intestazioni":["Construction","Usage","Example"],"righe":[["essere + participio","All tenses; stative or dynamic. Agent: da + noun.","La finestra è stata rotta da Marco."],["venire + participio","Simple tenses only; dynamic/repeated actions.","La posta viene consegnata ogni mattina."],["andare + participio","Simple tenses only; obligation or necessity.","Questo errore va corretto subito."],["si + verb (3rd p.)","Si passivante: impersonal/generalising.","Si parla italiano in questa aula."]]},
-        {"tipo":"nota","testo":"<b>essere vs venire:</b> La porta <i>è aperta</i> = the door IS open (state/result). La porta <i>viene aperta</i> = the door is (being) opened / gets opened (action)."},
-        {"tipo":"nota","testo":"<b>andare passivo</b> = strong obligation: Le tasse vanno pagate (must be paid / are to be paid). Common with: correggere, rispettare, affrontare, considerare."}
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Construction",
+            "Usage",
+            "Example"
+          ],
+          "righe": [
+            [
+              "essere + participio",
+              "All tenses; stative or dynamic. Agent: da + noun.",
+              "La finestra è stata rotta da Marco."
+            ],
+            [
+              "venire + participio",
+              "Simple tenses only; dynamic/repeated actions.",
+              "La posta viene consegnata ogni mattina."
+            ],
+            [
+              "andare + participio",
+              "Simple tenses only; obligation or necessity.",
+              "Questo errore va corretto subito."
+            ],
+            [
+              "si + verb (3rd p.)",
+              "Si passivante: impersonal/generalising.",
+              "Si parla italiano in questa aula."
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>essere vs venire:</b> La porta <i>è aperta</i> = the door IS open (state/result). La porta <i>viene aperta</i> = the door is (being) opened / gets opened (action)."
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>andare passivo</b> = strong obligation: Le tasse vanno pagate (must be paid / are to be paid). Common with: correggere, rispettare, affrontare, considerare."
+        }
       ]
     },
     {
@@ -417,9 +1936,72 @@
       "icona": "💬",
       "sottotitolo": "Tense backshift, pronoun changes, and time expressions",
       "blocchi": [
-        {"tipo":"tabella","intestazioni":["Direct speech tense","→ Reported speech tense"],"righe":[["Presente: 'Studio.'","→ Imperfetto: (ha detto che) studiava"],[ "Passato prossimo: 'Ho letto.'","→ Trapassato prossimo: aveva letto"],[ "Futuro: 'Verrò.'","→ Condizionale presente: sarebbe venuto"],[ "Imperativo: 'Vieni!'","→ di + infinito: ha detto di venire"],[ "Congiuntivo presente","→ Congiuntivo imperfetto"]]},
-        {"tipo":"tabella","intestazioni":["Direct time expression","→ Reported equivalent"],"righe":[["oggi","quel giorno"],["ieri","il giorno prima / il giorno precedente"],["domani","il giorno dopo / l'indomani"],["adesso / ora","in quel momento / allora"],["questo (agg.)","quello / quel"],["qui","lì / là"]]},
-        {"tipo":"nota","testo":"<b>No backshift</b> when the reporting verb is in the present or future: Dice che studia (present stays present). Backshift is only required when the introductory verb is past or conditional."}
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Direct speech tense",
+            "→ Reported speech tense"
+          ],
+          "righe": [
+            [
+              "Presente: 'Studio.'",
+              "→ Imperfetto: (ha detto che) studiava"
+            ],
+            [
+              "Passato prossimo: 'Ho letto.'",
+              "→ Trapassato prossimo: aveva letto"
+            ],
+            [
+              "Futuro: 'Verrò.'",
+              "→ Condizionale presente: sarebbe venuto"
+            ],
+            [
+              "Imperativo: 'Vieni!'",
+              "→ di + infinito: ha detto di venire"
+            ],
+            [
+              "Congiuntivo presente",
+              "→ Congiuntivo imperfetto"
+            ]
+          ]
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Direct time expression",
+            "→ Reported equivalent"
+          ],
+          "righe": [
+            [
+              "oggi",
+              "quel giorno"
+            ],
+            [
+              "ieri",
+              "il giorno prima / il giorno precedente"
+            ],
+            [
+              "domani",
+              "il giorno dopo / l'indomani"
+            ],
+            [
+              "adesso / ora",
+              "in quel momento / allora"
+            ],
+            [
+              "questo (agg.)",
+              "quello / quel"
+            ],
+            [
+              "qui",
+              "lì / là"
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>No backshift</b> when the reporting verb is in the present or future: Dice che studia (present stays present). Backshift is only required when the introductory verb is past or conditional."
+        }
       ]
     },
     {
@@ -428,9 +2010,125 @@
       "icona": "🔍",
       "sottotitolo": "Key preposition uses and articulated forms (preposizioni articolate)",
       "blocchi": [
-        {"tipo":"tabella","intestazioni":["Prep.","+ il","+ lo","+ l'","+ la","+ i","+ gli","+ le"],"righe":[["di","del","dello","dell'","della","dei","degli","delle"],["a","al","allo","all'","alla","ai","agli","alle"],["da","dal","dallo","dall'","dalla","dai","dagli","dalle"],["in","nel","nello","nell'","nella","nei","negli","nelle"],["su","sul","sullo","sull'","sulla","sui","sugli","sulle"],["con","col","—","—","—","coi","—","—"]]},
-        {"tipo":"nota","testo":"<b>per, tra/fra, sotto, sopra, verso, senza</b> do NOT contract with the article."},
-        {"tipo":"tabella","intestazioni":["Preposition","Key uses","Examples"],"righe":[["di","possession, material, origin, partitive, comparison","il libro di Maria; un bicchiere di vino; vengono di Roma"],["a","place/destination (cities), time, indirect object, manner","Vado a Roma; a mezzogiorno; dare a; a piedi"],["da","agent (passive), origin, duration, purpose, since/for","fatto da me; vengo da Milano; aspetto da un'ora"],["in","location (countries/regions), means of transport, duration","in Italia; in treno; finire in un'ora"],["su","on top of, about/concerning (topic)","sul tavolo; un libro sulla storia"],["per","purpose, duration, destination, reason, in favour of","studio per l'esame; per tre ore; partire per Londra"]]}
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Prep.",
+            "+ il",
+            "+ lo",
+            "+ l'",
+            "+ la",
+            "+ i",
+            "+ gli",
+            "+ le"
+          ],
+          "righe": [
+            [
+              "di",
+              "del",
+              "dello",
+              "dell'",
+              "della",
+              "dei",
+              "degli",
+              "delle"
+            ],
+            [
+              "a",
+              "al",
+              "allo",
+              "all'",
+              "alla",
+              "ai",
+              "agli",
+              "alle"
+            ],
+            [
+              "da",
+              "dal",
+              "dallo",
+              "dall'",
+              "dalla",
+              "dai",
+              "dagli",
+              "dalle"
+            ],
+            [
+              "in",
+              "nel",
+              "nello",
+              "nell'",
+              "nella",
+              "nei",
+              "negli",
+              "nelle"
+            ],
+            [
+              "su",
+              "sul",
+              "sullo",
+              "sull'",
+              "sulla",
+              "sui",
+              "sugli",
+              "sulle"
+            ],
+            [
+              "con",
+              "col",
+              "—",
+              "—",
+              "—",
+              "coi",
+              "—",
+              "—"
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>per, tra/fra, sotto, sopra, verso, senza</b> do NOT contract with the article."
+        },
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Preposition",
+            "Key uses",
+            "Examples"
+          ],
+          "righe": [
+            [
+              "di",
+              "possession, material, origin, partitive, comparison",
+              "il libro di Maria; un bicchiere di vino; vengono di Roma"
+            ],
+            [
+              "a",
+              "place/destination (cities), time, indirect object, manner",
+              "Vado a Roma; a mezzogiorno; dare a; a piedi"
+            ],
+            [
+              "da",
+              "agent (passive), origin, duration, purpose, since/for",
+              "fatto da me; vengo da Milano; aspetto da un'ora"
+            ],
+            [
+              "in",
+              "location (countries/regions), means of transport, duration",
+              "in Italia; in treno; finire in un'ora"
+            ],
+            [
+              "su",
+              "on top of, about/concerning (topic)",
+              "sul tavolo; un libro sulla storia"
+            ],
+            [
+              "per",
+              "purpose, duration, destination, reason, in favour of",
+              "studio per l'esame; per tre ore; partire per Londra"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -439,9 +2137,74 @@
       "icona": "🗣️",
       "sottotitolo": "Connectives and discourse markers for B2 writing and speaking",
       "blocchi": [
-        {"tipo":"tabella","intestazioni":["Function","Italian markers","English equivalent"],"righe":[["Addition","inoltre, peraltro, anche, altresì","moreover, furthermore, also"],["Contrast","tuttavia, eppure, però, ciononostante, nondimeno","however, yet, nevertheless"],["Concession","sebbene, benché, nonostante, malgrado, pur + gerundio","although, even though, despite"],["Cause","poiché, siccome, dal momento che, dato che","since, because, given that"],["Consequence","dunque, pertanto, quindi, perciò, di conseguenza","therefore, so, consequently"],["Specification","vale a dire, ovvero, cioè, in altri termini","that is, namely, in other words"],["Exemplification","per esempio, ad esempio, come nel caso di","for example, for instance"],["Conclusion","in conclusione, in sintesi, in definitiva, infine","in conclusion, in summary, ultimately"],["Temporal seq.","dapprima, poi, in seguito, dopodiché, infine","first, then, afterwards, finally"],["Reinforcement","anzi, addirittura, persino, tanto più che","in fact, even, especially since"]]},
-        {"tipo":"nota","testo":"<b>Register note:</b> tuttavia, pertanto, ciononostante, altresì are <b>formal/written</b>. però, comunque, quindi are neutral/spoken. eppure and anzi are common in both registers."},
-        {"tipo":"nota","testo":"<b>Conjunctions + mood:</b> poiché/siccome/dal momento che/dato che → <b>indicativo</b>. sebbene/benché/nonostante/malgrado → <b>congiuntivo</b>. affinché/perché (purpose) → <b>congiuntivo</b>. perché (cause) → <b>indicativo</b>."}
+        {
+          "tipo": "tabella",
+          "intestazioni": [
+            "Function",
+            "Italian markers",
+            "English equivalent"
+          ],
+          "righe": [
+            [
+              "Addition",
+              "inoltre, peraltro, anche, altresì",
+              "moreover, furthermore, also"
+            ],
+            [
+              "Contrast",
+              "tuttavia, eppure, però, ciononostante, nondimeno",
+              "however, yet, nevertheless"
+            ],
+            [
+              "Concession",
+              "sebbene, benché, nonostante, malgrado, pur + gerundio",
+              "although, even though, despite"
+            ],
+            [
+              "Cause",
+              "poiché, siccome, dal momento che, dato che",
+              "since, because, given that"
+            ],
+            [
+              "Consequence",
+              "dunque, pertanto, quindi, perciò, di conseguenza",
+              "therefore, so, consequently"
+            ],
+            [
+              "Specification",
+              "vale a dire, ovvero, cioè, in altri termini",
+              "that is, namely, in other words"
+            ],
+            [
+              "Exemplification",
+              "per esempio, ad esempio, come nel caso di",
+              "for example, for instance"
+            ],
+            [
+              "Conclusion",
+              "in conclusione, in sintesi, in definitiva, infine",
+              "in conclusion, in summary, ultimately"
+            ],
+            [
+              "Temporal seq.",
+              "dapprima, poi, in seguito, dopodiché, infine",
+              "first, then, afterwards, finally"
+            ],
+            [
+              "Reinforcement",
+              "anzi, addirittura, persino, tanto più che",
+              "in fact, even, especially since"
+            ]
+          ]
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Register note:</b> tuttavia, pertanto, ciononostante, altresì are <b>formal/written</b>. però, comunque, quindi are neutral/spoken. eppure and anzi are common in both registers."
+        },
+        {
+          "tipo": "nota",
+          "testo": "<b>Conjunctions + mood:</b> poiché/siccome/dal momento che/dato che → <b>indicativo</b>. sebbene/benché/nonostante/malgrado → <b>congiuntivo</b>. affinché/perché (purpose) → <b>congiuntivo</b>. perché (cause) → <b>indicativo</b>."
+        }
       ]
     }
   ]
