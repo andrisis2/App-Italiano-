@@ -359,8 +359,6 @@ function renderHome(){
   const grid = $(`<div class="grid"></div>`);
   const tiles = [
     ["&#127183;","Flashcards","IT &#8596; EN vocabulary with spaced repetition","flash"],
-    ["&#128266;","Pronunciation","Double consonants, stress &amp; special sounds","pron"],
-    ["&#128208;","Grammar","Subjunctive, conditional, pronouns &amp; more","gram"],
     ["&#128172;","Sentences","Fill-in-the-blank with Italian audio","phrase"],
   ];
   tiles.forEach(([ico,t,d,mode])=>{
@@ -429,8 +427,6 @@ function progressBar(stage){
 function start(mode){
   history.pushState({screen:mode}, "");
   if(mode==="flash") return runFlash();
-  if(mode==="pron") return runPron();
-  if(mode==="gram") return runGram();
   if(mode==="phrase") return runPhrase();
   if(mode==="vocab") return runVocab();
   if(mode==="ref") return runReference();
@@ -543,72 +539,6 @@ function runFlash(){
   show();
 }
 
-function runPron(){
-  const pool = DB.pronuncia || [];
-  if(pool.length < 4){ return; }
-  const pronQs = sample(pool, Math.min(8, pool.length)).map(p=>({
-    q: p.it,
-    sub: "Example: " + p.esempio,
-    correct: p.suono,
-    opts: shuffle([p.suono, ...sample(pool.filter(x=>x.suono!==p.suono),3).map(x=>x.suono)])
-  }));
-  runMCQ(pronQs, "Pronunciation", runPron);
-}
-
-function runGram(){
-  const stage = header();
-  const rules = DB.grammatica || [];
-  const cats = [...new Set(rules.map(g=>g.categoria).filter(Boolean))];
-  let activecat = "all";
-  const chipsWrap = $(`<div class="gram-chips"></div>`);
-  const allChip = $(`<button class="gram-chip active">All topics</button>`);
-  allChip.onclick = ()=>setcat("all");
-  chipsWrap.appendChild(allChip);
-  cats.forEach(c=>{
-    const ch = $(`<button class="gram-chip">${c}</button>`);
-    ch.onclick = ()=>setcat(c);
-    chipsWrap.appendChild(ch);
-  });
-  stage.appendChild(chipsWrap);
-  const cardsWrap = $(`<div style="width:100%"></div>`); stage.appendChild(cardsWrap);
-  function setcat(c){
-    activecat = c;
-    [...chipsWrap.children].forEach(ch=>{
-      ch.classList.toggle("active", (c==="all" && ch===allChip) || ch.textContent===c);
-    });
-    renderCards();
-  }
-  function renderCards(){
-    cardsWrap.innerHTML="";
-    const filtered = activecat==="all" ? rules : rules.filter(g=>g.categoria===activecat);
-    filtered.forEach(g=>{
-      cardsWrap.appendChild($(`
-        <div class="gram-card">
-          <h3>${g.categoria||""}</h3>
-          <h4>${g.titolo}</h4>
-          <p>${g.spiegazione}</p>
-        </div>`));
-    });
-    const btn = $(`<button class="btn primary" style="margin-top:6px">Start exercises &#8594;</button>`);
-    btn.onclick = ()=>{
-      const filt2 = activecat==="all" ? rules : rules.filter(g=>g.categoria===activecat);
-      const allDrills = filt2.flatMap(g=>g.drill.map(d=>({...d,titolo:g.titolo,categoria:g.categoria})));
-      const allAnswers = allDrills.map(d=>d.risposta);
-      const qs = allDrills.map(d=>{
-        const others = [...new Set(allAnswers.filter(a=>a!==d.risposta))];
-        return {
-          q: d.domanda,
-          sub: (d.categoria||"")+" &#8212; "+(d.titolo||""),
-          correct: d.risposta,
-          opts: shuffle([d.risposta, ...sample(others,3)]).slice(0,4)
-        };
-      });
-      runMCQ(shuffle(qs).slice(0,12), "Grammar", runGram);
-    };
-    cardsWrap.appendChild(btn);
-  }
-  renderCards();
-}
 
 function runPhrase(){
   const deck = sample(DB.frasi||[], Math.min(8,(DB.frasi||[]).length));
