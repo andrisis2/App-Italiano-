@@ -2207,5 +2207,10345 @@
         }
       ]
     }
+  ],
+  "dizionario": [
+    {
+      "id": "d0001",
+      "it": "abbandonare",
+      "en": "abandon",
+      "pos": "verb"
+    },
+    {
+      "id": "d0002",
+      "it": "abbastanza",
+      "en": "enough",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0003",
+      "it": "abbracciare",
+      "en": "embrace",
+      "pos": "verb"
+    },
+    {
+      "id": "d0004",
+      "it": "abitare",
+      "en": "live",
+      "pos": "verb"
+    },
+    {
+      "id": "d0005",
+      "it": "abito",
+      "en": "dress",
+      "pos": "noun"
+    },
+    {
+      "id": "d0006",
+      "it": "abitudine",
+      "en": "custom",
+      "pos": "noun"
+    },
+    {
+      "id": "d0007",
+      "it": "accadere",
+      "en": "happen",
+      "pos": "verb"
+    },
+    {
+      "id": "d0008",
+      "it": "accanto",
+      "en": "beside",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0009",
+      "it": "accendere",
+      "en": "light",
+      "pos": "verb"
+    },
+    {
+      "id": "d0010",
+      "it": "accesso",
+      "en": "access",
+      "pos": "noun"
+    },
+    {
+      "id": "d0011",
+      "it": "accettare",
+      "en": "accept",
+      "pos": "verb"
+    },
+    {
+      "id": "d0012",
+      "it": "accogliere",
+      "en": "accommodate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0013",
+      "it": "accompagnare",
+      "en": "accompany",
+      "pos": "verb"
+    },
+    {
+      "id": "d0014",
+      "it": "accordo",
+      "en": "accord",
+      "pos": "noun"
+    },
+    {
+      "id": "d0015",
+      "it": "accusare",
+      "en": "accuse",
+      "pos": "verb"
+    },
+    {
+      "id": "d0016",
+      "it": "acqua",
+      "en": "water",
+      "pos": "noun"
+    },
+    {
+      "id": "d0017",
+      "it": "acquisto",
+      "en": "shopping",
+      "pos": "noun"
+    },
+    {
+      "id": "d0018",
+      "it": "adatto",
+      "en": "suitable",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0019",
+      "it": "addirittura",
+      "en": "above",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0020",
+      "it": "addossare",
+      "en": "lean",
+      "pos": "verb"
+    },
+    {
+      "id": "d0021",
+      "it": "adesso",
+      "en": "now",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0022",
+      "it": "adolescente",
+      "en": "adolescent",
+      "pos": "noun"
+    },
+    {
+      "id": "d0023",
+      "it": "adorare",
+      "en": "adore",
+      "pos": "verb"
+    },
+    {
+      "id": "d0024",
+      "it": "adottare",
+      "en": "adopt",
+      "pos": "verb"
+    },
+    {
+      "id": "d0025",
+      "it": "adulto",
+      "en": "adult",
+      "pos": "noun"
+    },
+    {
+      "id": "d0026",
+      "it": "aereo",
+      "en": "aerial",
+      "pos": "noun"
+    },
+    {
+      "id": "d0027",
+      "it": "affare",
+      "en": "affair",
+      "pos": "noun"
+    },
+    {
+      "id": "d0028",
+      "it": "affidare",
+      "en": "entrust",
+      "pos": "verb"
+    },
+    {
+      "id": "d0029",
+      "it": "affrontare",
+      "en": "confront",
+      "pos": "verb"
+    },
+    {
+      "id": "d0030",
+      "it": "agente",
+      "en": "agent",
+      "pos": "noun"
+    },
+    {
+      "id": "d0031",
+      "it": "agenzia",
+      "en": "agency",
+      "pos": "noun"
+    },
+    {
+      "id": "d0032",
+      "it": "aggiungere",
+      "en": "add",
+      "pos": "verb"
+    },
+    {
+      "id": "d0033",
+      "it": "agire",
+      "en": "act",
+      "pos": "verb"
+    },
+    {
+      "id": "d0034",
+      "it": "agosto",
+      "en": "August",
+      "pos": "noun"
+    },
+    {
+      "id": "d0035",
+      "it": "aiutare",
+      "en": "help",
+      "pos": "verb"
+    },
+    {
+      "id": "d0036",
+      "it": "aiuto",
+      "en": "aid",
+      "pos": "noun"
+    },
+    {
+      "id": "d0037",
+      "it": "ala",
+      "en": "wing",
+      "pos": "noun"
+    },
+    {
+      "id": "d0038",
+      "it": "alba",
+      "en": "dawn",
+      "pos": "noun"
+    },
+    {
+      "id": "d0039",
+      "it": "albergo",
+      "en": "hotel",
+      "pos": "noun"
+    },
+    {
+      "id": "d0040",
+      "it": "albero",
+      "en": "tree",
+      "pos": "noun"
+    },
+    {
+      "id": "d0041",
+      "it": "album",
+      "en": "album",
+      "pos": "noun"
+    },
+    {
+      "id": "d0042",
+      "it": "alcuno",
+      "en": "any",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0043",
+      "it": "allora",
+      "en": "then",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0044",
+      "it": "almeno",
+      "en": "at least",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0045",
+      "it": "altezza",
+      "en": "height",
+      "pos": "noun"
+    },
+    {
+      "id": "d0046",
+      "it": "alto",
+      "en": "high",
+      "pos": "noun"
+    },
+    {
+      "id": "d0047",
+      "it": "altro",
+      "en": "another",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0048",
+      "it": "alzare",
+      "en": "erect",
+      "pos": "verb"
+    },
+    {
+      "id": "d0049",
+      "it": "amante",
+      "en": "lover",
+      "pos": "noun"
+    },
+    {
+      "id": "d0050",
+      "it": "amare",
+      "en": "love",
+      "pos": "verb"
+    },
+    {
+      "id": "d0051",
+      "it": "ambientale",
+      "en": "environmental",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0052",
+      "it": "ambiente",
+      "en": "ambient",
+      "pos": "noun"
+    },
+    {
+      "id": "d0053",
+      "it": "ambito",
+      "en": "domain",
+      "pos": "noun"
+    },
+    {
+      "id": "d0054",
+      "it": "americano",
+      "en": "American",
+      "pos": "noun"
+    },
+    {
+      "id": "d0055",
+      "it": "amicizia",
+      "en": "friendship",
+      "pos": "noun"
+    },
+    {
+      "id": "d0056",
+      "it": "amico",
+      "en": "fellow",
+      "pos": "noun"
+    },
+    {
+      "id": "d0057",
+      "it": "ammettere",
+      "en": "admit",
+      "pos": "verb"
+    },
+    {
+      "id": "d0058",
+      "it": "amministrazione",
+      "en": "administration",
+      "pos": "noun"
+    },
+    {
+      "id": "d0059",
+      "it": "amore",
+      "en": "love",
+      "pos": "noun"
+    },
+    {
+      "id": "d0060",
+      "it": "ampio",
+      "en": "wide",
+      "pos": "noun"
+    },
+    {
+      "id": "d0061",
+      "it": "analisi",
+      "en": "analysis",
+      "pos": "noun"
+    },
+    {
+      "id": "d0062",
+      "it": "analizzare",
+      "en": "analyse",
+      "pos": "verb"
+    },
+    {
+      "id": "d0063",
+      "it": "anche",
+      "en": "also",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0064",
+      "it": "ancora",
+      "en": "again",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0065",
+      "it": "andare",
+      "en": "go",
+      "pos": "verb"
+    },
+    {
+      "id": "d0066",
+      "it": "anello",
+      "en": "ring",
+      "pos": "noun"
+    },
+    {
+      "id": "d0067",
+      "it": "angelo",
+      "en": "angel",
+      "pos": "noun"
+    },
+    {
+      "id": "d0068",
+      "it": "angolo",
+      "en": "angle",
+      "pos": "noun"
+    },
+    {
+      "id": "d0069",
+      "it": "anima",
+      "en": "soul",
+      "pos": "noun"
+    },
+    {
+      "id": "d0070",
+      "it": "animale",
+      "en": "animal",
+      "pos": "noun"
+    },
+    {
+      "id": "d0071",
+      "it": "anno",
+      "en": "year",
+      "pos": "noun"
+    },
+    {
+      "id": "d0072",
+      "it": "annunciare",
+      "en": "announce",
+      "pos": "verb"
+    },
+    {
+      "id": "d0073",
+      "it": "ansia",
+      "en": "anxiety",
+      "pos": "noun"
+    },
+    {
+      "id": "d0074",
+      "it": "aperto",
+      "en": "open",
+      "pos": "noun"
+    },
+    {
+      "id": "d0075",
+      "it": "apertura",
+      "en": "aperture",
+      "pos": "noun"
+    },
+    {
+      "id": "d0076",
+      "it": "apparire",
+      "en": "appear",
+      "pos": "verb"
+    },
+    {
+      "id": "d0077",
+      "it": "appartamento",
+      "en": "apartment",
+      "pos": "noun"
+    },
+    {
+      "id": "d0078",
+      "it": "appartenere",
+      "en": "belong",
+      "pos": "verb"
+    },
+    {
+      "id": "d0079",
+      "it": "appena",
+      "en": "as soon as",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0080",
+      "it": "applicare",
+      "en": "apply",
+      "pos": "verb"
+    },
+    {
+      "id": "d0081",
+      "it": "appoggiare",
+      "en": "back",
+      "pos": "verb"
+    },
+    {
+      "id": "d0082",
+      "it": "apprezzare",
+      "en": "appreciate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0083",
+      "it": "appuntamento",
+      "en": "appointment",
+      "pos": "noun"
+    },
+    {
+      "id": "d0084",
+      "it": "aprile",
+      "en": "April",
+      "pos": "noun"
+    },
+    {
+      "id": "d0085",
+      "it": "aprire",
+      "en": "head",
+      "pos": "verb"
+    },
+    {
+      "id": "d0086",
+      "it": "arabo",
+      "en": "Arab",
+      "pos": "noun"
+    },
+    {
+      "id": "d0087",
+      "it": "arco",
+      "en": "arch",
+      "pos": "noun"
+    },
+    {
+      "id": "d0088",
+      "it": "area",
+      "en": "area",
+      "pos": "noun"
+    },
+    {
+      "id": "d0089",
+      "it": "argomento",
+      "en": "argument",
+      "pos": "noun"
+    },
+    {
+      "id": "d0090",
+      "it": "aria",
+      "en": "air",
+      "pos": "noun"
+    },
+    {
+      "id": "d0091",
+      "it": "arma",
+      "en": "arm",
+      "pos": "noun"
+    },
+    {
+      "id": "d0092",
+      "it": "arrestare",
+      "en": "arrest",
+      "pos": "verb"
+    },
+    {
+      "id": "d0093",
+      "it": "arrivare",
+      "en": "arrive",
+      "pos": "verb"
+    },
+    {
+      "id": "d0094",
+      "it": "arrivo",
+      "en": "arrival",
+      "pos": "noun"
+    },
+    {
+      "id": "d0095",
+      "it": "arte",
+      "en": "art",
+      "pos": "noun"
+    },
+    {
+      "id": "d0096",
+      "it": "articolo",
+      "en": "article",
+      "pos": "noun"
+    },
+    {
+      "id": "d0097",
+      "it": "artista",
+      "en": "artist",
+      "pos": "noun"
+    },
+    {
+      "id": "d0098",
+      "it": "artistico",
+      "en": "artistic",
+      "pos": "noun"
+    },
+    {
+      "id": "d0099",
+      "it": "ascoltare",
+      "en": "listen",
+      "pos": "verb"
+    },
+    {
+      "id": "d0100",
+      "it": "aspettare",
+      "en": "await",
+      "pos": "verb"
+    },
+    {
+      "id": "d0101",
+      "it": "aspetto",
+      "en": "appearance",
+      "pos": "noun"
+    },
+    {
+      "id": "d0102",
+      "it": "assenza",
+      "en": "absence",
+      "pos": "noun"
+    },
+    {
+      "id": "d0103",
+      "it": "assicurare",
+      "en": "assure",
+      "pos": "verb"
+    },
+    {
+      "id": "d0104",
+      "it": "assieme",
+      "en": "beside",
+      "pos": "noun"
+    },
+    {
+      "id": "d0105",
+      "it": "assistere",
+      "en": "assist",
+      "pos": "verb"
+    },
+    {
+      "id": "d0106",
+      "it": "associazione",
+      "en": "association",
+      "pos": "noun"
+    },
+    {
+      "id": "d0107",
+      "it": "assolutamente",
+      "en": "absolutely",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0108",
+      "it": "assoluto",
+      "en": "absolute",
+      "pos": "noun"
+    },
+    {
+      "id": "d0109",
+      "it": "assumere",
+      "en": "assume",
+      "pos": "verb"
+    },
+    {
+      "id": "d0110",
+      "it": "assurdo",
+      "en": "absurd",
+      "pos": "noun"
+    },
+    {
+      "id": "d0111",
+      "it": "atmosfera",
+      "en": "atmosphere",
+      "pos": "noun"
+    },
+    {
+      "id": "d0112",
+      "it": "attaccare",
+      "en": "attach",
+      "pos": "verb"
+    },
+    {
+      "id": "d0113",
+      "it": "attacco",
+      "en": "attack",
+      "pos": "noun"
+    },
+    {
+      "id": "d0114",
+      "it": "atteggiamento",
+      "en": "attitude",
+      "pos": "noun"
+    },
+    {
+      "id": "d0115",
+      "it": "attento",
+      "en": "accurate",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0116",
+      "it": "attenzione",
+      "en": "attention",
+      "pos": "noun"
+    },
+    {
+      "id": "d0117",
+      "it": "attesa",
+      "en": "wait",
+      "pos": "noun"
+    },
+    {
+      "id": "d0118",
+      "it": "attivo",
+      "en": "active",
+      "pos": "noun"
+    },
+    {
+      "id": "d0119",
+      "it": "atto",
+      "en": "act",
+      "pos": "noun"
+    },
+    {
+      "id": "d0120",
+      "it": "attore",
+      "en": "actor",
+      "pos": "noun"
+    },
+    {
+      "id": "d0121",
+      "it": "attorno",
+      "en": "around",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0122",
+      "it": "attraversare",
+      "en": "cross",
+      "pos": "verb"
+    },
+    {
+      "id": "d0123",
+      "it": "attraverso",
+      "en": "across",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0124",
+      "it": "aumentare",
+      "en": "augment",
+      "pos": "verb"
+    },
+    {
+      "id": "d0125",
+      "it": "aumento",
+      "en": "boost",
+      "pos": "noun"
+    },
+    {
+      "id": "d0126",
+      "it": "auto",
+      "en": "car",
+      "pos": "noun"
+    },
+    {
+      "id": "d0127",
+      "it": "autore",
+      "en": "author",
+      "pos": "noun"
+    },
+    {
+      "id": "d0128",
+      "it": "autorizzare",
+      "en": "authorise",
+      "pos": "verb"
+    },
+    {
+      "id": "d0129",
+      "it": "avanti",
+      "en": "ahead",
+      "pos": "noun"
+    },
+    {
+      "id": "d0130",
+      "it": "avanzare",
+      "en": "advance",
+      "pos": "verb"
+    },
+    {
+      "id": "d0131",
+      "it": "avere",
+      "en": "get",
+      "pos": "verb"
+    },
+    {
+      "id": "d0132",
+      "it": "avvenire",
+      "en": "happen",
+      "pos": "noun"
+    },
+    {
+      "id": "d0133",
+      "it": "avventura",
+      "en": "adventure",
+      "pos": "noun"
+    },
+    {
+      "id": "d0134",
+      "it": "avvertire",
+      "en": "caution",
+      "pos": "verb"
+    },
+    {
+      "id": "d0135",
+      "it": "avviare",
+      "en": "boot",
+      "pos": "verb"
+    },
+    {
+      "id": "d0136",
+      "it": "avvicinare",
+      "en": "approach",
+      "pos": "verb"
+    },
+    {
+      "id": "d0137",
+      "it": "avvocato",
+      "en": "attorney",
+      "pos": "noun"
+    },
+    {
+      "id": "d0138",
+      "it": "azienda",
+      "en": "company",
+      "pos": "noun"
+    },
+    {
+      "id": "d0139",
+      "it": "azione",
+      "en": "action",
+      "pos": "noun"
+    },
+    {
+      "id": "d0140",
+      "it": "baciare",
+      "en": "kiss",
+      "pos": "verb"
+    },
+    {
+      "id": "d0141",
+      "it": "bacio",
+      "en": "kiss",
+      "pos": "noun"
+    },
+    {
+      "id": "d0142",
+      "it": "bagno",
+      "en": "bath",
+      "pos": "noun"
+    },
+    {
+      "id": "d0143",
+      "it": "ballare",
+      "en": "dance",
+      "pos": "verb"
+    },
+    {
+      "id": "d0144",
+      "it": "bambina",
+      "en": "girl",
+      "pos": "noun"
+    },
+    {
+      "id": "d0145",
+      "it": "bambino",
+      "en": "boy",
+      "pos": "noun"
+    },
+    {
+      "id": "d0146",
+      "it": "banca",
+      "en": "bank",
+      "pos": "noun"
+    },
+    {
+      "id": "d0147",
+      "it": "bar",
+      "en": "bar",
+      "pos": "noun"
+    },
+    {
+      "id": "d0148",
+      "it": "barca",
+      "en": "boat",
+      "pos": "noun"
+    },
+    {
+      "id": "d0149",
+      "it": "basare",
+      "en": "base",
+      "pos": "verb"
+    },
+    {
+      "id": "d0150",
+      "it": "base",
+      "en": "base",
+      "pos": "noun"
+    },
+    {
+      "id": "d0151",
+      "it": "basso",
+      "en": "low",
+      "pos": "noun"
+    },
+    {
+      "id": "d0152",
+      "it": "bastare",
+      "en": "be enough",
+      "pos": "verb"
+    },
+    {
+      "id": "d0153",
+      "it": "battaglia",
+      "en": "battle",
+      "pos": "noun"
+    },
+    {
+      "id": "d0154",
+      "it": "battere",
+      "en": "bang",
+      "pos": "verb"
+    },
+    {
+      "id": "d0155",
+      "it": "battuta",
+      "en": "batting",
+      "pos": "noun"
+    },
+    {
+      "id": "d0156",
+      "it": "bellezza",
+      "en": "beauty",
+      "pos": "noun"
+    },
+    {
+      "id": "d0157",
+      "it": "bello",
+      "en": "beautiful",
+      "pos": "noun"
+    },
+    {
+      "id": "d0158",
+      "it": "bene",
+      "en": "alright",
+      "pos": "noun"
+    },
+    {
+      "id": "d0159",
+      "it": "bere",
+      "en": "drink",
+      "pos": "verb"
+    },
+    {
+      "id": "d0160",
+      "it": "bianco",
+      "en": "white",
+      "pos": "noun"
+    },
+    {
+      "id": "d0161",
+      "it": "bicchiere",
+      "en": "glass",
+      "pos": "noun"
+    },
+    {
+      "id": "d0162",
+      "it": "biglietto",
+      "en": "ticket",
+      "pos": "noun"
+    },
+    {
+      "id": "d0163",
+      "it": "bloccare",
+      "en": "block",
+      "pos": "verb"
+    },
+    {
+      "id": "d0164",
+      "it": "blog",
+      "en": "blog",
+      "pos": "noun"
+    },
+    {
+      "id": "d0165",
+      "it": "blu",
+      "en": "blue",
+      "pos": "noun"
+    },
+    {
+      "id": "d0166",
+      "it": "bocca",
+      "en": "mouth",
+      "pos": "noun"
+    },
+    {
+      "id": "d0167",
+      "it": "bordo",
+      "en": "board",
+      "pos": "noun"
+    },
+    {
+      "id": "d0168",
+      "it": "borsa",
+      "en": "bag",
+      "pos": "noun"
+    },
+    {
+      "id": "d0169",
+      "it": "bosco",
+      "en": "wood",
+      "pos": "noun"
+    },
+    {
+      "id": "d0170",
+      "it": "bottiglia",
+      "en": "bottle",
+      "pos": "noun"
+    },
+    {
+      "id": "d0171",
+      "it": "braccio",
+      "en": "arm",
+      "pos": "noun"
+    },
+    {
+      "id": "d0172",
+      "it": "breve",
+      "en": "brief",
+      "pos": "noun"
+    },
+    {
+      "id": "d0173",
+      "it": "bruciare",
+      "en": "burn",
+      "pos": "verb"
+    },
+    {
+      "id": "d0174",
+      "it": "brutto",
+      "en": "ugly",
+      "pos": "noun"
+    },
+    {
+      "id": "d0175",
+      "it": "buco",
+      "en": "gap",
+      "pos": "noun"
+    },
+    {
+      "id": "d0176",
+      "it": "buio",
+      "en": "dark",
+      "pos": "noun"
+    },
+    {
+      "id": "d0177",
+      "it": "buongiorno",
+      "en": "good morning",
+      "pos": "other"
+    },
+    {
+      "id": "d0178",
+      "it": "buono",
+      "en": "coupon",
+      "pos": "noun"
+    },
+    {
+      "id": "d0179",
+      "it": "buttare",
+      "en": "dump",
+      "pos": "verb"
+    },
+    {
+      "id": "d0180",
+      "it": "caccia",
+      "en": "fighter",
+      "pos": "noun"
+    },
+    {
+      "id": "d0181",
+      "it": "cacciare",
+      "en": "hunt",
+      "pos": "verb"
+    },
+    {
+      "id": "d0182",
+      "it": "cadavere",
+      "en": "corpse",
+      "pos": "noun"
+    },
+    {
+      "id": "d0183",
+      "it": "cadere",
+      "en": "fall",
+      "pos": "verb"
+    },
+    {
+      "id": "d0184",
+      "it": "calcio",
+      "en": "calcium",
+      "pos": "noun"
+    },
+    {
+      "id": "d0185",
+      "it": "caldo",
+      "en": "hot",
+      "pos": "noun"
+    },
+    {
+      "id": "d0186",
+      "it": "calore",
+      "en": "heat",
+      "pos": "noun"
+    },
+    {
+      "id": "d0187",
+      "it": "cambiamento",
+      "en": "change",
+      "pos": "noun"
+    },
+    {
+      "id": "d0188",
+      "it": "cambiare",
+      "en": "change",
+      "pos": "verb"
+    },
+    {
+      "id": "d0189",
+      "it": "cambio",
+      "en": "change",
+      "pos": "noun"
+    },
+    {
+      "id": "d0190",
+      "it": "camera",
+      "en": "room",
+      "pos": "noun"
+    },
+    {
+      "id": "d0191",
+      "it": "camion",
+      "en": "lorry",
+      "pos": "noun"
+    },
+    {
+      "id": "d0192",
+      "it": "camminare",
+      "en": "walk",
+      "pos": "verb"
+    },
+    {
+      "id": "d0193",
+      "it": "campagna",
+      "en": "campaign",
+      "pos": "noun"
+    },
+    {
+      "id": "d0194",
+      "it": "campione",
+      "en": "champion",
+      "pos": "noun"
+    },
+    {
+      "id": "d0195",
+      "it": "campo",
+      "en": "countryside",
+      "pos": "noun"
+    },
+    {
+      "id": "d0196",
+      "it": "canale",
+      "en": "channel",
+      "pos": "noun"
+    },
+    {
+      "id": "d0197",
+      "it": "cancellare",
+      "en": "delete",
+      "pos": "verb"
+    },
+    {
+      "id": "d0198",
+      "it": "candidato",
+      "en": "candidate",
+      "pos": "noun"
+    },
+    {
+      "id": "d0199",
+      "it": "cane",
+      "en": "dog",
+      "pos": "noun"
+    },
+    {
+      "id": "d0200",
+      "it": "cantare",
+      "en": "sing",
+      "pos": "verb"
+    },
+    {
+      "id": "d0201",
+      "it": "canto",
+      "en": "edge",
+      "pos": "noun"
+    },
+    {
+      "id": "d0202",
+      "it": "canzone",
+      "en": "song",
+      "pos": "noun"
+    },
+    {
+      "id": "d0203",
+      "it": "capace",
+      "en": "able",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0204",
+      "it": "capello",
+      "en": "hair",
+      "pos": "noun"
+    },
+    {
+      "id": "d0205",
+      "it": "capire",
+      "en": "understand",
+      "pos": "verb"
+    },
+    {
+      "id": "d0206",
+      "it": "capitale",
+      "en": "capital",
+      "pos": "noun"
+    },
+    {
+      "id": "d0207",
+      "it": "capitano",
+      "en": "captain",
+      "pos": "noun"
+    },
+    {
+      "id": "d0208",
+      "it": "capitare",
+      "en": "happen",
+      "pos": "verb"
+    },
+    {
+      "id": "d0209",
+      "it": "capitolo",
+      "en": "chapter",
+      "pos": "noun"
+    },
+    {
+      "id": "d0210",
+      "it": "capo",
+      "en": "boss",
+      "pos": "noun"
+    },
+    {
+      "id": "d0211",
+      "it": "carattere",
+      "en": "character",
+      "pos": "noun"
+    },
+    {
+      "id": "d0212",
+      "it": "caratteristica",
+      "en": "characteristic",
+      "pos": "noun"
+    },
+    {
+      "id": "d0213",
+      "it": "caratterizzare",
+      "en": "characterise",
+      "pos": "verb"
+    },
+    {
+      "id": "d0214",
+      "it": "carcere",
+      "en": "incarceration",
+      "pos": "noun"
+    },
+    {
+      "id": "d0215",
+      "it": "carica",
+      "en": "charge",
+      "pos": "noun"
+    },
+    {
+      "id": "d0216",
+      "it": "caricare",
+      "en": "charge",
+      "pos": "verb"
+    },
+    {
+      "id": "d0217",
+      "it": "carico",
+      "en": "charge",
+      "pos": "noun"
+    },
+    {
+      "id": "d0218",
+      "it": "carne",
+      "en": "flesh",
+      "pos": "noun"
+    },
+    {
+      "id": "d0219",
+      "it": "caro",
+      "en": "dear",
+      "pos": "noun"
+    },
+    {
+      "id": "d0220",
+      "it": "carriera",
+      "en": "career",
+      "pos": "noun"
+    },
+    {
+      "id": "d0221",
+      "it": "carta",
+      "en": "card",
+      "pos": "noun"
+    },
+    {
+      "id": "d0222",
+      "it": "casa",
+      "en": "home",
+      "pos": "noun"
+    },
+    {
+      "id": "d0223",
+      "it": "casino",
+      "en": "casino",
+      "pos": "noun"
+    },
+    {
+      "id": "d0224",
+      "it": "caso",
+      "en": "case",
+      "pos": "noun"
+    },
+    {
+      "id": "d0225",
+      "it": "castello",
+      "en": "castle",
+      "pos": "noun"
+    },
+    {
+      "id": "d0226",
+      "it": "categoria",
+      "en": "category",
+      "pos": "noun"
+    },
+    {
+      "id": "d0227",
+      "it": "catena",
+      "en": "chain",
+      "pos": "noun"
+    },
+    {
+      "id": "d0228",
+      "it": "cattivo",
+      "en": "bad",
+      "pos": "noun"
+    },
+    {
+      "id": "d0229",
+      "it": "cattolico",
+      "en": "catholic",
+      "pos": "noun"
+    },
+    {
+      "id": "d0230",
+      "it": "causa",
+      "en": "cause",
+      "pos": "noun"
+    },
+    {
+      "id": "d0231",
+      "it": "causare",
+      "en": "cause",
+      "pos": "verb"
+    },
+    {
+      "id": "d0232",
+      "it": "cavaliere",
+      "en": "knight",
+      "pos": "noun"
+    },
+    {
+      "id": "d0233",
+      "it": "cavallo",
+      "en": "horse",
+      "pos": "noun"
+    },
+    {
+      "id": "d0234",
+      "it": "cedere",
+      "en": "yield",
+      "pos": "verb"
+    },
+    {
+      "id": "d0235",
+      "it": "cellula",
+      "en": "cell",
+      "pos": "noun"
+    },
+    {
+      "id": "d0236",
+      "it": "cellulare",
+      "en": "cellular",
+      "pos": "noun"
+    },
+    {
+      "id": "d0237",
+      "it": "cena",
+      "en": "dinner",
+      "pos": "noun"
+    },
+    {
+      "id": "d0238",
+      "it": "centinaio",
+      "en": "hundred",
+      "pos": "noun"
+    },
+    {
+      "id": "d0239",
+      "it": "cento",
+      "en": "a hundred",
+      "pos": "noun"
+    },
+    {
+      "id": "d0240",
+      "it": "centrale",
+      "en": "central",
+      "pos": "noun"
+    },
+    {
+      "id": "d0241",
+      "it": "centro",
+      "en": "centre",
+      "pos": "noun"
+    },
+    {
+      "id": "d0242",
+      "it": "cercare",
+      "en": "search",
+      "pos": "verb"
+    },
+    {
+      "id": "d0243",
+      "it": "certamente",
+      "en": "certainly",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0244",
+      "it": "certezza",
+      "en": "certainty",
+      "pos": "noun"
+    },
+    {
+      "id": "d0245",
+      "it": "certo",
+      "en": "certain",
+      "pos": "noun"
+    },
+    {
+      "id": "d0246",
+      "it": "cervello",
+      "en": "brain",
+      "pos": "noun"
+    },
+    {
+      "id": "d0247",
+      "it": "chiamare",
+      "en": "call",
+      "pos": "verb"
+    },
+    {
+      "id": "d0248",
+      "it": "chiaramente",
+      "en": "clearly",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0249",
+      "it": "chiarire",
+      "en": "clarify",
+      "pos": "verb"
+    },
+    {
+      "id": "d0250",
+      "it": "chiaro",
+      "en": "clear",
+      "pos": "noun"
+    },
+    {
+      "id": "d0251",
+      "it": "chiave",
+      "en": "key",
+      "pos": "noun"
+    },
+    {
+      "id": "d0252",
+      "it": "chiedere",
+      "en": "ask",
+      "pos": "verb"
+    },
+    {
+      "id": "d0253",
+      "it": "chiesa",
+      "en": "church",
+      "pos": "noun"
+    },
+    {
+      "id": "d0254",
+      "it": "chilometro",
+      "en": "kilometre",
+      "pos": "noun"
+    },
+    {
+      "id": "d0255",
+      "it": "chimico",
+      "en": "chemical",
+      "pos": "noun"
+    },
+    {
+      "id": "d0256",
+      "it": "chiudere",
+      "en": "close",
+      "pos": "verb"
+    },
+    {
+      "id": "d0257",
+      "it": "chiunque",
+      "en": "anybody",
+      "pos": "pronoun"
+    },
+    {
+      "id": "d0258",
+      "it": "ciao",
+      "en": "ciao",
+      "pos": "other"
+    },
+    {
+      "id": "d0259",
+      "it": "ciascuno",
+      "en": "each",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0260",
+      "it": "cibo",
+      "en": "food",
+      "pos": "noun"
+    },
+    {
+      "id": "d0261",
+      "it": "cielo",
+      "en": "heaven",
+      "pos": "noun"
+    },
+    {
+      "id": "d0262",
+      "it": "cifra",
+      "en": "digit",
+      "pos": "noun"
+    },
+    {
+      "id": "d0263",
+      "it": "cinema",
+      "en": "cinema",
+      "pos": "noun"
+    },
+    {
+      "id": "d0264",
+      "it": "cinese",
+      "en": "Chinese",
+      "pos": "noun"
+    },
+    {
+      "id": "d0265",
+      "it": "cinquanta",
+      "en": "fifty",
+      "pos": "noun"
+    },
+    {
+      "id": "d0266",
+      "it": "cinque",
+      "en": "five",
+      "pos": "noun"
+    },
+    {
+      "id": "d0267",
+      "it": "circa",
+      "en": "around",
+      "pos": "noun"
+    },
+    {
+      "id": "d0268",
+      "it": "circondare",
+      "en": "surround",
+      "pos": "verb"
+    },
+    {
+      "id": "d0269",
+      "it": "circostanza",
+      "en": "circumstance",
+      "pos": "noun"
+    },
+    {
+      "id": "d0270",
+      "it": "citare",
+      "en": "cite",
+      "pos": "verb"
+    },
+    {
+      "id": "d0271",
+      "it": "cittadino",
+      "en": "citizen",
+      "pos": "noun"
+    },
+    {
+      "id": "d0272",
+      "it": "civile",
+      "en": "civil",
+      "pos": "noun"
+    },
+    {
+      "id": "d0273",
+      "it": "ciò",
+      "en": "this",
+      "pos": "pronoun"
+    },
+    {
+      "id": "d0274",
+      "it": "classe",
+      "en": "class",
+      "pos": "noun"
+    },
+    {
+      "id": "d0275",
+      "it": "classico",
+      "en": "classic",
+      "pos": "noun"
+    },
+    {
+      "id": "d0276",
+      "it": "cliente",
+      "en": "client",
+      "pos": "noun"
+    },
+    {
+      "id": "d0277",
+      "it": "coda",
+      "en": "tail",
+      "pos": "noun"
+    },
+    {
+      "id": "d0278",
+      "it": "codice",
+      "en": "code",
+      "pos": "noun"
+    },
+    {
+      "id": "d0279",
+      "it": "coinvolgere",
+      "en": "involve",
+      "pos": "verb"
+    },
+    {
+      "id": "d0280",
+      "it": "collega",
+      "en": "associate",
+      "pos": "noun"
+    },
+    {
+      "id": "d0281",
+      "it": "collegare",
+      "en": "link",
+      "pos": "verb"
+    },
+    {
+      "id": "d0282",
+      "it": "collo",
+      "en": "neck",
+      "pos": "noun"
+    },
+    {
+      "id": "d0283",
+      "it": "colonna",
+      "en": "column",
+      "pos": "noun"
+    },
+    {
+      "id": "d0284",
+      "it": "colore",
+      "en": "color",
+      "pos": "noun"
+    },
+    {
+      "id": "d0285",
+      "it": "coloro",
+      "en": "those",
+      "pos": "pronoun"
+    },
+    {
+      "id": "d0286",
+      "it": "colpa",
+      "en": "blame",
+      "pos": "noun"
+    },
+    {
+      "id": "d0287",
+      "it": "colpire",
+      "en": "bang",
+      "pos": "verb"
+    },
+    {
+      "id": "d0288",
+      "it": "colpo",
+      "en": "bang",
+      "pos": "noun"
+    },
+    {
+      "id": "d0289",
+      "it": "coltello",
+      "en": "knife",
+      "pos": "noun"
+    },
+    {
+      "id": "d0290",
+      "it": "combattere",
+      "en": "battle",
+      "pos": "verb"
+    },
+    {
+      "id": "d0291",
+      "it": "come",
+      "en": "as",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0292",
+      "it": "cominciare",
+      "en": "commence",
+      "pos": "verb"
+    },
+    {
+      "id": "d0293",
+      "it": "commentare",
+      "en": "comment",
+      "pos": "verb"
+    },
+    {
+      "id": "d0294",
+      "it": "commento",
+      "en": "comment",
+      "pos": "noun"
+    },
+    {
+      "id": "d0295",
+      "it": "commerciale",
+      "en": "commercial",
+      "pos": "noun"
+    },
+    {
+      "id": "d0296",
+      "it": "commettere",
+      "en": "commit",
+      "pos": "verb"
+    },
+    {
+      "id": "d0297",
+      "it": "commissario",
+      "en": "commissioner",
+      "pos": "noun"
+    },
+    {
+      "id": "d0298",
+      "it": "commissione",
+      "en": "commission",
+      "pos": "noun"
+    },
+    {
+      "id": "d0299",
+      "it": "comodo",
+      "en": "comfortable",
+      "pos": "noun"
+    },
+    {
+      "id": "d0300",
+      "it": "compagnia",
+      "en": "company",
+      "pos": "noun"
+    },
+    {
+      "id": "d0301",
+      "it": "compagno",
+      "en": "companion",
+      "pos": "noun"
+    },
+    {
+      "id": "d0302",
+      "it": "compiere",
+      "en": "accomplish",
+      "pos": "verb"
+    },
+    {
+      "id": "d0303",
+      "it": "complesso",
+      "en": "complex",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0304",
+      "it": "completamente",
+      "en": "completely",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0305",
+      "it": "completo",
+      "en": "complete",
+      "pos": "noun"
+    },
+    {
+      "id": "d0306",
+      "it": "comporre",
+      "en": "compose",
+      "pos": "verb"
+    },
+    {
+      "id": "d0307",
+      "it": "comportamento",
+      "en": "behaviour",
+      "pos": "noun"
+    },
+    {
+      "id": "d0308",
+      "it": "comportare",
+      "en": "comport",
+      "pos": "verb"
+    },
+    {
+      "id": "d0309",
+      "it": "comprare",
+      "en": "buy",
+      "pos": "verb"
+    },
+    {
+      "id": "d0310",
+      "it": "comprendere",
+      "en": "comprise",
+      "pos": "verb"
+    },
+    {
+      "id": "d0311",
+      "it": "computer",
+      "en": "computer",
+      "pos": "noun"
+    },
+    {
+      "id": "d0312",
+      "it": "comune",
+      "en": "citycouncil",
+      "pos": "noun"
+    },
+    {
+      "id": "d0313",
+      "it": "comunicare",
+      "en": "communicate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0314",
+      "it": "comunicazione",
+      "en": "communication",
+      "pos": "noun"
+    },
+    {
+      "id": "d0315",
+      "it": "comunista",
+      "en": "communist",
+      "pos": "noun"
+    },
+    {
+      "id": "d0316",
+      "it": "concerto",
+      "en": "concert",
+      "pos": "noun"
+    },
+    {
+      "id": "d0317",
+      "it": "concetto",
+      "en": "concept",
+      "pos": "noun"
+    },
+    {
+      "id": "d0318",
+      "it": "concludere",
+      "en": "conclude",
+      "pos": "verb"
+    },
+    {
+      "id": "d0319",
+      "it": "conclusione",
+      "en": "conclusion",
+      "pos": "noun"
+    },
+    {
+      "id": "d0320",
+      "it": "concreto",
+      "en": "concrete",
+      "pos": "noun"
+    },
+    {
+      "id": "d0321",
+      "it": "condannare",
+      "en": "condemn",
+      "pos": "verb"
+    },
+    {
+      "id": "d0322",
+      "it": "condividere",
+      "en": "share",
+      "pos": "verb"
+    },
+    {
+      "id": "d0323",
+      "it": "condizione",
+      "en": "condition",
+      "pos": "noun"
+    },
+    {
+      "id": "d0324",
+      "it": "condurre",
+      "en": "conduct",
+      "pos": "verb"
+    },
+    {
+      "id": "d0325",
+      "it": "confermare",
+      "en": "confirm",
+      "pos": "verb"
+    },
+    {
+      "id": "d0326",
+      "it": "confine",
+      "en": "border",
+      "pos": "noun"
+    },
+    {
+      "id": "d0327",
+      "it": "confondere",
+      "en": "confuse",
+      "pos": "verb"
+    },
+    {
+      "id": "d0328",
+      "it": "confronto",
+      "en": "comparison",
+      "pos": "noun"
+    },
+    {
+      "id": "d0329",
+      "it": "conoscenza",
+      "en": "knowledge",
+      "pos": "noun"
+    },
+    {
+      "id": "d0330",
+      "it": "conoscere",
+      "en": "know",
+      "pos": "verb"
+    },
+    {
+      "id": "d0331",
+      "it": "conquistare",
+      "en": "conquer",
+      "pos": "verb"
+    },
+    {
+      "id": "d0332",
+      "it": "consegnare",
+      "en": "deliver",
+      "pos": "verb"
+    },
+    {
+      "id": "d0333",
+      "it": "conseguenza",
+      "en": "consequence",
+      "pos": "noun"
+    },
+    {
+      "id": "d0334",
+      "it": "consentire",
+      "en": "consent",
+      "pos": "verb"
+    },
+    {
+      "id": "d0335",
+      "it": "conservare",
+      "en": "conserve",
+      "pos": "verb"
+    },
+    {
+      "id": "d0336",
+      "it": "considerare",
+      "en": "consider",
+      "pos": "verb"
+    },
+    {
+      "id": "d0337",
+      "it": "considerazione",
+      "en": "consideration",
+      "pos": "noun"
+    },
+    {
+      "id": "d0338",
+      "it": "consigliare",
+      "en": "advise",
+      "pos": "verb"
+    },
+    {
+      "id": "d0339",
+      "it": "consiglio",
+      "en": "advice",
+      "pos": "noun"
+    },
+    {
+      "id": "d0340",
+      "it": "consumare",
+      "en": "consume",
+      "pos": "verb"
+    },
+    {
+      "id": "d0341",
+      "it": "contare",
+      "en": "count",
+      "pos": "verb"
+    },
+    {
+      "id": "d0342",
+      "it": "contatto",
+      "en": "contact",
+      "pos": "noun"
+    },
+    {
+      "id": "d0343",
+      "it": "contemporaneo",
+      "en": "contemporary",
+      "pos": "noun"
+    },
+    {
+      "id": "d0344",
+      "it": "contenere",
+      "en": "contain",
+      "pos": "verb"
+    },
+    {
+      "id": "d0345",
+      "it": "contento",
+      "en": "content",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0346",
+      "it": "contenuto",
+      "en": "content",
+      "pos": "noun"
+    },
+    {
+      "id": "d0347",
+      "it": "contesto",
+      "en": "context",
+      "pos": "noun"
+    },
+    {
+      "id": "d0348",
+      "it": "continuare",
+      "en": "continue",
+      "pos": "verb"
+    },
+    {
+      "id": "d0349",
+      "it": "continuo",
+      "en": "continuation",
+      "pos": "noun"
+    },
+    {
+      "id": "d0350",
+      "it": "conto",
+      "en": "account",
+      "pos": "noun"
+    },
+    {
+      "id": "d0351",
+      "it": "contrario",
+      "en": "contrary",
+      "pos": "noun"
+    },
+    {
+      "id": "d0352",
+      "it": "contratto",
+      "en": "contract",
+      "pos": "noun"
+    },
+    {
+      "id": "d0353",
+      "it": "contro",
+      "en": "against",
+      "pos": "noun"
+    },
+    {
+      "id": "d0354",
+      "it": "controllare",
+      "en": "control",
+      "pos": "verb"
+    },
+    {
+      "id": "d0355",
+      "it": "controllo",
+      "en": "check",
+      "pos": "noun"
+    },
+    {
+      "id": "d0356",
+      "it": "conversazione",
+      "en": "conversation",
+      "pos": "noun"
+    },
+    {
+      "id": "d0357",
+      "it": "convincere",
+      "en": "convince",
+      "pos": "verb"
+    },
+    {
+      "id": "d0358",
+      "it": "copia",
+      "en": "copy",
+      "pos": "noun"
+    },
+    {
+      "id": "d0359",
+      "it": "coppia",
+      "en": "couple",
+      "pos": "noun"
+    },
+    {
+      "id": "d0360",
+      "it": "coprire",
+      "en": "cover",
+      "pos": "verb"
+    },
+    {
+      "id": "d0361",
+      "it": "coraggio",
+      "en": "courage",
+      "pos": "noun"
+    },
+    {
+      "id": "d0362",
+      "it": "corda",
+      "en": "rope",
+      "pos": "noun"
+    },
+    {
+      "id": "d0363",
+      "it": "corpo",
+      "en": "body",
+      "pos": "noun"
+    },
+    {
+      "id": "d0364",
+      "it": "correggere",
+      "en": "adjust",
+      "pos": "verb"
+    },
+    {
+      "id": "d0365",
+      "it": "corrente",
+      "en": "common",
+      "pos": "noun"
+    },
+    {
+      "id": "d0366",
+      "it": "correre",
+      "en": "race",
+      "pos": "verb"
+    },
+    {
+      "id": "d0367",
+      "it": "corrispondere",
+      "en": "correspond",
+      "pos": "verb"
+    },
+    {
+      "id": "d0368",
+      "it": "corsa",
+      "en": "race",
+      "pos": "noun"
+    },
+    {
+      "id": "d0369",
+      "it": "corso",
+      "en": "course",
+      "pos": "noun"
+    },
+    {
+      "id": "d0370",
+      "it": "corto",
+      "en": "short",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0371",
+      "it": "cosa",
+      "en": "thing",
+      "pos": "noun"
+    },
+    {
+      "id": "d0372",
+      "it": "coscienza",
+      "en": "consciousness",
+      "pos": "noun"
+    },
+    {
+      "id": "d0373",
+      "it": "costa",
+      "en": "coast",
+      "pos": "noun"
+    },
+    {
+      "id": "d0374",
+      "it": "costare",
+      "en": "cost",
+      "pos": "verb"
+    },
+    {
+      "id": "d0375",
+      "it": "costituire",
+      "en": "constitute",
+      "pos": "verb"
+    },
+    {
+      "id": "d0376",
+      "it": "costo",
+      "en": "cost",
+      "pos": "noun"
+    },
+    {
+      "id": "d0377",
+      "it": "costringere",
+      "en": "compel",
+      "pos": "verb"
+    },
+    {
+      "id": "d0378",
+      "it": "costruire",
+      "en": "construct",
+      "pos": "verb"
+    },
+    {
+      "id": "d0379",
+      "it": "costruzione",
+      "en": "construction",
+      "pos": "noun"
+    },
+    {
+      "id": "d0380",
+      "it": "costume",
+      "en": "costume",
+      "pos": "noun"
+    },
+    {
+      "id": "d0381",
+      "it": "così",
+      "en": "so",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0382",
+      "it": "creare",
+      "en": "create",
+      "pos": "verb"
+    },
+    {
+      "id": "d0383",
+      "it": "credere",
+      "en": "believe",
+      "pos": "verb"
+    },
+    {
+      "id": "d0384",
+      "it": "credito",
+      "en": "credit",
+      "pos": "noun"
+    },
+    {
+      "id": "d0385",
+      "it": "crescere",
+      "en": "grow",
+      "pos": "verb"
+    },
+    {
+      "id": "d0386",
+      "it": "crescita",
+      "en": "growth",
+      "pos": "noun"
+    },
+    {
+      "id": "d0387",
+      "it": "crisi",
+      "en": "crisis",
+      "pos": "noun"
+    },
+    {
+      "id": "d0388",
+      "it": "cristiano",
+      "en": "christian",
+      "pos": "noun"
+    },
+    {
+      "id": "d0389",
+      "it": "critica",
+      "en": "criticism",
+      "pos": "noun"
+    },
+    {
+      "id": "d0390",
+      "it": "critico",
+      "en": "critic",
+      "pos": "noun"
+    },
+    {
+      "id": "d0391",
+      "it": "cucina",
+      "en": "cooker",
+      "pos": "noun"
+    },
+    {
+      "id": "d0392",
+      "it": "cucinare",
+      "en": "cook",
+      "pos": "verb"
+    },
+    {
+      "id": "d0393",
+      "it": "culo",
+      "en": "booty",
+      "pos": "noun"
+    },
+    {
+      "id": "d0394",
+      "it": "cultura",
+      "en": "culture",
+      "pos": "noun"
+    },
+    {
+      "id": "d0395",
+      "it": "culturale",
+      "en": "cultural",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0396",
+      "it": "cuore",
+      "en": "heart",
+      "pos": "noun"
+    },
+    {
+      "id": "d0397",
+      "it": "cura",
+      "en": "care",
+      "pos": "noun"
+    },
+    {
+      "id": "d0398",
+      "it": "curare",
+      "en": "cure",
+      "pos": "verb"
+    },
+    {
+      "id": "d0399",
+      "it": "curioso",
+      "en": "curious",
+      "pos": "noun"
+    },
+    {
+      "id": "d0400",
+      "it": "danno",
+      "en": "damage",
+      "pos": "noun"
+    },
+    {
+      "id": "d0401",
+      "it": "dare",
+      "en": "give",
+      "pos": "verb"
+    },
+    {
+      "id": "d0402",
+      "it": "data",
+      "en": "date",
+      "pos": "noun"
+    },
+    {
+      "id": "d0403",
+      "it": "dato",
+      "en": "data",
+      "pos": "noun"
+    },
+    {
+      "id": "d0404",
+      "it": "davanti",
+      "en": "in front",
+      "pos": "noun"
+    },
+    {
+      "id": "d0405",
+      "it": "davvero",
+      "en": "really",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0406",
+      "it": "debito",
+      "en": "debit",
+      "pos": "noun"
+    },
+    {
+      "id": "d0407",
+      "it": "debole",
+      "en": "feeble",
+      "pos": "noun"
+    },
+    {
+      "id": "d0408",
+      "it": "decidere",
+      "en": "decide",
+      "pos": "verb"
+    },
+    {
+      "id": "d0409",
+      "it": "decina",
+      "en": "ten",
+      "pos": "noun"
+    },
+    {
+      "id": "d0410",
+      "it": "decisione",
+      "en": "decision",
+      "pos": "noun"
+    },
+    {
+      "id": "d0411",
+      "it": "dedicare",
+      "en": "dedicate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0412",
+      "it": "definire",
+      "en": "define",
+      "pos": "verb"
+    },
+    {
+      "id": "d0413",
+      "it": "definitivo",
+      "en": "definite",
+      "pos": "noun"
+    },
+    {
+      "id": "d0414",
+      "it": "definizione",
+      "en": "definition",
+      "pos": "noun"
+    },
+    {
+      "id": "d0415",
+      "it": "democrazia",
+      "en": "democracy",
+      "pos": "noun"
+    },
+    {
+      "id": "d0416",
+      "it": "denaro",
+      "en": "money",
+      "pos": "noun"
+    },
+    {
+      "id": "d0417",
+      "it": "dente",
+      "en": "tooth",
+      "pos": "noun"
+    },
+    {
+      "id": "d0418",
+      "it": "dentro",
+      "en": "in",
+      "pos": "noun"
+    },
+    {
+      "id": "d0419",
+      "it": "denunciare",
+      "en": "denounce",
+      "pos": "verb"
+    },
+    {
+      "id": "d0420",
+      "it": "derivare",
+      "en": "derive",
+      "pos": "verb"
+    },
+    {
+      "id": "d0421",
+      "it": "descrivere",
+      "en": "describe",
+      "pos": "verb"
+    },
+    {
+      "id": "d0422",
+      "it": "descrizione",
+      "en": "description",
+      "pos": "noun"
+    },
+    {
+      "id": "d0423",
+      "it": "desiderare",
+      "en": "desire",
+      "pos": "verb"
+    },
+    {
+      "id": "d0424",
+      "it": "desiderio",
+      "en": "desire",
+      "pos": "noun"
+    },
+    {
+      "id": "d0425",
+      "it": "destinare",
+      "en": "assign",
+      "pos": "verb"
+    },
+    {
+      "id": "d0426",
+      "it": "destino",
+      "en": "destination",
+      "pos": "noun"
+    },
+    {
+      "id": "d0427",
+      "it": "destra",
+      "en": "right",
+      "pos": "noun"
+    },
+    {
+      "id": "d0428",
+      "it": "destro",
+      "en": "right",
+      "pos": "noun"
+    },
+    {
+      "id": "d0429",
+      "it": "determinare",
+      "en": "determine",
+      "pos": "verb"
+    },
+    {
+      "id": "d0430",
+      "it": "dettaglio",
+      "en": "detail",
+      "pos": "noun"
+    },
+    {
+      "id": "d0431",
+      "it": "dialetto",
+      "en": "dialect",
+      "pos": "noun"
+    },
+    {
+      "id": "d0432",
+      "it": "dialogo",
+      "en": "dialog",
+      "pos": "noun"
+    },
+    {
+      "id": "d0433",
+      "it": "diamante",
+      "en": "diamond",
+      "pos": "noun"
+    },
+    {
+      "id": "d0434",
+      "it": "diavolo",
+      "en": "devil",
+      "pos": "noun"
+    },
+    {
+      "id": "d0435",
+      "it": "dichiarare",
+      "en": "allege",
+      "pos": "verb"
+    },
+    {
+      "id": "d0436",
+      "it": "dichiarazione",
+      "en": "statement",
+      "pos": "noun"
+    },
+    {
+      "id": "d0437",
+      "it": "dieci",
+      "en": "ten",
+      "pos": "noun"
+    },
+    {
+      "id": "d0438",
+      "it": "dietro",
+      "en": "back",
+      "pos": "noun"
+    },
+    {
+      "id": "d0439",
+      "it": "difendere",
+      "en": "advocate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0440",
+      "it": "difesa",
+      "en": "defence",
+      "pos": "noun"
+    },
+    {
+      "id": "d0441",
+      "it": "differente",
+      "en": "different",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0442",
+      "it": "differenza",
+      "en": "difference",
+      "pos": "noun"
+    },
+    {
+      "id": "d0443",
+      "it": "difficile",
+      "en": "difficult",
+      "pos": "noun"
+    },
+    {
+      "id": "d0444",
+      "it": "diffondere",
+      "en": "disseminate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0445",
+      "it": "dimensione",
+      "en": "dimension",
+      "pos": "noun"
+    },
+    {
+      "id": "d0446",
+      "it": "dimenticare",
+      "en": "forget",
+      "pos": "verb"
+    },
+    {
+      "id": "d0447",
+      "it": "dimostrare",
+      "en": "demonstrate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0448",
+      "it": "dipendente",
+      "en": "addict",
+      "pos": "noun"
+    },
+    {
+      "id": "d0449",
+      "it": "dipendere",
+      "en": "depend",
+      "pos": "verb"
+    },
+    {
+      "id": "d0450",
+      "it": "dire",
+      "en": "say",
+      "pos": "verb"
+    },
+    {
+      "id": "d0451",
+      "it": "direttamente",
+      "en": "directly",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0452",
+      "it": "diretto",
+      "en": "direct",
+      "pos": "noun"
+    },
+    {
+      "id": "d0453",
+      "it": "direttore",
+      "en": "conductor",
+      "pos": "noun"
+    },
+    {
+      "id": "d0454",
+      "it": "direzione",
+      "en": "direction",
+      "pos": "noun"
+    },
+    {
+      "id": "d0455",
+      "it": "dirigere",
+      "en": "address",
+      "pos": "verb"
+    },
+    {
+      "id": "d0456",
+      "it": "diritto",
+      "en": "law",
+      "pos": "noun"
+    },
+    {
+      "id": "d0457",
+      "it": "disco",
+      "en": "disc",
+      "pos": "noun"
+    },
+    {
+      "id": "d0458",
+      "it": "discorso",
+      "en": "speech",
+      "pos": "noun"
+    },
+    {
+      "id": "d0459",
+      "it": "discussione",
+      "en": "argument",
+      "pos": "noun"
+    },
+    {
+      "id": "d0460",
+      "it": "discutere",
+      "en": "discuss",
+      "pos": "verb"
+    },
+    {
+      "id": "d0461",
+      "it": "disegnare",
+      "en": "design",
+      "pos": "verb"
+    },
+    {
+      "id": "d0462",
+      "it": "disegno",
+      "en": "cartoonist",
+      "pos": "noun"
+    },
+    {
+      "id": "d0463",
+      "it": "dispiacere",
+      "en": "dislike",
+      "pos": "verb"
+    },
+    {
+      "id": "d0464",
+      "it": "disponibile",
+      "en": "available",
+      "pos": "noun"
+    },
+    {
+      "id": "d0465",
+      "it": "disporre",
+      "en": "place",
+      "pos": "verb"
+    },
+    {
+      "id": "d0466",
+      "it": "disposizione",
+      "en": "disposal",
+      "pos": "noun"
+    },
+    {
+      "id": "d0467",
+      "it": "distanza",
+      "en": "distance",
+      "pos": "noun"
+    },
+    {
+      "id": "d0468",
+      "it": "distinguere",
+      "en": "discern",
+      "pos": "verb"
+    },
+    {
+      "id": "d0469",
+      "it": "distribuire",
+      "en": "distribute",
+      "pos": "verb"
+    },
+    {
+      "id": "d0470",
+      "it": "distruggere",
+      "en": "destroy",
+      "pos": "verb"
+    },
+    {
+      "id": "d0471",
+      "it": "dito",
+      "en": "digit",
+      "pos": "noun"
+    },
+    {
+      "id": "d0472",
+      "it": "divano",
+      "en": "couch",
+      "pos": "noun"
+    },
+    {
+      "id": "d0473",
+      "it": "divenire",
+      "en": "become",
+      "pos": "verb"
+    },
+    {
+      "id": "d0474",
+      "it": "diventare",
+      "en": "become",
+      "pos": "verb"
+    },
+    {
+      "id": "d0475",
+      "it": "diverso",
+      "en": "diverse",
+      "pos": "noun"
+    },
+    {
+      "id": "d0476",
+      "it": "divertire",
+      "en": "amuse",
+      "pos": "verb"
+    },
+    {
+      "id": "d0477",
+      "it": "dividere",
+      "en": "divide",
+      "pos": "verb"
+    },
+    {
+      "id": "d0478",
+      "it": "documento",
+      "en": "document",
+      "pos": "noun"
+    },
+    {
+      "id": "d0479",
+      "it": "dodici",
+      "en": "twelve",
+      "pos": "noun"
+    },
+    {
+      "id": "d0480",
+      "it": "dolce",
+      "en": "mellow",
+      "pos": "noun"
+    },
+    {
+      "id": "d0481",
+      "it": "dollaro",
+      "en": "dollar",
+      "pos": "noun"
+    },
+    {
+      "id": "d0482",
+      "it": "dolore",
+      "en": "pain",
+      "pos": "noun"
+    },
+    {
+      "id": "d0483",
+      "it": "domanda",
+      "en": "demand",
+      "pos": "noun"
+    },
+    {
+      "id": "d0484",
+      "it": "domandare",
+      "en": "ask",
+      "pos": "verb"
+    },
+    {
+      "id": "d0485",
+      "it": "domani",
+      "en": "morning",
+      "pos": "noun"
+    },
+    {
+      "id": "d0486",
+      "it": "domenica",
+      "en": "sunday",
+      "pos": "noun"
+    },
+    {
+      "id": "d0487",
+      "it": "donna",
+      "en": "woman",
+      "pos": "noun"
+    },
+    {
+      "id": "d0488",
+      "it": "dopo",
+      "en": "after",
+      "pos": "noun"
+    },
+    {
+      "id": "d0489",
+      "it": "doppio",
+      "en": "double",
+      "pos": "noun"
+    },
+    {
+      "id": "d0490",
+      "it": "dormire",
+      "en": "sleep",
+      "pos": "verb"
+    },
+    {
+      "id": "d0491",
+      "it": "dottore",
+      "en": "doctor",
+      "pos": "noun"
+    },
+    {
+      "id": "d0492",
+      "it": "dove",
+      "en": "where",
+      "pos": "noun"
+    },
+    {
+      "id": "d0493",
+      "it": "dovere",
+      "en": " have to",
+      "pos": "noun"
+    },
+    {
+      "id": "d0494",
+      "it": "droga",
+      "en": "drug",
+      "pos": "noun"
+    },
+    {
+      "id": "d0495",
+      "it": "dubbio",
+      "en": "doubt",
+      "pos": "noun"
+    },
+    {
+      "id": "d0496",
+      "it": "due",
+      "en": "two",
+      "pos": "noun"
+    },
+    {
+      "id": "d0497",
+      "it": "durante",
+      "en": "during",
+      "pos": "noun"
+    },
+    {
+      "id": "d0498",
+      "it": "durare",
+      "en": "last",
+      "pos": "verb"
+    },
+    {
+      "id": "d0499",
+      "it": "durata",
+      "en": "duration",
+      "pos": "noun"
+    },
+    {
+      "id": "d0500",
+      "it": "duro",
+      "en": "hard",
+      "pos": "noun"
+    },
+    {
+      "id": "d0501",
+      "it": "ebreo",
+      "en": "Hebrew",
+      "pos": "noun"
+    },
+    {
+      "id": "d0502",
+      "it": "economia",
+      "en": "economics",
+      "pos": "noun"
+    },
+    {
+      "id": "d0503",
+      "it": "economico",
+      "en": "cheap",
+      "pos": "noun"
+    },
+    {
+      "id": "d0504",
+      "it": "edificio",
+      "en": "building",
+      "pos": "noun"
+    },
+    {
+      "id": "d0505",
+      "it": "edizione",
+      "en": "edition",
+      "pos": "noun"
+    },
+    {
+      "id": "d0506",
+      "it": "educazione",
+      "en": "education",
+      "pos": "noun"
+    },
+    {
+      "id": "d0507",
+      "it": "effetto",
+      "en": "effect",
+      "pos": "noun"
+    },
+    {
+      "id": "d0508",
+      "it": "effettuare",
+      "en": "effect",
+      "pos": "verb"
+    },
+    {
+      "id": "d0509",
+      "it": "egli",
+      "en": "he",
+      "pos": "pronoun"
+    },
+    {
+      "id": "d0510",
+      "it": "elegante",
+      "en": "elegant",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0511",
+      "it": "elementare",
+      "en": "elementary",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0512",
+      "it": "elemento",
+      "en": "element",
+      "pos": "noun"
+    },
+    {
+      "id": "d0513",
+      "it": "elenco",
+      "en": "list",
+      "pos": "noun"
+    },
+    {
+      "id": "d0514",
+      "it": "elettrico",
+      "en": "electrical",
+      "pos": "noun"
+    },
+    {
+      "id": "d0515",
+      "it": "elettronico",
+      "en": "electronic",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0516",
+      "it": "eliminare",
+      "en": "delete",
+      "pos": "verb"
+    },
+    {
+      "id": "d0517",
+      "it": "emergere",
+      "en": "emerge",
+      "pos": "verb"
+    },
+    {
+      "id": "d0518",
+      "it": "emozione",
+      "en": "emotion",
+      "pos": "noun"
+    },
+    {
+      "id": "d0519",
+      "it": "energia",
+      "en": "energy",
+      "pos": "noun"
+    },
+    {
+      "id": "d0520",
+      "it": "enorme",
+      "en": "enormous",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0521",
+      "it": "entrambi",
+      "en": "both",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0522",
+      "it": "entrare",
+      "en": "get in",
+      "pos": "verb"
+    },
+    {
+      "id": "d0523",
+      "it": "entrata",
+      "en": "earnings",
+      "pos": "noun"
+    },
+    {
+      "id": "d0524",
+      "it": "entro",
+      "en": "inside",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0525",
+      "it": "episodio",
+      "en": "episode",
+      "pos": "noun"
+    },
+    {
+      "id": "d0526",
+      "it": "epoca",
+      "en": "period",
+      "pos": "noun"
+    },
+    {
+      "id": "d0527",
+      "it": "equilibrio",
+      "en": "balance",
+      "pos": "noun"
+    },
+    {
+      "id": "d0528",
+      "it": "era",
+      "en": "era",
+      "pos": "noun"
+    },
+    {
+      "id": "d0529",
+      "it": "eroe",
+      "en": "hero",
+      "pos": "noun"
+    },
+    {
+      "id": "d0530",
+      "it": "errore",
+      "en": "blunder",
+      "pos": "noun"
+    },
+    {
+      "id": "d0531",
+      "it": "esame",
+      "en": "exam",
+      "pos": "noun"
+    },
+    {
+      "id": "d0532",
+      "it": "esattamente",
+      "en": "exactly",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0533",
+      "it": "esatto",
+      "en": "exact",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0534",
+      "it": "escludere",
+      "en": "exclude",
+      "pos": "verb"
+    },
+    {
+      "id": "d0535",
+      "it": "eseguire",
+      "en": "execute",
+      "pos": "verb"
+    },
+    {
+      "id": "d0536",
+      "it": "esempio",
+      "en": "example",
+      "pos": "noun"
+    },
+    {
+      "id": "d0537",
+      "it": "esercito",
+      "en": "army",
+      "pos": "noun"
+    },
+    {
+      "id": "d0538",
+      "it": "esercizio",
+      "en": "exercise",
+      "pos": "noun"
+    },
+    {
+      "id": "d0539",
+      "it": "esigenza",
+      "en": "requirement",
+      "pos": "noun"
+    },
+    {
+      "id": "d0540",
+      "it": "esistenza",
+      "en": "existence",
+      "pos": "noun"
+    },
+    {
+      "id": "d0541",
+      "it": "esistere",
+      "en": "exist",
+      "pos": "verb"
+    },
+    {
+      "id": "d0542",
+      "it": "esperienza",
+      "en": "experience",
+      "pos": "noun"
+    },
+    {
+      "id": "d0543",
+      "it": "esperto",
+      "en": "expert",
+      "pos": "noun"
+    },
+    {
+      "id": "d0544",
+      "it": "esporre",
+      "en": "display",
+      "pos": "verb"
+    },
+    {
+      "id": "d0545",
+      "it": "espressione",
+      "en": "expression",
+      "pos": "noun"
+    },
+    {
+      "id": "d0546",
+      "it": "esprimere",
+      "en": "express",
+      "pos": "verb"
+    },
+    {
+      "id": "d0547",
+      "it": "essere",
+      "en": "be",
+      "pos": "noun"
+    },
+    {
+      "id": "d0548",
+      "it": "estate",
+      "en": "summer",
+      "pos": "noun"
+    },
+    {
+      "id": "d0549",
+      "it": "esterno",
+      "en": "external",
+      "pos": "noun"
+    },
+    {
+      "id": "d0550",
+      "it": "estero",
+      "en": "foreign",
+      "pos": "noun"
+    },
+    {
+      "id": "d0551",
+      "it": "estremo",
+      "en": "extreme",
+      "pos": "noun"
+    },
+    {
+      "id": "d0552",
+      "it": "euro",
+      "en": "euro",
+      "pos": "noun"
+    },
+    {
+      "id": "d0553",
+      "it": "europeo",
+      "en": "european",
+      "pos": "noun"
+    },
+    {
+      "id": "d0554",
+      "it": "evento",
+      "en": "event",
+      "pos": "noun"
+    },
+    {
+      "id": "d0555",
+      "it": "evidente",
+      "en": "evident",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0556",
+      "it": "evidentemente",
+      "en": "evidently",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0557",
+      "it": "evitare",
+      "en": "avoid",
+      "pos": "verb"
+    },
+    {
+      "id": "d0558",
+      "it": "fabbrica",
+      "en": "factory",
+      "pos": "noun"
+    },
+    {
+      "id": "d0559",
+      "it": "faccia",
+      "en": "face",
+      "pos": "noun"
+    },
+    {
+      "id": "d0560",
+      "it": "facile",
+      "en": "easy",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0561",
+      "it": "facilmente",
+      "en": "easily",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0562",
+      "it": "falso",
+      "en": "fake",
+      "pos": "noun"
+    },
+    {
+      "id": "d0563",
+      "it": "fame",
+      "en": "hunger",
+      "pos": "noun"
+    },
+    {
+      "id": "d0564",
+      "it": "famiglia",
+      "en": "family",
+      "pos": "noun"
+    },
+    {
+      "id": "d0565",
+      "it": "familiare",
+      "en": "familiar",
+      "pos": "noun"
+    },
+    {
+      "id": "d0566",
+      "it": "famoso",
+      "en": "famous",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0567",
+      "it": "fantasia",
+      "en": "fancy",
+      "pos": "noun"
+    },
+    {
+      "id": "d0568",
+      "it": "fantastico",
+      "en": "fantastic",
+      "pos": "noun"
+    },
+    {
+      "id": "d0569",
+      "it": "fare",
+      "en": "do",
+      "pos": "verb"
+    },
+    {
+      "id": "d0570",
+      "it": "fascia",
+      "en": "band",
+      "pos": "noun"
+    },
+    {
+      "id": "d0571",
+      "it": "fase",
+      "en": "phase",
+      "pos": "noun"
+    },
+    {
+      "id": "d0572",
+      "it": "fastidio",
+      "en": "annoyance",
+      "pos": "noun"
+    },
+    {
+      "id": "d0573",
+      "it": "fatica",
+      "en": "fatigue",
+      "pos": "noun"
+    },
+    {
+      "id": "d0574",
+      "it": "fatto",
+      "en": "fact",
+      "pos": "noun"
+    },
+    {
+      "id": "d0575",
+      "it": "fattore",
+      "en": "factor",
+      "pos": "noun"
+    },
+    {
+      "id": "d0576",
+      "it": "favore",
+      "en": "favor",
+      "pos": "noun"
+    },
+    {
+      "id": "d0577",
+      "it": "febbraio",
+      "en": "February",
+      "pos": "noun"
+    },
+    {
+      "id": "d0578",
+      "it": "fede",
+      "en": "faith",
+      "pos": "noun"
+    },
+    {
+      "id": "d0579",
+      "it": "felice",
+      "en": "glad",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0580",
+      "it": "femmina",
+      "en": "female",
+      "pos": "noun"
+    },
+    {
+      "id": "d0581",
+      "it": "femminile",
+      "en": "female",
+      "pos": "noun"
+    },
+    {
+      "id": "d0582",
+      "it": "fenomeno",
+      "en": "phenomenon",
+      "pos": "noun"
+    },
+    {
+      "id": "d0583",
+      "it": "ferita",
+      "en": "wound",
+      "pos": "noun"
+    },
+    {
+      "id": "d0584",
+      "it": "fermare",
+      "en": "stall",
+      "pos": "verb"
+    },
+    {
+      "id": "d0585",
+      "it": "fermo",
+      "en": "firm",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0586",
+      "it": "ferro",
+      "en": "iron",
+      "pos": "noun"
+    },
+    {
+      "id": "d0587",
+      "it": "festa",
+      "en": "holiday",
+      "pos": "noun"
+    },
+    {
+      "id": "d0588",
+      "it": "festeggiare",
+      "en": "party",
+      "pos": "verb"
+    },
+    {
+      "id": "d0589",
+      "it": "fianco",
+      "en": "flank",
+      "pos": "noun"
+    },
+    {
+      "id": "d0590",
+      "it": "fidarsi",
+      "en": "trust",
+      "pos": "verb"
+    },
+    {
+      "id": "d0591",
+      "it": "fiducia",
+      "en": "confidence",
+      "pos": "noun"
+    },
+    {
+      "id": "d0592",
+      "it": "figlia",
+      "en": "daughter",
+      "pos": "noun"
+    },
+    {
+      "id": "d0593",
+      "it": "figlio",
+      "en": "child",
+      "pos": "noun"
+    },
+    {
+      "id": "d0594",
+      "it": "figura",
+      "en": "figure",
+      "pos": "noun"
+    },
+    {
+      "id": "d0595",
+      "it": "figurare",
+      "en": "appear",
+      "pos": "verb"
+    },
+    {
+      "id": "d0596",
+      "it": "fila",
+      "en": "line",
+      "pos": "noun"
+    },
+    {
+      "id": "d0597",
+      "it": "file",
+      "en": "file",
+      "pos": "noun"
+    },
+    {
+      "id": "d0598",
+      "it": "film",
+      "en": "film",
+      "pos": "noun"
+    },
+    {
+      "id": "d0599",
+      "it": "filo",
+      "en": "cut",
+      "pos": "noun"
+    },
+    {
+      "id": "d0600",
+      "it": "filosofia",
+      "en": "philosophy",
+      "pos": "noun"
+    },
+    {
+      "id": "d0601",
+      "it": "finale",
+      "en": "ending",
+      "pos": "noun"
+    },
+    {
+      "id": "d0602",
+      "it": "finalmente",
+      "en": "finally",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0603",
+      "it": "finanziario",
+      "en": "financial",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0604",
+      "it": "fine",
+      "en": "end",
+      "pos": "noun"
+    },
+    {
+      "id": "d0605",
+      "it": "finestra",
+      "en": "window",
+      "pos": "noun"
+    },
+    {
+      "id": "d0606",
+      "it": "fingere",
+      "en": "pretend",
+      "pos": "verb"
+    },
+    {
+      "id": "d0607",
+      "it": "finire",
+      "en": "end",
+      "pos": "verb"
+    },
+    {
+      "id": "d0608",
+      "it": "fino",
+      "en": "fine",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0609",
+      "it": "finto",
+      "en": "fake",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0610",
+      "it": "fiore",
+      "en": "flower",
+      "pos": "noun"
+    },
+    {
+      "id": "d0611",
+      "it": "firma",
+      "en": "signature",
+      "pos": "noun"
+    },
+    {
+      "id": "d0612",
+      "it": "firmare",
+      "en": "endorse",
+      "pos": "verb"
+    },
+    {
+      "id": "d0613",
+      "it": "fisico",
+      "en": "physical",
+      "pos": "noun"
+    },
+    {
+      "id": "d0614",
+      "it": "fiume",
+      "en": "river",
+      "pos": "noun"
+    },
+    {
+      "id": "d0615",
+      "it": "foglio",
+      "en": "blade",
+      "pos": "noun"
+    },
+    {
+      "id": "d0616",
+      "it": "fondamentale",
+      "en": "fundamental",
+      "pos": "noun"
+    },
+    {
+      "id": "d0617",
+      "it": "fondare",
+      "en": "found",
+      "pos": "verb"
+    },
+    {
+      "id": "d0618",
+      "it": "fondo",
+      "en": "bottom",
+      "pos": "noun"
+    },
+    {
+      "id": "d0619",
+      "it": "fonte",
+      "en": "font",
+      "pos": "noun"
+    },
+    {
+      "id": "d0620",
+      "it": "forma",
+      "en": "form",
+      "pos": "noun"
+    },
+    {
+      "id": "d0621",
+      "it": "formare",
+      "en": "form",
+      "pos": "verb"
+    },
+    {
+      "id": "d0622",
+      "it": "formazione",
+      "en": "training",
+      "pos": "noun"
+    },
+    {
+      "id": "d0623",
+      "it": "formula",
+      "en": "formula",
+      "pos": "noun"
+    },
+    {
+      "id": "d0624",
+      "it": "fornire",
+      "en": "provide",
+      "pos": "verb"
+    },
+    {
+      "id": "d0625",
+      "it": "forse",
+      "en": "maybe",
+      "pos": "noun"
+    },
+    {
+      "id": "d0626",
+      "it": "forte",
+      "en": "forceful",
+      "pos": "noun"
+    },
+    {
+      "id": "d0627",
+      "it": "fortuna",
+      "en": "fortune",
+      "pos": "noun"
+    },
+    {
+      "id": "d0628",
+      "it": "forza",
+      "en": "force",
+      "pos": "noun"
+    },
+    {
+      "id": "d0629",
+      "it": "foto",
+      "en": "photo",
+      "pos": "noun"
+    },
+    {
+      "id": "d0630",
+      "it": "fotografia",
+      "en": "photograph",
+      "pos": "noun"
+    },
+    {
+      "id": "d0631",
+      "it": "francese",
+      "en": "Frechman",
+      "pos": "noun"
+    },
+    {
+      "id": "d0632",
+      "it": "frase",
+      "en": "phrase",
+      "pos": "noun"
+    },
+    {
+      "id": "d0633",
+      "it": "fratello",
+      "en": "brother",
+      "pos": "noun"
+    },
+    {
+      "id": "d0634",
+      "it": "freddo",
+      "en": "chill",
+      "pos": "noun"
+    },
+    {
+      "id": "d0635",
+      "it": "frequentare",
+      "en": "attend",
+      "pos": "verb"
+    },
+    {
+      "id": "d0636",
+      "it": "fresco",
+      "en": "cool",
+      "pos": "noun"
+    },
+    {
+      "id": "d0637",
+      "it": "fretta",
+      "en": "haste",
+      "pos": "noun"
+    },
+    {
+      "id": "d0638",
+      "it": "fronte",
+      "en": "front",
+      "pos": "noun"
+    },
+    {
+      "id": "d0639",
+      "it": "frutto",
+      "en": "fruit",
+      "pos": "noun"
+    },
+    {
+      "id": "d0640",
+      "it": "fuga",
+      "en": "escape",
+      "pos": "noun"
+    },
+    {
+      "id": "d0641",
+      "it": "fuggire",
+      "en": "escape",
+      "pos": "verb"
+    },
+    {
+      "id": "d0642",
+      "it": "fumare",
+      "en": "smoke",
+      "pos": "verb"
+    },
+    {
+      "id": "d0643",
+      "it": "fumo",
+      "en": "smoke",
+      "pos": "noun"
+    },
+    {
+      "id": "d0644",
+      "it": "funzionare",
+      "en": "function",
+      "pos": "verb"
+    },
+    {
+      "id": "d0645",
+      "it": "funzione",
+      "en": "function",
+      "pos": "noun"
+    },
+    {
+      "id": "d0646",
+      "it": "fuoco",
+      "en": "fire",
+      "pos": "noun"
+    },
+    {
+      "id": "d0647",
+      "it": "fuori",
+      "en": "off",
+      "pos": "noun"
+    },
+    {
+      "id": "d0648",
+      "it": "futuro",
+      "en": "future",
+      "pos": "noun"
+    },
+    {
+      "id": "d0649",
+      "it": "gamba",
+      "en": "leg",
+      "pos": "noun"
+    },
+    {
+      "id": "d0650",
+      "it": "gara",
+      "en": "race",
+      "pos": "noun"
+    },
+    {
+      "id": "d0651",
+      "it": "garantire",
+      "en": "guarantee",
+      "pos": "verb"
+    },
+    {
+      "id": "d0652",
+      "it": "gas",
+      "en": "gas",
+      "pos": "noun"
+    },
+    {
+      "id": "d0653",
+      "it": "gatto",
+      "en": "cat",
+      "pos": "noun"
+    },
+    {
+      "id": "d0654",
+      "it": "generale",
+      "en": "general",
+      "pos": "noun"
+    },
+    {
+      "id": "d0655",
+      "it": "generare",
+      "en": "generate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0656",
+      "it": "generazione",
+      "en": "generation",
+      "pos": "noun"
+    },
+    {
+      "id": "d0657",
+      "it": "genere",
+      "en": "gender",
+      "pos": "noun"
+    },
+    {
+      "id": "d0658",
+      "it": "gennaio",
+      "en": "January",
+      "pos": "noun"
+    },
+    {
+      "id": "d0659",
+      "it": "gente",
+      "en": "people",
+      "pos": "noun"
+    },
+    {
+      "id": "d0660",
+      "it": "gentile",
+      "en": "gentle",
+      "pos": "noun"
+    },
+    {
+      "id": "d0661",
+      "it": "gestione",
+      "en": "management",
+      "pos": "noun"
+    },
+    {
+      "id": "d0662",
+      "it": "gestire",
+      "en": "manage",
+      "pos": "verb"
+    },
+    {
+      "id": "d0663",
+      "it": "gesto",
+      "en": "gesture",
+      "pos": "noun"
+    },
+    {
+      "id": "d0664",
+      "it": "gettare",
+      "en": "throw",
+      "pos": "verb"
+    },
+    {
+      "id": "d0665",
+      "it": "giacca",
+      "en": "coat",
+      "pos": "noun"
+    },
+    {
+      "id": "d0666",
+      "it": "giallo",
+      "en": "yellow",
+      "pos": "noun"
+    },
+    {
+      "id": "d0667",
+      "it": "giapponese",
+      "en": "Japanese",
+      "pos": "noun"
+    },
+    {
+      "id": "d0668",
+      "it": "giardino",
+      "en": "garden",
+      "pos": "noun"
+    },
+    {
+      "id": "d0669",
+      "it": "ginocchio",
+      "en": "knee",
+      "pos": "noun"
+    },
+    {
+      "id": "d0670",
+      "it": "giocare",
+      "en": "play",
+      "pos": "verb"
+    },
+    {
+      "id": "d0671",
+      "it": "giocatore",
+      "en": "player",
+      "pos": "noun"
+    },
+    {
+      "id": "d0672",
+      "it": "gioco",
+      "en": "game",
+      "pos": "noun"
+    },
+    {
+      "id": "d0673",
+      "it": "gioia",
+      "en": "joy",
+      "pos": "noun"
+    },
+    {
+      "id": "d0674",
+      "it": "giornale",
+      "en": "newspaper",
+      "pos": "noun"
+    },
+    {
+      "id": "d0675",
+      "it": "giornalista",
+      "en": "journalist",
+      "pos": "noun"
+    },
+    {
+      "id": "d0676",
+      "it": "giornata",
+      "en": "day",
+      "pos": "noun"
+    },
+    {
+      "id": "d0677",
+      "it": "giorno",
+      "en": "day",
+      "pos": "noun"
+    },
+    {
+      "id": "d0678",
+      "it": "giovane",
+      "en": "junior",
+      "pos": "noun"
+    },
+    {
+      "id": "d0679",
+      "it": "girare",
+      "en": "spin",
+      "pos": "verb"
+    },
+    {
+      "id": "d0680",
+      "it": "giro",
+      "en": "tour",
+      "pos": "noun"
+    },
+    {
+      "id": "d0681",
+      "it": "giudicare",
+      "en": "judge",
+      "pos": "verb"
+    },
+    {
+      "id": "d0682",
+      "it": "giudice",
+      "en": "judge",
+      "pos": "noun"
+    },
+    {
+      "id": "d0683",
+      "it": "giudizio",
+      "en": "judgement",
+      "pos": "noun"
+    },
+    {
+      "id": "d0684",
+      "it": "giugno",
+      "en": "June",
+      "pos": "noun"
+    },
+    {
+      "id": "d0685",
+      "it": "giungere",
+      "en": "arrive",
+      "pos": "verb"
+    },
+    {
+      "id": "d0686",
+      "it": "giurare",
+      "en": "swear",
+      "pos": "verb"
+    },
+    {
+      "id": "d0687",
+      "it": "giustizia",
+      "en": "justice",
+      "pos": "noun"
+    },
+    {
+      "id": "d0688",
+      "it": "giusto",
+      "en": "fair",
+      "pos": "noun"
+    },
+    {
+      "id": "d0689",
+      "it": "già",
+      "en": "yet",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0690",
+      "it": "giù",
+      "en": "down",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0691",
+      "it": "gli",
+      "en": "him",
+      "pos": "pronoun"
+    },
+    {
+      "id": "d0692",
+      "it": "governo",
+      "en": "government",
+      "pos": "noun"
+    },
+    {
+      "id": "d0693",
+      "it": "grado",
+      "en": "degree",
+      "pos": "noun"
+    },
+    {
+      "id": "d0694",
+      "it": "grande",
+      "en": "big",
+      "pos": "noun"
+    },
+    {
+      "id": "d0695",
+      "it": "grasso",
+      "en": "fat",
+      "pos": "noun"
+    },
+    {
+      "id": "d0696",
+      "it": "grave",
+      "en": "grave",
+      "pos": "noun"
+    },
+    {
+      "id": "d0697",
+      "it": "grazie",
+      "en": "thank you",
+      "pos": "noun"
+    },
+    {
+      "id": "d0698",
+      "it": "greco",
+      "en": "Greek",
+      "pos": "noun"
+    },
+    {
+      "id": "d0699",
+      "it": "gridare",
+      "en": "cry",
+      "pos": "verb"
+    },
+    {
+      "id": "d0700",
+      "it": "grigio",
+      "en": "grey",
+      "pos": "noun"
+    },
+    {
+      "id": "d0701",
+      "it": "gruppo",
+      "en": "cluster",
+      "pos": "noun"
+    },
+    {
+      "id": "d0702",
+      "it": "guadagnare",
+      "en": "earn",
+      "pos": "verb"
+    },
+    {
+      "id": "d0703",
+      "it": "guardare",
+      "en": "glance",
+      "pos": "verb"
+    },
+    {
+      "id": "d0704",
+      "it": "guardia",
+      "en": "guard",
+      "pos": "noun"
+    },
+    {
+      "id": "d0705",
+      "it": "guerra",
+      "en": "war",
+      "pos": "noun"
+    },
+    {
+      "id": "d0706",
+      "it": "guida",
+      "en": "guide",
+      "pos": "noun"
+    },
+    {
+      "id": "d0707",
+      "it": "guidare",
+      "en": "drive",
+      "pos": "verb"
+    },
+    {
+      "id": "d0708",
+      "it": "gusto",
+      "en": "flavor",
+      "pos": "noun"
+    },
+    {
+      "id": "d0709",
+      "it": "idea",
+      "en": "idea",
+      "pos": "noun"
+    },
+    {
+      "id": "d0710",
+      "it": "ideale",
+      "en": "ideal",
+      "pos": "noun"
+    },
+    {
+      "id": "d0711",
+      "it": "identificare",
+      "en": "identify",
+      "pos": "verb"
+    },
+    {
+      "id": "d0712",
+      "it": "idiota",
+      "en": "half-wit",
+      "pos": "noun"
+    },
+    {
+      "id": "d0713",
+      "it": "ieri",
+      "en": "yesterday",
+      "pos": "noun"
+    },
+    {
+      "id": "d0714",
+      "it": "ignorare",
+      "en": "ignore",
+      "pos": "verb"
+    },
+    {
+      "id": "d0715",
+      "it": "immaginare",
+      "en": "imagine",
+      "pos": "verb"
+    },
+    {
+      "id": "d0716",
+      "it": "immagine",
+      "en": "image",
+      "pos": "noun"
+    },
+    {
+      "id": "d0717",
+      "it": "immediatamente",
+      "en": "forthwith",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0718",
+      "it": "immobile",
+      "en": "motionless",
+      "pos": "noun"
+    },
+    {
+      "id": "d0719",
+      "it": "imparare",
+      "en": "learn",
+      "pos": "verb"
+    },
+    {
+      "id": "d0720",
+      "it": "impegnare",
+      "en": "pledge",
+      "pos": "verb"
+    },
+    {
+      "id": "d0721",
+      "it": "impegno",
+      "en": "engagement",
+      "pos": "noun"
+    },
+    {
+      "id": "d0722",
+      "it": "impianto",
+      "en": "facility",
+      "pos": "noun"
+    },
+    {
+      "id": "d0723",
+      "it": "impiegare",
+      "en": "employ",
+      "pos": "verb"
+    },
+    {
+      "id": "d0724",
+      "it": "imporre",
+      "en": "enforce",
+      "pos": "verb"
+    },
+    {
+      "id": "d0725",
+      "it": "importante",
+      "en": "important",
+      "pos": "noun"
+    },
+    {
+      "id": "d0726",
+      "it": "importanza",
+      "en": "importance",
+      "pos": "noun"
+    },
+    {
+      "id": "d0727",
+      "it": "importare",
+      "en": "bother",
+      "pos": "verb"
+    },
+    {
+      "id": "d0728",
+      "it": "impossibile",
+      "en": "impossible",
+      "pos": "noun"
+    },
+    {
+      "id": "d0729",
+      "it": "impresa",
+      "en": "company",
+      "pos": "noun"
+    },
+    {
+      "id": "d0730",
+      "it": "impressione",
+      "en": "impression",
+      "pos": "noun"
+    },
+    {
+      "id": "d0731",
+      "it": "improvviso",
+      "en": "sudden",
+      "pos": "noun"
+    },
+    {
+      "id": "d0732",
+      "it": "incidente",
+      "en": "accident",
+      "pos": "noun"
+    },
+    {
+      "id": "d0733",
+      "it": "incontrare",
+      "en": "encounter",
+      "pos": "verb"
+    },
+    {
+      "id": "d0734",
+      "it": "incontro",
+      "en": "encounter",
+      "pos": "noun"
+    },
+    {
+      "id": "d0735",
+      "it": "incredibile",
+      "en": "incredible",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0736",
+      "it": "indagine",
+      "en": "enquiry",
+      "pos": "noun"
+    },
+    {
+      "id": "d0737",
+      "it": "indicare",
+      "en": "indicate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0738",
+      "it": "indicazione",
+      "en": "indication",
+      "pos": "noun"
+    },
+    {
+      "id": "d0739",
+      "it": "indice",
+      "en": "index",
+      "pos": "noun"
+    },
+    {
+      "id": "d0740",
+      "it": "indirizzo",
+      "en": "address",
+      "pos": "noun"
+    },
+    {
+      "id": "d0741",
+      "it": "individuo",
+      "en": "fellow",
+      "pos": "noun"
+    },
+    {
+      "id": "d0742",
+      "it": "indossare",
+      "en": "wear",
+      "pos": "verb"
+    },
+    {
+      "id": "d0743",
+      "it": "industria",
+      "en": "industry",
+      "pos": "noun"
+    },
+    {
+      "id": "d0744",
+      "it": "industriale",
+      "en": "industrial",
+      "pos": "noun"
+    },
+    {
+      "id": "d0745",
+      "it": "infatti",
+      "en": "in fact",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0746",
+      "it": "inferiore",
+      "en": "bottom",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0747",
+      "it": "infilare",
+      "en": "tuck",
+      "pos": "verb"
+    },
+    {
+      "id": "d0748",
+      "it": "infine",
+      "en": "at last",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0749",
+      "it": "infinito",
+      "en": "infinite",
+      "pos": "noun"
+    },
+    {
+      "id": "d0750",
+      "it": "informare",
+      "en": "brief",
+      "pos": "verb"
+    },
+    {
+      "id": "d0751",
+      "it": "informazione",
+      "en": "information",
+      "pos": "noun"
+    },
+    {
+      "id": "d0752",
+      "it": "inglese",
+      "en": "english",
+      "pos": "noun"
+    },
+    {
+      "id": "d0753",
+      "it": "iniziale",
+      "en": "initial",
+      "pos": "noun"
+    },
+    {
+      "id": "d0754",
+      "it": "iniziare",
+      "en": "begin",
+      "pos": "verb"
+    },
+    {
+      "id": "d0755",
+      "it": "iniziativa",
+      "en": "initiative",
+      "pos": "noun"
+    },
+    {
+      "id": "d0756",
+      "it": "inizio",
+      "en": "beginning",
+      "pos": "noun"
+    },
+    {
+      "id": "d0757",
+      "it": "inoltre",
+      "en": "besides",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0758",
+      "it": "insegnare",
+      "en": "teach",
+      "pos": "verb"
+    },
+    {
+      "id": "d0759",
+      "it": "inserire",
+      "en": "insert",
+      "pos": "verb"
+    },
+    {
+      "id": "d0760",
+      "it": "insieme",
+      "en": "group",
+      "pos": "noun"
+    },
+    {
+      "id": "d0761",
+      "it": "insistere",
+      "en": "insist",
+      "pos": "verb"
+    },
+    {
+      "id": "d0762",
+      "it": "intelligente",
+      "en": "clever",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0763",
+      "it": "intenso",
+      "en": "intense",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0764",
+      "it": "intenzione",
+      "en": "intention",
+      "pos": "noun"
+    },
+    {
+      "id": "d0765",
+      "it": "interessante",
+      "en": "interesting",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0766",
+      "it": "interessare",
+      "en": "interest",
+      "pos": "verb"
+    },
+    {
+      "id": "d0767",
+      "it": "interesse",
+      "en": "interest",
+      "pos": "noun"
+    },
+    {
+      "id": "d0768",
+      "it": "internazionale",
+      "en": "international",
+      "pos": "noun"
+    },
+    {
+      "id": "d0769",
+      "it": "interno",
+      "en": "indoor",
+      "pos": "noun"
+    },
+    {
+      "id": "d0770",
+      "it": "intero",
+      "en": "entire",
+      "pos": "noun"
+    },
+    {
+      "id": "d0771",
+      "it": "interpretare",
+      "en": "interpret",
+      "pos": "verb"
+    },
+    {
+      "id": "d0772",
+      "it": "interrompere",
+      "en": "discontinue",
+      "pos": "verb"
+    },
+    {
+      "id": "d0773",
+      "it": "intervenire",
+      "en": "intervene",
+      "pos": "verb"
+    },
+    {
+      "id": "d0774",
+      "it": "intervento",
+      "en": "intervention",
+      "pos": "noun"
+    },
+    {
+      "id": "d0775",
+      "it": "intervista",
+      "en": "interview",
+      "pos": "noun"
+    },
+    {
+      "id": "d0776",
+      "it": "intorno",
+      "en": "around",
+      "pos": "noun"
+    },
+    {
+      "id": "d0777",
+      "it": "introdurre",
+      "en": "enter",
+      "pos": "verb"
+    },
+    {
+      "id": "d0778",
+      "it": "inutile",
+      "en": "unnecessary",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0779",
+      "it": "inventare",
+      "en": "invent",
+      "pos": "verb"
+    },
+    {
+      "id": "d0780",
+      "it": "inverno",
+      "en": "winter",
+      "pos": "noun"
+    },
+    {
+      "id": "d0781",
+      "it": "investire",
+      "en": "invest",
+      "pos": "verb"
+    },
+    {
+      "id": "d0782",
+      "it": "inviare",
+      "en": "dispatch",
+      "pos": "verb"
+    },
+    {
+      "id": "d0783",
+      "it": "invitare",
+      "en": "invite",
+      "pos": "verb"
+    },
+    {
+      "id": "d0784",
+      "it": "ipotesi",
+      "en": "hypothesis",
+      "pos": "noun"
+    },
+    {
+      "id": "d0785",
+      "it": "iscrivere",
+      "en": "enrol",
+      "pos": "verb"
+    },
+    {
+      "id": "d0786",
+      "it": "isola",
+      "en": "island",
+      "pos": "noun"
+    },
+    {
+      "id": "d0787",
+      "it": "istante",
+      "en": "instant",
+      "pos": "noun"
+    },
+    {
+      "id": "d0788",
+      "it": "istituto",
+      "en": "institute",
+      "pos": "noun"
+    },
+    {
+      "id": "d0789",
+      "it": "istituzione",
+      "en": "institution",
+      "pos": "noun"
+    },
+    {
+      "id": "d0790",
+      "it": "istruzione",
+      "en": "instruction",
+      "pos": "noun"
+    },
+    {
+      "id": "d0791",
+      "it": "italiano",
+      "en": "Italian",
+      "pos": "noun"
+    },
+    {
+      "id": "d0792",
+      "it": "labbro",
+      "en": "lip",
+      "pos": "noun"
+    },
+    {
+      "id": "d0793",
+      "it": "laboratorio",
+      "en": "lab",
+      "pos": "noun"
+    },
+    {
+      "id": "d0794",
+      "it": "lacrima",
+      "en": "tear",
+      "pos": "noun"
+    },
+    {
+      "id": "d0795",
+      "it": "lago",
+      "en": "lake",
+      "pos": "noun"
+    },
+    {
+      "id": "d0796",
+      "it": "lanciare",
+      "en": "cast",
+      "pos": "verb"
+    },
+    {
+      "id": "d0797",
+      "it": "largo",
+      "en": "broad",
+      "pos": "noun"
+    },
+    {
+      "id": "d0798",
+      "it": "lasciare",
+      "en": "checkout",
+      "pos": "verb"
+    },
+    {
+      "id": "d0799",
+      "it": "lato",
+      "en": "side",
+      "pos": "noun"
+    },
+    {
+      "id": "d0800",
+      "it": "latte",
+      "en": "milk",
+      "pos": "noun"
+    },
+    {
+      "id": "d0801",
+      "it": "lavare",
+      "en": "wash",
+      "pos": "verb"
+    },
+    {
+      "id": "d0802",
+      "it": "lavorare",
+      "en": "work",
+      "pos": "verb"
+    },
+    {
+      "id": "d0803",
+      "it": "lavoro",
+      "en": "job",
+      "pos": "noun"
+    },
+    {
+      "id": "d0804",
+      "it": "legale",
+      "en": "lawful",
+      "pos": "noun"
+    },
+    {
+      "id": "d0805",
+      "it": "legare",
+      "en": "bequeath",
+      "pos": "verb"
+    },
+    {
+      "id": "d0806",
+      "it": "legato",
+      "en": "bound",
+      "pos": "noun"
+    },
+    {
+      "id": "d0807",
+      "it": "legge",
+      "en": "act",
+      "pos": "noun"
+    },
+    {
+      "id": "d0808",
+      "it": "leggere",
+      "en": "read",
+      "pos": "verb"
+    },
+    {
+      "id": "d0809",
+      "it": "leggero",
+      "en": "light",
+      "pos": "noun"
+    },
+    {
+      "id": "d0810",
+      "it": "legno",
+      "en": "lumber",
+      "pos": "noun"
+    },
+    {
+      "id": "d0811",
+      "it": "lei",
+      "en": "her",
+      "pos": "noun"
+    },
+    {
+      "id": "d0812",
+      "it": "lentamente",
+      "en": "slowly",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0813",
+      "it": "lento",
+      "en": "slow",
+      "pos": "noun"
+    },
+    {
+      "id": "d0814",
+      "it": "lettera",
+      "en": "letter",
+      "pos": "noun"
+    },
+    {
+      "id": "d0815",
+      "it": "letteratura",
+      "en": "literature",
+      "pos": "noun"
+    },
+    {
+      "id": "d0816",
+      "it": "letto",
+      "en": "bed",
+      "pos": "noun"
+    },
+    {
+      "id": "d0817",
+      "it": "lettore",
+      "en": "reader",
+      "pos": "noun"
+    },
+    {
+      "id": "d0818",
+      "it": "lettura",
+      "en": "reading",
+      "pos": "noun"
+    },
+    {
+      "id": "d0819",
+      "it": "lezione",
+      "en": "lesson",
+      "pos": "noun"
+    },
+    {
+      "id": "d0820",
+      "it": "liberare",
+      "en": "free",
+      "pos": "verb"
+    },
+    {
+      "id": "d0821",
+      "it": "libero",
+      "en": "free",
+      "pos": "noun"
+    },
+    {
+      "id": "d0822",
+      "it": "libro",
+      "en": "book",
+      "pos": "noun"
+    },
+    {
+      "id": "d0823",
+      "it": "limitare",
+      "en": "limit",
+      "pos": "verb"
+    },
+    {
+      "id": "d0824",
+      "it": "limite",
+      "en": "bound",
+      "pos": "noun"
+    },
+    {
+      "id": "d0825",
+      "it": "linea",
+      "en": "line",
+      "pos": "noun"
+    },
+    {
+      "id": "d0826",
+      "it": "lingua",
+      "en": "language",
+      "pos": "noun"
+    },
+    {
+      "id": "d0827",
+      "it": "linguaggio",
+      "en": "language",
+      "pos": "noun"
+    },
+    {
+      "id": "d0828",
+      "it": "liquido",
+      "en": "liquid",
+      "pos": "noun"
+    },
+    {
+      "id": "d0829",
+      "it": "lira",
+      "en": "lyre",
+      "pos": "noun"
+    },
+    {
+      "id": "d0830",
+      "it": "lista",
+      "en": "list",
+      "pos": "noun"
+    },
+    {
+      "id": "d0831",
+      "it": "litigare",
+      "en": "argue",
+      "pos": "verb"
+    },
+    {
+      "id": "d0832",
+      "it": "livello",
+      "en": "level",
+      "pos": "noun"
+    },
+    {
+      "id": "d0833",
+      "it": "locale",
+      "en": "local",
+      "pos": "noun"
+    },
+    {
+      "id": "d0834",
+      "it": "lontano",
+      "en": "far",
+      "pos": "noun"
+    },
+    {
+      "id": "d0835",
+      "it": "loro",
+      "en": "their",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0836",
+      "it": "lotta",
+      "en": "fight",
+      "pos": "noun"
+    },
+    {
+      "id": "d0837",
+      "it": "luce",
+      "en": "light",
+      "pos": "noun"
+    },
+    {
+      "id": "d0838",
+      "it": "luglio",
+      "en": "July",
+      "pos": "noun"
+    },
+    {
+      "id": "d0839",
+      "it": "lui",
+      "en": "he",
+      "pos": "noun"
+    },
+    {
+      "id": "d0840",
+      "it": "lungo",
+      "en": "along",
+      "pos": "noun"
+    },
+    {
+      "id": "d0841",
+      "it": "luogo",
+      "en": "location",
+      "pos": "noun"
+    },
+    {
+      "id": "d0842",
+      "it": "lupo",
+      "en": "wolf",
+      "pos": "noun"
+    },
+    {
+      "id": "d0843",
+      "it": "macchia",
+      "en": "scrub",
+      "pos": "noun"
+    },
+    {
+      "id": "d0844",
+      "it": "macchina",
+      "en": "auto",
+      "pos": "noun"
+    },
+    {
+      "id": "d0845",
+      "it": "madre",
+      "en": "mother",
+      "pos": "noun"
+    },
+    {
+      "id": "d0846",
+      "it": "maestro",
+      "en": "master",
+      "pos": "noun"
+    },
+    {
+      "id": "d0847",
+      "it": "maggio",
+      "en": "May",
+      "pos": "noun"
+    },
+    {
+      "id": "d0848",
+      "it": "maggioranza",
+      "en": "majority",
+      "pos": "noun"
+    },
+    {
+      "id": "d0849",
+      "it": "magico",
+      "en": "magic",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0850",
+      "it": "maglia",
+      "en": "jersey",
+      "pos": "noun"
+    },
+    {
+      "id": "d0851",
+      "it": "mai",
+      "en": "ever",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0852",
+      "it": "malato",
+      "en": "ill",
+      "pos": "noun"
+    },
+    {
+      "id": "d0853",
+      "it": "malattia",
+      "en": "disease",
+      "pos": "noun"
+    },
+    {
+      "id": "d0854",
+      "it": "male",
+      "en": "badly",
+      "pos": "noun"
+    },
+    {
+      "id": "d0855",
+      "it": "mamma",
+      "en": "mum",
+      "pos": "noun"
+    },
+    {
+      "id": "d0856",
+      "it": "mancanza",
+      "en": "fault",
+      "pos": "noun"
+    },
+    {
+      "id": "d0857",
+      "it": "mancare",
+      "en": "be missing",
+      "pos": "verb"
+    },
+    {
+      "id": "d0858",
+      "it": "mandare",
+      "en": "send",
+      "pos": "verb"
+    },
+    {
+      "id": "d0859",
+      "it": "mangiare",
+      "en": "eat",
+      "pos": "verb"
+    },
+    {
+      "id": "d0860",
+      "it": "maniera",
+      "en": "manner",
+      "pos": "noun"
+    },
+    {
+      "id": "d0861",
+      "it": "manifestare",
+      "en": "manifest",
+      "pos": "verb"
+    },
+    {
+      "id": "d0862",
+      "it": "manifestazione",
+      "en": "demonstration",
+      "pos": "noun"
+    },
+    {
+      "id": "d0863",
+      "it": "mano",
+      "en": "hand",
+      "pos": "noun"
+    },
+    {
+      "id": "d0864",
+      "it": "mantenere",
+      "en": "keep",
+      "pos": "verb"
+    },
+    {
+      "id": "d0865",
+      "it": "mare",
+      "en": "sea",
+      "pos": "noun"
+    },
+    {
+      "id": "d0866",
+      "it": "marito",
+      "en": "husband",
+      "pos": "noun"
+    },
+    {
+      "id": "d0867",
+      "it": "marzo",
+      "en": "March",
+      "pos": "noun"
+    },
+    {
+      "id": "d0868",
+      "it": "maschile",
+      "en": "male",
+      "pos": "noun"
+    },
+    {
+      "id": "d0869",
+      "it": "maschio",
+      "en": "male",
+      "pos": "noun"
+    },
+    {
+      "id": "d0870",
+      "it": "massa",
+      "en": "mass",
+      "pos": "noun"
+    },
+    {
+      "id": "d0871",
+      "it": "massimo",
+      "en": "maximal",
+      "pos": "noun"
+    },
+    {
+      "id": "d0872",
+      "it": "materia",
+      "en": "material",
+      "pos": "noun"
+    },
+    {
+      "id": "d0873",
+      "it": "materiale",
+      "en": "material",
+      "pos": "noun"
+    },
+    {
+      "id": "d0874",
+      "it": "matrimonio",
+      "en": "marriage",
+      "pos": "noun"
+    },
+    {
+      "id": "d0875",
+      "it": "mattina",
+      "en": "morning",
+      "pos": "noun"
+    },
+    {
+      "id": "d0876",
+      "it": "matto",
+      "en": "mat",
+      "pos": "noun"
+    },
+    {
+      "id": "d0877",
+      "it": "meccanico",
+      "en": "mechanic",
+      "pos": "noun"
+    },
+    {
+      "id": "d0878",
+      "it": "meccanismo",
+      "en": "mechanism",
+      "pos": "noun"
+    },
+    {
+      "id": "d0879",
+      "it": "media",
+      "en": "average",
+      "pos": "noun"
+    },
+    {
+      "id": "d0880",
+      "it": "medicina",
+      "en": "doctor",
+      "pos": "noun"
+    },
+    {
+      "id": "d0881",
+      "it": "medico",
+      "en": "medic",
+      "pos": "noun"
+    },
+    {
+      "id": "d0882",
+      "it": "medio",
+      "en": "average",
+      "pos": "noun"
+    },
+    {
+      "id": "d0883",
+      "it": "membro",
+      "en": "member",
+      "pos": "noun"
+    },
+    {
+      "id": "d0884",
+      "it": "memoria",
+      "en": "memory",
+      "pos": "noun"
+    },
+    {
+      "id": "d0885",
+      "it": "meno",
+      "en": "fewer",
+      "pos": "noun"
+    },
+    {
+      "id": "d0886",
+      "it": "mentale",
+      "en": "mental",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0887",
+      "it": "mente",
+      "en": "mind",
+      "pos": "noun"
+    },
+    {
+      "id": "d0888",
+      "it": "mentire",
+      "en": "lie",
+      "pos": "verb"
+    },
+    {
+      "id": "d0889",
+      "it": "meraviglioso",
+      "en": "marvelous",
+      "pos": "noun"
+    },
+    {
+      "id": "d0890",
+      "it": "mercato",
+      "en": "market",
+      "pos": "noun"
+    },
+    {
+      "id": "d0891",
+      "it": "merda",
+      "en": "shit",
+      "pos": "noun"
+    },
+    {
+      "id": "d0892",
+      "it": "meridionale",
+      "en": "meridional",
+      "pos": "noun"
+    },
+    {
+      "id": "d0893",
+      "it": "meritare",
+      "en": "deserve",
+      "pos": "verb"
+    },
+    {
+      "id": "d0894",
+      "it": "merito",
+      "en": "merit",
+      "pos": "noun"
+    },
+    {
+      "id": "d0895",
+      "it": "mese",
+      "en": "month",
+      "pos": "noun"
+    },
+    {
+      "id": "d0896",
+      "it": "messaggio",
+      "en": "message",
+      "pos": "noun"
+    },
+    {
+      "id": "d0897",
+      "it": "metodo",
+      "en": "form",
+      "pos": "noun"
+    },
+    {
+      "id": "d0898",
+      "it": "metro",
+      "en": "metre",
+      "pos": "noun"
+    },
+    {
+      "id": "d0899",
+      "it": "mettere",
+      "en": "contact",
+      "pos": "verb"
+    },
+    {
+      "id": "d0900",
+      "it": "metà",
+      "en": "half",
+      "pos": "noun"
+    },
+    {
+      "id": "d0901",
+      "it": "mezzo",
+      "en": "half",
+      "pos": "noun"
+    },
+    {
+      "id": "d0902",
+      "it": "migliaio",
+      "en": "thousand",
+      "pos": "noun"
+    },
+    {
+      "id": "d0903",
+      "it": "migliorare",
+      "en": "enhance",
+      "pos": "verb"
+    },
+    {
+      "id": "d0904",
+      "it": "migliore",
+      "en": "good",
+      "pos": "noun"
+    },
+    {
+      "id": "d0905",
+      "it": "milione",
+      "en": "million",
+      "pos": "noun"
+    },
+    {
+      "id": "d0906",
+      "it": "militare",
+      "en": "military",
+      "pos": "noun"
+    },
+    {
+      "id": "d0907",
+      "it": "mille",
+      "en": "tenhundred",
+      "pos": "noun"
+    },
+    {
+      "id": "d0908",
+      "it": "minacciare",
+      "en": "threaten",
+      "pos": "verb"
+    },
+    {
+      "id": "d0909",
+      "it": "minimo",
+      "en": "minimal",
+      "pos": "noun"
+    },
+    {
+      "id": "d0910",
+      "it": "ministero",
+      "en": "ministry",
+      "pos": "noun"
+    },
+    {
+      "id": "d0911",
+      "it": "ministro",
+      "en": "minister",
+      "pos": "noun"
+    },
+    {
+      "id": "d0912",
+      "it": "minore",
+      "en": "lesser",
+      "pos": "noun"
+    },
+    {
+      "id": "d0913",
+      "it": "minuto",
+      "en": "minute",
+      "pos": "noun"
+    },
+    {
+      "id": "d0914",
+      "it": "mio",
+      "en": "mine",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0915",
+      "it": "miracolo",
+      "en": "miracle",
+      "pos": "noun"
+    },
+    {
+      "id": "d0916",
+      "it": "missione",
+      "en": "mission",
+      "pos": "noun"
+    },
+    {
+      "id": "d0917",
+      "it": "misura",
+      "en": "measure",
+      "pos": "noun"
+    },
+    {
+      "id": "d0918",
+      "it": "moda",
+      "en": "fashion",
+      "pos": "noun"
+    },
+    {
+      "id": "d0919",
+      "it": "modello",
+      "en": "model",
+      "pos": "noun"
+    },
+    {
+      "id": "d0920",
+      "it": "moderno",
+      "en": "modern",
+      "pos": "noun"
+    },
+    {
+      "id": "d0921",
+      "it": "modificare",
+      "en": "amend",
+      "pos": "verb"
+    },
+    {
+      "id": "d0922",
+      "it": "moglie",
+      "en": "wife",
+      "pos": "noun"
+    },
+    {
+      "id": "d0923",
+      "it": "molto",
+      "en": "a lot of",
+      "pos": "noun"
+    },
+    {
+      "id": "d0924",
+      "it": "momento",
+      "en": "moment",
+      "pos": "noun"
+    },
+    {
+      "id": "d0925",
+      "it": "mondiale",
+      "en": "world",
+      "pos": "noun"
+    },
+    {
+      "id": "d0926",
+      "it": "mondo",
+      "en": "world",
+      "pos": "noun"
+    },
+    {
+      "id": "d0927",
+      "it": "moneta",
+      "en": "coin",
+      "pos": "noun"
+    },
+    {
+      "id": "d0928",
+      "it": "montagna",
+      "en": "mountain",
+      "pos": "noun"
+    },
+    {
+      "id": "d0929",
+      "it": "morale",
+      "en": "moral",
+      "pos": "noun"
+    },
+    {
+      "id": "d0930",
+      "it": "morire",
+      "en": "die",
+      "pos": "verb"
+    },
+    {
+      "id": "d0931",
+      "it": "morte",
+      "en": "death",
+      "pos": "noun"
+    },
+    {
+      "id": "d0932",
+      "it": "morto",
+      "en": "dead",
+      "pos": "noun"
+    },
+    {
+      "id": "d0933",
+      "it": "mostrare",
+      "en": "show",
+      "pos": "verb"
+    },
+    {
+      "id": "d0934",
+      "it": "motivo",
+      "en": "reason",
+      "pos": "noun"
+    },
+    {
+      "id": "d0935",
+      "it": "motore",
+      "en": "engine",
+      "pos": "noun"
+    },
+    {
+      "id": "d0936",
+      "it": "movimento",
+      "en": "motion",
+      "pos": "noun"
+    },
+    {
+      "id": "d0937",
+      "it": "muovere",
+      "en": "move",
+      "pos": "verb"
+    },
+    {
+      "id": "d0938",
+      "it": "muro",
+      "en": "wall",
+      "pos": "noun"
+    },
+    {
+      "id": "d0939",
+      "it": "muscolo",
+      "en": "muscle",
+      "pos": "noun"
+    },
+    {
+      "id": "d0940",
+      "it": "museo",
+      "en": "museum",
+      "pos": "noun"
+    },
+    {
+      "id": "d0941",
+      "it": "musica",
+      "en": "music",
+      "pos": "noun"
+    },
+    {
+      "id": "d0942",
+      "it": "musicale",
+      "en": "musical",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0943",
+      "it": "nascere",
+      "en": "be born",
+      "pos": "verb"
+    },
+    {
+      "id": "d0944",
+      "it": "nascita",
+      "en": "birth",
+      "pos": "noun"
+    },
+    {
+      "id": "d0945",
+      "it": "nascondere",
+      "en": "conceal",
+      "pos": "verb"
+    },
+    {
+      "id": "d0946",
+      "it": "naso",
+      "en": "nose",
+      "pos": "noun"
+    },
+    {
+      "id": "d0947",
+      "it": "nastro",
+      "en": "strip",
+      "pos": "noun"
+    },
+    {
+      "id": "d0948",
+      "it": "natale",
+      "en": "natal",
+      "pos": "noun"
+    },
+    {
+      "id": "d0949",
+      "it": "natura",
+      "en": "nature",
+      "pos": "noun"
+    },
+    {
+      "id": "d0950",
+      "it": "naturale",
+      "en": "natural",
+      "pos": "noun"
+    },
+    {
+      "id": "d0951",
+      "it": "naturalmente",
+      "en": "naturally",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0952",
+      "it": "nave",
+      "en": "ship",
+      "pos": "noun"
+    },
+    {
+      "id": "d0953",
+      "it": "nazionale",
+      "en": "national",
+      "pos": "noun"
+    },
+    {
+      "id": "d0954",
+      "it": "nazione",
+      "en": "nation",
+      "pos": "noun"
+    },
+    {
+      "id": "d0955",
+      "it": "neanche",
+      "en": "either",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0956",
+      "it": "necessario",
+      "en": "necessary",
+      "pos": "noun"
+    },
+    {
+      "id": "d0957",
+      "it": "negare",
+      "en": "deny",
+      "pos": "verb"
+    },
+    {
+      "id": "d0958",
+      "it": "negativo",
+      "en": "negative",
+      "pos": "noun"
+    },
+    {
+      "id": "d0959",
+      "it": "negozio",
+      "en": "shop",
+      "pos": "noun"
+    },
+    {
+      "id": "d0960",
+      "it": "nemico",
+      "en": "enemy",
+      "pos": "noun"
+    },
+    {
+      "id": "d0961",
+      "it": "nemmeno",
+      "en": "neither",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0962",
+      "it": "neppure",
+      "en": "neither",
+      "pos": "adverb"
+    },
+    {
+      "id": "d0963",
+      "it": "nero",
+      "en": "black",
+      "pos": "noun"
+    },
+    {
+      "id": "d0964",
+      "it": "nervoso",
+      "en": "nervous",
+      "pos": "noun"
+    },
+    {
+      "id": "d0965",
+      "it": "nessuno",
+      "en": "any",
+      "pos": "noun"
+    },
+    {
+      "id": "d0966",
+      "it": "neve",
+      "en": "snow",
+      "pos": "noun"
+    },
+    {
+      "id": "d0967",
+      "it": "niente",
+      "en": "anything",
+      "pos": "noun"
+    },
+    {
+      "id": "d0968",
+      "it": "nipote",
+      "en": "grandchild",
+      "pos": "noun"
+    },
+    {
+      "id": "d0969",
+      "it": "noi",
+      "en": "us",
+      "pos": "pronoun"
+    },
+    {
+      "id": "d0970",
+      "it": "nome",
+      "en": "name",
+      "pos": "noun"
+    },
+    {
+      "id": "d0971",
+      "it": "nominare",
+      "en": "appoint",
+      "pos": "verb"
+    },
+    {
+      "id": "d0972",
+      "it": "nonno",
+      "en": "grandfather",
+      "pos": "noun"
+    },
+    {
+      "id": "d0973",
+      "it": "nord",
+      "en": "north",
+      "pos": "noun"
+    },
+    {
+      "id": "d0974",
+      "it": "norma",
+      "en": "norm",
+      "pos": "noun"
+    },
+    {
+      "id": "d0975",
+      "it": "normale",
+      "en": "normal",
+      "pos": "noun"
+    },
+    {
+      "id": "d0976",
+      "it": "nostro",
+      "en": "our",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0977",
+      "it": "nota",
+      "en": "grade",
+      "pos": "noun"
+    },
+    {
+      "id": "d0978",
+      "it": "notare",
+      "en": "notice",
+      "pos": "verb"
+    },
+    {
+      "id": "d0979",
+      "it": "notizia",
+      "en": "news",
+      "pos": "noun"
+    },
+    {
+      "id": "d0980",
+      "it": "notte",
+      "en": "night",
+      "pos": "noun"
+    },
+    {
+      "id": "d0981",
+      "it": "nove",
+      "en": "nine",
+      "pos": "noun"
+    },
+    {
+      "id": "d0982",
+      "it": "novembre",
+      "en": "November",
+      "pos": "noun"
+    },
+    {
+      "id": "d0983",
+      "it": "nucleare",
+      "en": "nuclear",
+      "pos": "noun"
+    },
+    {
+      "id": "d0984",
+      "it": "nudo",
+      "en": "nude",
+      "pos": "noun"
+    },
+    {
+      "id": "d0985",
+      "it": "nulla",
+      "en": "anything",
+      "pos": "noun"
+    },
+    {
+      "id": "d0986",
+      "it": "numero",
+      "en": "number",
+      "pos": "noun"
+    },
+    {
+      "id": "d0987",
+      "it": "numeroso",
+      "en": "numerous",
+      "pos": "adjective"
+    },
+    {
+      "id": "d0988",
+      "it": "nuovo",
+      "en": "new",
+      "pos": "noun"
+    },
+    {
+      "id": "d0989",
+      "it": "obbligare",
+      "en": "obligate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0990",
+      "it": "obiettivo",
+      "en": "aim",
+      "pos": "noun"
+    },
+    {
+      "id": "d0991",
+      "it": "occasione",
+      "en": "chance",
+      "pos": "noun"
+    },
+    {
+      "id": "d0992",
+      "it": "occhiale",
+      "en": "glasses",
+      "pos": "noun"
+    },
+    {
+      "id": "d0993",
+      "it": "occhio",
+      "en": "eye",
+      "pos": "noun"
+    },
+    {
+      "id": "d0994",
+      "it": "occidentale",
+      "en": "occidental",
+      "pos": "noun"
+    },
+    {
+      "id": "d0995",
+      "it": "occorrere",
+      "en": "occur",
+      "pos": "verb"
+    },
+    {
+      "id": "d0996",
+      "it": "occupare",
+      "en": "occupy",
+      "pos": "verb"
+    },
+    {
+      "id": "d0997",
+      "it": "odiare",
+      "en": "hate",
+      "pos": "verb"
+    },
+    {
+      "id": "d0998",
+      "it": "odore",
+      "en": "smell",
+      "pos": "noun"
+    },
+    {
+      "id": "d0999",
+      "it": "offerta",
+      "en": "bid",
+      "pos": "noun"
+    },
+    {
+      "id": "d1000",
+      "it": "offrire",
+      "en": "bid",
+      "pos": "verb"
+    },
+    {
+      "id": "d1001",
+      "it": "oggetto",
+      "en": "object",
+      "pos": "noun"
+    },
+    {
+      "id": "d1002",
+      "it": "oggi",
+      "en": "today",
+      "pos": "noun"
+    },
+    {
+      "id": "d1003",
+      "it": "ogni",
+      "en": "each",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1004",
+      "it": "ognuno",
+      "en": "each",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1005",
+      "it": "olio",
+      "en": "oil",
+      "pos": "noun"
+    },
+    {
+      "id": "d1006",
+      "it": "oltre",
+      "en": "beyond",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1007",
+      "it": "ombra",
+      "en": "shade",
+      "pos": "noun"
+    },
+    {
+      "id": "d1008",
+      "it": "omicidio",
+      "en": "homicide",
+      "pos": "noun"
+    },
+    {
+      "id": "d1009",
+      "it": "onda",
+      "en": "wave",
+      "pos": "noun"
+    },
+    {
+      "id": "d1010",
+      "it": "onore",
+      "en": "honour",
+      "pos": "noun"
+    },
+    {
+      "id": "d1011",
+      "it": "opera",
+      "en": "opera",
+      "pos": "noun"
+    },
+    {
+      "id": "d1012",
+      "it": "operaio",
+      "en": "worker",
+      "pos": "noun"
+    },
+    {
+      "id": "d1013",
+      "it": "operare",
+      "en": "operate",
+      "pos": "verb"
+    },
+    {
+      "id": "d1014",
+      "it": "operazione",
+      "en": "operation",
+      "pos": "noun"
+    },
+    {
+      "id": "d1015",
+      "it": "opinione",
+      "en": "opinion",
+      "pos": "noun"
+    },
+    {
+      "id": "d1016",
+      "it": "opporre",
+      "en": "counter",
+      "pos": "verb"
+    },
+    {
+      "id": "d1017",
+      "it": "opposto",
+      "en": "opposite",
+      "pos": "noun"
+    },
+    {
+      "id": "d1018",
+      "it": "ora",
+      "en": "hour",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1019",
+      "it": "orario",
+      "en": "schedule",
+      "pos": "noun"
+    },
+    {
+      "id": "d1020",
+      "it": "ordinare",
+      "en": "order",
+      "pos": "verb"
+    },
+    {
+      "id": "d1021",
+      "it": "ordine",
+      "en": "order",
+      "pos": "noun"
+    },
+    {
+      "id": "d1022",
+      "it": "orecchio",
+      "en": "ear",
+      "pos": "noun"
+    },
+    {
+      "id": "d1023",
+      "it": "organismo",
+      "en": "organism",
+      "pos": "noun"
+    },
+    {
+      "id": "d1024",
+      "it": "organizzare",
+      "en": "organise",
+      "pos": "verb"
+    },
+    {
+      "id": "d1025",
+      "it": "organizzazione",
+      "en": "organisation",
+      "pos": "noun"
+    },
+    {
+      "id": "d1026",
+      "it": "organo",
+      "en": "organ",
+      "pos": "noun"
+    },
+    {
+      "id": "d1027",
+      "it": "originale",
+      "en": "original",
+      "pos": "noun"
+    },
+    {
+      "id": "d1028",
+      "it": "origine",
+      "en": "origin",
+      "pos": "noun"
+    },
+    {
+      "id": "d1029",
+      "it": "oro",
+      "en": "gold",
+      "pos": "noun"
+    },
+    {
+      "id": "d1030",
+      "it": "orologio",
+      "en": "clock",
+      "pos": "noun"
+    },
+    {
+      "id": "d1031",
+      "it": "ospedale",
+      "en": "hospital",
+      "pos": "noun"
+    },
+    {
+      "id": "d1032",
+      "it": "ospite",
+      "en": "guest",
+      "pos": "noun"
+    },
+    {
+      "id": "d1033",
+      "it": "osservare",
+      "en": "observe",
+      "pos": "verb"
+    },
+    {
+      "id": "d1034",
+      "it": "osso",
+      "en": "bone",
+      "pos": "noun"
+    },
+    {
+      "id": "d1035",
+      "it": "ottenere",
+      "en": "attain",
+      "pos": "verb"
+    },
+    {
+      "id": "d1036",
+      "it": "ottimo",
+      "en": "optimum",
+      "pos": "noun"
+    },
+    {
+      "id": "d1037",
+      "it": "otto",
+      "en": "eight",
+      "pos": "noun"
+    },
+    {
+      "id": "d1038",
+      "it": "ottobre",
+      "en": "October",
+      "pos": "noun"
+    },
+    {
+      "id": "d1039",
+      "it": "ovviamente",
+      "en": "obviously",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1040",
+      "it": "pace",
+      "en": "peace",
+      "pos": "noun"
+    },
+    {
+      "id": "d1041",
+      "it": "padre",
+      "en": "father",
+      "pos": "noun"
+    },
+    {
+      "id": "d1042",
+      "it": "padrone",
+      "en": "master",
+      "pos": "noun"
+    },
+    {
+      "id": "d1043",
+      "it": "paese",
+      "en": "country",
+      "pos": "noun"
+    },
+    {
+      "id": "d1044",
+      "it": "pagamento",
+      "en": "payment",
+      "pos": "noun"
+    },
+    {
+      "id": "d1045",
+      "it": "pagare",
+      "en": "pay",
+      "pos": "verb"
+    },
+    {
+      "id": "d1046",
+      "it": "pagina",
+      "en": "page",
+      "pos": "noun"
+    },
+    {
+      "id": "d1047",
+      "it": "paio",
+      "en": "pair",
+      "pos": "noun"
+    },
+    {
+      "id": "d1048",
+      "it": "palazzo",
+      "en": "mansion",
+      "pos": "noun"
+    },
+    {
+      "id": "d1049",
+      "it": "palla",
+      "en": "ball",
+      "pos": "noun"
+    },
+    {
+      "id": "d1050",
+      "it": "pane",
+      "en": "bread",
+      "pos": "noun"
+    },
+    {
+      "id": "d1051",
+      "it": "papa",
+      "en": "pope",
+      "pos": "noun"
+    },
+    {
+      "id": "d1052",
+      "it": "parco",
+      "en": "park",
+      "pos": "noun"
+    },
+    {
+      "id": "d1053",
+      "it": "parente",
+      "en": "relative",
+      "pos": "noun"
+    },
+    {
+      "id": "d1054",
+      "it": "parere",
+      "en": "appear",
+      "pos": "noun"
+    },
+    {
+      "id": "d1055",
+      "it": "parete",
+      "en": "wall",
+      "pos": "noun"
+    },
+    {
+      "id": "d1056",
+      "it": "pari",
+      "en": "even",
+      "pos": "noun"
+    },
+    {
+      "id": "d1057",
+      "it": "parlare",
+      "en": "speak",
+      "pos": "verb"
+    },
+    {
+      "id": "d1058",
+      "it": "parola",
+      "en": "word",
+      "pos": "noun"
+    },
+    {
+      "id": "d1059",
+      "it": "parte",
+      "en": "part",
+      "pos": "noun"
+    },
+    {
+      "id": "d1060",
+      "it": "partecipare",
+      "en": "participate",
+      "pos": "verb"
+    },
+    {
+      "id": "d1061",
+      "it": "partenza",
+      "en": "departure",
+      "pos": "noun"
+    },
+    {
+      "id": "d1062",
+      "it": "particolare",
+      "en": "particular",
+      "pos": "noun"
+    },
+    {
+      "id": "d1063",
+      "it": "particolarmente",
+      "en": "particularly",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1064",
+      "it": "partire",
+      "en": "split",
+      "pos": "verb"
+    },
+    {
+      "id": "d1065",
+      "it": "partita",
+      "en": "match",
+      "pos": "noun"
+    },
+    {
+      "id": "d1066",
+      "it": "partito",
+      "en": "party",
+      "pos": "noun"
+    },
+    {
+      "id": "d1067",
+      "it": "passaggio",
+      "en": "arcade",
+      "pos": "noun"
+    },
+    {
+      "id": "d1068",
+      "it": "passare",
+      "en": "pass",
+      "pos": "verb"
+    },
+    {
+      "id": "d1069",
+      "it": "passato",
+      "en": "past",
+      "pos": "noun"
+    },
+    {
+      "id": "d1070",
+      "it": "passione",
+      "en": "passion",
+      "pos": "noun"
+    },
+    {
+      "id": "d1071",
+      "it": "passo",
+      "en": "pace",
+      "pos": "noun"
+    },
+    {
+      "id": "d1072",
+      "it": "pasta",
+      "en": "dough",
+      "pos": "noun"
+    },
+    {
+      "id": "d1073",
+      "it": "paura",
+      "en": "fear",
+      "pos": "noun"
+    },
+    {
+      "id": "d1074",
+      "it": "pausa",
+      "en": "pause",
+      "pos": "noun"
+    },
+    {
+      "id": "d1075",
+      "it": "paziente",
+      "en": "patient",
+      "pos": "noun"
+    },
+    {
+      "id": "d1076",
+      "it": "pazzo",
+      "en": "crazy",
+      "pos": "noun"
+    },
+    {
+      "id": "d1077",
+      "it": "pelle",
+      "en": "leather",
+      "pos": "noun"
+    },
+    {
+      "id": "d1078",
+      "it": "pena",
+      "en": "penalty",
+      "pos": "noun"
+    },
+    {
+      "id": "d1079",
+      "it": "pensare",
+      "en": "think",
+      "pos": "verb"
+    },
+    {
+      "id": "d1080",
+      "it": "pensiero",
+      "en": "thinking",
+      "pos": "noun"
+    },
+    {
+      "id": "d1081",
+      "it": "pensione",
+      "en": "allowance",
+      "pos": "noun"
+    },
+    {
+      "id": "d1082",
+      "it": "percepire",
+      "en": "perceive",
+      "pos": "verb"
+    },
+    {
+      "id": "d1083",
+      "it": "percorso",
+      "en": "route",
+      "pos": "noun"
+    },
+    {
+      "id": "d1084",
+      "it": "perdere",
+      "en": "leak",
+      "pos": "verb"
+    },
+    {
+      "id": "d1085",
+      "it": "perdita",
+      "en": "leak",
+      "pos": "noun"
+    },
+    {
+      "id": "d1086",
+      "it": "perdonare",
+      "en": "forgive",
+      "pos": "verb"
+    },
+    {
+      "id": "d1087",
+      "it": "perfettamente",
+      "en": "perfectly",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1088",
+      "it": "perfetto",
+      "en": "perfect",
+      "pos": "noun"
+    },
+    {
+      "id": "d1089",
+      "it": "pericolo",
+      "en": "danger",
+      "pos": "noun"
+    },
+    {
+      "id": "d1090",
+      "it": "pericoloso",
+      "en": "dangerous",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1091",
+      "it": "periodo",
+      "en": "chronology",
+      "pos": "noun"
+    },
+    {
+      "id": "d1092",
+      "it": "permettere",
+      "en": "allow",
+      "pos": "verb"
+    },
+    {
+      "id": "d1093",
+      "it": "persona",
+      "en": "person",
+      "pos": "noun"
+    },
+    {
+      "id": "d1094",
+      "it": "personaggio",
+      "en": "character",
+      "pos": "noun"
+    },
+    {
+      "id": "d1095",
+      "it": "personale",
+      "en": "personal",
+      "pos": "noun"
+    },
+    {
+      "id": "d1096",
+      "it": "personalmente",
+      "en": "personally",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1097",
+      "it": "pesante",
+      "en": "heavy",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1098",
+      "it": "pesce",
+      "en": "fish",
+      "pos": "noun"
+    },
+    {
+      "id": "d1099",
+      "it": "peso",
+      "en": "weight",
+      "pos": "noun"
+    },
+    {
+      "id": "d1100",
+      "it": "petto",
+      "en": "breast",
+      "pos": "noun"
+    },
+    {
+      "id": "d1101",
+      "it": "pezzo",
+      "en": "bit",
+      "pos": "noun"
+    },
+    {
+      "id": "d1102",
+      "it": "piacere",
+      "en": "enjoy",
+      "pos": "noun"
+    },
+    {
+      "id": "d1103",
+      "it": "pianeta",
+      "en": "planet",
+      "pos": "noun"
+    },
+    {
+      "id": "d1104",
+      "it": "piangere",
+      "en": "cry",
+      "pos": "verb"
+    },
+    {
+      "id": "d1105",
+      "it": "piano",
+      "en": "piano",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1106",
+      "it": "pianta",
+      "en": "plant",
+      "pos": "noun"
+    },
+    {
+      "id": "d1107",
+      "it": "piatto",
+      "en": "cymbal",
+      "pos": "noun"
+    },
+    {
+      "id": "d1108",
+      "it": "piazza",
+      "en": "square",
+      "pos": "noun"
+    },
+    {
+      "id": "d1109",
+      "it": "piccolo",
+      "en": "little",
+      "pos": "noun"
+    },
+    {
+      "id": "d1110",
+      "it": "piede",
+      "en": "foot",
+      "pos": "noun"
+    },
+    {
+      "id": "d1111",
+      "it": "pieno",
+      "en": "full",
+      "pos": "noun"
+    },
+    {
+      "id": "d1112",
+      "it": "pietra",
+      "en": "stone",
+      "pos": "noun"
+    },
+    {
+      "id": "d1113",
+      "it": "pioggia",
+      "en": "rain",
+      "pos": "noun"
+    },
+    {
+      "id": "d1114",
+      "it": "pistola",
+      "en": "gun",
+      "pos": "noun"
+    },
+    {
+      "id": "d1115",
+      "it": "piuttosto",
+      "en": "enough",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1116",
+      "it": "più",
+      "en": "more",
+      "pos": "noun"
+    },
+    {
+      "id": "d1117",
+      "it": "poco",
+      "en": "a few",
+      "pos": "noun"
+    },
+    {
+      "id": "d1118",
+      "it": "poesia",
+      "en": "poem",
+      "pos": "noun"
+    },
+    {
+      "id": "d1119",
+      "it": "poeta",
+      "en": "poet",
+      "pos": "noun"
+    },
+    {
+      "id": "d1120",
+      "it": "poi",
+      "en": "then",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1121",
+      "it": "politica",
+      "en": "policy",
+      "pos": "noun"
+    },
+    {
+      "id": "d1122",
+      "it": "politico",
+      "en": "political",
+      "pos": "noun"
+    },
+    {
+      "id": "d1123",
+      "it": "polizia",
+      "en": "police",
+      "pos": "noun"
+    },
+    {
+      "id": "d1124",
+      "it": "poliziotto",
+      "en": "policeman",
+      "pos": "noun"
+    },
+    {
+      "id": "d1125",
+      "it": "polvere",
+      "en": "dust",
+      "pos": "noun"
+    },
+    {
+      "id": "d1126",
+      "it": "pomeriggio",
+      "en": "afternoon",
+      "pos": "noun"
+    },
+    {
+      "id": "d1127",
+      "it": "ponte",
+      "en": "bridge",
+      "pos": "noun"
+    },
+    {
+      "id": "d1128",
+      "it": "popolare",
+      "en": "popular",
+      "pos": "noun"
+    },
+    {
+      "id": "d1129",
+      "it": "popolazione",
+      "en": "population",
+      "pos": "noun"
+    },
+    {
+      "id": "d1130",
+      "it": "popolo",
+      "en": "people",
+      "pos": "noun"
+    },
+    {
+      "id": "d1131",
+      "it": "porre",
+      "en": "put",
+      "pos": "verb"
+    },
+    {
+      "id": "d1132",
+      "it": "porta",
+      "en": "door",
+      "pos": "noun"
+    },
+    {
+      "id": "d1133",
+      "it": "portare",
+      "en": "bring",
+      "pos": "verb"
+    },
+    {
+      "id": "d1134",
+      "it": "porto",
+      "en": "harbor",
+      "pos": "noun"
+    },
+    {
+      "id": "d1135",
+      "it": "positivo",
+      "en": "positive",
+      "pos": "noun"
+    },
+    {
+      "id": "d1136",
+      "it": "posizione",
+      "en": "position",
+      "pos": "noun"
+    },
+    {
+      "id": "d1137",
+      "it": "possedere",
+      "en": "own",
+      "pos": "verb"
+    },
+    {
+      "id": "d1138",
+      "it": "possibile",
+      "en": "possible",
+      "pos": "noun"
+    },
+    {
+      "id": "d1139",
+      "it": "possibilità",
+      "en": "chance",
+      "pos": "noun"
+    },
+    {
+      "id": "d1140",
+      "it": "posta",
+      "en": "mail",
+      "pos": "noun"
+    },
+    {
+      "id": "d1141",
+      "it": "posto",
+      "en": "place",
+      "pos": "noun"
+    },
+    {
+      "id": "d1142",
+      "it": "potere",
+      "en": "can",
+      "pos": "noun"
+    },
+    {
+      "id": "d1143",
+      "it": "povero",
+      "en": "poor",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1144",
+      "it": "pranzo",
+      "en": "lunch",
+      "pos": "noun"
+    },
+    {
+      "id": "d1145",
+      "it": "pratica",
+      "en": "practice",
+      "pos": "noun"
+    },
+    {
+      "id": "d1146",
+      "it": "praticamente",
+      "en": "basically",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1147",
+      "it": "pratico",
+      "en": "practical",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1148",
+      "it": "precedente",
+      "en": "precedent",
+      "pos": "noun"
+    },
+    {
+      "id": "d1149",
+      "it": "precisare",
+      "en": "clarify",
+      "pos": "verb"
+    },
+    {
+      "id": "d1150",
+      "it": "preciso",
+      "en": "accurate",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1151",
+      "it": "preferire",
+      "en": "prefer",
+      "pos": "verb"
+    },
+    {
+      "id": "d1152",
+      "it": "pregare",
+      "en": "pray",
+      "pos": "verb"
+    },
+    {
+      "id": "d1153",
+      "it": "premio",
+      "en": "award",
+      "pos": "noun"
+    },
+    {
+      "id": "d1154",
+      "it": "prendere",
+      "en": "catch",
+      "pos": "verb"
+    },
+    {
+      "id": "d1155",
+      "it": "preparare",
+      "en": "prepare",
+      "pos": "verb"
+    },
+    {
+      "id": "d1156",
+      "it": "presentare",
+      "en": "present",
+      "pos": "verb"
+    },
+    {
+      "id": "d1157",
+      "it": "presente",
+      "en": "present",
+      "pos": "noun"
+    },
+    {
+      "id": "d1158",
+      "it": "presenza",
+      "en": "presence",
+      "pos": "noun"
+    },
+    {
+      "id": "d1159",
+      "it": "presidente",
+      "en": "chairman",
+      "pos": "noun"
+    },
+    {
+      "id": "d1160",
+      "it": "pressione",
+      "en": "pressure",
+      "pos": "noun"
+    },
+    {
+      "id": "d1161",
+      "it": "presso",
+      "en": "beside",
+      "pos": "noun"
+    },
+    {
+      "id": "d1162",
+      "it": "prestare",
+      "en": "loan",
+      "pos": "verb"
+    },
+    {
+      "id": "d1163",
+      "it": "presto",
+      "en": "early",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1164",
+      "it": "prete",
+      "en": "cure",
+      "pos": "noun"
+    },
+    {
+      "id": "d1165",
+      "it": "prevedere",
+      "en": "foresee",
+      "pos": "verb"
+    },
+    {
+      "id": "d1166",
+      "it": "previsto",
+      "en": "due",
+      "pos": "noun"
+    },
+    {
+      "id": "d1167",
+      "it": "prezioso",
+      "en": "precious",
+      "pos": "noun"
+    },
+    {
+      "id": "d1168",
+      "it": "prezzo",
+      "en": "price",
+      "pos": "noun"
+    },
+    {
+      "id": "d1169",
+      "it": "prima",
+      "en": "before",
+      "pos": "noun"
+    },
+    {
+      "id": "d1170",
+      "it": "primavera",
+      "en": "spring",
+      "pos": "noun"
+    },
+    {
+      "id": "d1171",
+      "it": "primo",
+      "en": "first",
+      "pos": "noun"
+    },
+    {
+      "id": "d1172",
+      "it": "principale",
+      "en": "leading",
+      "pos": "noun"
+    },
+    {
+      "id": "d1173",
+      "it": "principe",
+      "en": "prince",
+      "pos": "noun"
+    },
+    {
+      "id": "d1174",
+      "it": "principio",
+      "en": "principle",
+      "pos": "noun"
+    },
+    {
+      "id": "d1175",
+      "it": "privato",
+      "en": "private",
+      "pos": "noun"
+    },
+    {
+      "id": "d1176",
+      "it": "probabilmente",
+      "en": "likely",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1177",
+      "it": "problema",
+      "en": "catch",
+      "pos": "noun"
+    },
+    {
+      "id": "d1178",
+      "it": "procedura",
+      "en": "procedure",
+      "pos": "noun"
+    },
+    {
+      "id": "d1179",
+      "it": "processo",
+      "en": "process",
+      "pos": "noun"
+    },
+    {
+      "id": "d1180",
+      "it": "prodotto",
+      "en": "commodity",
+      "pos": "noun"
+    },
+    {
+      "id": "d1181",
+      "it": "produrre",
+      "en": "produce",
+      "pos": "verb"
+    },
+    {
+      "id": "d1182",
+      "it": "produzione",
+      "en": "output",
+      "pos": "noun"
+    },
+    {
+      "id": "d1183",
+      "it": "professionale",
+      "en": "professional",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1184",
+      "it": "professore",
+      "en": "professor",
+      "pos": "noun"
+    },
+    {
+      "id": "d1185",
+      "it": "profilo",
+      "en": "profile",
+      "pos": "noun"
+    },
+    {
+      "id": "d1186",
+      "it": "profondo",
+      "en": "deep",
+      "pos": "noun"
+    },
+    {
+      "id": "d1187",
+      "it": "progetto",
+      "en": "blueprint",
+      "pos": "noun"
+    },
+    {
+      "id": "d1188",
+      "it": "programma",
+      "en": "program",
+      "pos": "noun"
+    },
+    {
+      "id": "d1189",
+      "it": "promettere",
+      "en": "promise",
+      "pos": "verb"
+    },
+    {
+      "id": "d1190",
+      "it": "pronunciare",
+      "en": "pronounce",
+      "pos": "verb"
+    },
+    {
+      "id": "d1191",
+      "it": "proporre",
+      "en": "propose",
+      "pos": "verb"
+    },
+    {
+      "id": "d1192",
+      "it": "proposito",
+      "en": "purpose",
+      "pos": "noun"
+    },
+    {
+      "id": "d1193",
+      "it": "proposta",
+      "en": "proposal",
+      "pos": "noun"
+    },
+    {
+      "id": "d1194",
+      "it": "proprietario",
+      "en": "landlord",
+      "pos": "noun"
+    },
+    {
+      "id": "d1195",
+      "it": "proprio",
+      "en": "own",
+      "pos": "noun"
+    },
+    {
+      "id": "d1196",
+      "it": "proseguire",
+      "en": "continue",
+      "pos": "verb"
+    },
+    {
+      "id": "d1197",
+      "it": "prossimo",
+      "en": "forthcoming",
+      "pos": "noun"
+    },
+    {
+      "id": "d1198",
+      "it": "protagonista",
+      "en": "leading",
+      "pos": "noun"
+    },
+    {
+      "id": "d1199",
+      "it": "proteggere",
+      "en": "protect",
+      "pos": "verb"
+    },
+    {
+      "id": "d1200",
+      "it": "prova",
+      "en": "proof",
+      "pos": "noun"
+    },
+    {
+      "id": "d1201",
+      "it": "provare",
+      "en": "prove",
+      "pos": "verb"
+    },
+    {
+      "id": "d1202",
+      "it": "provenire",
+      "en": "proceed",
+      "pos": "verb"
+    },
+    {
+      "id": "d1203",
+      "it": "provincia",
+      "en": "province",
+      "pos": "noun"
+    },
+    {
+      "id": "d1204",
+      "it": "provocare",
+      "en": "provoke",
+      "pos": "verb"
+    },
+    {
+      "id": "d1205",
+      "it": "pubblicare",
+      "en": "issue",
+      "pos": "verb"
+    },
+    {
+      "id": "d1206",
+      "it": "pubblico",
+      "en": "audience",
+      "pos": "noun"
+    },
+    {
+      "id": "d1207",
+      "it": "pugno",
+      "en": "fist",
+      "pos": "noun"
+    },
+    {
+      "id": "d1208",
+      "it": "pulire",
+      "en": "clean",
+      "pos": "verb"
+    },
+    {
+      "id": "d1209",
+      "it": "punta",
+      "en": "tip",
+      "pos": "noun"
+    },
+    {
+      "id": "d1210",
+      "it": "puntare",
+      "en": "aim",
+      "pos": "verb"
+    },
+    {
+      "id": "d1211",
+      "it": "punto",
+      "en": "dot",
+      "pos": "noun"
+    },
+    {
+      "id": "d1212",
+      "it": "pure",
+      "en": "even",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1213",
+      "it": "puro",
+      "en": "pure",
+      "pos": "noun"
+    },
+    {
+      "id": "d1214",
+      "it": "purtroppo",
+      "en": "regrettably",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1215",
+      "it": "quadro",
+      "en": "painting",
+      "pos": "noun"
+    },
+    {
+      "id": "d1216",
+      "it": "qualche",
+      "en": "any",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1217",
+      "it": "qualcosa",
+      "en": "something",
+      "pos": "noun"
+    },
+    {
+      "id": "d1218",
+      "it": "qualcuno",
+      "en": "somebody",
+      "pos": "noun"
+    },
+    {
+      "id": "d1219",
+      "it": "quale",
+      "en": "which",
+      "pos": "noun"
+    },
+    {
+      "id": "d1220",
+      "it": "qualsiasi",
+      "en": "any",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1221",
+      "it": "qualunque",
+      "en": "any",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1222",
+      "it": "quando",
+      "en": "when",
+      "pos": "noun"
+    },
+    {
+      "id": "d1223",
+      "it": "quantità",
+      "en": "amount",
+      "pos": "noun"
+    },
+    {
+      "id": "d1224",
+      "it": "quanto",
+      "en": "howmany",
+      "pos": "noun"
+    },
+    {
+      "id": "d1225",
+      "it": "quaranta",
+      "en": "forty",
+      "pos": "noun"
+    },
+    {
+      "id": "d1226",
+      "it": "quartiere",
+      "en": "quarter",
+      "pos": "noun"
+    },
+    {
+      "id": "d1227",
+      "it": "quarto",
+      "en": "fourth",
+      "pos": "noun"
+    },
+    {
+      "id": "d1228",
+      "it": "quasi",
+      "en": "almost",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1229",
+      "it": "quattro",
+      "en": "four",
+      "pos": "noun"
+    },
+    {
+      "id": "d1230",
+      "it": "quello",
+      "en": "that",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1231",
+      "it": "questione",
+      "en": "question",
+      "pos": "noun"
+    },
+    {
+      "id": "d1232",
+      "it": "questo",
+      "en": "this",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1233",
+      "it": "qui",
+      "en": "here",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1234",
+      "it": "quindi",
+      "en": "therefore",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1235",
+      "it": "quindici",
+      "en": "fifteen",
+      "pos": "noun"
+    },
+    {
+      "id": "d1236",
+      "it": "quota",
+      "en": "quota",
+      "pos": "noun"
+    },
+    {
+      "id": "d1237",
+      "it": "quotidiano",
+      "en": "daily",
+      "pos": "noun"
+    },
+    {
+      "id": "d1238",
+      "it": "rabbia",
+      "en": "anger",
+      "pos": "noun"
+    },
+    {
+      "id": "d1239",
+      "it": "raccogliere",
+      "en": "collect",
+      "pos": "verb"
+    },
+    {
+      "id": "d1240",
+      "it": "raccolta",
+      "en": "collection",
+      "pos": "noun"
+    },
+    {
+      "id": "d1241",
+      "it": "raccontare",
+      "en": "count",
+      "pos": "verb"
+    },
+    {
+      "id": "d1242",
+      "it": "racconto",
+      "en": "tale",
+      "pos": "noun"
+    },
+    {
+      "id": "d1243",
+      "it": "radice",
+      "en": "root",
+      "pos": "noun"
+    },
+    {
+      "id": "d1244",
+      "it": "radio",
+      "en": "radio",
+      "pos": "noun"
+    },
+    {
+      "id": "d1245",
+      "it": "ragazza",
+      "en": "girl",
+      "pos": "noun"
+    },
+    {
+      "id": "d1246",
+      "it": "ragazzo",
+      "en": "boy",
+      "pos": "noun"
+    },
+    {
+      "id": "d1247",
+      "it": "raggio",
+      "en": "radius",
+      "pos": "noun"
+    },
+    {
+      "id": "d1248",
+      "it": "raggiungere",
+      "en": "achieve",
+      "pos": "verb"
+    },
+    {
+      "id": "d1249",
+      "it": "ragione",
+      "en": "reason",
+      "pos": "noun"
+    },
+    {
+      "id": "d1250",
+      "it": "rapido",
+      "en": "fast",
+      "pos": "noun"
+    },
+    {
+      "id": "d1251",
+      "it": "rappresentare",
+      "en": "figure",
+      "pos": "verb"
+    },
+    {
+      "id": "d1252",
+      "it": "raro",
+      "en": "rare",
+      "pos": "noun"
+    },
+    {
+      "id": "d1253",
+      "it": "reagire",
+      "en": "react",
+      "pos": "verb"
+    },
+    {
+      "id": "d1254",
+      "it": "reale",
+      "en": "actual",
+      "pos": "noun"
+    },
+    {
+      "id": "d1255",
+      "it": "realizzare",
+      "en": "realise",
+      "pos": "verb"
+    },
+    {
+      "id": "d1256",
+      "it": "reato",
+      "en": "offence",
+      "pos": "noun"
+    },
+    {
+      "id": "d1257",
+      "it": "reazione",
+      "en": "reaction",
+      "pos": "noun"
+    },
+    {
+      "id": "d1258",
+      "it": "recente",
+      "en": "recent",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1259",
+      "it": "recitare",
+      "en": "recite",
+      "pos": "verb"
+    },
+    {
+      "id": "d1260",
+      "it": "recuperare",
+      "en": "recover",
+      "pos": "verb"
+    },
+    {
+      "id": "d1261",
+      "it": "regalare",
+      "en": "gift",
+      "pos": "verb"
+    },
+    {
+      "id": "d1262",
+      "it": "regalo",
+      "en": "gift",
+      "pos": "noun"
+    },
+    {
+      "id": "d1263",
+      "it": "regime",
+      "en": "diet",
+      "pos": "noun"
+    },
+    {
+      "id": "d1264",
+      "it": "regina",
+      "en": "queen",
+      "pos": "noun"
+    },
+    {
+      "id": "d1265",
+      "it": "regione",
+      "en": "region",
+      "pos": "noun"
+    },
+    {
+      "id": "d1266",
+      "it": "registrare",
+      "en": "record",
+      "pos": "verb"
+    },
+    {
+      "id": "d1267",
+      "it": "registrazione",
+      "en": "recording",
+      "pos": "noun"
+    },
+    {
+      "id": "d1268",
+      "it": "regola",
+      "en": "rule",
+      "pos": "noun"
+    },
+    {
+      "id": "d1269",
+      "it": "relativo",
+      "en": "relative",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1270",
+      "it": "relazione",
+      "en": "relation",
+      "pos": "noun"
+    },
+    {
+      "id": "d1271",
+      "it": "religione",
+      "en": "religion",
+      "pos": "noun"
+    },
+    {
+      "id": "d1272",
+      "it": "religioso",
+      "en": "religious",
+      "pos": "noun"
+    },
+    {
+      "id": "d1273",
+      "it": "repubblica",
+      "en": "republic",
+      "pos": "noun"
+    },
+    {
+      "id": "d1274",
+      "it": "resistere",
+      "en": "resist",
+      "pos": "verb"
+    },
+    {
+      "id": "d1275",
+      "it": "respirare",
+      "en": "breathe",
+      "pos": "verb"
+    },
+    {
+      "id": "d1276",
+      "it": "responsabile",
+      "en": "manager",
+      "pos": "noun"
+    },
+    {
+      "id": "d1277",
+      "it": "restare",
+      "en": "be left",
+      "pos": "verb"
+    },
+    {
+      "id": "d1278",
+      "it": "resto",
+      "en": "change",
+      "pos": "noun"
+    },
+    {
+      "id": "d1279",
+      "it": "rete",
+      "en": "net",
+      "pos": "noun"
+    },
+    {
+      "id": "d1280",
+      "it": "ricco",
+      "en": "affluent",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1281",
+      "it": "ricerca",
+      "en": "enquiry",
+      "pos": "noun"
+    },
+    {
+      "id": "d1282",
+      "it": "ricetta",
+      "en": "recipe",
+      "pos": "noun"
+    },
+    {
+      "id": "d1283",
+      "it": "ricevere",
+      "en": "get",
+      "pos": "verb"
+    },
+    {
+      "id": "d1284",
+      "it": "richiamare",
+      "en": "recall",
+      "pos": "verb"
+    },
+    {
+      "id": "d1285",
+      "it": "richiedere",
+      "en": "request",
+      "pos": "verb"
+    },
+    {
+      "id": "d1286",
+      "it": "richiesta",
+      "en": "request",
+      "pos": "noun"
+    },
+    {
+      "id": "d1287",
+      "it": "ricominciare",
+      "en": "restart",
+      "pos": "verb"
+    },
+    {
+      "id": "d1288",
+      "it": "ricordare",
+      "en": "recall",
+      "pos": "verb"
+    },
+    {
+      "id": "d1289",
+      "it": "ricordo",
+      "en": "memory",
+      "pos": "noun"
+    },
+    {
+      "id": "d1290",
+      "it": "ridere",
+      "en": "laugh",
+      "pos": "verb"
+    },
+    {
+      "id": "d1291",
+      "it": "ridurre",
+      "en": "reduce",
+      "pos": "verb"
+    },
+    {
+      "id": "d1292",
+      "it": "riempire",
+      "en": "fill",
+      "pos": "verb"
+    },
+    {
+      "id": "d1293",
+      "it": "rifare",
+      "en": "redo",
+      "pos": "verb"
+    },
+    {
+      "id": "d1294",
+      "it": "riferimento",
+      "en": "reference",
+      "pos": "noun"
+    },
+    {
+      "id": "d1295",
+      "it": "riferire",
+      "en": "refer",
+      "pos": "verb"
+    },
+    {
+      "id": "d1296",
+      "it": "rifiutare",
+      "en": "refuse",
+      "pos": "verb"
+    },
+    {
+      "id": "d1297",
+      "it": "rifiuto",
+      "en": "denial",
+      "pos": "noun"
+    },
+    {
+      "id": "d1298",
+      "it": "riflessione",
+      "en": "reflection",
+      "pos": "noun"
+    },
+    {
+      "id": "d1299",
+      "it": "riflettere",
+      "en": "reflect",
+      "pos": "verb"
+    },
+    {
+      "id": "d1300",
+      "it": "riga",
+      "en": "rank",
+      "pos": "noun"
+    },
+    {
+      "id": "d1301",
+      "it": "riguardare",
+      "en": "concern",
+      "pos": "verb"
+    },
+    {
+      "id": "d1302",
+      "it": "riguardo",
+      "en": "regard",
+      "pos": "noun"
+    },
+    {
+      "id": "d1303",
+      "it": "rimanere",
+      "en": "remain",
+      "pos": "verb"
+    },
+    {
+      "id": "d1304",
+      "it": "rimettere",
+      "en": "remit",
+      "pos": "verb"
+    },
+    {
+      "id": "d1305",
+      "it": "ringraziare",
+      "en": "thank",
+      "pos": "verb"
+    },
+    {
+      "id": "d1306",
+      "it": "ripetere",
+      "en": "echo",
+      "pos": "verb"
+    },
+    {
+      "id": "d1307",
+      "it": "riportare",
+      "en": "bring back",
+      "pos": "verb"
+    },
+    {
+      "id": "d1308",
+      "it": "riproduzione",
+      "en": "procreation",
+      "pos": "noun"
+    },
+    {
+      "id": "d1309",
+      "it": "risalire",
+      "en": "goup",
+      "pos": "verb"
+    },
+    {
+      "id": "d1310",
+      "it": "rischiare",
+      "en": "risk",
+      "pos": "verb"
+    },
+    {
+      "id": "d1311",
+      "it": "rischio",
+      "en": "risk",
+      "pos": "noun"
+    },
+    {
+      "id": "d1312",
+      "it": "riservare",
+      "en": "book",
+      "pos": "verb"
+    },
+    {
+      "id": "d1313",
+      "it": "risolvere",
+      "en": "resolve",
+      "pos": "verb"
+    },
+    {
+      "id": "d1314",
+      "it": "risorsa",
+      "en": "resort",
+      "pos": "noun"
+    },
+    {
+      "id": "d1315",
+      "it": "rispettare",
+      "en": "respect",
+      "pos": "verb"
+    },
+    {
+      "id": "d1316",
+      "it": "rispetto",
+      "en": "respect",
+      "pos": "noun"
+    },
+    {
+      "id": "d1317",
+      "it": "rispondere",
+      "en": "answer",
+      "pos": "verb"
+    },
+    {
+      "id": "d1318",
+      "it": "risposta",
+      "en": "answer",
+      "pos": "noun"
+    },
+    {
+      "id": "d1319",
+      "it": "ristorante",
+      "en": "restaurant",
+      "pos": "noun"
+    },
+    {
+      "id": "d1320",
+      "it": "risultare",
+      "en": "result",
+      "pos": "verb"
+    },
+    {
+      "id": "d1321",
+      "it": "risultato",
+      "en": "outcome",
+      "pos": "noun"
+    },
+    {
+      "id": "d1322",
+      "it": "ritardo",
+      "en": "delay",
+      "pos": "noun"
+    },
+    {
+      "id": "d1323",
+      "it": "ritirare",
+      "en": "collect",
+      "pos": "verb"
+    },
+    {
+      "id": "d1324",
+      "it": "ritmo",
+      "en": "beat",
+      "pos": "noun"
+    },
+    {
+      "id": "d1325",
+      "it": "ritornare",
+      "en": "return",
+      "pos": "verb"
+    },
+    {
+      "id": "d1326",
+      "it": "ritorno",
+      "en": "return",
+      "pos": "noun"
+    },
+    {
+      "id": "d1327",
+      "it": "ritrovare",
+      "en": "retrieve",
+      "pos": "verb"
+    },
+    {
+      "id": "d1328",
+      "it": "riunione",
+      "en": "meeting",
+      "pos": "noun"
+    },
+    {
+      "id": "d1329",
+      "it": "riunire",
+      "en": "bring together",
+      "pos": "verb"
+    },
+    {
+      "id": "d1330",
+      "it": "riuscire",
+      "en": "manage",
+      "pos": "verb"
+    },
+    {
+      "id": "d1331",
+      "it": "rivelare",
+      "en": "disclose",
+      "pos": "verb"
+    },
+    {
+      "id": "d1332",
+      "it": "rivista",
+      "en": "journal",
+      "pos": "noun"
+    },
+    {
+      "id": "d1333",
+      "it": "rivoluzione",
+      "en": "revolution",
+      "pos": "noun"
+    },
+    {
+      "id": "d1334",
+      "it": "roba",
+      "en": "stuff",
+      "pos": "noun"
+    },
+    {
+      "id": "d1335",
+      "it": "romano",
+      "en": "Roman",
+      "pos": "noun"
+    },
+    {
+      "id": "d1336",
+      "it": "romanzo",
+      "en": "novel",
+      "pos": "noun"
+    },
+    {
+      "id": "d1337",
+      "it": "rompere",
+      "en": "break",
+      "pos": "verb"
+    },
+    {
+      "id": "d1338",
+      "it": "rosa",
+      "en": "pink",
+      "pos": "noun"
+    },
+    {
+      "id": "d1339",
+      "it": "rosso",
+      "en": "ginger",
+      "pos": "noun"
+    },
+    {
+      "id": "d1340",
+      "it": "rovinare",
+      "en": "ruin",
+      "pos": "verb"
+    },
+    {
+      "id": "d1341",
+      "it": "rubare",
+      "en": "steal",
+      "pos": "verb"
+    },
+    {
+      "id": "d1342",
+      "it": "rumore",
+      "en": "noise",
+      "pos": "noun"
+    },
+    {
+      "id": "d1343",
+      "it": "ruolo",
+      "en": "role",
+      "pos": "noun"
+    },
+    {
+      "id": "d1344",
+      "it": "russo",
+      "en": "russian",
+      "pos": "noun"
+    },
+    {
+      "id": "d1345",
+      "it": "sabato",
+      "en": "saturday",
+      "pos": "noun"
+    },
+    {
+      "id": "d1346",
+      "it": "sacco",
+      "en": "sack",
+      "pos": "noun"
+    },
+    {
+      "id": "d1347",
+      "it": "sala",
+      "en": "hall",
+      "pos": "noun"
+    },
+    {
+      "id": "d1348",
+      "it": "salire",
+      "en": "get on",
+      "pos": "verb"
+    },
+    {
+      "id": "d1349",
+      "it": "saltare",
+      "en": "jump",
+      "pos": "verb"
+    },
+    {
+      "id": "d1350",
+      "it": "salutare",
+      "en": "greet",
+      "pos": "verb"
+    },
+    {
+      "id": "d1351",
+      "it": "salute",
+      "en": "health",
+      "pos": "noun"
+    },
+    {
+      "id": "d1352",
+      "it": "saluto",
+      "en": "greeting",
+      "pos": "noun"
+    },
+    {
+      "id": "d1353",
+      "it": "salvare",
+      "en": "rescue",
+      "pos": "verb"
+    },
+    {
+      "id": "d1354",
+      "it": "sangue",
+      "en": "blood",
+      "pos": "noun"
+    },
+    {
+      "id": "d1355",
+      "it": "sano",
+      "en": "healthy",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1356",
+      "it": "santo",
+      "en": "holy",
+      "pos": "noun"
+    },
+    {
+      "id": "d1357",
+      "it": "sapere",
+      "en": "know",
+      "pos": "verb"
+    },
+    {
+      "id": "d1358",
+      "it": "sbagliare",
+      "en": "blunder",
+      "pos": "verb"
+    },
+    {
+      "id": "d1359",
+      "it": "sbagliato",
+      "en": "wrong",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1360",
+      "it": "sbattere",
+      "en": "bang",
+      "pos": "verb"
+    },
+    {
+      "id": "d1361",
+      "it": "scala",
+      "en": "scale",
+      "pos": "noun"
+    },
+    {
+      "id": "d1362",
+      "it": "scambiare",
+      "en": "exchange",
+      "pos": "verb"
+    },
+    {
+      "id": "d1363",
+      "it": "scambio",
+      "en": "trade",
+      "pos": "noun"
+    },
+    {
+      "id": "d1364",
+      "it": "scappare",
+      "en": "escape",
+      "pos": "verb"
+    },
+    {
+      "id": "d1365",
+      "it": "scaricare",
+      "en": "discharge",
+      "pos": "verb"
+    },
+    {
+      "id": "d1366",
+      "it": "scarpa",
+      "en": "shoe",
+      "pos": "noun"
+    },
+    {
+      "id": "d1367",
+      "it": "scatola",
+      "en": "box",
+      "pos": "noun"
+    },
+    {
+      "id": "d1368",
+      "it": "scegliere",
+      "en": "choose",
+      "pos": "verb"
+    },
+    {
+      "id": "d1369",
+      "it": "scelta",
+      "en": "choice",
+      "pos": "noun"
+    },
+    {
+      "id": "d1370",
+      "it": "scena",
+      "en": "scene",
+      "pos": "noun"
+    },
+    {
+      "id": "d1371",
+      "it": "scendere",
+      "en": "bring down",
+      "pos": "verb"
+    },
+    {
+      "id": "d1372",
+      "it": "schermo",
+      "en": "display",
+      "pos": "noun"
+    },
+    {
+      "id": "d1373",
+      "it": "scherzare",
+      "en": "kid",
+      "pos": "verb"
+    },
+    {
+      "id": "d1374",
+      "it": "schiena",
+      "en": "back",
+      "pos": "noun"
+    },
+    {
+      "id": "d1375",
+      "it": "schifo",
+      "en": "disgust",
+      "pos": "noun"
+    },
+    {
+      "id": "d1376",
+      "it": "scientifico",
+      "en": "scientific",
+      "pos": "noun"
+    },
+    {
+      "id": "d1377",
+      "it": "scienza",
+      "en": "science",
+      "pos": "noun"
+    },
+    {
+      "id": "d1378",
+      "it": "scomparire",
+      "en": "disappear",
+      "pos": "verb"
+    },
+    {
+      "id": "d1379",
+      "it": "sconosciuto",
+      "en": "stranger",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1380",
+      "it": "scoperta",
+      "en": "discovery",
+      "pos": "noun"
+    },
+    {
+      "id": "d1381",
+      "it": "scopo",
+      "en": "aim",
+      "pos": "noun"
+    },
+    {
+      "id": "d1382",
+      "it": "scoppiare",
+      "en": "burst",
+      "pos": "verb"
+    },
+    {
+      "id": "d1383",
+      "it": "scoprire",
+      "en": "detect",
+      "pos": "verb"
+    },
+    {
+      "id": "d1384",
+      "it": "scrittore",
+      "en": "writer",
+      "pos": "noun"
+    },
+    {
+      "id": "d1385",
+      "it": "scrittura",
+      "en": "handwriting",
+      "pos": "noun"
+    },
+    {
+      "id": "d1386",
+      "it": "scrivere",
+      "en": "type",
+      "pos": "verb"
+    },
+    {
+      "id": "d1387",
+      "it": "scuola",
+      "en": "school",
+      "pos": "noun"
+    },
+    {
+      "id": "d1388",
+      "it": "scusa",
+      "en": "excuse",
+      "pos": "noun"
+    },
+    {
+      "id": "d1389",
+      "it": "scusare",
+      "en": "excuse",
+      "pos": "verb"
+    },
+    {
+      "id": "d1390",
+      "it": "secco",
+      "en": "dry",
+      "pos": "noun"
+    },
+    {
+      "id": "d1391",
+      "it": "secolo",
+      "en": "century",
+      "pos": "noun"
+    },
+    {
+      "id": "d1392",
+      "it": "sede",
+      "en": "venue",
+      "pos": "noun"
+    },
+    {
+      "id": "d1393",
+      "it": "sedere",
+      "en": "bottom",
+      "pos": "verb"
+    },
+    {
+      "id": "d1394",
+      "it": "sedia",
+      "en": "chair",
+      "pos": "noun"
+    },
+    {
+      "id": "d1395",
+      "it": "segnalare",
+      "en": "flag",
+      "pos": "verb"
+    },
+    {
+      "id": "d1396",
+      "it": "segnale",
+      "en": "cue",
+      "pos": "noun"
+    },
+    {
+      "id": "d1397",
+      "it": "segno",
+      "en": "mark",
+      "pos": "noun"
+    },
+    {
+      "id": "d1398",
+      "it": "segreto",
+      "en": "secret",
+      "pos": "noun"
+    },
+    {
+      "id": "d1399",
+      "it": "seguente",
+      "en": "following",
+      "pos": "noun"
+    },
+    {
+      "id": "d1400",
+      "it": "seguire",
+      "en": "follow",
+      "pos": "verb"
+    },
+    {
+      "id": "d1401",
+      "it": "sei",
+      "en": "six",
+      "pos": "noun"
+    },
+    {
+      "id": "d1402",
+      "it": "sembrare",
+      "en": "looklike",
+      "pos": "verb"
+    },
+    {
+      "id": "d1403",
+      "it": "semplice",
+      "en": "facile",
+      "pos": "noun"
+    },
+    {
+      "id": "d1404",
+      "it": "semplicemente",
+      "en": "merely",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1405",
+      "it": "sempre",
+      "en": "always",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1406",
+      "it": "seno",
+      "en": "breast",
+      "pos": "noun"
+    },
+    {
+      "id": "d1407",
+      "it": "sensazione",
+      "en": "sensation",
+      "pos": "noun"
+    },
+    {
+      "id": "d1408",
+      "it": "senso",
+      "en": "sense",
+      "pos": "noun"
+    },
+    {
+      "id": "d1409",
+      "it": "sentenza",
+      "en": "judgement",
+      "pos": "noun"
+    },
+    {
+      "id": "d1410",
+      "it": "sentimento",
+      "en": "feeling",
+      "pos": "noun"
+    },
+    {
+      "id": "d1411",
+      "it": "sentire",
+      "en": "feel",
+      "pos": "verb"
+    },
+    {
+      "id": "d1412",
+      "it": "separare",
+      "en": "part",
+      "pos": "verb"
+    },
+    {
+      "id": "d1413",
+      "it": "sera",
+      "en": "evening",
+      "pos": "noun"
+    },
+    {
+      "id": "d1414",
+      "it": "sereno",
+      "en": "cloudless",
+      "pos": "noun"
+    },
+    {
+      "id": "d1415",
+      "it": "serie",
+      "en": "series",
+      "pos": "noun"
+    },
+    {
+      "id": "d1416",
+      "it": "serio",
+      "en": "serious",
+      "pos": "noun"
+    },
+    {
+      "id": "d1417",
+      "it": "servire",
+      "en": "serve",
+      "pos": "verb"
+    },
+    {
+      "id": "d1418",
+      "it": "servizio",
+      "en": "service",
+      "pos": "noun"
+    },
+    {
+      "id": "d1419",
+      "it": "sesso",
+      "en": "sex",
+      "pos": "noun"
+    },
+    {
+      "id": "d1420",
+      "it": "sessuale",
+      "en": "sexual",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1421",
+      "it": "sette",
+      "en": "seven",
+      "pos": "noun"
+    },
+    {
+      "id": "d1422",
+      "it": "settembre",
+      "en": "september",
+      "pos": "noun"
+    },
+    {
+      "id": "d1423",
+      "it": "settimana",
+      "en": "week",
+      "pos": "noun"
+    },
+    {
+      "id": "d1424",
+      "it": "settore",
+      "en": "sector",
+      "pos": "noun"
+    },
+    {
+      "id": "d1425",
+      "it": "sezione",
+      "en": "section",
+      "pos": "noun"
+    },
+    {
+      "id": "d1426",
+      "it": "sfida",
+      "en": "challenge",
+      "pos": "noun"
+    },
+    {
+      "id": "d1427",
+      "it": "sforzo",
+      "en": "effort",
+      "pos": "noun"
+    },
+    {
+      "id": "d1428",
+      "it": "sfruttare",
+      "en": "explode",
+      "pos": "verb"
+    },
+    {
+      "id": "d1429",
+      "it": "sguardo",
+      "en": "glance",
+      "pos": "noun"
+    },
+    {
+      "id": "d1430",
+      "it": "sicuramente",
+      "en": "surely",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1431",
+      "it": "sicurezza",
+      "en": "safety",
+      "pos": "noun"
+    },
+    {
+      "id": "d1432",
+      "it": "sicuro",
+      "en": "certain",
+      "pos": "noun"
+    },
+    {
+      "id": "d1433",
+      "it": "sigaretta",
+      "en": "cigarette",
+      "pos": "noun"
+    },
+    {
+      "id": "d1434",
+      "it": "significare",
+      "en": "mean",
+      "pos": "verb"
+    },
+    {
+      "id": "d1435",
+      "it": "significato",
+      "en": "significance",
+      "pos": "noun"
+    },
+    {
+      "id": "d1436",
+      "it": "signora",
+      "en": "lady",
+      "pos": "noun"
+    },
+    {
+      "id": "d1437",
+      "it": "signore",
+      "en": "gentleman",
+      "pos": "noun"
+    },
+    {
+      "id": "d1438",
+      "it": "signorina",
+      "en": "miss",
+      "pos": "noun"
+    },
+    {
+      "id": "d1439",
+      "it": "silenzio",
+      "en": "silence",
+      "pos": "noun"
+    },
+    {
+      "id": "d1440",
+      "it": "simbolo",
+      "en": "symbol",
+      "pos": "noun"
+    },
+    {
+      "id": "d1441",
+      "it": "simile",
+      "en": "akin",
+      "pos": "noun"
+    },
+    {
+      "id": "d1442",
+      "it": "simpatico",
+      "en": "nice",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1443",
+      "it": "sinistra",
+      "en": "left",
+      "pos": "noun"
+    },
+    {
+      "id": "d1444",
+      "it": "sinistro",
+      "en": "grim",
+      "pos": "noun"
+    },
+    {
+      "id": "d1445",
+      "it": "sistema",
+      "en": "system",
+      "pos": "noun"
+    },
+    {
+      "id": "d1446",
+      "it": "sito",
+      "en": "site",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1447",
+      "it": "situazione",
+      "en": "situation",
+      "pos": "noun"
+    },
+    {
+      "id": "d1448",
+      "it": "smettere",
+      "en": "quit",
+      "pos": "verb"
+    },
+    {
+      "id": "d1449",
+      "it": "sociale",
+      "en": "social",
+      "pos": "noun"
+    },
+    {
+      "id": "d1450",
+      "it": "soddisfare",
+      "en": "satisfy",
+      "pos": "verb"
+    },
+    {
+      "id": "d1451",
+      "it": "soddisfazione",
+      "en": "satisfaction",
+      "pos": "noun"
+    },
+    {
+      "id": "d1452",
+      "it": "sofferenza",
+      "en": "suffering",
+      "pos": "noun"
+    },
+    {
+      "id": "d1453",
+      "it": "soffrire",
+      "en": "suffer",
+      "pos": "verb"
+    },
+    {
+      "id": "d1454",
+      "it": "soggetto",
+      "en": "subject",
+      "pos": "noun"
+    },
+    {
+      "id": "d1455",
+      "it": "soggiorno",
+      "en": "sojourn",
+      "pos": "noun"
+    },
+    {
+      "id": "d1456",
+      "it": "sognare",
+      "en": "dream",
+      "pos": "verb"
+    },
+    {
+      "id": "d1457",
+      "it": "sogno",
+      "en": "dream",
+      "pos": "noun"
+    },
+    {
+      "id": "d1458",
+      "it": "solamente",
+      "en": "only",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1459",
+      "it": "soldato",
+      "en": "soldier",
+      "pos": "noun"
+    },
+    {
+      "id": "d1460",
+      "it": "soldo",
+      "en": "penny",
+      "pos": "noun"
+    },
+    {
+      "id": "d1461",
+      "it": "sollevare",
+      "en": "lift",
+      "pos": "verb"
+    },
+    {
+      "id": "d1462",
+      "it": "solo",
+      "en": "alone",
+      "pos": "noun"
+    },
+    {
+      "id": "d1463",
+      "it": "soltanto",
+      "en": "alone",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1464",
+      "it": "soluzione",
+      "en": "solution",
+      "pos": "noun"
+    },
+    {
+      "id": "d1465",
+      "it": "somma",
+      "en": "sum",
+      "pos": "noun"
+    },
+    {
+      "id": "d1466",
+      "it": "sondaggio",
+      "en": "survey",
+      "pos": "noun"
+    },
+    {
+      "id": "d1467",
+      "it": "sonno",
+      "en": "sleep",
+      "pos": "noun"
+    },
+    {
+      "id": "d1468",
+      "it": "sopportare",
+      "en": "abide",
+      "pos": "verb"
+    },
+    {
+      "id": "d1469",
+      "it": "sopra",
+      "en": "about",
+      "pos": "noun"
+    },
+    {
+      "id": "d1470",
+      "it": "soprattutto",
+      "en": "above all",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1471",
+      "it": "sopravvivere",
+      "en": "survive",
+      "pos": "verb"
+    },
+    {
+      "id": "d1472",
+      "it": "sorella",
+      "en": "sister",
+      "pos": "noun"
+    },
+    {
+      "id": "d1473",
+      "it": "sorpresa",
+      "en": "surprise",
+      "pos": "noun"
+    },
+    {
+      "id": "d1474",
+      "it": "sorridere",
+      "en": "smile",
+      "pos": "verb"
+    },
+    {
+      "id": "d1475",
+      "it": "sorriso",
+      "en": "smile",
+      "pos": "noun"
+    },
+    {
+      "id": "d1476",
+      "it": "sospetto",
+      "en": "suspicion",
+      "pos": "noun"
+    },
+    {
+      "id": "d1477",
+      "it": "sostanza",
+      "en": "factor",
+      "pos": "noun"
+    },
+    {
+      "id": "d1478",
+      "it": "sostituire",
+      "en": "substitute",
+      "pos": "verb"
+    },
+    {
+      "id": "d1479",
+      "it": "sottile",
+      "en": "subtle",
+      "pos": "noun"
+    },
+    {
+      "id": "d1480",
+      "it": "sotto",
+      "en": "below",
+      "pos": "noun"
+    },
+    {
+      "id": "d1481",
+      "it": "sottolineare",
+      "en": "underline",
+      "pos": "verb"
+    },
+    {
+      "id": "d1482",
+      "it": "sottoporre",
+      "en": "submit",
+      "pos": "verb"
+    },
+    {
+      "id": "d1483",
+      "it": "spagnolo",
+      "en": "spaniard",
+      "pos": "noun"
+    },
+    {
+      "id": "d1484",
+      "it": "spalla",
+      "en": "shoulder",
+      "pos": "noun"
+    },
+    {
+      "id": "d1485",
+      "it": "sparare",
+      "en": "fire",
+      "pos": "verb"
+    },
+    {
+      "id": "d1486",
+      "it": "sparire",
+      "en": "disappear",
+      "pos": "verb"
+    },
+    {
+      "id": "d1487",
+      "it": "spaventare",
+      "en": "frighten",
+      "pos": "verb"
+    },
+    {
+      "id": "d1488",
+      "it": "spazio",
+      "en": "room",
+      "pos": "noun"
+    },
+    {
+      "id": "d1489",
+      "it": "specchio",
+      "en": "mirror",
+      "pos": "noun"
+    },
+    {
+      "id": "d1490",
+      "it": "speciale",
+      "en": "special",
+      "pos": "noun"
+    },
+    {
+      "id": "d1491",
+      "it": "specie",
+      "en": "species",
+      "pos": "noun"
+    },
+    {
+      "id": "d1492",
+      "it": "specifico",
+      "en": "specific",
+      "pos": "noun"
+    },
+    {
+      "id": "d1493",
+      "it": "spegnere",
+      "en": "shut down",
+      "pos": "verb"
+    },
+    {
+      "id": "d1494",
+      "it": "spendere",
+      "en": "spend",
+      "pos": "verb"
+    },
+    {
+      "id": "d1495",
+      "it": "speranza",
+      "en": "hope",
+      "pos": "noun"
+    },
+    {
+      "id": "d1496",
+      "it": "sperare",
+      "en": "hope",
+      "pos": "verb"
+    },
+    {
+      "id": "d1497",
+      "it": "spesa",
+      "en": "expenditure",
+      "pos": "noun"
+    },
+    {
+      "id": "d1498",
+      "it": "spesso",
+      "en": "often",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1499",
+      "it": "spettacolo",
+      "en": "gig",
+      "pos": "noun"
+    },
+    {
+      "id": "d1500",
+      "it": "spiaggia",
+      "en": "beach",
+      "pos": "noun"
+    },
+    {
+      "id": "d1501",
+      "it": "spiegare",
+      "en": "explain",
+      "pos": "verb"
+    },
+    {
+      "id": "d1502",
+      "it": "spiegazione",
+      "en": "explanation",
+      "pos": "noun"
+    },
+    {
+      "id": "d1503",
+      "it": "spingere",
+      "en": "push",
+      "pos": "verb"
+    },
+    {
+      "id": "d1504",
+      "it": "spirito",
+      "en": "spirit",
+      "pos": "noun"
+    },
+    {
+      "id": "d1505",
+      "it": "sporco",
+      "en": "dirty",
+      "pos": "noun"
+    },
+    {
+      "id": "d1506",
+      "it": "sport",
+      "en": "sport",
+      "pos": "noun"
+    },
+    {
+      "id": "d1507",
+      "it": "sportivo",
+      "en": "sporting",
+      "pos": "noun"
+    },
+    {
+      "id": "d1508",
+      "it": "sposare",
+      "en": "marry",
+      "pos": "verb"
+    },
+    {
+      "id": "d1509",
+      "it": "spostare",
+      "en": "displace",
+      "pos": "verb"
+    },
+    {
+      "id": "d1510",
+      "it": "squadra",
+      "en": "team",
+      "pos": "noun"
+    },
+    {
+      "id": "d1511",
+      "it": "stabilire",
+      "en": "establish",
+      "pos": "verb"
+    },
+    {
+      "id": "d1512",
+      "it": "stagione",
+      "en": "season",
+      "pos": "noun"
+    },
+    {
+      "id": "d1513",
+      "it": "stampa",
+      "en": "press",
+      "pos": "noun"
+    },
+    {
+      "id": "d1514",
+      "it": "stanco",
+      "en": "tired",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1515",
+      "it": "stanza",
+      "en": "room",
+      "pos": "noun"
+    },
+    {
+      "id": "d1516",
+      "it": "stare",
+      "en": "be",
+      "pos": "verb"
+    },
+    {
+      "id": "d1517",
+      "it": "stato",
+      "en": "state",
+      "pos": "noun"
+    },
+    {
+      "id": "d1518",
+      "it": "stazione",
+      "en": "station",
+      "pos": "noun"
+    },
+    {
+      "id": "d1519",
+      "it": "stella",
+      "en": "star",
+      "pos": "noun"
+    },
+    {
+      "id": "d1520",
+      "it": "stesso",
+      "en": "itself",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1521",
+      "it": "stile",
+      "en": "style",
+      "pos": "noun"
+    },
+    {
+      "id": "d1522",
+      "it": "stipendio",
+      "en": "salary",
+      "pos": "noun"
+    },
+    {
+      "id": "d1523",
+      "it": "storia",
+      "en": "history",
+      "pos": "noun"
+    },
+    {
+      "id": "d1524",
+      "it": "storico",
+      "en": "historian",
+      "pos": "noun"
+    },
+    {
+      "id": "d1525",
+      "it": "strada",
+      "en": "lane",
+      "pos": "noun"
+    },
+    {
+      "id": "d1526",
+      "it": "straniero",
+      "en": "foreign",
+      "pos": "noun"
+    },
+    {
+      "id": "d1527",
+      "it": "strano",
+      "en": "bizarre",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1528",
+      "it": "straordinario",
+      "en": "extraordinary",
+      "pos": "noun"
+    },
+    {
+      "id": "d1529",
+      "it": "strategia",
+      "en": "strategy",
+      "pos": "noun"
+    },
+    {
+      "id": "d1530",
+      "it": "strega",
+      "en": "witch",
+      "pos": "noun"
+    },
+    {
+      "id": "d1531",
+      "it": "stretto",
+      "en": "narrow",
+      "pos": "noun"
+    },
+    {
+      "id": "d1532",
+      "it": "stringere",
+      "en": "grip",
+      "pos": "verb"
+    },
+    {
+      "id": "d1533",
+      "it": "strumento",
+      "en": "instrument",
+      "pos": "noun"
+    },
+    {
+      "id": "d1534",
+      "it": "struttura",
+      "en": "frame",
+      "pos": "noun"
+    },
+    {
+      "id": "d1535",
+      "it": "studente",
+      "en": "student",
+      "pos": "noun"
+    },
+    {
+      "id": "d1536",
+      "it": "studiare",
+      "en": "study",
+      "pos": "verb"
+    },
+    {
+      "id": "d1537",
+      "it": "studio",
+      "en": "study",
+      "pos": "noun"
+    },
+    {
+      "id": "d1538",
+      "it": "stupido",
+      "en": "dumb",
+      "pos": "noun"
+    },
+    {
+      "id": "d1539",
+      "it": "subire",
+      "en": "undergo",
+      "pos": "verb"
+    },
+    {
+      "id": "d1540",
+      "it": "succedere",
+      "en": "happen",
+      "pos": "verb"
+    },
+    {
+      "id": "d1541",
+      "it": "successivo",
+      "en": "successive",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1542",
+      "it": "successo",
+      "en": "hit",
+      "pos": "noun"
+    },
+    {
+      "id": "d1543",
+      "it": "sud",
+      "en": "south",
+      "pos": "noun"
+    },
+    {
+      "id": "d1544",
+      "it": "sufficiente",
+      "en": "sufficient",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1545",
+      "it": "suggerire",
+      "en": "hint",
+      "pos": "verb"
+    },
+    {
+      "id": "d1546",
+      "it": "suo",
+      "en": "her",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1547",
+      "it": "suonare",
+      "en": "play",
+      "pos": "verb"
+    },
+    {
+      "id": "d1548",
+      "it": "suono",
+      "en": "sound",
+      "pos": "noun"
+    },
+    {
+      "id": "d1549",
+      "it": "superare",
+      "en": "exceed",
+      "pos": "verb"
+    },
+    {
+      "id": "d1550",
+      "it": "superficie",
+      "en": "surface",
+      "pos": "noun"
+    },
+    {
+      "id": "d1551",
+      "it": "superiore",
+      "en": "superior",
+      "pos": "noun"
+    },
+    {
+      "id": "d1552",
+      "it": "supporto",
+      "en": "support",
+      "pos": "noun"
+    },
+    {
+      "id": "d1553",
+      "it": "svegliare",
+      "en": "awake",
+      "pos": "verb"
+    },
+    {
+      "id": "d1554",
+      "it": "sviluppare",
+      "en": "develop",
+      "pos": "verb"
+    },
+    {
+      "id": "d1555",
+      "it": "sviluppo",
+      "en": "development",
+      "pos": "noun"
+    },
+    {
+      "id": "d1556",
+      "it": "svolgere",
+      "en": "perform",
+      "pos": "verb"
+    },
+    {
+      "id": "d1557",
+      "it": "tagliare",
+      "en": "cut",
+      "pos": "verb"
+    },
+    {
+      "id": "d1558",
+      "it": "taglio",
+      "en": "shear",
+      "pos": "noun"
+    },
+    {
+      "id": "d1559",
+      "it": "tale",
+      "en": "such",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1560",
+      "it": "talmente",
+      "en": "so",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1561",
+      "it": "tanto",
+      "en": "a lot of",
+      "pos": "noun"
+    },
+    {
+      "id": "d1562",
+      "it": "tasca",
+      "en": "pocket",
+      "pos": "noun"
+    },
+    {
+      "id": "d1563",
+      "it": "tassa",
+      "en": "tax",
+      "pos": "noun"
+    },
+    {
+      "id": "d1564",
+      "it": "tavola",
+      "en": "table",
+      "pos": "noun"
+    },
+    {
+      "id": "d1565",
+      "it": "tavolo",
+      "en": "table",
+      "pos": "noun"
+    },
+    {
+      "id": "d1566",
+      "it": "teatro",
+      "en": "theatre",
+      "pos": "noun"
+    },
+    {
+      "id": "d1567",
+      "it": "tecnico",
+      "en": "technical",
+      "pos": "noun"
+    },
+    {
+      "id": "d1568",
+      "it": "tecnologia",
+      "en": "technology",
+      "pos": "noun"
+    },
+    {
+      "id": "d1569",
+      "it": "tedesco",
+      "en": "german",
+      "pos": "noun"
+    },
+    {
+      "id": "d1570",
+      "it": "telefonare",
+      "en": "phone",
+      "pos": "verb"
+    },
+    {
+      "id": "d1571",
+      "it": "telefonico",
+      "en": "telephonic",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1572",
+      "it": "telefono",
+      "en": "phone",
+      "pos": "noun"
+    },
+    {
+      "id": "d1573",
+      "it": "televisione",
+      "en": "television",
+      "pos": "noun"
+    },
+    {
+      "id": "d1574",
+      "it": "tema",
+      "en": "theme",
+      "pos": "noun"
+    },
+    {
+      "id": "d1575",
+      "it": "temere",
+      "en": "fear",
+      "pos": "verb"
+    },
+    {
+      "id": "d1576",
+      "it": "temperatura",
+      "en": "temperature",
+      "pos": "noun"
+    },
+    {
+      "id": "d1577",
+      "it": "tempo",
+      "en": "time",
+      "pos": "noun"
+    },
+    {
+      "id": "d1578",
+      "it": "tenda",
+      "en": "tent",
+      "pos": "noun"
+    },
+    {
+      "id": "d1579",
+      "it": "tendenza",
+      "en": "tendency",
+      "pos": "noun"
+    },
+    {
+      "id": "d1580",
+      "it": "tendere",
+      "en": "tend",
+      "pos": "verb"
+    },
+    {
+      "id": "d1581",
+      "it": "tenere",
+      "en": "hold",
+      "pos": "verb"
+    },
+    {
+      "id": "d1582",
+      "it": "tensione",
+      "en": "strain",
+      "pos": "noun"
+    },
+    {
+      "id": "d1583",
+      "it": "tentare",
+      "en": "attempt",
+      "pos": "verb"
+    },
+    {
+      "id": "d1584",
+      "it": "tentativo",
+      "en": "attempt",
+      "pos": "noun"
+    },
+    {
+      "id": "d1585",
+      "it": "teoria",
+      "en": "theory",
+      "pos": "noun"
+    },
+    {
+      "id": "d1586",
+      "it": "terapia",
+      "en": "therapy",
+      "pos": "noun"
+    },
+    {
+      "id": "d1587",
+      "it": "terminare",
+      "en": "end",
+      "pos": "verb"
+    },
+    {
+      "id": "d1588",
+      "it": "termine",
+      "en": "term",
+      "pos": "noun"
+    },
+    {
+      "id": "d1589",
+      "it": "terra",
+      "en": "dirt",
+      "pos": "noun"
+    },
+    {
+      "id": "d1590",
+      "it": "terreno",
+      "en": "dirt",
+      "pos": "noun"
+    },
+    {
+      "id": "d1591",
+      "it": "terribile",
+      "en": "awful",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1592",
+      "it": "territorio",
+      "en": "territory",
+      "pos": "noun"
+    },
+    {
+      "id": "d1593",
+      "it": "terzo",
+      "en": "third",
+      "pos": "noun"
+    },
+    {
+      "id": "d1594",
+      "it": "tesi",
+      "en": "thesis",
+      "pos": "noun"
+    },
+    {
+      "id": "d1595",
+      "it": "tesoro",
+      "en": "treasure",
+      "pos": "noun"
+    },
+    {
+      "id": "d1596",
+      "it": "testa",
+      "en": "head",
+      "pos": "noun"
+    },
+    {
+      "id": "d1597",
+      "it": "testimone",
+      "en": "baton",
+      "pos": "noun"
+    },
+    {
+      "id": "d1598",
+      "it": "testo",
+      "en": "lyric",
+      "pos": "noun"
+    },
+    {
+      "id": "d1599",
+      "it": "tetto",
+      "en": "ceiling",
+      "pos": "noun"
+    },
+    {
+      "id": "d1600",
+      "it": "tipico",
+      "en": "typical",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1601",
+      "it": "tipo",
+      "en": "guy",
+      "pos": "noun"
+    },
+    {
+      "id": "d1602",
+      "it": "tirare",
+      "en": "pull",
+      "pos": "verb"
+    },
+    {
+      "id": "d1603",
+      "it": "titolo",
+      "en": "title",
+      "pos": "noun"
+    },
+    {
+      "id": "d1604",
+      "it": "toccare",
+      "en": "play",
+      "pos": "verb"
+    },
+    {
+      "id": "d1605",
+      "it": "togliere",
+      "en": "remove",
+      "pos": "verb"
+    },
+    {
+      "id": "d1606",
+      "it": "tono",
+      "en": "key",
+      "pos": "noun"
+    },
+    {
+      "id": "d1607",
+      "it": "tornare",
+      "en": "come back",
+      "pos": "verb"
+    },
+    {
+      "id": "d1608",
+      "it": "totale",
+      "en": "total",
+      "pos": "noun"
+    },
+    {
+      "id": "d1609",
+      "it": "traccia",
+      "en": "stroke",
+      "pos": "noun"
+    },
+    {
+      "id": "d1610",
+      "it": "tradizionale",
+      "en": "traditional",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1611",
+      "it": "tradizione",
+      "en": "tradition",
+      "pos": "noun"
+    },
+    {
+      "id": "d1612",
+      "it": "tradurre",
+      "en": "translate",
+      "pos": "verb"
+    },
+    {
+      "id": "d1613",
+      "it": "traduzione",
+      "en": "plough",
+      "pos": "noun"
+    },
+    {
+      "id": "d1614",
+      "it": "traffico",
+      "en": "traffic",
+      "pos": "noun"
+    },
+    {
+      "id": "d1615",
+      "it": "tramite",
+      "en": "through",
+      "pos": "noun"
+    },
+    {
+      "id": "d1616",
+      "it": "tranquillo",
+      "en": "quiet",
+      "pos": "noun"
+    },
+    {
+      "id": "d1617",
+      "it": "trascinare",
+      "en": "drag",
+      "pos": "verb"
+    },
+    {
+      "id": "d1618",
+      "it": "trasferire",
+      "en": "transfer",
+      "pos": "verb"
+    },
+    {
+      "id": "d1619",
+      "it": "trasformare",
+      "en": "transform",
+      "pos": "verb"
+    },
+    {
+      "id": "d1620",
+      "it": "trasmettere",
+      "en": "convey",
+      "pos": "verb"
+    },
+    {
+      "id": "d1621",
+      "it": "trasmissione",
+      "en": "transmission",
+      "pos": "noun"
+    },
+    {
+      "id": "d1622",
+      "it": "trasporto",
+      "en": "carriage",
+      "pos": "noun"
+    },
+    {
+      "id": "d1623",
+      "it": "trattamento",
+      "en": "treatment",
+      "pos": "noun"
+    },
+    {
+      "id": "d1624",
+      "it": "trattare",
+      "en": "deal",
+      "pos": "verb"
+    },
+    {
+      "id": "d1625",
+      "it": "tratto",
+      "en": "stretch",
+      "pos": "noun"
+    },
+    {
+      "id": "d1626",
+      "it": "tre",
+      "en": "three",
+      "pos": "noun"
+    },
+    {
+      "id": "d1627",
+      "it": "treno",
+      "en": "train",
+      "pos": "noun"
+    },
+    {
+      "id": "d1628",
+      "it": "trenta",
+      "en": "thirty",
+      "pos": "noun"
+    },
+    {
+      "id": "d1629",
+      "it": "tribunale",
+      "en": "tribunal",
+      "pos": "noun"
+    },
+    {
+      "id": "d1630",
+      "it": "triste",
+      "en": "grim",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1631",
+      "it": "troppo",
+      "en": "overly",
+      "pos": "noun"
+    },
+    {
+      "id": "d1632",
+      "it": "trovare",
+      "en": "find",
+      "pos": "verb"
+    },
+    {
+      "id": "d1633",
+      "it": "tuo",
+      "en": "your",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1634",
+      "it": "turno",
+      "en": "shift",
+      "pos": "noun"
+    },
+    {
+      "id": "d1635",
+      "it": "tutto",
+      "en": "all",
+      "pos": "noun"
+    },
+    {
+      "id": "d1636",
+      "it": "uccello",
+      "en": "bird",
+      "pos": "noun"
+    },
+    {
+      "id": "d1637",
+      "it": "uccidere",
+      "en": "kill",
+      "pos": "verb"
+    },
+    {
+      "id": "d1638",
+      "it": "ufficiale",
+      "en": "official",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1639",
+      "it": "ufficio",
+      "en": "office",
+      "pos": "noun"
+    },
+    {
+      "id": "d1640",
+      "it": "uguale",
+      "en": "equal",
+      "pos": "noun"
+    },
+    {
+      "id": "d1641",
+      "it": "ulteriore",
+      "en": "ulterior",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1642",
+      "it": "ultimo",
+      "en": "last",
+      "pos": "noun"
+    },
+    {
+      "id": "d1643",
+      "it": "umanità",
+      "en": "man",
+      "pos": "noun"
+    },
+    {
+      "id": "d1644",
+      "it": "umano",
+      "en": "human",
+      "pos": "noun"
+    },
+    {
+      "id": "d1645",
+      "it": "una",
+      "en": "a",
+      "pos": "noun"
+    },
+    {
+      "id": "d1646",
+      "it": "unico",
+      "en": "only",
+      "pos": "noun"
+    },
+    {
+      "id": "d1647",
+      "it": "unire",
+      "en": "join",
+      "pos": "verb"
+    },
+    {
+      "id": "d1648",
+      "it": "unito",
+      "en": "united",
+      "pos": "noun"
+    },
+    {
+      "id": "d1649",
+      "it": "università",
+      "en": "college",
+      "pos": "noun"
+    },
+    {
+      "id": "d1650",
+      "it": "universo",
+      "en": "universe",
+      "pos": "noun"
+    },
+    {
+      "id": "d1651",
+      "it": "uno",
+      "en": "a",
+      "pos": "noun"
+    },
+    {
+      "id": "d1652",
+      "it": "uomo",
+      "en": "man",
+      "pos": "noun"
+    },
+    {
+      "id": "d1653",
+      "it": "uovo",
+      "en": "egg",
+      "pos": "noun"
+    },
+    {
+      "id": "d1654",
+      "it": "urlare",
+      "en": "shout",
+      "pos": "verb"
+    },
+    {
+      "id": "d1655",
+      "it": "usare",
+      "en": "use",
+      "pos": "verb"
+    },
+    {
+      "id": "d1656",
+      "it": "uscire",
+      "en": "exit",
+      "pos": "verb"
+    },
+    {
+      "id": "d1657",
+      "it": "uscita",
+      "en": "exit",
+      "pos": "noun"
+    },
+    {
+      "id": "d1658",
+      "it": "uso",
+      "en": "use",
+      "pos": "noun"
+    },
+    {
+      "id": "d1659",
+      "it": "utente",
+      "en": "user",
+      "pos": "noun"
+    },
+    {
+      "id": "d1660",
+      "it": "utile",
+      "en": "helpful",
+      "pos": "noun"
+    },
+    {
+      "id": "d1661",
+      "it": "utilizzare",
+      "en": "utilise",
+      "pos": "verb"
+    },
+    {
+      "id": "d1662",
+      "it": "vacanza",
+      "en": "holiday",
+      "pos": "noun"
+    },
+    {
+      "id": "d1663",
+      "it": "valere",
+      "en": "be worth",
+      "pos": "verb"
+    },
+    {
+      "id": "d1664",
+      "it": "valore",
+      "en": "value",
+      "pos": "noun"
+    },
+    {
+      "id": "d1665",
+      "it": "valutare",
+      "en": "appraise",
+      "pos": "verb"
+    },
+    {
+      "id": "d1666",
+      "it": "vantaggio",
+      "en": "advantage",
+      "pos": "noun"
+    },
+    {
+      "id": "d1667",
+      "it": "vario",
+      "en": "various",
+      "pos": "noun"
+    },
+    {
+      "id": "d1668",
+      "it": "vecchio",
+      "en": "old",
+      "pos": "noun"
+    },
+    {
+      "id": "d1669",
+      "it": "vedere",
+      "en": "see",
+      "pos": "verb"
+    },
+    {
+      "id": "d1670",
+      "it": "veloce",
+      "en": "fast",
+      "pos": "noun"
+    },
+    {
+      "id": "d1671",
+      "it": "velocità",
+      "en": "speed",
+      "pos": "noun"
+    },
+    {
+      "id": "d1672",
+      "it": "vendere",
+      "en": "sell",
+      "pos": "verb"
+    },
+    {
+      "id": "d1673",
+      "it": "vendita",
+      "en": "sale",
+      "pos": "noun"
+    },
+    {
+      "id": "d1674",
+      "it": "venire",
+      "en": "come",
+      "pos": "verb"
+    },
+    {
+      "id": "d1675",
+      "it": "venti",
+      "en": "twenty",
+      "pos": "noun"
+    },
+    {
+      "id": "d1676",
+      "it": "vento",
+      "en": "wind",
+      "pos": "noun"
+    },
+    {
+      "id": "d1677",
+      "it": "veramente",
+      "en": "truly",
+      "pos": "adverb"
+    },
+    {
+      "id": "d1678",
+      "it": "verbale",
+      "en": "verbal",
+      "pos": "noun"
+    },
+    {
+      "id": "d1679",
+      "it": "verde",
+      "en": "green",
+      "pos": "noun"
+    },
+    {
+      "id": "d1680",
+      "it": "verificare",
+      "en": "check",
+      "pos": "verb"
+    },
+    {
+      "id": "d1681",
+      "it": "vero",
+      "en": "actual",
+      "pos": "noun"
+    },
+    {
+      "id": "d1682",
+      "it": "versare",
+      "en": "pour",
+      "pos": "verb"
+    },
+    {
+      "id": "d1683",
+      "it": "versione",
+      "en": "release",
+      "pos": "noun"
+    },
+    {
+      "id": "d1684",
+      "it": "vestire",
+      "en": "dress",
+      "pos": "verb"
+    },
+    {
+      "id": "d1685",
+      "it": "vestito",
+      "en": "clothes",
+      "pos": "noun"
+    },
+    {
+      "id": "d1686",
+      "it": "vetro",
+      "en": "glass",
+      "pos": "noun"
+    },
+    {
+      "id": "d1687",
+      "it": "via",
+      "en": "away",
+      "pos": "noun"
+    },
+    {
+      "id": "d1688",
+      "it": "viaggiare",
+      "en": "travel",
+      "pos": "verb"
+    },
+    {
+      "id": "d1689",
+      "it": "viaggio",
+      "en": "journey",
+      "pos": "noun"
+    },
+    {
+      "id": "d1690",
+      "it": "vicino",
+      "en": "close",
+      "pos": "noun"
+    },
+    {
+      "id": "d1691",
+      "it": "video",
+      "en": "video",
+      "pos": "noun"
+    },
+    {
+      "id": "d1692",
+      "it": "villa",
+      "en": "villa",
+      "pos": "noun"
+    },
+    {
+      "id": "d1693",
+      "it": "villaggio",
+      "en": "village",
+      "pos": "noun"
+    },
+    {
+      "id": "d1694",
+      "it": "vincere",
+      "en": "overcome",
+      "pos": "verb"
+    },
+    {
+      "id": "d1695",
+      "it": "vino",
+      "en": "wine",
+      "pos": "noun"
+    },
+    {
+      "id": "d1696",
+      "it": "violento",
+      "en": "violent",
+      "pos": "noun"
+    },
+    {
+      "id": "d1697",
+      "it": "violenza",
+      "en": "violence",
+      "pos": "noun"
+    },
+    {
+      "id": "d1698",
+      "it": "visione",
+      "en": "vision",
+      "pos": "noun"
+    },
+    {
+      "id": "d1699",
+      "it": "visita",
+      "en": "recognition",
+      "pos": "noun"
+    },
+    {
+      "id": "d1700",
+      "it": "visitare",
+      "en": "tour",
+      "pos": "verb"
+    },
+    {
+      "id": "d1701",
+      "it": "viso",
+      "en": "face",
+      "pos": "noun"
+    },
+    {
+      "id": "d1702",
+      "it": "vista",
+      "en": "sight",
+      "pos": "noun"
+    },
+    {
+      "id": "d1703",
+      "it": "vita",
+      "en": "life",
+      "pos": "noun"
+    },
+    {
+      "id": "d1704",
+      "it": "vittima",
+      "en": "victim",
+      "pos": "noun"
+    },
+    {
+      "id": "d1705",
+      "it": "vittoria",
+      "en": "victory",
+      "pos": "noun"
+    },
+    {
+      "id": "d1706",
+      "it": "vivere",
+      "en": "live",
+      "pos": "verb"
+    },
+    {
+      "id": "d1707",
+      "it": "vivo",
+      "en": "alive",
+      "pos": "noun"
+    },
+    {
+      "id": "d1708",
+      "it": "voce",
+      "en": "voice",
+      "pos": "noun"
+    },
+    {
+      "id": "d1709",
+      "it": "voi",
+      "en": "you",
+      "pos": "noun"
+    },
+    {
+      "id": "d1710",
+      "it": "volare",
+      "en": "blast",
+      "pos": "verb"
+    },
+    {
+      "id": "d1711",
+      "it": "volere",
+      "en": "want",
+      "pos": "verb"
+    },
+    {
+      "id": "d1712",
+      "it": "volo",
+      "en": "flight",
+      "pos": "noun"
+    },
+    {
+      "id": "d1713",
+      "it": "volontà",
+      "en": "will",
+      "pos": "noun"
+    },
+    {
+      "id": "d1714",
+      "it": "volta",
+      "en": "time",
+      "pos": "noun"
+    },
+    {
+      "id": "d1715",
+      "it": "volto",
+      "en": "face",
+      "pos": "noun"
+    },
+    {
+      "id": "d1716",
+      "it": "volume",
+      "en": "volume",
+      "pos": "noun"
+    },
+    {
+      "id": "d1717",
+      "it": "vostro",
+      "en": "your",
+      "pos": "adjective"
+    },
+    {
+      "id": "d1718",
+      "it": "votare",
+      "en": "vote",
+      "pos": "verb"
+    },
+    {
+      "id": "d1719",
+      "it": "voto",
+      "en": "mark",
+      "pos": "noun"
+    },
+    {
+      "id": "d1720",
+      "it": "vuoto",
+      "en": "empty",
+      "pos": "noun"
+    },
+    {
+      "id": "d1721",
+      "it": "zero",
+      "en": "nil",
+      "pos": "noun"
+    },
+    {
+      "id": "d1722",
+      "it": "zio",
+      "en": "aunt",
+      "pos": "noun"
+    },
+    {
+      "id": "d1723",
+      "it": "zona",
+      "en": "zone",
+      "pos": "noun"
+    }
   ]
 }
