@@ -694,7 +694,7 @@ function runPhrase(){
 
 function runVocabolario(){
   const stage = header();
-  const words = DB.dizionario || [];
+  const words = [...(DB.dizionario||[]), ...(userStore().voci||[])];
   const POS_LABELS = {verb:'Verbi', noun:'Sostantivi', adjective:'Aggettivi', adverb:'Avverbi', pronoun:'Pronomi', other:'Altro'};
   const POS_COLORS = {verb:'rgba(47,107,237,.12)', noun:'rgba(22,163,74,.10)', adjective:'rgba(226,56,75,.10)', adverb:'rgba(255,165,0,.12)', other:'var(--card2)'};
   const POS_TC = {verb:'var(--accent2)', noun:'var(--good)', adjective:'var(--accent)', adverb:'#b45309', other:'var(--muted)'};
