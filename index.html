@@ -541,6 +541,14 @@ function runFlash(){
 
 
 function runPhrase(){
+  const SKIP = new Set(['il','lo','la','i','gli','le','un','una','uno','di','da','in','con','su','per','tra','fra','a','e','o','ma','se','che','non','è','si','ci','vi','mi','ti','ho','ha','ai','al','del','della','dello','delle','dei','degli','nel','nella','nelle','nei','negli','sul','sulla','sulle','sui','sugli','dal','dalla','dalle','dai','dagli','alla','alle','agli','come','più','già','anche','molto','poi','così','però','quando','dove','cui','chi']);
+
+  // Pool of content words from all sentences for similar distractors
+  const corpusWords = [...new Set(
+    (DB.frasi||[]).flatMap(f=>(f.it||"").replace(/[.!?,;:]/g,'').split(" ").map(w=>w.trim()))
+      .filter(w=>w.length>=4 && !SKIP.has(w.toLowerCase()))
+  )];
+
   const deck = sample(DB.frasi||[], Math.min(8,(DB.frasi||[]).length));
   if(!deck.length) return;
   let i=0;
@@ -552,13 +560,31 @@ function runPhrase(){
     bar.style.width=(i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const f=deck[i];
     const sentence = f.it || "";
-    const words = sentence.replace(/[.!?]/g,'').split(" ");
-    const hideIdx = Math.floor(Math.random()*words.length);
-    const answer = words[hideIdx].replace(/[.,!?]/g,'');
-    const masked = words.map((w,idx)=>idx===hideIdx?"_____":w).join(" ");
-    const vocabWords = (DB.voci||[]).map(v=>v.it||"").filter(w=>w.replace(/[.,!?]/g,'')!==answer && w.length>1);
-    const distract = sample(vocabWords,3);
-    const opts = shuffle([answer, ...distract.map(d=>d.replace(/[.,!?]/g,''))]);
+    const rawWords = sentence.replace(/[.!?]/g,'').split(" ");
+    const clean = rawWords.map(w=>w.replace(/[.,!?;:]/g,''));
+
+    // Prefer content words (length ≥ 4, not a function word)
+    const candidates = clean.map((w,idx)=>({w,idx}))
+      .filter(({w})=>w.length>=4 && !SKIP.has(w.toLowerCase()));
+    const {w: answer, idx: hideIdx} = candidates.length
+      ? candidates[Math.floor(Math.random()*candidates.length)]
+      : {w: clean[0], idx: 0};
+
+    const masked = rawWords.map((w,idx)=>idx===hideIdx?"_____":w).join(" ");
+
+    // Distractors: corpus words with similar length (±2 chars), not in this sentence
+    const similar = corpusWords.filter(w=>
+      w!==answer &&
+      Math.abs(w.length-answer.length)<=2 &&
+      !clean.includes(w)
+    );
+    // Fallback to vocab words if not enough
+    const fallback = (DB.voci||[]).map(v=>(v.it||"").replace(/[.,!?;:]/g,'').split(" ")[0])
+      .filter(w=>w.length>=4 && w!==answer && !clean.includes(w));
+    const pool = similar.length>=3 ? similar : [...similar, ...fallback];
+    const distract = sample(pool, 3);
+    const opts = shuffle([answer, ...distract]);
+
     wrap.innerHTML="";
     wrap.appendChild($(`<div class="q">${masked}</div>`));
     wrap.appendChild($(`<div class="qsub">${f.en||""}</div>`));
