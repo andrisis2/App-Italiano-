@@ -30,6 +30,12 @@
     <div class="accent-bar"></div>
   </div>
 
+  <!-- Direction toggle -->
+  <div class="category-filter" id="directionToggle" style="margin-bottom:10px;">
+    <button class="active" data-dir="it-en">🇮🇹 → 🇬🇧</button>
+    <button data-dir="en-it">🇬🇧 → 🇮🇹</button>
+  </div>
+
   <!-- Category filter -->
   <div class="category-filter" id="categoryFilter">
     <button class="active" data-cat="all">Tutte</button>
@@ -51,13 +57,13 @@
     <div class="flashcard-inner" id="flashcardInner">
       <div class="flashcard-face front" id="cardFront">
         <div class="category" id="cardCategory"></div>
-        <div class="word" id="cardItalian"></div>
-        <div class="hint">Clicca per vedere la traduzione</div>
+        <div class="word" id="cardFrontWord"></div>
+        <div class="hint" id="hintFront">Clicca per vedere la traduzione</div>
       </div>
       <div class="flashcard-face back" id="cardBack">
         <div class="category" id="cardCategoryBack" style="opacity:0.7;"></div>
-        <div class="word" id="cardEnglish"></div>
-        <div class="hint" style="opacity:0.8;">Italiano → English</div>
+        <div class="word" id="cardBackWord"></div>
+        <div class="hint" id="hintBack" style="opacity:0.8;">Italiano → English</div>
       </div>
     </div>
   </div>
@@ -156,22 +162,34 @@ let currentCards = [...allCards];
 let currentIndex = 0;
 let isFlipped = false;
 let seenSet = new Set();
+let direction = 'it-en';
 
-const inner       = document.getElementById('flashcardInner');
-const cardItalian = document.getElementById('cardItalian');
-const cardEnglish = document.getElementById('cardEnglish');
-const cardCat     = document.getElementById('cardCategory');
-const cardCatBack = document.getElementById('cardCategoryBack');
-const progressBar = document.getElementById('progressBar');
-const progressTxt = document.getElementById('progressText');
-const statTotal   = document.getElementById('statTotal');
-const statSeen    = document.getElementById('statSeen');
-const statRem     = document.getElementById('statRemaining');
+const inner        = document.getElementById('flashcardInner');
+const cardFrontWord = document.getElementById('cardFrontWord');
+const cardBackWord  = document.getElementById('cardBackWord');
+const hintFront    = document.getElementById('hintFront');
+const hintBack     = document.getElementById('hintBack');
+const cardCat      = document.getElementById('cardCategory');
+const cardCatBack  = document.getElementById('cardCategoryBack');
+const progressBar  = document.getElementById('progressBar');
+const progressTxt  = document.getElementById('progressText');
+const statTotal    = document.getElementById('statTotal');
+const statSeen     = document.getElementById('statSeen');
+const statRem      = document.getElementById('statRemaining');
 
 function renderCard() {
   const card = currentCards[currentIndex];
-  cardItalian.textContent = card.it;
-  cardEnglish.textContent = card.en;
+  if (direction === 'it-en') {
+    cardFrontWord.textContent = card.it;
+    cardBackWord.textContent  = card.en;
+    hintFront.textContent = 'Clicca per vedere la traduzione';
+    hintBack.textContent  = 'Italiano → English';
+  } else {
+    cardFrontWord.textContent = card.en;
+    cardBackWord.textContent  = card.it;
+    hintFront.textContent = 'Click to see the translation';
+    hintBack.textContent  = 'English → Italiano';
+  }
   const catLabel = card.cat.charAt(0).toUpperCase() + card.cat.slice(1);
   cardCat.textContent = catLabel;
   cardCatBack.textContent = catLabel;
@@ -228,6 +246,17 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowRight') nextCard();
   else if (e.key === 'ArrowLeft') prevCard();
   else if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); flipCard(); }
+});
+
+document.getElementById('directionToggle').addEventListener('click', e => {
+  const btn = e.target.closest('button');
+  if (!btn) return;
+  document.querySelectorAll('#directionToggle button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  direction = btn.getAttribute('data-dir');
+  currentIndex = 0;
+  seenSet.clear();
+  renderCard();
 });
 
 document.getElementById('categoryFilter').addEventListener('click', e => {
