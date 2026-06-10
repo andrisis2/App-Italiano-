@@ -676,41 +676,72 @@ function runFlash(pool, topicLabel){
   const activeDeck = shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, pool.length));
   const deck = activeDeck;
   let i=0;
+  let dir = localStorage.getItem('flashDir')==='en-it' ? 'en-it' : 'it-en';
   const stage = header();
   if(topicLabel) stage.appendChild($(`<div style="text-align:center;margin-bottom:4px;font-size:13px;color:var(--muted)">${topicLabel}</div>`));
+
+  const dirRow = $(`<div style="display:flex;gap:8px;justify-content:center;margin-bottom:10px"></div>`);
+  const dirBtns = [['it-en','IT &#8594; EN'],['en-it','EN &#8594; IT']].map(([val,label])=>{
+    const b = $(`<button style="border:1px solid var(--line);background:var(--card);border-radius:20px;padding:6px 16px;font-size:12.5px;font-weight:700;color:var(--muted);cursor:pointer;transition:.15s">${label}</button>`);
+    b.onclick = ()=>{
+      if(dir===val) return;
+      dir = val;
+      localStorage.setItem('flashDir', dir);
+      paintDir();
+      show();
+    };
+    dirRow.appendChild(b);
+    return [val, b];
+  });
+  function paintDir(){
+    dirBtns.forEach(([val,b])=>{
+      const on = val===dir;
+      b.style.background = on ? 'var(--accent2)' : 'var(--card)';
+      b.style.color = on ? '#fff' : 'var(--muted)';
+      b.style.borderColor = on ? 'var(--accent2)' : 'var(--line)';
+    });
+  }
+  paintDir();
+  stage.appendChild(dirRow);
+
   const bar = progressBar(stage);
   const cardWrap = $(`<div style="width:100%"></div>`); stage.appendChild(cardWrap);
   function show(){
     if(i>=deck.length) return finish(stage, "Sessione completata!", pickFlashTopic);
     bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const c = deck[i]; let flipped=false;
-    const frontWord = c.it || "";
+    const itFront = dir==='it-en';
+    const frontWord = (itFront ? c.it : c.en) || "";
+    const backTrans = (itFront ? c.en : c.it) || "";
     const ipaNote = c.ipa || "";
     const regTag = c.registro ? `<span class="pill">${c.registro}</span>` : "";
-    const backTrans = c.en || "";
     cardWrap.innerHTML="";
+    // In EN→IT la parola italiana è la risposta: il TTS sta sul retro per non svelarla
     const flip = $(`
       <div class="flip">
         <div class="flash">
           <div class="face front">
-            <button class="speak" title="Listen">&#128266;</button>
+            ${itFront ? `<button class="speak" title="Listen">&#128266;</button>` : ""}
             <div class="it-word">${frontWord}</div>
-            ${ipaNote ? `<div class="ipa-note">${ipaNote}</div>` : ""}
+            ${itFront && ipaNote ? `<div class="ipa-note">${ipaNote}</div>` : ""}
             ${regTag}
             <div class="hint">tap to see translation</div>
           </div>
           <div class="face back">
+            ${itFront ? "" : `<button class="speak" title="Listen">&#128266;</button>`}
             <div class="en-trans">${backTrans}</div>
-            <div class="small">${frontWord}${ipaNote?' &middot; '+ipaNote:''}</div>
+            ${!itFront && ipaNote ? `<div class="ipa-note">${ipaNote}</div>` : ""}
+            <div class="small">${frontWord}${itFront && ipaNote ? ' &middot; '+ipaNote : ''}</div>
           </div>
         </div>
       </div>`);
-    flip.querySelector(".speak").onclick = (e)=>{e.stopPropagation(); speak(frontWord);};
+    flip.querySelector(".speak").onclick = (e)=>{e.stopPropagation(); speak(c.it);};
     flip.onclick = ()=>{
       if(flipped) return;
       flipped=true;
       flip.classList.add("flipped");
       controls.classList.remove("hidden");
+      if(!itFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.it), 200);
     };
     cardWrap.appendChild(flip);
     const controls = $(`
@@ -721,7 +752,7 @@ function runFlash(pool, topicLabel){
     controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); i++; show();};
     controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); i++; show();};
     cardWrap.appendChild(controls);
-    if('speechSynthesis' in window) setTimeout(()=>speak(frontWord), 150);
+    if(itFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.it), 150);
   }
   show();
 }
