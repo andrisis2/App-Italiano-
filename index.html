@@ -390,6 +390,20 @@ function dailyPool(){
 }
 const DAILY_SIZE = 20;
 
+// --- Conjugation practice ---
+const CONJ_TENSES = [
+  {key:"indic.pres",   label:"Presente",               modo:"Indicativo"},
+  {key:"indic.imperf", label:"Imperfetto",             modo:"Indicativo"},
+  {key:"indic.futuro", label:"Futuro semplice",        modo:"Indicativo"},
+  {key:"cong.pres",    label:"Congiuntivo presente",   modo:"Congiuntivo"},
+  {key:"cong.imperf",  label:"Congiuntivo imperfetto", modo:"Congiuntivo"},
+  {key:"cond.pres",    label:"Condizionale presente",  modo:"Condizionale"}
+];
+const CONJ_PRONOUNS = ["io","tu","lui/lei","noi","voi","loro"];
+const tenseLabel = k => (CONJ_TENSES.find(t=>t.key===k)||{}).label || k;
+function normConj(s){ return (s||"").toLowerCase().trim().replace(/\s+/g," "); }
+function stripAcc(s){ return s.normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+
 async function forceUpdate(btnEl){
   if(btnEl){btnEl.textContent="⏳ Updating...";btnEl.disabled=true;}
   try{
@@ -455,6 +469,16 @@ function renderHome(){
         <div class="d">${d}</div>
       </button>`)).onclick = ()=>start(mode);
   });
+  if(DB.verbi && DB.verbi.length){
+    grid.appendChild($(`
+      <button class="tile wide">
+        <div class="ico" style="background:rgba(22,163,74,.10)">&#9999;&#65039;</div>
+        <div class="txt">
+          <div class="t">Coniugazione</div>
+          <div class="d">Allena i verbi &mdash; presente, congiuntivo, condizionale e altro</div>
+        </div>
+      </button>`)).onclick = ()=>start("conj");
+  }
   grid.appendChild($(`
     <button class="tile wide">
       <div class="ico" style="background:rgba(47,107,237,.10)">&#128214;</div>
@@ -513,6 +537,7 @@ function progressBar(stage){
 function start(mode){
   history.pushState({screen:mode}, "");
   if(mode==="daily") return runDaily();
+  if(mode==="conj") return runConjugation();
   if(mode==="flash") return pickFlashTopic();
   if(mode==="phrase") return runPhrase();
   if(mode==="diz" || mode==="vocab") return runVocabolario();
@@ -825,6 +850,121 @@ function runDaily(){
   // Most-overdue first (lowest box / longest since seen), then cap the session
   const session = pool.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, DAILY_SIZE);
   runFlash(session, "Ripasso del giorno", { restart: runDaily, onComplete: recordDailyDone });
+}
+
+function runConjugation(tenseFilter){
+  const verbs = DB.verbi || [];
+  if(!verbs.length){
+    const stage = header();
+    stage.appendChild($(`<p class="muted" style="text-align:center;padding:30px">Nessun verbo disponibile.</p>`));
+    return;
+  }
+
+  // Tense picker
+  if(tenseFilter===undefined){
+    const stage = header();
+    stage.appendChild($(`<h2 style="margin:0 0 6px;font-size:20px">Coniugazione</h2>`));
+    stage.appendChild($(`<p style="color:var(--muted);margin:0 0 18px;font-size:14px">Scegli il tempo da allenare &mdash; ${verbs.length} verbi.</p>`));
+    const mixBtn = $(`<button class="tile wide" style="margin-bottom:12px">
+      <div class="ico">🎲</div>
+      <div class="txt"><div class="t">Mix</div><div class="d">Tutti i tempi insieme</div></div>
+    </button>`);
+    mixBtn.onclick = ()=>runConjugation(CONJ_TENSES.map(t=>t.key));
+    stage.appendChild(mixBtn);
+    const list = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
+    CONJ_TENSES.forEach(t=>{
+      const btn = $(`<button class="tile wide">
+        <div class="txt"><div class="t">${t.label}</div><div class="d">${t.modo}</div></div>
+      </button>`);
+      btn.onclick = ()=>runConjugation([t.key]);
+      list.appendChild(btn);
+    });
+    stage.appendChild(list);
+    return;
+  }
+
+  // Build the deck: prioritize most-due (verb, person, tense) cells, then sample
+  const tenseKeys = tenseFilter;
+  const all = [];
+  verbs.forEach(v=>tenseKeys.forEach(tk=>{
+    const forms = v.coniugazioni && v.coniugazioni[tk];
+    if(!forms || forms.length<6) return;
+    for(let p=0;p<6;p++){
+      all.push({inf:v.inf, en:v.en, tk, p, answer:forms[p], id:`conj:${v.inf}:${tk}:${p}`});
+    }
+  }));
+  if(!all.length){ history.back(); return; }
+  const prioritized = all.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, Math.min(28, all.length));
+  const deck = shuffle(prioritized).slice(0, Math.min(12, prioritized.length));
+
+  let i=0, correct=0;
+  const stage = header();
+  const bar = progressBar(stage);
+  const wrap = $(`<div style="width:100%"></div>`); stage.appendChild(wrap);
+
+  function show(){
+    if(i>=deck.length) return finish(stage, `Completato &middot; ${correct} / ${deck.length}`, ()=>runConjugation(tenseFilter));
+    bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
+    const q = deck[i];
+    wrap.innerHTML = "";
+    wrap.appendChild($(`
+      <div style="background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;text-align:center;box-shadow:var(--shadow-sm)">
+        <div style="font-size:12px;color:var(--accent2);font-weight:700;text-transform:uppercase;letter-spacing:.6px">${tenseLabel(q.tk)}</div>
+        <div style="font-size:26px;font-weight:800;margin:8px 0 2px">${q.inf}</div>
+        <div style="font-size:13px;color:var(--muted)">${q.en}</div>
+        <div style="font-size:28px;font-weight:800;margin:16px 0 2px">
+          <span style="color:var(--muted);font-size:19px;font-weight:600">${CONJ_PRONOUNS[q.p]}</span> _____
+        </div>
+      </div>`));
+    const inp = document.createElement("input");
+    inp.className = "vocab-input";
+    inp.type = "text";
+    inp.placeholder = "Scrivi la coniugazione…";
+    inp.style.marginTop = "14px";
+    inp.setAttribute("autocomplete","off");
+    inp.setAttribute("autocorrect","off");
+    inp.setAttribute("autocapitalize","none");
+    inp.setAttribute("spellcheck","false");
+    wrap.appendChild(inp);
+    const fb = $(`<div style="min-height:24px;text-align:center;margin-top:10px;font-size:14px"></div>`);
+    wrap.appendChild(fb);
+    const btn = $(`<button class="btn primary" style="width:100%;margin-top:6px">Controlla</button>`);
+    wrap.appendChild(btn);
+
+    let answered = false;
+    function next(){ i++; show(); }
+    function check(){
+      const val = normConj(inp.value);
+      if(!val) return;
+      answered = true;
+      const target = normConj(q.answer);
+      const exact = val===target;
+      const loose = stripAcc(val)===stripAcc(target);
+      const ok = exact || loose;
+      grade(q.id, ok); if(ok) correct++;
+      haptic(ok);
+      inp.disabled = true;
+      inp.style.borderColor = ok ? "var(--good)" : "var(--accent)";
+      if(exact){
+        fb.innerHTML = `<span style="color:var(--good);font-weight:700">&#10003; Corretto!</span>`;
+      } else if(loose){
+        fb.innerHTML = `<span style="color:#b45309;font-weight:700">&#10003; Quasi! Attento agli accenti: <b>${q.answer}</b></span>`;
+      } else {
+        fb.innerHTML = `<span style="color:var(--accent);font-weight:700">&#10007; Risposta: <b>${q.answer}</b></span>`;
+      }
+      speak(q.answer);
+      btn.textContent = "Avanti →";
+      btn.onclick = next;
+    }
+    btn.onclick = check;
+    inp.addEventListener("keydown", e=>{
+      if(e.key!=="Enter") return;
+      e.preventDefault();
+      answered ? next() : check();
+    });
+    setTimeout(()=>inp.focus(), 60);
+  }
+  show();
 }
 
 
