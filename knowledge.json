@@ -1789,6 +1789,1206 @@
       ],
       "difficolta": 3,
       "aggiunto": "2026-06-09"
+    },
+    {
+      "id": "f161",
+      "it": "Stamattina mi sono alzato tardi perché non ho sentito la sveglia.",
+      "en": "This morning I got up late because I didn't hear the alarm.",
+      "tag": ["passato-prossimo", "vita-quotidiana"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f162",
+      "it": "Da piccola, mia nonna mi raccontava storie ogni sera prima di dormire.",
+      "en": "When I was little, my grandmother used to tell me stories every evening before sleep.",
+      "tag": ["imperfetto", "famiglia"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f163",
+      "it": "L'anno prossimo andrò a studiare all'estero per sei mesi.",
+      "en": "Next year I will go to study abroad for six months.",
+      "tag": ["futuro", "progetti"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f164",
+      "it": "Vorresti venire con noi al concerto sabato sera?",
+      "en": "Would you like to come with us to the concert on Saturday evening?",
+      "tag": ["condizionale-cortesia", "invito"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f165",
+      "it": "Questo film è più interessante di quello che ho visto la settimana scorsa.",
+      "en": "This film is more interesting than the one I saw last week.",
+      "tag": ["comparativo", "opinione"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f166",
+      "it": "Lo conosco da molti anni, ma non lo vedo spesso.",
+      "en": "I have known him for many years, but I don't see him often.",
+      "tag": ["pronomi-diretti", "da-presente"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f167",
+      "it": "In Italia si mangia molto bene, soprattutto al Sud.",
+      "en": "In Italy you eat very well, especially in the South.",
+      "tag": ["si-impersonale", "cultura"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f168",
+      "it": "Devo finire questa relazione prima di domani mattina.",
+      "en": "I have to finish this report before tomorrow morning.",
+      "tag": ["dovere", "lavoro"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f169",
+      "it": "Non mi piace guidare di notte quando piove.",
+      "en": "I don't like driving at night when it rains.",
+      "tag": ["piacere", "abitudini"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f170",
+      "it": "Hai già prenotato l'albergo per le vacanze estive?",
+      "en": "Have you already booked the hotel for the summer holidays?",
+      "tag": ["passato-prossimo", "vacanze"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f171",
+      "it": "Mia sorella suona il pianoforte da quando aveva cinque anni.",
+      "en": "My sister has been playing the piano since she was five.",
+      "tag": ["da-presente", "musica"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f172",
+      "it": "Potresti aiutarmi a portare questi scatoloni?",
+      "en": "Could you help me carry these boxes?",
+      "tag": ["condizionale-cortesia", "richiesta"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f173",
+      "it": "Quando ero studente, dormivo fino a mezzogiorno nel weekend.",
+      "en": "When I was a student, I used to sleep until noon at the weekend.",
+      "tag": ["imperfetto-abitudini", "nostalgia"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f174",
+      "it": "Non so dove ho messo le chiavi di casa.",
+      "en": "I don't know where I've put my house keys.",
+      "tag": ["passato-prossimo", "vita-quotidiana"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f175",
+      "it": "Ti chiamo appena arrivo all'aeroporto.",
+      "en": "I'll call you as soon as I get to the airport.",
+      "tag": ["futuro", "trasporti"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f176",
+      "it": "Ieri sera ho guardato un bel documentario sulla natura.",
+      "en": "Last night I watched a nice documentary about nature.",
+      "tag": ["passato-prossimo", "tempo-libero"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f177",
+      "it": "Dovrei andare dal dentista, ma continuo a rimandare.",
+      "en": "I should go to the dentist, but I keep putting it off.",
+      "tag": ["condizionale-obbligo", "salute"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f178",
+      "it": "Preferisco prendere il treno piuttosto che guidare per ore.",
+      "en": "I prefer to take the train rather than drive for hours.",
+      "tag": ["preferire", "trasporti"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f179",
+      "it": "Stasera non posso uscire: devo preparare la cena per i miei.",
+      "en": "Tonight I can't go out: I have to cook dinner for my family.",
+      "tag": ["dovere", "famiglia"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f180",
+      "it": "L'estate scorsa abbiamo trascorso due settimane in Sardegna.",
+      "en": "Last summer we spent two weeks in Sardinia.",
+      "tag": ["passato-prossimo", "vacanze"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f181",
+      "it": "Mi sento meglio oggi rispetto a ieri.",
+      "en": "I feel better today compared to yesterday.",
+      "tag": ["comparativo", "salute"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f182",
+      "it": "Stavo leggendo un libro quando mi hai telefonato.",
+      "en": "I was reading a book when you called me.",
+      "tag": ["imperfetto-passato-prossimo", "vita-quotidiana"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f183",
+      "it": "Quanto tempo ci vuole per arrivare in centro con il bus?",
+      "en": "How long does it take to get to the city centre by bus?",
+      "tag": ["ci-vuole", "trasporti"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f184",
+      "it": "Il medico mi ha consigliato di fare più attività fisica.",
+      "en": "The doctor advised me to do more physical activity.",
+      "tag": ["passato-prossimo", "salute"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f185",
+      "it": "Questa settimana sono molto occupato: ho tre riunioni al giorno.",
+      "en": "This week I'm very busy: I have three meetings a day.",
+      "tag": ["presente", "lavoro"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f186",
+      "it": "Vorrei tanto imparare a cucinare la pasta fatta in casa.",
+      "en": "I would really like to learn how to make homemade pasta.",
+      "tag": ["condizionale-desiderio", "cucina"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f187",
+      "it": "Ho camminato per tutta la mattina e adesso ho i piedi a pezzi.",
+      "en": "I walked all morning and now my feet are killing me.",
+      "tag": ["passato-prossimo", "vita-quotidiana"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f188",
+      "it": "Ti mando il file per email appena lo finisco.",
+      "en": "I'll send you the file by email as soon as I finish it.",
+      "tag": ["futuro", "lavoro"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f189",
+      "it": "In questa regione d'Italia si producono vini eccellenti.",
+      "en": "In this region of Italy excellent wines are produced.",
+      "tag": ["si-passivante", "cultura"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f190",
+      "it": "Puoi dirmi dove si trova l'ufficio postale più vicino?",
+      "en": "Can you tell me where the nearest post office is?",
+      "tag": ["potere", "orientamento"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f191",
+      "it": "Mentre aspettavo l'autobus, ho incontrato un vecchio amico.",
+      "en": "While I was waiting for the bus, I ran into an old friend.",
+      "tag": ["imperfetto-passato-prossimo", "vita-quotidiana"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f192",
+      "it": "Non capisco questa parola; puoi spiegarmi cosa significa?",
+      "en": "I don't understand this word; can you explain what it means?",
+      "tag": ["presente", "linguistica"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f193",
+      "it": "Abbiamo deciso di comprare una casa in periferia.",
+      "en": "We've decided to buy a house in the suburbs.",
+      "tag": ["passato-prossimo", "casa"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f194",
+      "it": "Penso di andare in vacanza a luglio quest'anno.",
+      "en": "I'm thinking of going on holiday in July this year.",
+      "tag": ["pensare-di-infinito", "progetti"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f195",
+      "it": "Non ricordo dove ho parcheggiato la macchina stamattina.",
+      "en": "I can't remember where I parked the car this morning.",
+      "tag": ["passato-prossimo", "vita-quotidiana"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f196",
+      "it": "Sai parlare un'altra lingua oltre all'italiano e all'inglese?",
+      "en": "Can you speak another language besides Italian and English?",
+      "tag": ["sapere-infinito", "lingue"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f197",
+      "it": "Non riesco mai ad addormentarmi prima di mezzanotte.",
+      "en": "I can never fall asleep before midnight.",
+      "tag": ["riuscire-a", "abitudini"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f198",
+      "it": "Il mio collega lavora qui da più di vent'anni.",
+      "en": "My colleague has been working here for more than twenty years.",
+      "tag": ["da-presente", "lavoro"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f199",
+      "it": "Di solito faccio la spesa al mercato il sabato mattina.",
+      "en": "I usually do the shopping at the market on Saturday mornings.",
+      "tag": ["presente-abitudini", "vita-quotidiana"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f200",
+      "it": "Mia madre parla sempre troppo forte al telefono.",
+      "en": "My mother always speaks too loudly on the phone.",
+      "tag": ["presente", "famiglia"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f201",
+      "it": "Quella notizia mi ha sorpreso molto.",
+      "en": "That news surprised me a lot.",
+      "tag": ["passato-prossimo", "reazioni"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f202",
+      "it": "Ha lavorato per dieci anni nella stessa azienda prima di cambiare lavoro.",
+      "en": "She worked at the same company for ten years before changing jobs.",
+      "tag": ["passato-prossimo", "lavoro"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f203",
+      "it": "Questa mattina ho bevuto tre caffè perché ero stanchissimo.",
+      "en": "This morning I drank three coffees because I was absolutely exhausted.",
+      "tag": ["passato-prossimo", "imperfetto", "vita-quotidiana"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f204",
+      "it": "Ci siamo alzati presto per non perdere il primo treno.",
+      "en": "We got up early so as not to miss the first train.",
+      "tag": ["passato-prossimo", "trasporti"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f205",
+      "it": "Gli ho mandato un messaggio, ma non ha ancora risposto.",
+      "en": "I sent him a message but he hasn't replied yet.",
+      "tag": ["passato-prossimo", "pronome-indiretto"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f206",
+      "it": "La pizza in questo ristorante è migliore di quella del posto di fronte.",
+      "en": "The pizza in this restaurant is better than the one at the place opposite.",
+      "tag": ["comparativo-irregolare", "cibo"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f207",
+      "it": "Non sono mai stato a Firenze; ci andrò prima o poi.",
+      "en": "I've never been to Florence; I'll go there sooner or later.",
+      "tag": ["passato-prossimo-mai", "futuro"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f208",
+      "it": "Mi sono iscritto a un corso di fotografia online.",
+      "en": "I've signed up for an online photography course.",
+      "tag": ["passato-prossimo", "hobbies"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f209",
+      "it": "Quando vivevo a Milano, prendevo il tram tutti i giorni.",
+      "en": "When I lived in Milan, I used to take the tram every day.",
+      "tag": ["imperfetto-abitudini", "città"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f210",
+      "it": "Non ho ancora deciso dove andare in vacanza quest'estate.",
+      "en": "I haven't decided yet where to go on holiday this summer.",
+      "tag": ["passato-prossimo", "progetti"],
+      "difficolta": 1,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f211",
+      "it": "Spero che tutto vada bene con il tuo colloquio di domani.",
+      "en": "I hope everything goes well with your interview tomorrow.",
+      "tag": ["sperare-che", "congiuntivo-presente", "lavoro"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f212",
+      "it": "Credo che il negozio chiuda alle otto di sera.",
+      "en": "I think the shop closes at eight in the evening.",
+      "tag": ["credere-che", "congiuntivo-presente"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f213",
+      "it": "È importante che i ragazzi imparino a gestire il denaro.",
+      "en": "It is important for young people to learn how to manage money.",
+      "tag": ["è-importante-che", "congiuntivo-presente", "educazione"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f214",
+      "it": "Avrei voglia di un gelato, ma fa troppo freddo.",
+      "en": "I feel like an ice cream, but it's too cold.",
+      "tag": ["condizionale-desiderio", "meteo"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f215",
+      "it": "Me lo ha raccontato lui stesso, quindi è vero.",
+      "en": "He told it to me himself, so it's true.",
+      "tag": ["pronomi-combinati", "conferma"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f216",
+      "it": "Il pacco ti verrà consegnato entro domani sera.",
+      "en": "The parcel will be delivered to you by tomorrow evening.",
+      "tag": ["passivo-venire", "futuro"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f217",
+      "it": "Dopo aver mangiato, siamo usciti a fare una passeggiata.",
+      "en": "After eating, we went out for a walk.",
+      "tag": ["infinito-passato", "sequenza"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f218",
+      "it": "Non mi ricordo bene come si chiamava quella canzone.",
+      "en": "I don't quite remember what that song was called.",
+      "tag": ["imperfetto", "musica"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f219",
+      "it": "Avendolo visto molte volte, conosco ogni scena a memoria.",
+      "en": "Having seen it many times, I know every scene by heart.",
+      "tag": ["gerundio-passato", "cinema"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f220",
+      "it": "Gliene ho parlato più volte, ma non vuole sentire ragioni.",
+      "en": "I've talked to him about it several times, but he won't listen.",
+      "tag": ["pronomi-combinati", "comunicazione"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f221",
+      "it": "È stato un anno difficile, ma alla fine ce l'abbiamo fatta.",
+      "en": "It has been a difficult year, but in the end we made it.",
+      "tag": ["passato-prossimo", "idioma-farcela"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f222",
+      "it": "Nonostante la pioggia, siamo rimasti all'aperto tutto il pomeriggio.",
+      "en": "Despite the rain, we stayed outside all afternoon.",
+      "tag": ["nonostante", "concessiva", "meteo"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f223",
+      "it": "La riunione avrebbe dovuto durare un'ora, ma è andata avanti per tre.",
+      "en": "The meeting should have lasted an hour, but it went on for three.",
+      "tag": ["condizionale-passato", "lavoro"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f224",
+      "it": "Quanto prima inizierai a risparmiare, tanto meglio sarà per il futuro.",
+      "en": "The sooner you start saving, the better it will be for the future.",
+      "tag": ["correlativo", "finanze"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f225",
+      "it": "Gli hanno detto che il risultato sarebbe stato comunicato la settimana successiva.",
+      "en": "They told him the result would be communicated the following week.",
+      "tag": ["discorso-indiretto", "condizionale-passato"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f226",
+      "it": "Bisogna che tu prenda una decisione il prima possibile.",
+      "en": "You need to make a decision as soon as possible.",
+      "tag": ["bisogna-che", "congiuntivo-presente", "obbligo"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f227",
+      "it": "Sto cercando un appartamento che abbia almeno due camere da letto.",
+      "en": "I am looking for a flat that has at least two bedrooms.",
+      "tag": ["congiuntivo-relativo", "casa"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f228",
+      "it": "Avrei potuto finire prima se non ci fossero stati così tanti problemi.",
+      "en": "I could have finished sooner if there hadn't been so many problems.",
+      "tag": ["condizionale-passato", "conditional-3", "rimpianto"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f229",
+      "it": "Pensavo che fosse già partita, invece era ancora in ufficio.",
+      "en": "I thought she had already left, but she was still in the office.",
+      "tag": ["congiuntivo-imperfetto", "sorpresa"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f230",
+      "it": "Una volta finito il progetto, andremo tutti a festeggiare.",
+      "en": "Once the project is finished, we will all go and celebrate.",
+      "tag": ["participio-assoluto", "futuro"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f231",
+      "it": "Non mi aspettavo che la cena costasse così tanto.",
+      "en": "I didn't expect the dinner to cost so much.",
+      "tag": ["congiuntivo-imperfetto", "sorpresa"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f232",
+      "it": "Perché non glielo dici direttamente invece di aspettare?",
+      "en": "Why don't you tell him directly instead of waiting?",
+      "tag": ["pronomi-combinati", "comunicazione"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f233",
+      "it": "Sarà stata una coincidenza, ma mi ha fatto molto piacere.",
+      "en": "It must have been a coincidence, but it pleased me greatly.",
+      "tag": ["futuro-anteriore-supposizione", "emozioni"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f234",
+      "it": "Gli studenti che si iscrivono entro marzo ricevono uno sconto.",
+      "en": "Students who enrol before March receive a discount.",
+      "tag": ["proposizione-relativa", "scuola"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f235",
+      "it": "Il festival viene organizzato ogni anno dalla stessa associazione.",
+      "en": "The festival is organised every year by the same association.",
+      "tag": ["passivo-venire", "cultura"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f236",
+      "it": "Non appena sarò tornato, ti contatterò per organizzare tutto.",
+      "en": "As soon as I'm back, I'll contact you to arrange everything.",
+      "tag": ["futuro-anteriore", "pianificazione"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f237",
+      "it": "Mi dispiace che tu non abbia potuto venire alla cerimonia.",
+      "en": "I'm sorry you weren't able to come to the ceremony.",
+      "tag": ["mi-dispiace-che", "congiuntivo-passato", "emozioni"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f238",
+      "it": "Facendo sport regolarmente, ti sentirai più energico.",
+      "en": "By doing sport regularly, you will feel more energetic.",
+      "tag": ["gerundio", "salute"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f239",
+      "it": "Le è già stato spiegato come funziona il sistema.",
+      "en": "She has already been told how the system works.",
+      "tag": ["passivo-essere", "lavoro"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f240",
+      "it": "Con tutti i problemi che ha avuto, è riuscita comunque ad andare avanti.",
+      "en": "With all the problems she had, she nonetheless managed to carry on.",
+      "tag": ["passato-prossimo", "riuscire-a"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f241",
+      "it": "Ci vorrà del tempo prima che la situazione torni alla normalità.",
+      "en": "It will take some time before the situation returns to normal.",
+      "tag": ["ci-vorrà", "prima-che", "congiuntivo"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f242",
+      "it": "Ho letto che quest'anno ci si aspetta un aumento delle temperature.",
+      "en": "I have read that a rise in temperatures is expected this year.",
+      "tag": ["ci-si-aspetta", "ambiente"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f243",
+      "it": "Chissà dove sarà arrivato a quest'ora!",
+      "en": "Who knows where he will have got to by now!",
+      "tag": ["futuro-anteriore-ipotesi", "chissà"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f244",
+      "it": "Se potessi scegliere, vivrei in una piccola città di mare.",
+      "en": "If I could choose, I would live in a small seaside town.",
+      "tag": ["conditional-2", "desiderio"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f245",
+      "it": "Avrei preferito che me lo avessero detto prima.",
+      "en": "I would have preferred them to have told me earlier.",
+      "tag": ["condizionale-passato", "congiuntivo-trapassato", "rimpianto"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f246",
+      "it": "Il libro viene tradotto in dodici lingue diverse.",
+      "en": "The book is being translated into twelve different languages.",
+      "tag": ["passivo-venire-presente", "editoria"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f247",
+      "it": "Mi ha fatto capire che la cosa non era poi così semplice.",
+      "en": "He made me understand that the matter wasn't quite so simple.",
+      "tag": ["fare-capire", "causativo"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f248",
+      "it": "Sebbene ci voglia tempo, i risultati si vedranno.",
+      "en": "Although it takes time, the results will show.",
+      "tag": ["sebbene", "congiuntivo-presente", "pazienza"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f249",
+      "it": "Te lo prometto: non lo dirò a nessuno.",
+      "en": "I promise you: I won't tell anyone.",
+      "tag": ["pronomi-combinati", "promessa"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f250",
+      "it": "Non avevo mai mangiato il risotto prima di venire in Italia.",
+      "en": "I had never eaten risotto before coming to Italy.",
+      "tag": ["trapassato-prossimo", "esperienze"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f251",
+      "it": "Si è licenziata dopo aver litigato con il responsabile.",
+      "en": "She quit after arguing with the manager.",
+      "tag": ["infinito-passato", "lavoro"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f252",
+      "it": "Ogni volta che lo vedo, mi torna in mente quella storia.",
+      "en": "Every time I see him, I'm reminded of that story.",
+      "tag": ["ogni-volta-che", "memoria"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f253",
+      "it": "Glielo ripeto da mesi, ma non vuole ascoltare.",
+      "en": "I've been telling him for months, but he won't listen.",
+      "tag": ["pronomi-combinati", "da-presente"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f254",
+      "it": "Non è possibile che abbia già finito; è appena cominciato.",
+      "en": "It's not possible that he's already finished; it only just started.",
+      "tag": ["non-è-possibile-che", "congiuntivo-passato", "sorpresa"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f255",
+      "it": "Avendo trascorso molti anni all'estero, parla benissimo il francese.",
+      "en": "Having spent many years abroad, he speaks French extremely well.",
+      "tag": ["gerundio-passato", "lingue"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f256",
+      "it": "Il volo è stato cancellato a causa del maltempo.",
+      "en": "The flight was cancelled due to bad weather.",
+      "tag": ["passivo-essere", "trasporti"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f257",
+      "it": "Sembra che la mostra abbia avuto molto successo.",
+      "en": "It seems that the exhibition was a great success.",
+      "tag": ["sembra-che", "congiuntivo-passato", "cultura"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f258",
+      "it": "Ci siamo resi conto troppo tardi dell'errore.",
+      "en": "We realised the mistake too late.",
+      "tag": ["rendersi-conto", "passato-prossimo"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f259",
+      "it": "Appena avrò ricevuto la conferma, ti avviserò subito.",
+      "en": "As soon as I have received the confirmation, I will let you know immediately.",
+      "tag": ["futuro-anteriore", "lavoro"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f260",
+      "it": "Finché non finisci i compiti, non puoi guardare la televisione.",
+      "en": "Until you finish your homework, you can't watch television.",
+      "tag": ["finché-non", "regole"],
+      "difficolta": 2,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f261",
+      "it": "Qualora non ricevessi risposta entro venerdì, contattami direttamente.",
+      "en": "Should you not receive a reply by Friday, contact me directly.",
+      "tag": ["qualora", "congiuntivo-imperfetto", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f262",
+      "it": "Per quanto si sia impegnato, i risultati sono stati deludenti.",
+      "en": "No matter how hard he tried, the results were disappointing.",
+      "tag": ["per-quanto", "congiuntivo-passato", "concessiva"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f263",
+      "it": "Nel caso in cui cambiaste idea, potete sempre richiamarci.",
+      "en": "In the event that you change your mind, you can always call us back.",
+      "tag": ["nel-caso-in-cui", "condizionale", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f264",
+      "it": "Avesse studiato di più, avrebbe superato l'esame senza problemi.",
+      "en": "Had he studied more, he would have passed the exam without difficulty.",
+      "tag": ["inversione-ipotetica", "conditional-3", "rimpianto"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f265",
+      "it": "Si dice che il nuovo stadio verrà inaugurato entro la fine dell'anno.",
+      "en": "It is said that the new stadium will be inaugurated by the end of the year.",
+      "tag": ["si-dice-che", "passivo-venire", "futuro"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f266",
+      "it": "Tanto vale dirgli la verità adesso piuttosto che aspettare oltre.",
+      "en": "It's just as well to tell him the truth now rather than wait any longer.",
+      "tag": ["tanto-vale", "pragmatica"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f267",
+      "it": "Fossero stati più attenti, non si sarebbero trovati in questa situazione.",
+      "en": "Had they been more careful, they would not have found themselves in this situation.",
+      "tag": ["inversione-ipotetica", "conditional-3", "rimpianto"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f268",
+      "it": "A meno che non ci sia un imprevisto, sarò lì puntuale alle dieci.",
+      "en": "Unless something unexpected comes up, I'll be there at ten on the dot.",
+      "tag": ["a-meno-che-non", "congiuntivo-presente", "condizione"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f269",
+      "it": "Seppure in ritardo, è arrivato in tempo per la parte più importante.",
+      "en": "Although late, he arrived in time for the most important part.",
+      "tag": ["seppure", "concessiva", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f270",
+      "it": "Il governo ha dichiarato che sarebbero state adottate misure urgenti.",
+      "en": "The government declared that urgent measures would be adopted.",
+      "tag": ["discorso-indiretto", "condizionale-passato", "politica"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f271",
+      "it": "Dovunque tu vada, porterai sempre con te i ricordi di questo posto.",
+      "en": "Wherever you go, you will always carry the memories of this place with you.",
+      "tag": ["dovunque", "congiuntivo-presente", "poetico"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f272",
+      "it": "Non avrebbe mai immaginato che il suo libro diventasse un bestseller.",
+      "en": "He would never have imagined that his book would become a bestseller.",
+      "tag": ["condizionale-passato", "congiuntivo-imperfetto"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f273",
+      "it": "Stante la situazione attuale, è difficile fare previsioni a lungo termine.",
+      "en": "Given the current situation, it is difficult to make long-term predictions.",
+      "tag": ["stante", "participio-assoluto", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f274",
+      "it": "Lungi dall'essere un ostacolo, quella difficoltà si è rivelata un'opportunità.",
+      "en": "Far from being an obstacle, that difficulty turned out to be an opportunity.",
+      "tag": ["lungi-dal", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f275",
+      "it": "A voler essere precisi, il termine corretto sarebbe un altro.",
+      "en": "To be precise, the correct term would be a different one.",
+      "tag": ["a-voler-essere", "gerundio", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f276",
+      "it": "Chi avesse già pagato può presentarsi direttamente all'ingresso.",
+      "en": "Anyone who has already paid may go directly to the entrance.",
+      "tag": ["chi-congiuntivo-trapassato", "istruzioni"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f277",
+      "it": "Ci vorrebbe ben altro per convincermi a cambiare idea.",
+      "en": "It would take far more than that to convince me to change my mind.",
+      "tag": ["condizionale-impersonale", "resistenza"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f278",
+      "it": "Le conclusioni cui si è pervenuti sono state pubblicate sulla rivista.",
+      "en": "The conclusions that were reached have been published in the journal.",
+      "tag": ["cui-relativo", "passivo", "formale-accademico"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f279",
+      "it": "Premesso che la decisione spetta a voi, ecco il mio parere.",
+      "en": "Given that the decision is yours to make, here is my opinion.",
+      "tag": ["participio-assoluto-premesso", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f280",
+      "it": "Non si trattasse di una questione così delicata, potrei rispondere subito.",
+      "en": "Were this not such a delicate matter, I could reply immediately.",
+      "tag": ["inversione-ipotetica", "congiuntivo-imperfetto", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f281",
+      "it": "Benché non fosse d'accordo, ha accettato di seguire le istruzioni.",
+      "en": "Although he did not agree, he accepted to follow the instructions.",
+      "tag": ["benché", "congiuntivo-imperfetto", "concessiva"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f282",
+      "it": "Più avanzava la ricerca, più emergevano nuove domande.",
+      "en": "The further the research advanced, the more new questions emerged.",
+      "tag": ["correlativo-imperfetto", "accademico"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f283",
+      "it": "A fronte di tali evidenze, la difesa ha dovuto modificare la propria strategia.",
+      "en": "In the face of such evidence, the defence had to modify its strategy.",
+      "tag": ["a-fronte-di", "formale-legale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f284",
+      "it": "Volendo sintetizzare, potremmo dire che il progetto è riuscito a metà.",
+      "en": "To summarise, we could say the project half-succeeded.",
+      "tag": ["volendo-gerundio", "condizionale", "valutazione"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f285",
+      "it": "Il candidato si è espresso in modo tale da lasciare tutti soddisfatti.",
+      "en": "The candidate spoke in such a way as to leave everyone satisfied.",
+      "tag": ["in-modo-tale-da", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f286",
+      "it": "Per poco non ho perso il treno; sono arrivato all'ultimo secondo.",
+      "en": "I very nearly missed the train; I arrived at the last second.",
+      "tag": ["per-poco-non", "idioma", "trasporti"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f287",
+      "it": "Sarebbe stato preferibile affrontare la questione prima che degenerasse.",
+      "en": "It would have been preferable to tackle the issue before it deteriorated.",
+      "tag": ["condizionale-passato", "prima-che", "congiuntivo-imperfetto"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f288",
+      "it": "Chiunque si trovi in difficoltà può rivolgersi al nostro sportello.",
+      "en": "Anyone who finds themselves in difficulty may contact our service desk.",
+      "tag": ["chiunque", "congiuntivo-presente", "istituzionale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f289",
+      "it": "Non è che non voglia aiutarti; è che in questo momento non posso.",
+      "en": "It's not that I don't want to help you; it's that right now I can't.",
+      "tag": ["non-è-che", "congiuntivo", "spiegazione"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f290",
+      "it": "La fortuna sta nell'aver capito il problema prima che fosse troppo tardi.",
+      "en": "The luck lies in having understood the problem before it was too late.",
+      "tag": ["infinito-sostantivato", "prima-che", "congiuntivo-imperfetto"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f291",
+      "it": "Dato che la riunione si è protratta oltre il previsto, il pranzo è saltato.",
+      "en": "Given that the meeting ran on longer than expected, lunch was cancelled.",
+      "tag": ["dato-che", "vita-lavorativa"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f292",
+      "it": "Non si può non notare quanto siano cambiati i costumi negli ultimi vent'anni.",
+      "en": "One cannot fail to notice how much customs have changed in the last twenty years.",
+      "tag": ["doppia-negazione", "congiuntivo", "osservazione"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f293",
+      "it": "Il problema non consiste tanto nel trovare le risorse quanto nell'utilizzarle bene.",
+      "en": "The problem lies not so much in finding the resources as in using them well.",
+      "tag": ["non-tanto-quanto", "infinito-sostantivato", "analisi"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f294",
+      "it": "Per quanti sforzi faccia, non riesce a terminare il lavoro in tempo.",
+      "en": "No matter how hard he tries, he cannot finish the work in time.",
+      "tag": ["per-quanto", "congiuntivo-presente", "insistenza"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f295",
+      "it": "Senza che nessuno glielo avesse chiesto, si è offerto di restare a fare gli straordinari.",
+      "en": "Without anyone having asked him, he volunteered to stay and work overtime.",
+      "tag": ["senza-che", "congiuntivo-trapassato", "spontaneità"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f296",
+      "it": "Il piano prevedeva che i lavori si concludessero entro l'estate.",
+      "en": "The plan stipulated that the works would be completed by summer.",
+      "tag": ["prevedere-che", "congiuntivo-imperfetto", "pianificazione"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f297",
+      "it": "Pur non condividendo le sue posizioni, ne rispetto l'onestà intellettuale.",
+      "en": "Though not sharing his positions, I respect his intellectual honesty.",
+      "tag": ["pur-non-gerundio", "concessiva", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f298",
+      "it": "Sotto certi aspetti, la situazione di allora non era poi così diversa da quella attuale.",
+      "en": "In certain respects, the situation back then was not so different from the current one.",
+      "tag": ["sotto-certi-aspetti", "confronto"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f299",
+      "it": "Il direttore ha precisato che le modifiche sarebbero state apportate gradualmente.",
+      "en": "The director clarified that the changes would be introduced gradually.",
+      "tag": ["discorso-indiretto", "condizionale-passato", "lavoro"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f300",
+      "it": "Malgrado tutto, sono convinto che la cosa migliore sia andare avanti.",
+      "en": "Despite everything, I am convinced that the best thing is to press on.",
+      "tag": ["malgrado", "congiuntivo-presente", "determinazione"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f301",
+      "it": "Si è impegnata a tal punto che alla fine ce l'ha fatta contro ogni aspettativa.",
+      "en": "She worked so hard that in the end she succeeded against all expectations.",
+      "tag": ["a-tal-punto-che", "idioma-farcela"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f302",
+      "it": "Avendo passato anni a studiare quella lingua, sa cogliere ogni sfumatura.",
+      "en": "Having spent years studying that language, she can catch every nuance.",
+      "tag": ["gerundio-passato", "lingue", "lessico-avanzato"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f303",
+      "it": "A quanto pare, la proposta non ha convinto la maggioranza dei consiglieri.",
+      "en": "Apparently, the proposal did not convince the majority of the councillors.",
+      "tag": ["a-quanto-pare", "formale", "politica"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f304",
+      "it": "Nell'ipotesi in cui non si trovasse un accordo, si andrebbe a nuove elezioni.",
+      "en": "In the event that no agreement is reached, there would be new elections.",
+      "tag": ["nell-ipotesi-in-cui", "congiuntivo-imperfetto", "politica"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f305",
+      "it": "Perché tutto funzioni, occorre che ogni componente faccia la sua parte.",
+      "en": "For everything to work, it is necessary for each member to play their part.",
+      "tag": ["perché-congiuntivo", "occorre-che", "obiettivo"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f306",
+      "it": "Senza voler fare confronti, devo ammettere che questo approccio funziona meglio.",
+      "en": "Without wanting to make comparisons, I must admit that this approach works better.",
+      "tag": ["senza-voler-gerundio", "formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f307",
+      "it": "A dispetto delle previsioni negative, l'azienda ha chiuso l'anno in utile.",
+      "en": "In spite of the negative forecasts, the company ended the year in profit.",
+      "tag": ["a-dispetto-di", "economia"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f308",
+      "it": "Ne consegue che tutte le misure prese in precedenza vanno riconsiderate.",
+      "en": "It follows that all the measures previously taken need to be reconsidered.",
+      "tag": ["ne-consegue", "andare-modale", "logica-formale"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f309",
+      "it": "Pur avendo ricevuto molte critiche, l'artista non ha mai cambiato il proprio stile.",
+      "en": "Despite having received much criticism, the artist never changed her own style.",
+      "tag": ["pur-avendo-gerundio-passato", "concessiva", "arte"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
+    },
+    {
+      "id": "f310",
+      "it": "Si presume che il documento sia stato redatto intorno al XV secolo.",
+      "en": "It is presumed that the document was drawn up around the fifteenth century.",
+      "tag": ["si-presume-che", "congiuntivo-passato", "storia"],
+      "difficolta": 3,
+      "aggiunto": "2026-06-10"
     }
   ],
   "riferimento": [
