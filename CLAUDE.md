@@ -1,5 +1,8 @@
 # App Italiano — Architettura
 
+> ## ⚠️ REGOLA №1 — leggere prima di toccare qualsiasi cosa
+> L'app installata sul telefono dell'utente è **solo `index.html`**. Le pagine `frasi.html`, `flashcard.html`, `fonetica.html`, `grammatica.html` sono **prototipi legacy non raggiungibili dall'app**: una funzionalità implementata lì **non sarà mai vista dall'utente** (è già successo: il toggle IT→EN/EN→IT era stato messo in `flashcard.html` e l'utente non lo ha mai visto). **Ogni nuova funzionalità va implementata in `index.html`.** Prima di scegliere il file, verifica con `grep` da dove viene caricata la funzionalità.
+
 ## Struttura del progetto
 
 Questo è un **PWA statico** (niente build step, niente framework). Tutti i file sono production-ready così come sono.
