@@ -365,7 +365,7 @@ function grade(id, ok){
 }
 
 async function forceUpdate(btnEl){
-  if(btnEl){btnEl.textContent="&#9203; Updating...";btnEl.disabled=true;}
+  if(btnEl){btnEl.textContent="⏳ Updating...";btnEl.disabled=true;}
   try{
     if('serviceWorker' in navigator){
       const regs=await navigator.serviceWorker.getRegistrations();
@@ -376,7 +376,9 @@ async function forceUpdate(btnEl){
       await Promise.all(keys.map(k=>caches.delete(k)));
     }
   }catch(e){}
-  location.reload(true);
+  // Query unica: bypassa la cache HTTP del browser E la CDN di GitHub Pages
+  // (location.reload(true) è deprecato e ricaricava la pagina vecchia dalla cache HTTP)
+  location.replace(location.pathname + "?fresh=" + Date.now());
 }
 
 function renderHome(){
