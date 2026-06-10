@@ -10,7 +10,7 @@ Questo è un **PWA statico** (niente build step, niente framework). Tutti i file
 |------|-------|
 | `index.html` | **L'intera app**. SPA che contiene tutto il JS e carica i dati da `knowledge.json`. Questo è il file da modificare per quasi ogni funzionalità. |
 | `knowledge.json` | Database centrale — frasi, dizionario, grammatica, vocabolario. Unica sorgente di dati dell'app. |
-| `sw.js` | Service Worker PWA con cache-first. Quando si aggiungono nuovi file HTML/CSS/JS, aggiungerli all'array `ASSETS` e **incrementare la versione** (`italiano-b2-vN`) — altrimenti gli utenti vedranno la versione vecchia dalla cache. |
+| `sw.js` | Service Worker PWA **network-first** (cache usata solo come fallback offline): gli aggiornamenti arrivano automaticamente a ogni deploy, senza bump di versione obbligatorio. Quando si aggiungono nuovi file HTML/CSS/JS, aggiungerli all'array `ASSETS` perché funzionino offline. |
 | `app.js` | Utility condivise (TTS, navigazione) usate dalle pagine standalone. |
 | `style.css` | Stili condivisi per le pagine standalone. |
 
@@ -65,14 +65,13 @@ grep -n "funzione_o_keyword" index.html
 Se è in `index.html` → modifica `index.html`.  
 Se è in una pagina standalone → probabile che l'utente non la veda mai dall'app.
 
-## Service Worker — regola importante
+## Service Worker — come funzionano gli aggiornamenti
 
-Ogni volta che si modificano file inclusi nell'array `ASSETS` di `sw.js`, o si aggiungono nuovi file, bisogna **incrementare la versione cache**:
+`sw.js` usa una strategia **network-first**: ogni richiesta prova prima la rete (con `cache: 'no-cache'`, che rivalida la cache HTTP) e usa la cache solo se offline. Quindi:
 
-```js
-// sw.js
-const CACHE = 'italiano-b2-v5'; // incrementa ogni deploy
-const ASSETS = ['/', '/index.html', '/frasi.html', ...];
-```
+- **Non serve** incrementare la versione cache a ogni deploy: gli utenti ricevono le modifiche al primo caricamento online.
+- Il bump di `CACHE` (`italiano-b2-vN`) serve solo quando cambia l'array `ASSETS` o si vuole forzare la pulizia delle cache vecchie.
+- **Non tornare a cache-first** in `sw.js`: in passato causava app bloccate sulla versione vecchia per sempre (l'unico modo per aggiornare era il bump manuale, facile da dimenticare).
+- Il bottone "Update app" in `index.html` (`forceUpdate`) deregistra il SW, svuota le cache e ricarica con query `?fresh=<timestamp>` per bypassare anche la CDN di GitHub Pages (che cachea per ~10 minuti). Non usare `location.reload(true)`: il parametro è ignorato dai browser moderni e ricarica dalla cache HTTP.
 
-Senza questo bump, gli utenti con l'app installata (PWA) continueranno a vedere la versione vecchia.
+> Nota: dopo un push su `main`, il deploy su GitHub Pages (workflow `deploy.yml`) impiega ~1-2 minuti, e la CDN può servire file vecchi fino a ~10 minuti. Se un utente preme "Update app" subito dopo un push, il cache-buster aggira la CDN, ma il deploy deve comunque essere finito.

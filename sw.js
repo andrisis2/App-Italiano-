@@ -1,18 +1,32 @@
-const CACHE = 'italiano-b2-v5';
+const CACHE = 'italiano-b2-v6';
 const ASSETS = ['/', '/index.html', '/frasi.html', '/flashcard.html', '/fonetica.html', '/grammatica.html', '/style.css', '/app.js', '/knowledge.json', '/manifest.json'];
 self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS).catch(() => {})));
+  // cache:'no-cache' rivalida col server, altrimenti il pre-cache può ripescare file vecchi dalla cache HTTP
+  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: 'no-cache' }))).catch(() => {})));
   self.skipWaiting();
 });
 self.addEventListener('activate', e => {
-  e.waitUntil(
-    caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
-      .then(() => self.clients.matchAll({ type: 'window', includeUncontrolled: true }))
-      .then(clients => { clients.forEach(c => c.navigate(c.url)); })
-  );
+  e.waitUntil(caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))));
   self.clients.claim();
 });
+// Network-first: prova sempre la rete (rivalidando la cache HTTP); la cache è solo fallback offline.
+// Così gli aggiornamenti arrivano senza dover bumpare la versione a ogni deploy.
 self.addEventListener('fetch', e => {
-  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+  const req = e.request;
+  if (req.method !== 'GET' || !req.url.startsWith(self.location.origin)) return;
+  // una Request con mode 'navigate' non può essere combinata con RequestInit: si rifà dall'URL
+  const fromNetwork = req.mode === 'navigate'
+    ? fetch(req.url, { cache: 'no-cache' })
+    : fetch(req, { cache: 'no-cache' });
+  e.respondWith(
+    fromNetwork
+      .then(res => {
+        if (res && res.ok) {
+          const copy = res.clone();
+          caches.open(CACHE).then(c => c.put(req, copy)).catch(() => {});
+        }
+        return res;
+      })
+      .catch(() => caches.match(req, { ignoreSearch: req.mode === 'navigate' }))
+  );
 });
