@@ -364,6 +364,32 @@ function grade(id, ok){
   srs[id]=s; saveSrs();
 }
 
+// --- Daily review streak ---
+const DAILY_KEY = "italiano_daily_v1";
+function dateStr(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
+function todayStr(){ return dateStr(new Date()); }
+function yesterdayStr(){ const d=new Date(); d.setDate(d.getDate()-1); return dateStr(d); }
+function dailyState(){ try{ return JSON.parse(localStorage.getItem(DAILY_KEY)||"{}"); }catch(e){ return {}; } }
+function dailyStreak(){
+  const s=dailyState();
+  if(!s.last) return 0;
+  // streak counts only if the last completed session was today or yesterday
+  return (s.last===todayStr()||s.last===yesterdayStr()) ? (s.streak||0) : 0;
+}
+function recordDailyDone(){
+  const s=dailyState(), t=todayStr();
+  if(s.last===t) return;                 // already counted today
+  s.streak = (s.last===yesterdayStr()) ? (s.streak||0)+1 : 1;
+  s.last=t;
+  localStorage.setItem(DAILY_KEY, JSON.stringify(s));
+}
+// Items not yet consolidated (box < 3) or never seen
+function dailyPool(){
+  return [...(DB.dizionario||[]), ...(userStore().voci||[])]
+    .filter(x=>!srs[x.id] || box(x.id)<3);
+}
+const DAILY_SIZE = 20;
+
 async function forceUpdate(btnEl){
   if(btnEl){btnEl.textContent="⏳ Updating...";btnEl.disabled=true;}
   try{
@@ -398,6 +424,25 @@ function renderHome(){
     </div>`));
 
   const grid = $(`<div class="grid"></div>`);
+
+  // Daily review — unified SRS queue across all vocabulary
+  const streak = dailyStreak();
+  const sessionCount = Math.min(DAILY_SIZE, due);
+  const streakHtml = streak>0 ? ` &middot; <span style="color:var(--accent)">${streak} ${streak===1?"giorno":"giorni"} di fila &#128293;</span>` : "";
+  const dailyDesc = sessionCount>0
+    ? `${sessionCount} carte da ripassare${streakHtml}`
+    : `Tutto in pari &mdash; nessuna carta oggi${streakHtml}`;
+  const dailyTile = $(`
+    <button class="tile wide" style="margin-bottom:14px;background:linear-gradient(120deg,var(--card) 0%,rgba(226,56,75,.08) 100%)">
+      <div class="ico" style="background:rgba(226,56,75,.10)">${streak>0?"&#128293;":"&#128197;"}</div>
+      <div class="txt">
+        <div class="t">Ripasso del giorno</div>
+        <div class="d">${dailyDesc}</div>
+      </div>
+    </button>`);
+  dailyTile.onclick = ()=>start("daily");
+  grid.appendChild(dailyTile);
+
   const tiles = [
     ["&#127183;","Flashcards","Studia per argomento con spaced repetition","flash"],
     ["&#128172;","Sentences","Fill-in-the-blank with Italian audio","phrase"],
@@ -467,6 +512,7 @@ function progressBar(stage){
 
 function start(mode){
   history.pushState({screen:mode}, "");
+  if(mode==="daily") return runDaily();
   if(mode==="flash") return pickFlashTopic();
   if(mode==="phrase") return runPhrase();
   if(mode==="diz" || mode==="vocab") return runVocabolario();
@@ -671,7 +717,8 @@ function runTopicList(pool, label){
   setTimeout(()=>inp.focus(),80);
 }
 
-function runFlash(pool, topicLabel){
+function runFlash(pool, topicLabel, opts){
+  opts = opts || {};
   const shuffled = pool.slice().sort(()=>Math.random()-.5);
   const activeDeck = shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, pool.length));
   const deck = activeDeck;
@@ -707,7 +754,10 @@ function runFlash(pool, topicLabel){
   const bar = progressBar(stage);
   const cardWrap = $(`<div style="width:100%"></div>`); stage.appendChild(cardWrap);
   function show(){
-    if(i>=deck.length) return finish(stage, "Sessione completata!", pickFlashTopic);
+    if(i>=deck.length){
+      if(opts.onComplete) opts.onComplete();
+      return finish(stage, "Sessione completata!", opts.restart||pickFlashTopic);
+    }
     bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const c = deck[i]; let flipped=false;
     const itFront = dir==='it-en';
@@ -755,6 +805,26 @@ function runFlash(pool, topicLabel){
     if(itFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.it), 150);
   }
   show();
+}
+
+function runDaily(){
+  const pool = dailyPool();
+  if(!pool.length){
+    const stage = header();
+    stage.appendChild($(`
+      <div class="done">
+        <div class="big">&#127881;</div>
+        <h2>Tutto ripassato!</h2>
+        <p class="muted">Non hai carte in attesa oggi. Torna domani per continuare la serie.</p>
+      </div>`));
+    const row=$(`<div class="row"></div>`);
+    const a=$(`<button class="btn">Home</button>`); a.onclick=()=>history.back();
+    row.appendChild(a); stage.appendChild(row);
+    return;
+  }
+  // Most-overdue first (lowest box / longest since seen), then cap the session
+  const session = pool.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, DAILY_SIZE);
+  runFlash(session, "Ripasso del giorno", { restart: runDaily, onComplete: recordDailyDone });
 }
 
 
