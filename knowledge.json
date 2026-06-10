@@ -19322,5 +19322,1327 @@
         "città"
       ]
     }
+  ],
+  "verbi": [
+    {
+      "inf": "essere",
+      "en": "to be",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "sono",
+          "sei",
+          "è",
+          "siamo",
+          "siete",
+          "sono"
+        ],
+        "indic.imperf": [
+          "ero",
+          "eri",
+          "era",
+          "eravamo",
+          "eravate",
+          "erano"
+        ],
+        "indic.futuro": [
+          "sarò",
+          "sarai",
+          "sarà",
+          "saremo",
+          "sarete",
+          "saranno"
+        ],
+        "cong.pres": [
+          "sia",
+          "sia",
+          "sia",
+          "siamo",
+          "siate",
+          "siano"
+        ],
+        "cong.imperf": [
+          "fossi",
+          "fossi",
+          "fosse",
+          "fossimo",
+          "foste",
+          "fossero"
+        ],
+        "cond.pres": [
+          "sarei",
+          "saresti",
+          "sarebbe",
+          "saremmo",
+          "sareste",
+          "sarebbero"
+        ]
+      }
+    },
+    {
+      "inf": "avere",
+      "en": "to have",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "ho",
+          "hai",
+          "ha",
+          "abbiamo",
+          "avete",
+          "hanno"
+        ],
+        "indic.imperf": [
+          "avevo",
+          "avevi",
+          "aveva",
+          "avevamo",
+          "avevate",
+          "avevano"
+        ],
+        "indic.futuro": [
+          "avrò",
+          "avrai",
+          "avrà",
+          "avremo",
+          "avrete",
+          "avranno"
+        ],
+        "cong.pres": [
+          "abbia",
+          "abbia",
+          "abbia",
+          "abbiamo",
+          "abbiate",
+          "abbiano"
+        ],
+        "cong.imperf": [
+          "avessi",
+          "avessi",
+          "avesse",
+          "avessimo",
+          "aveste",
+          "avessero"
+        ],
+        "cond.pres": [
+          "avrei",
+          "avresti",
+          "avrebbe",
+          "avremmo",
+          "avreste",
+          "avrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "parlare",
+      "en": "to speak",
+      "gruppo": "are",
+      "coniugazioni": {
+        "indic.pres": [
+          "parlo",
+          "parli",
+          "parla",
+          "parliamo",
+          "parlate",
+          "parlano"
+        ],
+        "indic.imperf": [
+          "parlavo",
+          "parlavi",
+          "parlava",
+          "parlavamo",
+          "parlavate",
+          "parlavano"
+        ],
+        "indic.futuro": [
+          "parlerò",
+          "parlerai",
+          "parlerà",
+          "parleremo",
+          "parlerete",
+          "parleranno"
+        ],
+        "cong.pres": [
+          "parli",
+          "parli",
+          "parli",
+          "parliamo",
+          "parliate",
+          "parlino"
+        ],
+        "cong.imperf": [
+          "parlassi",
+          "parlassi",
+          "parlasse",
+          "parlassimo",
+          "parlaste",
+          "parlassero"
+        ],
+        "cond.pres": [
+          "parlerei",
+          "parleresti",
+          "parlerebbe",
+          "parleremmo",
+          "parlereste",
+          "parlerebbero"
+        ]
+      }
+    },
+    {
+      "inf": "credere",
+      "en": "to believe",
+      "gruppo": "ere",
+      "coniugazioni": {
+        "indic.pres": [
+          "credo",
+          "credi",
+          "crede",
+          "crediamo",
+          "credete",
+          "credono"
+        ],
+        "indic.imperf": [
+          "credevo",
+          "credevi",
+          "credeva",
+          "credevamo",
+          "credevate",
+          "credevano"
+        ],
+        "indic.futuro": [
+          "crederò",
+          "crederai",
+          "crederà",
+          "crederemo",
+          "crederete",
+          "crederanno"
+        ],
+        "cong.pres": [
+          "creda",
+          "creda",
+          "creda",
+          "crediamo",
+          "crediate",
+          "credano"
+        ],
+        "cong.imperf": [
+          "credessi",
+          "credessi",
+          "credesse",
+          "credessimo",
+          "credeste",
+          "credessero"
+        ],
+        "cond.pres": [
+          "crederei",
+          "crederesti",
+          "crederebbe",
+          "crederemmo",
+          "credereste",
+          "crederebbero"
+        ]
+      }
+    },
+    {
+      "inf": "partire",
+      "en": "to leave",
+      "gruppo": "ire",
+      "coniugazioni": {
+        "indic.pres": [
+          "parto",
+          "parti",
+          "parte",
+          "partiamo",
+          "partite",
+          "partono"
+        ],
+        "indic.imperf": [
+          "partivo",
+          "partivi",
+          "partiva",
+          "partivamo",
+          "partivate",
+          "partivano"
+        ],
+        "indic.futuro": [
+          "partirò",
+          "partirai",
+          "partirà",
+          "partiremo",
+          "partirete",
+          "partiranno"
+        ],
+        "cong.pres": [
+          "parta",
+          "parta",
+          "parta",
+          "partiamo",
+          "partiate",
+          "partano"
+        ],
+        "cong.imperf": [
+          "partissi",
+          "partissi",
+          "partisse",
+          "partissimo",
+          "partiste",
+          "partissero"
+        ],
+        "cond.pres": [
+          "partirei",
+          "partiresti",
+          "partirebbe",
+          "partiremmo",
+          "partireste",
+          "partirebbero"
+        ]
+      }
+    },
+    {
+      "inf": "capire",
+      "en": "to understand",
+      "gruppo": "ire-isc",
+      "coniugazioni": {
+        "indic.pres": [
+          "capisco",
+          "capisci",
+          "capisce",
+          "capiamo",
+          "capite",
+          "capiscono"
+        ],
+        "indic.imperf": [
+          "capivo",
+          "capivi",
+          "capiva",
+          "capivamo",
+          "capivate",
+          "capivano"
+        ],
+        "indic.futuro": [
+          "capirò",
+          "capirai",
+          "capirà",
+          "capiremo",
+          "capirete",
+          "capiranno"
+        ],
+        "cong.pres": [
+          "capisca",
+          "capisca",
+          "capisca",
+          "capiamo",
+          "capiate",
+          "capiscano"
+        ],
+        "cong.imperf": [
+          "capissi",
+          "capissi",
+          "capisse",
+          "capissimo",
+          "capiste",
+          "capissero"
+        ],
+        "cond.pres": [
+          "capirei",
+          "capiresti",
+          "capirebbe",
+          "capiremmo",
+          "capireste",
+          "capirebbero"
+        ]
+      }
+    },
+    {
+      "inf": "fare",
+      "en": "to do/make",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "faccio",
+          "fai",
+          "fa",
+          "facciamo",
+          "fate",
+          "fanno"
+        ],
+        "indic.imperf": [
+          "facevo",
+          "facevi",
+          "faceva",
+          "facevamo",
+          "facevate",
+          "facevano"
+        ],
+        "indic.futuro": [
+          "farò",
+          "farai",
+          "farà",
+          "faremo",
+          "farete",
+          "faranno"
+        ],
+        "cong.pres": [
+          "faccia",
+          "faccia",
+          "faccia",
+          "facciamo",
+          "facciate",
+          "facciano"
+        ],
+        "cong.imperf": [
+          "facessi",
+          "facessi",
+          "facesse",
+          "facessimo",
+          "faceste",
+          "facessero"
+        ],
+        "cond.pres": [
+          "farei",
+          "faresti",
+          "farebbe",
+          "faremmo",
+          "fareste",
+          "farebbero"
+        ]
+      }
+    },
+    {
+      "inf": "andare",
+      "en": "to go",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "vado",
+          "vai",
+          "va",
+          "andiamo",
+          "andate",
+          "vanno"
+        ],
+        "indic.imperf": [
+          "andavo",
+          "andavi",
+          "andava",
+          "andavamo",
+          "andavate",
+          "andavano"
+        ],
+        "indic.futuro": [
+          "andrò",
+          "andrai",
+          "andrà",
+          "andremo",
+          "andrete",
+          "andranno"
+        ],
+        "cong.pres": [
+          "vada",
+          "vada",
+          "vada",
+          "andiamo",
+          "andiate",
+          "vadano"
+        ],
+        "cong.imperf": [
+          "andassi",
+          "andassi",
+          "andasse",
+          "andassimo",
+          "andaste",
+          "andassero"
+        ],
+        "cond.pres": [
+          "andrei",
+          "andresti",
+          "andrebbe",
+          "andremmo",
+          "andreste",
+          "andrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "venire",
+      "en": "to come",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "vengo",
+          "vieni",
+          "viene",
+          "veniamo",
+          "venite",
+          "vengono"
+        ],
+        "indic.imperf": [
+          "venivo",
+          "venivi",
+          "veniva",
+          "venivamo",
+          "venivate",
+          "venivano"
+        ],
+        "indic.futuro": [
+          "verrò",
+          "verrai",
+          "verrà",
+          "verremo",
+          "verrete",
+          "verranno"
+        ],
+        "cong.pres": [
+          "venga",
+          "venga",
+          "venga",
+          "veniamo",
+          "veniate",
+          "vengano"
+        ],
+        "cong.imperf": [
+          "venissi",
+          "venissi",
+          "venisse",
+          "venissimo",
+          "veniste",
+          "venissero"
+        ],
+        "cond.pres": [
+          "verrei",
+          "verresti",
+          "verrebbe",
+          "verremmo",
+          "verreste",
+          "verrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "potere",
+      "en": "can / to be able",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "posso",
+          "puoi",
+          "può",
+          "possiamo",
+          "potete",
+          "possono"
+        ],
+        "indic.imperf": [
+          "potevo",
+          "potevi",
+          "poteva",
+          "potevamo",
+          "potevate",
+          "potevano"
+        ],
+        "indic.futuro": [
+          "potrò",
+          "potrai",
+          "potrà",
+          "potremo",
+          "potrete",
+          "potranno"
+        ],
+        "cong.pres": [
+          "possa",
+          "possa",
+          "possa",
+          "possiamo",
+          "possiate",
+          "possano"
+        ],
+        "cong.imperf": [
+          "potessi",
+          "potessi",
+          "potesse",
+          "potessimo",
+          "poteste",
+          "potessero"
+        ],
+        "cond.pres": [
+          "potrei",
+          "potresti",
+          "potrebbe",
+          "potremmo",
+          "potreste",
+          "potrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "dovere",
+      "en": "must / to have to",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "devo",
+          "devi",
+          "deve",
+          "dobbiamo",
+          "dovete",
+          "devono"
+        ],
+        "indic.imperf": [
+          "dovevo",
+          "dovevi",
+          "doveva",
+          "dovevamo",
+          "dovevate",
+          "dovevano"
+        ],
+        "indic.futuro": [
+          "dovrò",
+          "dovrai",
+          "dovrà",
+          "dovremo",
+          "dovrete",
+          "dovranno"
+        ],
+        "cong.pres": [
+          "debba",
+          "debba",
+          "debba",
+          "dobbiamo",
+          "dobbiate",
+          "debbano"
+        ],
+        "cong.imperf": [
+          "dovessi",
+          "dovessi",
+          "dovesse",
+          "dovessimo",
+          "doveste",
+          "dovessero"
+        ],
+        "cond.pres": [
+          "dovrei",
+          "dovresti",
+          "dovrebbe",
+          "dovremmo",
+          "dovreste",
+          "dovrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "volere",
+      "en": "to want",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "voglio",
+          "vuoi",
+          "vuole",
+          "vogliamo",
+          "volete",
+          "vogliono"
+        ],
+        "indic.imperf": [
+          "volevo",
+          "volevi",
+          "voleva",
+          "volevamo",
+          "volevate",
+          "volevano"
+        ],
+        "indic.futuro": [
+          "vorrò",
+          "vorrai",
+          "vorrà",
+          "vorremo",
+          "vorrete",
+          "vorranno"
+        ],
+        "cong.pres": [
+          "voglia",
+          "voglia",
+          "voglia",
+          "vogliamo",
+          "vogliate",
+          "vogliano"
+        ],
+        "cong.imperf": [
+          "volessi",
+          "volessi",
+          "volesse",
+          "volessimo",
+          "voleste",
+          "volessero"
+        ],
+        "cond.pres": [
+          "vorrei",
+          "vorresti",
+          "vorrebbe",
+          "vorremmo",
+          "vorreste",
+          "vorrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "dire",
+      "en": "to say",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "dico",
+          "dici",
+          "dice",
+          "diciamo",
+          "dite",
+          "dicono"
+        ],
+        "indic.imperf": [
+          "dicevo",
+          "dicevi",
+          "diceva",
+          "dicevamo",
+          "dicevate",
+          "dicevano"
+        ],
+        "indic.futuro": [
+          "dirò",
+          "dirai",
+          "dirà",
+          "diremo",
+          "direte",
+          "diranno"
+        ],
+        "cong.pres": [
+          "dica",
+          "dica",
+          "dica",
+          "diciamo",
+          "diciate",
+          "dicano"
+        ],
+        "cong.imperf": [
+          "dicessi",
+          "dicessi",
+          "dicesse",
+          "dicessimo",
+          "diceste",
+          "dicessero"
+        ],
+        "cond.pres": [
+          "direi",
+          "diresti",
+          "direbbe",
+          "diremmo",
+          "direste",
+          "direbbero"
+        ]
+      }
+    },
+    {
+      "inf": "dare",
+      "en": "to give",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "do",
+          "dai",
+          "dà",
+          "diamo",
+          "date",
+          "danno"
+        ],
+        "indic.imperf": [
+          "davo",
+          "davi",
+          "dava",
+          "davamo",
+          "davate",
+          "davano"
+        ],
+        "indic.futuro": [
+          "darò",
+          "darai",
+          "darà",
+          "daremo",
+          "darete",
+          "daranno"
+        ],
+        "cong.pres": [
+          "dia",
+          "dia",
+          "dia",
+          "diamo",
+          "diate",
+          "diano"
+        ],
+        "cong.imperf": [
+          "dessi",
+          "dessi",
+          "desse",
+          "dessimo",
+          "deste",
+          "dessero"
+        ],
+        "cond.pres": [
+          "darei",
+          "daresti",
+          "darebbe",
+          "daremmo",
+          "dareste",
+          "darebbero"
+        ]
+      }
+    },
+    {
+      "inf": "stare",
+      "en": "to stay",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "sto",
+          "stai",
+          "sta",
+          "stiamo",
+          "state",
+          "stanno"
+        ],
+        "indic.imperf": [
+          "stavo",
+          "stavi",
+          "stava",
+          "stavamo",
+          "stavate",
+          "stavano"
+        ],
+        "indic.futuro": [
+          "starò",
+          "starai",
+          "starà",
+          "staremo",
+          "starete",
+          "staranno"
+        ],
+        "cong.pres": [
+          "stia",
+          "stia",
+          "stia",
+          "stiamo",
+          "stiate",
+          "stiano"
+        ],
+        "cong.imperf": [
+          "stessi",
+          "stessi",
+          "stesse",
+          "stessimo",
+          "steste",
+          "stessero"
+        ],
+        "cond.pres": [
+          "starei",
+          "staresti",
+          "starebbe",
+          "staremmo",
+          "stareste",
+          "starebbero"
+        ]
+      }
+    },
+    {
+      "inf": "sapere",
+      "en": "to know",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "so",
+          "sai",
+          "sa",
+          "sappiamo",
+          "sapete",
+          "sanno"
+        ],
+        "indic.imperf": [
+          "sapevo",
+          "sapevi",
+          "sapeva",
+          "sapevamo",
+          "sapevate",
+          "sapevano"
+        ],
+        "indic.futuro": [
+          "saprò",
+          "saprai",
+          "saprà",
+          "sapremo",
+          "saprete",
+          "sapranno"
+        ],
+        "cong.pres": [
+          "sappia",
+          "sappia",
+          "sappia",
+          "sappiamo",
+          "sappiate",
+          "sappiano"
+        ],
+        "cong.imperf": [
+          "sapessi",
+          "sapessi",
+          "sapesse",
+          "sapessimo",
+          "sapeste",
+          "sapessero"
+        ],
+        "cond.pres": [
+          "saprei",
+          "sapresti",
+          "saprebbe",
+          "sapremmo",
+          "sapreste",
+          "saprebbero"
+        ]
+      }
+    },
+    {
+      "inf": "vedere",
+      "en": "to see",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "vedo",
+          "vedi",
+          "vede",
+          "vediamo",
+          "vedete",
+          "vedono"
+        ],
+        "indic.imperf": [
+          "vedevo",
+          "vedevi",
+          "vedeva",
+          "vedevamo",
+          "vedevate",
+          "vedevano"
+        ],
+        "indic.futuro": [
+          "vedrò",
+          "vedrai",
+          "vedrà",
+          "vedremo",
+          "vedrete",
+          "vedranno"
+        ],
+        "cong.pres": [
+          "veda",
+          "veda",
+          "veda",
+          "vediamo",
+          "vediate",
+          "vedano"
+        ],
+        "cong.imperf": [
+          "vedessi",
+          "vedessi",
+          "vedesse",
+          "vedessimo",
+          "vedeste",
+          "vedessero"
+        ],
+        "cond.pres": [
+          "vedrei",
+          "vedresti",
+          "vedrebbe",
+          "vedremmo",
+          "vedreste",
+          "vedrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "prendere",
+      "en": "to take",
+      "gruppo": "ere",
+      "coniugazioni": {
+        "indic.pres": [
+          "prendo",
+          "prendi",
+          "prende",
+          "prendiamo",
+          "prendete",
+          "prendono"
+        ],
+        "indic.imperf": [
+          "prendevo",
+          "prendevi",
+          "prendeva",
+          "prendevamo",
+          "prendevate",
+          "prendevano"
+        ],
+        "indic.futuro": [
+          "prenderò",
+          "prenderai",
+          "prenderà",
+          "prenderemo",
+          "prenderete",
+          "prenderanno"
+        ],
+        "cong.pres": [
+          "prenda",
+          "prenda",
+          "prenda",
+          "prendiamo",
+          "prendiate",
+          "prendano"
+        ],
+        "cong.imperf": [
+          "prendessi",
+          "prendessi",
+          "prendesse",
+          "prendessimo",
+          "prendeste",
+          "prendessero"
+        ],
+        "cond.pres": [
+          "prenderei",
+          "prenderesti",
+          "prenderebbe",
+          "prenderemmo",
+          "prendereste",
+          "prenderebbero"
+        ]
+      }
+    },
+    {
+      "inf": "mettere",
+      "en": "to put",
+      "gruppo": "ere",
+      "coniugazioni": {
+        "indic.pres": [
+          "metto",
+          "metti",
+          "mette",
+          "mettiamo",
+          "mettete",
+          "mettono"
+        ],
+        "indic.imperf": [
+          "mettevo",
+          "mettevi",
+          "metteva",
+          "mettevamo",
+          "mettevate",
+          "mettevano"
+        ],
+        "indic.futuro": [
+          "metterò",
+          "metterai",
+          "metterà",
+          "metteremo",
+          "metterete",
+          "metteranno"
+        ],
+        "cong.pres": [
+          "metta",
+          "metta",
+          "metta",
+          "mettiamo",
+          "mettiate",
+          "mettano"
+        ],
+        "cong.imperf": [
+          "mettessi",
+          "mettessi",
+          "mettesse",
+          "mettessimo",
+          "metteste",
+          "mettessero"
+        ],
+        "cond.pres": [
+          "metterei",
+          "metteresti",
+          "metterebbe",
+          "metteremmo",
+          "mettereste",
+          "metterebbero"
+        ]
+      }
+    },
+    {
+      "inf": "vivere",
+      "en": "to live",
+      "gruppo": "ere",
+      "coniugazioni": {
+        "indic.pres": [
+          "vivo",
+          "vivi",
+          "vive",
+          "viviamo",
+          "vivete",
+          "vivono"
+        ],
+        "indic.imperf": [
+          "vivevo",
+          "vivevi",
+          "viveva",
+          "vivevamo",
+          "vivevate",
+          "vivevano"
+        ],
+        "indic.futuro": [
+          "vivrò",
+          "vivrai",
+          "vivrà",
+          "vivremo",
+          "vivrete",
+          "vivranno"
+        ],
+        "cong.pres": [
+          "viva",
+          "viva",
+          "viva",
+          "viviamo",
+          "viviate",
+          "vivano"
+        ],
+        "cong.imperf": [
+          "vivessi",
+          "vivessi",
+          "vivesse",
+          "vivessimo",
+          "viveste",
+          "vivessero"
+        ],
+        "cond.pres": [
+          "vivrei",
+          "vivresti",
+          "vivrebbe",
+          "vivremmo",
+          "vivreste",
+          "vivrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "bere",
+      "en": "to drink",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "bevo",
+          "bevi",
+          "beve",
+          "beviamo",
+          "bevete",
+          "bevono"
+        ],
+        "indic.imperf": [
+          "bevevo",
+          "bevevi",
+          "beveva",
+          "bevevamo",
+          "bevevate",
+          "bevevano"
+        ],
+        "indic.futuro": [
+          "berrò",
+          "berrai",
+          "berrà",
+          "berremo",
+          "berrete",
+          "berranno"
+        ],
+        "cong.pres": [
+          "beva",
+          "beva",
+          "beva",
+          "beviamo",
+          "beviate",
+          "bevano"
+        ],
+        "cong.imperf": [
+          "bevessi",
+          "bevessi",
+          "bevesse",
+          "bevessimo",
+          "beveste",
+          "bevessero"
+        ],
+        "cond.pres": [
+          "berrei",
+          "berresti",
+          "berrebbe",
+          "berremmo",
+          "berreste",
+          "berrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "rimanere",
+      "en": "to remain",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "rimango",
+          "rimani",
+          "rimane",
+          "rimaniamo",
+          "rimanete",
+          "rimangono"
+        ],
+        "indic.imperf": [
+          "rimanevo",
+          "rimanevi",
+          "rimaneva",
+          "rimanevamo",
+          "rimanevate",
+          "rimanevano"
+        ],
+        "indic.futuro": [
+          "rimarrò",
+          "rimarrai",
+          "rimarrà",
+          "rimarremo",
+          "rimarrete",
+          "rimarranno"
+        ],
+        "cong.pres": [
+          "rimanga",
+          "rimanga",
+          "rimanga",
+          "rimaniamo",
+          "rimaniate",
+          "rimangano"
+        ],
+        "cong.imperf": [
+          "rimanessi",
+          "rimanessi",
+          "rimanesse",
+          "rimanessimo",
+          "rimaneste",
+          "rimanessero"
+        ],
+        "cond.pres": [
+          "rimarrei",
+          "rimarresti",
+          "rimarrebbe",
+          "rimarremmo",
+          "rimarreste",
+          "rimarrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "tenere",
+      "en": "to hold/keep",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "tengo",
+          "tieni",
+          "tiene",
+          "teniamo",
+          "tenete",
+          "tengono"
+        ],
+        "indic.imperf": [
+          "tenevo",
+          "tenevi",
+          "teneva",
+          "tenevamo",
+          "tenevate",
+          "tenevano"
+        ],
+        "indic.futuro": [
+          "terrò",
+          "terrai",
+          "terrà",
+          "terremo",
+          "terrete",
+          "terranno"
+        ],
+        "cong.pres": [
+          "tenga",
+          "tenga",
+          "tenga",
+          "teniamo",
+          "teniate",
+          "tengano"
+        ],
+        "cong.imperf": [
+          "tenessi",
+          "tenessi",
+          "tenesse",
+          "tenessimo",
+          "teneste",
+          "tenessero"
+        ],
+        "cond.pres": [
+          "terrei",
+          "terresti",
+          "terrebbe",
+          "terremmo",
+          "terreste",
+          "terrebbero"
+        ]
+      }
+    },
+    {
+      "inf": "uscire",
+      "en": "to go out",
+      "gruppo": "irr",
+      "coniugazioni": {
+        "indic.pres": [
+          "esco",
+          "esci",
+          "esce",
+          "usciamo",
+          "uscite",
+          "escono"
+        ],
+        "indic.imperf": [
+          "uscivo",
+          "uscivi",
+          "usciva",
+          "uscivamo",
+          "uscivate",
+          "uscivano"
+        ],
+        "indic.futuro": [
+          "uscirò",
+          "uscirai",
+          "uscirà",
+          "usciremo",
+          "uscirete",
+          "usciranno"
+        ],
+        "cong.pres": [
+          "esca",
+          "esca",
+          "esca",
+          "usciamo",
+          "usciate",
+          "escano"
+        ],
+        "cong.imperf": [
+          "uscissi",
+          "uscissi",
+          "uscisse",
+          "uscissimo",
+          "usciste",
+          "uscissero"
+        ],
+        "cond.pres": [
+          "uscirei",
+          "usciresti",
+          "uscirebbe",
+          "usciremmo",
+          "uscireste",
+          "uscirebbero"
+        ]
+      }
+    }
   ]
 }
