@@ -1,5 +1,8 @@
 # App Italiano — Architettura
 
+## ⚙️ Workflow merge (preferenza dell'utente)
+Quando l'utente chiede una modifica, dopo aver finito (commit + push + apertura PR) **fai tu il merge della PR senza chiedere conferma**: porta la PR da draft a "ready" e fai squash-merge su `main`. **Non chiedere "vuoi che faccia il merge?"** — è già autorizzato in modo permanente. Comunica solo l'esito (PR mergiata + link). Se invece qualcosa è ambiguo o rischioso nel *contenuto* della modifica, chiedi pure prima di procedere; l'auto-merge riguarda solo il passaggio finale di integrazione.
+
 > ## ⚠️ REGOLA №1 — leggere prima di toccare qualsiasi cosa
 > L'app installata sul telefono dell'utente è **solo `index.html`**: ogni funzionalità va implementata lì. In passato esistevano pagine prototipo standalone (`frasi.html`, `flashcard.html`, `fonetica.html`, `grammatica.html` + `app.js`/`style.css`): una feature finì per sbaglio lì dentro e l'utente non la vide mai, quindi sono state **eliminate**. **Non ricrearle** e non aggiungere nuove pagine HTML separate: tutto vive in `index.html`.
 
