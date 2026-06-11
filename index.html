@@ -665,6 +665,20 @@ function runIdioms(){
   stage.appendChild($(`<div style="margin-bottom:4px"><b style="font-size:18px">Modi di dire &amp; Slang</b></div>`));
   stage.appendChild($(`<p class="muted" style="margin:0 0 14px">Tocca un'espressione o un esempio per ascoltarne la pronuncia &#128266;</p>`));
 
+  // Flashcard practice launcher
+  const nEspr = cats.reduce((n,c)=>n+(c.espressioni||[]).length,0);
+  if(nEspr){
+    const study = $(`<button class="tile wide" style="margin-bottom:14px">
+      <div class="ico">🎴</div>
+      <div class="txt">
+        <div class="t">Allenati con le flashcard</div>
+        <div class="d">${nEspr} espressioni &middot; indovina il significato e mettiti alla prova</div>
+      </div>
+    </button>`);
+    study.onclick = ()=>runIdiomFlash(cats);
+    stage.appendChild(study);
+  }
+
   // Search box
   const search = $(`<input type="text" placeholder="Cerca un'espressione o un significato…" style="width:100%;box-sizing:border-box;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--text);margin-bottom:14px">`);
   stage.appendChild(search);
@@ -727,6 +741,69 @@ function runIdioms(){
   const home = $(`<button class="btn" style="margin-top:4px">&#8593; Torna su</button>`);
   home.onclick = ()=>stage.scrollIntoView({behavior:"smooth",block:"start"});
   stage.appendChild(home);
+}
+
+// Flashcard-style exercise for idioms: read the Italian expression, recall its
+// meaning, flip to check, then self-grade. Idioms have no SRS ids, so progress
+// is session-only (score for the final ring).
+function runIdiomFlash(cats){
+  cats = cats || DB.modididire || [];
+  const pool = [];
+  cats.forEach(c=>(c.espressioni||[]).forEach(e=>pool.push(e)));
+  const deck = pool.slice().sort(()=>Math.random()-.5).slice(0, Math.min(15, pool.length));
+  let i=0, correct=0;
+  const stage = header();
+  if(!deck.length){
+    stage.appendChild($(`<p class="muted" style="text-align:center;padding:30px">Nessuna espressione disponibile.</p>`));
+    return;
+  }
+  stage.appendChild($(`<div style="text-align:center;margin-bottom:4px;font-size:13px;color:var(--muted)">Modi di dire &amp; Slang</div>`));
+
+  const bar = progressBar(stage);
+  const cardWrap = $(`<div style="width:100%"></div>`); stage.appendChild(cardWrap);
+
+  function show(){
+    if(i>=deck.length){
+      return finish(stage, `${correct} / ${deck.length} sapute`, ()=>runIdiomFlash(cats));
+    }
+    bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
+    const e = deck[i]; let flipped=false;
+    cardWrap.innerHTML="";
+    const flip = $(`
+      <div class="flip">
+        <div class="flash">
+          <div class="face front">
+            <button class="speak" title="Ascolta">&#128266;</button>
+            <div class="it-word" style="font-size:27px;line-height:1.2">${e.it}</div>
+            <div class="hint">tocca per il significato</div>
+          </div>
+          <div class="face back">
+            <div class="en-trans" style="font-size:20px;font-weight:700">${e.sig}</div>
+            ${e.lett ? `<div class="ipa-note" style="margin-top:8px">alla lettera: &ldquo;${e.lett}&rdquo;</div>` : ""}
+            ${e.esempio ? `<div class="small" style="margin-top:10px;font-style:italic">&ldquo;${e.esempio}&rdquo;</div>` : ""}
+          </div>
+        </div>
+      </div>`);
+    flip.querySelector(".speak").onclick = (ev)=>{ev.stopPropagation(); speak(e.it);};
+    flip.onclick = ()=>{
+      if(flipped) return;
+      flipped=true;
+      flip.classList.add("flipped");
+      controls.classList.remove("hidden");
+      if(e.esempio && 'speechSynthesis' in window) setTimeout(()=>speak(e.esempio), 250);
+    };
+    cardWrap.appendChild(flip);
+    const controls = $(`
+      <div class="row hidden" style="margin-top:14px">
+        <button class="btn bad">Da rivedere</button>
+        <button class="btn good">Sapevo!</button>
+      </div>`);
+    controls.children[0].onclick=()=>{haptic(false); i++; show();};
+    controls.children[1].onclick=()=>{haptic(true); correct++; i++; show();};
+    cardWrap.appendChild(controls);
+    if('speechSynthesis' in window) setTimeout(()=>speak(e.it), 150);
+  }
+  show();
 }
 
 function pickFlashTopic(){
