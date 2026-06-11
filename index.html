@@ -518,15 +518,23 @@ function renderHome(){
         <div class="d">${d}</div>
       </button>`)).onclick = ()=>start(mode);
   });
+  // Square tiles (same form as Flashcards/Sentences) — pair into a clean row
   if(DB.verbi && DB.verbi.length){
     grid.appendChild($(`
-      <button class="tile wide">
+      <button class="tile">
         <div class="ico" style="background:rgba(22,163,74,.10)">&#9999;&#65039;</div>
-        <div class="txt">
-          <div class="t">Coniugazione</div>
-          <div class="d">Allena i verbi &mdash; presente, congiuntivo, condizionale e altro</div>
-        </div>
+        <div class="t">Coniugazione</div>
+        <div class="d">Allena i verbi &mdash; presente, congiuntivo, condizionale e altro</div>
       </button>`)).onclick = ()=>start("conj");
+  }
+  if(DB.modididire && DB.modididire.length){
+    const nidiomi = DB.modididire.reduce((n,c)=>n+(c.espressioni||[]).length,0);
+    grid.appendChild($(`
+      <button class="tile">
+        <div class="ico" style="background:rgba(245,158,11,.12)">&#129305;</div>
+        <div class="t">Modi di dire &amp; Slang</div>
+        <div class="d">${nidiomi} espressioni idiomatiche e slang &mdash; parla come un vero italiano</div>
+      </button>`)).onclick = ()=>start("idiomi");
   }
   grid.appendChild($(`
     <button class="tile wide">
@@ -544,17 +552,6 @@ function renderHome(){
         <div class="d">Speak Italian with your AI tutor &mdash; corrections and feedback in real time</div>
       </div>
     </button>`)).onclick = ()=>start("sofia");
-  if(DB.modididire && DB.modididire.length){
-    const nidiomi = DB.modididire.reduce((n,c)=>n+(c.espressioni||[]).length,0);
-    grid.appendChild($(`
-      <button class="tile wide">
-        <div class="ico" style="background:rgba(245,158,11,.12)">&#129305;</div>
-        <div class="txt">
-          <div class="t">Modi di dire &amp; Slang</div>
-          <div class="d">${nidiomi} espressioni idiomatiche e slang &mdash; parla come un vero italiano</div>
-        </div>
-      </button>`)).onclick = ()=>start("idiomi");
-  }
   if(DB.riferimento && DB.riferimento.length){
     grid.appendChild($(`
       <button class="tile wide">
