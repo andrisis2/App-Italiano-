@@ -205,6 +205,18 @@
   table.ref td.it-tap{color:var(--text);font-weight:700;cursor:pointer}
   table.ref td.it-tap:hover{color:var(--accent2)}
   table.ref td.it-tap:active{color:var(--accent)}
+  .idiom{padding:13px 0;border-bottom:1px solid var(--line)}
+  .idiom:last-child{border-bottom:none;padding-bottom:0}
+  .idiom:first-of-type{padding-top:2px}
+  .idiom-it{font-size:16px;font-weight:800;color:var(--text);cursor:pointer;letter-spacing:-.2px;display:inline-block}
+  .idiom-it .spk{font-size:13px;opacity:.45;transition:.15s}
+  .idiom-it:hover{color:var(--accent2)}
+  .idiom-it:hover .spk{opacity:1}
+  .idiom-it:active{color:var(--accent)}
+  .idiom-sig{font-size:14px;color:var(--text);line-height:1.5;margin-top:4px}
+  .idiom-lett{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:3px}
+  .idiom-ex{font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:7px;padding-left:11px;border-left:2px solid var(--line);cursor:pointer;transition:.15s}
+  .idiom-ex:hover{color:var(--accent2);border-left-color:var(--accent2)}
   .q{font-size:32px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px;text-rendering:optimizeLegibility}
   @keyframes shake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(2px)}30%,50%,70%{transform:translateX(-5px)}40%,60%{transform:translateX(5px)}}
   @keyframes pop{0%{transform:scale(1)}45%{transform:scale(1.05)}100%{transform:scale(1)}}
@@ -495,6 +507,17 @@ function renderHome(){
         <div class="d">Speak Italian with your AI tutor &mdash; corrections and feedback in real time</div>
       </div>
     </button>`)).onclick = ()=>start("sofia");
+  if(DB.modididire && DB.modididire.length){
+    const nidiomi = DB.modididire.reduce((n,c)=>n+(c.espressioni||[]).length,0);
+    grid.appendChild($(`
+      <button class="tile wide">
+        <div class="ico" style="background:rgba(245,158,11,.12)">&#129305;</div>
+        <div class="txt">
+          <div class="t">Modi di dire &amp; Slang</div>
+          <div class="d">${nidiomi} espressioni idiomatiche e slang &mdash; parla come un vero italiano</div>
+        </div>
+      </button>`)).onclick = ()=>start("idiomi");
+  }
   if(DB.riferimento && DB.riferimento.length){
     grid.appendChild($(`
       <button class="tile wide">
@@ -542,6 +565,7 @@ function start(mode){
   if(mode==="phrase") return runPhrase();
   if(mode==="diz" || mode==="vocab") return runVocabolario();
   if(mode==="ref") return runReference();
+  if(mode==="idiomi") return runIdioms();
   if(mode==="sofia") return runSofia();
 }
 
@@ -594,6 +618,76 @@ function runReference(){
     stage.appendChild(sec);
   });
   const home = $(`<button class="btn" style="margin-top:4px">&#8593; Back to top</button>`);
+  home.onclick = ()=>stage.scrollIntoView({behavior:"smooth",block:"start"});
+  stage.appendChild(home);
+}
+
+function runIdioms(){
+  const stage = header();
+  const cats = DB.modididire || [];
+  stage.appendChild($(`<div style="margin-bottom:4px"><b style="font-size:18px">Modi di dire &amp; Slang</b></div>`));
+  stage.appendChild($(`<p class="muted" style="margin:0 0 14px">Tocca un'espressione o un esempio per ascoltarne la pronuncia &#128266;</p>`));
+
+  // Search box
+  const search = $(`<input type="text" placeholder="Cerca un'espressione o un significato…" style="width:100%;box-sizing:border-box;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--text);margin-bottom:14px">`);
+  stage.appendChild(search);
+
+  // Category nav
+  const nav = $(`<div class="ref-nav"></div>`);
+  cats.forEach(c=>{
+    const chip = $(`<button class="ref-chip">${c.icona||""} ${c.categoria}</button>`);
+    chip.onclick = ()=>document.getElementById("idi-"+c.id).scrollIntoView({behavior:"smooth",block:"start"});
+    nav.appendChild(chip);
+  });
+  stage.appendChild(nav);
+
+  const secWrap = $(`<div></div>`);
+  stage.appendChild(secWrap);
+
+  function render(query){
+    const q = (query||"").trim().toLowerCase();
+    secWrap.innerHTML = "";
+    let shown = 0;
+    cats.forEach(c=>{
+      const matches = (c.espressioni||[]).filter(e=>{
+        if(!q) return true;
+        return [e.it, e.sig, e.lett, e.esempio].some(v=>v && v.toLowerCase().includes(q));
+      });
+      if(!matches.length) return;
+      shown += matches.length;
+      const sec = $(`<section class="ref-sec" id="idi-${c.id}"></section>`);
+      sec.appendChild($(`
+        <div class="head">
+          <span class="ico">${c.icona||"&#129305;"}</span>
+          <h3>${c.categoria}</h3>
+        </div>`));
+      if(c.sottotitolo) sec.appendChild($(`<p class="sub">${c.sottotitolo}</p>`));
+      matches.forEach(e=>{
+        const card = $(`<div class="idiom"></div>`);
+        const head = $(`<div class="idiom-it it-tap">${e.it} <span class="spk">&#128266;</span></div>`);
+        head.onclick = ()=>speak(e.it);
+        card.appendChild(head);
+        card.appendChild($(`<div class="idiom-sig">${e.sig}</div>`));
+        if(e.lett) card.appendChild($(`<div class="idiom-lett">alla lettera: &ldquo;${e.lett}&rdquo;</div>`));
+        if(e.esempio){
+          const ex = $(`<div class="idiom-ex it-tap">&#8220;${e.esempio}&#8221;</div>`);
+          ex.onclick = ()=>speak(e.esempio);
+          card.appendChild(ex);
+        }
+        sec.appendChild(card);
+      });
+      secWrap.appendChild(sec);
+    });
+    if(!shown){
+      secWrap.appendChild($(`<p class="muted" style="text-align:center;padding:30px 0">Nessuna espressione trovata per &ldquo;${q}&rdquo;.</p>`));
+    }
+  }
+
+  let t;
+  search.addEventListener("input", ()=>{ clearTimeout(t); t=setTimeout(()=>render(search.value), 120); });
+  render("");
+
+  const home = $(`<button class="btn" style="margin-top:4px">&#8593; Torna su</button>`);
   home.onclick = ()=>stage.scrollIntoView({behavior:"smooth",block:"start"});
   stage.appendChild(home);
 }

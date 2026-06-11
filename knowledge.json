@@ -20644,5 +20644,335 @@
         ]
       }
     }
+  ],
+  "modididire": [
+    {
+      "id": "quotidiani",
+      "categoria": "Espressioni di tutti i giorni",
+      "icona": "☕",
+      "sottotitolo": "Modi di dire che senti continuamente in Italia",
+      "espressioni": [
+        {
+          "it": "In bocca al lupo!",
+          "sig": "Buona fortuna (si risponde «Crepi!»)",
+          "lett": "Into the wolf's mouth",
+          "esempio": "In bocca al lupo per l'esame di domani!"
+        },
+        {
+          "it": "Non vedo l'ora",
+          "sig": "Sono impaziente, non sto nella pelle",
+          "lett": "I can't see the hour",
+          "esempio": "Non vedo l'ora di partire per le vacanze."
+        },
+        {
+          "it": "Avere le mani bucate",
+          "sig": "Spendere troppi soldi, essere spendaccione",
+          "lett": "To have holes in your hands",
+          "esempio": "Mio fratello ha le mani bucate, ogni mese è al verde."
+        },
+        {
+          "it": "Essere al verde",
+          "sig": "Non avere più soldi",
+          "lett": "To be at the green",
+          "esempio": "Non posso uscire stasera, sono al verde."
+        },
+        {
+          "it": "Costare un occhio della testa",
+          "sig": "Costare moltissimo",
+          "lett": "To cost an eye of the head",
+          "esempio": "Quella macchina costa un occhio della testa."
+        },
+        {
+          "it": "Prendere due piccioni con una fava",
+          "sig": "Ottenere due risultati con una sola azione",
+          "lett": "To catch two pigeons with one bean",
+          "esempio": "Studiando in Italia imparo la lingua e visito il paese: due piccioni con una fava."
+        },
+        {
+          "it": "Non avere peli sulla lingua",
+          "sig": "Dire le cose come stanno, senza filtri",
+          "lett": "To have no hairs on your tongue",
+          "esempio": "Marta non ha peli sulla lingua: ti dice sempre la verità."
+        }
+      ]
+    },
+    {
+      "id": "animali",
+      "categoria": "Modi di dire con gli animali",
+      "icona": "🐾",
+      "espressioni": [
+        {
+          "it": "Avere una fame da lupi",
+          "sig": "Avere moltissima fame",
+          "lett": "To have a wolf's hunger",
+          "esempio": "Dopo la palestra ho una fame da lupi."
+        },
+        {
+          "it": "Essere un coniglio",
+          "sig": "Essere un vigliacco, un codardo",
+          "lett": "To be a rabbit",
+          "esempio": "Non fare il coniglio, affronta il problema!"
+        },
+        {
+          "it": "Quando il gatto non c'è i topi ballano",
+          "sig": "Senza chi controlla, ci si comporta male",
+          "lett": "When the cat's away the mice dance",
+          "esempio": "Appena esce il capo tutti si rilassano: quando il gatto non c'è i topi ballano."
+        },
+        {
+          "it": "Prendere un granchio",
+          "sig": "Fare un grosso errore, prendere un abbaglio",
+          "lett": "To catch a crab",
+          "esempio": "Pensavo fosse lui, ma ho preso un granchio."
+        },
+        {
+          "it": "Essere una mosca bianca",
+          "sig": "Essere una rarità, un'eccezione",
+          "lett": "To be a white fly",
+          "esempio": "Un politico onesto è una mosca bianca."
+        },
+        {
+          "it": "Avere un diavolo per capello",
+          "sig": "Essere furiosi, arrabbiatissimi",
+          "lett": "To have a devil per hair",
+          "esempio": "Non disturbarla ora, ha un diavolo per capello."
+        }
+      ]
+    },
+    {
+      "id": "cibo",
+      "categoria": "Modi di dire con il cibo",
+      "icona": "🍝",
+      "espressioni": [
+        {
+          "it": "Avere le mani in pasta",
+          "sig": "Essere coinvolto, avere influenza in qualcosa",
+          "lett": "To have your hands in the dough",
+          "esempio": "Per quel lavoro chiedi a lui: ha le mani in pasta."
+        },
+        {
+          "it": "Cercare il pelo nell'uovo",
+          "sig": "Essere troppo pignolo, cercare difetti minimi",
+          "lett": "To look for the hair in the egg",
+          "esempio": "Smettila di cercare il pelo nell'uovo, va bene così."
+        },
+        {
+          "it": "Rendere pan per focaccia",
+          "sig": "Vendicarsi, ripagare con la stessa moneta",
+          "lett": "To give bread for focaccia",
+          "esempio": "Mi ha tradito e gli ho reso pan per focaccia."
+        },
+        {
+          "it": "Non è farina del tuo sacco",
+          "sig": "Non è una tua idea, l'hai copiata",
+          "lett": "It's not flour from your sack",
+          "esempio": "Bel discorso, ma quella frase non è farina del tuo sacco."
+        },
+        {
+          "it": "Essere buono come il pane",
+          "sig": "Essere una persona molto buona e gentile",
+          "lett": "To be good like bread",
+          "esempio": "Mia nonna è buona come il pane."
+        },
+        {
+          "it": "Tutto fa brodo",
+          "sig": "Ogni piccola cosa è utile",
+          "lett": "Everything makes broth",
+          "esempio": "Anche due euro aiutano: tutto fa brodo."
+        }
+      ]
+    },
+    {
+      "id": "corpo",
+      "categoria": "Modi di dire con il corpo",
+      "icona": "👋",
+      "espressioni": [
+        {
+          "it": "Non chiudere occhio",
+          "sig": "Non riuscire a dormire",
+          "lett": "To not close an eye",
+          "esempio": "Per l'ansia non ho chiuso occhio tutta la notte."
+        },
+        {
+          "it": "Avere la testa fra le nuvole",
+          "sig": "Essere distratto, sognare ad occhi aperti",
+          "lett": "To have your head among the clouds",
+          "esempio": "Oggi hai la testa fra le nuvole, cosa ti succede?"
+        },
+        {
+          "it": "Tagliare la corda",
+          "sig": "Scappare, andarsene di nascosto",
+          "lett": "To cut the rope",
+          "esempio": "Appena è arrivato il conto, ha tagliato la corda."
+        },
+        {
+          "it": "Avere il braccino corto",
+          "sig": "Essere tirchio, avaro",
+          "lett": "To have a short little arm",
+          "esempio": "Non offre mai: ha il braccino corto."
+        },
+        {
+          "it": "Mettere il naso negli affari altrui",
+          "sig": "Essere ficcanaso, impicciarsi",
+          "lett": "To put your nose in others' business",
+          "esempio": "Smettila di mettere il naso nei miei affari!"
+        },
+        {
+          "it": "Restare a bocca asciutta",
+          "sig": "Non ottenere nulla, rimanere deluso",
+          "lett": "To stay with a dry mouth",
+          "esempio": "Speravo nella promozione ma sono restato a bocca asciutta."
+        }
+      ]
+    },
+    {
+      "id": "vita",
+      "categoria": "Saggezza e proverbi",
+      "icona": "🌟",
+      "espressioni": [
+        {
+          "it": "Chi dorme non piglia pesci",
+          "sig": "Chi è pigro non ottiene risultati",
+          "lett": "Who sleeps doesn't catch fish",
+          "esempio": "Alzati e datti da fare: chi dorme non piglia pesci."
+        },
+        {
+          "it": "Tra il dire e il fare c'è di mezzo il mare",
+          "sig": "È più facile dirlo che farlo",
+          "lett": "Between saying and doing there's the sea",
+          "esempio": "Promette tanto, ma tra il dire e il fare c'è di mezzo il mare."
+        },
+        {
+          "it": "Chi va piano va sano e va lontano",
+          "sig": "Con calma si ottengono risultati migliori",
+          "lett": "Who goes slowly goes safe and far",
+          "esempio": "Non avere fretta: chi va piano va sano e va lontano."
+        },
+        {
+          "it": "Meglio un uovo oggi che una gallina domani",
+          "sig": "Meglio poco e sicuro che molto e incerto",
+          "lett": "Better an egg today than a hen tomorrow",
+          "esempio": "Prendi quello che ti offrono ora: meglio un uovo oggi che una gallina domani."
+        },
+        {
+          "it": "Piove sul bagnato",
+          "sig": "La fortuna (o sfortuna) capita a chi già ne ha",
+          "lett": "It rains on the wet",
+          "esempio": "Ha vinto di nuovo alla lotteria: piove sul bagnato."
+        },
+        {
+          "it": "L'abito non fa il monaco",
+          "sig": "L'apparenza non rivela il vero carattere",
+          "lett": "The clothes don't make the monk",
+          "esempio": "Non giudicarlo dai vestiti: l'abito non fa il monaco."
+        }
+      ]
+    },
+    {
+      "id": "slang",
+      "categoria": "Slang e parlato giovanile",
+      "icona": "😎",
+      "sottotitolo": "Espressioni informali che senti tra amici e nelle chat",
+      "espressioni": [
+        {
+          "it": "Che figata!",
+          "sig": "Che bello! Che cosa fantastica!",
+          "lett": "What a cool thing",
+          "esempio": "Hai preso i biglietti per il concerto? Che figata!"
+        },
+        {
+          "it": "Che sbatti",
+          "sig": "È una fatica, una scocciatura",
+          "lett": "What a slam/effort",
+          "esempio": "Andare fin là a piedi? Che sbatti."
+        },
+        {
+          "it": "Spaccare",
+          "sig": "Essere bravissimo, fare qualcosa benissimo",
+          "lett": "To break/smash",
+          "esempio": "Hai visto il suo concerto? Spacca di brutto."
+        },
+        {
+          "it": "Di brutto",
+          "sig": "Tantissimo, in modo esagerato",
+          "lett": "In an ugly way",
+          "esempio": "Mi piace di brutto questa canzone."
+        },
+        {
+          "it": "Stare in fissa",
+          "sig": "Essere ossessionato o appassionato di qualcosa",
+          "lett": "To be in fixation",
+          "esempio": "Sono in fissa con questa serie TV."
+        },
+        {
+          "it": "Beccarsi",
+          "sig": "Incontrarsi, vedersi",
+          "lett": "To peck each other",
+          "esempio": "Ci becchiamo alle otto in piazza?"
+        },
+        {
+          "it": "Sei fuori!",
+          "sig": "Sei pazzo, dici assurdità",
+          "lett": "You're out",
+          "esempio": "Vuoi tuffarti col freddo? Sei fuori!"
+        },
+        {
+          "it": "Che cringe",
+          "sig": "Imbarazzante, che fa accapponare la pelle (dall'inglese)",
+          "lett": "Cringe",
+          "esempio": "Quel video è troppo cringe."
+        },
+        {
+          "it": "Boh",
+          "sig": "Non lo so, non saprei (intercalare comunissimo)",
+          "lett": "Dunno",
+          "esempio": "Dove andiamo stasera? Boh, decidi tu."
+        }
+      ]
+    },
+    {
+      "id": "intercalari",
+      "categoria": "Intercalari e parole jolly",
+      "icona": "🗣️",
+      "sottotitolo": "Parole-riempitivo che gli italiani usano di continuo",
+      "espressioni": [
+        {
+          "it": "Magari!",
+          "sig": "Lo spero tanto! / Forse (a seconda del tono)",
+          "lett": "Maybe / I wish",
+          "esempio": "Vinci tu la borsa di studio? Magari!"
+        },
+        {
+          "it": "Dai!",
+          "sig": "Forza! / Ma no! / Su, coraggio (mille usi)",
+          "lett": "Give!",
+          "esempio": "Dai, andiamo che facciamo tardi!"
+        },
+        {
+          "it": "Cioè",
+          "sig": "Riempitivo per spiegarsi o prendere tempo",
+          "lett": "That is",
+          "esempio": "È bello, cioè, non malissimo insomma."
+        },
+        {
+          "it": "Allora",
+          "sig": "Apre la frase o richiama l'attenzione",
+          "lett": "So/then",
+          "esempio": "Allora, cosa facciamo oggi?"
+        },
+        {
+          "it": "Mah",
+          "sig": "Esprime dubbio o perplessità",
+          "lett": "Meh",
+          "esempio": "Ti è piaciuto il film? Mah, così così."
+        },
+        {
+          "it": "Figurati!",
+          "sig": "Non c'è di che / Ma certo, prego",
+          "lett": "Imagine!",
+          "esempio": "Grazie dell'aiuto! Figurati, è stato un piacere."
+        }
+      ]
+    }
   ]
 }
