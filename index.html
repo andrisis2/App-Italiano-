@@ -401,6 +401,16 @@ function dailyPool(){
     .filter(x=>!srs[x.id] || box(x.id)<3);
 }
 const DAILY_SIZE = 20;
+// Progresso del ripasso del giorno, persistito per data: la selezione delle carte
+// e quante volte ho fatto "Got it" su ciascuna restano fino a fine giornata solare.
+const DAILY_PROG_KEY = "italiano_daily_prog_v1";
+function dailyProg(){
+  try{ const p=JSON.parse(localStorage.getItem(DAILY_PROG_KEY)||"{}"); return (p.date===todayStr()) ? p : {}; }
+  catch(e){ return {}; }
+}
+function saveDailyProg(ids, score){
+  localStorage.setItem(DAILY_PROG_KEY, JSON.stringify({date:todayStr(), ids, score}));
+}
 
 // --- Conjugation practice ---
 const CONJ_TENSES = [
@@ -949,9 +959,16 @@ function runTopicList(pool, label){
 
 function runFlash(pool, topicLabel, opts){
   opts = opts || {};
-  const shuffled = pool.slice().sort(()=>Math.random()-.5);
-  const activeDeck = shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, pool.length));
-  const deck = activeDeck;
+  // Modalità ripasso a cicli (opts.repeat): le carte restano in rotazione finché
+  // su ognuna non si è premuto "Got it" `need` volte. Un giro normale = need 1.
+  const need = opts.repeat ? (typeof opts.repeat==='number' ? opts.repeat : 2) : 1;
+  const shuffled = (pool||[]).slice().sort(()=>Math.random()-.5);
+  let deck = need>1 ? shuffled : shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, shuffled.length));
+  const total = deck.length;       // carte uniche da padroneggiare
+  const score = Object.assign({}, opts.initialScore||{}); // id -> "Got it" accumulati (azzerato da "Review again")
+  // ripresa: salta le carte già padroneggiate in una sessione precedente di oggi
+  if(need>1) deck = deck.filter(c=>(score[c.id]||0) < need);
+  const saveProg = ()=>{ if(opts.onProgress) opts.onProgress(score); };
   let i=0;
   let dir = localStorage.getItem('flashDir')==='en-it' ? 'en-it' : 'it-en';
   const stage = header();
@@ -985,10 +1002,18 @@ function runFlash(pool, topicLabel, opts){
   const cardWrap = $(`<div style="width:100%"></div>`); stage.appendChild(cardWrap);
   function show(){
     if(i>=deck.length){
-      if(opts.onComplete) opts.onComplete();
-      return finish(stage, "Sessione completata!", opts.restart||pickFlashTopic);
+      if(need>1){
+        // fine del giro: tieni solo le carte non ancora padroneggiate e rimescola
+        deck = deck.filter(c=>(score[c.id]||0) < need);
+        if(deck.length){ deck = deck.sort(()=>Math.random()-.5); i=0; }
+      }
+      if(i>=deck.length){
+        if(opts.onComplete) opts.onComplete();
+        return finish(stage, "Sessione completata!", opts.restart||pickFlashTopic);
+      }
     }
-    bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
+    const done = need>1 ? Object.values(score).filter(n=>n>=need).length : i;
+    bar.style.width = (done/total*100)+"%"; bar.setNum(done, total);
     const c = deck[i]; let flipped=false;
     const itFront = dir==='it-en';
     const frontWord = (itFront ? c.it : c.en) || "";
@@ -1029,8 +1054,8 @@ function runFlash(pool, topicLabel, opts){
         <button class="btn bad">Review again</button>
         <button class="btn good">Got it</button>
       </div>`);
-    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); i++; show();};
-    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); i++; show();};
+    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); if(need>1){ score[c.id]=0; saveProg(); } i++; show();};
+    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); if(need>1){ score[c.id]=(score[c.id]||0)+1; saveProg(); } i++; show();};
     cardWrap.appendChild(controls);
     if(itFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.it), 150);
   }
@@ -1038,23 +1063,37 @@ function runFlash(pool, topicLabel, opts){
 }
 
 function runDaily(){
-  const pool = dailyPool();
-  if(!pool.length){
-    const stage = header();
-    stage.appendChild($(`
-      <div class="done">
-        <div class="big">&#127881;</div>
-        <h2>Tutto ripassato!</h2>
-        <p class="muted">Non hai carte in attesa oggi. Torna domani per continuare la serie.</p>
-      </div>`));
-    const row=$(`<div class="row"></div>`);
-    const a=$(`<button class="btn">Home</button>`); a.onclick=()=>history.back();
-    row.appendChild(a); stage.appendChild(row);
-    return;
+  const prog = dailyProg();
+  let session;
+  if(prog.ids && prog.ids.length){
+    // riprendi la selezione di oggi (stesse carte per tutta la giornata)
+    const byId = {}; [...(DB.dizionario||[]), ...(userStore().voci||[])].forEach(v=>byId[v.id]=v);
+    session = prog.ids.map(id=>byId[id]).filter(Boolean);
+  } else {
+    const pool = dailyPool();
+    if(!pool.length){
+      const stage = header();
+      stage.appendChild($(`
+        <div class="done">
+          <div class="big">&#127881;</div>
+          <h2>Tutto ripassato!</h2>
+          <p class="muted">Non hai carte in attesa oggi. Torna domani per continuare la serie.</p>
+        </div>`));
+      const row=$(`<div class="row"></div>`);
+      const a=$(`<button class="btn">Home</button>`); a.onclick=()=>history.back();
+      row.appendChild(a); stage.appendChild(row);
+      return;
+    }
+    // Most-overdue first (lowest box / longest since seen), then cap the session
+    session = pool.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, DAILY_SIZE);
+    saveDailyProg(session.map(c=>c.id), {});
   }
-  // Most-overdue first (lowest box / longest since seen), then cap the session
-  const session = pool.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, DAILY_SIZE);
-  runFlash(session, "Ripasso del giorno", { restart: runDaily, onComplete: recordDailyDone });
+  const ids = session.map(c=>c.id);
+  runFlash(session, "Ripasso del giorno", {
+    restart: runDaily, onComplete: recordDailyDone, repeat: 2,
+    initialScore: prog.score || {},
+    onProgress: (score)=>saveDailyProg(ids, score)
+  });
 }
 
 function runConjugation(tenseFilter){
