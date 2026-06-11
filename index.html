@@ -991,23 +991,58 @@ function runPhrase(level){
 
   const SKIP = new Set(['il','lo','la','i','gli','le','un','una','uno','di','da','in','con','su','per','tra','fra','a','e','o','ma','se','che','non','è','si','ci','vi','mi','ti','ho','ha','ai','al','del','della','dello','delle','dei','degli','nel','nella','nelle','nei','negli','sul','sulla','sulle','sui','sugli','dal','dalla','dalle','dai','dagli','alla','alle','agli','come','più','già','anche','molto','poi','così','però','quando','dove','cui','chi']);
 
-  // Pool of content words from frasi + voci for distractors
+  // Pool of content words from frasi + dizionario for distractors
   const corpusWords = [...new Set([
     ...(DB.frasi||[]).flatMap(f=>(f.it||"").replace(/[.!?,;:]/g,'').split(" ").map(w=>w.trim())),
     ...(DB.dizionario||[]).map(v=>(v.it||"").replace(/[.,!?;:]/g,'').split(" ")[0])
   ].filter(w=>w.length>=4 && !SKIP.has(w.toLowerCase())))];
 
-  // Return words sharing the same morphological ending (same verb form / inflection)
-  function byEnding(answer, exclude){
-    const lo = answer.toLowerCase();
-    const e3 = lo.slice(-3), e2 = lo.slice(-2);
-    const pool = corpusWords.filter(w=>w!==answer && !exclude.has(w));
-    const m3 = pool.filter(w=>w.toLowerCase().slice(-3)===e3);
-    if(m3.length>=3) return m3;
-    const m2 = pool.filter(w=>w.toLowerCase().slice(-2)===e2);
-    if(m2.length>=3) return m2;
-    // Last resort: similar length
-    return pool.filter(w=>Math.abs(w.length-answer.length)<=2);
+  // Tag-indexed pools: words grouped by each tag from frasi (for thematic distractors)
+  const tagWordPool={};
+  (DB.frasi||[]).forEach(f=>{
+    const tags=Array.isArray(f.tag)?f.tag:[f.tag||'vari'];
+    tags.forEach(t=>{
+      if(!tagWordPool[t]) tagWordPool[t]=[];
+      (f.it||'').replace(/[.!?,;:]/g,'').split(' ').forEach(raw=>{
+        const w=raw.trim();
+        if(w.length>=4 && !SKIP.has(w.toLowerCase())) tagWordPool[t].push(w);
+      });
+    });
+  });
+  Object.keys(tagWordPool).forEach(t=>{ tagWordPool[t]=[...new Set(tagWordPool[t])]; });
+
+  // POS lookup from dizionario base forms (noun / verb / adjective / adverb)
+  const posLookup={};
+  (DB.dizionario||[]).forEach(d=>{
+    const w=(d.it||'').toLowerCase().replace(/[.,!?;:]/g,'').split(' ')[0];
+    if(w && d.pos) posLookup[w]=d.pos;
+  });
+
+  // Pick plausible distractors: same topic → same POS → same morphological ending
+  function plausibleDistractors(answer, exclude, tags){
+    const lo=answer.toLowerCase();
+    const e3=lo.slice(-3), e2=lo.slice(-2);
+    const answerPos=posLookup[lo]||null;
+    const tagList=Array.isArray(tags)?tags:[tags||'vari'];
+    const base=w=>w!==answer && !exclude.has(w);
+    const samePos=w=>{ const p=posLookup[w.toLowerCase()]; return !p||!answerPos||p===answerPos; };
+    const end3=w=>w.toLowerCase().slice(-3)===e3;
+    const end2=w=>w.toLowerCase().slice(-2)===e2;
+    // Words from sentences that share any tag with the current sentence
+    const tagPool=[...new Set(tagList.flatMap(t=>tagWordPool[t]||[]))].filter(base);
+    const corpus=corpusWords.filter(base);
+    const tries=[
+      tagPool.filter(samePos).filter(end3),
+      tagPool.filter(end3),
+      tagPool.filter(samePos),
+      tagPool,
+      corpus.filter(samePos).filter(end3),
+      corpus.filter(end3),
+      corpus.filter(end2),
+      corpus.filter(w=>Math.abs(w.length-lo.length)<=2),
+    ];
+    for(const c of tries) if(c.length>=3) return c;
+    return tries[tries.length-1]||corpus;
   }
 
   const allFrasi = DB.frasi||[];
@@ -1036,8 +1071,8 @@ function runPhrase(level){
 
     const masked = rawWords.map((w,idx)=>idx===hideIdx?"_____":w).join(" ");
 
-    // Distractors: same ending (same verb form / inflection), not in this sentence
-    const distract = sample(byEnding(answer, new Set(clean)), 3);
+    // Distractors: plausible — same topic, same POS, same morphological ending
+    const distract = sample(plausibleDistractors(answer, new Set(clean), f.tag), 3);
     const opts = shuffle([answer, ...distract]);
 
     wrap.innerHTML="";
