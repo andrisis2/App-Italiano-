@@ -551,6 +551,12 @@ function renderHome(){
       <div class="t">Memory</div>
       <div class="d">Abbina parole e traduzioni a tempo &mdash; gioco di memoria</div>
     </button>`)).onclick = ()=>start("memory");
+  grid.appendChild($(`
+    <button class="tile">
+      <div class="ico" style="background:rgba(47,107,237,.10)">&#128292;</div>
+      <div class="t">Articoli</div>
+      <div class="d">il, lo, la, l' &middot; un, uno, una, un' &mdash; scegli quello giusto</div>
+    </button>`)).onclick = ()=>start("articoli");
   // Square tiles (same form as Flashcards/Sentences) — pair into a clean row
   if(DB.verbi && DB.verbi.length){
     grid.appendChild($(`
@@ -630,6 +636,7 @@ function start(mode){
   if(mode==="conj") return runConjugation();
   if(mode==="flash") return pickFlashTopic();
   if(mode==="memory") return runMemory();
+  if(mode==="articoli") return runArticoli();
   if(mode==="phrase") return runPhrase();
   if(mode==="diz" || mode==="vocab") return runVocabolario();
   if(mode==="ref") return runReference();
@@ -1747,6 +1754,75 @@ function runMCQ(questions, title, restart){
     wrap.appendChild(box);
   }
   show();
+}
+
+// ---------- ARTICOLI (determinativi & indeterminativi) ----------
+// Lista curata: per ogni nome il genere e l'articolo corretto (sing.).
+// Copre tutte le regole: il/lo/l' · un/uno · la/l' · una/un'.
+const ARTICOLI_NOMI = [
+  // maschile + consonante normale → il / un
+  {it:"cane", en:"dog", g:"m", def:"il", ind:"un"},
+  {it:"libro", en:"book", g:"m", def:"il", ind:"un"},
+  {it:"tavolo", en:"table", g:"m", def:"il", ind:"un"},
+  {it:"gatto", en:"cat", g:"m", def:"il", ind:"un"},
+  {it:"treno", en:"train", g:"m", def:"il", ind:"un"},
+  {it:"giorno", en:"day", g:"m", def:"il", ind:"un"},
+  {it:"problema", en:"problem", g:"m", def:"il", ind:"un"},   // -a ma maschile
+  {it:"film", en:"film", g:"m", def:"il", ind:"un"},
+  // maschile + s impura / z / gn / ps / pn / y / x → lo / uno
+  {it:"studente", en:"student", g:"m", def:"lo", ind:"uno"},
+  {it:"specchio", en:"mirror", g:"m", def:"lo", ind:"uno"},
+  {it:"sport", en:"sport", g:"m", def:"lo", ind:"uno"},
+  {it:"spettacolo", en:"show", g:"m", def:"lo", ind:"uno"},
+  {it:"zaino", en:"backpack", g:"m", def:"lo", ind:"uno"},
+  {it:"zucchero", en:"sugar", g:"m", def:"lo", ind:"uno"},
+  {it:"zio", en:"uncle", g:"m", def:"lo", ind:"uno"},
+  {it:"yogurt", en:"yogurt", g:"m", def:"lo", ind:"uno"},
+  {it:"psicologo", en:"psychologist", g:"m", def:"lo", ind:"uno"},
+  {it:"gnomo", en:"gnome", g:"m", def:"lo", ind:"uno"},
+  // maschile + vocale → l' / un
+  {it:"amico", en:"friend", g:"m", def:"l'", ind:"un"},
+  {it:"albero", en:"tree", g:"m", def:"l'", ind:"un"},
+  {it:"uomo", en:"man", g:"m", def:"l'", ind:"un"},
+  {it:"orologio", en:"watch", g:"m", def:"l'", ind:"un"},
+  {it:"ospedale", en:"hospital", g:"m", def:"l'", ind:"un"},
+  {it:"occhio", en:"eye", g:"m", def:"l'", ind:"un"},
+  {it:"aeroporto", en:"airport", g:"m", def:"l'", ind:"un"},
+  // femminile + consonante (anche s impura/z → resta la / una) → la / una
+  {it:"casa", en:"house", g:"f", def:"la", ind:"una"},
+  {it:"macchina", en:"car", g:"f", def:"la", ind:"una"},
+  {it:"penna", en:"pen", g:"f", def:"la", ind:"una"},
+  {it:"ragazza", en:"girl", g:"f", def:"la", ind:"una"},
+  {it:"scuola", en:"school", g:"f", def:"la", ind:"una"},   // s impura ma femminile
+  {it:"strada", en:"street", g:"f", def:"la", ind:"una"},   // s impura ma femminile
+  {it:"spiaggia", en:"beach", g:"f", def:"la", ind:"una"},  // s impura ma femminile
+  {it:"donna", en:"woman", g:"f", def:"la", ind:"una"},
+  // femminile + vocale → l' / un'
+  {it:"amica", en:"friend (f)", g:"f", def:"l'", ind:"un'"},
+  {it:"ora", en:"hour", g:"f", def:"l'", ind:"un'"},
+  {it:"isola", en:"island", g:"f", def:"l'", ind:"un'"},
+  {it:"estate", en:"summer", g:"f", def:"l'", ind:"un'"},
+  {it:"aula", en:"classroom", g:"f", def:"l'", ind:"un'"},
+  {it:"arancia", en:"orange", g:"f", def:"l'", ind:"un'"},
+  {it:"opera", en:"work / opera", g:"f", def:"l'", ind:"un'"}
+];
+
+function runArticoli(){
+  const DEF = ["il","lo","la","l'"];
+  const IND = ["un","uno","una","un'"];
+  const qs = shuffle(ARTICOLI_NOMI).slice(0, 12).map(n=>{
+    const useDef = Math.random() < 0.5;
+    const gTag = n.g==="m" ? "maschile" : "femminile";
+    const kind = useDef ? "determinativo" : "indeterminativo";
+    return {
+      q: `___ ${n.it}`,
+      sub: `<i>${n.en}</i> &middot; ${gTag} &mdash; scegli l'articolo <b>${kind}</b>`,
+      opts: useDef ? DEF : IND,
+      correct: useDef ? n.def : n.ind,
+      speak: n.it
+    };
+  });
+  runMCQ(qs, "Articoli", runArticoli);
 }
 
 function finish(stage, msg, restart){
