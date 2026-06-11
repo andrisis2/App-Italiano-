@@ -3,7 +3,7 @@
     "project": "Italian B2",
     "level": "B2",
     "version": 1,
-    "updated": "2026-06-09",
+    "updated": "2026-06-11",
     "sources": [
       "CEFR B2 Italian curriculum (Council of Europe)",
       "Dizionario Treccani — vocabolario della lingua italiana",
@@ -1794,7 +1794,10 @@
       "id": "f161",
       "it": "Stamattina mi sono alzato tardi perché non ho sentito la sveglia.",
       "en": "This morning I got up late because I didn't hear the alarm.",
-      "tag": ["passato-prossimo", "vita-quotidiana"],
+      "tag": [
+        "passato-prossimo",
+        "vita-quotidiana"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1802,7 +1805,10 @@
       "id": "f162",
       "it": "Da piccola, mia nonna mi raccontava storie ogni sera prima di dormire.",
       "en": "When I was little, my grandmother used to tell me stories every evening before sleep.",
-      "tag": ["imperfetto", "famiglia"],
+      "tag": [
+        "imperfetto",
+        "famiglia"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1810,7 +1816,10 @@
       "id": "f163",
       "it": "L'anno prossimo andrò a studiare all'estero per sei mesi.",
       "en": "Next year I will go to study abroad for six months.",
-      "tag": ["futuro", "progetti"],
+      "tag": [
+        "futuro",
+        "progetti"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1818,7 +1827,10 @@
       "id": "f164",
       "it": "Vorresti venire con noi al concerto sabato sera?",
       "en": "Would you like to come with us to the concert on Saturday evening?",
-      "tag": ["condizionale-cortesia", "invito"],
+      "tag": [
+        "condizionale-cortesia",
+        "invito"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1826,7 +1838,10 @@
       "id": "f165",
       "it": "Questo film è più interessante di quello che ho visto la settimana scorsa.",
       "en": "This film is more interesting than the one I saw last week.",
-      "tag": ["comparativo", "opinione"],
+      "tag": [
+        "comparativo",
+        "opinione"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1834,7 +1849,10 @@
       "id": "f166",
       "it": "Lo conosco da molti anni, ma non lo vedo spesso.",
       "en": "I have known him for many years, but I don't see him often.",
-      "tag": ["pronomi-diretti", "da-presente"],
+      "tag": [
+        "pronomi-diretti",
+        "da-presente"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1842,7 +1860,10 @@
       "id": "f167",
       "it": "In Italia si mangia molto bene, soprattutto al Sud.",
       "en": "In Italy you eat very well, especially in the South.",
-      "tag": ["si-impersonale", "cultura"],
+      "tag": [
+        "si-impersonale",
+        "cultura"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1850,7 +1871,10 @@
       "id": "f168",
       "it": "Devo finire questa relazione prima di domani mattina.",
       "en": "I have to finish this report before tomorrow morning.",
-      "tag": ["dovere", "lavoro"],
+      "tag": [
+        "dovere",
+        "lavoro"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1858,7 +1882,10 @@
       "id": "f169",
       "it": "Non mi piace guidare di notte quando piove.",
       "en": "I don't like driving at night when it rains.",
-      "tag": ["piacere", "abitudini"],
+      "tag": [
+        "piacere",
+        "abitudini"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1866,7 +1893,10 @@
       "id": "f170",
       "it": "Hai già prenotato l'albergo per le vacanze estive?",
       "en": "Have you already booked the hotel for the summer holidays?",
-      "tag": ["passato-prossimo", "vacanze"],
+      "tag": [
+        "passato-prossimo",
+        "vacanze"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1874,7 +1904,10 @@
       "id": "f171",
       "it": "Mia sorella suona il pianoforte da quando aveva cinque anni.",
       "en": "My sister has been playing the piano since she was five.",
-      "tag": ["da-presente", "musica"],
+      "tag": [
+        "da-presente",
+        "musica"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1882,7 +1915,10 @@
       "id": "f172",
       "it": "Potresti aiutarmi a portare questi scatoloni?",
       "en": "Could you help me carry these boxes?",
-      "tag": ["condizionale-cortesia", "richiesta"],
+      "tag": [
+        "condizionale-cortesia",
+        "richiesta"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1890,7 +1926,10 @@
       "id": "f173",
       "it": "Quando ero studente, dormivo fino a mezzogiorno nel weekend.",
       "en": "When I was a student, I used to sleep until noon at the weekend.",
-      "tag": ["imperfetto-abitudini", "nostalgia"],
+      "tag": [
+        "imperfetto-abitudini",
+        "nostalgia"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1898,7 +1937,10 @@
       "id": "f174",
       "it": "Non so dove ho messo le chiavi di casa.",
       "en": "I don't know where I've put my house keys.",
-      "tag": ["passato-prossimo", "vita-quotidiana"],
+      "tag": [
+        "passato-prossimo",
+        "vita-quotidiana"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1906,7 +1948,10 @@
       "id": "f175",
       "it": "Ti chiamo appena arrivo all'aeroporto.",
       "en": "I'll call you as soon as I get to the airport.",
-      "tag": ["futuro", "trasporti"],
+      "tag": [
+        "futuro",
+        "trasporti"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1914,7 +1959,10 @@
       "id": "f176",
       "it": "Ieri sera ho guardato un bel documentario sulla natura.",
       "en": "Last night I watched a nice documentary about nature.",
-      "tag": ["passato-prossimo", "tempo-libero"],
+      "tag": [
+        "passato-prossimo",
+        "tempo-libero"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1922,7 +1970,10 @@
       "id": "f177",
       "it": "Dovrei andare dal dentista, ma continuo a rimandare.",
       "en": "I should go to the dentist, but I keep putting it off.",
-      "tag": ["condizionale-obbligo", "salute"],
+      "tag": [
+        "condizionale-obbligo",
+        "salute"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1930,7 +1981,10 @@
       "id": "f178",
       "it": "Preferisco prendere il treno piuttosto che guidare per ore.",
       "en": "I prefer to take the train rather than drive for hours.",
-      "tag": ["preferire", "trasporti"],
+      "tag": [
+        "preferire",
+        "trasporti"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1938,7 +1992,10 @@
       "id": "f179",
       "it": "Stasera non posso uscire: devo preparare la cena per i miei.",
       "en": "Tonight I can't go out: I have to cook dinner for my family.",
-      "tag": ["dovere", "famiglia"],
+      "tag": [
+        "dovere",
+        "famiglia"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1946,7 +2003,10 @@
       "id": "f180",
       "it": "L'estate scorsa abbiamo trascorso due settimane in Sardegna.",
       "en": "Last summer we spent two weeks in Sardinia.",
-      "tag": ["passato-prossimo", "vacanze"],
+      "tag": [
+        "passato-prossimo",
+        "vacanze"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1954,7 +2014,10 @@
       "id": "f181",
       "it": "Mi sento meglio oggi rispetto a ieri.",
       "en": "I feel better today compared to yesterday.",
-      "tag": ["comparativo", "salute"],
+      "tag": [
+        "comparativo",
+        "salute"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1962,7 +2025,10 @@
       "id": "f182",
       "it": "Stavo leggendo un libro quando mi hai telefonato.",
       "en": "I was reading a book when you called me.",
-      "tag": ["imperfetto-passato-prossimo", "vita-quotidiana"],
+      "tag": [
+        "imperfetto-passato-prossimo",
+        "vita-quotidiana"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1970,7 +2036,10 @@
       "id": "f183",
       "it": "Quanto tempo ci vuole per arrivare in centro con il bus?",
       "en": "How long does it take to get to the city centre by bus?",
-      "tag": ["ci-vuole", "trasporti"],
+      "tag": [
+        "ci-vuole",
+        "trasporti"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1978,7 +2047,10 @@
       "id": "f184",
       "it": "Il medico mi ha consigliato di fare più attività fisica.",
       "en": "The doctor advised me to do more physical activity.",
-      "tag": ["passato-prossimo", "salute"],
+      "tag": [
+        "passato-prossimo",
+        "salute"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1986,7 +2058,10 @@
       "id": "f185",
       "it": "Questa settimana sono molto occupato: ho tre riunioni al giorno.",
       "en": "This week I'm very busy: I have three meetings a day.",
-      "tag": ["presente", "lavoro"],
+      "tag": [
+        "presente",
+        "lavoro"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -1994,7 +2069,10 @@
       "id": "f186",
       "it": "Vorrei tanto imparare a cucinare la pasta fatta in casa.",
       "en": "I would really like to learn how to make homemade pasta.",
-      "tag": ["condizionale-desiderio", "cucina"],
+      "tag": [
+        "condizionale-desiderio",
+        "cucina"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2002,7 +2080,10 @@
       "id": "f187",
       "it": "Ho camminato per tutta la mattina e adesso ho i piedi a pezzi.",
       "en": "I walked all morning and now my feet are killing me.",
-      "tag": ["passato-prossimo", "vita-quotidiana"],
+      "tag": [
+        "passato-prossimo",
+        "vita-quotidiana"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2010,7 +2091,10 @@
       "id": "f188",
       "it": "Ti mando il file per email appena lo finisco.",
       "en": "I'll send you the file by email as soon as I finish it.",
-      "tag": ["futuro", "lavoro"],
+      "tag": [
+        "futuro",
+        "lavoro"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2018,7 +2102,10 @@
       "id": "f189",
       "it": "In questa regione d'Italia si producono vini eccellenti.",
       "en": "In this region of Italy excellent wines are produced.",
-      "tag": ["si-passivante", "cultura"],
+      "tag": [
+        "si-passivante",
+        "cultura"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2026,7 +2113,10 @@
       "id": "f190",
       "it": "Puoi dirmi dove si trova l'ufficio postale più vicino?",
       "en": "Can you tell me where the nearest post office is?",
-      "tag": ["potere", "orientamento"],
+      "tag": [
+        "potere",
+        "orientamento"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2034,7 +2124,10 @@
       "id": "f191",
       "it": "Mentre aspettavo l'autobus, ho incontrato un vecchio amico.",
       "en": "While I was waiting for the bus, I ran into an old friend.",
-      "tag": ["imperfetto-passato-prossimo", "vita-quotidiana"],
+      "tag": [
+        "imperfetto-passato-prossimo",
+        "vita-quotidiana"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2042,7 +2135,10 @@
       "id": "f192",
       "it": "Non capisco questa parola; puoi spiegarmi cosa significa?",
       "en": "I don't understand this word; can you explain what it means?",
-      "tag": ["presente", "linguistica"],
+      "tag": [
+        "presente",
+        "linguistica"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2050,7 +2146,10 @@
       "id": "f193",
       "it": "Abbiamo deciso di comprare una casa in periferia.",
       "en": "We've decided to buy a house in the suburbs.",
-      "tag": ["passato-prossimo", "casa"],
+      "tag": [
+        "passato-prossimo",
+        "casa"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2058,7 +2157,10 @@
       "id": "f194",
       "it": "Penso di andare in vacanza a luglio quest'anno.",
       "en": "I'm thinking of going on holiday in July this year.",
-      "tag": ["pensare-di-infinito", "progetti"],
+      "tag": [
+        "pensare-di-infinito",
+        "progetti"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2066,7 +2168,10 @@
       "id": "f195",
       "it": "Non ricordo dove ho parcheggiato la macchina stamattina.",
       "en": "I can't remember where I parked the car this morning.",
-      "tag": ["passato-prossimo", "vita-quotidiana"],
+      "tag": [
+        "passato-prossimo",
+        "vita-quotidiana"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2074,7 +2179,10 @@
       "id": "f196",
       "it": "Sai parlare un'altra lingua oltre all'italiano e all'inglese?",
       "en": "Can you speak another language besides Italian and English?",
-      "tag": ["sapere-infinito", "lingue"],
+      "tag": [
+        "sapere-infinito",
+        "lingue"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2082,7 +2190,10 @@
       "id": "f197",
       "it": "Non riesco mai ad addormentarmi prima di mezzanotte.",
       "en": "I can never fall asleep before midnight.",
-      "tag": ["riuscire-a", "abitudini"],
+      "tag": [
+        "riuscire-a",
+        "abitudini"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2090,7 +2201,10 @@
       "id": "f198",
       "it": "Il mio collega lavora qui da più di vent'anni.",
       "en": "My colleague has been working here for more than twenty years.",
-      "tag": ["da-presente", "lavoro"],
+      "tag": [
+        "da-presente",
+        "lavoro"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2098,7 +2212,10 @@
       "id": "f199",
       "it": "Di solito faccio la spesa al mercato il sabato mattina.",
       "en": "I usually do the shopping at the market on Saturday mornings.",
-      "tag": ["presente-abitudini", "vita-quotidiana"],
+      "tag": [
+        "presente-abitudini",
+        "vita-quotidiana"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2106,7 +2223,10 @@
       "id": "f200",
       "it": "Mia madre parla sempre troppo forte al telefono.",
       "en": "My mother always speaks too loudly on the phone.",
-      "tag": ["presente", "famiglia"],
+      "tag": [
+        "presente",
+        "famiglia"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2114,7 +2234,10 @@
       "id": "f201",
       "it": "Quella notizia mi ha sorpreso molto.",
       "en": "That news surprised me a lot.",
-      "tag": ["passato-prossimo", "reazioni"],
+      "tag": [
+        "passato-prossimo",
+        "reazioni"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2122,7 +2245,10 @@
       "id": "f202",
       "it": "Ha lavorato per dieci anni nella stessa azienda prima di cambiare lavoro.",
       "en": "She worked at the same company for ten years before changing jobs.",
-      "tag": ["passato-prossimo", "lavoro"],
+      "tag": [
+        "passato-prossimo",
+        "lavoro"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2130,7 +2256,11 @@
       "id": "f203",
       "it": "Questa mattina ho bevuto tre caffè perché ero stanchissimo.",
       "en": "This morning I drank three coffees because I was absolutely exhausted.",
-      "tag": ["passato-prossimo", "imperfetto", "vita-quotidiana"],
+      "tag": [
+        "passato-prossimo",
+        "imperfetto",
+        "vita-quotidiana"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2138,7 +2268,10 @@
       "id": "f204",
       "it": "Ci siamo alzati presto per non perdere il primo treno.",
       "en": "We got up early so as not to miss the first train.",
-      "tag": ["passato-prossimo", "trasporti"],
+      "tag": [
+        "passato-prossimo",
+        "trasporti"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2146,7 +2279,10 @@
       "id": "f205",
       "it": "Gli ho mandato un messaggio, ma non ha ancora risposto.",
       "en": "I sent him a message but he hasn't replied yet.",
-      "tag": ["passato-prossimo", "pronome-indiretto"],
+      "tag": [
+        "passato-prossimo",
+        "pronome-indiretto"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2154,7 +2290,10 @@
       "id": "f206",
       "it": "La pizza in questo ristorante è migliore di quella del posto di fronte.",
       "en": "The pizza in this restaurant is better than the one at the place opposite.",
-      "tag": ["comparativo-irregolare", "cibo"],
+      "tag": [
+        "comparativo-irregolare",
+        "cibo"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2162,7 +2301,10 @@
       "id": "f207",
       "it": "Non sono mai stato a Firenze; ci andrò prima o poi.",
       "en": "I've never been to Florence; I'll go there sooner or later.",
-      "tag": ["passato-prossimo-mai", "futuro"],
+      "tag": [
+        "passato-prossimo-mai",
+        "futuro"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2170,7 +2312,10 @@
       "id": "f208",
       "it": "Mi sono iscritto a un corso di fotografia online.",
       "en": "I've signed up for an online photography course.",
-      "tag": ["passato-prossimo", "hobbies"],
+      "tag": [
+        "passato-prossimo",
+        "hobbies"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2178,7 +2323,10 @@
       "id": "f209",
       "it": "Quando vivevo a Milano, prendevo il tram tutti i giorni.",
       "en": "When I lived in Milan, I used to take the tram every day.",
-      "tag": ["imperfetto-abitudini", "città"],
+      "tag": [
+        "imperfetto-abitudini",
+        "città"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2186,7 +2334,10 @@
       "id": "f210",
       "it": "Non ho ancora deciso dove andare in vacanza quest'estate.",
       "en": "I haven't decided yet where to go on holiday this summer.",
-      "tag": ["passato-prossimo", "progetti"],
+      "tag": [
+        "passato-prossimo",
+        "progetti"
+      ],
       "difficolta": 1,
       "aggiunto": "2026-06-10"
     },
@@ -2194,7 +2345,11 @@
       "id": "f211",
       "it": "Spero che tutto vada bene con il tuo colloquio di domani.",
       "en": "I hope everything goes well with your interview tomorrow.",
-      "tag": ["sperare-che", "congiuntivo-presente", "lavoro"],
+      "tag": [
+        "sperare-che",
+        "congiuntivo-presente",
+        "lavoro"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2202,7 +2357,10 @@
       "id": "f212",
       "it": "Credo che il negozio chiuda alle otto di sera.",
       "en": "I think the shop closes at eight in the evening.",
-      "tag": ["credere-che", "congiuntivo-presente"],
+      "tag": [
+        "credere-che",
+        "congiuntivo-presente"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2210,7 +2368,11 @@
       "id": "f213",
       "it": "È importante che i ragazzi imparino a gestire il denaro.",
       "en": "It is important for young people to learn how to manage money.",
-      "tag": ["è-importante-che", "congiuntivo-presente", "educazione"],
+      "tag": [
+        "è-importante-che",
+        "congiuntivo-presente",
+        "educazione"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2218,7 +2380,10 @@
       "id": "f214",
       "it": "Avrei voglia di un gelato, ma fa troppo freddo.",
       "en": "I feel like an ice cream, but it's too cold.",
-      "tag": ["condizionale-desiderio", "meteo"],
+      "tag": [
+        "condizionale-desiderio",
+        "meteo"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2226,7 +2391,10 @@
       "id": "f215",
       "it": "Me lo ha raccontato lui stesso, quindi è vero.",
       "en": "He told it to me himself, so it's true.",
-      "tag": ["pronomi-combinati", "conferma"],
+      "tag": [
+        "pronomi-combinati",
+        "conferma"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2234,7 +2402,10 @@
       "id": "f216",
       "it": "Il pacco ti verrà consegnato entro domani sera.",
       "en": "The parcel will be delivered to you by tomorrow evening.",
-      "tag": ["passivo-venire", "futuro"],
+      "tag": [
+        "passivo-venire",
+        "futuro"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2242,7 +2413,10 @@
       "id": "f217",
       "it": "Dopo aver mangiato, siamo usciti a fare una passeggiata.",
       "en": "After eating, we went out for a walk.",
-      "tag": ["infinito-passato", "sequenza"],
+      "tag": [
+        "infinito-passato",
+        "sequenza"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2250,7 +2424,10 @@
       "id": "f218",
       "it": "Non mi ricordo bene come si chiamava quella canzone.",
       "en": "I don't quite remember what that song was called.",
-      "tag": ["imperfetto", "musica"],
+      "tag": [
+        "imperfetto",
+        "musica"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2258,7 +2435,10 @@
       "id": "f219",
       "it": "Avendolo visto molte volte, conosco ogni scena a memoria.",
       "en": "Having seen it many times, I know every scene by heart.",
-      "tag": ["gerundio-passato", "cinema"],
+      "tag": [
+        "gerundio-passato",
+        "cinema"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2266,7 +2446,10 @@
       "id": "f220",
       "it": "Gliene ho parlato più volte, ma non vuole sentire ragioni.",
       "en": "I've talked to him about it several times, but he won't listen.",
-      "tag": ["pronomi-combinati", "comunicazione"],
+      "tag": [
+        "pronomi-combinati",
+        "comunicazione"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2274,7 +2457,10 @@
       "id": "f221",
       "it": "È stato un anno difficile, ma alla fine ce l'abbiamo fatta.",
       "en": "It has been a difficult year, but in the end we made it.",
-      "tag": ["passato-prossimo", "idioma-farcela"],
+      "tag": [
+        "passato-prossimo",
+        "idioma-farcela"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2282,7 +2468,11 @@
       "id": "f222",
       "it": "Nonostante la pioggia, siamo rimasti all'aperto tutto il pomeriggio.",
       "en": "Despite the rain, we stayed outside all afternoon.",
-      "tag": ["nonostante", "concessiva", "meteo"],
+      "tag": [
+        "nonostante",
+        "concessiva",
+        "meteo"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2290,7 +2480,10 @@
       "id": "f223",
       "it": "La riunione avrebbe dovuto durare un'ora, ma è andata avanti per tre.",
       "en": "The meeting should have lasted an hour, but it went on for three.",
-      "tag": ["condizionale-passato", "lavoro"],
+      "tag": [
+        "condizionale-passato",
+        "lavoro"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2298,7 +2491,10 @@
       "id": "f224",
       "it": "Quanto prima inizierai a risparmiare, tanto meglio sarà per il futuro.",
       "en": "The sooner you start saving, the better it will be for the future.",
-      "tag": ["correlativo", "finanze"],
+      "tag": [
+        "correlativo",
+        "finanze"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2306,7 +2502,10 @@
       "id": "f225",
       "it": "Gli hanno detto che il risultato sarebbe stato comunicato la settimana successiva.",
       "en": "They told him the result would be communicated the following week.",
-      "tag": ["discorso-indiretto", "condizionale-passato"],
+      "tag": [
+        "discorso-indiretto",
+        "condizionale-passato"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2314,7 +2513,11 @@
       "id": "f226",
       "it": "Bisogna che tu prenda una decisione il prima possibile.",
       "en": "You need to make a decision as soon as possible.",
-      "tag": ["bisogna-che", "congiuntivo-presente", "obbligo"],
+      "tag": [
+        "bisogna-che",
+        "congiuntivo-presente",
+        "obbligo"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2322,7 +2525,10 @@
       "id": "f227",
       "it": "Sto cercando un appartamento che abbia almeno due camere da letto.",
       "en": "I am looking for a flat that has at least two bedrooms.",
-      "tag": ["congiuntivo-relativo", "casa"],
+      "tag": [
+        "congiuntivo-relativo",
+        "casa"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2330,7 +2536,11 @@
       "id": "f228",
       "it": "Avrei potuto finire prima se non ci fossero stati così tanti problemi.",
       "en": "I could have finished sooner if there hadn't been so many problems.",
-      "tag": ["condizionale-passato", "conditional-3", "rimpianto"],
+      "tag": [
+        "condizionale-passato",
+        "conditional-3",
+        "rimpianto"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2338,7 +2548,10 @@
       "id": "f229",
       "it": "Pensavo che fosse già partita, invece era ancora in ufficio.",
       "en": "I thought she had already left, but she was still in the office.",
-      "tag": ["congiuntivo-imperfetto", "sorpresa"],
+      "tag": [
+        "congiuntivo-imperfetto",
+        "sorpresa"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2346,7 +2559,10 @@
       "id": "f230",
       "it": "Una volta finito il progetto, andremo tutti a festeggiare.",
       "en": "Once the project is finished, we will all go and celebrate.",
-      "tag": ["participio-assoluto", "futuro"],
+      "tag": [
+        "participio-assoluto",
+        "futuro"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2354,7 +2570,10 @@
       "id": "f231",
       "it": "Non mi aspettavo che la cena costasse così tanto.",
       "en": "I didn't expect the dinner to cost so much.",
-      "tag": ["congiuntivo-imperfetto", "sorpresa"],
+      "tag": [
+        "congiuntivo-imperfetto",
+        "sorpresa"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2362,7 +2581,10 @@
       "id": "f232",
       "it": "Perché non glielo dici direttamente invece di aspettare?",
       "en": "Why don't you tell him directly instead of waiting?",
-      "tag": ["pronomi-combinati", "comunicazione"],
+      "tag": [
+        "pronomi-combinati",
+        "comunicazione"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2370,7 +2592,10 @@
       "id": "f233",
       "it": "Sarà stata una coincidenza, ma mi ha fatto molto piacere.",
       "en": "It must have been a coincidence, but it pleased me greatly.",
-      "tag": ["futuro-anteriore-supposizione", "emozioni"],
+      "tag": [
+        "futuro-anteriore-supposizione",
+        "emozioni"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2378,7 +2603,10 @@
       "id": "f234",
       "it": "Gli studenti che si iscrivono entro marzo ricevono uno sconto.",
       "en": "Students who enrol before March receive a discount.",
-      "tag": ["proposizione-relativa", "scuola"],
+      "tag": [
+        "proposizione-relativa",
+        "scuola"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2386,7 +2614,10 @@
       "id": "f235",
       "it": "Il festival viene organizzato ogni anno dalla stessa associazione.",
       "en": "The festival is organised every year by the same association.",
-      "tag": ["passivo-venire", "cultura"],
+      "tag": [
+        "passivo-venire",
+        "cultura"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2394,7 +2625,10 @@
       "id": "f236",
       "it": "Non appena sarò tornato, ti contatterò per organizzare tutto.",
       "en": "As soon as I'm back, I'll contact you to arrange everything.",
-      "tag": ["futuro-anteriore", "pianificazione"],
+      "tag": [
+        "futuro-anteriore",
+        "pianificazione"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2402,7 +2636,11 @@
       "id": "f237",
       "it": "Mi dispiace che tu non abbia potuto venire alla cerimonia.",
       "en": "I'm sorry you weren't able to come to the ceremony.",
-      "tag": ["mi-dispiace-che", "congiuntivo-passato", "emozioni"],
+      "tag": [
+        "mi-dispiace-che",
+        "congiuntivo-passato",
+        "emozioni"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2410,7 +2648,10 @@
       "id": "f238",
       "it": "Facendo sport regolarmente, ti sentirai più energico.",
       "en": "By doing sport regularly, you will feel more energetic.",
-      "tag": ["gerundio", "salute"],
+      "tag": [
+        "gerundio",
+        "salute"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2418,7 +2659,10 @@
       "id": "f239",
       "it": "Le è già stato spiegato come funziona il sistema.",
       "en": "She has already been told how the system works.",
-      "tag": ["passivo-essere", "lavoro"],
+      "tag": [
+        "passivo-essere",
+        "lavoro"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2426,7 +2670,10 @@
       "id": "f240",
       "it": "Con tutti i problemi che ha avuto, è riuscita comunque ad andare avanti.",
       "en": "With all the problems she had, she nonetheless managed to carry on.",
-      "tag": ["passato-prossimo", "riuscire-a"],
+      "tag": [
+        "passato-prossimo",
+        "riuscire-a"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2434,7 +2681,11 @@
       "id": "f241",
       "it": "Ci vorrà del tempo prima che la situazione torni alla normalità.",
       "en": "It will take some time before the situation returns to normal.",
-      "tag": ["ci-vorrà", "prima-che", "congiuntivo"],
+      "tag": [
+        "ci-vorrà",
+        "prima-che",
+        "congiuntivo"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2442,7 +2693,10 @@
       "id": "f242",
       "it": "Ho letto che quest'anno ci si aspetta un aumento delle temperature.",
       "en": "I have read that a rise in temperatures is expected this year.",
-      "tag": ["ci-si-aspetta", "ambiente"],
+      "tag": [
+        "ci-si-aspetta",
+        "ambiente"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2450,7 +2704,10 @@
       "id": "f243",
       "it": "Chissà dove sarà arrivato a quest'ora!",
       "en": "Who knows where he will have got to by now!",
-      "tag": ["futuro-anteriore-ipotesi", "chissà"],
+      "tag": [
+        "futuro-anteriore-ipotesi",
+        "chissà"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2458,7 +2715,10 @@
       "id": "f244",
       "it": "Se potessi scegliere, vivrei in una piccola città di mare.",
       "en": "If I could choose, I would live in a small seaside town.",
-      "tag": ["conditional-2", "desiderio"],
+      "tag": [
+        "conditional-2",
+        "desiderio"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2466,7 +2726,11 @@
       "id": "f245",
       "it": "Avrei preferito che me lo avessero detto prima.",
       "en": "I would have preferred them to have told me earlier.",
-      "tag": ["condizionale-passato", "congiuntivo-trapassato", "rimpianto"],
+      "tag": [
+        "condizionale-passato",
+        "congiuntivo-trapassato",
+        "rimpianto"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2474,7 +2738,10 @@
       "id": "f246",
       "it": "Il libro viene tradotto in dodici lingue diverse.",
       "en": "The book is being translated into twelve different languages.",
-      "tag": ["passivo-venire-presente", "editoria"],
+      "tag": [
+        "passivo-venire-presente",
+        "editoria"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2482,7 +2749,10 @@
       "id": "f247",
       "it": "Mi ha fatto capire che la cosa non era poi così semplice.",
       "en": "He made me understand that the matter wasn't quite so simple.",
-      "tag": ["fare-capire", "causativo"],
+      "tag": [
+        "fare-capire",
+        "causativo"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2490,7 +2760,11 @@
       "id": "f248",
       "it": "Sebbene ci voglia tempo, i risultati si vedranno.",
       "en": "Although it takes time, the results will show.",
-      "tag": ["sebbene", "congiuntivo-presente", "pazienza"],
+      "tag": [
+        "sebbene",
+        "congiuntivo-presente",
+        "pazienza"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2498,7 +2772,10 @@
       "id": "f249",
       "it": "Te lo prometto: non lo dirò a nessuno.",
       "en": "I promise you: I won't tell anyone.",
-      "tag": ["pronomi-combinati", "promessa"],
+      "tag": [
+        "pronomi-combinati",
+        "promessa"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2506,7 +2783,10 @@
       "id": "f250",
       "it": "Non avevo mai mangiato il risotto prima di venire in Italia.",
       "en": "I had never eaten risotto before coming to Italy.",
-      "tag": ["trapassato-prossimo", "esperienze"],
+      "tag": [
+        "trapassato-prossimo",
+        "esperienze"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2514,7 +2794,10 @@
       "id": "f251",
       "it": "Si è licenziata dopo aver litigato con il responsabile.",
       "en": "She quit after arguing with the manager.",
-      "tag": ["infinito-passato", "lavoro"],
+      "tag": [
+        "infinito-passato",
+        "lavoro"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2522,7 +2805,10 @@
       "id": "f252",
       "it": "Ogni volta che lo vedo, mi torna in mente quella storia.",
       "en": "Every time I see him, I'm reminded of that story.",
-      "tag": ["ogni-volta-che", "memoria"],
+      "tag": [
+        "ogni-volta-che",
+        "memoria"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2530,7 +2816,10 @@
       "id": "f253",
       "it": "Glielo ripeto da mesi, ma non vuole ascoltare.",
       "en": "I've been telling him for months, but he won't listen.",
-      "tag": ["pronomi-combinati", "da-presente"],
+      "tag": [
+        "pronomi-combinati",
+        "da-presente"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2538,7 +2827,11 @@
       "id": "f254",
       "it": "Non è possibile che abbia già finito; è appena cominciato.",
       "en": "It's not possible that he's already finished; it only just started.",
-      "tag": ["non-è-possibile-che", "congiuntivo-passato", "sorpresa"],
+      "tag": [
+        "non-è-possibile-che",
+        "congiuntivo-passato",
+        "sorpresa"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2546,7 +2839,10 @@
       "id": "f255",
       "it": "Avendo trascorso molti anni all'estero, parla benissimo il francese.",
       "en": "Having spent many years abroad, he speaks French extremely well.",
-      "tag": ["gerundio-passato", "lingue"],
+      "tag": [
+        "gerundio-passato",
+        "lingue"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2554,7 +2850,10 @@
       "id": "f256",
       "it": "Il volo è stato cancellato a causa del maltempo.",
       "en": "The flight was cancelled due to bad weather.",
-      "tag": ["passivo-essere", "trasporti"],
+      "tag": [
+        "passivo-essere",
+        "trasporti"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2562,7 +2861,11 @@
       "id": "f257",
       "it": "Sembra che la mostra abbia avuto molto successo.",
       "en": "It seems that the exhibition was a great success.",
-      "tag": ["sembra-che", "congiuntivo-passato", "cultura"],
+      "tag": [
+        "sembra-che",
+        "congiuntivo-passato",
+        "cultura"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2570,7 +2873,10 @@
       "id": "f258",
       "it": "Ci siamo resi conto troppo tardi dell'errore.",
       "en": "We realised the mistake too late.",
-      "tag": ["rendersi-conto", "passato-prossimo"],
+      "tag": [
+        "rendersi-conto",
+        "passato-prossimo"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2578,7 +2884,10 @@
       "id": "f259",
       "it": "Appena avrò ricevuto la conferma, ti avviserò subito.",
       "en": "As soon as I have received the confirmation, I will let you know immediately.",
-      "tag": ["futuro-anteriore", "lavoro"],
+      "tag": [
+        "futuro-anteriore",
+        "lavoro"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2586,7 +2895,10 @@
       "id": "f260",
       "it": "Finché non finisci i compiti, non puoi guardare la televisione.",
       "en": "Until you finish your homework, you can't watch television.",
-      "tag": ["finché-non", "regole"],
+      "tag": [
+        "finché-non",
+        "regole"
+      ],
       "difficolta": 2,
       "aggiunto": "2026-06-10"
     },
@@ -2594,7 +2906,11 @@
       "id": "f261",
       "it": "Qualora non ricevessi risposta entro venerdì, contattami direttamente.",
       "en": "Should you not receive a reply by Friday, contact me directly.",
-      "tag": ["qualora", "congiuntivo-imperfetto", "formale"],
+      "tag": [
+        "qualora",
+        "congiuntivo-imperfetto",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2602,7 +2918,11 @@
       "id": "f262",
       "it": "Per quanto si sia impegnato, i risultati sono stati deludenti.",
       "en": "No matter how hard he tried, the results were disappointing.",
-      "tag": ["per-quanto", "congiuntivo-passato", "concessiva"],
+      "tag": [
+        "per-quanto",
+        "congiuntivo-passato",
+        "concessiva"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2610,7 +2930,11 @@
       "id": "f263",
       "it": "Nel caso in cui cambiaste idea, potete sempre richiamarci.",
       "en": "In the event that you change your mind, you can always call us back.",
-      "tag": ["nel-caso-in-cui", "condizionale", "formale"],
+      "tag": [
+        "nel-caso-in-cui",
+        "condizionale",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2618,7 +2942,11 @@
       "id": "f264",
       "it": "Avesse studiato di più, avrebbe superato l'esame senza problemi.",
       "en": "Had he studied more, he would have passed the exam without difficulty.",
-      "tag": ["inversione-ipotetica", "conditional-3", "rimpianto"],
+      "tag": [
+        "inversione-ipotetica",
+        "conditional-3",
+        "rimpianto"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2626,7 +2954,11 @@
       "id": "f265",
       "it": "Si dice che il nuovo stadio verrà inaugurato entro la fine dell'anno.",
       "en": "It is said that the new stadium will be inaugurated by the end of the year.",
-      "tag": ["si-dice-che", "passivo-venire", "futuro"],
+      "tag": [
+        "si-dice-che",
+        "passivo-venire",
+        "futuro"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2634,7 +2966,10 @@
       "id": "f266",
       "it": "Tanto vale dirgli la verità adesso piuttosto che aspettare oltre.",
       "en": "It's just as well to tell him the truth now rather than wait any longer.",
-      "tag": ["tanto-vale", "pragmatica"],
+      "tag": [
+        "tanto-vale",
+        "pragmatica"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2642,7 +2977,11 @@
       "id": "f267",
       "it": "Fossero stati più attenti, non si sarebbero trovati in questa situazione.",
       "en": "Had they been more careful, they would not have found themselves in this situation.",
-      "tag": ["inversione-ipotetica", "conditional-3", "rimpianto"],
+      "tag": [
+        "inversione-ipotetica",
+        "conditional-3",
+        "rimpianto"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2650,7 +2989,11 @@
       "id": "f268",
       "it": "A meno che non ci sia un imprevisto, sarò lì puntuale alle dieci.",
       "en": "Unless something unexpected comes up, I'll be there at ten on the dot.",
-      "tag": ["a-meno-che-non", "congiuntivo-presente", "condizione"],
+      "tag": [
+        "a-meno-che-non",
+        "congiuntivo-presente",
+        "condizione"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2658,7 +3001,11 @@
       "id": "f269",
       "it": "Seppure in ritardo, è arrivato in tempo per la parte più importante.",
       "en": "Although late, he arrived in time for the most important part.",
-      "tag": ["seppure", "concessiva", "formale"],
+      "tag": [
+        "seppure",
+        "concessiva",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2666,7 +3013,11 @@
       "id": "f270",
       "it": "Il governo ha dichiarato che sarebbero state adottate misure urgenti.",
       "en": "The government declared that urgent measures would be adopted.",
-      "tag": ["discorso-indiretto", "condizionale-passato", "politica"],
+      "tag": [
+        "discorso-indiretto",
+        "condizionale-passato",
+        "politica"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2674,7 +3025,11 @@
       "id": "f271",
       "it": "Dovunque tu vada, porterai sempre con te i ricordi di questo posto.",
       "en": "Wherever you go, you will always carry the memories of this place with you.",
-      "tag": ["dovunque", "congiuntivo-presente", "poetico"],
+      "tag": [
+        "dovunque",
+        "congiuntivo-presente",
+        "poetico"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2682,7 +3037,10 @@
       "id": "f272",
       "it": "Non avrebbe mai immaginato che il suo libro diventasse un bestseller.",
       "en": "He would never have imagined that his book would become a bestseller.",
-      "tag": ["condizionale-passato", "congiuntivo-imperfetto"],
+      "tag": [
+        "condizionale-passato",
+        "congiuntivo-imperfetto"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2690,7 +3048,11 @@
       "id": "f273",
       "it": "Stante la situazione attuale, è difficile fare previsioni a lungo termine.",
       "en": "Given the current situation, it is difficult to make long-term predictions.",
-      "tag": ["stante", "participio-assoluto", "formale"],
+      "tag": [
+        "stante",
+        "participio-assoluto",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2698,7 +3060,10 @@
       "id": "f274",
       "it": "Lungi dall'essere un ostacolo, quella difficoltà si è rivelata un'opportunità.",
       "en": "Far from being an obstacle, that difficulty turned out to be an opportunity.",
-      "tag": ["lungi-dal", "formale"],
+      "tag": [
+        "lungi-dal",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2706,7 +3071,11 @@
       "id": "f275",
       "it": "A voler essere precisi, il termine corretto sarebbe un altro.",
       "en": "To be precise, the correct term would be a different one.",
-      "tag": ["a-voler-essere", "gerundio", "formale"],
+      "tag": [
+        "a-voler-essere",
+        "gerundio",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2714,7 +3083,10 @@
       "id": "f276",
       "it": "Chi avesse già pagato può presentarsi direttamente all'ingresso.",
       "en": "Anyone who has already paid may go directly to the entrance.",
-      "tag": ["chi-congiuntivo-trapassato", "istruzioni"],
+      "tag": [
+        "chi-congiuntivo-trapassato",
+        "istruzioni"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2722,7 +3094,10 @@
       "id": "f277",
       "it": "Ci vorrebbe ben altro per convincermi a cambiare idea.",
       "en": "It would take far more than that to convince me to change my mind.",
-      "tag": ["condizionale-impersonale", "resistenza"],
+      "tag": [
+        "condizionale-impersonale",
+        "resistenza"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2730,7 +3105,11 @@
       "id": "f278",
       "it": "Le conclusioni cui si è pervenuti sono state pubblicate sulla rivista.",
       "en": "The conclusions that were reached have been published in the journal.",
-      "tag": ["cui-relativo", "passivo", "formale-accademico"],
+      "tag": [
+        "cui-relativo",
+        "passivo",
+        "formale-accademico"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2738,7 +3117,10 @@
       "id": "f279",
       "it": "Premesso che la decisione spetta a voi, ecco il mio parere.",
       "en": "Given that the decision is yours to make, here is my opinion.",
-      "tag": ["participio-assoluto-premesso", "formale"],
+      "tag": [
+        "participio-assoluto-premesso",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2746,7 +3128,11 @@
       "id": "f280",
       "it": "Non si trattasse di una questione così delicata, potrei rispondere subito.",
       "en": "Were this not such a delicate matter, I could reply immediately.",
-      "tag": ["inversione-ipotetica", "congiuntivo-imperfetto", "formale"],
+      "tag": [
+        "inversione-ipotetica",
+        "congiuntivo-imperfetto",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2754,7 +3140,11 @@
       "id": "f281",
       "it": "Benché non fosse d'accordo, ha accettato di seguire le istruzioni.",
       "en": "Although he did not agree, he accepted to follow the instructions.",
-      "tag": ["benché", "congiuntivo-imperfetto", "concessiva"],
+      "tag": [
+        "benché",
+        "congiuntivo-imperfetto",
+        "concessiva"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2762,7 +3152,10 @@
       "id": "f282",
       "it": "Più avanzava la ricerca, più emergevano nuove domande.",
       "en": "The further the research advanced, the more new questions emerged.",
-      "tag": ["correlativo-imperfetto", "accademico"],
+      "tag": [
+        "correlativo-imperfetto",
+        "accademico"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2770,7 +3163,10 @@
       "id": "f283",
       "it": "A fronte di tali evidenze, la difesa ha dovuto modificare la propria strategia.",
       "en": "In the face of such evidence, the defence had to modify its strategy.",
-      "tag": ["a-fronte-di", "formale-legale"],
+      "tag": [
+        "a-fronte-di",
+        "formale-legale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2778,7 +3174,11 @@
       "id": "f284",
       "it": "Volendo sintetizzare, potremmo dire che il progetto è riuscito a metà.",
       "en": "To summarise, we could say the project half-succeeded.",
-      "tag": ["volendo-gerundio", "condizionale", "valutazione"],
+      "tag": [
+        "volendo-gerundio",
+        "condizionale",
+        "valutazione"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2786,7 +3186,10 @@
       "id": "f285",
       "it": "Il candidato si è espresso in modo tale da lasciare tutti soddisfatti.",
       "en": "The candidate spoke in such a way as to leave everyone satisfied.",
-      "tag": ["in-modo-tale-da", "formale"],
+      "tag": [
+        "in-modo-tale-da",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2794,7 +3197,11 @@
       "id": "f286",
       "it": "Per poco non ho perso il treno; sono arrivato all'ultimo secondo.",
       "en": "I very nearly missed the train; I arrived at the last second.",
-      "tag": ["per-poco-non", "idioma", "trasporti"],
+      "tag": [
+        "per-poco-non",
+        "idioma",
+        "trasporti"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2802,7 +3209,11 @@
       "id": "f287",
       "it": "Sarebbe stato preferibile affrontare la questione prima che degenerasse.",
       "en": "It would have been preferable to tackle the issue before it deteriorated.",
-      "tag": ["condizionale-passato", "prima-che", "congiuntivo-imperfetto"],
+      "tag": [
+        "condizionale-passato",
+        "prima-che",
+        "congiuntivo-imperfetto"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2810,7 +3221,11 @@
       "id": "f288",
       "it": "Chiunque si trovi in difficoltà può rivolgersi al nostro sportello.",
       "en": "Anyone who finds themselves in difficulty may contact our service desk.",
-      "tag": ["chiunque", "congiuntivo-presente", "istituzionale"],
+      "tag": [
+        "chiunque",
+        "congiuntivo-presente",
+        "istituzionale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2818,7 +3233,11 @@
       "id": "f289",
       "it": "Non è che non voglia aiutarti; è che in questo momento non posso.",
       "en": "It's not that I don't want to help you; it's that right now I can't.",
-      "tag": ["non-è-che", "congiuntivo", "spiegazione"],
+      "tag": [
+        "non-è-che",
+        "congiuntivo",
+        "spiegazione"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2826,7 +3245,11 @@
       "id": "f290",
       "it": "La fortuna sta nell'aver capito il problema prima che fosse troppo tardi.",
       "en": "The luck lies in having understood the problem before it was too late.",
-      "tag": ["infinito-sostantivato", "prima-che", "congiuntivo-imperfetto"],
+      "tag": [
+        "infinito-sostantivato",
+        "prima-che",
+        "congiuntivo-imperfetto"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2834,7 +3257,10 @@
       "id": "f291",
       "it": "Dato che la riunione si è protratta oltre il previsto, il pranzo è saltato.",
       "en": "Given that the meeting ran on longer than expected, lunch was cancelled.",
-      "tag": ["dato-che", "vita-lavorativa"],
+      "tag": [
+        "dato-che",
+        "vita-lavorativa"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2842,7 +3268,11 @@
       "id": "f292",
       "it": "Non si può non notare quanto siano cambiati i costumi negli ultimi vent'anni.",
       "en": "One cannot fail to notice how much customs have changed in the last twenty years.",
-      "tag": ["doppia-negazione", "congiuntivo", "osservazione"],
+      "tag": [
+        "doppia-negazione",
+        "congiuntivo",
+        "osservazione"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2850,7 +3280,11 @@
       "id": "f293",
       "it": "Il problema non consiste tanto nel trovare le risorse quanto nell'utilizzarle bene.",
       "en": "The problem lies not so much in finding the resources as in using them well.",
-      "tag": ["non-tanto-quanto", "infinito-sostantivato", "analisi"],
+      "tag": [
+        "non-tanto-quanto",
+        "infinito-sostantivato",
+        "analisi"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2858,7 +3292,11 @@
       "id": "f294",
       "it": "Per quanti sforzi faccia, non riesce a terminare il lavoro in tempo.",
       "en": "No matter how hard he tries, he cannot finish the work in time.",
-      "tag": ["per-quanto", "congiuntivo-presente", "insistenza"],
+      "tag": [
+        "per-quanto",
+        "congiuntivo-presente",
+        "insistenza"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2866,7 +3304,11 @@
       "id": "f295",
       "it": "Senza che nessuno glielo avesse chiesto, si è offerto di restare a fare gli straordinari.",
       "en": "Without anyone having asked him, he volunteered to stay and work overtime.",
-      "tag": ["senza-che", "congiuntivo-trapassato", "spontaneità"],
+      "tag": [
+        "senza-che",
+        "congiuntivo-trapassato",
+        "spontaneità"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2874,7 +3316,11 @@
       "id": "f296",
       "it": "Il piano prevedeva che i lavori si concludessero entro l'estate.",
       "en": "The plan stipulated that the works would be completed by summer.",
-      "tag": ["prevedere-che", "congiuntivo-imperfetto", "pianificazione"],
+      "tag": [
+        "prevedere-che",
+        "congiuntivo-imperfetto",
+        "pianificazione"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2882,7 +3328,11 @@
       "id": "f297",
       "it": "Pur non condividendo le sue posizioni, ne rispetto l'onestà intellettuale.",
       "en": "Though not sharing his positions, I respect his intellectual honesty.",
-      "tag": ["pur-non-gerundio", "concessiva", "formale"],
+      "tag": [
+        "pur-non-gerundio",
+        "concessiva",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2890,7 +3340,10 @@
       "id": "f298",
       "it": "Sotto certi aspetti, la situazione di allora non era poi così diversa da quella attuale.",
       "en": "In certain respects, the situation back then was not so different from the current one.",
-      "tag": ["sotto-certi-aspetti", "confronto"],
+      "tag": [
+        "sotto-certi-aspetti",
+        "confronto"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2898,7 +3351,11 @@
       "id": "f299",
       "it": "Il direttore ha precisato che le modifiche sarebbero state apportate gradualmente.",
       "en": "The director clarified that the changes would be introduced gradually.",
-      "tag": ["discorso-indiretto", "condizionale-passato", "lavoro"],
+      "tag": [
+        "discorso-indiretto",
+        "condizionale-passato",
+        "lavoro"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2906,7 +3363,11 @@
       "id": "f300",
       "it": "Malgrado tutto, sono convinto che la cosa migliore sia andare avanti.",
       "en": "Despite everything, I am convinced that the best thing is to press on.",
-      "tag": ["malgrado", "congiuntivo-presente", "determinazione"],
+      "tag": [
+        "malgrado",
+        "congiuntivo-presente",
+        "determinazione"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2914,7 +3375,10 @@
       "id": "f301",
       "it": "Si è impegnata a tal punto che alla fine ce l'ha fatta contro ogni aspettativa.",
       "en": "She worked so hard that in the end she succeeded against all expectations.",
-      "tag": ["a-tal-punto-che", "idioma-farcela"],
+      "tag": [
+        "a-tal-punto-che",
+        "idioma-farcela"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2922,7 +3386,11 @@
       "id": "f302",
       "it": "Avendo passato anni a studiare quella lingua, sa cogliere ogni sfumatura.",
       "en": "Having spent years studying that language, she can catch every nuance.",
-      "tag": ["gerundio-passato", "lingue", "lessico-avanzato"],
+      "tag": [
+        "gerundio-passato",
+        "lingue",
+        "lessico-avanzato"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2930,7 +3398,11 @@
       "id": "f303",
       "it": "A quanto pare, la proposta non ha convinto la maggioranza dei consiglieri.",
       "en": "Apparently, the proposal did not convince the majority of the councillors.",
-      "tag": ["a-quanto-pare", "formale", "politica"],
+      "tag": [
+        "a-quanto-pare",
+        "formale",
+        "politica"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2938,7 +3410,11 @@
       "id": "f304",
       "it": "Nell'ipotesi in cui non si trovasse un accordo, si andrebbe a nuove elezioni.",
       "en": "In the event that no agreement is reached, there would be new elections.",
-      "tag": ["nell-ipotesi-in-cui", "congiuntivo-imperfetto", "politica"],
+      "tag": [
+        "nell-ipotesi-in-cui",
+        "congiuntivo-imperfetto",
+        "politica"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2946,7 +3422,11 @@
       "id": "f305",
       "it": "Perché tutto funzioni, occorre che ogni componente faccia la sua parte.",
       "en": "For everything to work, it is necessary for each member to play their part.",
-      "tag": ["perché-congiuntivo", "occorre-che", "obiettivo"],
+      "tag": [
+        "perché-congiuntivo",
+        "occorre-che",
+        "obiettivo"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2954,7 +3434,10 @@
       "id": "f306",
       "it": "Senza voler fare confronti, devo ammettere che questo approccio funziona meglio.",
       "en": "Without wanting to make comparisons, I must admit that this approach works better.",
-      "tag": ["senza-voler-gerundio", "formale"],
+      "tag": [
+        "senza-voler-gerundio",
+        "formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2962,7 +3445,10 @@
       "id": "f307",
       "it": "A dispetto delle previsioni negative, l'azienda ha chiuso l'anno in utile.",
       "en": "In spite of the negative forecasts, the company ended the year in profit.",
-      "tag": ["a-dispetto-di", "economia"],
+      "tag": [
+        "a-dispetto-di",
+        "economia"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2970,7 +3456,11 @@
       "id": "f308",
       "it": "Ne consegue che tutte le misure prese in precedenza vanno riconsiderate.",
       "en": "It follows that all the measures previously taken need to be reconsidered.",
-      "tag": ["ne-consegue", "andare-modale", "logica-formale"],
+      "tag": [
+        "ne-consegue",
+        "andare-modale",
+        "logica-formale"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2978,7 +3468,11 @@
       "id": "f309",
       "it": "Pur avendo ricevuto molte critiche, l'artista non ha mai cambiato il proprio stile.",
       "en": "Despite having received much criticism, the artist never changed her own style.",
-      "tag": ["pur-avendo-gerundio-passato", "concessiva", "arte"],
+      "tag": [
+        "pur-avendo-gerundio-passato",
+        "concessiva",
+        "arte"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     },
@@ -2986,7 +3480,11 @@
       "id": "f310",
       "it": "Si presume che il documento sia stato redatto intorno al XV secolo.",
       "en": "It is presumed that the document was drawn up around the fifteenth century.",
-      "tag": ["si-presume-che", "congiuntivo-passato", "storia"],
+      "tag": [
+        "si-presume-che",
+        "congiuntivo-passato",
+        "storia"
+      ],
       "difficolta": 3,
       "aggiunto": "2026-06-10"
     }
@@ -19376,8 +19874,26 @@
           "saremmo",
           "sareste",
           "sarebbero"
+        ],
+        "indic.passrem": [
+          "fui",
+          "fosti",
+          "fu",
+          "fummo",
+          "foste",
+          "furono"
+        ],
+        "imperativo": [
+          "",
+          "sii",
+          "sia",
+          "siamo",
+          "siate",
+          "siano"
         ]
-      }
+      },
+      "pp": "stato",
+      "aux": "essere"
     },
     {
       "inf": "avere",
@@ -19431,8 +19947,26 @@
           "avremmo",
           "avreste",
           "avrebbero"
+        ],
+        "indic.passrem": [
+          "ebbi",
+          "avesti",
+          "ebbe",
+          "avemmo",
+          "aveste",
+          "ebbero"
+        ],
+        "imperativo": [
+          "",
+          "abbi",
+          "abbia",
+          "abbiamo",
+          "abbiate",
+          "abbiano"
         ]
-      }
+      },
+      "pp": "avuto",
+      "aux": "avere"
     },
     {
       "inf": "parlare",
@@ -19486,8 +20020,26 @@
           "parleremmo",
           "parlereste",
           "parlerebbero"
+        ],
+        "indic.passrem": [
+          "parlai",
+          "parlasti",
+          "parlò",
+          "parlammo",
+          "parlaste",
+          "parlarono"
+        ],
+        "imperativo": [
+          "",
+          "parla",
+          "parli",
+          "parliamo",
+          "parlate",
+          "parlino"
         ]
-      }
+      },
+      "pp": "parlato",
+      "aux": "avere"
     },
     {
       "inf": "credere",
@@ -19541,8 +20093,26 @@
           "crederemmo",
           "credereste",
           "crederebbero"
+        ],
+        "indic.passrem": [
+          "credei",
+          "credesti",
+          "credé",
+          "credemmo",
+          "credeste",
+          "crederono"
+        ],
+        "imperativo": [
+          "",
+          "credi",
+          "creda",
+          "crediamo",
+          "credete",
+          "credano"
         ]
-      }
+      },
+      "pp": "creduto",
+      "aux": "avere"
     },
     {
       "inf": "partire",
@@ -19596,8 +20166,26 @@
           "partiremmo",
           "partireste",
           "partirebbero"
+        ],
+        "indic.passrem": [
+          "partii",
+          "partisti",
+          "partì",
+          "partimmo",
+          "partiste",
+          "partirono"
+        ],
+        "imperativo": [
+          "",
+          "parti",
+          "parta",
+          "partiamo",
+          "partite",
+          "partano"
         ]
-      }
+      },
+      "pp": "partito",
+      "aux": "essere"
     },
     {
       "inf": "capire",
@@ -19651,8 +20239,26 @@
           "capiremmo",
           "capireste",
           "capirebbero"
+        ],
+        "indic.passrem": [
+          "capii",
+          "capisti",
+          "capì",
+          "capimmo",
+          "capiste",
+          "capirono"
+        ],
+        "imperativo": [
+          "",
+          "capisci",
+          "capisca",
+          "capiamo",
+          "capite",
+          "capiscano"
         ]
-      }
+      },
+      "pp": "capito",
+      "aux": "avere"
     },
     {
       "inf": "fare",
@@ -19706,8 +20312,26 @@
           "faremmo",
           "fareste",
           "farebbero"
+        ],
+        "indic.passrem": [
+          "feci",
+          "facesti",
+          "fece",
+          "facemmo",
+          "faceste",
+          "fecero"
+        ],
+        "imperativo": [
+          "",
+          "fai",
+          "faccia",
+          "facciamo",
+          "fate",
+          "facciano"
         ]
-      }
+      },
+      "pp": "fatto",
+      "aux": "avere"
     },
     {
       "inf": "andare",
@@ -19761,8 +20385,26 @@
           "andremmo",
           "andreste",
           "andrebbero"
+        ],
+        "indic.passrem": [
+          "andai",
+          "andasti",
+          "andò",
+          "andammo",
+          "andaste",
+          "andarono"
+        ],
+        "imperativo": [
+          "",
+          "vai",
+          "vada",
+          "andiamo",
+          "andate",
+          "vadano"
         ]
-      }
+      },
+      "pp": "andato",
+      "aux": "essere"
     },
     {
       "inf": "venire",
@@ -19816,8 +20458,26 @@
           "verremmo",
           "verreste",
           "verrebbero"
+        ],
+        "indic.passrem": [
+          "venni",
+          "venisti",
+          "venne",
+          "venimmo",
+          "veniste",
+          "vennero"
+        ],
+        "imperativo": [
+          "",
+          "vieni",
+          "venga",
+          "veniamo",
+          "venite",
+          "vengano"
         ]
-      }
+      },
+      "pp": "venuto",
+      "aux": "essere"
     },
     {
       "inf": "potere",
@@ -19871,8 +20531,18 @@
           "potremmo",
           "potreste",
           "potrebbero"
+        ],
+        "indic.passrem": [
+          "potei",
+          "potesti",
+          "poté",
+          "potemmo",
+          "poteste",
+          "poterono"
         ]
-      }
+      },
+      "pp": "potuto",
+      "aux": "avere"
     },
     {
       "inf": "dovere",
@@ -19926,8 +20596,18 @@
           "dovremmo",
           "dovreste",
           "dovrebbero"
+        ],
+        "indic.passrem": [
+          "dovetti",
+          "dovesti",
+          "dovette",
+          "dovemmo",
+          "doveste",
+          "dovettero"
         ]
-      }
+      },
+      "pp": "dovuto",
+      "aux": "avere"
     },
     {
       "inf": "volere",
@@ -19981,8 +20661,18 @@
           "vorremmo",
           "vorreste",
           "vorrebbero"
+        ],
+        "indic.passrem": [
+          "volli",
+          "volesti",
+          "volle",
+          "volemmo",
+          "voleste",
+          "vollero"
         ]
-      }
+      },
+      "pp": "voluto",
+      "aux": "avere"
     },
     {
       "inf": "dire",
@@ -20036,8 +20726,26 @@
           "diremmo",
           "direste",
           "direbbero"
+        ],
+        "indic.passrem": [
+          "dissi",
+          "dicesti",
+          "disse",
+          "dicemmo",
+          "diceste",
+          "dissero"
+        ],
+        "imperativo": [
+          "",
+          "di'",
+          "dica",
+          "diciamo",
+          "dite",
+          "dicano"
         ]
-      }
+      },
+      "pp": "detto",
+      "aux": "avere"
     },
     {
       "inf": "dare",
@@ -20091,8 +20799,26 @@
           "daremmo",
           "dareste",
           "darebbero"
+        ],
+        "indic.passrem": [
+          "diedi",
+          "desti",
+          "diede",
+          "demmo",
+          "deste",
+          "diedero"
+        ],
+        "imperativo": [
+          "",
+          "dai",
+          "dia",
+          "diamo",
+          "date",
+          "diano"
         ]
-      }
+      },
+      "pp": "dato",
+      "aux": "avere"
     },
     {
       "inf": "stare",
@@ -20146,8 +20872,26 @@
           "staremmo",
           "stareste",
           "starebbero"
+        ],
+        "indic.passrem": [
+          "stetti",
+          "stesti",
+          "stette",
+          "stemmo",
+          "steste",
+          "stettero"
+        ],
+        "imperativo": [
+          "",
+          "stai",
+          "stia",
+          "stiamo",
+          "state",
+          "stiano"
         ]
-      }
+      },
+      "pp": "stato",
+      "aux": "essere"
     },
     {
       "inf": "sapere",
@@ -20201,8 +20945,26 @@
           "sapremmo",
           "sapreste",
           "saprebbero"
+        ],
+        "indic.passrem": [
+          "seppi",
+          "sapesti",
+          "seppe",
+          "sapemmo",
+          "sapeste",
+          "seppero"
+        ],
+        "imperativo": [
+          "",
+          "sappi",
+          "sappia",
+          "sappiamo",
+          "sappiate",
+          "sappiano"
         ]
-      }
+      },
+      "pp": "saputo",
+      "aux": "avere"
     },
     {
       "inf": "vedere",
@@ -20256,8 +21018,26 @@
           "vedremmo",
           "vedreste",
           "vedrebbero"
+        ],
+        "indic.passrem": [
+          "vidi",
+          "vedesti",
+          "vide",
+          "vedemmo",
+          "vedeste",
+          "videro"
+        ],
+        "imperativo": [
+          "",
+          "vedi",
+          "veda",
+          "vediamo",
+          "vedete",
+          "vedano"
         ]
-      }
+      },
+      "pp": "visto",
+      "aux": "avere"
     },
     {
       "inf": "prendere",
@@ -20311,8 +21091,26 @@
           "prenderemmo",
           "prendereste",
           "prenderebbero"
+        ],
+        "indic.passrem": [
+          "presi",
+          "prendesti",
+          "prese",
+          "prendemmo",
+          "prendeste",
+          "presero"
+        ],
+        "imperativo": [
+          "",
+          "prendi",
+          "prenda",
+          "prendiamo",
+          "prendete",
+          "prendano"
         ]
-      }
+      },
+      "pp": "preso",
+      "aux": "avere"
     },
     {
       "inf": "mettere",
@@ -20366,8 +21164,26 @@
           "metteremmo",
           "mettereste",
           "metterebbero"
+        ],
+        "indic.passrem": [
+          "misi",
+          "mettesti",
+          "mise",
+          "mettemmo",
+          "metteste",
+          "misero"
+        ],
+        "imperativo": [
+          "",
+          "metti",
+          "metta",
+          "mettiamo",
+          "mettete",
+          "mettano"
         ]
-      }
+      },
+      "pp": "messo",
+      "aux": "avere"
     },
     {
       "inf": "vivere",
@@ -20421,8 +21237,26 @@
           "vivremmo",
           "vivreste",
           "vivrebbero"
+        ],
+        "indic.passrem": [
+          "vissi",
+          "vivesti",
+          "visse",
+          "vivemmo",
+          "viveste",
+          "vissero"
+        ],
+        "imperativo": [
+          "",
+          "vivi",
+          "viva",
+          "viviamo",
+          "vivete",
+          "vivano"
         ]
-      }
+      },
+      "pp": "vissuto",
+      "aux": "avere"
     },
     {
       "inf": "bere",
@@ -20476,8 +21310,26 @@
           "berremmo",
           "berreste",
           "berrebbero"
+        ],
+        "indic.passrem": [
+          "bevvi",
+          "bevesti",
+          "bevve",
+          "bevemmo",
+          "beveste",
+          "bevvero"
+        ],
+        "imperativo": [
+          "",
+          "bevi",
+          "beva",
+          "beviamo",
+          "bevete",
+          "bevano"
         ]
-      }
+      },
+      "pp": "bevuto",
+      "aux": "avere"
     },
     {
       "inf": "rimanere",
@@ -20531,8 +21383,26 @@
           "rimarremmo",
           "rimarreste",
           "rimarrebbero"
+        ],
+        "indic.passrem": [
+          "rimasi",
+          "rimanesti",
+          "rimase",
+          "rimanemmo",
+          "rimaneste",
+          "rimasero"
+        ],
+        "imperativo": [
+          "",
+          "rimani",
+          "rimanga",
+          "rimaniamo",
+          "rimanete",
+          "rimangano"
         ]
-      }
+      },
+      "pp": "rimasto",
+      "aux": "essere"
     },
     {
       "inf": "tenere",
@@ -20586,8 +21456,26 @@
           "terremmo",
           "terreste",
           "terrebbero"
+        ],
+        "indic.passrem": [
+          "tenni",
+          "tenesti",
+          "tenne",
+          "tenemmo",
+          "teneste",
+          "tennero"
+        ],
+        "imperativo": [
+          "",
+          "tieni",
+          "tenga",
+          "teniamo",
+          "tenete",
+          "tengano"
         ]
-      }
+      },
+      "pp": "tenuto",
+      "aux": "avere"
     },
     {
       "inf": "uscire",
@@ -20641,6 +21529,4112 @@
           "usciremmo",
           "uscireste",
           "uscirebbero"
+        ],
+        "indic.passrem": [
+          "uscii",
+          "uscisti",
+          "uscì",
+          "uscimmo",
+          "usciste",
+          "uscirono"
+        ],
+        "imperativo": [
+          "",
+          "esci",
+          "esca",
+          "usciamo",
+          "uscite",
+          "escano"
+        ]
+      },
+      "pp": "uscito",
+      "aux": "essere"
+    },
+    {
+      "inf": "amare",
+      "en": "to love",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "amato",
+      "coniugazioni": {
+        "indic.pres": [
+          "amo",
+          "ami",
+          "ama",
+          "amiamo",
+          "amate",
+          "amano"
+        ],
+        "indic.imperf": [
+          "amavo",
+          "amavi",
+          "amava",
+          "amavamo",
+          "amavate",
+          "amavano"
+        ],
+        "indic.passrem": [
+          "amai",
+          "amasti",
+          "amò",
+          "amammo",
+          "amaste",
+          "amarono"
+        ],
+        "indic.futuro": [
+          "amerò",
+          "amerai",
+          "amerà",
+          "ameremo",
+          "amerete",
+          "ameranno"
+        ],
+        "cong.pres": [
+          "ami",
+          "ami",
+          "ami",
+          "amiamo",
+          "amiate",
+          "amino"
+        ],
+        "cong.imperf": [
+          "amassi",
+          "amassi",
+          "amasse",
+          "amassimo",
+          "amaste",
+          "amassero"
+        ],
+        "cond.pres": [
+          "amerei",
+          "ameresti",
+          "amerebbe",
+          "ameremmo",
+          "amereste",
+          "amerebbero"
+        ],
+        "imperativo": [
+          "",
+          "ama",
+          "ami",
+          "amiamo",
+          "amate",
+          "amino"
+        ]
+      }
+    },
+    {
+      "inf": "aspettare",
+      "en": "to wait",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "aspettato",
+      "coniugazioni": {
+        "indic.pres": [
+          "aspetto",
+          "aspetti",
+          "aspetta",
+          "aspettiamo",
+          "aspettate",
+          "aspettano"
+        ],
+        "indic.imperf": [
+          "aspettavo",
+          "aspettavi",
+          "aspettava",
+          "aspettavamo",
+          "aspettavate",
+          "aspettavano"
+        ],
+        "indic.passrem": [
+          "aspettai",
+          "aspettasti",
+          "aspettò",
+          "aspettammo",
+          "aspettaste",
+          "aspettarono"
+        ],
+        "indic.futuro": [
+          "aspetterò",
+          "aspetterai",
+          "aspetterà",
+          "aspetteremo",
+          "aspetterete",
+          "aspetteranno"
+        ],
+        "cong.pres": [
+          "aspetti",
+          "aspetti",
+          "aspetti",
+          "aspettiamo",
+          "aspettiate",
+          "aspettino"
+        ],
+        "cong.imperf": [
+          "aspettassi",
+          "aspettassi",
+          "aspettasse",
+          "aspettassimo",
+          "aspettaste",
+          "aspettassero"
+        ],
+        "cond.pres": [
+          "aspetterei",
+          "aspetteresti",
+          "aspetterebbe",
+          "aspetteremmo",
+          "aspettereste",
+          "aspetterebbero"
+        ],
+        "imperativo": [
+          "",
+          "aspetta",
+          "aspetti",
+          "aspettiamo",
+          "aspettate",
+          "aspettino"
+        ]
+      }
+    },
+    {
+      "inf": "ascoltare",
+      "en": "to listen",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "ascoltato",
+      "coniugazioni": {
+        "indic.pres": [
+          "ascolto",
+          "ascolti",
+          "ascolta",
+          "ascoltiamo",
+          "ascoltate",
+          "ascoltano"
+        ],
+        "indic.imperf": [
+          "ascoltavo",
+          "ascoltavi",
+          "ascoltava",
+          "ascoltavamo",
+          "ascoltavate",
+          "ascoltavano"
+        ],
+        "indic.passrem": [
+          "ascoltai",
+          "ascoltasti",
+          "ascoltò",
+          "ascoltammo",
+          "ascoltaste",
+          "ascoltarono"
+        ],
+        "indic.futuro": [
+          "ascolterò",
+          "ascolterai",
+          "ascolterà",
+          "ascolteremo",
+          "ascolterete",
+          "ascolteranno"
+        ],
+        "cong.pres": [
+          "ascolti",
+          "ascolti",
+          "ascolti",
+          "ascoltiamo",
+          "ascoltiate",
+          "ascoltino"
+        ],
+        "cong.imperf": [
+          "ascoltassi",
+          "ascoltassi",
+          "ascoltasse",
+          "ascoltassimo",
+          "ascoltaste",
+          "ascoltassero"
+        ],
+        "cond.pres": [
+          "ascolterei",
+          "ascolteresti",
+          "ascolterebbe",
+          "ascolteremmo",
+          "ascoltereste",
+          "ascolterebbero"
+        ],
+        "imperativo": [
+          "",
+          "ascolta",
+          "ascolti",
+          "ascoltiamo",
+          "ascoltate",
+          "ascoltino"
+        ]
+      }
+    },
+    {
+      "inf": "cantare",
+      "en": "to sing",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "cantato",
+      "coniugazioni": {
+        "indic.pres": [
+          "canto",
+          "canti",
+          "canta",
+          "cantiamo",
+          "cantate",
+          "cantano"
+        ],
+        "indic.imperf": [
+          "cantavo",
+          "cantavi",
+          "cantava",
+          "cantavamo",
+          "cantavate",
+          "cantavano"
+        ],
+        "indic.passrem": [
+          "cantai",
+          "cantasti",
+          "cantò",
+          "cantammo",
+          "cantaste",
+          "cantarono"
+        ],
+        "indic.futuro": [
+          "canterò",
+          "canterai",
+          "canterà",
+          "canteremo",
+          "canterete",
+          "canteranno"
+        ],
+        "cong.pres": [
+          "canti",
+          "canti",
+          "canti",
+          "cantiamo",
+          "cantiate",
+          "cantino"
+        ],
+        "cong.imperf": [
+          "cantassi",
+          "cantassi",
+          "cantasse",
+          "cantassimo",
+          "cantaste",
+          "cantassero"
+        ],
+        "cond.pres": [
+          "canterei",
+          "canteresti",
+          "canterebbe",
+          "canteremmo",
+          "cantereste",
+          "canterebbero"
+        ],
+        "imperativo": [
+          "",
+          "canta",
+          "canti",
+          "cantiamo",
+          "cantate",
+          "cantino"
+        ]
+      }
+    },
+    {
+      "inf": "chiamare",
+      "en": "to call",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "chiamato",
+      "coniugazioni": {
+        "indic.pres": [
+          "chiamo",
+          "chiami",
+          "chiama",
+          "chiamiamo",
+          "chiamate",
+          "chiamano"
+        ],
+        "indic.imperf": [
+          "chiamavo",
+          "chiamavi",
+          "chiamava",
+          "chiamavamo",
+          "chiamavate",
+          "chiamavano"
+        ],
+        "indic.passrem": [
+          "chiamai",
+          "chiamasti",
+          "chiamò",
+          "chiamammo",
+          "chiamaste",
+          "chiamarono"
+        ],
+        "indic.futuro": [
+          "chiamerò",
+          "chiamerai",
+          "chiamerà",
+          "chiameremo",
+          "chiamerete",
+          "chiameranno"
+        ],
+        "cong.pres": [
+          "chiami",
+          "chiami",
+          "chiami",
+          "chiamiamo",
+          "chiamiate",
+          "chiamino"
+        ],
+        "cong.imperf": [
+          "chiamassi",
+          "chiamassi",
+          "chiamasse",
+          "chiamassimo",
+          "chiamaste",
+          "chiamassero"
+        ],
+        "cond.pres": [
+          "chiamerei",
+          "chiameresti",
+          "chiamerebbe",
+          "chiameremmo",
+          "chiamereste",
+          "chiamerebbero"
+        ],
+        "imperativo": [
+          "",
+          "chiama",
+          "chiami",
+          "chiamiamo",
+          "chiamate",
+          "chiamino"
+        ]
+      }
+    },
+    {
+      "inf": "comprare",
+      "en": "to buy",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "comprato",
+      "coniugazioni": {
+        "indic.pres": [
+          "compro",
+          "compri",
+          "compra",
+          "compriamo",
+          "comprate",
+          "comprano"
+        ],
+        "indic.imperf": [
+          "compravo",
+          "compravi",
+          "comprava",
+          "compravamo",
+          "compravate",
+          "compravano"
+        ],
+        "indic.passrem": [
+          "comprai",
+          "comprasti",
+          "comprò",
+          "comprammo",
+          "compraste",
+          "comprarono"
+        ],
+        "indic.futuro": [
+          "comprerò",
+          "comprerai",
+          "comprerà",
+          "compreremo",
+          "comprerete",
+          "compreranno"
+        ],
+        "cong.pres": [
+          "compri",
+          "compri",
+          "compri",
+          "compriamo",
+          "compriate",
+          "comprino"
+        ],
+        "cong.imperf": [
+          "comprassi",
+          "comprassi",
+          "comprasse",
+          "comprassimo",
+          "compraste",
+          "comprassero"
+        ],
+        "cond.pres": [
+          "comprerei",
+          "compreresti",
+          "comprerebbe",
+          "compreremmo",
+          "comprereste",
+          "comprerebbero"
+        ],
+        "imperativo": [
+          "",
+          "compra",
+          "compri",
+          "compriamo",
+          "comprate",
+          "comprino"
+        ]
+      }
+    },
+    {
+      "inf": "cucinare",
+      "en": "to cook",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "cucinato",
+      "coniugazioni": {
+        "indic.pres": [
+          "cucino",
+          "cucini",
+          "cucina",
+          "cuciniamo",
+          "cucinate",
+          "cucinano"
+        ],
+        "indic.imperf": [
+          "cucinavo",
+          "cucinavi",
+          "cucinava",
+          "cucinavamo",
+          "cucinavate",
+          "cucinavano"
+        ],
+        "indic.passrem": [
+          "cucinai",
+          "cucinasti",
+          "cucinò",
+          "cucinammo",
+          "cucinaste",
+          "cucinarono"
+        ],
+        "indic.futuro": [
+          "cucinerò",
+          "cucinerai",
+          "cucinerà",
+          "cucineremo",
+          "cucinerete",
+          "cucineranno"
+        ],
+        "cong.pres": [
+          "cucini",
+          "cucini",
+          "cucini",
+          "cuciniamo",
+          "cuciniate",
+          "cucinino"
+        ],
+        "cong.imperf": [
+          "cucinassi",
+          "cucinassi",
+          "cucinasse",
+          "cucinassimo",
+          "cucinaste",
+          "cucinassero"
+        ],
+        "cond.pres": [
+          "cucinerei",
+          "cucineresti",
+          "cucinerebbe",
+          "cucineremmo",
+          "cucinereste",
+          "cucinerebbero"
+        ],
+        "imperativo": [
+          "",
+          "cucina",
+          "cucini",
+          "cuciniamo",
+          "cucinate",
+          "cucinino"
+        ]
+      }
+    },
+    {
+      "inf": "guardare",
+      "en": "to watch",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "guardato",
+      "coniugazioni": {
+        "indic.pres": [
+          "guardo",
+          "guardi",
+          "guarda",
+          "guardiamo",
+          "guardate",
+          "guardano"
+        ],
+        "indic.imperf": [
+          "guardavo",
+          "guardavi",
+          "guardava",
+          "guardavamo",
+          "guardavate",
+          "guardavano"
+        ],
+        "indic.passrem": [
+          "guardai",
+          "guardasti",
+          "guardò",
+          "guardammo",
+          "guardaste",
+          "guardarono"
+        ],
+        "indic.futuro": [
+          "guarderò",
+          "guarderai",
+          "guarderà",
+          "guarderemo",
+          "guarderete",
+          "guarderanno"
+        ],
+        "cong.pres": [
+          "guardi",
+          "guardi",
+          "guardi",
+          "guardiamo",
+          "guardiate",
+          "guardino"
+        ],
+        "cong.imperf": [
+          "guardassi",
+          "guardassi",
+          "guardasse",
+          "guardassimo",
+          "guardaste",
+          "guardassero"
+        ],
+        "cond.pres": [
+          "guarderei",
+          "guarderesti",
+          "guarderebbe",
+          "guarderemmo",
+          "guardereste",
+          "guarderebbero"
+        ],
+        "imperativo": [
+          "",
+          "guarda",
+          "guardi",
+          "guardiamo",
+          "guardate",
+          "guardino"
+        ]
+      }
+    },
+    {
+      "inf": "imparare",
+      "en": "to learn",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "imparato",
+      "coniugazioni": {
+        "indic.pres": [
+          "imparo",
+          "impari",
+          "impara",
+          "impariamo",
+          "imparate",
+          "imparano"
+        ],
+        "indic.imperf": [
+          "imparavo",
+          "imparavi",
+          "imparava",
+          "imparavamo",
+          "imparavate",
+          "imparavano"
+        ],
+        "indic.passrem": [
+          "imparai",
+          "imparasti",
+          "imparò",
+          "imparammo",
+          "imparaste",
+          "impararono"
+        ],
+        "indic.futuro": [
+          "imparerò",
+          "imparerai",
+          "imparerà",
+          "impareremo",
+          "imparerete",
+          "impareranno"
+        ],
+        "cong.pres": [
+          "impari",
+          "impari",
+          "impari",
+          "impariamo",
+          "impariate",
+          "imparino"
+        ],
+        "cong.imperf": [
+          "imparassi",
+          "imparassi",
+          "imparasse",
+          "imparassimo",
+          "imparaste",
+          "imparassero"
+        ],
+        "cond.pres": [
+          "imparerei",
+          "impareresti",
+          "imparerebbe",
+          "impareremmo",
+          "imparereste",
+          "imparerebbero"
+        ],
+        "imperativo": [
+          "",
+          "impara",
+          "impari",
+          "impariamo",
+          "imparate",
+          "imparino"
+        ]
+      }
+    },
+    {
+      "inf": "lavorare",
+      "en": "to work",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "lavorato",
+      "coniugazioni": {
+        "indic.pres": [
+          "lavoro",
+          "lavori",
+          "lavora",
+          "lavoriamo",
+          "lavorate",
+          "lavorano"
+        ],
+        "indic.imperf": [
+          "lavoravo",
+          "lavoravi",
+          "lavorava",
+          "lavoravamo",
+          "lavoravate",
+          "lavoravano"
+        ],
+        "indic.passrem": [
+          "lavorai",
+          "lavorasti",
+          "lavorò",
+          "lavorammo",
+          "lavoraste",
+          "lavorarono"
+        ],
+        "indic.futuro": [
+          "lavorerò",
+          "lavorerai",
+          "lavorerà",
+          "lavoreremo",
+          "lavorerete",
+          "lavoreranno"
+        ],
+        "cong.pres": [
+          "lavori",
+          "lavori",
+          "lavori",
+          "lavoriamo",
+          "lavoriate",
+          "lavorino"
+        ],
+        "cong.imperf": [
+          "lavorassi",
+          "lavorassi",
+          "lavorasse",
+          "lavorassimo",
+          "lavoraste",
+          "lavorassero"
+        ],
+        "cond.pres": [
+          "lavorerei",
+          "lavoreresti",
+          "lavorerebbe",
+          "lavoreremmo",
+          "lavorereste",
+          "lavorerebbero"
+        ],
+        "imperativo": [
+          "",
+          "lavora",
+          "lavori",
+          "lavoriamo",
+          "lavorate",
+          "lavorino"
+        ]
+      }
+    },
+    {
+      "inf": "lavare",
+      "en": "to wash",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "lavato",
+      "coniugazioni": {
+        "indic.pres": [
+          "lavo",
+          "lavi",
+          "lava",
+          "laviamo",
+          "lavate",
+          "lavano"
+        ],
+        "indic.imperf": [
+          "lavavo",
+          "lavavi",
+          "lavava",
+          "lavavamo",
+          "lavavate",
+          "lavavano"
+        ],
+        "indic.passrem": [
+          "lavai",
+          "lavasti",
+          "lavò",
+          "lavammo",
+          "lavaste",
+          "lavarono"
+        ],
+        "indic.futuro": [
+          "laverò",
+          "laverai",
+          "laverà",
+          "laveremo",
+          "laverete",
+          "laveranno"
+        ],
+        "cong.pres": [
+          "lavi",
+          "lavi",
+          "lavi",
+          "laviamo",
+          "laviate",
+          "lavino"
+        ],
+        "cong.imperf": [
+          "lavassi",
+          "lavassi",
+          "lavasse",
+          "lavassimo",
+          "lavaste",
+          "lavassero"
+        ],
+        "cond.pres": [
+          "laverei",
+          "laveresti",
+          "laverebbe",
+          "laveremmo",
+          "lavereste",
+          "laverebbero"
+        ],
+        "imperativo": [
+          "",
+          "lava",
+          "lavi",
+          "laviamo",
+          "lavate",
+          "lavino"
+        ]
+      }
+    },
+    {
+      "inf": "pensare",
+      "en": "to think",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "pensato",
+      "coniugazioni": {
+        "indic.pres": [
+          "penso",
+          "pensi",
+          "pensa",
+          "pensiamo",
+          "pensate",
+          "pensano"
+        ],
+        "indic.imperf": [
+          "pensavo",
+          "pensavi",
+          "pensava",
+          "pensavamo",
+          "pensavate",
+          "pensavano"
+        ],
+        "indic.passrem": [
+          "pensai",
+          "pensasti",
+          "pensò",
+          "pensammo",
+          "pensaste",
+          "pensarono"
+        ],
+        "indic.futuro": [
+          "penserò",
+          "penserai",
+          "penserà",
+          "penseremo",
+          "penserete",
+          "penseranno"
+        ],
+        "cong.pres": [
+          "pensi",
+          "pensi",
+          "pensi",
+          "pensiamo",
+          "pensiate",
+          "pensino"
+        ],
+        "cong.imperf": [
+          "pensassi",
+          "pensassi",
+          "pensasse",
+          "pensassimo",
+          "pensaste",
+          "pensassero"
+        ],
+        "cond.pres": [
+          "penserei",
+          "penseresti",
+          "penserebbe",
+          "penseremmo",
+          "pensereste",
+          "penserebbero"
+        ],
+        "imperativo": [
+          "",
+          "pensa",
+          "pensi",
+          "pensiamo",
+          "pensate",
+          "pensino"
+        ]
+      }
+    },
+    {
+      "inf": "portare",
+      "en": "to bring",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "portato",
+      "coniugazioni": {
+        "indic.pres": [
+          "porto",
+          "porti",
+          "porta",
+          "portiamo",
+          "portate",
+          "portano"
+        ],
+        "indic.imperf": [
+          "portavo",
+          "portavi",
+          "portava",
+          "portavamo",
+          "portavate",
+          "portavano"
+        ],
+        "indic.passrem": [
+          "portai",
+          "portasti",
+          "portò",
+          "portammo",
+          "portaste",
+          "portarono"
+        ],
+        "indic.futuro": [
+          "porterò",
+          "porterai",
+          "porterà",
+          "porteremo",
+          "porterete",
+          "porteranno"
+        ],
+        "cong.pres": [
+          "porti",
+          "porti",
+          "porti",
+          "portiamo",
+          "portiate",
+          "portino"
+        ],
+        "cong.imperf": [
+          "portassi",
+          "portassi",
+          "portasse",
+          "portassimo",
+          "portaste",
+          "portassero"
+        ],
+        "cond.pres": [
+          "porterei",
+          "porteresti",
+          "porterebbe",
+          "porteremmo",
+          "portereste",
+          "porterebbero"
+        ],
+        "imperativo": [
+          "",
+          "porta",
+          "porti",
+          "portiamo",
+          "portate",
+          "portino"
+        ]
+      }
+    },
+    {
+      "inf": "provare",
+      "en": "to try",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "provato",
+      "coniugazioni": {
+        "indic.pres": [
+          "provo",
+          "provi",
+          "prova",
+          "proviamo",
+          "provate",
+          "provano"
+        ],
+        "indic.imperf": [
+          "provavo",
+          "provavi",
+          "provava",
+          "provavamo",
+          "provavate",
+          "provavano"
+        ],
+        "indic.passrem": [
+          "provai",
+          "provasti",
+          "provò",
+          "provammo",
+          "provaste",
+          "provarono"
+        ],
+        "indic.futuro": [
+          "proverò",
+          "proverai",
+          "proverà",
+          "proveremo",
+          "proverete",
+          "proveranno"
+        ],
+        "cong.pres": [
+          "provi",
+          "provi",
+          "provi",
+          "proviamo",
+          "proviate",
+          "provino"
+        ],
+        "cong.imperf": [
+          "provassi",
+          "provassi",
+          "provasse",
+          "provassimo",
+          "provaste",
+          "provassero"
+        ],
+        "cond.pres": [
+          "proverei",
+          "proveresti",
+          "proverebbe",
+          "proveremmo",
+          "provereste",
+          "proverebbero"
+        ],
+        "imperativo": [
+          "",
+          "prova",
+          "provi",
+          "proviamo",
+          "provate",
+          "provino"
+        ]
+      }
+    },
+    {
+      "inf": "telefonare",
+      "en": "to phone",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "telefonato",
+      "coniugazioni": {
+        "indic.pres": [
+          "telefono",
+          "telefoni",
+          "telefona",
+          "telefoniamo",
+          "telefonate",
+          "telefonano"
+        ],
+        "indic.imperf": [
+          "telefonavo",
+          "telefonavi",
+          "telefonava",
+          "telefonavamo",
+          "telefonavate",
+          "telefonavano"
+        ],
+        "indic.passrem": [
+          "telefonai",
+          "telefonasti",
+          "telefonò",
+          "telefonammo",
+          "telefonaste",
+          "telefonarono"
+        ],
+        "indic.futuro": [
+          "telefonerò",
+          "telefonerai",
+          "telefonerà",
+          "telefoneremo",
+          "telefonerete",
+          "telefoneranno"
+        ],
+        "cong.pres": [
+          "telefoni",
+          "telefoni",
+          "telefoni",
+          "telefoniamo",
+          "telefoniate",
+          "telefonino"
+        ],
+        "cong.imperf": [
+          "telefonassi",
+          "telefonassi",
+          "telefonasse",
+          "telefonassimo",
+          "telefonaste",
+          "telefonassero"
+        ],
+        "cond.pres": [
+          "telefonerei",
+          "telefoneresti",
+          "telefonerebbe",
+          "telefoneremmo",
+          "telefonereste",
+          "telefonerebbero"
+        ],
+        "imperativo": [
+          "",
+          "telefona",
+          "telefoni",
+          "telefoniamo",
+          "telefonate",
+          "telefonino"
+        ]
+      }
+    },
+    {
+      "inf": "trovare",
+      "en": "to find",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "trovato",
+      "coniugazioni": {
+        "indic.pres": [
+          "trovo",
+          "trovi",
+          "trova",
+          "troviamo",
+          "trovate",
+          "trovano"
+        ],
+        "indic.imperf": [
+          "trovavo",
+          "trovavi",
+          "trovava",
+          "trovavamo",
+          "trovavate",
+          "trovavano"
+        ],
+        "indic.passrem": [
+          "trovai",
+          "trovasti",
+          "trovò",
+          "trovammo",
+          "trovaste",
+          "trovarono"
+        ],
+        "indic.futuro": [
+          "troverò",
+          "troverai",
+          "troverà",
+          "troveremo",
+          "troverete",
+          "troveranno"
+        ],
+        "cong.pres": [
+          "trovi",
+          "trovi",
+          "trovi",
+          "troviamo",
+          "troviate",
+          "trovino"
+        ],
+        "cong.imperf": [
+          "trovassi",
+          "trovassi",
+          "trovasse",
+          "trovassimo",
+          "trovaste",
+          "trovassero"
+        ],
+        "cond.pres": [
+          "troverei",
+          "troveresti",
+          "troverebbe",
+          "troveremmo",
+          "trovereste",
+          "troverebbero"
+        ],
+        "imperativo": [
+          "",
+          "trova",
+          "trovi",
+          "troviamo",
+          "trovate",
+          "trovino"
+        ]
+      }
+    },
+    {
+      "inf": "usare",
+      "en": "to use",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "usato",
+      "coniugazioni": {
+        "indic.pres": [
+          "uso",
+          "usi",
+          "usa",
+          "usiamo",
+          "usate",
+          "usano"
+        ],
+        "indic.imperf": [
+          "usavo",
+          "usavi",
+          "usava",
+          "usavamo",
+          "usavate",
+          "usavano"
+        ],
+        "indic.passrem": [
+          "usai",
+          "usasti",
+          "usò",
+          "usammo",
+          "usaste",
+          "usarono"
+        ],
+        "indic.futuro": [
+          "userò",
+          "userai",
+          "userà",
+          "useremo",
+          "userete",
+          "useranno"
+        ],
+        "cong.pres": [
+          "usi",
+          "usi",
+          "usi",
+          "usiamo",
+          "usiate",
+          "usino"
+        ],
+        "cong.imperf": [
+          "usassi",
+          "usassi",
+          "usasse",
+          "usassimo",
+          "usaste",
+          "usassero"
+        ],
+        "cond.pres": [
+          "userei",
+          "useresti",
+          "userebbe",
+          "useremmo",
+          "usereste",
+          "userebbero"
+        ],
+        "imperativo": [
+          "",
+          "usa",
+          "usi",
+          "usiamo",
+          "usate",
+          "usino"
+        ]
+      }
+    },
+    {
+      "inf": "abitare",
+      "en": "to live (reside)",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "abitato",
+      "coniugazioni": {
+        "indic.pres": [
+          "abito",
+          "abiti",
+          "abita",
+          "abitiamo",
+          "abitate",
+          "abitano"
+        ],
+        "indic.imperf": [
+          "abitavo",
+          "abitavi",
+          "abitava",
+          "abitavamo",
+          "abitavate",
+          "abitavano"
+        ],
+        "indic.passrem": [
+          "abitai",
+          "abitasti",
+          "abitò",
+          "abitammo",
+          "abitaste",
+          "abitarono"
+        ],
+        "indic.futuro": [
+          "abiterò",
+          "abiterai",
+          "abiterà",
+          "abiteremo",
+          "abiterete",
+          "abiteranno"
+        ],
+        "cong.pres": [
+          "abiti",
+          "abiti",
+          "abiti",
+          "abitiamo",
+          "abitiate",
+          "abitino"
+        ],
+        "cong.imperf": [
+          "abitassi",
+          "abitassi",
+          "abitasse",
+          "abitassimo",
+          "abitaste",
+          "abitassero"
+        ],
+        "cond.pres": [
+          "abiterei",
+          "abiteresti",
+          "abiterebbe",
+          "abiteremmo",
+          "abitereste",
+          "abiterebbero"
+        ],
+        "imperativo": [
+          "",
+          "abita",
+          "abiti",
+          "abitiamo",
+          "abitate",
+          "abitino"
+        ]
+      }
+    },
+    {
+      "inf": "incontrare",
+      "en": "to meet",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "incontrato",
+      "coniugazioni": {
+        "indic.pres": [
+          "incontro",
+          "incontri",
+          "incontra",
+          "incontriamo",
+          "incontrate",
+          "incontrano"
+        ],
+        "indic.imperf": [
+          "incontravo",
+          "incontravi",
+          "incontrava",
+          "incontravamo",
+          "incontravate",
+          "incontravano"
+        ],
+        "indic.passrem": [
+          "incontrai",
+          "incontrasti",
+          "incontrò",
+          "incontrammo",
+          "incontraste",
+          "incontrarono"
+        ],
+        "indic.futuro": [
+          "incontrerò",
+          "incontrerai",
+          "incontrerà",
+          "incontreremo",
+          "incontrerete",
+          "incontreranno"
+        ],
+        "cong.pres": [
+          "incontri",
+          "incontri",
+          "incontri",
+          "incontriamo",
+          "incontriate",
+          "incontrino"
+        ],
+        "cong.imperf": [
+          "incontrassi",
+          "incontrassi",
+          "incontrasse",
+          "incontrassimo",
+          "incontraste",
+          "incontrassero"
+        ],
+        "cond.pres": [
+          "incontrerei",
+          "incontreresti",
+          "incontrerebbe",
+          "incontreremmo",
+          "incontrereste",
+          "incontrerebbero"
+        ],
+        "imperativo": [
+          "",
+          "incontra",
+          "incontri",
+          "incontriamo",
+          "incontrate",
+          "incontrino"
+        ]
+      }
+    },
+    {
+      "inf": "ricordare",
+      "en": "to remember",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "ricordato",
+      "coniugazioni": {
+        "indic.pres": [
+          "ricordo",
+          "ricordi",
+          "ricorda",
+          "ricordiamo",
+          "ricordate",
+          "ricordano"
+        ],
+        "indic.imperf": [
+          "ricordavo",
+          "ricordavi",
+          "ricordava",
+          "ricordavamo",
+          "ricordavate",
+          "ricordavano"
+        ],
+        "indic.passrem": [
+          "ricordai",
+          "ricordasti",
+          "ricordò",
+          "ricordammo",
+          "ricordaste",
+          "ricordarono"
+        ],
+        "indic.futuro": [
+          "ricorderò",
+          "ricorderai",
+          "ricorderà",
+          "ricorderemo",
+          "ricorderete",
+          "ricorderanno"
+        ],
+        "cong.pres": [
+          "ricordi",
+          "ricordi",
+          "ricordi",
+          "ricordiamo",
+          "ricordiate",
+          "ricordino"
+        ],
+        "cong.imperf": [
+          "ricordassi",
+          "ricordassi",
+          "ricordasse",
+          "ricordassimo",
+          "ricordaste",
+          "ricordassero"
+        ],
+        "cond.pres": [
+          "ricorderei",
+          "ricorderesti",
+          "ricorderebbe",
+          "ricorderemmo",
+          "ricordereste",
+          "ricorderebbero"
+        ],
+        "imperativo": [
+          "",
+          "ricorda",
+          "ricordi",
+          "ricordiamo",
+          "ricordate",
+          "ricordino"
+        ]
+      }
+    },
+    {
+      "inf": "desiderare",
+      "en": "to wish",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "desiderato",
+      "coniugazioni": {
+        "indic.pres": [
+          "desidero",
+          "desideri",
+          "desidera",
+          "desideriamo",
+          "desiderate",
+          "desiderano"
+        ],
+        "indic.imperf": [
+          "desideravo",
+          "desideravi",
+          "desiderava",
+          "desideravamo",
+          "desideravate",
+          "desideravano"
+        ],
+        "indic.passrem": [
+          "desiderai",
+          "desiderasti",
+          "desiderò",
+          "desiderammo",
+          "desideraste",
+          "desiderarono"
+        ],
+        "indic.futuro": [
+          "desidererò",
+          "desidererai",
+          "desidererà",
+          "desidereremo",
+          "desidererete",
+          "desidereranno"
+        ],
+        "cong.pres": [
+          "desideri",
+          "desideri",
+          "desideri",
+          "desideriamo",
+          "desideriate",
+          "desiderino"
+        ],
+        "cong.imperf": [
+          "desiderassi",
+          "desiderassi",
+          "desiderasse",
+          "desiderassimo",
+          "desideraste",
+          "desiderassero"
+        ],
+        "cond.pres": [
+          "desidererei",
+          "desidereresti",
+          "desidererebbe",
+          "desidereremmo",
+          "desiderereste",
+          "desidererebbero"
+        ],
+        "imperativo": [
+          "",
+          "desidera",
+          "desideri",
+          "desideriamo",
+          "desiderate",
+          "desiderino"
+        ]
+      }
+    },
+    {
+      "inf": "raccontare",
+      "en": "to tell",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "raccontato",
+      "coniugazioni": {
+        "indic.pres": [
+          "racconto",
+          "racconti",
+          "racconta",
+          "raccontiamo",
+          "raccontate",
+          "raccontano"
+        ],
+        "indic.imperf": [
+          "raccontavo",
+          "raccontavi",
+          "raccontava",
+          "raccontavamo",
+          "raccontavate",
+          "raccontavano"
+        ],
+        "indic.passrem": [
+          "raccontai",
+          "raccontasti",
+          "raccontò",
+          "raccontammo",
+          "raccontaste",
+          "raccontarono"
+        ],
+        "indic.futuro": [
+          "racconterò",
+          "racconterai",
+          "racconterà",
+          "racconteremo",
+          "racconterete",
+          "racconteranno"
+        ],
+        "cong.pres": [
+          "racconti",
+          "racconti",
+          "racconti",
+          "raccontiamo",
+          "raccontiate",
+          "raccontino"
+        ],
+        "cong.imperf": [
+          "raccontassi",
+          "raccontassi",
+          "raccontasse",
+          "raccontassimo",
+          "raccontaste",
+          "raccontassero"
+        ],
+        "cond.pres": [
+          "racconterei",
+          "racconteresti",
+          "racconterebbe",
+          "racconteremmo",
+          "raccontereste",
+          "racconterebbero"
+        ],
+        "imperativo": [
+          "",
+          "racconta",
+          "racconti",
+          "raccontiamo",
+          "raccontate",
+          "raccontino"
+        ]
+      }
+    },
+    {
+      "inf": "salutare",
+      "en": "to greet",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "salutato",
+      "coniugazioni": {
+        "indic.pres": [
+          "saluto",
+          "saluti",
+          "saluta",
+          "salutiamo",
+          "salutate",
+          "salutano"
+        ],
+        "indic.imperf": [
+          "salutavo",
+          "salutavi",
+          "salutava",
+          "salutavamo",
+          "salutavate",
+          "salutavano"
+        ],
+        "indic.passrem": [
+          "salutai",
+          "salutasti",
+          "salutò",
+          "salutammo",
+          "salutaste",
+          "salutarono"
+        ],
+        "indic.futuro": [
+          "saluterò",
+          "saluterai",
+          "saluterà",
+          "saluteremo",
+          "saluterete",
+          "saluteranno"
+        ],
+        "cong.pres": [
+          "saluti",
+          "saluti",
+          "saluti",
+          "salutiamo",
+          "salutiate",
+          "salutino"
+        ],
+        "cong.imperf": [
+          "salutassi",
+          "salutassi",
+          "salutasse",
+          "salutassimo",
+          "salutaste",
+          "salutassero"
+        ],
+        "cond.pres": [
+          "saluterei",
+          "saluteresti",
+          "saluterebbe",
+          "saluteremmo",
+          "salutereste",
+          "saluterebbero"
+        ],
+        "imperativo": [
+          "",
+          "saluta",
+          "saluti",
+          "salutiamo",
+          "salutate",
+          "salutino"
+        ]
+      }
+    },
+    {
+      "inf": "suonare",
+      "en": "to play (instrument)",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "suonato",
+      "coniugazioni": {
+        "indic.pres": [
+          "suono",
+          "suoni",
+          "suona",
+          "suoniamo",
+          "suonate",
+          "suonano"
+        ],
+        "indic.imperf": [
+          "suonavo",
+          "suonavi",
+          "suonava",
+          "suonavamo",
+          "suonavate",
+          "suonavano"
+        ],
+        "indic.passrem": [
+          "suonai",
+          "suonasti",
+          "suonò",
+          "suonammo",
+          "suonaste",
+          "suonarono"
+        ],
+        "indic.futuro": [
+          "suonerò",
+          "suonerai",
+          "suonerà",
+          "suoneremo",
+          "suonerete",
+          "suoneranno"
+        ],
+        "cong.pres": [
+          "suoni",
+          "suoni",
+          "suoni",
+          "suoniamo",
+          "suoniate",
+          "suonino"
+        ],
+        "cong.imperf": [
+          "suonassi",
+          "suonassi",
+          "suonasse",
+          "suonassimo",
+          "suonaste",
+          "suonassero"
+        ],
+        "cond.pres": [
+          "suonerei",
+          "suoneresti",
+          "suonerebbe",
+          "suoneremmo",
+          "suonereste",
+          "suonerebbero"
+        ],
+        "imperativo": [
+          "",
+          "suona",
+          "suoni",
+          "suoniamo",
+          "suonate",
+          "suonino"
+        ]
+      }
+    },
+    {
+      "inf": "camminare",
+      "en": "to walk",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "camminato",
+      "coniugazioni": {
+        "indic.pres": [
+          "cammino",
+          "cammini",
+          "cammina",
+          "camminiamo",
+          "camminate",
+          "camminano"
+        ],
+        "indic.imperf": [
+          "camminavo",
+          "camminavi",
+          "camminava",
+          "camminavamo",
+          "camminavate",
+          "camminavano"
+        ],
+        "indic.passrem": [
+          "camminai",
+          "camminasti",
+          "camminò",
+          "camminammo",
+          "camminaste",
+          "camminarono"
+        ],
+        "indic.futuro": [
+          "camminerò",
+          "camminerai",
+          "camminerà",
+          "cammineremo",
+          "camminerete",
+          "cammineranno"
+        ],
+        "cong.pres": [
+          "cammini",
+          "cammini",
+          "cammini",
+          "camminiamo",
+          "camminiate",
+          "camminino"
+        ],
+        "cong.imperf": [
+          "camminassi",
+          "camminassi",
+          "camminasse",
+          "camminassimo",
+          "camminaste",
+          "camminassero"
+        ],
+        "cond.pres": [
+          "camminerei",
+          "cammineresti",
+          "camminerebbe",
+          "cammineremmo",
+          "camminereste",
+          "camminerebbero"
+        ],
+        "imperativo": [
+          "",
+          "cammina",
+          "cammini",
+          "camminiamo",
+          "camminate",
+          "camminino"
+        ]
+      }
+    },
+    {
+      "inf": "nuotare",
+      "en": "to swim",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "nuotato",
+      "coniugazioni": {
+        "indic.pres": [
+          "nuoto",
+          "nuoti",
+          "nuota",
+          "nuotiamo",
+          "nuotate",
+          "nuotano"
+        ],
+        "indic.imperf": [
+          "nuotavo",
+          "nuotavi",
+          "nuotava",
+          "nuotavamo",
+          "nuotavate",
+          "nuotavano"
+        ],
+        "indic.passrem": [
+          "nuotai",
+          "nuotasti",
+          "nuotò",
+          "nuotammo",
+          "nuotaste",
+          "nuotarono"
+        ],
+        "indic.futuro": [
+          "nuoterò",
+          "nuoterai",
+          "nuoterà",
+          "nuoteremo",
+          "nuoterete",
+          "nuoteranno"
+        ],
+        "cong.pres": [
+          "nuoti",
+          "nuoti",
+          "nuoti",
+          "nuotiamo",
+          "nuotiate",
+          "nuotino"
+        ],
+        "cong.imperf": [
+          "nuotassi",
+          "nuotassi",
+          "nuotasse",
+          "nuotassimo",
+          "nuotaste",
+          "nuotassero"
+        ],
+        "cond.pres": [
+          "nuoterei",
+          "nuoteresti",
+          "nuoterebbe",
+          "nuoteremmo",
+          "nuotereste",
+          "nuoterebbero"
+        ],
+        "imperativo": [
+          "",
+          "nuota",
+          "nuoti",
+          "nuotiamo",
+          "nuotate",
+          "nuotino"
+        ]
+      }
+    },
+    {
+      "inf": "domandare",
+      "en": "to ask",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "domandato",
+      "coniugazioni": {
+        "indic.pres": [
+          "domando",
+          "domandi",
+          "domanda",
+          "domandiamo",
+          "domandate",
+          "domandano"
+        ],
+        "indic.imperf": [
+          "domandavo",
+          "domandavi",
+          "domandava",
+          "domandavamo",
+          "domandavate",
+          "domandavano"
+        ],
+        "indic.passrem": [
+          "domandai",
+          "domandasti",
+          "domandò",
+          "domandammo",
+          "domandaste",
+          "domandarono"
+        ],
+        "indic.futuro": [
+          "domanderò",
+          "domanderai",
+          "domanderà",
+          "domanderemo",
+          "domanderete",
+          "domanderanno"
+        ],
+        "cong.pres": [
+          "domandi",
+          "domandi",
+          "domandi",
+          "domandiamo",
+          "domandiate",
+          "domandino"
+        ],
+        "cong.imperf": [
+          "domandassi",
+          "domandassi",
+          "domandasse",
+          "domandassimo",
+          "domandaste",
+          "domandassero"
+        ],
+        "cond.pres": [
+          "domanderei",
+          "domanderesti",
+          "domanderebbe",
+          "domanderemmo",
+          "domandereste",
+          "domanderebbero"
+        ],
+        "imperativo": [
+          "",
+          "domanda",
+          "domandi",
+          "domandiamo",
+          "domandate",
+          "domandino"
+        ]
+      }
+    },
+    {
+      "inf": "dimostrare",
+      "en": "to show",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "dimostrato",
+      "coniugazioni": {
+        "indic.pres": [
+          "dimostro",
+          "dimostri",
+          "dimostra",
+          "dimostriamo",
+          "dimostrate",
+          "dimostrano"
+        ],
+        "indic.imperf": [
+          "dimostravo",
+          "dimostravi",
+          "dimostrava",
+          "dimostravamo",
+          "dimostravate",
+          "dimostravano"
+        ],
+        "indic.passrem": [
+          "dimostrai",
+          "dimostrasti",
+          "dimostrò",
+          "dimostrammo",
+          "dimostraste",
+          "dimostrarono"
+        ],
+        "indic.futuro": [
+          "dimostrerò",
+          "dimostrerai",
+          "dimostrerà",
+          "dimostreremo",
+          "dimostrerete",
+          "dimostreranno"
+        ],
+        "cong.pres": [
+          "dimostri",
+          "dimostri",
+          "dimostri",
+          "dimostriamo",
+          "dimostriate",
+          "dimostrino"
+        ],
+        "cong.imperf": [
+          "dimostrassi",
+          "dimostrassi",
+          "dimostrasse",
+          "dimostrassimo",
+          "dimostraste",
+          "dimostrassero"
+        ],
+        "cond.pres": [
+          "dimostrerei",
+          "dimostreresti",
+          "dimostrerebbe",
+          "dimostreremmo",
+          "dimostrereste",
+          "dimostrerebbero"
+        ],
+        "imperativo": [
+          "",
+          "dimostra",
+          "dimostri",
+          "dimostriamo",
+          "dimostrate",
+          "dimostrino"
+        ]
+      }
+    },
+    {
+      "inf": "arrivare",
+      "en": "to arrive",
+      "gruppo": "reg",
+      "aux": "essere",
+      "pp": "arrivato",
+      "coniugazioni": {
+        "indic.pres": [
+          "arrivo",
+          "arrivi",
+          "arriva",
+          "arriviamo",
+          "arrivate",
+          "arrivano"
+        ],
+        "indic.imperf": [
+          "arrivavo",
+          "arrivavi",
+          "arrivava",
+          "arrivavamo",
+          "arrivavate",
+          "arrivavano"
+        ],
+        "indic.passrem": [
+          "arrivai",
+          "arrivasti",
+          "arrivò",
+          "arrivammo",
+          "arrivaste",
+          "arrivarono"
+        ],
+        "indic.futuro": [
+          "arriverò",
+          "arriverai",
+          "arriverà",
+          "arriveremo",
+          "arriverete",
+          "arriveranno"
+        ],
+        "cong.pres": [
+          "arrivi",
+          "arrivi",
+          "arrivi",
+          "arriviamo",
+          "arriviate",
+          "arrivino"
+        ],
+        "cong.imperf": [
+          "arrivassi",
+          "arrivassi",
+          "arrivasse",
+          "arrivassimo",
+          "arrivaste",
+          "arrivassero"
+        ],
+        "cond.pres": [
+          "arriverei",
+          "arriveresti",
+          "arriverebbe",
+          "arriveremmo",
+          "arrivereste",
+          "arriverebbero"
+        ],
+        "imperativo": [
+          "",
+          "arriva",
+          "arrivi",
+          "arriviamo",
+          "arrivate",
+          "arrivino"
+        ]
+      }
+    },
+    {
+      "inf": "entrare",
+      "en": "to enter",
+      "gruppo": "reg",
+      "aux": "essere",
+      "pp": "entrato",
+      "coniugazioni": {
+        "indic.pres": [
+          "entro",
+          "entri",
+          "entra",
+          "entriamo",
+          "entrate",
+          "entrano"
+        ],
+        "indic.imperf": [
+          "entravo",
+          "entravi",
+          "entrava",
+          "entravamo",
+          "entravate",
+          "entravano"
+        ],
+        "indic.passrem": [
+          "entrai",
+          "entrasti",
+          "entrò",
+          "entrammo",
+          "entraste",
+          "entrarono"
+        ],
+        "indic.futuro": [
+          "entrerò",
+          "entrerai",
+          "entrerà",
+          "entreremo",
+          "entrerete",
+          "entreranno"
+        ],
+        "cong.pres": [
+          "entri",
+          "entri",
+          "entri",
+          "entriamo",
+          "entriate",
+          "entrino"
+        ],
+        "cong.imperf": [
+          "entrassi",
+          "entrassi",
+          "entrasse",
+          "entrassimo",
+          "entraste",
+          "entrassero"
+        ],
+        "cond.pres": [
+          "entrerei",
+          "entreresti",
+          "entrerebbe",
+          "entreremmo",
+          "entrereste",
+          "entrerebbero"
+        ],
+        "imperativo": [
+          "",
+          "entra",
+          "entri",
+          "entriamo",
+          "entrate",
+          "entrino"
+        ]
+      }
+    },
+    {
+      "inf": "tornare",
+      "en": "to return",
+      "gruppo": "reg",
+      "aux": "essere",
+      "pp": "tornato",
+      "coniugazioni": {
+        "indic.pres": [
+          "torno",
+          "torni",
+          "torna",
+          "torniamo",
+          "tornate",
+          "tornano"
+        ],
+        "indic.imperf": [
+          "tornavo",
+          "tornavi",
+          "tornava",
+          "tornavamo",
+          "tornavate",
+          "tornavano"
+        ],
+        "indic.passrem": [
+          "tornai",
+          "tornasti",
+          "tornò",
+          "tornammo",
+          "tornaste",
+          "tornarono"
+        ],
+        "indic.futuro": [
+          "tornerò",
+          "tornerai",
+          "tornerà",
+          "torneremo",
+          "tornerete",
+          "torneranno"
+        ],
+        "cong.pres": [
+          "torni",
+          "torni",
+          "torni",
+          "torniamo",
+          "torniate",
+          "tornino"
+        ],
+        "cong.imperf": [
+          "tornassi",
+          "tornassi",
+          "tornasse",
+          "tornassimo",
+          "tornaste",
+          "tornassero"
+        ],
+        "cond.pres": [
+          "tornerei",
+          "torneresti",
+          "tornerebbe",
+          "torneremmo",
+          "tornereste",
+          "tornerebbero"
+        ],
+        "imperativo": [
+          "",
+          "torna",
+          "torni",
+          "torniamo",
+          "tornate",
+          "tornino"
+        ]
+      }
+    },
+    {
+      "inf": "restare",
+      "en": "to stay",
+      "gruppo": "reg",
+      "aux": "essere",
+      "pp": "restato",
+      "coniugazioni": {
+        "indic.pres": [
+          "resto",
+          "resti",
+          "resta",
+          "restiamo",
+          "restate",
+          "restano"
+        ],
+        "indic.imperf": [
+          "restavo",
+          "restavi",
+          "restava",
+          "restavamo",
+          "restavate",
+          "restavano"
+        ],
+        "indic.passrem": [
+          "restai",
+          "restasti",
+          "restò",
+          "restammo",
+          "restaste",
+          "restarono"
+        ],
+        "indic.futuro": [
+          "resterò",
+          "resterai",
+          "resterà",
+          "resteremo",
+          "resterete",
+          "resteranno"
+        ],
+        "cong.pres": [
+          "resti",
+          "resti",
+          "resti",
+          "restiamo",
+          "restiate",
+          "restino"
+        ],
+        "cong.imperf": [
+          "restassi",
+          "restassi",
+          "restasse",
+          "restassimo",
+          "restaste",
+          "restassero"
+        ],
+        "cond.pres": [
+          "resterei",
+          "resteresti",
+          "resterebbe",
+          "resteremmo",
+          "restereste",
+          "resterebbero"
+        ],
+        "imperativo": [
+          "",
+          "resta",
+          "resti",
+          "restiamo",
+          "restate",
+          "restino"
+        ]
+      }
+    },
+    {
+      "inf": "diventare",
+      "en": "to become",
+      "gruppo": "reg",
+      "aux": "essere",
+      "pp": "diventato",
+      "coniugazioni": {
+        "indic.pres": [
+          "divento",
+          "diventi",
+          "diventa",
+          "diventiamo",
+          "diventate",
+          "diventano"
+        ],
+        "indic.imperf": [
+          "diventavo",
+          "diventavi",
+          "diventava",
+          "diventavamo",
+          "diventavate",
+          "diventavano"
+        ],
+        "indic.passrem": [
+          "diventai",
+          "diventasti",
+          "diventò",
+          "diventammo",
+          "diventaste",
+          "diventarono"
+        ],
+        "indic.futuro": [
+          "diventerò",
+          "diventerai",
+          "diventerà",
+          "diventeremo",
+          "diventerete",
+          "diventeranno"
+        ],
+        "cong.pres": [
+          "diventi",
+          "diventi",
+          "diventi",
+          "diventiamo",
+          "diventiate",
+          "diventino"
+        ],
+        "cong.imperf": [
+          "diventassi",
+          "diventassi",
+          "diventasse",
+          "diventassimo",
+          "diventaste",
+          "diventassero"
+        ],
+        "cond.pres": [
+          "diventerei",
+          "diventeresti",
+          "diventerebbe",
+          "diventeremmo",
+          "diventereste",
+          "diventerebbero"
+        ],
+        "imperativo": [
+          "",
+          "diventa",
+          "diventi",
+          "diventiamo",
+          "diventate",
+          "diventino"
+        ]
+      }
+    },
+    {
+      "inf": "cercare",
+      "en": "to search",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "cercato",
+      "coniugazioni": {
+        "indic.pres": [
+          "cerco",
+          "cerchi",
+          "cerca",
+          "cerchiamo",
+          "cercate",
+          "cercano"
+        ],
+        "indic.imperf": [
+          "cercavo",
+          "cercavi",
+          "cercava",
+          "cercavamo",
+          "cercavate",
+          "cercavano"
+        ],
+        "indic.passrem": [
+          "cercai",
+          "cercasti",
+          "cercò",
+          "cercammo",
+          "cercaste",
+          "cercarono"
+        ],
+        "indic.futuro": [
+          "cercherò",
+          "cercherai",
+          "cercherà",
+          "cercheremo",
+          "cercherete",
+          "cercheranno"
+        ],
+        "cong.pres": [
+          "cerchi",
+          "cerchi",
+          "cerchi",
+          "cerchiamo",
+          "cerchiate",
+          "cerchino"
+        ],
+        "cong.imperf": [
+          "cercassi",
+          "cercassi",
+          "cercasse",
+          "cercassimo",
+          "cercaste",
+          "cercassero"
+        ],
+        "cond.pres": [
+          "cercherei",
+          "cercheresti",
+          "cercherebbe",
+          "cercheremmo",
+          "cerchereste",
+          "cercherebbero"
+        ],
+        "imperativo": [
+          "",
+          "cerca",
+          "cerchi",
+          "cerchiamo",
+          "cercate",
+          "cerchino"
+        ]
+      }
+    },
+    {
+      "inf": "giocare",
+      "en": "to play",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "giocato",
+      "coniugazioni": {
+        "indic.pres": [
+          "gioco",
+          "giochi",
+          "gioca",
+          "giochiamo",
+          "giocate",
+          "giocano"
+        ],
+        "indic.imperf": [
+          "giocavo",
+          "giocavi",
+          "giocava",
+          "giocavamo",
+          "giocavate",
+          "giocavano"
+        ],
+        "indic.passrem": [
+          "giocai",
+          "giocasti",
+          "giocò",
+          "giocammo",
+          "giocaste",
+          "giocarono"
+        ],
+        "indic.futuro": [
+          "giocherò",
+          "giocherai",
+          "giocherà",
+          "giocheremo",
+          "giocherete",
+          "giocheranno"
+        ],
+        "cong.pres": [
+          "giochi",
+          "giochi",
+          "giochi",
+          "giochiamo",
+          "giochiate",
+          "giochino"
+        ],
+        "cong.imperf": [
+          "giocassi",
+          "giocassi",
+          "giocasse",
+          "giocassimo",
+          "giocaste",
+          "giocassero"
+        ],
+        "cond.pres": [
+          "giocherei",
+          "giocheresti",
+          "giocherebbe",
+          "giocheremmo",
+          "giochereste",
+          "giocherebbero"
+        ],
+        "imperativo": [
+          "",
+          "gioca",
+          "giochi",
+          "giochiamo",
+          "giocate",
+          "giochino"
+        ]
+      }
+    },
+    {
+      "inf": "pagare",
+      "en": "to pay",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "pagato",
+      "coniugazioni": {
+        "indic.pres": [
+          "pago",
+          "paghi",
+          "paga",
+          "paghiamo",
+          "pagate",
+          "pagano"
+        ],
+        "indic.imperf": [
+          "pagavo",
+          "pagavi",
+          "pagava",
+          "pagavamo",
+          "pagavate",
+          "pagavano"
+        ],
+        "indic.passrem": [
+          "pagai",
+          "pagasti",
+          "pagò",
+          "pagammo",
+          "pagaste",
+          "pagarono"
+        ],
+        "indic.futuro": [
+          "pagherò",
+          "pagherai",
+          "pagherà",
+          "pagheremo",
+          "pagherete",
+          "pagheranno"
+        ],
+        "cong.pres": [
+          "paghi",
+          "paghi",
+          "paghi",
+          "paghiamo",
+          "paghiate",
+          "paghino"
+        ],
+        "cong.imperf": [
+          "pagassi",
+          "pagassi",
+          "pagasse",
+          "pagassimo",
+          "pagaste",
+          "pagassero"
+        ],
+        "cond.pres": [
+          "pagherei",
+          "pagheresti",
+          "pagherebbe",
+          "pagheremmo",
+          "paghereste",
+          "pagherebbero"
+        ],
+        "imperativo": [
+          "",
+          "paga",
+          "paghi",
+          "paghiamo",
+          "pagate",
+          "paghino"
+        ]
+      }
+    },
+    {
+      "inf": "pregare",
+      "en": "to pray",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "pregato",
+      "coniugazioni": {
+        "indic.pres": [
+          "prego",
+          "preghi",
+          "prega",
+          "preghiamo",
+          "pregate",
+          "pregano"
+        ],
+        "indic.imperf": [
+          "pregavo",
+          "pregavi",
+          "pregava",
+          "pregavamo",
+          "pregavate",
+          "pregavano"
+        ],
+        "indic.passrem": [
+          "pregai",
+          "pregasti",
+          "pregò",
+          "pregammo",
+          "pregaste",
+          "pregarono"
+        ],
+        "indic.futuro": [
+          "pregherò",
+          "pregherai",
+          "pregherà",
+          "pregheremo",
+          "pregherete",
+          "pregheranno"
+        ],
+        "cong.pres": [
+          "preghi",
+          "preghi",
+          "preghi",
+          "preghiamo",
+          "preghiate",
+          "preghino"
+        ],
+        "cong.imperf": [
+          "pregassi",
+          "pregassi",
+          "pregasse",
+          "pregassimo",
+          "pregaste",
+          "pregassero"
+        ],
+        "cond.pres": [
+          "pregherei",
+          "pregheresti",
+          "pregherebbe",
+          "pregheremmo",
+          "preghereste",
+          "pregherebbero"
+        ],
+        "imperativo": [
+          "",
+          "prega",
+          "preghi",
+          "preghiamo",
+          "pregate",
+          "preghino"
+        ]
+      }
+    },
+    {
+      "inf": "spiegare",
+      "en": "to explain",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "spiegato",
+      "coniugazioni": {
+        "indic.pres": [
+          "spiego",
+          "spieghi",
+          "spiega",
+          "spieghiamo",
+          "spiegate",
+          "spiegano"
+        ],
+        "indic.imperf": [
+          "spiegavo",
+          "spiegavi",
+          "spiegava",
+          "spiegavamo",
+          "spiegavate",
+          "spiegavano"
+        ],
+        "indic.passrem": [
+          "spiegai",
+          "spiegasti",
+          "spiegò",
+          "spiegammo",
+          "spiegaste",
+          "spiegarono"
+        ],
+        "indic.futuro": [
+          "spiegherò",
+          "spiegherai",
+          "spiegherà",
+          "spiegheremo",
+          "spiegherete",
+          "spiegheranno"
+        ],
+        "cong.pres": [
+          "spieghi",
+          "spieghi",
+          "spieghi",
+          "spieghiamo",
+          "spieghiate",
+          "spieghino"
+        ],
+        "cong.imperf": [
+          "spiegassi",
+          "spiegassi",
+          "spiegasse",
+          "spiegassimo",
+          "spiegaste",
+          "spiegassero"
+        ],
+        "cond.pres": [
+          "spiegherei",
+          "spiegheresti",
+          "spiegherebbe",
+          "spiegheremmo",
+          "spieghereste",
+          "spiegherebbero"
+        ],
+        "imperativo": [
+          "",
+          "spiega",
+          "spieghi",
+          "spieghiamo",
+          "spiegate",
+          "spieghino"
+        ]
+      }
+    },
+    {
+      "inf": "ricevere",
+      "en": "to receive",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "ricevuto",
+      "coniugazioni": {
+        "indic.pres": [
+          "ricevo",
+          "ricevi",
+          "riceve",
+          "riceviamo",
+          "ricevete",
+          "ricevono"
+        ],
+        "indic.imperf": [
+          "ricevevo",
+          "ricevevi",
+          "riceveva",
+          "ricevevamo",
+          "ricevevate",
+          "ricevevano"
+        ],
+        "indic.passrem": [
+          "ricevei",
+          "ricevesti",
+          "ricevé",
+          "ricevemmo",
+          "riceveste",
+          "riceverono"
+        ],
+        "indic.futuro": [
+          "riceverò",
+          "riceverai",
+          "riceverà",
+          "riceveremo",
+          "riceverete",
+          "riceveranno"
+        ],
+        "cong.pres": [
+          "riceva",
+          "riceva",
+          "riceva",
+          "riceviamo",
+          "riceviate",
+          "ricevano"
+        ],
+        "cong.imperf": [
+          "ricevessi",
+          "ricevessi",
+          "ricevesse",
+          "ricevessimo",
+          "riceveste",
+          "ricevessero"
+        ],
+        "cond.pres": [
+          "riceverei",
+          "riceveresti",
+          "riceverebbe",
+          "riceveremmo",
+          "ricevereste",
+          "riceverebbero"
+        ],
+        "imperativo": [
+          "",
+          "ricevi",
+          "riceva",
+          "riceviamo",
+          "ricevete",
+          "ricevano"
+        ]
+      }
+    },
+    {
+      "inf": "vendere",
+      "en": "to sell",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "venduto",
+      "coniugazioni": {
+        "indic.pres": [
+          "vendo",
+          "vendi",
+          "vende",
+          "vendiamo",
+          "vendete",
+          "vendono"
+        ],
+        "indic.imperf": [
+          "vendevo",
+          "vendevi",
+          "vendeva",
+          "vendevamo",
+          "vendevate",
+          "vendevano"
+        ],
+        "indic.passrem": [
+          "vendei",
+          "vendesti",
+          "vendé",
+          "vendemmo",
+          "vendeste",
+          "venderono"
+        ],
+        "indic.futuro": [
+          "venderò",
+          "venderai",
+          "venderà",
+          "venderemo",
+          "venderete",
+          "venderanno"
+        ],
+        "cong.pres": [
+          "venda",
+          "venda",
+          "venda",
+          "vendiamo",
+          "vendiate",
+          "vendano"
+        ],
+        "cong.imperf": [
+          "vendessi",
+          "vendessi",
+          "vendesse",
+          "vendessimo",
+          "vendeste",
+          "vendessero"
+        ],
+        "cond.pres": [
+          "venderei",
+          "venderesti",
+          "venderebbe",
+          "venderemmo",
+          "vendereste",
+          "venderebbero"
+        ],
+        "imperativo": [
+          "",
+          "vendi",
+          "venda",
+          "vendiamo",
+          "vendete",
+          "vendano"
+        ]
+      }
+    },
+    {
+      "inf": "ripetere",
+      "en": "to repeat",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "ripetuto",
+      "coniugazioni": {
+        "indic.pres": [
+          "ripeto",
+          "ripeti",
+          "ripete",
+          "ripetiamo",
+          "ripetete",
+          "ripetono"
+        ],
+        "indic.imperf": [
+          "ripetevo",
+          "ripetevi",
+          "ripeteva",
+          "ripetevamo",
+          "ripetevate",
+          "ripetevano"
+        ],
+        "indic.passrem": [
+          "ripetei",
+          "ripetesti",
+          "ripeté",
+          "ripetemmo",
+          "ripeteste",
+          "ripeterono"
+        ],
+        "indic.futuro": [
+          "ripeterò",
+          "ripeterai",
+          "ripeterà",
+          "ripeteremo",
+          "ripeterete",
+          "ripeteranno"
+        ],
+        "cong.pres": [
+          "ripeta",
+          "ripeta",
+          "ripeta",
+          "ripetiamo",
+          "ripetiate",
+          "ripetano"
+        ],
+        "cong.imperf": [
+          "ripetessi",
+          "ripetessi",
+          "ripetesse",
+          "ripetessimo",
+          "ripeteste",
+          "ripetessero"
+        ],
+        "cond.pres": [
+          "ripeterei",
+          "ripeteresti",
+          "ripeterebbe",
+          "ripeteremmo",
+          "ripetereste",
+          "ripeterebbero"
+        ],
+        "imperativo": [
+          "",
+          "ripeti",
+          "ripeta",
+          "ripetiamo",
+          "ripetete",
+          "ripetano"
+        ]
+      }
+    },
+    {
+      "inf": "temere",
+      "en": "to fear",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "temuto",
+      "coniugazioni": {
+        "indic.pres": [
+          "temo",
+          "temi",
+          "teme",
+          "temiamo",
+          "temete",
+          "temono"
+        ],
+        "indic.imperf": [
+          "temevo",
+          "temevi",
+          "temeva",
+          "temevamo",
+          "temevate",
+          "temevano"
+        ],
+        "indic.passrem": [
+          "temei",
+          "temesti",
+          "temé",
+          "tememmo",
+          "temeste",
+          "temerono"
+        ],
+        "indic.futuro": [
+          "temerò",
+          "temerai",
+          "temerà",
+          "temeremo",
+          "temerete",
+          "temeranno"
+        ],
+        "cong.pres": [
+          "tema",
+          "tema",
+          "tema",
+          "temiamo",
+          "temiate",
+          "temano"
+        ],
+        "cong.imperf": [
+          "temessi",
+          "temessi",
+          "temesse",
+          "temessimo",
+          "temeste",
+          "temessero"
+        ],
+        "cond.pres": [
+          "temerei",
+          "temeresti",
+          "temerebbe",
+          "temeremmo",
+          "temereste",
+          "temerebbero"
+        ],
+        "imperativo": [
+          "",
+          "temi",
+          "tema",
+          "temiamo",
+          "temete",
+          "temano"
+        ]
+      }
+    },
+    {
+      "inf": "battere",
+      "en": "to beat",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "battuto",
+      "coniugazioni": {
+        "indic.pres": [
+          "batto",
+          "batti",
+          "batte",
+          "battiamo",
+          "battete",
+          "battono"
+        ],
+        "indic.imperf": [
+          "battevo",
+          "battevi",
+          "batteva",
+          "battevamo",
+          "battevate",
+          "battevano"
+        ],
+        "indic.passrem": [
+          "battei",
+          "battesti",
+          "batté",
+          "battemmo",
+          "batteste",
+          "batterono"
+        ],
+        "indic.futuro": [
+          "batterò",
+          "batterai",
+          "batterà",
+          "batteremo",
+          "batterete",
+          "batteranno"
+        ],
+        "cong.pres": [
+          "batta",
+          "batta",
+          "batta",
+          "battiamo",
+          "battiate",
+          "battano"
+        ],
+        "cong.imperf": [
+          "battessi",
+          "battessi",
+          "battesse",
+          "battessimo",
+          "batteste",
+          "battessero"
+        ],
+        "cond.pres": [
+          "batterei",
+          "batteresti",
+          "batterebbe",
+          "batteremmo",
+          "battereste",
+          "batterebbero"
+        ],
+        "imperativo": [
+          "",
+          "batti",
+          "batta",
+          "battiamo",
+          "battete",
+          "battano"
+        ]
+      }
+    },
+    {
+      "inf": "godere",
+      "en": "to enjoy",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "goduto",
+      "coniugazioni": {
+        "indic.pres": [
+          "godo",
+          "godi",
+          "gode",
+          "godiamo",
+          "godete",
+          "godono"
+        ],
+        "indic.imperf": [
+          "godevo",
+          "godevi",
+          "godeva",
+          "godevamo",
+          "godevate",
+          "godevano"
+        ],
+        "indic.passrem": [
+          "godei",
+          "godesti",
+          "godé",
+          "godemmo",
+          "godeste",
+          "goderono"
+        ],
+        "indic.futuro": [
+          "goderò",
+          "goderai",
+          "goderà",
+          "goderemo",
+          "goderete",
+          "goderanno"
+        ],
+        "cong.pres": [
+          "goda",
+          "goda",
+          "goda",
+          "godiamo",
+          "godiate",
+          "godano"
+        ],
+        "cong.imperf": [
+          "godessi",
+          "godessi",
+          "godesse",
+          "godessimo",
+          "godeste",
+          "godessero"
+        ],
+        "cond.pres": [
+          "goderei",
+          "goderesti",
+          "goderebbe",
+          "goderemmo",
+          "godereste",
+          "goderebbero"
+        ],
+        "imperativo": [
+          "",
+          "godi",
+          "goda",
+          "godiamo",
+          "godete",
+          "godano"
+        ]
+      }
+    },
+    {
+      "inf": "dormire",
+      "en": "to sleep",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "dormito",
+      "coniugazioni": {
+        "indic.pres": [
+          "dormo",
+          "dormi",
+          "dorme",
+          "dormiamo",
+          "dormite",
+          "dormono"
+        ],
+        "indic.imperf": [
+          "dormivo",
+          "dormivi",
+          "dormiva",
+          "dormivamo",
+          "dormivate",
+          "dormivano"
+        ],
+        "indic.passrem": [
+          "dormii",
+          "dormisti",
+          "dormì",
+          "dormimmo",
+          "dormiste",
+          "dormirono"
+        ],
+        "indic.futuro": [
+          "dormirò",
+          "dormirai",
+          "dormirà",
+          "dormiremo",
+          "dormirete",
+          "dormiranno"
+        ],
+        "cong.pres": [
+          "dorma",
+          "dorma",
+          "dorma",
+          "dormiamo",
+          "dormiate",
+          "dormano"
+        ],
+        "cong.imperf": [
+          "dormissi",
+          "dormissi",
+          "dormisse",
+          "dormissimo",
+          "dormiste",
+          "dormissero"
+        ],
+        "cond.pres": [
+          "dormirei",
+          "dormiresti",
+          "dormirebbe",
+          "dormiremmo",
+          "dormireste",
+          "dormirebbero"
+        ],
+        "imperativo": [
+          "",
+          "dormi",
+          "dorma",
+          "dormiamo",
+          "dormite",
+          "dormano"
+        ]
+      }
+    },
+    {
+      "inf": "sentire",
+      "en": "to feel/hear",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "sentito",
+      "coniugazioni": {
+        "indic.pres": [
+          "sento",
+          "senti",
+          "sente",
+          "sentiamo",
+          "sentite",
+          "sentono"
+        ],
+        "indic.imperf": [
+          "sentivo",
+          "sentivi",
+          "sentiva",
+          "sentivamo",
+          "sentivate",
+          "sentivano"
+        ],
+        "indic.passrem": [
+          "sentii",
+          "sentisti",
+          "sentì",
+          "sentimmo",
+          "sentiste",
+          "sentirono"
+        ],
+        "indic.futuro": [
+          "sentirò",
+          "sentirai",
+          "sentirà",
+          "sentiremo",
+          "sentirete",
+          "sentiranno"
+        ],
+        "cong.pres": [
+          "senta",
+          "senta",
+          "senta",
+          "sentiamo",
+          "sentiate",
+          "sentano"
+        ],
+        "cong.imperf": [
+          "sentissi",
+          "sentissi",
+          "sentisse",
+          "sentissimo",
+          "sentiste",
+          "sentissero"
+        ],
+        "cond.pres": [
+          "sentirei",
+          "sentiresti",
+          "sentirebbe",
+          "sentiremmo",
+          "sentireste",
+          "sentirebbero"
+        ],
+        "imperativo": [
+          "",
+          "senti",
+          "senta",
+          "sentiamo",
+          "sentite",
+          "sentano"
+        ]
+      }
+    },
+    {
+      "inf": "seguire",
+      "en": "to follow",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "seguito",
+      "coniugazioni": {
+        "indic.pres": [
+          "seguo",
+          "segui",
+          "segue",
+          "seguiamo",
+          "seguite",
+          "seguono"
+        ],
+        "indic.imperf": [
+          "seguivo",
+          "seguivi",
+          "seguiva",
+          "seguivamo",
+          "seguivate",
+          "seguivano"
+        ],
+        "indic.passrem": [
+          "seguii",
+          "seguisti",
+          "seguì",
+          "seguimmo",
+          "seguiste",
+          "seguirono"
+        ],
+        "indic.futuro": [
+          "seguirò",
+          "seguirai",
+          "seguirà",
+          "seguiremo",
+          "seguirete",
+          "seguiranno"
+        ],
+        "cong.pres": [
+          "segua",
+          "segua",
+          "segua",
+          "seguiamo",
+          "seguiate",
+          "seguano"
+        ],
+        "cong.imperf": [
+          "seguissi",
+          "seguissi",
+          "seguisse",
+          "seguissimo",
+          "seguiste",
+          "seguissero"
+        ],
+        "cond.pres": [
+          "seguirei",
+          "seguiresti",
+          "seguirebbe",
+          "seguiremmo",
+          "seguireste",
+          "seguirebbero"
+        ],
+        "imperativo": [
+          "",
+          "segui",
+          "segua",
+          "seguiamo",
+          "seguite",
+          "seguano"
+        ]
+      }
+    },
+    {
+      "inf": "servire",
+      "en": "to serve",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "servito",
+      "coniugazioni": {
+        "indic.pres": [
+          "servo",
+          "servi",
+          "serve",
+          "serviamo",
+          "servite",
+          "servono"
+        ],
+        "indic.imperf": [
+          "servivo",
+          "servivi",
+          "serviva",
+          "servivamo",
+          "servivate",
+          "servivano"
+        ],
+        "indic.passrem": [
+          "servii",
+          "servisti",
+          "servì",
+          "servimmo",
+          "serviste",
+          "servirono"
+        ],
+        "indic.futuro": [
+          "servirò",
+          "servirai",
+          "servirà",
+          "serviremo",
+          "servirete",
+          "serviranno"
+        ],
+        "cong.pres": [
+          "serva",
+          "serva",
+          "serva",
+          "serviamo",
+          "serviate",
+          "servano"
+        ],
+        "cong.imperf": [
+          "servissi",
+          "servissi",
+          "servisse",
+          "servissimo",
+          "serviste",
+          "servissero"
+        ],
+        "cond.pres": [
+          "servirei",
+          "serviresti",
+          "servirebbe",
+          "serviremmo",
+          "servireste",
+          "servirebbero"
+        ],
+        "imperativo": [
+          "",
+          "servi",
+          "serva",
+          "serviamo",
+          "servite",
+          "servano"
+        ]
+      }
+    },
+    {
+      "inf": "vestire",
+      "en": "to dress",
+      "gruppo": "reg",
+      "aux": "avere",
+      "pp": "vestito",
+      "coniugazioni": {
+        "indic.pres": [
+          "vesto",
+          "vesti",
+          "veste",
+          "vestiamo",
+          "vestite",
+          "vestono"
+        ],
+        "indic.imperf": [
+          "vestivo",
+          "vestivi",
+          "vestiva",
+          "vestivamo",
+          "vestivate",
+          "vestivano"
+        ],
+        "indic.passrem": [
+          "vestii",
+          "vestisti",
+          "vestì",
+          "vestimmo",
+          "vestiste",
+          "vestirono"
+        ],
+        "indic.futuro": [
+          "vestirò",
+          "vestirai",
+          "vestirà",
+          "vestiremo",
+          "vestirete",
+          "vestiranno"
+        ],
+        "cong.pres": [
+          "vesta",
+          "vesta",
+          "vesta",
+          "vestiamo",
+          "vestiate",
+          "vestano"
+        ],
+        "cong.imperf": [
+          "vestissi",
+          "vestissi",
+          "vestisse",
+          "vestissimo",
+          "vestiste",
+          "vestissero"
+        ],
+        "cond.pres": [
+          "vestirei",
+          "vestiresti",
+          "vestirebbe",
+          "vestiremmo",
+          "vestireste",
+          "vestirebbero"
+        ],
+        "imperativo": [
+          "",
+          "vesti",
+          "vesta",
+          "vestiamo",
+          "vestite",
+          "vestano"
+        ]
+      }
+    },
+    {
+      "inf": "finire",
+      "en": "to finish",
+      "gruppo": "isc",
+      "aux": "avere",
+      "pp": "finito",
+      "coniugazioni": {
+        "indic.pres": [
+          "finisco",
+          "finisci",
+          "finisce",
+          "finiamo",
+          "finite",
+          "finiscono"
+        ],
+        "indic.imperf": [
+          "finivo",
+          "finivi",
+          "finiva",
+          "finivamo",
+          "finivate",
+          "finivano"
+        ],
+        "indic.passrem": [
+          "finii",
+          "finisti",
+          "finì",
+          "finimmo",
+          "finiste",
+          "finirono"
+        ],
+        "indic.futuro": [
+          "finirò",
+          "finirai",
+          "finirà",
+          "finiremo",
+          "finirete",
+          "finiranno"
+        ],
+        "cong.pres": [
+          "finisca",
+          "finisca",
+          "finisca",
+          "finiamo",
+          "finiate",
+          "finiscano"
+        ],
+        "cong.imperf": [
+          "finissi",
+          "finissi",
+          "finisse",
+          "finissimo",
+          "finiste",
+          "finissero"
+        ],
+        "cond.pres": [
+          "finirei",
+          "finiresti",
+          "finirebbe",
+          "finiremmo",
+          "finireste",
+          "finirebbero"
+        ],
+        "imperativo": [
+          "",
+          "finisci",
+          "finisca",
+          "finiamo",
+          "finite",
+          "finiscano"
+        ]
+      }
+    },
+    {
+      "inf": "preferire",
+      "en": "to prefer",
+      "gruppo": "isc",
+      "aux": "avere",
+      "pp": "preferito",
+      "coniugazioni": {
+        "indic.pres": [
+          "preferisco",
+          "preferisci",
+          "preferisce",
+          "preferiamo",
+          "preferite",
+          "preferiscono"
+        ],
+        "indic.imperf": [
+          "preferivo",
+          "preferivi",
+          "preferiva",
+          "preferivamo",
+          "preferivate",
+          "preferivano"
+        ],
+        "indic.passrem": [
+          "preferii",
+          "preferisti",
+          "preferì",
+          "preferimmo",
+          "preferiste",
+          "preferirono"
+        ],
+        "indic.futuro": [
+          "preferirò",
+          "preferirai",
+          "preferirà",
+          "preferiremo",
+          "preferirete",
+          "preferiranno"
+        ],
+        "cong.pres": [
+          "preferisca",
+          "preferisca",
+          "preferisca",
+          "preferiamo",
+          "preferiate",
+          "preferiscano"
+        ],
+        "cong.imperf": [
+          "preferissi",
+          "preferissi",
+          "preferisse",
+          "preferissimo",
+          "preferiste",
+          "preferissero"
+        ],
+        "cond.pres": [
+          "preferirei",
+          "preferiresti",
+          "preferirebbe",
+          "preferiremmo",
+          "preferireste",
+          "preferirebbero"
+        ],
+        "imperativo": [
+          "",
+          "preferisci",
+          "preferisca",
+          "preferiamo",
+          "preferite",
+          "preferiscano"
+        ]
+      }
+    },
+    {
+      "inf": "pulire",
+      "en": "to clean",
+      "gruppo": "isc",
+      "aux": "avere",
+      "pp": "pulito",
+      "coniugazioni": {
+        "indic.pres": [
+          "pulisco",
+          "pulisci",
+          "pulisce",
+          "puliamo",
+          "pulite",
+          "puliscono"
+        ],
+        "indic.imperf": [
+          "pulivo",
+          "pulivi",
+          "puliva",
+          "pulivamo",
+          "pulivate",
+          "pulivano"
+        ],
+        "indic.passrem": [
+          "pulii",
+          "pulisti",
+          "pulì",
+          "pulimmo",
+          "puliste",
+          "pulirono"
+        ],
+        "indic.futuro": [
+          "pulirò",
+          "pulirai",
+          "pulirà",
+          "puliremo",
+          "pulirete",
+          "puliranno"
+        ],
+        "cong.pres": [
+          "pulisca",
+          "pulisca",
+          "pulisca",
+          "puliamo",
+          "puliate",
+          "puliscano"
+        ],
+        "cong.imperf": [
+          "pulissi",
+          "pulissi",
+          "pulisse",
+          "pulissimo",
+          "puliste",
+          "pulissero"
+        ],
+        "cond.pres": [
+          "pulirei",
+          "puliresti",
+          "pulirebbe",
+          "puliremmo",
+          "pulireste",
+          "pulirebbero"
+        ],
+        "imperativo": [
+          "",
+          "pulisci",
+          "pulisca",
+          "puliamo",
+          "pulite",
+          "puliscano"
+        ]
+      }
+    },
+    {
+      "inf": "spedire",
+      "en": "to send",
+      "gruppo": "isc",
+      "aux": "avere",
+      "pp": "spedito",
+      "coniugazioni": {
+        "indic.pres": [
+          "spedisco",
+          "spedisci",
+          "spedisce",
+          "spediamo",
+          "spedite",
+          "spediscono"
+        ],
+        "indic.imperf": [
+          "spedivo",
+          "spedivi",
+          "spediva",
+          "spedivamo",
+          "spedivate",
+          "spedivano"
+        ],
+        "indic.passrem": [
+          "spedii",
+          "spedisti",
+          "spedì",
+          "spedimmo",
+          "spediste",
+          "spedirono"
+        ],
+        "indic.futuro": [
+          "spedirò",
+          "spedirai",
+          "spedirà",
+          "spediremo",
+          "spedirete",
+          "spediranno"
+        ],
+        "cong.pres": [
+          "spedisca",
+          "spedisca",
+          "spedisca",
+          "spediamo",
+          "spediate",
+          "spediscano"
+        ],
+        "cong.imperf": [
+          "spedissi",
+          "spedissi",
+          "spedisse",
+          "spedissimo",
+          "spediste",
+          "spedissero"
+        ],
+        "cond.pres": [
+          "spedirei",
+          "spediresti",
+          "spedirebbe",
+          "spediremmo",
+          "spedireste",
+          "spedirebbero"
+        ],
+        "imperativo": [
+          "",
+          "spedisci",
+          "spedisca",
+          "spediamo",
+          "spedite",
+          "spediscano"
+        ]
+      }
+    },
+    {
+      "inf": "costruire",
+      "en": "to build",
+      "gruppo": "isc",
+      "aux": "avere",
+      "pp": "costruito",
+      "coniugazioni": {
+        "indic.pres": [
+          "costruisco",
+          "costruisci",
+          "costruisce",
+          "costruiamo",
+          "costruite",
+          "costruiscono"
+        ],
+        "indic.imperf": [
+          "costruivo",
+          "costruivi",
+          "costruiva",
+          "costruivamo",
+          "costruivate",
+          "costruivano"
+        ],
+        "indic.passrem": [
+          "costruii",
+          "costruisti",
+          "costruì",
+          "costruimmo",
+          "costruiste",
+          "costruirono"
+        ],
+        "indic.futuro": [
+          "costruirò",
+          "costruirai",
+          "costruirà",
+          "costruiremo",
+          "costruirete",
+          "costruiranno"
+        ],
+        "cong.pres": [
+          "costruisca",
+          "costruisca",
+          "costruisca",
+          "costruiamo",
+          "costruiate",
+          "costruiscano"
+        ],
+        "cong.imperf": [
+          "costruissi",
+          "costruissi",
+          "costruisse",
+          "costruissimo",
+          "costruiste",
+          "costruissero"
+        ],
+        "cond.pres": [
+          "costruirei",
+          "costruiresti",
+          "costruirebbe",
+          "costruiremmo",
+          "costruireste",
+          "costruirebbero"
+        ],
+        "imperativo": [
+          "",
+          "costruisci",
+          "costruisca",
+          "costruiamo",
+          "costruite",
+          "costruiscano"
+        ]
+      }
+    },
+    {
+      "inf": "restituire",
+      "en": "to give back",
+      "gruppo": "isc",
+      "aux": "avere",
+      "pp": "restituito",
+      "coniugazioni": {
+        "indic.pres": [
+          "restituisco",
+          "restituisci",
+          "restituisce",
+          "restituiamo",
+          "restituite",
+          "restituiscono"
+        ],
+        "indic.imperf": [
+          "restituivo",
+          "restituivi",
+          "restituiva",
+          "restituivamo",
+          "restituivate",
+          "restituivano"
+        ],
+        "indic.passrem": [
+          "restituii",
+          "restituisti",
+          "restituì",
+          "restituimmo",
+          "restituiste",
+          "restituirono"
+        ],
+        "indic.futuro": [
+          "restituirò",
+          "restituirai",
+          "restituirà",
+          "restituiremo",
+          "restituirete",
+          "restituiranno"
+        ],
+        "cong.pres": [
+          "restituisca",
+          "restituisca",
+          "restituisca",
+          "restituiamo",
+          "restituiate",
+          "restituiscano"
+        ],
+        "cong.imperf": [
+          "restituissi",
+          "restituissi",
+          "restituisse",
+          "restituissimo",
+          "restituiste",
+          "restituissero"
+        ],
+        "cond.pres": [
+          "restituirei",
+          "restituiresti",
+          "restituirebbe",
+          "restituiremmo",
+          "restituireste",
+          "restituirebbero"
+        ],
+        "imperativo": [
+          "",
+          "restituisci",
+          "restituisca",
+          "restituiamo",
+          "restituite",
+          "restituiscano"
+        ]
+      }
+    },
+    {
+      "inf": "unire",
+      "en": "to unite",
+      "gruppo": "isc",
+      "aux": "avere",
+      "pp": "unito",
+      "coniugazioni": {
+        "indic.pres": [
+          "unisco",
+          "unisci",
+          "unisce",
+          "uniamo",
+          "unite",
+          "uniscono"
+        ],
+        "indic.imperf": [
+          "univo",
+          "univi",
+          "univa",
+          "univamo",
+          "univate",
+          "univano"
+        ],
+        "indic.passrem": [
+          "unii",
+          "unisti",
+          "unì",
+          "unimmo",
+          "uniste",
+          "unirono"
+        ],
+        "indic.futuro": [
+          "unirò",
+          "unirai",
+          "unirà",
+          "uniremo",
+          "unirete",
+          "uniranno"
+        ],
+        "cong.pres": [
+          "unisca",
+          "unisca",
+          "unisca",
+          "uniamo",
+          "uniate",
+          "uniscano"
+        ],
+        "cong.imperf": [
+          "unissi",
+          "unissi",
+          "unisse",
+          "unissimo",
+          "uniste",
+          "unissero"
+        ],
+        "cond.pres": [
+          "unirei",
+          "uniresti",
+          "unirebbe",
+          "uniremmo",
+          "unireste",
+          "unirebbero"
+        ],
+        "imperativo": [
+          "",
+          "unisci",
+          "unisca",
+          "uniamo",
+          "unite",
+          "uniscano"
         ]
       }
     }

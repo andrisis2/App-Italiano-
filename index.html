@@ -404,17 +404,54 @@ const DAILY_SIZE = 20;
 
 // --- Conjugation practice ---
 const CONJ_TENSES = [
-  {key:"indic.pres",   label:"Presente",               modo:"Indicativo"},
-  {key:"indic.imperf", label:"Imperfetto",             modo:"Indicativo"},
-  {key:"indic.futuro", label:"Futuro semplice",        modo:"Indicativo"},
-  {key:"cong.pres",    label:"Congiuntivo presente",   modo:"Congiuntivo"},
-  {key:"cong.imperf",  label:"Congiuntivo imperfetto", modo:"Congiuntivo"},
-  {key:"cond.pres",    label:"Condizionale presente",  modo:"Condizionale"}
+  {key:"indic.pres",      label:"Presente",               modo:"Indicativo"},
+  {key:"indic.passpross", label:"Passato prossimo",       modo:"Indicativo",   comp:"indic.pres"},
+  {key:"indic.imperf",    label:"Imperfetto",             modo:"Indicativo"},
+  {key:"indic.trappross", label:"Trapassato prossimo",    modo:"Indicativo",   comp:"indic.imperf"},
+  {key:"indic.passrem",   label:"Passato remoto",         modo:"Indicativo"},
+  {key:"indic.trapprem",  label:"Trapassato remoto",      modo:"Indicativo",   comp:"indic.passrem"},
+  {key:"indic.futuro",    label:"Futuro semplice",        modo:"Indicativo"},
+  {key:"indic.futant",    label:"Futuro anteriore",       modo:"Indicativo",   comp:"indic.futuro"},
+  {key:"cong.pres",       label:"Congiuntivo presente",   modo:"Congiuntivo"},
+  {key:"cong.passato",    label:"Congiuntivo passato",    modo:"Congiuntivo",  comp:"cong.pres"},
+  {key:"cong.imperf",     label:"Congiuntivo imperfetto", modo:"Congiuntivo"},
+  {key:"cong.trap",       label:"Congiuntivo trapassato", modo:"Congiuntivo",  comp:"cong.imperf"},
+  {key:"cond.pres",       label:"Condizionale presente",  modo:"Condizionale"},
+  {key:"cond.passato",    label:"Condizionale passato",   modo:"Condizionale", comp:"cond.pres"},
+  {key:"imperativo",      label:"Imperativo",             modo:"Imperativo"}
 ];
 const CONJ_PRONOUNS = ["io","tu","lui/lei","noi","voi","loro"];
+const IMPER_PRONOUNS = ["\u2014","tu","Lei","noi","voi","loro"];
 const tenseLabel = k => (CONJ_TENSES.find(t=>t.key===k)||{}).label || k;
+const conjPronoun = (tk,p) => tk==="imperativo" ? IMPER_PRONOUNS[p] : CONJ_PRONOUNS[p];
 function normConj(s){ return (s||"").toLowerCase().trim().replace(/\s+/g," "); }
 function stripAcc(s){ return s.normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+
+// Returns {display, accept:[...]} for verb v, tense tk, person p \u2014 or null if that cell has no form.
+// Compound tenses are built on the fly from the auxiliary (essere/avere) + participio passato.
+function conjForm(v, tk, p){
+  const t = CONJ_TENSES.find(x=>x.key===tk);
+  if(t && t.comp){
+    if(!v.pp) return null;
+    const auxName = v.aux || "avere";
+    const auxV = (DB.verbi||[]).find(x=>x.inf===auxName);
+    const auxForms = auxV && auxV.coniugazioni[t.comp];
+    if(!auxForms) return null;
+    const a = auxForms[p];
+    if(!a) return null;
+    if(auxName==="essere"){
+      const part  = p<3 ? v.pp : v.pp.replace(/o$/,"i");   // accordo maschile
+      const partF = p<3 ? v.pp.replace(/o$/,"a") : v.pp.replace(/o$/,"e"); // femminile
+      return {display:`${a} ${part}`, accept:[`${a} ${part}`, `${a} ${partF}`]};
+    }
+    return {display:`${a} ${v.pp}`, accept:[`${a} ${v.pp}`]};
+  }
+  const forms = (v.coniugazioni||{})[tk];
+  if(!forms) return null;
+  const f = forms[p];
+  if(!f) return null;
+  return {display:f, accept:[f]};
+}
 
 async function forceUpdate(btnEl){
   if(btnEl){btnEl.textContent="⏳ Updating...";btnEl.disabled=true;}
@@ -958,17 +995,22 @@ function runConjugation(tenseFilter){
   if(tenseFilter===undefined){
     const stage = header();
     stage.appendChild($(`<h2 style="margin:0 0 6px;font-size:20px">Coniugazione</h2>`));
-    stage.appendChild($(`<p style="color:var(--muted);margin:0 0 18px;font-size:14px">Scegli il tempo da allenare &mdash; ${verbs.length} verbi.</p>`));
+    stage.appendChild($(`<p style="color:var(--muted);margin:0 0 18px;font-size:14px">Scegli il tempo da allenare &mdash; ${verbs.length} verbi, ${CONJ_TENSES.length} tempi.</p>`));
     const mixBtn = $(`<button class="tile wide" style="margin-bottom:12px">
       <div class="ico">🎲</div>
-      <div class="txt"><div class="t">Mix</div><div class="d">Tutti i tempi insieme</div></div>
+      <div class="txt"><div class="t">Mix</div><div class="d">Tutti i tempi e tutti i modi insieme</div></div>
     </button>`);
     mixBtn.onclick = ()=>runConjugation(CONJ_TENSES.map(t=>t.key));
     stage.appendChild(mixBtn);
     const list = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
+    let curModo = null;
     CONJ_TENSES.forEach(t=>{
+      if(t.modo!==curModo){
+        curModo = t.modo;
+        list.appendChild($(`<div style="font-size:11.5px;font-weight:700;color:var(--accent2);text-transform:uppercase;letter-spacing:.6px;margin:12px 0 0">${t.modo}</div>`));
+      }
       const btn = $(`<button class="tile wide">
-        <div class="txt"><div class="t">${t.label}</div><div class="d">${t.modo}</div></div>
+        <div class="txt"><div class="t">${t.label}</div><div class="d">${t.comp?"Tempo composto":"Tempo semplice"}</div></div>
       </button>`);
       btn.onclick = ()=>runConjugation([t.key]);
       list.appendChild(btn);
@@ -981,10 +1023,10 @@ function runConjugation(tenseFilter){
   const tenseKeys = tenseFilter;
   const all = [];
   verbs.forEach(v=>tenseKeys.forEach(tk=>{
-    const forms = v.coniugazioni && v.coniugazioni[tk];
-    if(!forms || forms.length<6) return;
     for(let p=0;p<6;p++){
-      all.push({inf:v.inf, en:v.en, tk, p, answer:forms[p], id:`conj:${v.inf}:${tk}:${p}`});
+      const cell = conjForm(v, tk, p);
+      if(!cell) continue;
+      all.push({inf:v.inf, en:v.en, tk, p, answer:cell.display, accept:cell.accept, id:`conj:${v.inf}:${tk}:${p}`});
     }
   }));
   if(!all.length){ history.back(); return; }
@@ -1007,7 +1049,7 @@ function runConjugation(tenseFilter){
         <div style="font-size:26px;font-weight:800;margin:8px 0 2px">${q.inf}</div>
         <div style="font-size:13px;color:var(--muted)">${q.en}</div>
         <div style="font-size:28px;font-weight:800;margin:16px 0 2px">
-          <span style="color:var(--muted);font-size:19px;font-weight:600">${CONJ_PRONOUNS[q.p]}</span> _____
+          <span style="color:var(--muted);font-size:19px;font-weight:600">${conjPronoun(q.tk,q.p)}</span> _____
         </div>
       </div>`));
     const inp = document.createElement("input");
@@ -1031,9 +1073,9 @@ function runConjugation(tenseFilter){
       const val = normConj(inp.value);
       if(!val) return;
       answered = true;
-      const target = normConj(q.answer);
-      const exact = val===target;
-      const loose = stripAcc(val)===stripAcc(target);
+      const accepts = (q.accept||[q.answer]).map(normConj);
+      const exact = accepts.includes(val);
+      const loose = !exact && accepts.some(a=>stripAcc(val)===stripAcc(a));
       const ok = exact || loose;
       grade(q.id, ok); if(ok) correct++;
       haptic(ok);
