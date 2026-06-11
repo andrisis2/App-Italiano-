@@ -275,6 +275,23 @@
   .results-hdr{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.7px;padding:10px 2px 6px;display:flex;align-items:center;gap:6px}
   .vocab-card.online{border-color:rgba(47,107,237,.3);background:linear-gradient(135deg,var(--card) 0%,#f0f4ff 100%)}
   @media (prefers-color-scheme: dark){.vocab-card.online{background:linear-gradient(135deg,var(--card) 0%,rgba(47,107,237,.06) 100%)}}
+  /* Memory game */
+  .mem-stats{display:flex;justify-content:center;gap:20px;margin-bottom:14px;font-size:14px;color:var(--muted)}
+  .mem-stats b{color:var(--text);font-variant-numeric:tabular-nums}
+  .mem-grid{display:grid;gap:8px;width:100%}
+  .mem-grid.c3{grid-template-columns:repeat(3,1fr)}
+  .mem-grid.c4{grid-template-columns:repeat(4,1fr)}
+  .mem-card{aspect-ratio:3/4;border:0;background:transparent;padding:0;cursor:pointer;perspective:700px}
+  .mem-inner{position:relative;width:100%;height:100%;transition:transform .35s cubic-bezier(.2,.7,.3,1);transform-style:preserve-3d}
+  .mem-card.up .mem-inner,.mem-card.done .mem-inner{transform:rotateY(180deg)}
+  .mem-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:14px;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px;box-shadow:var(--shadow-sm)}
+  .mem-back{background:linear-gradient(135deg,var(--accent2),#7aa0ff);color:#fff;font-size:26px}
+  .mem-front{background:var(--card);border:1px solid var(--line);color:var(--text);transform:rotateY(180deg);font-size:13.5px;font-weight:700;line-height:1.2}
+  .mem-card.done{cursor:default}
+  .mem-card.done .mem-front{border-color:var(--good);background:rgba(22,163,74,.12);color:var(--good)}
+  .mem-card.miss .mem-front{border-color:var(--bad);color:var(--bad);animation:memshake .3s}
+  .mem-lang{position:absolute;top:5px;left:7px;font-size:9px;font-weight:800;letter-spacing:.05em;opacity:.45}
+  @keyframes memshake{10%,90%{transform:rotateY(180deg) translateX(-1px)}30%,70%{transform:rotateY(180deg) translateX(3px)}50%{transform:rotateY(180deg) translateX(-3px)}}
 </style>
 </head>
 <body>
@@ -528,6 +545,12 @@ function renderHome(){
         <div class="d">${d}</div>
       </button>`)).onclick = ()=>start(mode);
   });
+  grid.appendChild($(`
+    <button class="tile">
+      <div class="ico" style="background:rgba(245,158,11,.12)">&#129504;</div>
+      <div class="t">Memory</div>
+      <div class="d">Abbina parole e traduzioni a tempo &mdash; gioco di memoria</div>
+    </button>`)).onclick = ()=>start("memory");
   // Square tiles (same form as Flashcards/Sentences) — pair into a clean row
   if(DB.verbi && DB.verbi.length){
     grid.appendChild($(`
@@ -606,6 +629,7 @@ function start(mode){
   if(mode==="daily") return runDaily();
   if(mode==="conj") return runConjugation();
   if(mode==="flash") return pickFlashTopic();
+  if(mode==="memory") return runMemory();
   if(mode==="phrase") return runPhrase();
   if(mode==="diz" || mode==="vocab") return runVocabolario();
   if(mode==="ref") return runReference();
@@ -1094,6 +1118,126 @@ function runDaily(){
     initialScore: prog.score || {},
     onProgress: (score)=>saveDailyProg(ids, score)
   });
+}
+
+// ---------- MEMORY (abbinamento IT <-> EN a tempo) ----------
+const MEM_BEST_KEY = "italiano_memory_best_v1";
+function memBest(){ try{ return JSON.parse(localStorage.getItem(MEM_BEST_KEY)||"{}"); }catch(e){ return {}; } }
+function fmtTime(s){ const m=Math.floor(s/60); return m+":"+String(s%60).padStart(2,"0"); }
+
+function runMemory(){
+  const stage = header();
+  stage.appendChild($(`<div style="margin-bottom:14px">
+    <b style="font-size:18px">Memory</b>
+    <div style="font-size:13px;color:var(--muted);margin-top:2px">Gira le carte e abbina ogni parola italiana alla sua traduzione inglese</div>
+  </div>`));
+  const best = memBest();
+  const levels = [[6,"Facile","6 coppie · 12 carte"],[8,"Medio","8 coppie · 16 carte"],[10,"Difficile","10 coppie · 20 carte"]];
+  const list = $(`<div style="display:flex;flex-direction:column;gap:10px"></div>`);
+  levels.forEach(([n,label,desc])=>{
+    const rec = best[n] ? `Record: ${fmtTime(best[n])}` : "Nessun record";
+    const btn = $(`<button class="tile wide">
+      <div class="ico" style="background:rgba(245,158,11,.12)">&#129504;</div>
+      <div class="txt">
+        <div class="t">${label}</div>
+        <div class="d">${desc} &middot; <span style="color:var(--accent2)">${rec}</span></div>
+      </div>
+    </button>`);
+    btn.onclick = ()=>playMemory(n);
+    list.appendChild(btn);
+  });
+  stage.appendChild(list);
+}
+
+function playMemory(pairs){
+  const pool = [...(DB.dizionario||[]), ...(userStore().voci||[])].filter(w=>w.it && w.en);
+  if(pool.length < pairs){
+    const stage = header();
+    stage.appendChild($(`<p class="muted" style="text-align:center;padding:30px">Non ci sono abbastanza parole per giocare.</p>`));
+    return;
+  }
+  // Una carta italiana + una inglese per ogni parola; condividono la stessa chiave (id).
+  let cards = [];
+  sample(pool, pairs).forEach(w=>{
+    cards.push({key:w.id, lang:"IT", text:w.it, say:w.it});
+    cards.push({key:w.id, lang:"EN", text:w.en});
+  });
+  cards = shuffle(cards);
+
+  const stage = header();
+  stage.appendChild($(`<div style="text-align:center;margin-bottom:6px;font-size:13px;color:var(--muted)">Memory &middot; ${pairs} coppie</div>`));
+  const statsEl = $(`<div class="mem-stats">
+    <span>Tempo <b class="memTime">0:00</b></span>
+    <span>Mosse <b class="memMoves">0</b></span>
+    <span>Trovate <b class="memFound">0</b>/${pairs}</span>
+  </div>`);
+  stage.appendChild(statsEl);
+  const grid = $(`<div class="mem-grid ${pairs<=6?'c3':'c4'}"></div>`);
+  stage.appendChild(grid);
+
+  let first=null, lock=false, moves=0, found=0, startTime=null, timer=null;
+  const setStat = (cls,v)=>{ const e=statsEl.querySelector(cls); if(e) e.textContent=v; };
+  function tick(){
+    if(!document.body.contains(statsEl)){ clearInterval(timer); return; } // schermata abbandonata
+    setStat(".memTime", fmtTime(Math.round((Date.now()-startTime)/1000)));
+  }
+
+  cards.forEach(c=>{
+    const el = $(`<button class="mem-card">
+      <div class="mem-inner">
+        <div class="mem-face mem-back">?</div>
+        <div class="mem-face mem-front"><span class="mem-lang">${c.lang}</span>${c.text}</div>
+      </div>
+    </button>`);
+    el.onclick = ()=>flip(c, el);
+    grid.appendChild(el);
+  });
+
+  function flip(c, el){
+    if(lock || el.classList.contains("up") || el.classList.contains("done")) return;
+    if(!startTime){ startTime=Date.now(); timer=setInterval(tick, 500); }
+    el.classList.add("up");
+    if(c.say && 'speechSynthesis' in window) speak(c.say);
+    if(!first){ first={c, el}; return; }
+    moves++; setStat(".memMoves", moves);
+    const a = first; first = null;
+    if(a.c.key===c.key){
+      haptic(true);
+      a.el.classList.add("done"); el.classList.add("done");
+      grade(c.key, true);                 // un abbinamento giusto conta come ripasso SRS
+      found++; setStat(".memFound", found);
+      if(found===pairs) win();
+    } else {
+      haptic(false);
+      lock = true;
+      a.el.classList.add("miss"); el.classList.add("miss");
+      setTimeout(()=>{
+        a.el.classList.remove("up","miss"); el.classList.remove("up","miss");
+        lock = false;
+      }, 750);
+    }
+  }
+
+  function win(){
+    if(timer) clearInterval(timer);
+    const secs = startTime ? Math.round((Date.now()-startTime)/1000) : 0;
+    const best = memBest(), prev = best[pairs];
+    const isBest = !prev || secs < prev;
+    if(isBest){ best[pairs]=secs; localStorage.setItem(MEM_BEST_KEY, JSON.stringify(best)); }
+    setTimeout(()=>{
+      stage.innerHTML = `
+        <div class="done">
+          <div class="big">${isBest?"&#127942;":"&#127881;"}</div>
+          <h2>${isBest?"Nuovo record!":"Completato!"}</h2>
+          <p class="muted">Tempo ${fmtTime(secs)} &middot; ${moves} mosse${(!isBest&&prev)?`<br>Record: ${fmtTime(prev)}`:""}</p>
+        </div>`;
+      haptic(true);
+      const row=$(`<div class="row"></div>`);
+      const home=$(`<button class="btn">Home</button>`); home.onclick=()=>history.back();
+      const again=$(`<button class="btn primary">Ancora</button>`); again.onclick=()=>playMemory(pairs);
+      row.appendChild(home); row.appendChild(again); stage.appendChild(row);
+    }, 500);
+  }
 }
 
 function runConjugation(tenseFilter){
