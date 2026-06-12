@@ -2,7 +2,7 @@
   "meta": {
     "project": "Italian B2",
     "level": "B2",
-    "version": 2,
+    "version": 3,
     "updated": "2026-06-12",
     "sources": [
       "CEFR B2 Italian curriculum (Council of Europe)",
@@ -5057,7 +5057,8 @@
       "en": "appointment",
       "pos": "noun",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -7118,7 +7119,8 @@
       "en": "citycouncil",
       "pos": "noun",
       "tag": [
-        "città"
+        "città",
+        "burocrazia"
       ]
     },
     {
@@ -7298,7 +7300,8 @@
       "en": "deliver",
       "pos": "verb",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -8612,7 +8615,8 @@
       "en": "document",
       "pos": "noun",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -8657,7 +8661,8 @@
       "en": "demand",
       "pos": "noun",
       "tag": [
-        "mente"
+        "mente",
+        "burocrazia"
       ]
     },
     {
@@ -9809,7 +9814,8 @@
       "en": "signature",
       "pos": "noun",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -9818,7 +9824,8 @@
       "en": "endorse",
       "pos": "verb",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -14615,7 +14622,8 @@
       "en": "practice",
       "pos": "noun",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -14714,7 +14722,8 @@
       "en": "present",
       "pos": "verb",
       "tag": [
-        "tempo"
+        "tempo",
+        "burocrazia"
       ]
     },
     {
@@ -15875,7 +15884,8 @@
       "en": "request",
       "pos": "verb",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -15884,7 +15894,8 @@
       "en": "request",
       "pos": "noun",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -17405,7 +17416,8 @@
       "en": "sojourn",
       "pos": "noun",
       "tag": [
-        "viaggio"
+        "viaggio",
+        "burocrazia"
       ]
     },
     {
@@ -18044,7 +18056,8 @@
       "en": "foreign",
       "pos": "noun",
       "tag": [
-        "viaggio"
+        "viaggio",
+        "burocrazia"
       ]
     },
     {
@@ -19061,7 +19074,8 @@
       "en": "office",
       "pos": "noun",
       "tag": [
-        "lavoro"
+        "lavoro",
+        "burocrazia"
       ]
     },
     {
@@ -19818,6 +19832,564 @@
       "pos": "noun",
       "tag": [
         "città"
+      ]
+    },
+    {
+      "id": "d1724",
+      "it": "passaporto",
+      "en": "passport",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1725",
+      "it": "visto",
+      "en": "visa",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1726",
+      "it": "visto d'ingresso",
+      "en": "entry visa",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1727",
+      "it": "permesso di soggiorno",
+      "en": "residence permit",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1728",
+      "it": "carta di soggiorno",
+      "en": "long-term residence card",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1729",
+      "it": "questura",
+      "en": "police headquarters (immigration office)",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1730",
+      "it": "prefettura",
+      "en": "prefecture",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1731",
+      "it": "cittadinanza",
+      "en": "citizenship",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1732",
+      "it": "residenza",
+      "en": "residence",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1733",
+      "it": "domicilio",
+      "en": "domicile, address",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1734",
+      "it": "modulo",
+      "en": "form",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1735",
+      "it": "ricevuta",
+      "en": "receipt",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1736",
+      "it": "marca da bollo",
+      "en": "revenue stamp",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1737",
+      "it": "codice fiscale",
+      "en": "tax code",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1738",
+      "it": "carta d'identità",
+      "en": "identity card",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1739",
+      "it": "tessera sanitaria",
+      "en": "health insurance card",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1740",
+      "it": "sportello",
+      "en": "counter, service desk",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1741",
+      "it": "timbro",
+      "en": "stamp (official mark)",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1742",
+      "it": "scadenza",
+      "en": "deadline, expiry date",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1743",
+      "it": "rinnovo",
+      "en": "renewal",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1744",
+      "it": "proroga",
+      "en": "extension",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1745",
+      "it": "nulla osta",
+      "en": "clearance, authorization",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1746",
+      "it": "ricongiungimento familiare",
+      "en": "family reunification",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1747",
+      "it": "asilo",
+      "en": "asylum",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1748",
+      "it": "rifugiato",
+      "en": "refugee",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1749",
+      "it": "frontiera",
+      "en": "border",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1750",
+      "it": "dogana",
+      "en": "customs",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1751",
+      "it": "consolato",
+      "en": "consulate",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1752",
+      "it": "ambasciata",
+      "en": "embassy",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1753",
+      "it": "certificato",
+      "en": "certificate",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1754",
+      "it": "autocertificazione",
+      "en": "self-certification",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1755",
+      "it": "contributo",
+      "en": "fee, contribution",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1756",
+      "it": "impronte digitali",
+      "en": "fingerprints",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1757",
+      "it": "fototessera",
+      "en": "passport photo",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1758",
+      "it": "traduzione giurata",
+      "en": "sworn translation",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1759",
+      "it": "patronato",
+      "en": "citizen assistance office",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1760",
+      "it": "anagrafe",
+      "en": "registry office",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1761",
+      "it": "iscrizione",
+      "en": "registration, enrolment",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1762",
+      "it": "protocollo",
+      "en": "protocol (reference) number",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1763",
+      "it": "espulsione",
+      "en": "expulsion, deportation",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1764",
+      "it": "immigrazione",
+      "en": "immigration",
+      "pos": "noun",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1765",
+      "it": "rinnovare",
+      "en": "to renew",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1766",
+      "it": "compilare",
+      "en": "to fill in (a form)",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1767",
+      "it": "allegare",
+      "en": "to attach (enclose)",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1768",
+      "it": "timbrare",
+      "en": "to stamp",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1769",
+      "it": "rilasciare",
+      "en": "to issue (a document)",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1770",
+      "it": "scadere",
+      "en": "to expire",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1771",
+      "it": "registrarsi",
+      "en": "to register",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1772",
+      "it": "iscriversi",
+      "en": "to enrol, register",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1773",
+      "it": "prenotare",
+      "en": "to book (an appointment)",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1774",
+      "it": "convocare",
+      "en": "to summon",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1775",
+      "it": "respingere",
+      "en": "to reject",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1776",
+      "it": "approvare",
+      "en": "to approve",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1777",
+      "it": "regolarizzare",
+      "en": "to regularize (one's status)",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1778",
+      "it": "soggiornare",
+      "en": "to stay, reside",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1779",
+      "it": "vidimare",
+      "en": "to validate, stamp",
+      "pos": "verb",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1780",
+      "it": "valido",
+      "en": "valid",
+      "pos": "adjective",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1781",
+      "it": "scaduto",
+      "en": "expired",
+      "pos": "adjective",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1782",
+      "it": "regolare",
+      "en": "in order, legally resident",
+      "pos": "adjective",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1783",
+      "it": "irregolare",
+      "en": "irregular, without papers",
+      "pos": "adjective",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1784",
+      "it": "temporaneo",
+      "en": "temporary",
+      "pos": "adjective",
+      "tag": [
+        "burocrazia"
+      ]
+    },
+    {
+      "id": "d1785",
+      "it": "obbligatorio",
+      "en": "mandatory",
+      "pos": "adjective",
+      "tag": [
+        "burocrazia"
       ]
     }
   ],
