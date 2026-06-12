@@ -2,8 +2,8 @@
   "meta": {
     "project": "Italian B2",
     "level": "B2",
-    "version": 1,
-    "updated": "2026-06-11",
+    "version": 2,
+    "updated": "2026-06-12",
     "sources": [
       "CEFR B2 Italian curriculum (Council of Europe)",
       "Dizionario Treccani — vocabolario della lingua italiana",
@@ -25965,6 +25965,178 @@
           "sig": "Non c'è di che / Ma certo, prego",
           "lett": "Imagine!",
           "esempio": "Grazie dell'aiuto! Figurati, è stato un piacere."
+        }
+      ]
+    }
+  ],
+  "pop": [
+    {
+      "id": "meme",
+      "categoria": "Meme & Internet",
+      "icona": "😂",
+      "sottotitolo": "Il linguaggio dei social, delle chat e dei meme italiani — con il registro e l'origine di ogni espressione.",
+      "voci": [
+        {
+          "titolo": "Bella zì",
+          "spiega": "Saluto informale tra ragazzi, equivalente a “ciao bro”. “Zì” è un troncamento di “zio”, usato come appellativo amichevole tra coetanei.",
+          "lingua": "Registro: colloquiale/giovanile. Origine: romanesco, ormai diffuso in tutta Italia via social. Da non usare in contesti formali.",
+          "esempio": "Bella zì, che se famo stasera?"
+        },
+        {
+          "titolo": "Cringe",
+          "spiega": "Anglicismo per qualcosa di così imbarazzante da far accapponare la pelle. Usato come aggettivo: “che cringe!”",
+          "lingua": "Prestito dall'inglese non adattato. Tipico del parlato giovanile e dei social. In italiano “ufficiale” si direbbe “imbarazzante”.",
+          "esempio": "Ha cantato davanti a tutti? Che cringe, mamma mia."
+        },
+        {
+          "titolo": "Spoilerare",
+          "spiega": "Anticipare il finale di un film o di una serie rovinando la sorpresa. Verbo costruito sull'inglese “spoiler” + suffisso italiano -are.",
+          "lingua": "Esempio di come l'italiano “italianizza” i verbi inglesi: spoiler → spoiler-are, coniugato regolarmente (spoilero, spoileri, spoilera...).",
+          "esempio": "Non spoilerarmi l'ultima puntata, non l'ho ancora vista!"
+        },
+        {
+          "titolo": "Boomer",
+          "spiega": "Persona (non per forza anziana) considerata fuori dal mondo o con idee antiquate. Da “baby boomer”. Spesso nell'espressione “ok boomer”.",
+          "lingua": "Anglicismo con valore ironico/dispregiativo. Attenzione al tono: può risultare offensivo. Registro social/giovanile.",
+          "esempio": "Dice che i social fanno male? Ok boomer."
+        },
+        {
+          "titolo": "Flexare",
+          "spiega": "Ostentare, mettersi in mostra (soldi, vestiti, vita). Dall'inglese “to flex”.",
+          "lingua": "Verbo italianizzato del gergo dei social/rap. Sinonimo colloquiale: “darsi delle arie”, “sbruffonare”.",
+          "esempio": "Posta solo per flexare la macchina nuova."
+        },
+        {
+          "titolo": "Mi sa che…",
+          "spiega": "Espressione utilissima per dire “credo che”, “ho l'impressione che”. Frequentissima nel parlato.",
+          "lingua": "Registro: colloquiale ma neutro, va bene quasi ovunque. “Mi sa” regge l'indicativo, non il congiuntivo: “mi sa che piove” (non “piova”).",
+          "esempio": "Mi sa che oggi non viene nessuno."
+        }
+      ]
+    },
+    {
+      "id": "curiosita",
+      "categoria": "Curiosità su lingua e cultura",
+      "icona": "🧠",
+      "sottotitolo": "Perché si dice così? Parole intraducibili, falsi amici e curiosità che rivelano come pensano gli italiani.",
+      "voci": [
+        {
+          "titolo": "Apericena",
+          "spiega": "Aperitivo così ricco di cibo da sostituire la cena. Parola nata negli anni 2000 (Milano) e oggi parte della cultura quotidiana.",
+          "lingua": "Parola macedonia (aperitivo + cena), praticamente intraducibile in inglese. Mostra come l'italiano crea parole fondendone due.",
+          "esempio": "Stasera niente ristorante, facciamo apericena al bar."
+        },
+        {
+          "titolo": "Magari!",
+          "spiega": "Una sola parola con due sensi opposti: come esclamazione significa “magari fosse vero!” (forte desiderio); come avverbio significa “forse”.",
+          "lingua": "Falso amico per chi conosce lo spagnolo. Da esclamazione regge il congiuntivo: “magari vincessi!”. È una delle parole preferite dagli italiani.",
+          "esempio": "— Vinci tu? — Magari!"
+        },
+        {
+          "titolo": "Falso amico: “attualmente”",
+          "spiega": "Non significa “actually” (in realtà) ma “al momento, adesso”.",
+          "lingua": "Classico falso amico con l'inglese. “Actually” si traduce con “in realtà”. Errore frequentissimo tra gli stranieri.",
+          "esempio": "Attualmente lavoro a Roma. (= in questo momento, non “in realtà”)"
+        },
+        {
+          "titolo": "Meriggiare",
+          "spiega": "Riposare all'ombra nelle ore calde del primo pomeriggio. Parola poetica resa celebre da Montale.",
+          "lingua": "Verbo intraducibile in una sola parola: cattura un concetto tutto mediterraneo. Registro: letterario/elevato.",
+          "esempio": "Meriggiare pallido e assorto… (E. Montale)"
+        },
+        {
+          "titolo": "Il gesto “che vuoi?”",
+          "spiega": "La mano a pigna (dita unite verso l'alto) accompagna la domanda “ma che vuoi?”, “che stai dicendo?”. La gestualità è parte della lingua.",
+          "lingua": "In italiano la comunicazione non verbale è grammatica a tutti gli effetti: lo stesso gesto cambia il senso della frase a seconda del tono.",
+          "esempio": "Ma che vuoi? (con la mano a pigna)"
+        },
+        {
+          "titolo": "Tu vs Lei",
+          "spiega": "Dare del “Lei” (con la L maiuscola) è la forma di cortesia; il “tu” è confidenziale. Scegliere male può risultare scortese o ridicolo.",
+          "lingua": "Il “Lei” formale usa la 3ª persona femminile singolare anche per gli uomini. Regola sociale fondamentale del B1-B2.",
+          "esempio": "Buongiorno, Lei desidera? (al cliente)"
+        }
+      ]
+    },
+    {
+      "id": "popattualita",
+      "categoria": "Cultura pop & attualità",
+      "icona": "🎬",
+      "sottotitolo": "Musica, TV, social e personaggi famosi — e le espressioni che la cultura pop ha regalato alla lingua di tutti i giorni.",
+      "voci": [
+        {
+          "titolo": "Sanremo",
+          "spiega": "Il Festival della canzone italiana: una settimana a febbraio in cui tutta l'Italia guarda, commenta e litiga. Genera modi di dire ed espressioni virali ogni anno.",
+          "lingua": "“È un Sanremo” / “sembra Sanremo” = qualcosa di esagerato e teatrale. Riferimento culturale che ogni italiano coglie al volo.",
+          "esempio": "Quanti fiori! Sembra il palco di Sanremo qui."
+        },
+        {
+          "titolo": "Trash",
+          "spiega": "Tutto ciò che è kitsch, di cattivo gusto ma godibile, tipico di certa TV. “Guilty pleasure” della cultura pop italiana.",
+          "lingua": "Anglicismo usato come aggettivo e sostantivo: “che trash!”, “amo il trash”. Registro colloquiale, social e TV.",
+          "esempio": "Quel programma è trash, ma non riesco a smettere di guardarlo."
+        },
+        {
+          "titolo": "Influencer",
+          "spiega": "Chi ha molti follower e “influenza” acquisti e opinioni. Termine ormai entrato nel lessico comune e nei dizionari.",
+          "lingua": "Anglicismo non adattato. L'italiano ha provato “influenzatore” ma non ha attecchito: a volte il prestito vince. Registro neutro/giornalistico.",
+          "esempio": "Fa l'influencer di cucina, ha due milioni di follower."
+        },
+        {
+          "titolo": "Bella ciao",
+          "spiega": "Canto popolare diventato simbolo mondiale grazie alla serie “La casa di carta”. Esempio di come la cultura pop riporta in vita la lingua del passato.",
+          "lingua": "“Ciao” ripetuto come saluto/addio: forma del parlato popolare. La canzone è ottima per esercitare l'imperativo e il lessico della libertà.",
+          "esempio": "Una mattina mi son svegliato… o bella ciao!"
+        },
+        {
+          "titolo": "Mammismo",
+          "spiega": "Il legame fortissimo (a volte eccessivo) tra italiani e mamma. Da qui “mammone”: l'adulto ancora attaccato alla madre.",
+          "lingua": "Suffisso -ismo per creare un concetto sociale; -one per la persona. Stereotipo culturale, ma utile per capire la società e la lingua.",
+          "esempio": "Ha trent'anni e vive ancora con i genitori: un vero mammone."
+        }
+      ]
+    },
+    {
+      "id": "regioni",
+      "categoria": "Regionalismi & accenti",
+      "icona": "🗺️",
+      "sottotitolo": "L'italiano cambia da città a città: parole tipiche, differenze nord/sud e modi di dire locali che non trovi sui libri.",
+      "voci": [
+        {
+          "titolo": "Scialla (Roma/Sud)",
+          "spiega": "Stai tranquillo, rilassati, lascia perdere. Tipico dei giovani romani, dall'arabo via napoletano.",
+          "lingua": "Regionalismo giovanile diffuso dal cinema. Equivale a “tranquillo”, “relax”. Registro molto informale.",
+          "esempio": "Hai perso il treno? Scialla, ne arriva un altro."
+        },
+        {
+          "titolo": "Boh / Bah / Beh",
+          "spiega": "Tre interiezioni vicine ma diverse: “boh” = non lo so; “bah” = scetticismo/indifferenza; “beh” = allora, dunque.",
+          "lingua": "Nazionali ma usatissime nel parlato. Padroneggiare queste tre parole fa subito “suonare” italiani. Solo orale, mai in scritti formali.",
+          "esempio": "— Quanto costa? — Boh, non l'ho chiesto."
+        },
+        {
+          "titolo": "Sciampagnino / Spritz",
+          "spiega": "Il rito dell'aperitivo cambia nome e forma da regione a regione. A Nord-Est lo Spritz è quasi una religione.",
+          "lingua": "Il lessico del cibo e delle bevande è fortemente regionale: la stessa cosa ha nomi diversi a 50 km di distanza.",
+          "esempio": "Ci vediamo per uno Spritz in piazza?"
+        },
+        {
+          "titolo": "Minchia / Mannaggia",
+          "spiega": "Intercalari di sorpresa o fastidio: “minchia” (Sud, volgare) esprime stupore; “mannaggia” (Sud, leggero) esprime contrarietà.",
+          "lingua": "“Mannaggia” (da “mal n'aggia”, napoletano = che ne abbia male) è accettabile ovunque; “minchia” è volgare: attenzione al contesto.",
+          "esempio": "Mannaggia, ho dimenticato le chiavi!"
+        },
+        {
+          "titolo": "Voi vs Lei (Sud)",
+          "spiega": "In alcune zone del Sud si usa ancora il “Voi” di cortesia al posto del “Lei”, specie con gli anziani.",
+          "lingua": "Residuo storico della cortesia: il “Voi” era la forma ufficiale fino al Novecento. Geografia + storia della lingua in una sola scelta.",
+          "esempio": "Nonna, Voi che ne pensate?"
+        },
+        {
+          "titolo": "La “gorgia” toscana",
+          "spiega": "In Toscana la “c” dura diventa aspirata: “la Coca-Cola” suona “la hoha-hola”.",
+          "lingua": "Fenomeno fonetico regionale famosissimo. L'italiano standard nasce dal toscano, ma l'accento toscano è inconfondibile.",
+          "esempio": "Vòi una hoha-hola hon la hannuccia? (Vuoi una Coca-Cola con la cannuccia?)"
         }
       ]
     }
