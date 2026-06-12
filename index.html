@@ -333,13 +333,15 @@ const TOPIC_LABELS = {
   casa:'Casa',famiglia:'Famiglia',corpo:'Corpo & salute',cibo:'Cibo & drink',
   lavoro:'Lavoro',scuola:'Scuola',città:'Città',natura:'Natura',
   tempo:'Tempo',sentimenti:'Sentimenti',mente:'Mente',
-  società:'Società',cultura:'Cultura',economia:'Economia',viaggio:'Viaggio'
+  società:'Società',cultura:'Cultura',economia:'Economia',viaggio:'Viaggio',
+  burocrazia:'Burocrazia & immigrazione'
 };
 const TOPIC_ICONS = {
   casa:'🏠',famiglia:'👨‍👩‍👧',corpo:'💪',cibo:'🍝',
   lavoro:'💼',scuola:'📚',città:'🏙️',natura:'🌿',
   tempo:'⏳',sentimenti:'❤️',mente:'💭',
-  società:'🤝',cultura:'🎭',economia:'💰',viaggio:'✈️'
+  società:'🤝',cultura:'🎭',economia:'💰',viaggio:'✈️',
+  burocrazia:'🛂'
 };
 function userStore(){ return JSON.parse(localStorage.getItem(USER_KEY)||'{"voci":[]}'); }
 function saveUserStore(s){ localStorage.setItem(USER_KEY, JSON.stringify(s)); }
