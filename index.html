@@ -187,6 +187,7 @@
   .ref-chip{flex:0 0 auto;background:var(--card);border:1px solid var(--line);color:var(--muted);
     border-radius:20px;padding:8px 14px;font-size:12.5px;font-weight:600;cursor:pointer;white-space:nowrap;transition:.12s;box-shadow:var(--shadow-sm)}
   .ref-chip:hover{border-color:var(--accent);color:var(--accent)}
+  .ref-chip.active{border-color:var(--accent);color:#fff;background:var(--accent)}
   .ref-sec{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;width:100%;margin-bottom:16px;scroll-margin-top:78px;box-shadow:var(--shadow-sm)}
   .ref-sec .head{display:flex;align-items:center;gap:12px;margin-bottom:6px}
   .ref-sec .head .ico{font-size:22px;line-height:1;width:42px;height:42px;display:flex;align-items:center;justify-content:center;background:var(--card2);border-radius:12px;flex:0 0 auto}
@@ -725,65 +726,32 @@ function runReference(){
 }
 
 // Pop — cultura italiana contemporanea (curiosità, meme, slang, regionalismi)
-// con focus linguistico. Stesso pattern di runIdioms: dati da DB.pop, ricerca,
-// nav per categoria, schede. In più: un campo "spiegami questo" che usa l'AI
-// (Gemini) già presente nell'app, attivo solo se l'utente ha la chiave API.
+// con focus linguistico. Le categorie sono organizzate in sezioni separate
+// (tab): se ne vede una alla volta. La ricerca, se attiva, cerca in tutte.
 function runPop(){
   const stage = header();
   const cats = DB.pop || [];
   stage.appendChild($(`<div style="margin-bottom:4px"><b style="font-size:18px">&#10024; Pop</b></div>`));
   stage.appendChild($(`<p class="muted" style="margin:0 0 14px">Cultura italiana di oggi spiegata dal punto di vista della lingua. Tocca un titolo o un esempio per ascoltarne la pronuncia &#128266;</p>`));
 
-  // AI "spiegami questo" — usa la stessa AI di "Parla con Andrea"
-  const ai = $(`<div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:16px"></div>`);
-  ai.appendChild($(`<div style="font-weight:700;font-size:14px;margin-bottom:8px">&#129302; Spiegami questo</div>`));
-  const aiInput = $(`<textarea placeholder="Incolla un meme, una parola o una frase che hai sentito… te la spiego dal punto di vista linguistico." style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;color:var(--text);resize:vertical;min-height:54px;font-family:inherit"></textarea>`);
-  ai.appendChild(aiInput);
-  const aiBtn = $(`<button class="btn" style="margin-top:8px">Spiegami &#10024;</button>`);
-  ai.appendChild(aiBtn);
-  const aiOut = $(`<div style="margin-top:10px;font-size:14px;line-height:1.55;color:var(--text);display:none"></div>`);
-  ai.appendChild(aiOut);
-  const aiHint = $(`<div style="margin-top:8px;font-size:12px;color:var(--muted)"></div>`);
-  ai.appendChild(aiHint);
-  function refreshHint(){
-    aiHint.style.display = localStorage.getItem(SOFIA_KEY) ? "none" : "block";
-    aiHint.innerHTML = `&#128274; Per usare le spiegazioni AI, configura la chiave in <b>Parla con Andrea</b>.`;
-  }
-  refreshHint();
-  aiBtn.onclick = async ()=>{
-    const q = aiInput.value.trim();
-    if(!q) return;
-    const key = localStorage.getItem(SOFIA_KEY);
-    if(!key){ refreshHint(); return; }
-    aiBtn.disabled = true; aiBtn.textContent = "..."; aiOut.style.display="none";
-    try{
-      const prompt = `Sei un tutor di italiano. Spiega in italiano semplice (livello B1-B2) questo elemento di cultura/lingua italiana contemporanea: "${q}". Includi: 1) cosa significa, 2) il registro (formale/colloquiale/slang) ed eventuale regione, 3) un breve esempio d'uso. Massimo 120 parole, niente formattazione markdown.`;
-      const r = await fetch(`${SOFIA_REST}?key=${key}`,{method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify({
-          contents:[{role:"user",parts:[{text:prompt}]}],
-          generationConfig:{maxOutputTokens:400,temperature:0.5}
-        })});
-      const d = await r.json();
-      const txt = (d.candidates?.[0]?.content?.parts?.[0]?.text||"").trim();
-      if(txt){ aiOut.textContent = txt; aiOut.style.display="block"; }
-      else { aiOut.textContent = "Non sono riuscito a rispondere, riprova."; aiOut.style.display="block"; }
-    }catch(e){
-      aiOut.textContent = "Errore di connessione, riprova."; aiOut.style.display="block";
-    }
-    aiBtn.disabled = false; aiBtn.textContent = "Spiegami ✨";
-  };
-  stage.appendChild(ai);
-
   // Search box
   const search = $(`<input type="text" placeholder="Cerca un meme, una parola, una curiosità…" style="width:100%;box-sizing:border-box;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--text);margin-bottom:14px">`);
   stage.appendChild(search);
 
-  // Category nav
+  // Category tabs — una sezione alla volta
+  let activeId = cats.length ? cats[0].id : null;
   const nav = $(`<div class="ref-nav"></div>`);
+  const chips = {};
+  function setActiveChip(id){
+    cats.forEach(c=>{
+      const on = c.id===id && !search.value.trim();
+      chips[c.id].classList.toggle("active", on);
+    });
+  }
   cats.forEach(c=>{
     const chip = $(`<button class="ref-chip">${c.icona||""} ${c.categoria}</button>`);
-    chip.onclick = ()=>document.getElementById("pop-"+c.id).scrollIntoView({behavior:"smooth",block:"start"});
+    chip.onclick = ()=>{ activeId = c.id; search.value=""; render(""); };
+    chips[c.id] = chip;
     nav.appendChild(chip);
   });
   stage.appendChild(nav);
@@ -791,42 +759,50 @@ function runPop(){
   const secWrap = $(`<div></div>`);
   stage.appendChild(secWrap);
 
+  function sectionFor(c, matches){
+    const sec = $(`<section class="ref-sec" id="pop-${c.id}"></section>`);
+    sec.appendChild($(`
+      <div class="head">
+        <span class="ico">${c.icona||"&#10024;"}</span>
+        <h3>${c.categoria}</h3>
+      </div>`));
+    if(c.sottotitolo) sec.appendChild($(`<p class="sub">${c.sottotitolo}</p>`));
+    matches.forEach(v=>{
+      const card = $(`<div class="idiom"></div>`);
+      const head = $(`<div class="idiom-it it-tap">${v.titolo} <span class="spk">&#128266;</span></div>`);
+      head.onclick = ()=>speak(v.titolo.replace(/[“”"]/g,''));
+      card.appendChild(head);
+      if(v.spiega) card.appendChild($(`<div class="idiom-sig">${v.spiega}</div>`));
+      if(v.lingua) card.appendChild($(`<div class="pop-lingua">&#128172; ${v.lingua}</div>`));
+      if(v.esempio){
+        const ex = $(`<div class="idiom-ex it-tap">&#8220;${v.esempio}&#8221;</div>`);
+        ex.onclick = ()=>speak(v.esempio);
+        card.appendChild(ex);
+      }
+      sec.appendChild(card);
+    });
+    return sec;
+  }
+
   function render(query){
     const q = (query||"").trim().toLowerCase();
     secWrap.innerHTML = "";
-    let shown = 0;
-    cats.forEach(c=>{
-      const matches = (c.voci||[]).filter(v=>{
-        if(!q) return true;
-        return [v.titolo, v.spiega, v.lingua, v.esempio].some(x=>x && x.toLowerCase().includes(q));
+    setActiveChip(activeId);
+    if(q){
+      // Ricerca globale su tutte le categorie
+      let shown = 0;
+      cats.forEach(c=>{
+        const matches = (c.voci||[]).filter(v=>
+          [v.titolo, v.spiega, v.lingua, v.esempio].some(x=>x && x.toLowerCase().includes(q)));
+        if(!matches.length) return;
+        shown += matches.length;
+        secWrap.appendChild(sectionFor(c, matches));
       });
-      if(!matches.length) return;
-      shown += matches.length;
-      const sec = $(`<section class="ref-sec" id="pop-${c.id}"></section>`);
-      sec.appendChild($(`
-        <div class="head">
-          <span class="ico">${c.icona||"&#10024;"}</span>
-          <h3>${c.categoria}</h3>
-        </div>`));
-      if(c.sottotitolo) sec.appendChild($(`<p class="sub">${c.sottotitolo}</p>`));
-      matches.forEach(v=>{
-        const card = $(`<div class="idiom"></div>`);
-        const head = $(`<div class="idiom-it it-tap">${v.titolo} <span class="spk">&#128266;</span></div>`);
-        head.onclick = ()=>speak(v.titolo.replace(/[“”"]/g,''));
-        card.appendChild(head);
-        if(v.spiega) card.appendChild($(`<div class="idiom-sig">${v.spiega}</div>`));
-        if(v.lingua) card.appendChild($(`<div class="pop-lingua">&#128172; ${v.lingua}</div>`));
-        if(v.esempio){
-          const ex = $(`<div class="idiom-ex it-tap">&#8220;${v.esempio}&#8221;</div>`);
-          ex.onclick = ()=>speak(v.esempio);
-          card.appendChild(ex);
-        }
-        sec.appendChild(card);
-      });
-      secWrap.appendChild(sec);
-    });
-    if(!shown){
-      secWrap.appendChild($(`<p class="muted" style="text-align:center;padding:30px 0">Nessun risultato per &ldquo;${q}&rdquo;.</p>`));
+      if(!shown) secWrap.appendChild($(`<p class="muted" style="text-align:center;padding:30px 0">Nessun risultato per &ldquo;${q}&rdquo;.</p>`));
+    } else {
+      // Solo la categoria attiva
+      const c = cats.find(x=>x.id===activeId) || cats[0];
+      if(c) secWrap.appendChild(sectionFor(c, c.voci||[]));
     }
   }
 
