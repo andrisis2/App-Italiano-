@@ -415,6 +415,25 @@ function grade(id, ok){
   srs[id]=s; saveSrs();
 }
 
+// --- Progresso "copertura sezione" per le flashcard per argomento ---
+// Tiene traccia, per ogni sezione, delle carte già padroneggiate ("Got it"):
+// una carta padroneggiata non ritorna finché tutta la sezione non è coperta.
+// Memoria separata dall'SRS globale, azzerabile col tasto Reset.
+const TOPIC_FLASH_KEY = "flash_topic_cover_v1";
+function topicFlashAll(){ try{ return JSON.parse(localStorage.getItem(TOPIC_FLASH_KEY)||"{}"); }catch(e){ return {}; } }
+function topicFlashGet(key){ return topicFlashAll()[key] || {}; }
+function topicFlashSet(key, score){ const all=topicFlashAll(); all[key]=score; localStorage.setItem(TOPIC_FLASH_KEY, JSON.stringify(all)); }
+function topicFlashReset(key){ const all=topicFlashAll(); delete all[key]; localStorage.setItem(TOPIC_FLASH_KEY, JSON.stringify(all)); }
+function startTopicFlash(pool, label){
+  runFlash(pool, label, {
+    cover: true,
+    initialScore: topicFlashGet(label),
+    onProgress: (score)=>topicFlashSet(label, score),
+    restart: ()=>startTopicFlash(pool, label),
+    onReset: ()=>{ topicFlashReset(label); startTopicFlash(pool, label); }
+  });
+}
+
 // --- Daily review streak ---
 const DAILY_KEY = "italiano_daily_v1";
 function dateStr(d){ return d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0"); }
@@ -980,7 +999,7 @@ function pickFlashTopic(){
       <div class="d">${allPool.length} elementi &middot; <span style="color:var(--accent2)">${allDue} da ripassare</span></div>
     </div>
   </button>`);
-  allBtn.onclick = ()=>runFlash(allPool, 'Tutti');
+  allBtn.onclick = ()=>startTopicFlash(allPool, 'Tutti');
   stage.appendChild(allBtn);
 
   // Topic rows — one per line for clarity
@@ -1024,7 +1043,7 @@ function runTopicList(pool, label){
   stage.appendChild(hdr);
 
   const studyBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:12px">&#9654; Studia &middot; <span style="opacity:.85">${dueCount} da ripassare</span></button>`);
-  studyBtn.onclick = ()=>runFlash(pool, label);
+  studyBtn.onclick = ()=>startTopicFlash(pool, label);
   stage.appendChild(studyBtn);
 
   const inputWrap = $(`<div style="position:relative;width:100%;margin-bottom:10px"></div>`);
@@ -1115,17 +1134,47 @@ function runFlash(pool, topicLabel, opts){
   // Modalità ripasso a cicli (opts.repeat): le carte restano in rotazione finché
   // su ognuna non si è premuto "Got it" `need` volte. Un giro normale = need 1.
   const need = opts.repeat ? (typeof opts.repeat==='number' ? opts.repeat : 2) : 1;
+  // "cycling": le carte restano in rotazione finché non sono padroneggiate.
+  // - repeat (ripasso del giorno): serve premere "Got it" `need` volte.
+  // - cover (studio per argomento): basta un "Got it" (need=1), ma la carta
+  //   non ritorna finché tutta la sezione non è coperta; il progresso è persistente.
+  const cycling = need>1 || !!opts.cover;
   const shuffled = (pool||[]).slice().sort(()=>Math.random()-.5);
-  let deck = need>1 ? shuffled : shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, shuffled.length));
+  let deck = cycling ? shuffled : shuffled.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(15, shuffled.length));
   const total = deck.length;       // carte uniche da padroneggiare
   const score = Object.assign({}, opts.initialScore||{}); // id -> "Got it" accumulati (azzerato da "Review again")
-  // ripresa: salta le carte già padroneggiate in una sessione precedente di oggi
-  if(need>1) deck = deck.filter(c=>(score[c.id]||0) < need);
+  // ripresa: salta le carte già padroneggiate in una sessione precedente
+  if(cycling) deck = deck.filter(c=>(score[c.id]||0) < need);
   const saveProg = ()=>{ if(opts.onProgress) opts.onProgress(score); };
   let i=0;
   let dir = localStorage.getItem('flashDir')==='en-it' ? 'en-it' : 'it-en';
   const stage = header();
   if(topicLabel) stage.appendChild($(`<div style="text-align:center;margin-bottom:4px;font-size:13px;color:var(--muted)">${topicLabel}</div>`));
+
+  // Reset memoria sezione (solo in modalità copertura): riporta in gioco anche
+  // le carte già padroneggiate ("Got it").
+  if(opts.cover && opts.onReset){
+    const resetRow = $(`<div style="display:flex;justify-content:flex-end;margin-bottom:6px"></div>`);
+    const resetBtn = $(`<button style="border:1px solid var(--line);background:var(--card);border-radius:20px;padding:5px 13px;font-size:12px;color:var(--muted);cursor:pointer;transition:.15s">&#8635; Reset sezione</button>`);
+    resetBtn.onclick = ()=>{ if(confirm("Azzerare la memoria delle flashcard di questa sezione? Tutte le carte torneranno da studiare.")) opts.onReset(); };
+    resetRow.appendChild(resetBtn);
+    stage.appendChild(resetRow);
+  }
+
+  // Schermata di sezione completata (modalità copertura) con tasto Reset.
+  function finishCover(){
+    stage.innerHTML = `
+      <div class="done">
+        <div class="big">&#127881;</div>
+        <h2>Sezione completata!</h2>
+        <p class="muted">Hai fatto "Got it" su tutte le ${total} carte di questa sezione.</p>
+      </div>`;
+    haptic(true);
+    const row=$(`<div class="row"></div>`);
+    const home=$(`<button class="btn">Home</button>`); home.onclick=()=>history.back();
+    const rst=$(`<button class="btn primary">&#8635; Reset sezione</button>`); rst.onclick=()=>{ if(opts.onReset) opts.onReset(); };
+    row.appendChild(home); row.appendChild(rst); stage.appendChild(row);
+  }
 
   const dirRow = $(`<div style="display:flex;gap:8px;justify-content:center;margin-bottom:10px"></div>`);
   const dirBtns = [['it-en','IT &#8594; EN'],['en-it','EN &#8594; IT']].map(([val,label])=>{
@@ -1155,17 +1204,18 @@ function runFlash(pool, topicLabel, opts){
   const cardWrap = $(`<div style="width:100%"></div>`); stage.appendChild(cardWrap);
   function show(){
     if(i>=deck.length){
-      if(need>1){
+      if(cycling){
         // fine del giro: tieni solo le carte non ancora padroneggiate e rimescola
         deck = deck.filter(c=>(score[c.id]||0) < need);
         if(deck.length){ deck = deck.sort(()=>Math.random()-.5); i=0; }
       }
       if(i>=deck.length){
         if(opts.onComplete) opts.onComplete();
+        if(opts.cover) return finishCover();
         return finish(stage, "Sessione completata!", opts.restart||pickFlashTopic);
       }
     }
-    const done = need>1 ? Object.values(score).filter(n=>n>=need).length : i;
+    const done = cycling ? Object.values(score).filter(n=>n>=need).length : i;
     bar.style.width = (done/total*100)+"%"; bar.setNum(done, total);
     const c = deck[i]; let flipped=false;
     const itFront = dir==='it-en';
@@ -1207,8 +1257,8 @@ function runFlash(pool, topicLabel, opts){
         <button class="btn bad">Review again</button>
         <button class="btn good">Got it</button>
       </div>`);
-    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); if(need>1){ score[c.id]=0; saveProg(); } i++; show();};
-    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); if(need>1){ score[c.id]=(score[c.id]||0)+1; saveProg(); } i++; show();};
+    controls.children[0].onclick=()=>{haptic(false); grade(c.id,false); if(cycling){ score[c.id]=0; saveProg(); } i++; show();};
+    controls.children[1].onclick=()=>{haptic(true); grade(c.id,true); if(cycling){ score[c.id]=(score[c.id]||0)+1; saveProg(); } i++; show();};
     cardWrap.appendChild(controls);
     if(itFront && 'speechSynthesis' in window) setTimeout(()=>speak(c.it), 150);
   }
