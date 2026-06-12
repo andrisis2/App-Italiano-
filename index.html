@@ -217,6 +217,7 @@
   .idiom-lett{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:3px}
   .idiom-ex{font-size:13.5px;color:var(--muted);line-height:1.5;margin-top:7px;padding-left:11px;border-left:2px solid var(--line);cursor:pointer;transition:.15s}
   .idiom-ex:hover{color:var(--accent2);border-left-color:var(--accent2)}
+  .pop-lingua{font-size:13px;color:var(--text);line-height:1.5;margin-top:8px;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:9px 11px}
   .q{font-size:32px;font-weight:800;text-align:center;margin:6px 0;letter-spacing:-.5px;text-rendering:optimizeLegibility}
   @keyframes shake{10%,90%{transform:translateX(-1px)}20%,80%{transform:translateX(2px)}30%,50%,70%{transform:translateX(-5px)}40%,60%{transform:translateX(5px)}}
   @keyframes pop{0%{transform:scale(1)}45%{transform:scale(1.05)}100%{transform:scale(1)}}
@@ -591,6 +592,15 @@ function renderHome(){
         <div class="d">${nidiomi} espressioni idiomatiche e slang &mdash; parla come un vero italiano</div>
       </button>`)).onclick = ()=>start("idiomi");
   }
+  if(DB.pop && DB.pop.length){
+    const npop = DB.pop.reduce((n,c)=>n+(c.voci||[]).length,0);
+    grid.appendChild($(`
+      <button class="tile">
+        <div class="ico" style="background:rgba(226,56,75,.12)">&#10024;</div>
+        <div class="t">Pop</div>
+        <div class="d">${npop} pillole di cultura italiana contemporanea &mdash; meme, slang, curiosit&agrave; e regionalismi</div>
+      </button>`)).onclick = ()=>start("pop");
+  }
   grid.appendChild($(`
     <button class="tile wide">
       <div class="ico" style="background:rgba(47,107,237,.10)">&#128214;</div>
@@ -657,6 +667,7 @@ function start(mode){
   if(mode==="diz" || mode==="vocab") return runVocabolario();
   if(mode==="ref") return runReference();
   if(mode==="idiomi") return runIdioms();
+  if(mode==="pop") return runPop();
   if(mode==="sofia") return runSofia();
 }
 
@@ -709,6 +720,121 @@ function runReference(){
     stage.appendChild(sec);
   });
   const home = $(`<button class="btn" style="margin-top:4px">&#8593; Back to top</button>`);
+  home.onclick = ()=>stage.scrollIntoView({behavior:"smooth",block:"start"});
+  stage.appendChild(home);
+}
+
+// Pop — cultura italiana contemporanea (curiosità, meme, slang, regionalismi)
+// con focus linguistico. Stesso pattern di runIdioms: dati da DB.pop, ricerca,
+// nav per categoria, schede. In più: un campo "spiegami questo" che usa l'AI
+// (Gemini) già presente nell'app, attivo solo se l'utente ha la chiave API.
+function runPop(){
+  const stage = header();
+  const cats = DB.pop || [];
+  stage.appendChild($(`<div style="margin-bottom:4px"><b style="font-size:18px">&#10024; Pop</b></div>`));
+  stage.appendChild($(`<p class="muted" style="margin:0 0 14px">Cultura italiana di oggi spiegata dal punto di vista della lingua. Tocca un titolo o un esempio per ascoltarne la pronuncia &#128266;</p>`));
+
+  // AI "spiegami questo" — usa la stessa AI di "Parla con Andrea"
+  const ai = $(`<div style="background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:16px"></div>`);
+  ai.appendChild($(`<div style="font-weight:700;font-size:14px;margin-bottom:8px">&#129302; Spiegami questo</div>`));
+  const aiInput = $(`<textarea placeholder="Incolla un meme, una parola o una frase che hai sentito… te la spiego dal punto di vista linguistico." style="width:100%;box-sizing:border-box;background:var(--card2);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:14px;color:var(--text);resize:vertical;min-height:54px;font-family:inherit"></textarea>`);
+  ai.appendChild(aiInput);
+  const aiBtn = $(`<button class="btn" style="margin-top:8px">Spiegami &#10024;</button>`);
+  ai.appendChild(aiBtn);
+  const aiOut = $(`<div style="margin-top:10px;font-size:14px;line-height:1.55;color:var(--text);display:none"></div>`);
+  ai.appendChild(aiOut);
+  const aiHint = $(`<div style="margin-top:8px;font-size:12px;color:var(--muted)"></div>`);
+  ai.appendChild(aiHint);
+  function refreshHint(){
+    aiHint.style.display = localStorage.getItem(SOFIA_KEY) ? "none" : "block";
+    aiHint.innerHTML = `&#128274; Per usare le spiegazioni AI, configura la chiave in <b>Parla con Andrea</b>.`;
+  }
+  refreshHint();
+  aiBtn.onclick = async ()=>{
+    const q = aiInput.value.trim();
+    if(!q) return;
+    const key = localStorage.getItem(SOFIA_KEY);
+    if(!key){ refreshHint(); return; }
+    aiBtn.disabled = true; aiBtn.textContent = "..."; aiOut.style.display="none";
+    try{
+      const prompt = `Sei un tutor di italiano. Spiega in italiano semplice (livello B1-B2) questo elemento di cultura/lingua italiana contemporanea: "${q}". Includi: 1) cosa significa, 2) il registro (formale/colloquiale/slang) ed eventuale regione, 3) un breve esempio d'uso. Massimo 120 parole, niente formattazione markdown.`;
+      const r = await fetch(`${SOFIA_REST}?key=${key}`,{method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({
+          contents:[{role:"user",parts:[{text:prompt}]}],
+          generationConfig:{maxOutputTokens:400,temperature:0.5}
+        })});
+      const d = await r.json();
+      const txt = (d.candidates?.[0]?.content?.parts?.[0]?.text||"").trim();
+      if(txt){ aiOut.textContent = txt; aiOut.style.display="block"; }
+      else { aiOut.textContent = "Non sono riuscito a rispondere, riprova."; aiOut.style.display="block"; }
+    }catch(e){
+      aiOut.textContent = "Errore di connessione, riprova."; aiOut.style.display="block";
+    }
+    aiBtn.disabled = false; aiBtn.textContent = "Spiegami ✨";
+  };
+  stage.appendChild(ai);
+
+  // Search box
+  const search = $(`<input type="text" placeholder="Cerca un meme, una parola, una curiosità…" style="width:100%;box-sizing:border-box;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--text);margin-bottom:14px">`);
+  stage.appendChild(search);
+
+  // Category nav
+  const nav = $(`<div class="ref-nav"></div>`);
+  cats.forEach(c=>{
+    const chip = $(`<button class="ref-chip">${c.icona||""} ${c.categoria}</button>`);
+    chip.onclick = ()=>document.getElementById("pop-"+c.id).scrollIntoView({behavior:"smooth",block:"start"});
+    nav.appendChild(chip);
+  });
+  stage.appendChild(nav);
+
+  const secWrap = $(`<div></div>`);
+  stage.appendChild(secWrap);
+
+  function render(query){
+    const q = (query||"").trim().toLowerCase();
+    secWrap.innerHTML = "";
+    let shown = 0;
+    cats.forEach(c=>{
+      const matches = (c.voci||[]).filter(v=>{
+        if(!q) return true;
+        return [v.titolo, v.spiega, v.lingua, v.esempio].some(x=>x && x.toLowerCase().includes(q));
+      });
+      if(!matches.length) return;
+      shown += matches.length;
+      const sec = $(`<section class="ref-sec" id="pop-${c.id}"></section>`);
+      sec.appendChild($(`
+        <div class="head">
+          <span class="ico">${c.icona||"&#10024;"}</span>
+          <h3>${c.categoria}</h3>
+        </div>`));
+      if(c.sottotitolo) sec.appendChild($(`<p class="sub">${c.sottotitolo}</p>`));
+      matches.forEach(v=>{
+        const card = $(`<div class="idiom"></div>`);
+        const head = $(`<div class="idiom-it it-tap">${v.titolo} <span class="spk">&#128266;</span></div>`);
+        head.onclick = ()=>speak(v.titolo.replace(/[“”"]/g,''));
+        card.appendChild(head);
+        if(v.spiega) card.appendChild($(`<div class="idiom-sig">${v.spiega}</div>`));
+        if(v.lingua) card.appendChild($(`<div class="pop-lingua">&#128172; ${v.lingua}</div>`));
+        if(v.esempio){
+          const ex = $(`<div class="idiom-ex it-tap">&#8220;${v.esempio}&#8221;</div>`);
+          ex.onclick = ()=>speak(v.esempio);
+          card.appendChild(ex);
+        }
+        sec.appendChild(card);
+      });
+      secWrap.appendChild(sec);
+    });
+    if(!shown){
+      secWrap.appendChild($(`<p class="muted" style="text-align:center;padding:30px 0">Nessun risultato per &ldquo;${q}&rdquo;.</p>`));
+    }
+  }
+
+  let t;
+  search.addEventListener("input", ()=>{ clearTimeout(t); t=setTimeout(()=>render(search.value), 120); });
+  render("");
+
+  const home = $(`<button class="btn" style="margin-top:4px">&#8593; Torna su</button>`);
   home.onclick = ()=>stage.scrollIntoView({behavior:"smooth",block:"start"});
   stage.appendChild(home);
 }
