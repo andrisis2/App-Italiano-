@@ -1,5 +1,5 @@
-const CACHE = 'italiano-b2-v7';
-const ASSETS = ['/', '/index.html', '/knowledge.json', '/manifest.json'];
+const CACHE = 'italiano-b2-v8';
+const ASSETS = ['/', '/index.html', '/knowledge.json', '/manifest.json', '/splash-desktop.png'];
 self.addEventListener('install', e => {
   // cache:'no-cache' rivalida col server, altrimenti il pre-cache può ripescare file vecchi dalla cache HTTP
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: 'no-cache' }))).catch(() => {})));
