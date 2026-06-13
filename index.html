@@ -269,6 +269,12 @@
   .add-flash-btn{margin-top:10px;width:100%;padding:9px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:.12s}
   .add-flash-btn:not(:disabled):hover{border-color:var(--accent2);color:var(--accent2)}
   .add-flash-btn:disabled{cursor:default;opacity:.8}
+  .vocab-star-btn{background:none;border:1px solid var(--line);border-radius:50%;width:38px;height:38px;flex-shrink:0;font-size:18px;cursor:pointer;transition:.15s;display:flex;align-items:center;justify-content:center;color:var(--muted);line-height:1}
+  .vocab-star-btn:hover{border-color:#f59e0b;color:#f59e0b}
+  .vocab-star-btn.starred{color:#f59e0b;border-color:#f59e0b;background:rgba(245,158,11,.10)}
+  .flash .flash-star-btn{position:absolute;bottom:14px;left:14px;background:none;border:1px solid var(--line);border-radius:50%;width:36px;height:36px;font-size:17px;cursor:pointer;transition:.15s;display:flex;align-items:center;justify-content:center;color:var(--muted);line-height:1;z-index:2}
+  .flash .flash-star-btn:hover{border-color:#f59e0b;color:#f59e0b}
+  .flash .flash-star-btn.starred{color:#f59e0b;border-color:#f59e0b;background:rgba(245,158,11,.10)}
   .tag-picker{margin-top:10px;border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:8px}
   .tag-picker label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase}
   .tag-chips{display:flex;flex-wrap:wrap;gap:5px}
@@ -358,6 +364,14 @@ function addUserVoce(itWord, enTrans, pos, tag){
   return true;
 }
 function isUserVoce(itWord){ return userStore().voci.some(v=>v.it===itWord); }
+
+// ---------- Parole preferite (selezione manuale per sessioni mirate) ----------
+const PREF_KEY = "italiano_preferiti_v1";
+function prefStore(){ try{ return new Set(JSON.parse(localStorage.getItem(PREF_KEY)||'[]')); }catch(e){ return new Set(); } }
+function savePrefStore(s){ localStorage.setItem(PREF_KEY, JSON.stringify([...s])); }
+function isPref(id){ return prefStore().has(id); }
+function togglePref(id){ const s=prefStore(); if(s.has(id)) s.delete(id); else s.add(id); savePrefStore(s); return s.has(id); }
+
 let DB = null;
 let srs = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
 function saveSrs(){ localStorage.setItem(STORE_KEY, JSON.stringify(srs)); }
@@ -432,6 +446,10 @@ function startTopicFlash(pool, label){
     restart: ()=>startTopicFlash(pool, label),
     onReset: ()=>{ topicFlashReset(label); startTopicFlash(pool, label); }
   });
+}
+
+function startQuick15(pool, label){
+  runFlash(pool, label + ' · 15 carte', { restart: ()=>startQuick15(pool, label) });
 }
 
 // --- Daily review streak ---
@@ -989,26 +1007,65 @@ function pickFlashTopic(){
   const stage = header();
   stage.appendChild($(`<div style="margin-bottom:14px"><b style="font-size:18px">Scegli argomento</b></div>`));
 
-  // "Tutti" — full dizionario + user-saved words
   const allPool = [...(DB.dizionario||[]), ...(userStore().voci||[])];
-  const allDue = allPool.filter(x=>!srs[x.id]||box(x.id)<3).length;
-  const allBtn = $(`<button class="tile wide" style="margin-bottom:14px">
-    <div class="ico">🎲</div>
+  const dueOf = pool => pool.filter(x=>!srs[x.id]||box(x.id)<3).length;
+
+  // Avvolge il tile in un flex-row e aggiunge "⚡ 15 carte" quando il pool ha >15 parole
+  function mkRow(btn, pool, label){
+    const wrap = document.createElement('div');
+    wrap.style.cssText = 'display:flex;gap:8px;align-items:stretch';
+    btn.style.flex = '1';
+    wrap.appendChild(btn);
+    if(pool.length > 15){
+      const q = $(`<button title="Ripassa 15 carte (prima quelle in scadenza)" style="flex-shrink:0;padding:0 15px;border:1px solid var(--line);background:var(--card);border-radius:var(--radius);cursor:pointer;font-size:12px;font-weight:700;color:var(--accent2);text-align:center;line-height:1.5;white-space:nowrap;box-shadow:var(--shadow-sm);transition:.12s">&#9889;<br>15<br>carte</button>`);
+      q.onmouseenter=()=>{q.style.borderColor='var(--accent2)';q.style.background='rgba(47,107,237,.07)';};
+      q.onmouseleave=()=>{q.style.borderColor='';q.style.background='';};
+      q.onclick=()=>startQuick15(pool, label);
+      wrap.appendChild(q);
+    }
+    return wrap;
+  }
+
+  // ----- Preferite -----
+  const prefIds = prefStore();
+  const prefPool = allPool.filter(v=>prefIds.has(v.id));
+  if(prefPool.length > 0){
+    stage.appendChild($(`<div style="margin-bottom:10px"><b style="font-size:18px">&#11088; Preferite</b></div>`));
+    const prefDue = dueOf(prefPool);
+    const prefBtn = $(`<button class="tile wide" style="background:linear-gradient(120deg,var(--card) 0%,rgba(245,158,11,.07) 100%)">
+      <div class="ico" style="font-size:28px;background:rgba(245,158,11,.12)">&#9733;</div>
+      <div class="txt">
+        <div class="t">Le mie preferite</div>
+        <div class="d">${prefPool.length} parol${prefPool.length===1?'a':'e'} selezionat${prefPool.length===1?'a':'e'} &middot; <span style="color:var(--accent2)">${prefDue} da ripassare</span></div>
+      </div>
+    </button>`);
+    prefBtn.onclick = ()=>startTopicFlash(prefPool, 'Le mie preferite');
+    const prefRow = mkRow(prefBtn, prefPool, 'Le mie preferite');
+    prefRow.style.marginBottom = '18px';
+    stage.appendChild(prefRow);
+  }
+
+  // ----- Tutti -----
+  const allDue = dueOf(allPool);
+  const allBtn = $(`<button class="tile wide">
+    <div class="ico">&#127922;</div>
     <div class="txt">
       <div class="t">Tutti gli argomenti</div>
       <div class="d">${allPool.length} elementi &middot; <span style="color:var(--accent2)">${allDue} da ripassare</span></div>
     </div>
   </button>`);
   allBtn.onclick = ()=>startTopicFlash(allPool, 'Tutti');
-  stage.appendChild(allBtn);
+  const allRow = mkRow(allBtn, allPool, 'Tutti');
+  allRow.style.marginBottom = '14px';
+  stage.appendChild(allRow);
 
-  // Topic rows — one per line for clarity
+  // ----- Per argomento -----
   const list = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
   for(const [tag, label] of Object.entries(TOPIC_LABELS)){
     const words = (DB.dizionario||[]).filter(e=>e.tag&&e.tag.includes(tag));
     if(!words.length) continue;
     const due = words.filter(e=>!srs[e.id]||box(e.id)<3).length;
-    const icon = TOPIC_ICONS[tag]||'📖';
+    const icon = TOPIC_ICONS[tag]||'&#128218;';
     const btn = $(`<button class="tile wide">
       <div class="ico" style="font-size:24px">${icon}</div>
       <div class="txt">
@@ -1017,7 +1074,7 @@ function pickFlashTopic(){
       </div>
     </button>`);
     btn.onclick = ()=>runTopicList(words, label);
-    list.appendChild(btn);
+    list.appendChild(mkRow(btn, words, label));
   }
   stage.appendChild(list);
 }
@@ -1111,6 +1168,17 @@ function runTopicList(pool, label){
       speakBtn.innerHTML = '&#128266;';
       speakBtn.onclick = ()=>speak(w.it);
       card.appendChild(speakBtn);
+
+      const starBtn = document.createElement('button');
+      starBtn.className = 'vocab-star-btn' + (isPref(w.id) ? ' starred' : '');
+      starBtn.title = isPref(w.id) ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
+      starBtn.innerHTML = '&#9733;';
+      starBtn.onclick = ()=>{
+        const on = togglePref(w.id);
+        starBtn.classList.toggle('starred', on);
+        starBtn.title = on ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
+      };
+      card.appendChild(starBtn);
 
       list.appendChild(card);
     });
@@ -1224,12 +1292,14 @@ function runFlash(pool, topicLabel, opts){
     const ipaNote = c.ipa || "";
     const regTag = c.registro ? `<span class="pill">${c.registro}</span>` : "";
     cardWrap.innerHTML="";
+    const starredNow = isPref(c.id);
     // In EN→IT la parola italiana è la risposta: il TTS sta sul retro per non svelarla
     const flip = $(`
       <div class="flip">
         <div class="flash">
           <div class="face front">
             ${itFront ? `<button class="speak" title="Listen">&#128266;</button>` : ""}
+            <button class="flash-star-btn${starredNow?' starred':''}" title="Aggiungi ai preferiti">&#9733;</button>
             <div class="it-word">${frontWord}</div>
             ${itFront && ipaNote ? `<div class="ipa-note">${ipaNote}</div>` : ""}
             ${regTag}
@@ -1237,6 +1307,7 @@ function runFlash(pool, topicLabel, opts){
           </div>
           <div class="face back">
             ${itFront ? "" : `<button class="speak" title="Listen">&#128266;</button>`}
+            <button class="flash-star-btn${starredNow?' starred':''}" title="Aggiungi ai preferiti">&#9733;</button>
             <div class="en-trans">${backTrans}</div>
             ${!itFront && ipaNote ? `<div class="ipa-note">${ipaNote}</div>` : ""}
             <div class="small">${frontWord}${itFront && ipaNote ? ' &middot; '+ipaNote : ''}</div>
@@ -1244,6 +1315,14 @@ function runFlash(pool, topicLabel, opts){
         </div>
       </div>`);
     flip.querySelector(".speak").onclick = (e)=>{e.stopPropagation(); speak(c.it);};
+    flip.querySelectorAll(".flash-star-btn").forEach(btn=>{
+      btn.onclick = (e)=>{
+        e.stopPropagation();
+        const on = togglePref(c.id);
+        flip.querySelectorAll(".flash-star-btn").forEach(b=>b.classList.toggle("starred", on));
+        btn.title = on ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti";
+      };
+    });
     flip.onclick = ()=>{
       if(flipped) return;
       flipped=true;
@@ -1722,7 +1801,7 @@ function runVocabolario(){
   stage.appendChild(onlineSection);
 
   // ---- Unified card builder ----
-  function makeVocabCard(itWord, enTrans, {pos=null, posLabel=null, online=false}={}){
+  function makeVocabCard(itWord, enTrans, {pos=null, posLabel=null, online=false, id=null}={}){
     const card = document.createElement('div');
     card.className = 'vocab-card' + (online ? ' online' : '');
 
@@ -1759,6 +1838,18 @@ function runVocabolario(){
       top.appendChild(badge);
     }
     top.appendChild(speakBtn);
+    if(id){
+      const starBtn = document.createElement('button');
+      starBtn.className = 'vocab-star-btn' + (isPref(id) ? ' starred' : '');
+      starBtn.title = isPref(id) ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
+      starBtn.innerHTML = '&#9733;';
+      starBtn.onclick = ()=>{
+        const on = togglePref(id);
+        starBtn.classList.toggle('starred', on);
+        starBtn.title = on ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
+      };
+      top.appendChild(starBtn);
+    }
     card.appendChild(top);
 
     // Save to flashcards
@@ -1812,7 +1903,7 @@ function runVocabolario(){
     const hdr = $(`<div class="results-hdr">&#128218; Locale &middot; ${filtered.length} parol${filtered.length===1?'a':'e'}</div>`);
     localSection.appendChild(hdr);
     filtered.slice(0, 60).forEach(w=>{
-      localSection.appendChild(makeVocabCard(w.it, w.en, {pos:w.pos, posLabel:POS_LABELS[w.pos]}));
+      localSection.appendChild(makeVocabCard(w.it, w.en, {pos:w.pos, posLabel:POS_LABELS[w.pos], id:w.id}));
     });
     if(filtered.length > 60){
       localSection.appendChild($(`<div style="text-align:center;padding:10px;color:var(--muted);font-size:13px">+ altri ${filtered.length-60} — affina la ricerca</div>`));

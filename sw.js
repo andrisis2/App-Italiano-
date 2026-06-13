@@ -1,4 +1,4 @@
-const CACHE = 'italiano-b2-v8';
+const CACHE = 'italiano-b2-v9';
 const ASSETS = ['/', '/index.html', '/knowledge.json', '/manifest.json', '/splash-desktop.png'];
 self.addEventListener('install', e => {
   // cache:'no-cache' rivalida col server, altrimenti il pre-cache può ripescare file vecchi dalla cache HTTP
