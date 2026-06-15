@@ -419,7 +419,7 @@ function sofiaSaveMem(history){
 // Quando dici di sapere una carta ("Got it"), sparisce per un giorno. Se il
 // giorno dopo torna e la sai ancora, sparisce per una settimana, poi due, e
 // così via (ogni livello raddoppia). Se sbagli ("Review again") riparte da zero.
-// Stesso meccanismo in TUTTE le sezioni; il "Reset sezione" lo azzera.
+// Stesso meccanismo in TUTTE le sezioni.
 const DAY_MS = 86400000;
 const SRS_INTERVALS = [1, 7, 14, 28, 56, 112, 224]; // giorni di attesa per box 1,2,3,…
 function box(id){ return (srs[id] && srs[id].box) || 0; }
@@ -445,20 +445,10 @@ function grade(id, ok){
   s.last = Date.now();
   srs[id]=s; saveSrs();
 }
-// "Reset sezione": dimentica la pianificazione di queste carte → tornano da studiare.
-function resetSrsFor(ids){
-  ids.forEach(id=>{ delete srs[id]; });
-  saveSrs();
-}
 
-// Studio per argomento: mostra solo le carte in scadenza; il "Reset sezione"
-// azzera la pianificazione di tutte le carte di questa sezione.
+// Studio per argomento: mostra solo le carte in scadenza.
 function startTopicFlash(pool, label){
-  const ids = pool.map(c=>c.id);
-  runFlash(pool, label, {
-    restart: ()=>startTopicFlash(pool, label),
-    onReset: ()=>{ resetSrsFor(ids); startTopicFlash(pool, label); }
-  });
+  runFlash(pool, label, { restart: ()=>startTopicFlash(pool, label) });
 }
 
 function startQuick15(pool, label){
@@ -1215,16 +1205,7 @@ function runFlash(pool, topicLabel, opts){
   const stage = header();
   if(topicLabel) stage.appendChild($(`<div style="text-align:center;margin-bottom:4px;font-size:13px;color:var(--muted)">${topicLabel}</div>`));
 
-  // Tasto "Reset sezione": dimentica la pianificazione e rimette tutto da studiare.
-  if(opts.onReset){
-    const resetRow = $(`<div style="display:flex;justify-content:flex-end;margin-bottom:6px"></div>`);
-    const resetBtn = $(`<button style="border:1px solid var(--line);background:var(--card);border-radius:20px;padding:5px 13px;font-size:12px;color:var(--muted);cursor:pointer;transition:.15s">&#8635; Reset sezione</button>`);
-    resetBtn.onclick = ()=>{ if(confirm("Azzerare la memoria delle flashcard di questa sezione? Tutte le carte torneranno da studiare.")) opts.onReset(); };
-    resetRow.appendChild(resetBtn);
-    stage.appendChild(resetRow);
-  }
-
-  // Nessuna carta in scadenza: tutto ripassato (con eventuale reset per rivederle subito).
+  // Nessuna carta in scadenza: tutto ripassato.
   if(!total){
     stage.appendChild($(`
       <div class="done">
@@ -1235,11 +1216,6 @@ function runFlash(pool, topicLabel, opts){
     const row=$(`<div class="row"></div>`);
     const home=$(`<button class="btn">Home</button>`); home.onclick=()=>history.back();
     row.appendChild(home);
-    if(opts.onReset){
-      const rst=$(`<button class="btn primary">&#8635; Reset sezione</button>`);
-      rst.onclick=()=>{ if(confirm("Azzerare la memoria delle flashcard di questa sezione? Tutte le carte torneranno da studiare.")) opts.onReset(); };
-      row.appendChild(rst);
-    }
     stage.appendChild(row);
     return;
   }
