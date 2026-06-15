@@ -1532,7 +1532,7 @@ function runConjugation(tenseFilter){
     }
   }));
   if(!all.length){ history.back(); return; }
-  const prioritized = all.sort((a,b)=>dueScore(a.id)-dueScore(b.id)).slice(0, Math.min(28, all.length));
+  const prioritized = all.sort((a,b)=>dueScore(b.id)-dueScore(a.id)).slice(0, Math.min(28, all.length));
   const deck = shuffle(prioritized).slice(0, Math.min(12, prioritized.length));
 
   let i=0, correct=0;
