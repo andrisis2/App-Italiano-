@@ -269,12 +269,23 @@
   .add-flash-btn{margin-top:10px;width:100%;padding:9px;border-radius:10px;border:1px solid var(--line);background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:.12s}
   .add-flash-btn:not(:disabled):hover{border-color:var(--accent2);color:var(--accent2)}
   .add-flash-btn:disabled{cursor:default;opacity:.8}
-  .vocab-star-btn{background:none;border:1px solid var(--line);border-radius:50%;width:38px;height:38px;flex-shrink:0;font-size:18px;cursor:pointer;transition:.15s;display:flex;align-items:center;justify-content:center;color:var(--muted);line-height:1}
-  .vocab-star-btn:hover{border-color:#f59e0b;color:#f59e0b}
-  .vocab-star-btn.starred{color:#f59e0b;border-color:#f59e0b;background:rgba(245,158,11,.10)}
-  .flash .flash-star-btn{position:absolute;bottom:14px;left:14px;background:none;border:1px solid var(--line);border-radius:50%;width:36px;height:36px;font-size:17px;cursor:pointer;transition:.15s;display:flex;align-items:center;justify-content:center;color:var(--muted);line-height:1;z-index:2}
-  .flash .flash-star-btn:hover{border-color:#f59e0b;color:#f59e0b}
-  .flash .flash-star-btn.starred{color:#f59e0b;border-color:#f59e0b;background:rgba(245,158,11,.10)}
+  /* Home tabs */
+  .home-tabs{display:flex;background:var(--card2);border-radius:14px;padding:4px;margin-bottom:18px;gap:0;border:1px solid var(--line)}
+  .home-tab{flex:1;padding:10px 6px;border-radius:10px;border:none;background:none;font-size:14px;font-weight:600;color:var(--muted);cursor:pointer;transition:.15s;line-height:1.3}
+  .home-tab.active{background:var(--card);color:var(--text);box-shadow:var(--shadow-sm)}
+  .home-tab:hover:not(.active){color:var(--text)}
+  .grid-wrap{overflow:hidden;width:100%}
+  @keyframes slideInLeft{from{transform:translateX(38px);opacity:0}to{transform:translateX(0);opacity:1}}
+  @keyframes slideInRight{from{transform:translateX(-38px);opacity:0}to{transform:translateX(0);opacity:1}}
+  .slide-left{animation:slideInLeft .22s cubic-bezier(.22,.68,0,1.2) both}
+  .slide-right{animation:slideInRight .22s cubic-bezier(.22,.68,0,1.2) both}
+  /* Esercizi */
+  .ese-section-hdr{font-size:16px;font-weight:700;display:flex;align-items:center;gap:10px}
+  .ese-count{font-size:12px;color:var(--muted);font-weight:400;margin-left:auto}
+  .save-ese-btn{width:100%;padding:11px;border-radius:12px;border:1px solid var(--line);background:none;color:var(--muted);font-size:13px;font-weight:600;cursor:pointer;transition:.12s;margin-top:10px}
+  .save-ese-btn:not(:disabled):hover{border-color:var(--accent2);color:var(--accent2)}
+  .save-ese-btn.saved{color:var(--good);border-color:var(--good);background:rgba(22,163,74,.07)}
+  .save-ese-btn:disabled{cursor:default;opacity:.8}
   .tag-picker{margin-top:10px;border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:8px}
   .tag-picker label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase}
   .tag-chips{display:flex;flex-wrap:wrap;gap:5px}
@@ -365,12 +376,18 @@ function addUserVoce(itWord, enTrans, pos, tag){
 }
 function isUserVoce(itWord){ return userStore().voci.some(v=>v.it===itWord); }
 
-// ---------- Parole preferite (selezione manuale per sessioni mirate) ----------
-const PREF_KEY = "italiano_preferiti_v1";
-function prefStore(){ try{ return new Set(JSON.parse(localStorage.getItem(PREF_KEY)||'[]')); }catch(e){ return new Set(); } }
-function savePrefStore(s){ localStorage.setItem(PREF_KEY, JSON.stringify([...s])); }
-function isPref(id){ return prefStore().has(id); }
-function togglePref(id){ const s=prefStore(); if(s.has(id)) s.delete(id); else s.add(id); savePrefStore(s); return s.has(id); }
+// ---------- Esercizi: flashcard salvate manualmente ----------
+const ESERCIZI_KEY = "italiano_esercizi_v1";
+function esesStore(){ try{ return JSON.parse(localStorage.getItem(ESERCIZI_KEY)||'{"voci":[]}'); }catch(e){ return {voci:[]}; } }
+function saveEses(s){ localStorage.setItem(ESERCIZI_KEY, JSON.stringify(s)); }
+function addEsesVoce(id, it, en, pos, tag){
+  const s = esesStore();
+  if(s.voci.some(v=>v.id===id)) return false;
+  s.voci.push({id, it:it||'', en:en||'', pos:pos||'', tag:tag||[]});
+  saveEses(s); return true;
+}
+function removeEsesVoce(id){ const s=esesStore(); s.voci=s.voci.filter(v=>v.id!==id); saveEses(s); }
+function isEsesVoce(id){ return esesStore().voci.some(v=>v.id===id); }
 
 let DB = null;
 let srs = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
@@ -378,8 +395,24 @@ function saveSrs(){ localStorage.setItem(STORE_KEY, JSON.stringify(srs)); }
 
 const app = document.getElementById("app");
 const backBtn = document.getElementById("backBtn");
+
+// ---------- Navigation stack ----------
+const _navStack = [];
+function navigateTo(fn){
+  _navStack.push(fn);
+  history.pushState({depth:_navStack.length},"");
+  fn();
+}
 backBtn.onclick = () => history.back();
-window.addEventListener("popstate", () => { if(DB) renderHome(); });
+window.addEventListener("popstate", ()=>{
+  if(!DB) return;
+  _navStack.pop();
+  if(_navStack.length > 0){
+    _navStack[_navStack.length-1]();
+  } else {
+    renderHome();
+  }
+});
 
 const $ = (h)=>{const t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstChild;};
 const shuffle = a => a.map(x=>[Math.random(),x]).sort((m,n)=>m[0]-n[0]).map(p=>p[1]);
@@ -467,19 +500,31 @@ function dailyStreak(){
   // streak counts only if the last completed session was today or yesterday
   return (s.last===todayStr()||s.last===yesterdayStr()) ? (s.streak||0) : 0;
 }
+const DAILY_SIZE = 20;
 function recordDailyDone(){
   const s=dailyState(), t=todayStr();
-  if(s.last===t) return;                 // already counted today
-  s.streak = (s.last===yesterdayStr()) ? (s.streak||0)+1 : 1;
-  s.last=t;
+  s.streak = (s.last===yesterdayStr()) ? (s.streak||0)+1 : (s.last===t ? (s.streak||1) : 1);
+  s.last=t; s.completed=true;
   localStorage.setItem(DAILY_KEY, JSON.stringify(s));
 }
-// Tutte le carte attualmente in scadenza (mai viste o con intervallo scaduto).
-function dailyPool(){
-  return [...(DB.dizionario||[]), ...(userStore().voci||[])]
-    .filter(x=>isDue(x.id));
+function getDailyCards(){
+  const allItems = DB ? [...(DB.dizionario||[]), ...(userStore().voci||[])] : [];
+  if(!allItems.length) return [];
+  const s = dailyState(), t = todayStr();
+  const validIds = new Set(allItems.map(v=>v.id));
+  if(s.date===t && !s.completed && s.cards && s.cards.length){
+    const still = s.cards.filter(id=>validIds.has(id));
+    if(still.length) return allItems.filter(v=>still.includes(v.id));
+  }
+  const due = allItems.filter(v=>isDue(v.id)).sort((a,b)=>dueScore(b.id)-dueScore(a.id));
+  const notDue = shuffle(allItems.filter(v=>!isDue(v.id)));
+  const pool = [...due, ...notDue].slice(0, DAILY_SIZE);
+  const saved = dailyState();
+  saved.date=t; saved.cards=pool.map(v=>v.id); saved.completed=false;
+  localStorage.setItem(DAILY_KEY, JSON.stringify(saved));
+  return pool;
 }
-const DAILY_SIZE = 20;
+function dailyPool(){ return getDailyCards(); }
 
 // --- Conjugation practice ---
 const CONJ_TENSES = [
@@ -551,125 +596,114 @@ async function forceUpdate(btnEl){
 
 function renderHome(){
   backBtn.classList.add("hidden");
-  const allItems = [...(DB.dizionario||[]), ...(userStore().voci||[])];
-  const known = allItems.filter(x=>box(x.id)>=3).length;
-  const seen = allItems.filter(x=>srs[x.id]).length;
-  const due = allItems.filter(x=>isDue(x.id)).length;
-
+  _navStack.length = 0;
   app.innerHTML = "";
-  app.appendChild($(`
-    <div class="stats">
-      <div class="stat"><b>${allItems.length}</b><span>total items</span></div>
-      <div class="stat"><b>${seen}</b><span>studied</span></div>
-      <div class="stat"><b>${known}</b><span>consolidated</span></div>
-      <div class="stat"><b>${due}</b><span>to review</span></div>
-    </div>`));
 
-  const grid = $(`<div class="grid"></div>`);
+  let activeTab = localStorage.getItem('italiano_home_tab') || 'pratica';
 
-  // Daily review — unified SRS queue across all vocabulary
-  const streak = dailyStreak();
-  const sessionCount = Math.min(DAILY_SIZE, due);
-  const streakHtml = streak>0 ? ` &middot; <span style="color:var(--accent)">${streak} ${streak===1?"giorno":"giorni"} di fila &#128293;</span>` : "";
-  const dailyDesc = sessionCount>0
-    ? `${sessionCount} carte da ripassare${streakHtml}`
-    : `Tutto in pari &mdash; nessuna carta oggi${streakHtml}`;
-  const dailyTile = $(`
-    <button class="tile wide" style="margin-bottom:14px;background:linear-gradient(120deg,var(--card) 0%,rgba(226,56,75,.08) 100%)">
-      <div class="ico" style="background:rgba(226,56,75,.10)">${streak>0?"&#128293;":"&#128197;"}</div>
-      <div class="txt">
-        <div class="t">Ripasso del giorno</div>
-        <div class="d">${dailyDesc}</div>
-      </div>
+  const tabsDiv = $(`<div class="home-tabs">
+    <button class="home-tab${activeTab==='pratica'?' active':''}" data-tab="pratica">🏋️ Pratica</button>
+    <button class="home-tab${activeTab==='teoria'?' active':''}" data-tab="teoria">📖 Teoria</button>
+  </div>`);
+  app.appendChild(tabsDiv);
+
+  const gridWrap = $(`<div class="grid-wrap"></div>`);
+  app.appendChild(gridWrap);
+  let grid = null;
+
+  function mkTile(ico, t, d, mode, wide=false, style=''){
+    const el = $(`<button class="tile${wide?' wide':''}" data-mode="${mode}"${style?' style="'+style+'"':''}>
+      ${wide
+        ? `<div class="ico">${ico}</div><div class="txt"><div class="t">${t}</div><div class="d">${d}</div></div>`
+        : `<div class="ico">${ico}</div><div class="t">${t}</div><div class="d">${d}</div>`}
     </button>`);
-  dailyTile.onclick = ()=>start("daily");
-  grid.appendChild(dailyTile);
+    el.onclick = ()=>start(mode);
+    return el;
+  }
 
-  const tiles = [
-    ["&#127183;","Flashcards","Studia per argomento con spaced repetition","flash"],
-    ["&#128172;","Sentences","Fill-in-the-blank with Italian audio","phrase"],
-  ];
-  tiles.forEach(([ico,t,d,mode])=>{
-    grid.appendChild($(`
-      <button class="tile">
-        <div class="ico">${ico}</div>
-        <div class="t">${t}</div>
-        <div class="d">${d}</div>
-      </button>`)).onclick = ()=>start(mode);
+  const TABS = ['pratica','teoria'];
+  function renderTab(tab, dir){
+    activeTab = tab;
+    localStorage.setItem('italiano_home_tab', tab);
+    tabsDiv.querySelectorAll('.home-tab').forEach(b=>b.classList.toggle('active', b.dataset.tab===tab));
+    grid = $(`<div class="grid"></div>`);
+    if(dir){ grid.classList.add(dir==='left' ? 'slide-left' : 'slide-right'); }
+    gridWrap.innerHTML = '';
+    gridWrap.appendChild(grid);
+
+    if(tab === 'pratica'){
+      const streak = dailyStreak();
+      const daily = getDailyCards();
+      const dueCnt = daily.filter(x=>isDue(x.id)).length;
+      const streakHtml = streak>0 ? ` &middot; <span style="color:var(--accent)">${streak} ${streak===1?"giorno":"giorni"} di fila &#128293;</span>` : "";
+      const dailyDesc = dueCnt>0
+        ? `${dueCnt} carte da ripassare${streakHtml}`
+        : `Tutto in pari &mdash; torna domani${streakHtml}`;
+      const dailyTile = $(`
+        <button class="tile wide" data-mode="daily" style="margin-bottom:4px;background:linear-gradient(120deg,var(--card) 0%,rgba(226,56,75,.08) 100%)">
+          <div class="ico">${streak>0?"&#128293;":"&#128197;"}</div>
+          <div class="txt">
+            <div class="t">Daily Review</div>
+            <div class="d">${dailyDesc}</div>
+          </div>
+        </button>`);
+      dailyTile.onclick = ()=>start("daily");
+      grid.appendChild(dailyTile);
+
+      const ese = esesStore();
+      const eseCount = ese.voci.length;
+      const eseDesc = eseCount>0
+        ? `${eseCount} flashcard salvat${eseCount===1?'a':'e'}`
+        : 'Save words from Vocabulary to practise here';
+      grid.appendChild(mkTile('&#127381;','Exercises', eseDesc,'esercizi',true,'background:linear-gradient(120deg,var(--card) 0%,rgba(47,107,237,.08) 100%)'));
+
+      grid.appendChild(mkTile('&#127183;','Flashcards','Spaced repetition by topic','flash',false));
+      grid.appendChild(mkTile('&#128172;','Sentences','Fill-in-the-blank with audio','phrase',false));
+      grid.appendChild(mkTile('&#129504;','Memory','Match words against the clock','memory',false));
+      grid.appendChild(mkTile('&#128292;','Articles','il, lo, la — choose the right one','articoli',false));
+      if(DB.verbi && DB.verbi.length)
+        grid.appendChild(mkTile('&#9999;&#65039;','Conjugation','Drill verb forms','conj',false));
+      if(DB.modididire && DB.modididire.length){
+        const nidiomi = DB.modididire.reduce((n,c)=>n+(c.espressioni||[]).length,0);
+        grid.appendChild(mkTile('&#129305;','Modi di dire',''+nidiomi+' espressioni idiomatiche','idiomi',false));
+      }
+      if(DB.pop && DB.pop.length){
+        const npop = DB.pop.reduce((n,c)=>n+(c.voci||[]).length,0);
+        grid.appendChild(mkTile('&#10024;','Pop',''+npop+' pillole di cultura italiana','pop',false));
+      }
+      grid.appendChild(mkTile('&#127897;','Parla con Andrea','Speak Italian with your AI tutor','sofia',true));
+
+    } else {
+      // Teoria
+      grid.appendChild(mkTile('&#128214;','Vocabulary','Dictionary + online search','vocab',true));
+      if(DB.riferimento && DB.riferimento.length)
+        grid.appendChild(mkTile('&#128218;','Grammar Reference','Tables, pronouns, conjugations','ref',true));
+    }
+  }
+
+  tabsDiv.querySelectorAll('.home-tab').forEach(b=>{
+    b.onclick=()=>{
+      const dir = TABS.indexOf(b.dataset.tab) > TABS.indexOf(activeTab) ? 'left' : 'right';
+      renderTab(b.dataset.tab, dir);
+    };
   });
-  grid.appendChild($(`
-    <button class="tile">
-      <div class="ico" style="background:rgba(245,158,11,.12)">&#129504;</div>
-      <div class="t">Memory</div>
-      <div class="d">Abbina parole e traduzioni a tempo &mdash; gioco di memoria</div>
-    </button>`)).onclick = ()=>start("memory");
-  grid.appendChild($(`
-    <button class="tile">
-      <div class="ico" style="background:rgba(47,107,237,.10)">&#128292;</div>
-      <div class="t">Articoli</div>
-      <div class="d">il, lo, la, l' &middot; un, uno, una, un' &mdash; scegli quello giusto</div>
-    </button>`)).onclick = ()=>start("articoli");
-  // Square tiles (same form as Flashcards/Sentences) — pair into a clean row
-  if(DB.verbi && DB.verbi.length){
-    grid.appendChild($(`
-      <button class="tile">
-        <div class="ico" style="background:rgba(22,163,74,.10)">&#9999;&#65039;</div>
-        <div class="t">Coniugazione</div>
-        <div class="d">Allena i verbi &mdash; presente, congiuntivo, condizionale e altro</div>
-      </button>`)).onclick = ()=>start("conj");
-  }
-  if(DB.modididire && DB.modididire.length){
-    const nidiomi = DB.modididire.reduce((n,c)=>n+(c.espressioni||[]).length,0);
-    grid.appendChild($(`
-      <button class="tile">
-        <div class="ico" style="background:rgba(245,158,11,.12)">&#129305;</div>
-        <div class="t">Modi di dire &amp; Slang</div>
-        <div class="d">${nidiomi} espressioni idiomatiche e slang &mdash; parla come un vero italiano</div>
-      </button>`)).onclick = ()=>start("idiomi");
-  }
-  if(DB.pop && DB.pop.length){
-    const npop = DB.pop.reduce((n,c)=>n+(c.voci||[]).length,0);
-    grid.appendChild($(`
-      <button class="tile">
-        <div class="ico" style="background:rgba(226,56,75,.12)">&#10024;</div>
-        <div class="t">Pop</div>
-        <div class="d">${npop} pillole di cultura italiana contemporanea &mdash; meme, slang, curiosit&agrave; e regionalismi</div>
-      </button>`)).onclick = ()=>start("pop");
-  }
-  grid.appendChild($(`
-    <button class="tile wide">
-      <div class="ico" style="background:rgba(47,107,237,.10)">&#128214;</div>
-      <div class="txt">
-        <div class="t">Vocabolario</div>
-        <div class="d">Dizionario locale + ricerca online</div>
-      </div>
-    </button>`)).onclick = ()=>start("vocab");
-  grid.appendChild($(`
-    <button class="tile wide">
-      <div class="ico">&#127897;</div>
-      <div class="txt">
-        <div class="t">Parla con Andrea</div>
-        <div class="d">Speak Italian with your AI tutor &mdash; corrections and feedback in real time</div>
-      </div>
-    </button>`)).onclick = ()=>start("sofia");
-  if(DB.riferimento && DB.riferimento.length){
-    grid.appendChild($(`
-      <button class="tile wide">
-        <div class="ico">&#128218;</div>
-        <div class="txt">
-          <div class="t">Grammar Reference</div>
-          <div class="d">Conjugation tables, pronouns, passive &amp; reported speech &mdash; browse any time</div>
-        </div>
-      </button>`)).onclick = ()=>start("ref");
-  }
-  app.appendChild(grid);
-  app.appendChild($(`<p class="muted" style="margin-top:22px">Level B2 &middot; ${DB.meta.updated||"2026-06-08"}<br>Open your browser menu and choose <b>"Add to Home Screen"</b> to use as an app.</p>`));
+  renderTab(activeTab);
 
-  const updBtn=$(`<button style="
-    display:block;margin:10px auto 0;background:none;border:1px solid var(--line);
-    border-radius:10px;padding:8px 18px;font-size:12px;color:var(--muted);
-    cursor:pointer;transition:.15s
-  ">&#128260; Update app</button>`);
+  // Swipe
+  let _swX=null;
+  app.addEventListener('touchstart', e=>{ _swX = e.touches[0].clientX; }, {passive:true});
+  app.addEventListener('touchend', e=>{
+    if(_swX===null) return;
+    const dx = e.changedTouches[0].clientX - _swX;
+    _swX = null;
+    if(Math.abs(dx)<20) return;
+    const cur = TABS.indexOf(activeTab);
+    if(dx < 0 && cur < TABS.length-1) renderTab(TABS[cur+1], 'left');
+    if(dx > 0 && cur > 0)             renderTab(TABS[cur-1], 'right');
+  }, {passive:true});
+
+  app.appendChild($(`<p class="muted" style="margin-top:22px">Level B2 &middot; ${DB.meta.updated||"2026-06-08"}<br>Open your browser menu and choose <b>"Add to Home Screen"</b> to use as an app.</p>`));
+  const updBtn=$(`<button style="display:block;margin:10px auto 0;background:none;border:1px solid var(--line);border-radius:10px;padding:8px 18px;font-size:12px;color:var(--muted);cursor:pointer;transition:.15s">&#128260; Update app</button>`);
   updBtn.onmouseenter=()=>{updBtn.style.borderColor="var(--accent2)";updBtn.style.color="var(--accent2)";}
   updBtn.onmouseleave=()=>{updBtn.style.borderColor="";updBtn.style.color="";}
   updBtn.onclick=()=>forceUpdate(updBtn);
@@ -692,18 +726,20 @@ function progressBar(stage){
 }
 
 function start(mode){
-  history.pushState({screen:mode}, "");
-  if(mode==="daily") return runDaily();
-  if(mode==="conj") return runConjugation();
-  if(mode==="flash") return pickFlashTopic();
-  if(mode==="memory") return runMemory();
-  if(mode==="articoli") return runArticoli();
-  if(mode==="phrase") return runPhrase();
-  if(mode==="diz" || mode==="vocab") return runVocabolario();
-  if(mode==="ref") return runReference();
-  if(mode==="idiomi") return runIdioms();
-  if(mode==="pop") return runPop();
-  if(mode==="sofia") return runSofia();
+  navigateTo(()=>{
+    if(mode==="daily") return runDaily();
+    if(mode==="conj") return runConjugation();
+    if(mode==="flash") return pickFlashTopic();
+    if(mode==="memory") return runMemory();
+    if(mode==="articoli") return runArticoli();
+    if(mode==="phrase") return runPhrase();
+    if(mode==="diz" || mode==="vocab") return runVocabolario();
+    if(mode==="ref") return runReference();
+    if(mode==="idiomi") return runIdioms();
+    if(mode==="pop") return runPop();
+    if(mode==="sofia") return runSofia();
+    if(mode==="esercizi") return runEsercizi();
+  });
 }
 
 const hasItalian = s => /[a-zÀ-ɏ]/i.test(s);
@@ -1013,29 +1049,10 @@ function pickFlashTopic(){
       const q = $(`<button title="Ripassa 15 carte (prima quelle in scadenza)" style="flex-shrink:0;padding:0 15px;border:1px solid var(--line);background:var(--card);border-radius:var(--radius);cursor:pointer;font-size:12px;font-weight:700;color:var(--accent2);text-align:center;line-height:1.5;white-space:nowrap;box-shadow:var(--shadow-sm);transition:.12s">&#9889;<br>15<br>carte</button>`);
       q.onmouseenter=()=>{q.style.borderColor='var(--accent2)';q.style.background='rgba(47,107,237,.07)';};
       q.onmouseleave=()=>{q.style.borderColor='';q.style.background='';};
-      q.onclick=()=>startQuick15(pool, label);
+      q.onclick=()=>navigateTo(()=>startQuick15(pool, label));
       wrap.appendChild(q);
     }
     return wrap;
-  }
-
-  // ----- Preferite -----
-  const prefIds = prefStore();
-  const prefPool = allPool.filter(v=>prefIds.has(v.id));
-  if(prefPool.length > 0){
-    stage.appendChild($(`<div style="margin-bottom:10px"><b style="font-size:18px">&#11088; Preferite</b></div>`));
-    const prefDue = dueOf(prefPool);
-    const prefBtn = $(`<button class="tile wide" style="background:linear-gradient(120deg,var(--card) 0%,rgba(245,158,11,.07) 100%)">
-      <div class="ico" style="font-size:28px;background:rgba(245,158,11,.12)">&#9733;</div>
-      <div class="txt">
-        <div class="t">Le mie preferite</div>
-        <div class="d">${prefPool.length} parol${prefPool.length===1?'a':'e'} selezionat${prefPool.length===1?'a':'e'} &middot; <span style="color:var(--accent2)">${prefDue} da ripassare</span></div>
-      </div>
-    </button>`);
-    prefBtn.onclick = ()=>startTopicFlash(prefPool, 'Le mie preferite');
-    const prefRow = mkRow(prefBtn, prefPool, 'Le mie preferite');
-    prefRow.style.marginBottom = '18px';
-    stage.appendChild(prefRow);
   }
 
   // ----- Tutti -----
@@ -1047,7 +1064,7 @@ function pickFlashTopic(){
       <div class="d">${allPool.length} elementi &middot; <span style="color:var(--accent2)">${allDue} da ripassare</span></div>
     </div>
   </button>`);
-  allBtn.onclick = ()=>startTopicFlash(allPool, 'Tutti');
+  allBtn.onclick = ()=>navigateTo(()=>startTopicFlash(allPool, 'Tutti'));
   const allRow = mkRow(allBtn, allPool, 'Tutti');
   allRow.style.marginBottom = '14px';
   stage.appendChild(allRow);
@@ -1066,7 +1083,7 @@ function pickFlashTopic(){
         <div class="d">${words.length} parole &middot; <span style="color:var(--accent2)">${due} da ripassare</span></div>
       </div>
     </button>`);
-    btn.onclick = ()=>runTopicList(words, label);
+    btn.onclick = ()=>navigateTo(()=>runTopicList(words, label));
     list.appendChild(mkRow(btn, words, label));
   }
   stage.appendChild(list);
@@ -1093,7 +1110,7 @@ function runTopicList(pool, label){
   stage.appendChild(hdr);
 
   const studyBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:12px">&#9654; Studia &middot; <span style="opacity:.85">${dueCount} da ripassare</span></button>`);
-  studyBtn.onclick = ()=>startTopicFlash(pool, label);
+  studyBtn.onclick = ()=>navigateTo(()=>startTopicFlash(pool, label));
   stage.appendChild(studyBtn);
 
   const inputWrap = $(`<div style="position:relative;width:100%;margin-bottom:10px"></div>`);
@@ -1161,17 +1178,6 @@ function runTopicList(pool, label){
       speakBtn.innerHTML = '&#128266;';
       speakBtn.onclick = ()=>speak(w.it);
       card.appendChild(speakBtn);
-
-      const starBtn = document.createElement('button');
-      starBtn.className = 'vocab-star-btn' + (isPref(w.id) ? ' starred' : '');
-      starBtn.title = isPref(w.id) ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
-      starBtn.innerHTML = '&#9733;';
-      starBtn.onclick = ()=>{
-        const on = togglePref(w.id);
-        starBtn.classList.toggle('starred', on);
-        starBtn.title = on ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
-      };
-      card.appendChild(starBtn);
 
       list.appendChild(card);
     });
@@ -1266,14 +1272,12 @@ function runFlash(pool, topicLabel, opts){
     const ipaNote = c.ipa || "";
     const regTag = c.registro ? `<span class="pill">${c.registro}</span>` : "";
     cardWrap.innerHTML="";
-    const starredNow = isPref(c.id);
     // In EN→IT la parola italiana è la risposta: il TTS sta sul retro per non svelarla
     const flip = $(`
       <div class="flip">
         <div class="flash">
           <div class="face front">
             ${itFront ? `<button class="speak" title="Listen">&#128266;</button>` : ""}
-            <button class="flash-star-btn${starredNow?' starred':''}" title="Aggiungi ai preferiti">&#9733;</button>
             <div class="it-word">${frontWord}</div>
             ${itFront && ipaNote ? `<div class="ipa-note">${ipaNote}</div>` : ""}
             ${regTag}
@@ -1281,7 +1285,6 @@ function runFlash(pool, topicLabel, opts){
           </div>
           <div class="face back">
             ${itFront ? "" : `<button class="speak" title="Listen">&#128266;</button>`}
-            <button class="flash-star-btn${starredNow?' starred':''}" title="Aggiungi ai preferiti">&#9733;</button>
             <div class="en-trans">${backTrans}</div>
             ${!itFront && ipaNote ? `<div class="ipa-note">${ipaNote}</div>` : ""}
             <div class="small">${frontWord}${itFront && ipaNote ? ' &middot; '+ipaNote : ''}</div>
@@ -1289,14 +1292,6 @@ function runFlash(pool, topicLabel, opts){
         </div>
       </div>`);
     flip.querySelector(".speak").onclick = (e)=>{e.stopPropagation(); speak(c.it);};
-    flip.querySelectorAll(".flash-star-btn").forEach(btn=>{
-      btn.onclick = (e)=>{
-        e.stopPropagation();
-        const on = togglePref(c.id);
-        flip.querySelectorAll(".flash-star-btn").forEach(b=>b.classList.toggle("starred", on));
-        btn.title = on ? "Rimuovi dai preferiti" : "Aggiungi ai preferiti";
-      };
-    });
     flip.onclick = ()=>{
       if(flipped) return;
       flipped=true;
@@ -1719,49 +1714,117 @@ function runVocabolario(){
   const stage = header();
   const words = [...(DB.dizionario||[]), ...(userStore().voci||[])];
   const POS_LABELS = {verb:'Verbi', noun:'Sostantivi', adjective:'Aggettivi', adverb:'Avverbi', pronoun:'Pronomi', other:'Altro'};
-  const POS_COLORS = {verb:'rgba(47,107,237,.12)', noun:'rgba(22,163,74,.10)', adjective:'rgba(226,56,75,.10)', adverb:'rgba(255,165,0,.12)', other:'var(--card2)'};
-  const POS_TC = {verb:'var(--accent2)', noun:'var(--good)', adjective:'var(--accent)', adverb:'#b45309', other:'var(--muted)'};
-  let activePos = 'all', langpair = 'en|it';
+  const POS_ICONS = {verb:'✏️', noun:'📖', adjective:'🏷️', adverb:'📝', pronoun:'💬', other:'📌'};
+  const POS_COLORS_MAP = {verb:'rgba(47,107,237,.12)', noun:'rgba(22,163,74,.10)', adjective:'rgba(226,56,75,.10)', adverb:'rgba(255,165,0,.12)', other:'var(--card2)'};
+  const POS_TC_MAP = {verb:'var(--accent2)', noun:'var(--good)', adjective:'var(--accent)', adverb:'#b45309', other:'var(--muted)'};
+  let langpair = 'en|it';
 
-  // Direction toggle
-  const toggleWrap = $(`<div style="display:flex;gap:8px;width:100%;margin-bottom:10px"></div>`);
-  const btnEN = $(`<button class="gram-chip active">EN &#8594; IT</button>`);
-  const btnIT = $(`<button class="gram-chip">IT &#8594; EN</button>`);
-  toggleWrap.appendChild(btnEN);
-  toggleWrap.appendChild(btnIT);
-  stage.appendChild(toggleWrap);
-
-  // POS filter chips (affect local results)
-  const chipsWrap = $(`<div class="gram-chips"></div>`);
-  const allChip = $(`<button class="gram-chip active">Tutti (${words.length})</button>`);
-  allChip.onclick = ()=>setPos('all');
-  chipsWrap.appendChild(allChip);
-  const posCounts = words.reduce((acc,w)=>{ acc[w.pos]=(acc[w.pos]||0)+1; return acc; }, {});
-  Object.entries(POS_LABELS).forEach(([pos,label])=>{
-    if(!posCounts[pos]) return;
-    const ch = $(`<button class="gram-chip">${label} (${posCounts[pos]})</button>`);
-    ch.onclick = ()=>setPos(pos);
-    chipsWrap.appendChild(ch);
-  });
-  stage.appendChild(chipsWrap);
-
-  // Search input
-  const inputWrap = $(`<div style="position:relative;width:100%;margin-bottom:8px"></div>`);
+  const inputWrap = $(`<div style="position:relative;width:100%;margin-bottom:12px"></div>`);
   inputWrap.appendChild($(`<span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:18px;pointer-events:none">&#128269;</span>`));
   const inp = document.createElement('input');
   inp.className = 'vocab-input';
   inp.type = 'search';
-  inp.placeholder = 'Cerca in inglese…';
+  inp.placeholder = 'Search in English or Italian…';
   inp.setAttribute('autocomplete','off');
   inp.setAttribute('autocorrect','off');
   inp.setAttribute('spellcheck','false');
   inputWrap.appendChild(inp);
   stage.appendChild(inputWrap);
 
+  const browseView = $(`<div></div>`);
+  const searchView = $(`<div style="display:none"></div>`);
   const localSection = $(`<div style="display:flex;flex-direction:column;gap:8px;width:100%"></div>`);
   const onlineSection = $(`<div style="display:flex;flex-direction:column;gap:8px;width:100%;margin-top:4px"></div>`);
-  stage.appendChild(localSection);
-  stage.appendChild(onlineSection);
+  searchView.appendChild(localSection);
+  searchView.appendChild(onlineSection);
+  stage.appendChild(browseView);
+  stage.appendChild(searchView);
+
+  function buildBrowse(){
+    browseView.innerHTML = '';
+
+    const allBtn = $(`<button class="tile wide" style="margin-bottom:14px">
+      <div class="ico">&#127922;</div>
+      <div class="txt"><div class="t">All (${words.length})</div><div class="d">Browse the full dictionary</div></div>
+    </button>`);
+    allBtn.onclick = ()=>{ inp.value=''; triggerSearch(''); inp.focus(); };
+    browseView.appendChild(allBtn);
+
+    browseView.appendChild($(`<div style="margin-bottom:10px"><b style="font-size:17px">By category</b></div>`));
+    const posList = $(`<div style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px"></div>`);
+    for(const [pos, label] of Object.entries(POS_LABELS)){
+      const n = words.filter(w=>w.pos===pos).length;
+      if(!n) continue;
+      const btn = $(`<button class="tile wide">
+        <div class="ico" style="font-size:24px">${POS_ICONS[pos]||'📖'}</div>
+        <div class="txt"><div class="t">${label}</div><div class="d">${n} parol${n===1?'a':'e'}</div></div>
+      </button>`);
+      btn.onclick = ()=>{ inp.value='#'+pos; showSearchView(); renderByPos(pos); };
+      posList.appendChild(btn);
+    }
+    browseView.appendChild(posList);
+
+    browseView.appendChild($(`<div style="margin-bottom:10px"><b style="font-size:17px">By topic</b></div>`));
+    const topicList = $(`<div style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px"></div>`);
+    for(const [tag, label] of Object.entries(TOPIC_LABELS)){
+      const n = words.filter(w=>w.tag&&w.tag.includes(tag)).length;
+      if(!n) continue;
+      const icon = TOPIC_ICONS[tag]||'📖';
+      const btn = $(`<button class="tile wide">
+        <div class="ico" style="font-size:24px">${icon}</div>
+        <div class="txt"><div class="t">${label}</div><div class="d">${n} parol${n===1?'a':'e'}</div></div>
+      </button>`);
+      btn.onclick = ()=>{ inp.value='#topic:'+tag; showSearchView(); renderByTag(tag); };
+      topicList.appendChild(btn);
+    }
+    browseView.appendChild(topicList);
+
+    browseView.appendChild($(`<div style="margin-bottom:6px"><b style="font-size:15px">Online search</b></div>`));
+    const dirBtnEls = [];
+    const toggleWrap = $(`<div style="display:flex;gap:8px;margin-bottom:12px"></div>`);
+    [['en|it','EN → IT'],['it|en','IT → EN']].forEach(([val,label])=>{
+      const b = $(`<button style="flex:1;border:1px solid var(--line);background:var(--card);border-radius:20px;padding:7px 12px;font-size:13px;font-weight:700;color:var(--muted);cursor:pointer;transition:.15s">${label}</button>`);
+      b.onclick = ()=>{ langpair=val; paintDirBtns(); inp.placeholder=val==='en|it'?'Search in English…':'Search in Italian…'; inp.focus(); };
+      toggleWrap.appendChild(b);
+      dirBtnEls.push([val, b]);
+    });
+    function paintDirBtns(){
+      dirBtnEls.forEach(([val,b])=>{
+        const on = val===langpair;
+        b.style.background = on ? 'var(--accent2)' : 'var(--card)';
+        b.style.color = on ? '#fff' : 'var(--muted)';
+        b.style.borderColor = on ? 'var(--accent2)' : 'var(--line)';
+      });
+    }
+    browseView.appendChild(toggleWrap);
+    paintDirBtns();
+  }
+
+  function showBrowseView(){ browseView.style.display=''; searchView.style.display='none'; inp.value=''; }
+  function showSearchView(){ browseView.style.display='none'; searchView.style.display=''; }
+
+  inp.addEventListener('search', ()=>{ if(!inp.value){ showBrowseView(); buildBrowse(); } });
+  inp.addEventListener('keydown', e=>{ if(e.key==='Escape'){ showBrowseView(); buildBrowse(); inp.blur(); } });
+
+  function renderByPos(pos){
+    const filtered = words.filter(w=>w.pos===pos);
+    localSection.innerHTML = '';
+    onlineSection.innerHTML = '';
+    if(!filtered.length) return;
+    const label = POS_LABELS[pos]||pos;
+    localSection.appendChild($(`<div class="results-hdr">&#128218; ${label} &middot; ${filtered.length} parol${filtered.length===1?'a':'e'}</div>`));
+    filtered.forEach(w=>{ localSection.appendChild(makeVocabCard(w.it, w.en, {pos:w.pos, posLabel:POS_LABELS[w.pos], id:w.id})); });
+  }
+
+  function renderByTag(tag){
+    const filtered = words.filter(w=>w.tag&&w.tag.includes(tag));
+    localSection.innerHTML = '';
+    onlineSection.innerHTML = '';
+    if(!filtered.length) return;
+    const label = TOPIC_LABELS[tag]||tag;
+    localSection.appendChild($(`<div class="results-hdr">&#128218; ${label} &middot; ${filtered.length} parol${filtered.length===1?'a':'e'}</div>`));
+    filtered.forEach(w=>{ localSection.appendChild(makeVocabCard(w.it, w.en, {pos:w.pos, posLabel:POS_LABELS[w.pos], id:w.id})); });
+  }
 
   // ---- Unified card builder ----
   function makeVocabCard(itWord, enTrans, {pos=null, posLabel=null, online=false, id=null}={}){
@@ -1784,7 +1847,7 @@ function runVocabolario(){
 
     const speakBtn = document.createElement('button');
     speakBtn.className = 'vocab-speak';
-    speakBtn.title = 'Ascolta';
+    speakBtn.title = 'Listen';
     speakBtn.innerHTML = '&#128266;';
     speakBtn.onclick = ()=>speak(itWord);
 
@@ -1797,88 +1860,54 @@ function runVocabolario(){
     } else if(pos){
       const badge = document.createElement('span');
       badge.textContent = posLabel || pos;
-      badge.style.cssText = `font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap;flex-shrink:0;background:${POS_COLORS[pos]||'var(--card2)'};color:${POS_TC[pos]||'var(--muted)'}`;
+      badge.style.cssText = `font-size:11px;font-weight:700;padding:3px 9px;border-radius:20px;white-space:nowrap;flex-shrink:0;background:${POS_COLORS_MAP[pos]||'var(--card2)'};color:${POS_TC_MAP[pos]||'var(--muted)'}`;
       top.appendChild(badge);
     }
     top.appendChild(speakBtn);
-    if(id){
-      const starBtn = document.createElement('button');
-      starBtn.className = 'vocab-star-btn' + (isPref(id) ? ' starred' : '');
-      starBtn.title = isPref(id) ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
-      starBtn.innerHTML = '&#9733;';
-      starBtn.onclick = ()=>{
-        const on = togglePref(id);
-        starBtn.classList.toggle('starred', on);
-        starBtn.title = on ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti';
-      };
-      top.appendChild(starBtn);
-    }
     card.appendChild(top);
 
-    // Save to flashcards
+    // Aggiungi agli Esercizi
     const addBtn = document.createElement('button');
     addBtn.className = 'add-flash-btn';
-    const alreadySaved = isUserVoce(itWord) || (DB && (DB.dizionario||[]).some(d=>d.it===itWord));
-    function setAdded(){ addBtn.textContent='✓ In flashcards'; addBtn.disabled=true; addBtn.style.color='var(--good)'; addBtn.style.borderColor='var(--good)'; }
-    function setAdd(){ addBtn.textContent='＋ Salva in flashcards'; addBtn.disabled=false; addBtn.style.color=''; addBtn.style.borderColor=''; }
+    const alreadySaved = id ? isEsesVoce(id) : false;
+    function setAdded(){ addBtn.textContent='✓ In exercises'; addBtn.disabled=true; addBtn.style.color='var(--good)'; addBtn.style.borderColor='var(--good)'; }
+    function setAdd(){ addBtn.textContent='＋ Add to exercises'; addBtn.disabled=false; addBtn.style.color=''; addBtn.style.borderColor=''; }
     if(alreadySaved) setAdded(); else setAdd();
     addBtn.onclick = ()=>{
-      addBtn.style.display = 'none';
-      let selPos = pos||null, selTag = null;
-      const POS_OPTS = [['verb','Verbo'],['noun','Sost.'],['adjective','Agg.'],['adverb','Avv.']];
-      const posChips = POS_OPTS.map(([v,l])=>`<button class="tag-chip${selPos===v?' sel':''}" data-v="${v}">${l}</button>`).join('');
-      const topicChips = Object.entries(TOPIC_LABELS).map(([v,l])=>`<button class="tag-chip" data-v="${v}">${TOPIC_ICONS[v]||''} ${l}</button>`).join('');
-      const picker = $(`
-        <div class="tag-picker">
-          <label>Tipo</label>
-          <div class="tag-chips pos-chips">${posChips}</div>
-          <label>Argomento</label>
-          <div class="tag-chips topic-chips">${topicChips}</div>
-          <button class="tag-save">Salva in flashcards</button>
-        </div>`);
-      picker.querySelectorAll('.pos-chips .tag-chip').forEach(c=>{
-        c.onclick=()=>{ picker.querySelectorAll('.pos-chips .tag-chip').forEach(x=>x.classList.remove('sel')); c.classList.add('sel'); selPos=c.dataset.v; };
-      });
-      picker.querySelectorAll('.topic-chips .tag-chip').forEach(c=>{
-        c.onclick=()=>{ picker.querySelectorAll('.topic-chips .tag-chip').forEach(x=>x.classList.remove('sel')); c.classList.add('sel'); selTag=c.dataset.v; };
-      });
-      picker.querySelector('.tag-save').onclick=()=>{
-        if(addUserVoce(itWord, enTrans, selPos, selTag)){ picker.remove(); setAdded(); }
-      };
-      card.appendChild(picker);
+      const eid = id || ('online_'+Date.now());
+      if(addEsesVoce(eid, itWord, enTrans, pos, [])){
+        setAdded();
+      }
     };
     card.appendChild(addBtn);
     return card;
   }
 
-  // ---- Local results ----
+  // ---- Local search ----
   function renderLocal(q){
     localSection.innerHTML = '';
-    const ql = q.toLowerCase();
-    const base = words.filter(w => activePos==='all' || w.pos===activePos);
-    const filtered = q
-      ? base.filter(w => w.it.toLowerCase().includes(ql) || w.en.toLowerCase().includes(ql))
-      : base;
+    const ql = q.toLowerCase().replace(/^#\S+\s*/,'');
+    const filtered = ql
+      ? words.filter(w => (w.it||'').toLowerCase().includes(ql) || (w.en||'').toLowerCase().includes(ql))
+      : words;
     if(!filtered.length){
-      if(q) localSection.appendChild($(`<div class="results-hdr">&#128218; Locale &middot; 0 risultati</div>`));
+      if(ql) localSection.appendChild($(`<div class="results-hdr">&#128218; Local &middot; 0 results</div>`));
       return;
     }
-    const hdr = $(`<div class="results-hdr">&#128218; Locale &middot; ${filtered.length} parol${filtered.length===1?'a':'e'}</div>`);
-    localSection.appendChild(hdr);
+    localSection.appendChild($(`<div class="results-hdr">&#128218; Local &middot; ${filtered.length} word${filtered.length===1?'':'s'}</div>`));
     filtered.slice(0, 60).forEach(w=>{
       localSection.appendChild(makeVocabCard(w.it, w.en, {pos:w.pos, posLabel:POS_LABELS[w.pos], id:w.id}));
     });
     if(filtered.length > 60){
-      localSection.appendChild($(`<div style="text-align:center;padding:10px;color:var(--muted);font-size:13px">+ altri ${filtered.length-60} — affina la ricerca</div>`));
+      localSection.appendChild($(`<div style="text-align:center;padding:10px;color:var(--muted);font-size:13px">+ ${filtered.length-60} more — refine your search</div>`));
     }
   }
 
-  // ---- Online search ----
+  // ---- Online search (MyMemory) ----
   async function doOnline(q){
     if(!q || q.length<2){ onlineSection.innerHTML=''; return; }
     onlineSection.innerHTML='';
-    const loadHdr = $(`<div class="results-hdr">&#127760; Online &middot; ricerca in corso…</div>`);
-    onlineSection.appendChild(loadHdr);
+    onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; searching…</div>`));
     try{
       const r = await fetch("https://api.mymemory.translated.net/get?q="+encodeURIComponent(q)+"&langpair="+encodeURIComponent(langpair));
       const d = await r.json();
@@ -1892,59 +1921,106 @@ function runVocabolario(){
           .filter(m=>m.translation && m.translation!==main && parseFloat(m.quality||0)>50)
           .slice(0,4);
         const total = 1 + extras.length;
-        onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; ${total} risultat${total===1?'o':'i'}</div>`));
+        onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; ${total} result${total===1?'':'s'}</div>`));
         onlineSection.appendChild(makeVocabCard(itWord, enTrans, {online:true}));
         extras.forEach(m=>{
-          const itW = langpair==='en|it' ? m.translation : (m.segment||q);
-          const enT = langpair==='en|it' ? (m.segment||q) : m.translation;
-          onlineSection.appendChild(makeVocabCard(itW, enT, {online:true}));
+          const iW = langpair==='en|it' ? m.translation : (m.segment||q);
+          const eT = langpair==='en|it' ? (m.segment||q) : m.translation;
+          onlineSection.appendChild(makeVocabCard(iW, eT, {online:true}));
         });
       } else {
-        onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; nessun risultato</div>`));
+        onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; no results</div>`));
       }
     }catch(e){
       if(inp.value.trim() !== q) return;
       onlineSection.innerHTML = '';
-      onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; connessione non disponibile</div>`));
+      onlineSection.appendChild($(`<div class="results-hdr">&#127760; Online &middot; connection unavailable</div>`));
     }
   }
 
-  function setPos(pos){
-    activePos = pos;
-    [...chipsWrap.children].forEach(ch=>{
-      ch.classList.toggle('active',
-        (pos==='all' && ch===allChip) ||
-        (pos!=='all' && ch.textContent.startsWith(POS_LABELS[pos]||''))
-      );
-    });
-    renderLocal(inp.value.trim());
+  function triggerSearch(q){
+    if(!q){ showBrowseView(); buildBrowse(); return; }
+    showSearchView();
+    renderLocal(q);
+    if(q.length>=2 && !q.startsWith('#')) {
+      clearTimeout(inp._t);
+      inp._t = setTimeout(()=>doOnline(q), 500);
+    } else {
+      onlineSection.innerHTML='';
+    }
   }
 
-  function setDir(dir){
-    langpair = dir;
-    btnEN.classList.toggle('active', dir==='en|it');
-    btnIT.classList.toggle('active', dir==='it|en');
-    inp.placeholder = dir==='en|it' ? 'Cerca in inglese…' : 'Cerca in italiano…';
-    inp.value = '';
-    onlineSection.innerHTML = '';
-    renderLocal('');
-  }
-
-  btnEN.onclick = ()=>setDir('en|it');
-  btnIT.onclick = ()=>setDir('it|en');
-
-  let debounceLocal=null, debounceOnline=null;
+  let debounce=null;
   inp.addEventListener('input', ()=>{
-    clearTimeout(debounceLocal);
-    clearTimeout(debounceOnline);
+    clearTimeout(debounce);
     const q = inp.value.trim();
-    debounceLocal = setTimeout(()=>renderLocal(q), 50);
-    if(q.length>=2) debounceOnline = setTimeout(()=>doOnline(q), 500);
-    else onlineSection.innerHTML='';
+    debounce = setTimeout(()=>triggerSearch(q), 50);
   });
 
-  renderLocal('');
-  setTimeout(()=>inp.focus(), 80);
+  buildBrowse();
+}
+
+// ---------- ESERCIZI ----------
+function runEsercizi(){
+  const stage = header();
+
+  const titleRow = $(`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px"></div>`);
+  titleRow.appendChild($(`<b style="font-size:20px">📋 Exercises</b>`));
+  const resetBtn = $(`<button style="border:1px solid #dc2626;background:none;color:#dc2626;border-radius:10px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer;opacity:.75">🗑 Reset</button>`);
+  resetBtn.onclick = ()=>{
+    if(!confirm('Delete all saved exercises?')) return;
+    saveEses({voci:[]});
+    renderEsercizi();
+  };
+  titleRow.appendChild(resetBtn);
+  stage.appendChild(titleRow);
+
+  const container = $(`<div style="display:flex;flex-direction:column;gap:16px"></div>`);
+  stage.appendChild(container);
+
+  function mkSection(ico, title, count){
+    const sec = $(`<div style="background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm)"></div>`);
+    const hdr = $(`<div style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--card2)">
+      <span style="font-size:20px">${ico}</span>
+      <span style="font-size:15px;font-weight:700;flex:1">${title}</span>
+      <span style="font-size:12px;color:var(--muted);background:var(--line);border-radius:20px;padding:2px 10px;font-weight:600">${count}</span>
+    </div>`);
+    sec.appendChild(hdr);
+    return sec;
+  }
+
+  function renderEsercizi(){
+    container.innerHTML = '';
+    const s = esesStore();
+
+    const vSec = mkSection('📚', 'Saved flashcards', s.voci.length);
+    container.appendChild(vSec);
+    const vBody = $(`<div style="padding:12px 14px"></div>`);
+    vSec.appendChild(vBody);
+
+    if(!s.voci.length){
+      vBody.appendChild($(`<p style="color:var(--muted);font-size:14px;margin:4px 0 2px;text-align:center;padding:8px 0">No words saved yet.<br><span style="font-size:12px">Go to <b>Vocabulary</b> → Add to exercises</span></p>`));
+    } else {
+      const studyBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:12px;font-size:15px">▶ Study flashcards (${s.voci.length})</button>`);
+      studyBtn.onclick = ()=>navigateTo(()=>runFlash(s.voci, 'Exercises'));
+      vBody.appendChild(studyBtn);
+
+      const vList = $(`<div style="display:flex;flex-direction:column;gap:6px"></div>`);
+      s.voci.forEach(w=>{
+        const row = $(`<div style="display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:10px;padding:9px 12px"></div>`);
+        const spk = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;padding:0;flex-shrink:0" title="Listen">🔊</button>`);
+        spk.onclick = ()=>speak(w.it||'');
+        const txt = $(`<div style="flex:1;min-width:0"><div style="font-size:15px;font-weight:700;color:var(--text)">${w.it||''}</div><div style="font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${w.en||w.it||''}</div></div>`);
+        const del = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;color:var(--muted);padding:4px;flex-shrink:0" title="Remove">✕</button>`);
+        del.onclick = ()=>{ removeEsesVoce(w.id); renderEsercizi(); };
+        row.appendChild(spk); row.appendChild(txt); row.appendChild(del);
+        vList.appendChild(row);
+      });
+      vBody.appendChild(vList);
+    }
+  }
+
+  renderEsercizi();
 }
 
 function runMCQ(questions, title, restart){
