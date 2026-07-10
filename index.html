@@ -286,6 +286,9 @@
   .save-ese-btn:not(:disabled):hover{border-color:var(--accent2);color:var(--accent2)}
   .save-ese-btn.saved{color:var(--good);border-color:var(--good);background:rgba(22,163,74,.07)}
   .save-ese-btn:disabled{cursor:default;opacity:.8}
+  .tense-btn{flex:0 1 auto;padding:7px 12px;border-radius:11px;border:1px solid var(--line);background:var(--card2);color:var(--muted);font-size:12.5px;font-weight:600;cursor:pointer;transition:.12s;text-align:center}
+  .tense-btn.active{border-color:var(--accent2);background:rgba(47,107,237,.10);color:var(--accent2)}
+  .tense-btn:hover:not(.active){border-color:var(--accent2);color:var(--accent2)}
   .tag-picker{margin-top:10px;border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:8px}
   .tag-picker label{font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase}
   .tag-chips{display:flex;flex-wrap:wrap;gap:5px}
@@ -376,9 +379,9 @@ function addUserVoce(itWord, enTrans, pos, tag){
 }
 function isUserVoce(itWord){ return userStore().voci.some(v=>v.it===itWord); }
 
-// ---------- Esercizi: flashcard salvate manualmente ----------
+// ---------- Esercizi: flashcard e verbi salvati manualmente ----------
 const ESERCIZI_KEY = "italiano_esercizi_v1";
-function esesStore(){ try{ return JSON.parse(localStorage.getItem(ESERCIZI_KEY)||'{"voci":[]}'); }catch(e){ return {voci:[]}; } }
+function esesStore(){ try{ const s=JSON.parse(localStorage.getItem(ESERCIZI_KEY)||'{"voci":[],"verbi":[]}'); if(!s.verbi) s.verbi=[]; return s; }catch(e){ return {voci:[],verbi:[]}; } }
 function saveEses(s){ localStorage.setItem(ESERCIZI_KEY, JSON.stringify(s)); }
 function addEsesVoce(id, it, en, pos, tag){
   const s = esesStore();
@@ -388,6 +391,10 @@ function addEsesVoce(id, it, en, pos, tag){
 }
 function removeEsesVoce(id){ const s=esesStore(); s.voci=s.voci.filter(v=>v.id!==id); saveEses(s); }
 function isEsesVoce(id){ return esesStore().voci.some(v=>v.id===id); }
+// I verbi italiani non hanno un id: usiamo l'infinito come chiave.
+function addEsesVerbo(inf){ const s=esesStore(); if(s.verbi.includes(inf)) return false; s.verbi.push(inf); saveEses(s); return true; }
+function removeEsesVerbo(inf){ const s=esesStore(); s.verbi=s.verbi.filter(v=>v!==inf); saveEses(s); }
+function isEsesVerbo(inf){ return esesStore().verbi.includes(inf); }
 
 let DB = null;
 let srs = JSON.parse(localStorage.getItem(STORE_KEY) || "{}");
@@ -577,6 +584,62 @@ function conjForm(v, tk, p){
   return {display:f, accept:[f]};
 }
 
+// Tempi effettivamente disponibili per un verbo (almeno una persona valorizzata).
+function availableTenses(v){
+  return CONJ_TENSES.filter(t=>{ for(let p=0;p<6;p++){ if(conjForm(v,t.key,p)) return true; } return false; });
+}
+
+// Blocco riutilizzabile: tasti dei tempi (raggruppati per modo) + tabella
+// coniugazione di un verbo. compact=true → versione ridotta per le liste.
+// Usato anche come "reveal" dopo aver risposto a un esercizio di coniugazione.
+function makeVerbConjBlock(v, compact){
+  const tenses = availableTenses(v);
+  const wrap = document.createElement('div');
+  if(!tenses.length) return wrap;
+  let activeTense = tenses[0].key;
+
+  const tRow = document.createElement('div');
+  tRow.style.cssText = compact
+    ? 'display:flex;flex-wrap:wrap;gap:5px;margin-bottom:8px'
+    : 'display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-bottom:14px';
+  const tBtns = {};
+  for(const t of tenses){
+    const b = $(`<button class="tense-btn"${compact?' style="font-size:11px;padding:4px 9px"':''}>${t.label}</button>`);
+    b.onclick = ()=>{ activeTense=t.key; Object.entries(tBtns).forEach(([k,x])=>x.classList.toggle('active',k===activeTense)); render(); };
+    tRow.appendChild(b); tBtns[t.key]=b;
+  }
+  tBtns[activeTense].classList.add('active');
+  wrap.appendChild(tRow);
+
+  const box = document.createElement('div');
+  wrap.appendChild(box);
+  function render(){
+    box.innerHTML='';
+    const tbl = document.createElement('table');
+    tbl.style.cssText='width:100%;border-collapse:collapse';
+    for(let p=0;p<6;p++){
+      const cell = conjForm(v, activeTense, p);
+      if(!cell) continue;
+      const tr=document.createElement('tr');
+      const tdP=document.createElement('td');
+      tdP.style.cssText = compact
+        ? 'padding:3px 6px;color:var(--muted);font-size:12px;width:34%'
+        : 'padding:7px 10px;color:var(--muted);font-size:13px;width:34%';
+      tdP.textContent=conjPronoun(activeTense,p)||'';
+      const tdF=document.createElement('td');
+      tdF.style.cssText = compact
+        ? 'padding:3px 6px;font-size:14px;font-weight:700;cursor:pointer;color:var(--text)'
+        : 'padding:7px 10px;font-size:16px;font-weight:700;cursor:pointer;color:var(--text)';
+      tdF.textContent=cell.display;
+      tdF.onclick=()=>speak(cell.display);
+      tr.appendChild(tdP); tr.appendChild(tdF); tbl.appendChild(tr);
+    }
+    box.appendChild(tbl);
+  }
+  render();
+  return wrap;
+}
+
 async function forceUpdate(btnEl){
   if(btnEl){btnEl.textContent="⏳ Updating...";btnEl.disabled=true;}
   try{
@@ -651,10 +714,11 @@ function renderHome(){
       grid.appendChild(dailyTile);
 
       const ese = esesStore();
-      const eseCount = ese.voci.length;
+      const nVerbiSaved = (ese.verbi||[]).length;
+      const eseCount = ese.voci.length + nVerbiSaved;
       const eseDesc = eseCount>0
-        ? `${eseCount} flashcard salvat${eseCount===1?'a':'e'}`
-        : 'Save words from Vocabulary to practise here';
+        ? `${ese.voci.length} flashcard &middot; ${nVerbiSaved} verb${nVerbiSaved===1?'o':'i'} salvat${eseCount===1?'o':'i'}`
+        : 'Save words and verbs to practise here';
       grid.appendChild(mkTile('&#127381;','Exercises', eseDesc,'esercizi',true,'background:linear-gradient(120deg,var(--card) 0%,rgba(47,107,237,.08) 100%)'));
 
       grid.appendChild(mkTile('&#127183;','Flashcards','Spaced repetition by topic','flash',false));
@@ -676,6 +740,8 @@ function renderHome(){
     } else {
       // Teoria
       grid.appendChild(mkTile('&#128214;','Vocabulary','Dictionary + online search','vocab',true));
+      if(DB.verbi && DB.verbi.length)
+        grid.appendChild(mkTile('&#128250;','Verbs','Full conjugations for every tense','verbi',true));
       if(DB.riferimento && DB.riferimento.length)
         grid.appendChild(mkTile('&#128218;','Grammar Reference','Tables, pronouns, conjugations','ref',true));
     }
@@ -729,6 +795,7 @@ function start(mode){
   navigateTo(()=>{
     if(mode==="daily") return runDaily();
     if(mode==="conj") return runConjugation();
+    if(mode==="verbi") return runVerbi();
     if(mode==="flash") return pickFlashTopic();
     if(mode==="memory") return runMemory();
     if(mode==="articoli") return runArticoli();
@@ -1456,8 +1523,92 @@ function playMemory(pairs){
   }
 }
 
-function runConjugation(tenseFilter){
-  const verbs = DB.verbi || [];
+// ---------- VERBI (consultazione + salvataggio in Esercizi) ----------
+const VERB_GRUPPO_LABELS = {
+  '1':'1ª coniugazione · -are', '2':'2ª coniugazione · -ere',
+  '3':'3ª coniugazione · -ire', 'irr':'Irregolari'
+};
+function runVerbi(){
+  const stage = header();
+  const verbi = DB.verbi || [];
+  if(!verbi.length){
+    stage.appendChild($(`<p style="text-align:center;color:var(--muted);padding:30px 0">Nessun verbo disponibile.</p>`));
+    return;
+  }
+
+  stage.appendChild($(`<div style="margin-bottom:12px"><b style="font-size:18px">Verbi</b><div style="font-size:13px;color:var(--muted);margin-top:2px">Tocca un verbo per le coniugazioni e aggiungerlo agli esercizi</div></div>`));
+
+  const inputWrap = $(`<div style="position:relative;width:100%;margin-bottom:14px"></div>`);
+  inputWrap.appendChild($(`<span style="position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:18px;pointer-events:none">&#128269;</span>`));
+  const inp = document.createElement('input');
+  inp.className = 'vocab-input';
+  inp.type = 'search';
+  inp.placeholder = 'Cerca un verbo…';
+  inp.setAttribute('autocomplete','off'); inp.setAttribute('autocorrect','off'); inp.setAttribute('spellcheck','false');
+  inputWrap.appendChild(inp);
+  stage.appendChild(inputWrap);
+
+  const listWrap = $(`<div></div>`);
+  stage.appendChild(listWrap);
+
+  function render(filter){
+    listWrap.innerHTML = '';
+    const f = (filter||'').toLowerCase().trim();
+    const shown = verbi.filter(v=> !f || (v.inf||'').toLowerCase().includes(f) || (v.en||'').toLowerCase().includes(f));
+    if(!shown.length){ listWrap.appendChild($(`<p style="color:var(--muted);text-align:center;padding:20px 0">Nessun verbo trovato.</p>`)); return; }
+    // Raggruppa per gruppo
+    const groups = {};
+    for(const v of shown){ const g=(v.gruppo in VERB_GRUPPO_LABELS)?v.gruppo:'irr'; (groups[g]=groups[g]||[]).push(v); }
+    for(const [g,label] of Object.entries(VERB_GRUPPO_LABELS)){
+      const grp = groups[g]; if(!grp||!grp.length) continue;
+      listWrap.appendChild($(`<div style="font-size:11.5px;font-weight:700;color:var(--accent2);text-transform:uppercase;letter-spacing:.6px;margin:14px 0 6px">${label}</div>`));
+      const list = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
+      grp.forEach(v=>{
+        const saved = isEsesVerbo(v.inf);
+        const btn = $(`<button class="tile wide">
+          <div class="txt"><div class="t" style="font-size:17px">${v.inf}</div><div class="d">${v.en||''}</div></div>
+          ${saved ? '<div style="color:var(--good);font-size:18px;flex-shrink:0">✓</div>' : ''}
+        </button>`);
+        btn.onclick = ()=>navigateTo(()=>runVerboDetail(v));
+        list.appendChild(btn);
+      });
+      listWrap.appendChild(list);
+    }
+  }
+  let deb=null;
+  inp.addEventListener('input', ()=>{ clearTimeout(deb); deb=setTimeout(()=>render(inp.value), 60); });
+  render('');
+}
+
+function runVerboDetail(v){
+  const stage = header();
+  stage.appendChild($(`<div style="text-align:center;margin-bottom:16px">
+    <div style="font-size:28px;font-weight:800;color:var(--text)">${v.inf}</div>
+    <div style="font-size:15px;color:var(--muted);margin-top:4px">${v.en||''}</div>
+    ${v.gruppo ? `<div style="font-size:12px;color:var(--accent2);margin-top:4px">${VERB_GRUPPO_LABELS[v.gruppo]||('Gruppo '+v.gruppo)}${v.aux?` · aux ${v.aux}`:''}</div>` : ''}
+  </div>`));
+
+  const block = makeVerbConjBlock(v, false);
+  if(!block.childNodes.length){
+    stage.appendChild($(`<p style="text-align:center;color:var(--muted)">Coniugazioni non disponibili.</p>`));
+  } else {
+    stage.appendChild(block);
+  }
+
+  const saveBtn = $(`<button class="save-ese-btn"></button>`);
+  function paint(){
+    const saved = isEsesVerbo(v.inf);
+    saveBtn.textContent = saved ? '✓ Aggiunto agli esercizi' : '＋ Aggiungi agli esercizi';
+    saveBtn.classList.toggle('saved', saved);
+    saveBtn.disabled = saved;
+  }
+  paint();
+  saveBtn.onclick = ()=>{ addEsesVerbo(v.inf); paint(); };
+  stage.appendChild(saveBtn);
+}
+
+function runConjugation(tenseFilter, verbPool){
+  const verbs = verbPool || DB.verbi || [];
   if(!verbs.length){
     const stage = header();
     stage.appendChild($(`<p class="muted" style="text-align:center;padding:30px">Nessun verbo disponibile.</p>`));
@@ -1473,7 +1624,7 @@ function runConjugation(tenseFilter){
       <div class="ico">🎲</div>
       <div class="txt"><div class="t">Mix</div><div class="d">Tutti i tempi e tutti i modi insieme</div></div>
     </button>`);
-    mixBtn.onclick = ()=>runConjugation(CONJ_TENSES.map(t=>t.key));
+    mixBtn.onclick = ()=>runConjugation(CONJ_TENSES.map(t=>t.key), verbPool);
     stage.appendChild(mixBtn);
     const list = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
     let curModo = null;
@@ -1485,7 +1636,7 @@ function runConjugation(tenseFilter){
       const btn = $(`<button class="tile wide">
         <div class="txt"><div class="t">${t.label}</div><div class="d">${t.comp?"Tempo composto":"Tempo semplice"}</div></div>
       </button>`);
-      btn.onclick = ()=>runConjugation([t.key]);
+      btn.onclick = ()=>runConjugation([t.key], verbPool);
       list.appendChild(btn);
     });
     stage.appendChild(list);
@@ -1499,7 +1650,7 @@ function runConjugation(tenseFilter){
     for(let p=0;p<6;p++){
       const cell = conjForm(v, tk, p);
       if(!cell) continue;
-      all.push({inf:v.inf, en:v.en, tk, p, answer:cell.display, accept:cell.accept, id:`conj:${v.inf}:${tk}:${p}`});
+      all.push({verb:v, inf:v.inf, en:v.en, tk, p, answer:cell.display, accept:cell.accept, id:`conj:${v.inf}:${tk}:${p}`});
     }
   }));
   if(!all.length){ history.back(); return; }
@@ -1512,15 +1663,17 @@ function runConjugation(tenseFilter){
   const wrap = $(`<div style="width:100%"></div>`); stage.appendChild(wrap);
 
   function show(){
-    if(i>=deck.length) return finish(stage, `Completato &middot; ${correct} / ${deck.length}`, ()=>runConjugation(tenseFilter));
+    if(i>=deck.length) return finish(stage, `Completato &middot; ${correct} / ${deck.length}`, ()=>runConjugation(tenseFilter, verbPool));
     bar.style.width = (i/deck.length*100)+"%"; bar.setNum(i, deck.length);
     const q = deck[i];
     wrap.innerHTML = "";
+    // Il verbo italiano (infinito) resta nascosto finché non si risponde:
+    // mostriamo solo il significato, così non si indovina la forma.
     wrap.appendChild($(`
       <div style="background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;text-align:center;box-shadow:var(--shadow-sm)">
         <div style="font-size:12px;color:var(--accent2);font-weight:700;text-transform:uppercase;letter-spacing:.6px">${tenseLabel(q.tk)}</div>
-        <div style="font-size:26px;font-weight:800;margin:8px 0 2px">${q.inf}</div>
-        <div style="font-size:13px;color:var(--muted)">${q.en}</div>
+        <div style="font-size:26px;font-weight:800;margin:10px 0 3px">${q.en}</div>
+        <div style="font-size:12px;color:var(--muted)">Coniuga questo verbo</div>
         <div style="font-size:28px;font-weight:800;margin:16px 0 2px">
           <span style="color:var(--muted);font-size:19px;font-weight:600">${conjPronoun(q.tk,q.p)}</span> _____
         </div>
@@ -1562,6 +1715,21 @@ function runConjugation(tenseFilter){
         fb.innerHTML = `<span style="color:var(--accent);font-weight:700">&#10007; Risposta: <b>${q.answer}</b></span>`;
       }
       speak(q.answer);
+
+      // Reveal: infinito + significato + tabella coniugazioni completa
+      const reveal = $(`<div style="margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px;box-shadow:var(--shadow-sm)"></div>`);
+      const revHead = $(`<div style="display:flex;align-items:center;gap:10px;margin-bottom:12px"></div>`);
+      const revSpk = $(`<button style="background:none;border:none;font-size:18px;cursor:pointer;padding:0;flex-shrink:0" title="Ascolta">🔊</button>`);
+      revSpk.onclick = ()=>speak(q.inf);
+      revHead.appendChild(revSpk);
+      revHead.appendChild($(`<div style="flex:1;min-width:0">
+        <div style="font-size:20px;font-weight:800;color:var(--text)">${q.inf}</div>
+        <div style="font-size:12px;color:var(--muted)">${q.en||''}</div>
+      </div>`));
+      reveal.appendChild(revHead);
+      reveal.appendChild(makeVerbConjBlock(q.verb, false));
+      wrap.insertBefore(reveal, btn);
+
       btn.textContent = "Avanti →";
       btn.onclick = next;
     }
@@ -1964,63 +2132,124 @@ function runVocabolario(){
 function runEsercizi(){
   const stage = header();
 
-  const titleRow = $(`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px"></div>`);
+  const titleRow = $(`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px"></div>`);
   titleRow.appendChild($(`<b style="font-size:20px">📋 Exercises</b>`));
   const resetBtn = $(`<button style="border:1px solid #dc2626;background:none;color:#dc2626;border-radius:10px;padding:6px 14px;font-size:12px;font-weight:700;cursor:pointer;opacity:.75">🗑 Reset</button>`);
   resetBtn.onclick = ()=>{
     if(!confirm('Delete all saved exercises?')) return;
-    saveEses({voci:[]});
-    renderEsercizi();
+    saveEses({voci:[],verbi:[]});
+    renderTab(activeTab);
   };
   titleRow.appendChild(resetBtn);
   stage.appendChild(titleRow);
 
-  const container = $(`<div style="display:flex;flex-direction:column;gap:16px"></div>`);
-  stage.appendChild(container);
+  // Due schede: Flashcard | Verbi. Swipe come nella home (soglia 20px).
+  let activeTab = localStorage.getItem('italiano_ese_tab')==='verbi' ? 'verbi' : 'flash';
+  const s0 = esesStore();
+  const nV = s0.voci.length;
+  const nB = (s0.verbi||[]).map(inf=>(DB.verbi||[]).find(v=>v.inf===inf)).filter(Boolean).length;
+  const tabsDiv = $(`<div class="home-tabs">
+    <button class="home-tab" data-tab="flash">📚 Flashcards${nV?` · ${nV}`:''}</button>
+    <button class="home-tab" data-tab="verbi">✏️ Verbs${nB?` · ${nB}`:''}</button>
+  </div>`);
+  stage.appendChild(tabsDiv);
 
-  function mkSection(ico, title, count){
-    const sec = $(`<div style="background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm)"></div>`);
-    const hdr = $(`<div style="display:flex;align-items:center;gap:10px;padding:14px 16px;border-bottom:1px solid var(--line);background:var(--card2)">
-      <span style="font-size:20px">${ico}</span>
-      <span style="font-size:15px;font-weight:700;flex:1">${title}</span>
-      <span style="font-size:12px;color:var(--muted);background:var(--line);border-radius:20px;padding:2px 10px;font-weight:600">${count}</span>
-    </div>`);
-    sec.appendChild(hdr);
-    return sec;
-  }
+  const wrapOuter = $(`<div class="grid-wrap"></div>`);
+  stage.appendChild(wrapOuter);
 
-  function renderEsercizi(){
-    container.innerHTML = '';
+  const TABS = ['flash','verbi'];
+
+  // ---- Scheda Flashcard ----
+  function buildFlash(body){
     const s = esesStore();
-
-    const vSec = mkSection('📚', 'Saved flashcards', s.voci.length);
-    container.appendChild(vSec);
-    const vBody = $(`<div style="padding:12px 14px"></div>`);
-    vSec.appendChild(vBody);
-
     if(!s.voci.length){
-      vBody.appendChild($(`<p style="color:var(--muted);font-size:14px;margin:4px 0 2px;text-align:center;padding:8px 0">No words saved yet.<br><span style="font-size:12px">Go to <b>Vocabulary</b> → Add to exercises</span></p>`));
-    } else {
-      const studyBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:12px;font-size:15px">▶ Study flashcards (${s.voci.length})</button>`);
-      studyBtn.onclick = ()=>navigateTo(()=>runFlash(s.voci, 'Exercises'));
-      vBody.appendChild(studyBtn);
-
-      const vList = $(`<div style="display:flex;flex-direction:column;gap:6px"></div>`);
-      s.voci.forEach(w=>{
-        const row = $(`<div style="display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:10px;padding:9px 12px"></div>`);
-        const spk = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;padding:0;flex-shrink:0" title="Listen">🔊</button>`);
-        spk.onclick = ()=>speak(w.it||'');
-        const txt = $(`<div style="flex:1;min-width:0"><div style="font-size:15px;font-weight:700;color:var(--text)">${w.it||''}</div><div style="font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${w.en||w.it||''}</div></div>`);
-        const del = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;color:var(--muted);padding:4px;flex-shrink:0" title="Remove">✕</button>`);
-        del.onclick = ()=>{ removeEsesVoce(w.id); renderEsercizi(); };
-        row.appendChild(spk); row.appendChild(txt); row.appendChild(del);
-        vList.appendChild(row);
-      });
-      vBody.appendChild(vList);
+      body.appendChild($(`<p style="color:var(--muted);font-size:14px;text-align:center;padding:26px 8px">No words saved yet.<br><span style="font-size:12px">Go to <b>Vocabulary</b> → Add to exercises</span></p>`));
+      return;
     }
+    const studyBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:14px;font-size:15px">▶ Study flashcards (${s.voci.length})</button>`);
+    studyBtn.onclick = ()=>navigateTo(()=>runFlash(s.voci, 'Exercises'));
+    body.appendChild(studyBtn);
+
+    const vList = $(`<div style="display:flex;flex-direction:column;gap:6px"></div>`);
+    s.voci.forEach(w=>{
+      const row = $(`<div style="display:flex;align-items:center;gap:10px;background:var(--card2);border-radius:10px;padding:9px 12px"></div>`);
+      const spk = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;padding:0;flex-shrink:0" title="Listen">🔊</button>`);
+      spk.onclick = ()=>speak(w.it||'');
+      const txt = $(`<div style="flex:1;min-width:0"><div style="font-size:15px;font-weight:700;color:var(--text)">${w.it||''}</div><div style="font-size:12px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${w.en||w.it||''}</div></div>`);
+      const del = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;color:var(--muted);padding:4px;flex-shrink:0" title="Remove">✕</button>`);
+      del.onclick = ()=>{ removeEsesVoce(w.id); renderTab(activeTab); };
+      row.appendChild(spk); row.appendChild(txt); row.appendChild(del);
+      vList.appendChild(row);
+    });
+    body.appendChild(vList);
   }
 
-  renderEsercizi();
+  // ---- Scheda Verbi ----
+  function buildVerbi(body){
+    const s = esesStore();
+    const allVerbi = DB.verbi || [];
+    const savedVerbi = (s.verbi||[]).map(inf=>allVerbi.find(v=>v.inf===inf)).filter(Boolean);
+    if(!savedVerbi.length){
+      body.appendChild($(`<p style="color:var(--muted);font-size:14px;text-align:center;padding:26px 8px">No verbs saved yet.<br><span style="font-size:12px">Go to <b>Verbs</b> (Theory) → Add to exercises</span></p>`));
+      return;
+    }
+    const trainBtn = $(`<button class="btn primary" style="width:100%;margin-bottom:14px;font-size:15px">⚡ Train conjugation (${savedVerbi.length} verb${savedVerbi.length===1?'':'s'})</button>`);
+    trainBtn.onclick = ()=>navigateTo(()=>runConjugation(undefined, savedVerbi));
+    body.appendChild(trainBtn);
+
+    const bList = $(`<div style="display:flex;flex-direction:column;gap:8px"></div>`);
+    savedVerbi.forEach(v=>{
+      const row = $(`<div style="background:var(--card2);border-radius:12px;overflow:hidden"></div>`);
+      const top = $(`<div style="display:flex;align-items:center;gap:10px;padding:10px 12px"></div>`);
+      const spk = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;padding:0;flex-shrink:0">🔊</button>`);
+      spk.onclick = ()=>speak(v.inf);
+      top.appendChild(spk);
+      top.appendChild($(`<div style="flex:1"><div style="font-size:16px;font-weight:700">${v.inf}</div><div style="font-size:12px;color:var(--muted)">${v.en||''}</div></div>`));
+      const del = $(`<button style="background:none;border:none;font-size:16px;cursor:pointer;color:var(--muted);padding:4px;flex-shrink:0" title="Remove">✕</button>`);
+      del.onclick = ()=>{ removeEsesVerbo(v.inf); renderTab(activeTab); };
+      top.appendChild(del);
+      row.appendChild(top);
+
+      const conj = makeVerbConjBlock(v, true);
+      conj.style.padding = '0 12px 10px';
+      row.appendChild(conj);
+      bList.appendChild(row);
+    });
+    body.appendChild(bList);
+  }
+
+  function renderTab(tab, dir){
+    activeTab = tab;
+    localStorage.setItem('italiano_ese_tab', tab);
+    tabsDiv.querySelectorAll('.home-tab').forEach(b=>b.classList.toggle('active', b.dataset.tab===tab));
+    const panel = $(`<div></div>`);
+    if(dir) panel.classList.add(dir==='left' ? 'slide-left' : 'slide-right');
+    if(tab==='flash') buildFlash(panel); else buildVerbi(panel);
+    wrapOuter.innerHTML='';
+    wrapOuter.appendChild(panel);
+  }
+
+  tabsDiv.querySelectorAll('.home-tab').forEach(b=>{
+    b.onclick = ()=>{
+      if(b.dataset.tab===activeTab) return;
+      const dir = TABS.indexOf(b.dataset.tab) > TABS.indexOf(activeTab) ? 'left' : 'right';
+      renderTab(b.dataset.tab, dir);
+    };
+  });
+  renderTab(activeTab);
+
+  // Swipe sinistra/destra per cambiare scheda (stessa soglia della home: 20px)
+  let _swX=null;
+  wrapOuter.addEventListener('touchstart', e=>{ _swX = e.touches[0].clientX; }, {passive:true});
+  wrapOuter.addEventListener('touchend', e=>{
+    if(_swX===null) return;
+    const dx = e.changedTouches[0].clientX - _swX;
+    _swX = null;
+    if(Math.abs(dx)<20) return;
+    const cur = TABS.indexOf(activeTab);
+    if(dx < 0 && cur < TABS.length-1) renderTab(TABS[cur+1], 'left');
+    if(dx > 0 && cur > 0)             renderTab(TABS[cur-1], 'right');
+  }, {passive:true});
 }
 
 function runMCQ(questions, title, restart){
