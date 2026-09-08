@@ -1,5 +1,11 @@
-const CACHE = 'italiano-b2-v10';
-const ASSETS = ['/', '/index.html', '/knowledge.json', '/manifest.json', '/splash-desktop.png'];
+const CACHE = 'italiano-b2-v11';
+// path relativi: l'app è pubblicata su un sottopercorso di GitHub Pages (/App-Italiano-/),
+// path assoluti come '/index.html' puntano alla root del dominio e falliscono la precache.
+const ASSETS = [
+  './', './index.html', './knowledge.json', './manifest.json',
+  './icon.png', './splash.png', './splash-desktop.png',
+  './lm-sanpietro.jpg', './lm-sanmarco.jpg', './lm-duomomi.jpg'
+];
 self.addEventListener('install', e => {
   // cache:'no-cache' rivalida col server, altrimenti il pre-cache può ripescare file vecchi dalla cache HTTP
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: 'no-cache' }))).catch(() => {})));
@@ -23,10 +29,17 @@ self.addEventListener('fetch', e => {
       .then(res => {
         if (res && res.ok) {
           const copy = res.clone();
-          caches.open(CACHE).then(c => c.put(req, copy)).catch(() => {});
+          // si scrive sotto la chiave senza query string, altrimenti ogni load
+          // (knowledge.json?_=timestamp diverso ogni volta) crea una nuova voce
+          // in cache invece di sovrascrivere sempre la stessa.
+          const key = new URL(req.url); key.search = '';
+          caches.open(CACHE).then(c => c.put(key.toString(), copy)).catch(() => {});
         }
         return res;
       })
-      .catch(() => caches.match(req, { ignoreSearch: req.mode === 'navigate' }))
+      // ignoreSearch sempre true: knowledge.json viene richiesto con un query-buster
+      // che cambia a ogni load ("?_="+Date.now()), quindi offline non troverebbe mai
+      // l'URL esatto in cache se si confrontasse anche la query string.
+      .catch(() => caches.match(req, { ignoreSearch: true }))
   );
 });
