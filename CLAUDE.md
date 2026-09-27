@@ -14,9 +14,10 @@ inglese, i contenuti in italiano con traduzione. È costruita sul modello dell'a
 
 L'estetica è quella dell'Italia: in testa alla home un panorama dipinto di Firenze da Piazzale
 Michelangelo che cambia con l'ora (alba, giorno, tramonto, notte; nel tema scuro sempre notte),
-sullo sfondo la Val d'Orcia dipinta, motivi decorativi (maiolica, rosone, meandro, acquedotto,
-cotto) e 55 illustrazioni **dipinte e realistiche** di monumenti, paesaggi e piatti (vedi
-«Immagini»). Niente più striscia tricolore sotto la testata: l'utente non la voleva.
+sullo sfondo la Val d'Orcia dipinta, motivi decorativi (maiolica, rosone, meandro, cotto) e 55
+illustrazioni **realistiche ad acquarello leggero** di monumenti, paesaggi e piatti (vedi
+«Immagini»). L'utente **non** vuole né la striscia tricolore né l'orlo ad archi («grechina»)
+sotto la testata o sulla scheda del ripasso: non rimetterli.
 
 ## File
 
@@ -88,10 +89,12 @@ esporta tutto ciò che inizia con `italiano_` / `sofia_` tranne la chiave API.
 - `luoghi[].ill` e `percorso[].ill` sono id di illustrazioni presenti in `index.html` (`ill-<id>`).
 
 ## Immagini
-Le illustrazioni sono **dipinti ricavati da foto libere di Wikimedia Commons** (stile scelto
-dall'utente: «molto più realistiche delle vecchie SVG minimali, ma non foto»): un filtro di
-Kuwahara generalizzato (pennellate morbide che tengono i bordi) più un po' di luce e grana.
-- `img/luoghi/<ill>.webp` (800×500) e `<ill>-s.webp` (384×240, per miniature e schede):
+Le illustrazioni sono **acquarelli leggeri ricavati da foto libere di Wikimedia Commons**
+(richiesta dell'utente: «molto più realistiche delle vecchie SVG minimali, ma non foto» e poi
+«devono essere **nitide**, l'effetto acquarello ci sta ma non troppo»): un piccolo filtro di
+Kuwahara generalizzato + i dettagli fini della foto + nitidezza, partendo da foto a 1920 px.
+**Non** tornare a un effetto pittura pesante né a file piccoli: sul telefono (3×) risultano sfocati.
+- `img/luoghi/<ill>.webp` (1200×750) e `<ill>-s.webp` (480×300, per miniature e schede):
   `<ill>` è `luoghi[].ill` / `percorso[].ill` di `knowledge.json`. `piazza.webp` è la scena di Cultura.
 - `img/cielo/{alba,giorno,tramonto,notte}.webp`: il panorama in testa alla home.
 - `img/sfondo.webp`: la Val d'Orcia sullo sfondo (nel tema scuro scurita via CSS).

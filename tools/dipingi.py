@@ -5,11 +5,12 @@
     python3 tools/dipingi.py "File:Colosseo 2020.jpg" colosseo --nome "Colosseo"
     python3 tools/dipingi.py "File:....jpg" tramonto --cielo          # header panorama
 
-It writes img/luoghi/<id>.webp (800x500) and <id>-s.webp (384x240), or img/cielo/<id>.webp,
+It writes img/luoghi/<id>.webp (1200x750) and <id>-s.webp (480x300), or img/cielo/<id>.webp (1800 wide),
 and adds or updates the entry in img/credits.json (author and licence are shown in
 Settings -> Image credits: they are required by CC BY / CC BY-SA). Only use photos with a
-free licence (CC0, public domain, CC BY, CC BY-SA). The painting is a generalised Kuwahara
-filter (smooth brush strokes that keep the edges) plus a little light, colour and paper grain.
+free licence (CC0, public domain, CC BY, CC BY-SA). The look is a LIGHT watercolour: a small
+generalised Kuwahara filter (soft strokes that keep the edges) with the fine detail of the photo
+added back, then sharpened. Keep it light: the user found the heavier painting too blurry.
 """
 import argparse, html, json, os, re, urllib.parse, urllib.request
 import cv2, numpy as np
@@ -56,19 +57,20 @@ def kuwahara(img, r, q=8):
         wt = 1.0 / var ** (q / 8.0); num += m * wt[..., None]; den += wt
     return np.clip(num / den[..., None], 0, 255).astype(np.uint8)
 
-def dipingi(img, out_w, work=1000, r1=9, r2=5, lift=.12, sat=1.18, warm=.04, sharpen=.6):
-    h, w = img.shape[:2]
-    p = livelli(cv2.resize(img, (work, int(h * work / w)), interpolation=cv2.INTER_AREA))
-    p = kuwahara(kuwahara(cv2.bilateralFilter(p, 7, 35, 7), r1), r2)
-    lab = cv2.cvtColor(p, cv2.COLOR_BGR2LAB).astype(np.float32); L = lab[..., 0] / 255
-    L = L + lift * (1 - L) ** 2; L = L + sharpen * (L - cv2.GaussianBlur(L, (0, 0), 2.2))
-    lab[..., 0] = np.clip(L, 0, 1) * 255
+def dipingi(img, out_w, r=6, detail=.3, lift=.08, sat=1.12, warm=.03, sharpen=.5):
+    h, w = img.shape[:2]; work = min(1920, w)
+    img = livelli(cv2.resize(img, (work, int(h * work / w)), interpolation=cv2.INTER_AREA), .3, 99.7)
+    f = kuwahara(cv2.bilateralFilter(img, 5, 25, 5), r).astype(np.float32)
+    o = img.astype(np.float32); f += detail * (o - cv2.GaussianBlur(o, (0, 0), 1.6))   # the photo's fine detail
+    lab = cv2.cvtColor(np.clip(f, 0, 255).astype(np.uint8), cv2.COLOR_BGR2LAB).astype(np.float32); L = lab[..., 0] / 255
+    lab[..., 0] = np.clip(L + lift * (1 - L) ** 2, 0, 1) * 255
     hsv = cv2.cvtColor(cv2.cvtColor(lab.astype(np.uint8), cv2.COLOR_LAB2BGR), cv2.COLOR_BGR2HSV).astype(np.float32)
     hsv[..., 1] = np.clip(hsv[..., 1] * sat, 0, 255)
     f = cv2.cvtColor(hsv.astype(np.uint8), cv2.COLOR_HSV2BGR).astype(np.float32)
     f[..., 2] *= 1 + warm; f[..., 0] *= 1 - warm * .6
     f = cv2.resize(np.clip(f, 0, 255).astype(np.uint8), (out_w, int(f.shape[0] * out_w / f.shape[1])), interpolation=cv2.INTER_AREA).astype(np.float32)
-    return np.clip(f + grana(*f.shape[:2])[..., None] * 2.5, 0, 255).astype(np.uint8)
+    f += sharpen * (f - cv2.GaussianBlur(f, (0, 0), 1.0))
+    return np.clip(f + grana(*f.shape[:2])[..., None] * 2.0, 0, 255).astype(np.uint8)
 
 def ritaglia(img, aspect, fx=.5, fy=.5):
     h, w = img.shape[:2]
@@ -84,15 +86,15 @@ if __name__ == '__main__':
     ap.add_argument('--cielo', action='store_true', help='a header panorama (alba, giorno, tramonto, notte)')
     a = ap.parse_args()
     title = a.file if a.file.startswith('File:') else 'File:' + a.file
-    img, cr = commons(title, 1920 if a.cielo else 1280)
+    img, cr = commons(title, 1920)
     if a.cielo:
         out = f'img/cielo/{a.id}.webp'
-        cv2.imwrite(os.path.join(REPO, out), dipingi(ritaglia(img, 2.25, *a.focus), 1400, work=1300), [cv2.IMWRITE_WEBP_QUALITY, 78])
+        cv2.imwrite(os.path.join(REPO, out), dipingi(ritaglia(img, 2.25, *a.focus), 1800), [cv2.IMWRITE_WEBP_QUALITY, 78])
     else:
         out = f'img/luoghi/{a.id}.webp'
-        art = dipingi(cv2.resize(ritaglia(img, 1.6, *a.focus), (1000, 625), interpolation=cv2.INTER_AREA), 800)
+        art = cv2.resize(dipingi(ritaglia(img, 1.6, *a.focus), 1200), (1200, 750), interpolation=cv2.INTER_AREA)
         cv2.imwrite(os.path.join(REPO, out), art, [cv2.IMWRITE_WEBP_QUALITY, 80])
-        cv2.imwrite(os.path.join(REPO, f'img/luoghi/{a.id}-s.webp'), cv2.resize(art, (384, 240), interpolation=cv2.INTER_AREA), [cv2.IMWRITE_WEBP_QUALITY, 78])
+        cv2.imwrite(os.path.join(REPO, f'img/luoghi/{a.id}-s.webp'), cv2.resize(art, (480, 300), interpolation=cv2.INTER_AREA), [cv2.IMWRITE_WEBP_QUALITY, 80])
     fn = os.path.join(REPO, 'img', 'credits.json')
     cred = {x['file']: x for x in json.load(open(fn, encoding='utf-8'))}
     cred[out] = dict(file=out, cosa=a.nome or (cred.get(out) or {}).get('cosa') or a.id, **cr)

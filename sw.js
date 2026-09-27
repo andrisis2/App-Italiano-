@@ -1,4 +1,4 @@
-const CACHE = 'italiano-b2-v13';
+const CACHE = 'italiano-b2-v14';
 // path relativi: l'app è pubblicata su un sottopercorso di GitHub Pages (/App-Italiano-/),
 // path assoluti come '/index.html' puntano alla root del dominio e falliscono la precache.
 // (le immagini di avvio iOS in splash-ios/ non servono offline: iOS le legge solo all'installazione;
