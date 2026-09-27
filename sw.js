@@ -1,10 +1,10 @@
-const CACHE = 'italiano-b2-v11';
+const CACHE = 'italiano-b2-v12';
 // path relativi: l'app è pubblicata su un sottopercorso di GitHub Pages (/App-Italiano-/),
 // path assoluti come '/index.html' puntano alla root del dominio e falliscono la precache.
+// (le immagini di avvio iOS in splash-ios/ non servono offline: iOS le legge solo all'installazione)
 const ASSETS = [
   './', './index.html', './knowledge.json', './manifest.json',
-  './icon.png', './splash.png', './splash-desktop.png',
-  './lm-sanpietro.jpg', './lm-sanmarco.jpg', './lm-duomomi.jpg'
+  './icon.png', './apple-touch-icon.png', './splash.jpg', './splash-desktop.jpg', './andrea.jpg'
 ];
 self.addEventListener('install', e => {
   // cache:'no-cache' rivalida col server, altrimenti il pre-cache può ripescare file vecchi dalla cache HTTP

@@ -1,13 +1,31 @@
 {
-  "name": "Italiano",
+  "name": "Italiano B2–C1",
   "short_name": "Italiano",
-  "description": "Advanced Italian for English Speakers — Level B2",
+  "description": "Advanced Italian for English speakers (B2–C1): the Grand Tour of Italy, readings, dialogues, grammar gym, an atlas of places and food, and an AI tutor.",
   "start_url": ".",
+  "scope": ".",
   "display": "standalone",
-  "background_color": "#eef1f8",
-  "theme_color": "#2f6bed",
+  "orientation": "portrait",
+  "background_color": "#f6f2ec",
+  "theme_color": "#f6f2ec",
   "icons": [
-    {"src": "icon.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "icon.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }
