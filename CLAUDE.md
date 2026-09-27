@@ -12,10 +12,11 @@ inglese, i contenuti in italiano con traduzione. È costruita sul modello dell'a
 (`andrisis2/russo`): ripasso quotidiano misto, SRS, XP e livelli, analisi parola per parola
 («Explain»), tocca-e-traduci su ogni testo, tutor AI a voce.
 
-L'estetica è quella dell'Italia: skyline di monumenti in testa (Mole, Duomo di Milano, Pisa,
-Santa Maria del Fiore, Colosseo, San Pietro, Vesuvio…), paesaggio toscano sullo sfondo, motivi
-decorativi (maiolica, rosone, meandro, acquedotto, cotto) e 60 illustrazioni SVG di monumenti,
-paesaggi e piatti, tutte inline in `index.html` come `<symbol id="ill-*">`.
+L'estetica è quella dell'Italia: in testa alla home un panorama dipinto di Firenze da Piazzale
+Michelangelo che cambia con l'ora (alba, giorno, tramonto, notte; nel tema scuro sempre notte),
+sullo sfondo la Val d'Orcia dipinta, motivi decorativi (maiolica, rosone, meandro, acquedotto,
+cotto) e 55 illustrazioni **dipinte e realistiche** di monumenti, paesaggi e piatti (vedi
+«Immagini»). Niente più striscia tricolore sotto la testata: l'utente non la voleva.
 
 ## File
 
@@ -28,6 +29,8 @@ paesaggi e piatti, tutte inline in `index.html` come `<symbol id="ill-*">`.
 | `icon.png` / `apple-touch-icon.png` / `icon.svg` | Icona: lo stivale color crema su fondo terracotta. |
 | `splash.jpg`, `splash-desktop.jpg`, `splash-ios/` | Schermata d'avvio (web e iOS). |
 | `andrea.jpg` | Avatar del tutor AI «Andrea». |
+| `img/` | Illustrazioni dipinte (`luoghi/`, `cielo/`, `sfondo.webp`) e `credits.json` (vedi «Immagini»). |
+| `tools/dipingi.py` | Strumento offline (Python) che trasforma una foto di Wikimedia Commons in un'illustrazione dell'app. Non fa parte dell'app. |
 
 ## Struttura di `index.html`
 Il JS è diviso in sezioni, nell'ordine in cui compaiono nel file:
@@ -36,7 +39,7 @@ Il JS è diviso in sezioni, nell'ordine in cui compaiono nel file:
 |---------|----------------------|
 | core | `$`, `esc`, `ic()` (icone), `speak`/`pickVoice` (TTS), SRS (`italiano_srs_v1`), impostazioni, XP (`xpTotale`), attività giornaliera, errori |
 | lingua | articoli (`articolo`, `articoloInd`), genere/plurale (`genereDi`, `pluraleDi`), motore di coniugazione (`conjForm`, `coniugaRegolare` per i verbi regolari -are/-ire), indice di tutte le forme (`indiceForme`), `analizzaParola` (forme, clitici, superlativi -issimo, avverbi -mente, numeri in lettere, nomi propri), `tokenizza`, `PAROLE_FUNZIONE` |
-| ui | `renderHome()` (tab Practice/Theory), `start(mode)` (router), `header`, `navigateTo` (back) |
+| ui | `renderHome()` (tab Practice/Theory), `start(mode)` (router), `header`, `navigateTo` (back), `illIMG(id, piccola)` (le illustrazioni), `aggiornaCielo()` (panorama in testa secondo l'ora e il tema) |
 | spiega | `spiega(it, en)`: il bottom-sheet «Explain» con l'analisi parola per parola e i perché del modo verbale |
 | vocab | `runVocabolario()` (dizionario + ricerca online), `runVerbi()`, `runVerboDetail()` |
 | esercizi | flashcard (`pickFlashTopic`, `runFlash`), scrittura, coniugazione (`runConjugation`), frasi (`runPhrase`, `runComponi`, `runDettatoFrasi`), «My exercises» |
@@ -46,7 +49,7 @@ Il JS è diviso in sezioni, nell'ordine in cui compaiono nel file:
 | atlante | `runAtlante(cat)` (monumenti, paesaggi, cibo), `runLuogo`, `runAtlasQuiz` |
 | palestra | `runPalestra`, `runGymTopic`, `runGymQuiz`, `runArticoli`, giochi (`runGiochi`, memory, `runLampo`) |
 | percorso | «Grand Tour d'Italia»: 12 tappe da Torino a Palermo (`runPercorso`, `runTappa`, `avviaPasso`, `passoCompletato`) |
-| progressi | `runProgressi` (statistiche, traguardi), `runImpostazioni` (tema, voce, backup, aggiornamento) |
+| progressi | `runProgressi` (statistiche, traguardi), `runImpostazioni` (tema, voce, backup, aggiornamento), `runCrediti` (crediti delle immagini) |
 | andrea | tutor AI «Andrea» (Gemini, chiave in `sofia_gemini_key`): `runAndrea`, `AndreaSession` |
 | boot | carica `knowledge.json`, `montaVoci`, registra il SW |
 
@@ -83,6 +86,27 @@ esporta tutto ciò che inizia con `italiano_` / `sofia_` tranne la chiave API.
 - I verbi regolari del dizionario e del lessico che non sono in `verbi` vengono coniugati
   automaticamente (`verbiAuto()`); i verbi in -ere e gli irregolari vanno messi in `verbi`.
 - `luoghi[].ill` e `percorso[].ill` sono id di illustrazioni presenti in `index.html` (`ill-<id>`).
+
+## Immagini
+Le illustrazioni sono **dipinti ricavati da foto libere di Wikimedia Commons** (stile scelto
+dall'utente: «molto più realistiche delle vecchie SVG minimali, ma non foto»): un filtro di
+Kuwahara generalizzato (pennellate morbide che tengono i bordi) più un po' di luce e grana.
+- `img/luoghi/<ill>.webp` (800×500) e `<ill>-s.webp` (384×240, per miniature e schede):
+  `<ill>` è `luoghi[].ill` / `percorso[].ill` di `knowledge.json`. `piazza.webp` è la scena di Cultura.
+- `img/cielo/{alba,giorno,tramonto,notte}.webp`: il panorama in testa alla home.
+- `img/sfondo.webp`: la Val d'Orcia sullo sfondo (nel tema scuro scurita via CSS).
+- `img/credits.json`: autore, licenza e link di ogni immagine, mostrati in Settings → Image credits.
+  **Obbligatorio** per le licenze CC BY / CC BY-SA: ogni immagine nuova deve avere la sua voce.
+
+Per aggiungere o rifare un'immagine (scrive anche la voce in `credits.json`):
+```
+pip install numpy opencv-python-headless
+python3 tools/dipingi.py "File:<titolo su Commons>.jpg" <ill> --nome "Nome del luogo" [--focus X Y]
+python3 tools/dipingi.py "File:<...>.jpg" giorno --cielo
+```
+Usare solo foto con licenza libera (CC0, pubblico dominio, CC BY, CC BY-SA), orizzontali e
+senza folla. Se si aggiunge un luogo nuovo, aggiungere la sua miniatura `-s.webp` all'elenco
+`ASSETS` di `sw.js` e incrementare `CACHE`.
 
 ## Service Worker: come arrivano gli aggiornamenti
 
