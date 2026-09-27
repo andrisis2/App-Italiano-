@@ -189,14 +189,13 @@
   .nav-back span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   @media (min-width:600px){ .nav-back span{position:static;width:auto;height:auto;overflow:visible;clip:auto} .appbar-side{width:80px} }
 
-  .skyline{position:relative;height:11px}
-  .sky-wall{position:absolute;left:0;right:0;bottom:0;height:11px;background:var(--brick);-webkit-mask:var(--acquedotto) repeat-x left bottom / auto 100%;mask:var(--acquedotto) repeat-x left bottom / auto 100%}
+  /* inner pages: just a hairline under the bar (the arches border was removed: the user didn't want it) */
+  .skyline{position:relative;height:0;border-bottom:1px solid var(--line)}
   /* home: a painted panorama of Florence from Piazzale Michelangelo, which changes with the time of day */
   .sky-pano{display:none}
   body.is-home header{position:relative;background:transparent;-webkit-backdrop-filter:none;backdrop-filter:none}
   body.is-home .appbar{display:none}
-  body.is-home .skyline{height:clamp(128px,31vw,210px)}
-  body.is-home .sky-wall{display:none}
+  body.is-home .skyline{height:clamp(128px,31vw,210px);border-bottom:0}
   body.is-home .sky-pano{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 36%;
     -webkit-mask-image:linear-gradient(to bottom,#000 58%,transparent);mask-image:linear-gradient(to bottom,#000 58%,transparent);
     animation:panoIn .7s ease both}
@@ -264,10 +263,6 @@
   }
   .hero:active{transform:scale(.985)}
   .hero::before{content:"";position:absolute;width:220px;height:220px;right:-70px;top:-90px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.22),rgba(255,255,255,0) 70%);pointer-events:none}
-  .hero::after{
-    content:"";position:absolute;left:0;right:0;bottom:0;height:12px;background:#fff;opacity:.16;pointer-events:none;
-    -webkit-mask:var(--acquedotto) repeat-x left bottom / auto 100%; mask:var(--acquedotto) repeat-x left bottom / auto 100%;
-  }
   .hero .h-body{flex:1;min-width:0;position:relative}
   .hero .h-kick{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.85}
   .hero .h-title{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:-.1px;margin-top:3px;line-height:1.15}
@@ -1516,7 +1511,6 @@
   <div class="skyline">
     <img class="sky-pano" id="skyPano" alt="Florence seen from Piazzale Michelangelo" decoding="async">
     <div class="sky-snow" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-    <span class="sky-wall"></span>
   </div>
 </header>
 <main id="app"></main>
