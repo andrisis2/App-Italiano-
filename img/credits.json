@@ -42,7 +42,11 @@
   "autore": "Bernard Gagnon",
   "licenza": "CC BY 4.0",
   "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Positano_(Italy)_03.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Positano_(Italy)_03.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/arancino.webp",
@@ -51,7 +55,11 @@
   "autore": "Gmelfi",
   "licenza": "Public domain",
   "licurl": "",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Arancini_002.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Arancini_002.jpg",
+  "focus": [
+   0.5,
+   0.492
+  ]
  },
  {
   "file": "img/luoghi/arena.webp",
@@ -60,7 +68,11 @@
   "autore": "Arne Müseler",
   "licenza": "Public domain",
   "licurl": "",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Italy_-_Verona_-_Arena.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Italy_-_Verona_-_Arena.jpg",
+  "focus": [
+   0.5,
+   0.507
+  ]
  },
  {
   "file": "img/luoghi/basilicasm.webp",
@@ -78,7 +90,24 @@
   "autore": "louis-garden",
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:BisteccaFiorentina.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:BisteccaFiorentina.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/burano.webp",
+  "cosa": "Burano",
+  "titolo": "Burano Venice 11.jpg",
+  "autore": "kallerna",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Burano_Venice_11.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/campo.webp",
@@ -87,7 +116,11 @@
   "autore": "Berthold Werner",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Italy_Siena_Piazza_del_Campo_BW_2021-09-23_15-11-48_1.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Italy_Siena_Piazza_del_Campo_BW_2021-09-23_15-11-48_1.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/cannolo.webp",
@@ -96,7 +129,11 @@
   "autore": "Stefano Mortellaro from Catania, Italy",
   "licenza": "CC BY 2.0",
   "licurl": "https://creativecommons.org/licenses/by/2.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Cannoli_siciliani.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Cannoli_siciliani.jpg",
+  "focus": [
+   0.5,
+   0.494
+  ]
  },
  {
   "file": "img/luoghi/carbonara.webp",
@@ -105,7 +142,11 @@
   "autore": "Javier Somoza",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/castelmonte.webp",
@@ -114,7 +155,37 @@
   "autore": "Massimo Catarinella",
   "licenza": "CC BY 3.0",
   "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:CastelDelMontePugliaItalyEurope.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:CastelDelMontePugliaItalyEurope.jpg",
+  "focus": [
+   0.5,
+   0.491
+  ]
+ },
+ {
+  "file": "img/luoghi/castelsantangelo.webp",
+  "cosa": "Castel Sant'Angelo",
+  "titolo": "Engelsburg und Engelsbrücke abends.jpg",
+  "autore": "Thomas Wolf, www.foto-tw.de",
+  "licenza": "CC BY-SA 3.0 de",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Engelsburg_und_Engelsbr%C3%BCcke_abends.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/cenacolo.webp",
+  "cosa": "L'Ultima Cena di Leonardo",
+  "titolo": "The Last Supper - Leonardo Da Vinci - High Resolution 32x16.jpg",
+  "autore": "Leonardo da Vinci",
+  "licenza": "Public domain",
+  "licurl": "",
+  "fonte": "https://commons.wikimedia.org/wiki/File:The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/cinqueterre.webp",
@@ -123,7 +194,11 @@
   "autore": "Timothy A. Gonsalves",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Manarola_NW_Cinque_Terre_Sep23_A7C_07233.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Manarola_NW_Cinque_Terre_Sep23_A7C_07233.jpg",
+  "focus": [
+   0.151,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/colosseo.webp",
@@ -132,7 +207,11 @@
   "autore": "Wilfredor",
   "licenza": "CC0",
   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/cornetto.webp",
@@ -141,7 +220,11 @@
   "autore": "Ensahequ",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Cornetto_e_cappuccino.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Cornetto_e_cappuccino.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/costasmeralda.webp",
@@ -159,7 +242,24 @@
   "autore": "Ximonic (Simo Räsänen)",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Croda_dei_Toni_and_Tre_Cime_di_Lavaredo_from_Monte_Specie,_Val_Pusteria,_Trentino-Alto_Adige,_Italy,_2025_October.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Croda_dei_Toni_and_Tre_Cime_di_Lavaredo_from_Monte_Specie,_Val_Pusteria,_Trentino-Alto_Adige,_Italy,_2025_October.jpg",
+  "focus": [
+   0.496,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/duetorri.webp",
+  "cosa": "Le Due Torri",
+  "titolo": "Due Torri Bologna 09.jpg",
+  "autore": "FrDr",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Due_Torri_Bologna_09.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/duomofi.webp",
@@ -168,7 +268,11 @@
   "autore": "Felix König",
   "licenza": "CC BY 3.0",
   "licurl": "https://creativecommons.org/licenses/by/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Cattedrale_di_Santa_Maria_del_Fiore_Florenz_M%C3%A4rz_2014.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Cattedrale_di_Santa_Maria_del_Fiore_Florenz_M%C3%A4rz_2014.jpg",
+  "focus": [
+   0.497,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/duomomi.webp",
@@ -177,7 +281,11 @@
   "autore": "NahidSultan",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_(Duomo_di_Milano).jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_(Duomo_di_Milano).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/espresso.webp",
@@ -204,7 +312,11 @@
   "autore": "dog4aday",
   "licenza": "CC BY 2.0",
   "licurl": "https://creativecommons.org/licenses/by/2.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Chianti_vineyard_with_harvest_activity.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Chianti_vineyard_with_harvest_activity.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/focaccia.webp",
@@ -214,6 +326,32 @@
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Focaccia_Genovese_02.jpg"
+ },
+ {
+  "file": "img/luoghi/foro.webp",
+  "cosa": "Foro Romano",
+  "titolo": "Forum romanum 6k (5760x2097).jpg",
+  "autore": "BeBo86",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Forum_romanum_6k_(5760x2097).jpg",
+  "focus": [
+   0.45,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/galleria.webp",
+  "cosa": "Galleria Vittorio Emanuele II",
+  "titolo": "Galleria Vittorio Emanuele II (Milan) art.jpg",
+  "autore": "Faris El-Gwely",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Galleria_Vittorio_Emanuele_II_(Milan)_art.jpg",
+  "focus": [
+   0.5,
+   0.4
+  ]
  },
  {
   "file": "img/luoghi/gelato.webp",
@@ -231,7 +369,11 @@
   "autore": "Wolfgang Moroder",
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Canal_Grande_Chiesa_della_Salute_e_Dogana_dal_ponte_dell_Accademia.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Canal_Grande_Chiesa_della_Salute_e_Dogana_dal_ponte_dell_Accademia.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/grotta.webp",
@@ -249,7 +391,11 @@
   "autore": "Zairon",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Vista_sul_Bellagio_%26_Lago_di_Como_7.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Vista_sul_Bellagio_%26_Lago_di_Como_7.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/limone.webp",
@@ -267,7 +413,11 @@
   "autore": "Takeaway",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:2015_0826_Bialettis_Boon_Den_Haag.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:2015_0826_Bialettis_Boon_Den_Haag.jpg",
+  "focus": [
+   0.5,
+   0.0
+  ]
  },
  {
   "file": "img/luoghi/mole.webp",
@@ -276,7 +426,11 @@
   "autore": "Abbrey82",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Mole_Antonelliana_di_sera.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Mole_Antonelliana_di_sera.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/mozzarella.webp",
@@ -285,7 +439,11 @@
   "autore": "Popo le Chien",
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Mozzarella_di_bufala3.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Mozzarella_di_bufala3.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/olio.webp",
@@ -295,6 +453,19 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Egyptian_Olives.jpg"
+ },
+ {
+  "file": "img/luoghi/palazzoducale.webp",
+  "cosa": "Palazzo Ducale",
+  "titolo": "Ponte della Paglia Palazzo Ducale Venezia.jpg",
+  "autore": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a message. This image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Ponte_della_Paglia_Palazzo_Ducale_Venezia.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/panettone.webp",
@@ -312,7 +483,11 @@
   "autore": "Nicholas Hartmann",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Rome_Pantheon_facade_and_Piazza_della_Rotonda.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Rome_Pantheon_facade_and_Piazza_della_Rotonda.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/paradiso.webp",
@@ -321,7 +496,11 @@
   "autore": "Luca Casale",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Stambecchi_nel_Parco_Nazionale_del_Gran_Paradiso.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Stambecchi_nel_Parco_Nazionale_del_Gran_Paradiso.jpg",
+  "focus": [
+   0.5,
+   0.476
+  ]
  },
  {
   "file": "img/luoghi/parmigiano.webp",
@@ -330,7 +509,11 @@
   "autore": "Udo Schröter",
   "licenza": "CC BY-SA 2.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Marchiatura_del_Parmigiano_Reggiano.jpeg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Marchiatura_del_Parmigiano_Reggiano.jpeg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/pesto.webp",
@@ -339,7 +522,11 @@
   "autore": "Petar Milošević",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Ingredienti_per_il_pesto_Genovese_e_Pesto_Genovese_(Ingridients_for_Pesto_Genovese_and_Pesto_genovese).jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Ingredienti_per_il_pesto_Genovese_e_Pesto_Genovese_(Ingridients_for_Pesto_Genovese_and_Pesto_genovese).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/piazza.webp",
@@ -348,7 +535,24 @@
   "autore": "Krzysztof Golik",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Piazza_Navona_in_Rome_06.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Piazza_Navona_in_Rome_06.jpg",
+  "focus": [
+   0.5,
+   0.165
+  ]
+ },
+ {
+  "file": "img/luoghi/piazzaspagna.webp",
+  "cosa": "Scalinata di Trinità dei Monti",
+  "titolo": "Escalinata de la plaza de España, Roma, Italia, 2022-09-14, DD 21.jpg",
+  "autore": "Diego Delso",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Escalinata_de_la_plaza_de_Espa%C3%B1a,_Roma,_Italia,_2022-09-14,_DD_21.jpg",
+  "focus": [
+   0.5,
+   0.75
+  ]
  },
  {
   "file": "img/luoghi/pisa.webp",
@@ -357,7 +561,11 @@
   "autore": "PaestumPaestum",
   "licenza": "CC BY 4.0",
   "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Piazza_dei_Miracoli_(Pisa)_2023.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Piazza_dei_Miracoli_(Pisa)_2023.jpg",
+  "focus": [
+   0.476,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/pizza.webp",
@@ -375,7 +583,11 @@
   "autore": "Gary Todd from Xinzheng, China",
   "licenza": "Public domain",
   "licurl": "",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Pompeii_Ruins_Forum_(City_Business_Center)_%26_Mt._Vesuvius_(48440863097).jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Pompeii_Ruins_Forum_(City_Business_Center)_%26_Mt._Vesuvius_(48440863097).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/pontevecchio.webp",
@@ -384,7 +596,11 @@
   "autore": "Jebulon",
   "licenza": "CC0",
   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_Arno_Florence.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Ponte_Vecchio_Arno_Florence.jpg",
+  "focus": [
+   0.5,
+   0.474
+  ]
  },
  {
   "file": "img/luoghi/prosciutto.webp",
@@ -393,7 +609,11 @@
   "autore": "Nikodem Nijaki",
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Prosciutto_con_melone_IMGP0963.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Prosciutto_con_melone_IMGP0963.jpg",
+  "focus": [
+   0.5,
+   0.484
+  ]
  },
  {
   "file": "img/luoghi/reggia.webp",
@@ -402,7 +622,11 @@
   "autore": "Carsten Steger",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Palace_of_Caserta_(view_from_the_south).jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_the_Palace_of_Caserta_(view_from_the_south).jpg",
+  "focus": [
+   0.5,
+   0.462
+  ]
  },
  {
   "file": "img/luoghi/rialto.webp",
@@ -411,7 +635,11 @@
   "autore": "Saffron Blaze",
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Rialto_Gondoliers.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Rialto_Gondoliers.jpg",
+  "focus": [
+   0.5,
+   0.486
+  ]
  },
  {
   "file": "img/luoghi/risotto.webp",
@@ -423,13 +651,30 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Ossobuco_con_risotto_alla_milanese.jpg"
  },
  {
+  "file": "img/luoghi/sangimignano.webp",
+  "cosa": "San Gimignano",
+  "titolo": "San Gimignano - View - 2.jpg",
+  "autore": "Ingo Mehling",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:San_Gimignano_-_View_-_2.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/sanmarco.webp",
   "cosa": "Campanile di San Marco",
   "titolo": "Venice, Piazza San Marco (from west wing) 2.jpg",
   "autore": "Armin Kleiner",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Venice,_Piazza_San_Marco_(from_west_wing)_2.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Venice,_Piazza_San_Marco_(from_west_wing)_2.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/sanpietro.webp",
@@ -438,7 +683,11 @@
   "autore": "Livioandronico2013",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:St_Peter_facade.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:St_Peter_facade.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/sassi.webp",
@@ -447,7 +696,11 @@
   "autore": "Jules Verne Times Two",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:View_of_Sassi_di_Matera,_Matera,_Italy_(PPL3-Altered)_julesvernex2.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:View_of_Sassi_di_Matera,_Matera,_Italy_(PPL3-Altered)_julesvernex2.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/spaghetti.webp",
@@ -465,7 +718,11 @@
   "autore": "Carsten Steger",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Stromboli_and_Strombolicchio_(view_from_the_northeast).jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Aerial_image_of_Stromboli_and_Strombolicchio_(view_from_the_northeast).jpg",
+  "focus": [
+   0.538,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/tagliatelle.webp",
@@ -483,7 +740,11 @@
   "autore": "Berthold Werner",
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Temple_of_Concordia,_Agrigento_BW_2012-10-07_13-09-13.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Temple_of_Concordia,_Agrigento_BW_2012-10-07_13-09-13.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/tiramisu.webp",
@@ -501,7 +762,11 @@
   "autore": "Angelo.Muratore",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Tortellini_Bolognesi.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Tortellini_Bolognesi.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/trevi.webp",
@@ -510,7 +775,11 @@
   "autore": "Diego Delso",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Fuente_de_Trevi,_Roma,_Italia,_2022-09-15,_DD_02.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Fuente_de_Trevi,_Roma,_Italia,_2022-09-15,_DD_02.jpg",
+  "focus": [
+   0.5,
+   0.481
+  ]
  },
  {
   "file": "img/luoghi/trullo.webp",
@@ -519,7 +788,11 @@
   "autore": "Berthold Werner",
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Alberobello_BW_2016-10-16_13-44-51.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Alberobello_BW_2016-10-16_13-44-51.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/valdorcia.webp",
@@ -528,7 +801,11 @@
   "autore": "kuhnmi",
   "licenza": "CC BY 2.0",
   "licurl": "https://creativecommons.org/licenses/by/2.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Leading_Road_(52716048000).jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Leading_Road_(52716048000).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/vesuvio.webp",
@@ -537,7 +814,11 @@
   "autore": "PaestumPaestum",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Vesuvio_e_nave_a_Napoli.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Vesuvio_e_nave_a_Napoli.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/sfondo.webp",

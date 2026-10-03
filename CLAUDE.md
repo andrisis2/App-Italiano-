@@ -47,7 +47,7 @@ Il JS è diviso in sezioni, nell'ordine in cui compaiono nel file:
 | daily | `runDaily()`: ripasso quotidiano misto (parole, verbo, frasi, grammatica, articoli, falso amico, atlante) |
 | dialoghi | `runDialoghi`, `runDialogo`, `runRecita` (recita col microfono), `runDlgQuiz`, frasario (`runFrasario`) |
 | cultura | `testoCliccabile` + `popParola` (tocca-e-traduci), letture (`runLetture`, `runLettura`, `runAscolto`), `runCultura`, proverbi, parole trappola, modi di dire, pop, `runAnatomia` |
-| atlante | `runAtlante(cat)` (monumenti, paesaggi, cibo), `runLuogo`, `runAtlasQuiz` |
+| atlante | `runAtlante(cat)` (monumenti, paesaggi, cibo, con ricerca per nome/città/regione), `runLuogo`, `runAtlasQuiz` |
 | palestra | `runPalestra`, `runGymTopic`, `runGymQuiz`, `runArticoli`, giochi (`runGiochi`, memory, `runLampo`) |
 | percorso | «Grand Tour d'Italia»: 12 tappe da Torino a Palermo (`runPercorso`, `runTappa`, `avviaPasso`, `passoCompletato`) |
 | progressi | `runProgressi` (statistiche, traguardi), `runImpostazioni` (tema, voce, backup, aggiornamento), `runCrediti` (crediti delle immagini) |
@@ -79,22 +79,28 @@ esporta tutto ciò che inizia con `italiano_` / `sofia_` tranne la chiave API.
   "letture":     [{ id, titolo, frasi[{it,en}], glossario{}, domande[] }],
   "dialoghi":    [{ id, titolo, ruoli, battute[], parole[], nota }],
   "frasario":    [{ id, it, en, cat, reg, nota }],
-  "luoghi":      [{ id, cat ('monumento'|'natura'|'cibo'), nome, dove, regione, ill, testo, en, parole, curiosita }],
+  "luoghi":      [{ id, cat ('monumento'|'natura'|'cibo'), nome, dove, regione?, citta?, ill, indizio, testo, en, parole, curiosita }],
+                 // citta = una tappa del Grand Tour: il luogo compare nella pagina di quella tappa
   "cultura", "proverbi", "falsiAmici", "anatomia", "modididire", "pop"
 }
 ```
 - In app `DB.voci` è costruito da `montaVoci()`: `dizionario` + le parole salvate dall'utente.
 - I verbi regolari del dizionario e del lessico che non sono in `verbi` vengono coniugati
   automaticamente (`verbiAuto()`); i verbi in -ere e gli irregolari vanno messi in `verbi`.
-- `luoghi[].ill` e `percorso[].ill` sono id di illustrazioni presenti in `index.html` (`ill-<id>`).
+- `luoghi[].ill` e `percorso[].ill` sono id di immagini in `img/luoghi/` (`<ill>.webp` e `<ill>-s.webp`).
 
 ## Immagini
-Le illustrazioni sono **acquarelli leggeri ricavati da foto libere di Wikimedia Commons**
-(richiesta dell'utente: «molto più realistiche delle vecchie SVG minimali, ma non foto» e poi
-«devono essere **nitide**, l'effetto acquarello ci sta ma non troppo»): un piccolo filtro di
-Kuwahara generalizzato + i dettagli fini della foto + nitidezza, partendo da foto a 1920 px.
-**Non** tornare a un effetto pittura pesante né a file piccoli: sul telefono (3×) risultano sfocati.
-- `img/luoghi/<ill>.webp` (1200×750) e `<ill>-s.webp` (480×300, per miniature e schede):
+Le illustrazioni sono **foto libere di Wikimedia Commons con un tocco d'acquarello appena
+percettibile**. L'utente l'ha chiesto tre volte, sempre più netto: «molto più realistiche delle
+vecchie SVG minimali, ma non foto», poi «devono essere **nitide**, l'effetto acquarello ci sta ma
+non troppo», infine «sull'Atlante metti immagini **a fuoco e non sfocate**». Quindi `dipingi.py`
+lavora la foto (1920 px) a doppia risoluzione con un filtro di Kuwahara minuscolo, tiene quasi
+tutto il dettaglio, scalda i colori e rende nitido dopo il ridimensionamento.
+**Non** tornare a un effetto pittura più forte né a file più piccoli: sul telefono (3×) risultano
+sfocati. Scegliere foto **nitide** (meglio se «Quality images» / «Featured pictures» di Commons),
+larghe almeno ~2000 px: una foto morbida resta morbida.
+- `img/luoghi/<ill>.webp` (1440×900) e `<ill>-s.webp` (720×450, per le schede dell'Atlante e le
+  miniature: una scheda della griglia su un telefono 3× è larga ~520 pixel reali):
   `<ill>` è `luoghi[].ill` / `percorso[].ill` di `knowledge.json`. `piazza.webp` è la scena di Cultura.
 - `img/cielo/{alba,giorno,tramonto,notte}.webp`: il panorama in testa alla home.
 - `img/sfondo.webp`: la Val d'Orcia sullo sfondo (nel tema scuro scurita via CSS).
@@ -106,7 +112,10 @@ Per aggiungere o rifare un'immagine (scrive anche la voce in `credits.json`):
 pip install numpy opencv-python-headless
 python3 tools/dipingi.py "File:<titolo su Commons>.jpg" <ill> --nome "Nome del luogo" [--focus X Y]
 python3 tools/dipingi.py "File:<...>.jpg" giorno --cielo
+python3 tools/dipingi.py --rifai [ill ...]     # rifà le immagini da credits.json (foto + "focus")
 ```
+Commons limita molto le richieste (risponde 429 con `Retry-After`): `dipingi.py` aspetta e riprova;
+chiedere solo le misure standard delle miniature (1920, 3840…).
 Usare solo foto con licenza libera (CC0, pubblico dominio, CC BY, CC BY-SA), orizzontali e
 senza folla. Se si aggiunge un luogo nuovo, aggiungere la sua miniatura `-s.webp` all'elenco
 `ASSETS` di `sw.js` e incrementare `CACHE`.
