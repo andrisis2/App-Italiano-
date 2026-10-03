@@ -101,6 +101,19 @@
   ]
  },
  {
+  "file": "img/luoghi/arrosticini.webp",
+  "cosa": "Arrosticini",
+  "titolo": "Arrosticini Cocullo 2017c.jpg",
+  "autore": "Marica Massaro",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Arrosticini_Cocullo_2017c.jpg",
+  "focus": [
+   0.5,
+   0.6
+  ]
+ },
+ {
   "file": "img/luoghi/assisi.webp",
   "cosa": "Basilica di San Francesco",
   "titolo": "Rear NW Basilica Francesco Assisi Sep23 A7C 07913.jpg",
@@ -121,6 +134,19 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Bab%C3%A0_rum.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/baccala.webp",
+  "cosa": "Baccalà mantecato",
+  "titolo": "\" 13 - ITALY - Cicchetti Venetian cuisine appetizers restaurant ( not are tapas are ciccheti of Venice) in this pics Baccalà mantecato (Cod).jpg",
+  "autore": "Ben & Lisa Waters [1]",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:%22_13_-_ITALY_-_Cicchetti_Venetian_cuisine_appetizers_restaurant_(_not_are_tapas_are_ciccheti_of_Venice)_in_this_pics_Baccal%C3%A0_mantecato_(Cod).jpg",
   "focus": [
    0.5,
    0.5
@@ -155,11 +181,15 @@
  {
   "file": "img/luoghi/basilicasm.webp",
   "cosa": "Basilica di San Marco",
-  "titolo": "Flickr - …trialsanderrors - Piazza San Marco ^ Basilica, Venice, Italy, ca. 1895.jpg",
-  "autore": "Photochrom print, c. 1890–1900 (Library of Congress)",
+  "titolo": "Mosaico traslazione San Marco Venezia.JPG",
+  "autore": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a message. This image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.",
   "licenza": "Public domain",
   "licurl": "",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Flickr_-_%E2%80%A6trialsanderrors_-_Piazza_San_Marco_%5E_Basilica,_Venice,_Italy,_ca._1895.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Mosaico_traslazione_San_Marco_Venezia.JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/bergamo.webp",
@@ -333,11 +363,11 @@
  {
   "file": "img/luoghi/carbonara.webp",
   "cosa": "Carbonara",
-  "titolo": "Espaguetis carbonara.jpg",
-  "autore": "Javier Somoza",
-  "licenza": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg",
+  "titolo": "Spaghetti alla carbonara (32998643591).jpg",
+  "autore": "Luca Nebuloni",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Spaghetti_alla_carbonara_(32998643591).jpg",
   "focus": [
    0.5,
    0.5
@@ -489,11 +519,15 @@
  {
   "file": "img/luoghi/costasmeralda.webp",
   "cosa": "Costa Smeralda",
-  "titolo": "Costa Smeralda veduta panoramica 2.png",
-  "autore": "Ramagliolo9",
+  "titolo": "Costa Smeralda 1.jpg",
+  "autore": "Alistair Wettin",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Costa_Smeralda_veduta_panoramica_2.png"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Costa_Smeralda_1.jpg",
+  "focus": [
+   0.5,
+   0.2
+  ]
  },
  {
   "file": "img/luoghi/cotoletta.webp",
@@ -602,20 +636,41 @@
  {
   "file": "img/luoghi/espresso.webp",
   "cosa": "Caffè espresso",
-  "titolo": "Close-up of espresso machine with two brown coffee cups.jpg",
-  "autore": "Chevanon Photography",
-  "licenza": "CC0",
-  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Close-up_of_espresso_machine_with_two_brown_coffee_cups.jpg"
+  "titolo": "Cup of espresso 02.jpg",
+  "autore": "Kritzolina",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Cup_of_espresso_02.jpg",
+  "focus": [
+   0.5,
+   0.4
+  ]
  },
  {
   "file": "img/luoghi/etna.webp",
   "cosa": "Etna",
-  "titolo": "P.S. Krøyer, Blomstrende kaktus ved Taormina. I baggrunden det sneklædte Ætna, 1901.png",
-  "autore": "Peder Severin Krøyer (painting, 1901)",
-  "licenza": "Public domain",
-  "licurl": "",
-  "fonte": "https://commons.wikimedia.org/wiki/File:P.S._Kr%C3%B8yer,_Blomstrende_kaktus_ved_Taormina._I_baggrunden_det_snekl%C3%A6dte_%C3%86tna,_1901.png"
+  "titolo": "Etna eruptions April 2012.JPG",
+  "autore": "Walter Isack (isiwal)",
+  "licenza": "CC BY-SA 3.0 at",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Etna_eruptions_April_2012.JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/farinata.webp",
+  "cosa": "Farinata di ceci",
+  "titolo": "Farinata di ceci 01.jpg",
+  "autore": "Alessio Sbarbaro User_talk:Yoggysot",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Farinata_di_ceci_01.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/fiasco.webp",
@@ -634,10 +689,14 @@
   "file": "img/luoghi/focaccia.webp",
   "cosa": "Focaccia genovese",
   "titolo": "Focaccia Genovese 02.jpg",
-  "autore": "Alessio Sbarbaro",
+  "autore": "Alessio Sbarbaro User_talk:Yoggysot",
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Focaccia_Genovese_02.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Focaccia_Genovese_02.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/foro.webp",
@@ -681,11 +740,15 @@
  {
   "file": "img/luoghi/gelato.webp",
   "cosa": "Gelato",
-  "titolo": "Gelato at Chocolat in Milan in 2006.jpg",
-  "autore": "Luca Vanzella",
-  "licenza": "CC BY-SA 2.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Gelato_at_Chocolat_in_Milan_in_2006.jpg"
+  "titolo": "Gelato ice cream.jpg",
+  "autore": "rawpixel",
+  "licenza": "CC0",
+  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Gelato_ice_cream.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/giulietta.webp",
@@ -727,6 +790,19 @@
   ]
  },
  {
+  "file": "img/luoghi/gorgonzola.webp",
+  "cosa": "Gorgonzola",
+  "titolo": "GorgonzolaDSC4233.jpg",
+  "autore": "CostaPPPR",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:GorgonzolaDSC4233.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/granita.webp",
   "cosa": "Granita e brioche",
   "titolo": "Granita brioche.JPG",
@@ -755,11 +831,15 @@
  {
   "file": "img/luoghi/grotta.webp",
   "cosa": "Grotta Azzurra",
-  "titolo": "Blue Grotto IMG 0212.JPG",
-  "autore": "Deror_avi",
+  "titolo": "Grotta azzurra.capri.JPG",
+  "autore": "Elenagm",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Blue_Grotto_IMG_0212.JPG"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Grotta_azzurra.capri.JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/lago.webp",
@@ -855,11 +935,15 @@
  {
   "file": "img/luoghi/limone.webp",
   "cosa": "Limoni e limoncello",
-  "titolo": "Lemon - whole and split.jpg",
-  "autore": "Ivar Leidus",
-  "licenza": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Lemon_-_whole_and_split.jpg"
+  "titolo": "Limone and Limoncello.jpg",
+  "autore": "Bill and Kathy",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Limone_and_Limoncello.jpg",
+  "focus": [
+   0.4,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/lucca.webp",
@@ -882,6 +966,19 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Lago_Maggiore_Isola_Superiore_from_Isola_Bella.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/maritozzo.webp",
+  "cosa": "Maritozzo",
+  "titolo": "Maritozzo presso Caffè delle colline, Reggio Emilia.jpg",
+  "autore": "Ensahequ",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Maritozzo_presso_Caff%C3%A8_delle_colline,_Reggio_Emilia.jpg",
   "focus": [
    0.5,
    0.5
@@ -979,6 +1076,19 @@
   ]
  },
  {
+  "file": "img/luoghi/nduja.webp",
+  "cosa": "'Nduja",
+  "titolo": "Nduja mit Brot.jpg",
+  "autore": "Alice Wiegand",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Nduja_mit_Brot.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/norma.webp",
   "cosa": "Pasta alla Norma",
   "titolo": "Pasta Norma Villa Principe di Belmonte Ispica 2017.jpg",
@@ -1011,7 +1121,11 @@
   "autore": "Dina Said",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Egyptian_Olives.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Egyptian_Olives.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/orecchiette.webp",
@@ -1092,13 +1206,30 @@
   ]
  },
  {
+  "file": "img/luoghi/pandoro.webp",
+  "cosa": "Pandoro",
+  "titolo": "Making Pandoro at the Laboratorio Bauli.jpg",
+  "autore": "Festival della Scienza",
+  "licenza": "CC BY-SA 2.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Making_Pandoro_at_the_Laboratorio_Bauli.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/panettone.webp",
   "cosa": "Panettone",
-  "titolo": "Panettone - Nicolettone 2017 - IMG 7092 (31752504105).jpg",
-  "autore": "N i c o l a from Fiumicino (Rome), Italy",
-  "licenza": "CC BY 2.0",
-  "licurl": "https://creativecommons.org/licenses/by/2.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Panettone_-_Nicolettone_2017_-_IMG_7092_(31752504105).jpg"
+  "titolo": "Panettone italiano. Pan dulce de Navidad.jpg",
+  "autore": "Juan Emilio Prades Bel",
+  "licenza": "CC BY 4.0",
+  "licurl": "https://creativecommons.org/licenses/by/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Panettone_italiano._Pan_dulce_de_Navidad.jpg",
+  "focus": [
+   0.6,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/pantheon.webp",
@@ -1220,11 +1351,15 @@
  {
   "file": "img/luoghi/pizza.webp",
   "cosa": "Pizza napoletana",
-  "titolo": "Pizza Margherita ピザ・マルゲリータ.jpg",
-  "autore": "ノボホショコロトソ",
-  "licenza": "CC BY 4.0",
-  "licurl": "https://creativecommons.org/licenses/by/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita_%E3%83%94%E3%82%B6%E3%83%BB%E3%83%9E%E3%83%AB%E3%82%B2%E3%83%AA%E3%83%BC%E3%82%BF.jpg"
+  "titolo": "Pizza Margherita ().JPG",
+  "autore": "Lombroso",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita_().JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/plebiscito.webp",
@@ -1396,13 +1531,30 @@
   ]
  },
  {
-  "file": "img/luoghi/risotto.webp",
-  "cosa": "Risotto alla milanese",
-  "titolo": "Ossobuco con risotto alla milanese.jpg",
-  "autore": "pier",
+  "file": "img/luoghi/ribollita.webp",
+  "cosa": "Ribollita",
+  "titolo": "Ribollita Siena.jpg",
+  "autore": "Ta4e Negodue",
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Ossobuco_con_risotto_alla_milanese.jpg"
+  "fonte": "https://commons.wikimedia.org/wiki/File:Ribollita_Siena.jpg",
+  "focus": [
+   0.75,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/risotto.webp",
+  "cosa": "Risotto alla milanese",
+  "titolo": "Risotto allo zafferano (5515768228).jpg",
+  "autore": "Giorgio Minguzzi from Italy",
+  "licenza": "CC BY-SA 2.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Risotto_allo_zafferano_(5515768228).jpg",
+  "focus": [
+   0.4,
+   0.6
+  ]
  },
  {
   "file": "img/luoghi/sacra.webp",
@@ -1509,6 +1661,19 @@
   ]
  },
  {
+  "file": "img/luoghi/seadas.webp",
+  "cosa": "Seadas",
+  "titolo": "Lyon 7e - Restaurant Veronatuti - Seadas (dessert originaire de Sardaigne).jpg",
+  "autore": "Romainbehar",
+  "licenza": "CC0",
+  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Lyon_7e_-_Restaurant_Veronatuti_-_Seadas_(dessert_originaire_de_Sardaigne).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/sfogliatella.webp",
   "cosa": "Sfogliatella",
   "titolo": "Sfogliatella riccia napoletana.jpg",
@@ -1537,11 +1702,15 @@
  {
   "file": "img/luoghi/spaghetti.webp",
   "cosa": "Spaghetti al pomodoro",
-  "titolo": "Spaghetti al pomodoro, icona della cucina italiana nel mondo. .jpg",
-  "autore": "Silvimelo",
-  "licenza": "CC BY-SA 4.0",
-  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Spaghetti_al_pomodoro,_icona_della_cucina_italiana_nel_mondo._.jpg"
+  "titolo": "Spaghetti al pomodoro 4.jpg",
+  "autore": "10Rosso",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Spaghetti_al_pomodoro_4.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/spritz.webp",
@@ -1585,11 +1754,15 @@
  {
   "file": "img/luoghi/tagliatelle.webp",
   "cosa": "Tagliatelle al ragù",
-  "titolo": "Tagliatelle ragù bolognese 01.jpg",
-  "autore": "wordridden (Flickr)",
-  "licenza": "CC BY 2.0",
-  "licurl": "https://creativecommons.org/licenses/by/2.0",
-  "fonte": "https://commons.wikimedia.org/wiki/File:Tagliatelle_rag%C3%B9_bolognese_01.jpg"
+  "titolo": "Tagliatelle al ragù Trattoria Tony.jpg",
+  "autore": "Alex Sirac",
+  "licenza": "CC BY 4.0",
+  "licurl": "https://creativecommons.org/licenses/by/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Tagliatelle_al_rag%C3%B9_Trattoria_Tony.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/taormina.webp",
@@ -1633,11 +1806,15 @@
  {
   "file": "img/luoghi/tiramisu.webp",
   "cosa": "Tiramisù",
-  "titolo": "Македонски десерт тирамису (3).jpg",
-  "autore": "Делфина",
-  "licenza": "CC0",
-  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-  "fonte": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8_%D0%B4%D0%B5%D1%81%D0%B5%D1%80%D1%82_%D1%82%D0%B8%D1%80%D0%B0%D0%BC%D0%B8%D1%81%D1%83_(3).jpg"
+  "titolo": "Tiramisu - Bistro Don Giovanni - Sarah Stierch 2018 02.jpg",
+  "autore": "Missvain",
+  "licenza": "CC BY 4.0",
+  "licurl": "https://creativecommons.org/licenses/by/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Tiramisu_-_Bistro_Don_Giovanni_-_Sarah_Stierch_2018_02.jpg",
+  "focus": [
+   0.4,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/tivoli.webp",

@@ -14,7 +14,7 @@ inglese, i contenuti in italiano con traduzione. È costruita sul modello dell'a
 
 L'estetica è quella dell'Italia: in testa alla home un panorama dipinto di Firenze da Piazzale
 Michelangelo che cambia con l'ora (alba, giorno, tramonto, notte; nel tema scuro sempre notte),
-sullo sfondo la Val d'Orcia dipinta, motivi decorativi (maiolica, rosone, meandro, cotto) e 55
+sullo sfondo la Val d'Orcia dipinta, motivi decorativi (maiolica, rosone, meandro, cotto) e oltre 140
 illustrazioni **realistiche ad acquarello leggero** di monumenti, paesaggi e piatti (vedi
 «Immagini»). L'utente **non** vuole né la striscia tricolore né l'orlo ad archi («grechina»)
 sotto la testata o sulla scheda del ripasso: non rimetterli.

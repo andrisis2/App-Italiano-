@@ -14,7 +14,7 @@ Settings -> Image credits: they are required by CC BY / CC BY-SA; the crop posit
 CC BY, CC BY-SA), sharp and large (at least ~2000 px wide). The look is a VERY LIGHT watercolour:
 the photo is worked at twice the final size with a tiny generalised Kuwahara filter, keeps almost
 all its fine detail, gets warm light colours and is sharpened after the resize. The user asked
-twice for sharper, in-focus images: never make the effect heavier or the files smaller.
+three times for sharper, in-focus images: never make the effect heavier or the files smaller.
 """
 import argparse, html, json, os, re, time, urllib.error, urllib.parse, urllib.request
 import cv2, numpy as np
