@@ -2548,7 +2548,8 @@ function aggiornaCielo(){
   b.classList.toggle('autunno', m>=8 && m<=10);
 }
 
-// painted illustration of a place or dish: img/luoghi/<id>.webp (800×500); «piccola» = the 384×240 version for thumbnails
+// illustration of a place or dish: img/luoghi/<id>.webp (1440×900); «piccola» = the 720×450 version for cards and thumbnails
+// (sharp on 3x phones: keep these sizes, the user asked more than once for images that are in focus)
 function illIMG(id, piccola){
   return `<img class="ill-img" src="img/luoghi/${id}${piccola ? '-s' : ''}.webp" alt="" loading="lazy" decoding="async">`;
 }
@@ -6149,7 +6150,12 @@ function runAtlante(cat){
   g2.onclick = ()=>navigateTo(()=>runAtlasQuiz('regione'));
   giochi.append(g1, g2);
   stage.appendChild(giochi);
-  let filtro = cat || '';
+  const sWrap = $(`<div class="search">${ic('search')}<input class="vocab-input" type="search" enterkeyhint="search" placeholder="Search a place, a dish or a region…" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></div>`);
+  const inp = sWrap.querySelector('input');
+  stage.appendChild(sWrap);
+  let filtro = cat || '', q = '', tm = null;
+  inp.oninput = ()=>{ clearTimeout(tm); tm = setTimeout(()=>{ q = normSearch(inp.value.trim()); paint(); }, 120); };
+  const trovato = l=>!q || [l.nome, l.dove, l.regione, l.citta].some(s=>s && normSearch(s).includes(q));
   const chips = $(`<div class="atl-cats"></div>`);
   const mk = (k, lab)=>{ const b = $(`<button class="ref-chip" type="button"></button>`); b.innerHTML = lab; b.dataset.k = k; b.onclick = ()=>{ filtro = k; paint(); }; return b; };
   chips.appendChild(mk('', `All <small>${L.length}</small>`));
@@ -6160,14 +6166,17 @@ function runAtlante(cat){
   function paint(){
     chips.querySelectorAll('button').forEach(b=>b.classList.toggle('on', b.dataset.k===filtro));
     body.innerHTML = '';
+    let n = 0;
     ATL_CAT.filter(([k])=>!filtro || k===filtro).forEach(([k,e,t])=>{
-      const items = L.filter(l=>l.cat===k);
+      const items = L.filter(l=>l.cat===k && trovato(l));
       if(!items.length) return;
+      n += items.length;
       body.appendChild($(`<div class="sec-h">${e} ${t}</div>`));
       const g = $(`<div class="atl-grid"></div>`);
       items.forEach(l=>g.appendChild(atlCard(l, visti)));
       body.appendChild(g);
     });
+    if(!n) body.appendChild($(`<div class="empty"><div class="big">🔎</div>Nothing found: try a city or a region, e.g. «Sicilia».</div>`));
   }
   paint();
 }
