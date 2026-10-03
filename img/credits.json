@@ -36,6 +36,19 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Vista_de_Florencia_desde_Piazzale_Michelangelo,_Italia,_2022-09-18,_DD_200-202_HDR.jpg"
  },
  {
+  "file": "img/luoghi/alpesiusi.webp",
+  "cosa": "Alpe di Siusi",
+  "titolo": "Seiser Alm 11.jpg",
+  "autore": "H. Zell",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Seiser_Alm_11.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/amalfi.webp",
   "cosa": "Costiera Amalfitana",
   "titolo": "Positano (Italy) 03.jpg",
@@ -45,6 +58,19 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Positano_(Italy)_03.jpg",
   "focus": [
    0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/amatriciana.webp",
+  "cosa": "Bucatini all'amatriciana",
+  "titolo": "Bucatini allamatriciana.jpg",
+  "autore": "Popo le Chien",
+  "licenza": "CC0",
+  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Bucatini_allamatriciana.jpg",
+  "focus": [
+   0.6,
    0.5
   ]
  },
@@ -75,6 +101,58 @@
   ]
  },
  {
+  "file": "img/luoghi/assisi.webp",
+  "cosa": "Basilica di San Francesco",
+  "titolo": "Rear NW Basilica Francesco Assisi Sep23 A7C 07913.jpg",
+  "autore": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved.Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Rear_NW_Basilica_Francesco_Assisi_Sep23_A7C_07913.jpg",
+  "focus": [
+   0.45,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/baba.webp",
+  "cosa": "Babà",
+  "titolo": "Babà rum.jpg",
+  "autore": "Marica Massaro",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Bab%C3%A0_rum.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/balsamico.webp",
+  "cosa": "Aceto balsamico di Modena",
+  "titolo": "Aceto Balsamico Tradizionale di Modena DOP extravecchio.jpg",
+  "autore": "Eleonora Vittoria Rosi",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Aceto_Balsamico_Tradizionale_di_Modena_DOP_extravecchio.jpg",
+  "focus": [
+   0.5,
+   0.4
+  ]
+ },
+ {
+  "file": "img/luoghi/barumini.webp",
+  "cosa": "Su Nuraxi di Barumini",
+  "titolo": "Nuraghe Su Nuraxi - Barumini - Sardinia - Italy - 27.jpg",
+  "autore": "Norbert Nagel",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Nuraghe_Su_Nuraxi_-_Barumini_-_Sardinia_-_Italy_-_27.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/basilicasm.webp",
   "cosa": "Basilica di San Marco",
   "titolo": "Flickr - …trialsanderrors - Piazza San Marco ^ Basilica, Venice, Italy, ca. 1895.jpg",
@@ -84,6 +162,32 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Flickr_-_%E2%80%A6trialsanderrors_-_Piazza_San_Marco_%5E_Basilica,_Venice,_Italy,_ca._1895.jpg"
  },
  {
+  "file": "img/luoghi/bergamo.webp",
+  "cosa": "Bergamo Alta",
+  "titolo": "Bergamo, Città Alta, Piazza Vecchia, Palazzo Della Ragione.jpg",
+  "autore": "Gianluigi Buttarelli",
+  "licenza": "CC BY 4.0",
+  "licurl": "https://creativecommons.org/licenses/by/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Bergamo,_Citt%C3%A0_Alta,_Piazza_Vecchia,_Palazzo_Della_Ragione.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/bicerin.webp",
+  "cosa": "Bicerin",
+  "titolo": "Bicerin.jpg",
+  "autore": "Jeremy hunsinger",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Bicerin.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/bistecca.webp",
   "cosa": "Bistecca alla fiorentina",
   "titolo": "BisteccaFiorentina.jpg",
@@ -91,6 +195,19 @@
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:BisteccaFiorentina.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/braies.webp",
+  "cosa": "Lago di Braies",
+  "titolo": "Lago di Braies South Tyrol 6.jpg",
+  "autore": "kallerna",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Lago_di_Braies_South_Tyrol_6.jpg",
   "focus": [
    0.5,
    0.5
@@ -110,6 +227,32 @@
   ]
  },
  {
+  "file": "img/luoghi/burrata.webp",
+  "cosa": "Burrata",
+  "titolo": "Burrata salad from PACI Pasta Bar Sha Tin.jpg",
+  "autore": "Peachyeung316",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Burrata_salad_from_PACI_Pasta_Bar_Sha_Tin.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/cacioepepe.webp",
+  "cosa": "Cacio e pepe",
+  "titolo": "Cacio e pepe.jpg",
+  "autore": "Popo le Chien",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Cacio_e_pepe.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/campo.webp",
   "cosa": "Piazza del Campo",
   "titolo": "Italy Siena Piazza del Campo BW 2021-09-23 15-11-48 1.jpg",
@@ -117,6 +260,19 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Italy_Siena_Piazza_del_Campo_BW_2021-09-23_15-11-48_1.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/canederli.webp",
+  "cosa": "Canederli",
+  "titolo": "Tris 3 Knödel.JPG",
+  "autore": "Benreis",
+  "licenza": "CC BY 3.0",
+  "licurl": "https://creativecommons.org/licenses/by/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Tris_3_Kn%C3%B6del.JPG",
   "focus": [
    0.5,
    0.5
@@ -136,6 +292,45 @@
   ]
  },
  {
+  "file": "img/luoghi/cantucci.webp",
+  "cosa": "Cantucci e vin santo",
+  "titolo": "I cantuccini.jpg",
+  "autore": "Matteo Bertini",
+  "licenza": "CC BY-SA 2.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:I_cantuccini.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/capri.webp",
+  "cosa": "Faraglioni di Capri",
+  "titolo": "Capri BW 2013-05-14 15-19-56 DxO.jpg",
+  "autore": "Berthold Werner",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Capri_BW_2013-05-14_15-19-56_DxO.jpg",
+  "focus": [
+   0.55,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/carasau.webp",
+  "cosa": "Pane carasau",
+  "titolo": "Carasadu4.JPG",
+  "autore": "Shardan",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Carasadu4.JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/carbonara.webp",
   "cosa": "Carbonara",
   "titolo": "Espaguetis carbonara.jpg",
@@ -143,6 +338,32 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Espaguetis_carbonara.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/cassata.webp",
+  "cosa": "Cassata siciliana",
+  "titolo": "CASSATA SICILIANA.jpg",
+  "autore": "EraclitoPantaRei",
+  "licenza": "CC0",
+  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "fonte": "https://commons.wikimedia.org/wiki/File:CASSATA_SICILIANA.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/castelluccio.webp",
+  "cosa": "Piana di Castelluccio",
+  "titolo": "La fioritura di Castelluccio da Norcia.jpg",
+  "autore": "Marcobranchi",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:La_fioritura_di_Castelluccio_da_Norcia.jpg",
   "focus": [
    0.5,
    0.5
@@ -188,6 +409,19 @@
   ]
  },
  {
+  "file": "img/luoghi/cervino.webp",
+  "cosa": "Cervino",
+  "titolo": "Cervino visto da Breuil Cervinia 01.jpg",
+  "autore": "Patafisik",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Cervino_visto_da_Breuil_Cervinia_01.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/cinqueterre.webp",
   "cosa": "Cinque Terre",
   "titolo": "Manarola NW Cinque Terre Sep23 A7C 07233.jpg",
@@ -201,6 +435,19 @@
   ]
  },
  {
+  "file": "img/luoghi/civita.webp",
+  "cosa": "Civita di Bagnoregio",
+  "titolo": "Civita (Bagnoregio) - Panorama.jpg",
+  "autore": "Orlando Paride",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Civita_(Bagnoregio)_-_Panorama.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/colosseo.webp",
   "cosa": "Colosseo",
   "titolo": "Colosseum of Rome and Roman forum.jpg",
@@ -210,6 +457,19 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Colosseum_of_Rome_and_Roman_forum.jpg",
   "focus": [
    0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/conero.webp",
+  "cosa": "Riviera del Conero",
+  "titolo": "Le due sorelle dall’alto.jpg",
+  "autore": "Winnycs",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Le_due_sorelle_dall%E2%80%99alto.jpg",
+  "focus": [
+   0.4,
    0.5
   ]
  },
@@ -234,6 +494,32 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Costa_Smeralda_veduta_panoramica_2.png"
+ },
+ {
+  "file": "img/luoghi/cotoletta.webp",
+  "cosa": "Cotoletta alla milanese",
+  "titolo": "Milanesa.jpg",
+  "autore": "mteson Marcelo Teson Los Angeles, CA, USA",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Milanesa.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/cretesenesi.webp",
+  "cosa": "Crete Senesi",
+  "titolo": "Sunrise in Crete dell'Orcia.jpg",
+  "autore": "Ciorophotoproject",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Sunrise_in_Crete_dell%27Orcia.jpg",
+  "focus": [
+   0.5,
+   0.6
+  ]
  },
  {
   "file": "img/luoghi/dolomiti.webp",
@@ -282,6 +568,32 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Milan_Cathedral_(Duomo_di_Milano).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/duomosiena.webp",
+  "cosa": "Duomo di Siena",
+  "titolo": "Duomo di Siena-9625.jpg",
+  "autore": "Raimond Spekking",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Duomo_di_Siena-9625.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/elba.webp",
+  "cosa": "Isola d'Elba",
+  "titolo": "Elba litorale.jpg",
+  "autore": "Maurizio Abbiateci",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Elba_litorale.jpg",
   "focus": [
    0.5,
    0.5
@@ -354,6 +666,19 @@
   ]
  },
  {
+  "file": "img/luoghi/garda.webp",
+  "cosa": "Lago di Garda",
+  "titolo": "SIR - Scaligero Castle and fortified harbour in Sirmione, Lake Garda, Italy, 2014.jpg",
+  "autore": "Josep M. Gracia",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:SIR_-_Scaligero_Castle_and_fortified_harbour_in_Sirmione,_Lake_Garda,_Italy,_2014.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/gelato.webp",
   "cosa": "Gelato",
   "titolo": "Gelato at Chocolat in Milan in 2006.jpg",
@@ -361,6 +686,32 @@
   "licenza": "CC BY-SA 2.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Gelato_at_Chocolat_in_Milan_in_2006.jpg"
+ },
+ {
+  "file": "img/luoghi/giulietta.webp",
+  "cosa": "Casa di Giulietta",
+  "titolo": "Casa di Giulietta Verona 3.jpg",
+  "autore": "Orledio",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Casa_di_Giulietta_Verona_3.jpg",
+  "focus": [
+   0.0,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/goloritze.webp",
+  "cosa": "Cala Goloritzé",
+  "titolo": "Cala Goloritzé 3.JPG",
+  "autore": "Mentnafunangann",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Cala_Goloritz%C3%A9_3.JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/gondola.webp",
@@ -373,6 +724,32 @@
   "focus": [
    0.5,
    0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/granita.webp",
+  "cosa": "Granita e brioche",
+  "titolo": "Granita brioche.JPG",
+  "autore": "Sebastian Fischer",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Granita_brioche.JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/gransasso.webp",
+  "cosa": "Gran Sasso e Campo Imperatore",
+  "titolo": "Campo Imperatore, Abruzzo.jpg",
+  "autore": "A Passerini",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Campo_Imperatore,_Abruzzo.jpg",
+  "focus": [
+   0.5,
+   0.6
   ]
  },
  {
@@ -398,6 +775,84 @@
   ]
  },
  {
+  "file": "img/luoghi/lagodorta.webp",
+  "cosa": "Lago d'Orta",
+  "titolo": "Isola Orta Isola San Giulio.jpg",
+  "autore": "Carlo Colombo",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Isola_Orta_Isola_San_Giulio.jpg",
+  "focus": [
+   0.5,
+   0.6
+  ]
+ },
+ {
+  "file": "img/luoghi/lampedusa.webp",
+  "cosa": "Spiaggia dei Conigli",
+  "titolo": "Isola dei Conigli.JPG",
+  "autore": "No machine-readable author provided. Ezio55 assumed (based on copyright claims).",
+  "licenza": "Public domain",
+  "licurl": "",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Isola_dei_Conigli.JPG",
+  "focus": [
+   0.5,
+   0.6
+  ]
+ },
+ {
+  "file": "img/luoghi/langhe.webp",
+  "cosa": "Langhe",
+  "titolo": "Piemonte, Italy (5885193979).jpg",
+  "autore": "Megan Cole from Vancouver, Canada",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Piemonte,_Italy_(5885193979).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/lanterna.webp",
+  "cosa": "Lanterna di Genova",
+  "titolo": "Torre della Lanterna (Genova) 04.jpg",
+  "autore": "Mongolo1984",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Torre_della_Lanterna_(Genova)_04.jpg",
+  "focus": [
+   0.45,
+   0.2
+  ]
+ },
+ {
+  "file": "img/luoghi/lasagne.webp",
+  "cosa": "Lasagne alla bolognese",
+  "titolo": "Lasagna bolognese.jpg",
+  "autore": "Sambawamba",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Lasagna_bolognese.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/lecce.webp",
+  "cosa": "Lecce barocca",
+  "titolo": "Lecce - Santa Croce - 17.jpg",
+  "autore": "Benjamin Smith",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Lecce_-_Santa_Croce_-_17.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/limone.webp",
   "cosa": "Limoni e limoncello",
   "titolo": "Lemon - whole and split.jpg",
@@ -405,6 +860,45 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Lemon_-_whole_and_split.jpg"
+ },
+ {
+  "file": "img/luoghi/lucca.webp",
+  "cosa": "Mura di Lucca",
+  "titolo": "Lucca Mura Cittadine 2.jpg",
+  "autore": "Zairon",
+  "licenza": "CC BY 4.0",
+  "licurl": "https://creativecommons.org/licenses/by/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Lucca_Mura_Cittadine_2.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/maggiore.webp",
+  "cosa": "Lago Maggiore e Isole Borromee",
+  "titolo": "Lago Maggiore Isola Superiore from Isola Bella.jpg",
+  "autore": "Isiwal",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Lago_Maggiore_Isola_Superiore_from_Isola_Bella.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/miramare.webp",
+  "cosa": "Castello di Miramare",
+  "titolo": "Castello di Miramare.JPG",
+  "autore": "Adiel lo",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Castello_di_Miramare.JPG",
+  "focus": [
+   0.55,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/moka.webp",
@@ -433,6 +927,45 @@
   ]
  },
  {
+  "file": "img/luoghi/monreale.webp",
+  "cosa": "Duomo di Monreale",
+  "titolo": "Christ Pantocrator - Cathedral of Monreale - Italy 2015 (5).JPG",
+  "autore": "José Luiz",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Christ_Pantocrator_-_Cathedral_of_Monreale_-_Italy_2015_(5).JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/montebianco.webp",
+  "cosa": "Monte Bianco",
+  "titolo": "Dal Monte Bianco alle Jorasses.jpg",
+  "autore": "Andrea Vallet",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Dal_Monte_Bianco_alle_Jorasses.jpg",
+  "focus": [
+   0.4,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/mortadella.webp",
+  "cosa": "Mortadella di Bologna",
+  "titolo": "Giant Mortadella.jpg",
+  "autore": "Dion Hinchcliffe",
+  "licenza": "CC BY-SA 2.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Giant_Mortadella.jpg",
+  "focus": [
+   0.3,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/mozzarella.webp",
   "cosa": "Mozzarella di bufala",
   "titolo": "Mozzarella di bufala3.jpg",
@@ -440,6 +973,32 @@
   "licenza": "CC BY-SA 3.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Mozzarella_di_bufala3.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/norma.webp",
+  "cosa": "Pasta alla Norma",
+  "titolo": "Pasta Norma Villa Principe di Belmonte Ispica 2017.jpg",
+  "autore": "Muesse",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Pasta_Norma_Villa_Principe_di_Belmonte_Ispica_2017.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/noto.webp",
+  "cosa": "Noto",
+  "titolo": "Noto BW 2025-04-26 10-12-43.jpg",
+  "autore": "Berthold Werner",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Noto_BW_2025-04-26_10-12-43.jpg",
   "focus": [
    0.5,
    0.5
@@ -455,6 +1014,58 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Egyptian_Olives.jpg"
  },
  {
+  "file": "img/luoghi/orecchiette.webp",
+  "cosa": "Orecchiette con le cime di rapa",
+  "titolo": "Lyon 7e - Restaurant Veronatuti - Orecchiette con le cime di rapa (plat originaire des Pouilles).jpg",
+  "autore": "Romainbehar",
+  "licenza": "CC0",
+  "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Lyon_7e_-_Restaurant_Veronatuti_-_Orecchiette_con_le_cime_di_rapa_(plat_originaire_des_Pouilles).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/orvieto.webp",
+  "cosa": "Duomo di Orvieto",
+  "titolo": "Italy Duomo di Orvieto Cathedral.jpg",
+  "autore": "fortherock",
+  "licenza": "CC BY-SA 2.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Italy_Duomo_di_Orvieto_Cathedral.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/ostia.webp",
+  "cosa": "Ostia Antica",
+  "titolo": "Theater (Ostia Antica).jpg",
+  "autore": "Rabax63",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Theater_(Ostia_Antica).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/paestum.webp",
+  "cosa": "Templi di Paestum",
+  "titolo": "Hera temple II - Paestum - Poseidonia - July 13th 2013 - 04.jpg",
+  "autore": "Norbert Nagel",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Hera_temple_II_-_Paestum_-_Poseidonia_-_July_13th_2013_-_04.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/palazzoducale.webp",
   "cosa": "Palazzo Ducale",
   "titolo": "Ponte della Paglia Palazzo Ducale Venezia.jpg",
@@ -465,6 +1076,19 @@
   "focus": [
    0.5,
    0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/palazzovecchio.webp",
+  "cosa": "Palazzo Vecchio",
+  "titolo": "Palazzo Vecchio by nigth.jpg",
+  "autore": "Petar Milošević",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Palazzo_Vecchio_by_nigth.jpg",
+  "focus": [
+   0.35,
+   0.2
   ]
  },
  {
@@ -516,6 +1140,19 @@
   ]
  },
  {
+  "file": "img/luoghi/pastiera.webp",
+  "cosa": "Pastiera napoletana",
+  "titolo": "Pastiera slice - ready to eat.jpg",
+  "autore": "Mattia Luigi Nappi",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Pastiera_slice_-_ready_to_eat.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/pesto.webp",
   "cosa": "Pesto alla genovese",
   "titolo": "Ingredienti per il pesto Genovese e Pesto Genovese (Ingridients for Pesto Genovese and Pesto genovese).jpg",
@@ -523,6 +1160,19 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Ingredienti_per_il_pesto_Genovese_e_Pesto_Genovese_(Ingridients_for_Pesto_Genovese_and_Pesto_genovese).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/piadina.webp",
+  "cosa": "Piadina romagnola",
+  "titolo": "Piadina prosciutto e Asiago DOP 2.jpg",
+  "autore": "Lasagnolo9 at Italian Wikipedia",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Piadina_prosciutto_e_Asiago_DOP_2.jpg",
   "focus": [
    0.5,
    0.5
@@ -577,6 +1227,45 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Pizza_Margherita_%E3%83%94%E3%82%B6%E3%83%BB%E3%83%9E%E3%83%AB%E3%82%B2%E3%83%AA%E3%83%BC%E3%82%BF.jpg"
  },
  {
+  "file": "img/luoghi/plebiscito.webp",
+  "cosa": "Piazza del Plebiscito",
+  "titolo": "Vesuvio dalla Piazza del Plebiscito, Napoli.JPG",
+  "autore": "Roma1314",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Vesuvio_dalla_Piazza_del_Plebiscito,_Napoli.JPG",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/polenta.webp",
+  "cosa": "Polenta",
+  "titolo": "Polenta.jpg",
+  "autore": "it:User:Dorothy61n1",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Polenta.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/polignano.webp",
+  "cosa": "Polignano a Mare",
+  "titolo": "Chiesa Matrice nel cuore di Polignano a Mare all'alba.jpg",
+  "autore": "Pasquale Alberto Carone",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Chiesa_Matrice_nel_cuore_di_Polignano_a_Mare_all%27alba.jpg",
+  "focus": [
+   0.5,
+   0.6
+  ]
+ },
+ {
   "file": "img/luoghi/pompei.webp",
   "cosa": "Pompei",
   "titolo": "Pompeii Ruins Forum (City Business Center) & Mt. Vesuvius (48440863097).jpg",
@@ -603,6 +1292,45 @@
   ]
  },
  {
+  "file": "img/luoghi/porchetta.webp",
+  "cosa": "Porchetta di Ariccia",
+  "titolo": "Porchetta (3168207946).jpg",
+  "autore": "Pedro Angelini from São Paulo, Brasil",
+  "licenza": "CC BY 2.0",
+  "licurl": "https://creativecommons.org/licenses/by/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Porchetta_(3168207946).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/portofino.webp",
+  "cosa": "Portofino",
+  "titolo": "Portofino harbor.jpg",
+  "autore": "Quintin Soloviev",
+  "licenza": "CC BY 4.0",
+  "licurl": "https://creativecommons.org/licenses/by/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Portofino_harbor.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/procida.webp",
+  "cosa": "Procida",
+  "titolo": "Corricella 2016, Procida (3).jpg",
+  "autore": "Ekrem Canli",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Corricella_2016,_Procida_(3).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/prosciutto.webp",
   "cosa": "Prosciutto di Parma",
   "titolo": "Prosciutto con melone IMGP0963.jpg",
@@ -613,6 +1341,32 @@
   "focus": [
    0.5,
    0.484
+  ]
+ },
+ {
+  "file": "img/luoghi/prosecco.webp",
+  "cosa": "Colline del Prosecco",
+  "titolo": "Pentagono del Cartizze 01.jpg",
+  "autore": "Civvì",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Pentagono_del_Cartizze_01.jpg",
+  "focus": [
+   0.5,
+   0.6
+  ]
+ },
+ {
+  "file": "img/luoghi/ravenna.webp",
+  "cosa": "San Vitale a Ravenna",
+  "titolo": "Sanvitale05.jpg",
+  "autore": "Roger Culos",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Sanvitale05.jpg",
+  "focus": [
+   0.5,
+   0.5
   ]
  },
  {
@@ -649,6 +1403,19 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Ossobuco_con_risotto_alla_milanese.jpg"
+ },
+ {
+  "file": "img/luoghi/sacra.webp",
+  "cosa": "Sacra di San Michele",
+  "titolo": "Sant'Ambrogio di Torino - Sacra di San Michele - 2025-09-29 15-35-04 001.jpg",
+  "autore": "Federico_Milesi",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Sant%27Ambrogio_di_Torino_-_Sacra_di_San_Michele_-_2025-09-29_15-35-04_001.jpg",
+  "focus": [
+   0.5,
+   0.4
+  ]
  },
  {
   "file": "img/luoghi/sangimignano.webp",
@@ -703,6 +1470,71 @@
   ]
  },
  {
+  "file": "img/luoghi/saturnia.webp",
+  "cosa": "Cascate del Mulino",
+  "titolo": "Terme di Saturnia - Cascate del Mulino-0518.jpg",
+  "autore": "Raimond Spekking",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Terme_di_Saturnia_-_Cascate_del_Mulino-0518.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/scaladeiturchi.webp",
+  "cosa": "Scala dei Turchi",
+  "titolo": "Scala dei Turchi 2017.jpg",
+  "autore": "Enrico Strocchi",
+  "licenza": "CC BY-SA 2.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Scala_dei_Turchi_2017.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/scrovegni.webp",
+  "cosa": "Cappella degli Scrovegni",
+  "titolo": "Padova Cappella degli Scrovegni Innen Langhaus West 5.jpg",
+  "autore": "Zairon",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Padova_Cappella_degli_Scrovegni_Innen_Langhaus_West_5.jpg",
+  "focus": [
+   0.5,
+   0.45
+  ]
+ },
+ {
+  "file": "img/luoghi/sfogliatella.webp",
+  "cosa": "Sfogliatella",
+  "titolo": "Sfogliatella riccia napoletana.jpg",
+  "autore": "Saggittarius A",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Sfogliatella_riccia_napoletana.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/sistina.webp",
+  "cosa": "Cappella Sistina",
+  "titolo": "Sistine Chapel Ceiling by Michelangelo (48466107736).jpg",
+  "autore": "Gary Todd from Xinzheng, China",
+  "licenza": "Public domain",
+  "licurl": "",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Sistine_Chapel_Ceiling_by_Michelangelo_(48466107736).jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/spaghetti.webp",
   "cosa": "Spaghetti al pomodoro",
   "titolo": "Spaghetti al pomodoro, icona della cucina italiana nel mondo. .jpg",
@@ -710,6 +1542,19 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Spaghetti_al_pomodoro,_icona_della_cucina_italiana_nel_mondo._.jpg"
+ },
+ {
+  "file": "img/luoghi/spritz.webp",
+  "cosa": "Spritz",
+  "titolo": "Aperol Spritz - Santa Ynez Kitchen - Sarah Stierch.jpg",
+  "autore": "Missvain",
+  "licenza": "CC BY 4.0",
+  "licurl": "https://creativecommons.org/licenses/by/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Aperol_Spritz_-_Santa_Ynez_Kitchen_-_Sarah_Stierch.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/stromboli.webp",
@@ -725,6 +1570,19 @@
   ]
  },
  {
+  "file": "img/luoghi/suppli.webp",
+  "cosa": "Supplì",
+  "titolo": "Alice Pizza Piola 3.jpg",
+  "autore": "Saggittarius A",
+  "licenza": "CC BY 4.0",
+  "licurl": "https://creativecommons.org/licenses/by/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Alice_Pizza_Piola_3.jpg",
+  "focus": [
+   0.5,
+   0.8
+  ]
+ },
+ {
   "file": "img/luoghi/tagliatelle.webp",
   "cosa": "Tagliatelle al ragù",
   "titolo": "Tagliatelle ragù bolognese 01.jpg",
@@ -732,6 +1590,32 @@
   "licenza": "CC BY 2.0",
   "licurl": "https://creativecommons.org/licenses/by/2.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Tagliatelle_rag%C3%B9_bolognese_01.jpg"
+ },
+ {
+  "file": "img/luoghi/taormina.webp",
+  "cosa": "Teatro antico di Taormina",
+  "titolo": "Taormina - Teatro antico di Taormina.jpg",
+  "autore": "231286M",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Taormina_-_Teatro_antico_di_Taormina.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/tartufo.webp",
+  "cosa": "Tartufo bianco d'Alba",
+  "titolo": "Tuber magnatum Picco 690635.jpg",
+  "autore": "This image was created by user Nicolò Oppicelli (Nicolò Oppicelli) at Mushroom Observer, a source for mycological images.You can contact this user here.",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Tuber_magnatum_Picco_690635.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/tempio.webp",
@@ -754,6 +1638,19 @@
   "licenza": "CC0",
   "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
   "fonte": "https://commons.wikimedia.org/wiki/File:%D0%9C%D0%B0%D0%BA%D0%B5%D0%B4%D0%BE%D0%BD%D1%81%D0%BA%D0%B8_%D0%B4%D0%B5%D1%81%D0%B5%D1%80%D1%82_%D1%82%D0%B8%D1%80%D0%B0%D0%BC%D0%B8%D1%81%D1%83_(3).jpg"
+ },
+ {
+  "file": "img/luoghi/tivoli.webp",
+  "cosa": "Villa d'Este",
+  "titolo": "Fontana dell'Organo a Villa d'Este (Tivoli, RM).jpg",
+  "autore": "Anna Eden 86",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Fontana_dell%27Organo_a_Villa_d%27Este_(Tivoli,_RM).jpg",
+  "focus": [
+   0.0,
+   0.5
+  ]
  },
  {
   "file": "img/luoghi/tortellini.webp",
@@ -782,6 +1679,19 @@
   ]
  },
  {
+  "file": "img/luoghi/tropea.webp",
+  "cosa": "Tropea",
+  "titolo": "Santa Maria dell'Isola - Tropea - Calabria - Italy - July 25th 2013 - 03.jpg",
+  "autore": "Norbert Nagel",
+  "licenza": "CC BY-SA 3.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Santa_Maria_dell%27Isola_-_Tropea_-_Calabria_-_Italy_-_July_25th_2013_-_03.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/trullo.webp",
   "cosa": "Trulli di Alberobello",
   "titolo": "Alberobello BW 2016-10-16 13-44-51.jpg",
@@ -791,6 +1701,19 @@
   "fonte": "https://commons.wikimedia.org/wiki/File:Alberobello_BW_2016-10-16_13-44-51.jpg",
   "focus": [
    0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/urbino.webp",
+  "cosa": "Palazzo Ducale di Urbino",
+  "titolo": "Palazzo Ducale (Urbino).jpg",
+  "autore": "NikonZ7II",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Palazzo_Ducale_(Urbino).jpg",
+  "focus": [
+   0.55,
    0.5
   ]
  },
@@ -808,6 +1731,19 @@
   ]
  },
  {
+  "file": "img/luoghi/venaria.webp",
+  "cosa": "Reggia di Venaria",
+  "titolo": "Reggia di Venaria Reale 83.jpg",
+  "autore": "FrDr",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Reggia_di_Venaria_Reale_83.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
   "file": "img/luoghi/vesuvio.webp",
   "cosa": "Vesuvio",
   "titolo": "Vesuvio e nave a Napoli.jpg",
@@ -815,6 +1751,19 @@
   "licenza": "CC BY-SA 4.0",
   "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
   "fonte": "https://commons.wikimedia.org/wiki/File:Vesuvio_e_nave_a_Napoli.jpg",
+  "focus": [
+   0.5,
+   0.5
+  ]
+ },
+ {
+  "file": "img/luoghi/vitellotonnato.webp",
+  "cosa": "Vitello tonnato",
+  "titolo": "Vitello tonnato La Dolce Vita Kulmbach.jpg",
+  "autore": "Benreis",
+  "licenza": "CC BY-SA 4.0",
+  "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+  "fonte": "https://commons.wikimedia.org/wiki/File:Vitello_tonnato_La_Dolce_Vita_Kulmbach.jpg",
   "focus": [
    0.5,
    0.5
