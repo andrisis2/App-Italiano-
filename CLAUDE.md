@@ -40,7 +40,7 @@ Il JS è diviso in sezioni, nell'ordine in cui compaiono nel file:
 |---------|----------------------|
 | core | `$`, `esc`, `ic()` (icone), `speak`/`pickVoice` (TTS), SRS (`italiano_srs_v1`), impostazioni, XP (`xpTotale`), attività giornaliera, errori |
 | lingua | articoli (`articolo`, `articoloInd`), genere/plurale (`genereDi`, `pluraleDi`), motore di coniugazione (`conjForm`, `coniugaRegolare` per i verbi regolari -are/-ire), indice di tutte le forme (`indiceForme`), `analizzaParola` (forme, clitici, superlativi -issimo, avverbi -mente, numeri in lettere, nomi propri), `tokenizza`, `PAROLE_FUNZIONE` |
-| ui | `renderHome()` (tab Practice/Theory), `start(mode)` (router), `header`, `navigateTo` (back), `illIMG(id, piccola)` (le illustrazioni), `aggiornaCielo()` (panorama in testa secondo l'ora e il tema) |
+| ui | `renderHome()` (tab Practice/Theory, scheda «Install the app»), `installaApp()` / `guidaInstallazione()` (installazione: prompt nativo su Android/desktop, guida passo-passo Condividi → «Aggiungi a Home» su iPhone, dove non esiste un prompt), `start(mode)` (router), `header`, `navigateTo` (back), `illIMG(id, piccola)` (le illustrazioni), `aggiornaCielo()` (panorama in testa secondo l'ora e il tema) |
 | spiega | `spiega(it, en)`: il bottom-sheet «Explain» con l'analisi parola per parola e i perché del modo verbale |
 | vocab | `runVocabolario()` (dizionario + ricerca online), `runVerbi()`, `runVerboDetail()` |
 | esercizi | flashcard (`pickFlashTopic`, `runFlash`), scrittura, coniugazione (`runConjugation`), frasi (`runPhrase`, `runComponi`, `runDettatoFrasi`), «My exercises» |
@@ -60,7 +60,7 @@ percorso, settings, proverbi, memory, lampo, articoli, phrase, compose, letture`
 
 ### Chiavi localStorage (da non rinominare: contengono i progressi dell'utente)
 `italiano_srs_v1`, `italiano_user_items`, `italiano_esercizi_v1`, `italiano_settings_v1`,
-`italiano_extra_v1`, `italiano_activity_v1`, `italiano_errori_v1`, `italiano_memory_best_v1`,
+`italiano_extra_v1`, `italiano_activity_v1`, `italiano_errori_v1`, `italiano_memory_best_v1`, `italiano_install_nascosto` (scheda «Install» chiusa: torna dopo 30 giorni),
 `sofia_*` (tutor: il nome storico è rimasto), `flashDir`, `scritturaModo`. Il backup
 esporta tutto ciò che inizia con `italiano_` / `sofia_` tranne la chiave API.
 

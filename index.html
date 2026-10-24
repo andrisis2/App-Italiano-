@@ -390,6 +390,20 @@
   .qbtn .i{width:15px;height:15px;stroke-width:2.4}
   .qbtn:active{transform:scale(.95);background:var(--accent2-soft)}
 
+  .install-card{display:flex;align-items:center;gap:12px;margin:0 0 14px;padding:12px 10px 12px 12px;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow-sm);animation:rise .3s ease both}
+  .install-card img{width:46px;height:46px;border-radius:11px;flex:0 0 auto;box-shadow:0 2px 6px rgba(40,28,18,.15)}
+  .install-card .txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .install-card .txt b{font-size:15px;font-weight:800;letter-spacing:-.1px}
+  .install-card .txt span{font-size:12.5px;color:var(--muted);line-height:1.35}
+  .install-x{width:30px;height:30px;border:0;border-radius:9px;background:none;color:var(--muted);display:grid;place-items:center;flex:0 0 auto;padding:0}
+  .install-x .i{width:16px;height:16px}
+  .inst-steps{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;counter-reset:passo}
+  .inst-steps li{counter-increment:passo;display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;font-size:14.5px;line-height:1.5;text-align:left}
+  .inst-steps li::before{content:counter(passo);flex:0 0 auto;width:26px;height:26px;border-radius:50%;background:var(--accent2);color:#fff;font-weight:800;font-size:13.5px;display:grid;place-items:center;margin-top:1px}
+  .inst-ico{display:inline-grid;place-items:center;vertical-align:-5px;min-width:24px;height:24px;padding:0 4px;border-radius:7px;background:var(--accent2-soft);color:var(--accent2);font-weight:900;font-size:13px;letter-spacing:1px}
+  .inst-ico .i{width:16px;height:16px;stroke-width:2.4}
+  .inst-ico.sq .i{border:2px solid currentColor;border-radius:4px;width:15px;height:15px;stroke-width:3}
+  .inst-note{font-size:13px;line-height:1.55;color:var(--text2);background:var(--gold-soft);border-radius:14px;padding:12px;text-align:left}
   .home-foot{margin-top:26px;display:flex;flex-direction:column;align-items:center;gap:12px}
   .home-foot .row-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 
@@ -2498,6 +2512,109 @@ function rowTile(ico, t, d, fn, extra){
   return b;
 }
 
+// ---------- install the app (Home Screen) ----------
+// Android and desktop Chrome/Edge offer their own install prompt (beforeinstallprompt); iPhone and iPad never do:
+// there the only way is Share → «Add to Home Screen», so a sheet walks through it step by step.
+let _installPrompt = null;
+window.addEventListener('beforeinstallprompt', e=>{ e.preventDefault(); _installPrompt = e; });
+window.addEventListener('appinstalled', ()=>{ _installPrompt = null; document.querySelectorAll('.install-card').forEach(x=>x.remove()); });
+function appInstallata(){
+  return (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone === true;
+}
+function installNascosto(){
+  let t = 0;
+  try{ t = +localStorage.getItem('italiano_install_nascosto') || 0; }catch(e){}
+  return Date.now() - t < 30*86400000;
+}
+// 'ios' (Safari), 'ios-altro' (Chrome, Firefox, Edge… on iOS), 'ios-inapp' (Instagram, Facebook… browsers), 'android', 'desktop'
+function piattaforma(){
+  const ua = navigator.userAgent || '';
+  const ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  if(ios){
+    if(/FBAN|FBAV|Instagram|LinkedInApp|Snapchat|TikTok|musical_ly|Line\/|GSA\/|Twitter/i.test(ua)) return 'ios-inapp';
+    if(/CriOS|FxiOS|EdgiOS|OPiOS|OPT\/|DuckDuckGo|YaBrowser/.test(ua)) return 'ios-altro';
+    return 'ios';
+  }
+  return /Android/i.test(ua) ? 'android' : 'desktop';
+}
+async function installaApp(){
+  if(_installPrompt){
+    const p = _installPrompt;
+    _installPrompt = null;   // a prompt can be shown only once
+    try{
+      await p.prompt();
+      const r = await p.userChoice;
+      if(r && r.outcome === 'accepted'){ toast('📲 Installed! Open «Italiano» from your Home Screen'); document.querySelectorAll('.install-card').forEach(x=>x.remove()); }
+    }catch(e){ sheetApri('Install the app', guidaInstallazione); }
+    return;
+  }
+  sheetApri('Install the app', guidaInstallazione);
+}
+function guidaInstallazione(){
+  const box = $(`<div class="sh-page"></div>`);
+  const pf = piattaforma();
+  const share = `<span class="inst-ico">${ic('share')}</span>`;
+  const add = `<span class="inst-ico sq">${ic('plus')}</span>`;
+  const dots = `<span class="inst-ico">···</span>`;
+  const url = location.origin + location.pathname;
+  let intro = '', passi = [];
+  if(pf === 'ios'){
+    intro = 'On iPhone and iPad apps like this one install straight from <b>Safari</b>, without the App Store. It takes 10 seconds:';
+    passi = [
+      `Tap the <b>Share</b> button ${share} in Safari's toolbar (at the bottom, or at the top on iPad). On iOS 26 tap ${dots} first, then <b>Share</b>.`,
+      `Scroll down the list and tap <b>Add to Home Screen</b> ${add}. If you don't see it, tap <b>View More</b> or <b>Edit Actions</b> at the bottom.`,
+      `Leave <b>Open as Web App</b> switched on and tap <b>Add</b> (top right).`,
+      `Done: open <b>Italiano</b> from your Home Screen. It runs full screen, with its own icon, and also works offline.`
+    ];
+  } else if(pf === 'ios-altro'){
+    intro = 'On iPhone you can install this app from the browser you are using, without the App Store:';
+    passi = [
+      `Tap the <b>Share</b> button ${share} (in Chrome it's in the address bar, top right; in other browsers look in the ${dots} menu).`,
+      `Tap <b>Add to Home Screen</b> ${add}, then <b>Add</b>.`,
+      `Don't see «Add to Home Screen»? Your iOS is older than 16.4: copy the link below, open it in <b>Safari</b> and do the same from there.`
+    ];
+  } else if(pf === 'ios-inapp'){
+    intro = 'You opened the app inside another app (Instagram, Facebook, Google…): from here it can\'t be installed. Open it in <b>Safari</b> first:';
+    passi = [
+      `Tap ${dots} or ${share} in this window and choose <b>Open in Safari</b> (or copy the link below and paste it into Safari).`,
+      `In Safari tap <b>Share</b> ${share} → <b>Add to Home Screen</b> ${add} → <b>Add</b>.`
+    ];
+  } else if(pf === 'android'){
+    intro = 'Install it from your browser, without the Play Store:';
+    passi = [
+      `Tap the browser menu <b>⋮</b> (top right in Chrome).`,
+      `Tap <b>Install app</b> or <b>Add to Home screen</b>, then <b>Install</b>.`,
+      `Open <b>Italiano</b> from your Home Screen: full screen and offline too.`
+    ];
+  } else {
+    intro = 'On a computer:';
+    passi = [
+      `<b>Chrome / Edge</b>: click the install icon at the right of the address bar, or menu <b>⋮</b> → <b>Cast, save and share</b> → <b>Install page as app</b>.`,
+      `<b>Safari on Mac</b>: menu <b>File</b> → <b>Add to Dock</b>.`,
+      `On <b>iPhone</b>: open this same address in Safari, then <b>Share</b> ${share} → <b>Add to Home Screen</b> ${add}.`
+    ];
+  }
+  box.appendChild($(`<p style="margin:0;font-size:14.5px;line-height:1.55;text-align:left">${intro}</p>`));
+  box.appendChild($(`<ol class="inst-steps">${passi.map(x=>`<li><span>${x}</span></li>`).join('')}</ol>`));
+  if(pf !== 'ios'){
+    const cp = $(`<button class="btn soft block" type="button">${ic('share')} Copy the app's link</button>`);
+    cp.onclick = async ()=>{
+      try{ await navigator.clipboard.writeText(url); toast('🔗 Link copied: paste it into Safari'); }
+      catch(e){ prompt('Copy this link:', url); }
+    };
+    box.appendChild(cp);
+  }
+  // on iOS the Home Screen app has its own storage, separate from Safari's: progress doesn't follow by itself
+  if(pf.startsWith('ios') && xpTotale() > 0){
+    const nota = $(`<div class="inst-note"><b>Your progress:</b> on iPhone the installed app keeps its own data, separate from the browser. To bring along what you've done so far, export a backup now and then, in the app, go to <b>Settings → Backup → Import</b>.</div>`);
+    const exp = $(`<button class="btn block" type="button" style="margin-top:10px">${ic('dl')} Export backup</button>`);
+    exp.onclick = esportaBackup;
+    nota.appendChild(exp);
+    box.appendChild(nota);
+  }
+  return box;
+}
+
 async function forceUpdate(btnEl){
   if(btnEl){btnEl.innerHTML=`${ic('refresh')} Updating…`;btnEl.disabled=true;}
   try{
@@ -2581,6 +2698,19 @@ function renderHome(){
   hello.querySelector('.hello-txt').appendChild(makeLivelloChip());
   hello.querySelector('.icon-btn').onclick = ()=>start("settings");
   home.appendChild(hello);
+
+  // --- "install the app" (until it runs from the Home Screen; "×" hides it for a month) ---
+  if(!appInstallata() && !installNascosto()){
+    const ins = $(`<div class="install-card">
+        <img src="apple-touch-icon.png" alt="">
+        <div class="txt"><b>Install the app</b><span>On your Home Screen: full screen, offline too</span></div>
+        <button class="btn primary sm" type="button">${ic('dl')} Install</button>
+        <button class="install-x" type="button" aria-label="Not now" title="Not now">${ic('x')}</button>
+      </div>`);
+    ins.querySelector('.btn').onclick = installaApp;
+    ins.querySelector('.install-x').onclick = ()=>{ try{ localStorage.setItem('italiano_install_nascosto', String(Date.now())); }catch(e){} ins.remove(); };
+    home.appendChild(ins);
+  }
 
   // --- daily review + Grand Tour + my exercises ---
   const top = $(`<div class="home-top list" style="gap:12px"></div>`);
@@ -2693,18 +2823,22 @@ function renderHome(){
   });
 
   // --- footer: the Italian table, content version, settings, update ---
-  const standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || navigator.standalone;
   const CIBI = ['pizza','spaghetti','gelato','espresso','cannolo','arancino'];
   const cibi = CIBI.map(id=>`<img src="img/luoghi/${id}-s.webp" alt="" loading="lazy" decoding="async">`).join('');
   const foot = $(`<div class="home-foot">
     <button class="tavola" type="button" aria-label="Buon appetito! Tap to hear it"><span class="tavola-cibi" aria-hidden="true">${cibi}</span><span class="tavola-tela" aria-hidden="true"></span><span class="tavola-cap">Buon appetito!</span></button>
-    <div class="muted">Level B2 → C1 &middot; content v${esc(DB.meta.version)} of ${fmtData(DB.meta.updated)}${standalone ? '' : '<br>In your browser menu choose <b>«Add to Home Screen»</b> to use it as an app.'}</div>
+    <div class="muted">Level B2 → C1 &middot; content v${esc(DB.meta.version)} of ${fmtData(DB.meta.updated)}</div>
     <div class="row-btns"></div></div>`);
   const setBtn=$(`<button class="linkbtn" type="button">${ic('gear')} Settings</button>`);
   setBtn.onclick=()=>start("settings");
   const updBtn=$(`<button class="linkbtn" type="button">${ic('refresh')} Update app</button>`);
   updBtn.onclick=()=>forceUpdate(updBtn);
   foot.querySelector('.row-btns').append(setBtn, updBtn);
+  if(!appInstallata()){
+    const insBtn=$(`<button class="linkbtn" type="button">${ic('dl')} Install app</button>`);
+    insBtn.onclick=installaApp;
+    foot.querySelector('.row-btns').prepend(insBtn);
+  }
   const tav = foot.querySelector('.tavola'), cap = foot.querySelector('.tavola-cap');
   const DETTI = [['Buon appetito!','Enjoy your meal!'],['A tavola non si invecchia.','At the table one never grows old.'],['Pizza, pasta e gelato!','Pizza, pasta and gelato!'],['Un caffè, per favore.','An espresso, please.'],['Salute!','Cheers!'],['Che buono!','How delicious!']];
   let kDetto = 0;
@@ -7164,6 +7298,13 @@ function chiaviBackup(){
   for(let i=0; i<localStorage.length; i++){ const k = localStorage.key(i); if(chiaveInBackup(k)) out.push(k); }
   return out;
 }
+function esportaBackup(){
+  const blob = new Blob([JSON.stringify(raccogliBackup(), null, 1)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob); a.download = `italiano-backup-${todayStr()}.json`;
+  document.body.appendChild(a); a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+}
 function raccogliBackup(){
   const dati = {};
   chiaviBackup().forEach(k=>{ dati[k] = localStorage.getItem(k); });
@@ -7253,13 +7394,7 @@ function runImpostazioni(){
     <p class="muted" style="margin:0 0 13px;font-size:13.5px;line-height:1.55;text-align:left">Progress, saved words and streaks live <b>only on this device</b>: clearing the browser data or reinstalling the app deletes them. Export a backup file now and then and keep it safe.</p></div>`);
   const brow = $(`<div class="row" style="flex-wrap:wrap"></div>`);
   const exp = $(`<button class="btn primary" type="button" style="flex:1 1 140px">${ic('dl')} Export</button>`);
-  exp.onclick = ()=>{
-    const blob = new Blob([JSON.stringify(raccogliBackup(), null, 1)], {type:"application/json"});
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(blob); a.download = `italiano-backup-${todayStr()}.json`;
-    document.body.appendChild(a); a.click();
-    setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
-  };
+  exp.onclick = esportaBackup;
   const impBtn = $(`<button class="btn" type="button" style="flex:1 1 140px">${ic('ul')} Import</button>`);
   const file = $(`<input type="file" accept="application/json,.json" style="display:none">`);
   impBtn.onclick = ()=>file.click();
@@ -7290,6 +7425,11 @@ function runImpostazioni(){
   const upd = $(`<button class="btn block" type="button">${ic('refresh')} Update app</button>`);
   upd.onclick = ()=>forceUpdate(upd);
   appCard.appendChild(upd);
+  if(!appInstallata()){
+    const ins = $(`<button class="btn primary block" type="button" style="margin-top:8px">${ic('dl')} Install the app on this ${piattaforma().startsWith('ios') ? 'iPhone' : 'device'}</button>`);
+    ins.onclick = installaApp;
+    appCard.appendChild(ins);
+  }
   const cr = $(`<button class="btn soft block" type="button" style="margin-top:8px">${ic('image')} Image credits</button>`);
   cr.onclick = ()=>navigateTo(runCrediti);
   appCard.appendChild(cr);
